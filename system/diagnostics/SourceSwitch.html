@@ -142,7 +142,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <hr>
 <pre>public class <span class="typeNameLabel">SourceSwitch</span>
 extends <a href="Switch.html" title="class in system.diagnostics">Switch</a></pre>
-<div class="block">The base .NET class managing System.Diagnostics.SourceSwitch, System.Diagnostics.TraceSource, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a.
+<div class="block">The base .NET class managing System.Diagnostics.SourceSwitch, System.Diagnostics.TraceSource, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a.
  <p>
  
  .NET documentation at <a href="https://docs.microsoft.com/en-us/dotnet/api/System.Diagnostics.SourceSwitch" target="_top">https://docs.microsoft.com/en-us/dotnet/api/System.Diagnostics.SourceSwitch</a>
@@ -177,7 +177,7 @@ extends <a href="Switch.html" title="class in system.diagnostics">Switch</a></pr
 <td class="colFirst"><code>static java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#assemblyFullName">assemblyFullName</a></span></code></th>
 <td class="colLast">
-<div class="block">Fully assembly qualified name: System.Diagnostics.TraceSource, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</div>
+<div class="block">Fully assembly qualified name: System.Diagnostics.TraceSource, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</div>
 </td>
 </tr>
 <tr class="rowColor">
@@ -330,7 +330,7 @@ extends <a href="Switch.html" title="class in system.diagnostics">Switch</a></pr
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;system.diagnostics.<a href="Switch.html" title="class in system.diagnostics">Switch</a></h3>
-<code><a href="Switch.html#getAttributes()">getAttributes</a>, <a href="Switch.html#getDescription()">getDescription</a>, <a href="Switch.html#getDisplayName()">getDisplayName</a></code></li>
+<code><a href="Switch.html#getAttributes()">getAttributes</a>, <a href="Switch.html#getDefaultValue()">getDefaultValue</a>, <a href="Switch.html#getDescription()">getDescription</a>, <a href="Switch.html#getDisplayName()">getDisplayName</a>, <a href="Switch.html#getValue()">getValue</a>, <a href="Switch.html#Refresh()">Refresh</a>, <a href="Switch.html#setValue(java.lang.String)">setValue</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.org.mases.jcobridge.netreflection.NetObject">
@@ -369,7 +369,7 @@ extends <a href="Switch.html" title="class in system.diagnostics">Switch</a></pr
 <li class="blockList">
 <h4>assemblyFullName</h4>
 <pre>public static final&nbsp;java.lang.String assemblyFullName</pre>
-<div class="block">Fully assembly qualified name: System.Diagnostics.TraceSource, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</div>
+<div class="block">Fully assembly qualified name: System.Diagnostics.TraceSource, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../constant-values.html#system.diagnostics.SourceSwitch.assemblyFullName">Constant Field Values</a></dd>
@@ -463,28 +463,26 @@ extends <a href="Switch.html" title="class in system.diagnostics">Switch</a></pr
                     java.lang.String&nbsp;defaultSwitchValue)
              throws java.lang.Throwable,
                     <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                    <a href="../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
                     <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                     <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
                     <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
-                    <a href="../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                     <a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
                     <a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                     <a href="../RankException.html" title="class in system">RankException</a>,
-                    <a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></pre>
+                    <a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                    <a href="../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 <dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
 <dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 <dd><code><a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
 <dd><code><a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../RankException.html" title="class in system">RankException</a></code></dd>
 <dd><code><a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -496,22 +494,22 @@ extends <a href="Switch.html" title="class in system.diagnostics">Switch</a></pr
 <h4>SourceSwitch</h4>
 <pre>public&nbsp;SourceSwitch&#8203;(java.lang.String&nbsp;name)
              throws java.lang.Throwable,
-                    <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                     <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
                     <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
-                    <a href="../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                     <a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                     <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                    <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                    <a href="../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                     <a href="../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
 <dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 <dd><code><a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 <dd><code><a href="../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 </dl>
 </li>
@@ -663,18 +661,24 @@ extends <a href="Switch.html" title="class in system.diagnostics">Switch</a></pr
 <pre class="methodSignature">public&nbsp;boolean&nbsp;ShouldTrace&#8203;(<a href="TraceEventType.html" title="class in system.diagnostics">TraceEventType</a>&nbsp;eventType)
                     throws java.lang.Throwable,
                            <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                           <a href="../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                           <a href="../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                           <a href="../NullReferenceException.html" title="class in system">NullReferenceException</a>,
+                           <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
                            <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                           <a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a></pre>
+                           <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
+                           <a href="../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                           <a href="../FormatException.html" title="class in system">FormatException</a>,
+                           <a href="../OverflowException.html" title="class in system">OverflowException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
 <dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../OverflowException.html" title="class in system">OverflowException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -687,18 +691,24 @@ extends <a href="Switch.html" title="class in system.diagnostics">Switch</a></pr
 <pre class="methodSignature">public&nbsp;<a href="SourceLevels.html" title="class in system.diagnostics">SourceLevels</a>&nbsp;getLevel()
                       throws java.lang.Throwable,
                              <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                             <a href="../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                             <a href="../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                             <a href="../NullReferenceException.html" title="class in system">NullReferenceException</a>,
+                             <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
                              <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                             <a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a></pre>
+                             <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
+                             <a href="../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                             <a href="../FormatException.html" title="class in system">FormatException</a>,
+                             <a href="../OverflowException.html" title="class in system">OverflowException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
 <dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../OverflowException.html" title="class in system">OverflowException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -712,15 +722,15 @@ extends <a href="Switch.html" title="class in system.diagnostics">Switch</a></pr
               throws java.lang.Throwable,
                      <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
                      <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
-                     <a href="../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                     <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></pre>
+                     <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                     <a href="../NullReferenceException.html" title="class in system">NullReferenceException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
 <dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 <dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
 </dl>
 </li>
 </ul>

@@ -17,9 +17,12 @@
 <meta name="keywords" content="setJCOInstance()">
 <meta name="keywords" content="getJCOType()">
 <meta name="keywords" content="cast()">
+<meta name="keywords" content="Clone()">
 <meta name="keywords" content="Reset()">
 <meta name="keywords" content="getDisableCertificateDownloads()">
 <meta name="keywords" content="setDisableCertificateDownloads()">
+<meta name="keywords" content="getVerificationTimeIgnored()">
+<meta name="keywords" content="setVerificationTimeIgnored()">
 <meta name="keywords" content="getVerificationTime()">
 <meta name="keywords" content="setVerificationTime()">
 <meta name="keywords" content="getApplicationPolicy()">
@@ -49,7 +52,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10};
+var data = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -153,7 +156,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <hr>
 <pre>public class <span class="typeNameLabel">X509ChainPolicy</span>
 extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></pre>
-<div class="block">The base .NET class managing System.Security.Cryptography.X509Certificates.X509ChainPolicy, System.Security.Cryptography.X509Certificates, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a.
+<div class="block">The base .NET class managing System.Security.Cryptography.X509Certificates.X509ChainPolicy, System.Security.Cryptography, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a.
  <p>
  
  .NET documentation at <a href="https://docs.microsoft.com/en-us/dotnet/api/System.Security.Cryptography.X509Certificates.X509ChainPolicy" target="_top">https://docs.microsoft.com/en-us/dotnet/api/System.Security.Cryptography.X509Certificates.X509ChainPolicy</a>
@@ -188,14 +191,14 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <td class="colFirst"><code>static java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#assemblyFullName">assemblyFullName</a></span></code></th>
 <td class="colLast">
-<div class="block">Fully assembly qualified name: System.Security.Cryptography.X509Certificates, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</div>
+<div class="block">Fully assembly qualified name: System.Security.Cryptography, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</div>
 </td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>static java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#assemblyShortName">assemblyShortName</a></span></code></th>
 <td class="colLast">
-<div class="block">Assembly name: System.Security.Cryptography.X509Certificates</div>
+<div class="block">Assembly name: System.Security.Cryptography</div>
 </td>
 </tr>
 <tr class="altColor">
@@ -272,138 +275,153 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="../OidCollection.html" title="class in system.security.cryptography">OidCollection</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getApplicationPolicy()">getApplicationPolicy</a></span>()</code></th>
+<td class="colFirst"><code><a href="X509ChainPolicy.html" title="class in system.security.cryptography.x509certificates">X509ChainPolicy</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Clone()">Clone</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../OidCollection.html" title="class in system.security.cryptography">OidCollection</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getCertificatePolicy()">getCertificatePolicy</a></span>()</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getApplicationPolicy()">getApplicationPolicy</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
+<td class="colFirst"><code><a href="../OidCollection.html" title="class in system.security.cryptography">OidCollection</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getCertificatePolicy()">getCertificatePolicy</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="X509Certificate2Collection.html" title="class in system.security.cryptography.x509certificates">X509Certificate2Collection</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getCustomTrustStore()">getCustomTrustStore</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getDisableCertificateDownloads()">getDisableCertificateDownloads</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="X509Certificate2Collection.html" title="class in system.security.cryptography.x509certificates">X509Certificate2Collection</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getExtraStore()">getExtraStore</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getJCOAssemblyName()">getJCOAssemblyName</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the reflected Assembly name</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getJCOClassName()">getJCOClassName</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the reflected Class name</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getJCOInstance()">getJCOInstance</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the instantiated class</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getJCOObjectName()">getJCOObjectName</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the reflected Class name used to build the object</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="https://www.jcobridge.com/api-java_2.5.21/org/mases/jcobridge/JCType.html?is-external=true" title="class or interface in org.mases.jcobridge" class="externalLink">JCType</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getJCOType()">getJCOType</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the instantiated class Type</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="X509RevocationFlag.html" title="class in system.security.cryptography.x509certificates">X509RevocationFlag</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getRevocationFlag()">getRevocationFlag</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code><a href="X509RevocationMode.html" title="class in system.security.cryptography.x509certificates">X509RevocationMode</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getRevocationMode()">getRevocationMode</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code><a href="X509ChainTrustMode.html" title="class in system.security.cryptography.x509certificates">X509ChainTrustMode</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getTrustMode()">getTrustMode</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code><a href="../../../TimeSpan.html" title="class in system">TimeSpan</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getUrlRetrievalTimeout()">getUrlRetrievalTimeout</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code><a href="X509VerificationFlags.html" title="class in system.security.cryptography.x509certificates">X509VerificationFlags</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getVerificationFlags()">getVerificationFlags</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code><a href="../../../DateTime.html" title="class in system">DateTime</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getVerificationTime()">getVerificationTime</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i17" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Reset()">Reset</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
 <tr id="i18" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setDisableCertificateDownloads(boolean)">setDisableCertificateDownloads</a></span>&#8203;(boolean&nbsp;DisableCertificateDownloads)</code></th>
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getVerificationTimeIgnored()">getVerificationTimeIgnored</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i19" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setJCOInstance(org.mases.jcobridge.JCObject)">setJCOInstance</a></span>&#8203;(<a href="https://www.jcobridge.com/api-java_2.5.21/org/mases/jcobridge/JCObject.html?is-external=true" title="class or interface in org.mases.jcobridge" class="externalLink">JCObject</a>&nbsp;instance)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Reset()">Reset</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i20" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setRevocationFlag(system.security.cryptography.x509certificates.X509RevocationFlag)">setRevocationFlag</a></span>&#8203;(<a href="X509RevocationFlag.html" title="class in system.security.cryptography.x509certificates">X509RevocationFlag</a>&nbsp;RevocationFlag)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setDisableCertificateDownloads(boolean)">setDisableCertificateDownloads</a></span>&#8203;(boolean&nbsp;DisableCertificateDownloads)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i21" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setRevocationMode(system.security.cryptography.x509certificates.X509RevocationMode)">setRevocationMode</a></span>&#8203;(<a href="X509RevocationMode.html" title="class in system.security.cryptography.x509certificates">X509RevocationMode</a>&nbsp;RevocationMode)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setJCOInstance(org.mases.jcobridge.JCObject)">setJCOInstance</a></span>&#8203;(<a href="https://www.jcobridge.com/api-java_2.5.21/org/mases/jcobridge/JCObject.html?is-external=true" title="class or interface in org.mases.jcobridge" class="externalLink">JCObject</a>&nbsp;instance)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i22" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setTrustMode(system.security.cryptography.x509certificates.X509ChainTrustMode)">setTrustMode</a></span>&#8203;(<a href="X509ChainTrustMode.html" title="class in system.security.cryptography.x509certificates">X509ChainTrustMode</a>&nbsp;TrustMode)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setRevocationFlag(system.security.cryptography.x509certificates.X509RevocationFlag)">setRevocationFlag</a></span>&#8203;(<a href="X509RevocationFlag.html" title="class in system.security.cryptography.x509certificates">X509RevocationFlag</a>&nbsp;RevocationFlag)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i23" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setUrlRetrievalTimeout(system.TimeSpan)">setUrlRetrievalTimeout</a></span>&#8203;(<a href="../../../TimeSpan.html" title="class in system">TimeSpan</a>&nbsp;UrlRetrievalTimeout)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setRevocationMode(system.security.cryptography.x509certificates.X509RevocationMode)">setRevocationMode</a></span>&#8203;(<a href="X509RevocationMode.html" title="class in system.security.cryptography.x509certificates">X509RevocationMode</a>&nbsp;RevocationMode)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i24" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setVerificationFlags(system.security.cryptography.x509certificates.X509VerificationFlags)">setVerificationFlags</a></span>&#8203;(<a href="X509VerificationFlags.html" title="class in system.security.cryptography.x509certificates">X509VerificationFlags</a>&nbsp;VerificationFlags)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setTrustMode(system.security.cryptography.x509certificates.X509ChainTrustMode)">setTrustMode</a></span>&#8203;(<a href="X509ChainTrustMode.html" title="class in system.security.cryptography.x509certificates">X509ChainTrustMode</a>&nbsp;TrustMode)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i25" class="rowColor">
 <td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setUrlRetrievalTimeout(system.TimeSpan)">setUrlRetrievalTimeout</a></span>&#8203;(<a href="../../../TimeSpan.html" title="class in system">TimeSpan</a>&nbsp;UrlRetrievalTimeout)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i26" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setVerificationFlags(system.security.cryptography.x509certificates.X509VerificationFlags)">setVerificationFlags</a></span>&#8203;(<a href="X509VerificationFlags.html" title="class in system.security.cryptography.x509certificates">X509VerificationFlags</a>&nbsp;VerificationFlags)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i27" class="rowColor">
+<td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setVerificationTime(system.DateTime)">setVerificationTime</a></span>&#8203;(<a href="../../../DateTime.html" title="class in system">DateTime</a>&nbsp;VerificationTime)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i28" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setVerificationTimeIgnored(boolean)">setVerificationTimeIgnored</a></span>&#8203;(boolean&nbsp;VerificationTimeIgnored)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -444,7 +462,7 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <li class="blockList">
 <h4>assemblyFullName</h4>
 <pre>public static final&nbsp;java.lang.String assemblyFullName</pre>
-<div class="block">Fully assembly qualified name: System.Security.Cryptography.X509Certificates, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</div>
+<div class="block">Fully assembly qualified name: System.Security.Cryptography, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../constant-values.html#system.security.cryptography.x509certificates.X509ChainPolicy.assemblyFullName">Constant Field Values</a></dd>
@@ -458,7 +476,7 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <li class="blockList">
 <h4>assemblyShortName</h4>
 <pre>public static final&nbsp;java.lang.String assemblyShortName</pre>
-<div class="block">Assembly name: System.Security.Cryptography.X509Certificates</div>
+<div class="block">Assembly name: System.Security.Cryptography</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../constant-values.html#system.security.cryptography.x509certificates.X509ChainPolicy.assemblyShortName">Constant Field Values</a></dd>
@@ -523,9 +541,10 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <pre>public&nbsp;X509ChainPolicy()
                 throws java.lang.Throwable,
                        <a href="../../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                       <a href="../../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                       <a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                       <a href="../../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
                        <a href="../../../ArgumentException.html" title="class in system">ArgumentException</a>,
+                       <a href="../../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                       <a href="../../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
                        <a href="../../../InvalidTimeZoneException.html" title="class in system">InvalidTimeZoneException</a>,
                        <a href="../../../OverflowException.html" title="class in system">OverflowException</a>,
                        <a href="../../SecurityException.html" title="class in system.security">SecurityException</a></pre>
@@ -533,9 +552,10 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="../../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
 <dd><code><a href="../../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 <dd><code><a href="../../../InvalidTimeZoneException.html" title="class in system">InvalidTimeZoneException</a></code></dd>
 <dd><code><a href="../../../OverflowException.html" title="class in system">OverflowException</a></code></dd>
 <dd><code><a href="../../SecurityException.html" title="class in system.security">SecurityException</a></code></dd>
@@ -680,6 +700,38 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 </dl>
 </li>
 </ul>
+<a id="Clone()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>Clone</h4>
+<pre class="methodSignature">public&nbsp;<a href="X509ChainPolicy.html" title="class in system.security.cryptography.x509certificates">X509ChainPolicy</a>&nbsp;Clone()
+                      throws java.lang.Throwable,
+                             <a href="../../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                             <a href="../../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                             <a href="../../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                             <a href="../../../ArgumentException.html" title="class in system">ArgumentException</a>,
+                             <a href="../../../InvalidTimeZoneException.html" title="class in system">InvalidTimeZoneException</a>,
+                             <a href="../../../OverflowException.html" title="class in system">OverflowException</a>,
+                             <a href="../../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                             <a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                             <a href="../../../FormatException.html" title="class in system">FormatException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../InvalidTimeZoneException.html" title="class in system">InvalidTimeZoneException</a></code></dd>
+<dd><code><a href="../../../OverflowException.html" title="class in system">OverflowException</a></code></dd>
+<dd><code><a href="../../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../FormatException.html" title="class in system">FormatException</a></code></dd>
+</dl>
+</li>
+</ul>
 <a id="Reset()">
 <!--   -->
 </a>
@@ -689,30 +741,28 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <pre class="methodSignature">public&nbsp;void&nbsp;Reset()
            throws java.lang.Throwable,
                   <a href="../../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                  <a href="../../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                  <a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                  <a href="../../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
                   <a href="../../../ArgumentException.html" title="class in system">ArgumentException</a>,
-                  <a href="../../../InvalidTimeZoneException.html" title="class in system">InvalidTimeZoneException</a>,
+                  <a href="../../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                   <a href="../../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                  <a href="../../../InvalidTimeZoneException.html" title="class in system">InvalidTimeZoneException</a>,
                   <a href="../../SecurityException.html" title="class in system.security">SecurityException</a>,
                   <a href="../../../UnauthorizedAccessException.html" title="class in system">UnauthorizedAccessException</a>,
                   <a href="../../../io/IOException.html" title="class in system.io">IOException</a>,
-                  <a href="../../../OverflowException.html" title="class in system">OverflowException</a>,
-                  <a href="../../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></pre>
+                  <a href="../../../NullReferenceException.html" title="class in system">NullReferenceException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="../../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
 <dd><code><a href="../../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../../InvalidTimeZoneException.html" title="class in system">InvalidTimeZoneException</a></code></dd>
+<dd><code><a href="../../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="../../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../InvalidTimeZoneException.html" title="class in system">InvalidTimeZoneException</a></code></dd>
 <dd><code><a href="../../SecurityException.html" title="class in system.security">SecurityException</a></code></dd>
 <dd><code><a href="../../../UnauthorizedAccessException.html" title="class in system">UnauthorizedAccessException</a></code></dd>
 <dd><code><a href="../../../io/IOException.html" title="class in system.io">IOException</a></code></dd>
-<dd><code><a href="../../../OverflowException.html" title="class in system">OverflowException</a></code></dd>
-<dd><code><a href="../../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -738,6 +788,34 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <h4>setDisableCertificateDownloads</h4>
 <pre class="methodSignature">public&nbsp;void&nbsp;setDisableCertificateDownloads&#8203;(boolean&nbsp;DisableCertificateDownloads)
                                     throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a id="getVerificationTimeIgnored()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getVerificationTimeIgnored</h4>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;getVerificationTimeIgnored()
+                                   throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a id="setVerificationTimeIgnored(boolean)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setVerificationTimeIgnored</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;setVerificationTimeIgnored&#8203;(boolean&nbsp;VerificationTimeIgnored)
+                                throws java.lang.Throwable</pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
@@ -850,19 +928,25 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <h4>setTrustMode</h4>
 <pre class="methodSignature">public&nbsp;void&nbsp;setTrustMode&#8203;(<a href="X509ChainTrustMode.html" title="class in system.security.cryptography.x509certificates">X509ChainTrustMode</a>&nbsp;TrustMode)
                   throws java.lang.Throwable,
-                         <a href="../../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                         <a href="../../../ArgumentException.html" title="class in system">ArgumentException</a>,
                          <a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                         <a href="../../../ArgumentException.html" title="class in system">ArgumentException</a>,
+                         <a href="../../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                          <a href="../../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                         <a href="../../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></pre>
+                         <a href="../../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                         <a href="../../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                         <a href="../../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                         <a href="../../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 <dd><code><a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="../../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
 <dd><code><a href="../../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -888,19 +972,25 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <h4>setRevocationFlag</h4>
 <pre class="methodSignature">public&nbsp;void&nbsp;setRevocationFlag&#8203;(<a href="X509RevocationFlag.html" title="class in system.security.cryptography.x509certificates">X509RevocationFlag</a>&nbsp;RevocationFlag)
                        throws java.lang.Throwable,
-                              <a href="../../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                              <a href="../../../ArgumentException.html" title="class in system">ArgumentException</a>,
                               <a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                              <a href="../../../ArgumentException.html" title="class in system">ArgumentException</a>,
+                              <a href="../../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                               <a href="../../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                              <a href="../../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></pre>
+                              <a href="../../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                              <a href="../../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                              <a href="../../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                              <a href="../../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 <dd><code><a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="../../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
 <dd><code><a href="../../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -926,19 +1016,25 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <h4>setRevocationMode</h4>
 <pre class="methodSignature">public&nbsp;void&nbsp;setRevocationMode&#8203;(<a href="X509RevocationMode.html" title="class in system.security.cryptography.x509certificates">X509RevocationMode</a>&nbsp;RevocationMode)
                        throws java.lang.Throwable,
-                              <a href="../../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                              <a href="../../../ArgumentException.html" title="class in system">ArgumentException</a>,
                               <a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                              <a href="../../../ArgumentException.html" title="class in system">ArgumentException</a>,
+                              <a href="../../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                               <a href="../../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                              <a href="../../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></pre>
+                              <a href="../../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                              <a href="../../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                              <a href="../../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                              <a href="../../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 <dd><code><a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="../../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
 <dd><code><a href="../../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -964,19 +1060,25 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <h4>setVerificationFlags</h4>
 <pre class="methodSignature">public&nbsp;void&nbsp;setVerificationFlags&#8203;(<a href="X509VerificationFlags.html" title="class in system.security.cryptography.x509certificates">X509VerificationFlags</a>&nbsp;VerificationFlags)
                           throws java.lang.Throwable,
-                                 <a href="../../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                                 <a href="../../../ArgumentException.html" title="class in system">ArgumentException</a>,
                                  <a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                 <a href="../../../ArgumentException.html" title="class in system">ArgumentException</a>,
+                                 <a href="../../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                                  <a href="../../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                                 <a href="../../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></pre>
+                                 <a href="../../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                 <a href="../../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                                 <a href="../../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                 <a href="../../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 <dd><code><a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="../../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
 <dd><code><a href="../../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 </dl>
 </li>
 </ul>

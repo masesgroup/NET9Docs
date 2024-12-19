@@ -19,6 +19,12 @@
 <meta name="keywords" content="cast()">
 <meta name="keywords" content="getUseDefaultCursors()">
 <meta name="keywords" content="setUseDefaultCursors()">
+<meta name="keywords" content="getUseDefaultDragImage()">
+<meta name="keywords" content="setUseDefaultDragImage()">
+<meta name="keywords" content="getDragImage()">
+<meta name="keywords" content="setDragImage()">
+<meta name="keywords" content="getCursorOffset()">
+<meta name="keywords" content="setCursorOffset()">
 <meta name="keywords" content="getEffect()">
 <link rel="stylesheet" type="text/css" href="../../../stylesheet.css" title="Style">
 <script type="text/javascript" src="../../../script.js"></script>
@@ -33,7 +39,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10};
+var data = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -142,7 +148,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <hr>
 <pre>public class <span class="typeNameLabel">GiveFeedbackEventArgs</span>
 extends <a href="../../EventArgs.html" title="class in system">EventArgs</a></pre>
-<div class="block">The base .NET class managing System.Windows.Forms.GiveFeedbackEventArgs, System.Windows.Forms, Version=6.0.2.0, Culture=neutral, PublicKeyToken=b77a5c561934e089.
+<div class="block">The base .NET class managing System.Windows.Forms.GiveFeedbackEventArgs, System.Windows.Forms, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089.
  <p>
  
  .NET documentation at <a href="https://docs.microsoft.com/en-us/dotnet/api/System.Windows.Forms.GiveFeedbackEventArgs" target="_top">https://docs.microsoft.com/en-us/dotnet/api/System.Windows.Forms.GiveFeedbackEventArgs</a>
@@ -177,7 +183,7 @@ extends <a href="../../EventArgs.html" title="class in system">EventArgs</a></pr
 <td class="colFirst"><code>static java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#assemblyFullName">assemblyFullName</a></span></code></th>
 <td class="colLast">
-<div class="block">Fully assembly qualified name: System.Windows.Forms, Version=6.0.2.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</div>
+<div class="block">Fully assembly qualified name: System.Windows.Forms, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</div>
 </td>
 </tr>
 <tr class="rowColor">
@@ -240,6 +246,14 @@ extends <a href="../../EventArgs.html" title="class in system">EventArgs</a></pr
                      boolean&nbsp;useDefaultCursors)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
+<tr class="rowColor">
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(system.windows.forms.DragDropEffects,boolean,system.drawing.Bitmap,system.drawing.Point,boolean)">GiveFeedbackEventArgs</a></span>&#8203;(<a href="DragDropEffects.html" title="class in system.windows.forms">DragDropEffects</a>&nbsp;effect,
+                     boolean&nbsp;useDefaultCursors,
+                     <a href="../../drawing/Bitmap.html" title="class in system.drawing">Bitmap</a>&nbsp;dragImage,
+                     <a href="../../drawing/Point.html" title="class in system.drawing">Point</a>&nbsp;cursorOffset,
+                     boolean&nbsp;useDefaultDragImage)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
 </table>
 </li>
 </ul>
@@ -266,58 +280,88 @@ extends <a href="../../EventArgs.html" title="class in system">EventArgs</a></pr
 </td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code><a href="../../drawing/Point.html" title="class in system.drawing">Point</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getCursorOffset()">getCursorOffset</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code><a href="../../drawing/Bitmap.html" title="class in system.drawing">Bitmap</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getDragImage()">getDragImage</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="DragDropEffects.html" title="class in system.windows.forms">DragDropEffects</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getEffect()">getEffect</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getJCOAssemblyName()">getJCOAssemblyName</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the reflected Assembly name</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getJCOClassName()">getJCOClassName</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the reflected Class name</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getJCOInstance()">getJCOInstance</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the instantiated class</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getJCOObjectName()">getJCOObjectName</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the reflected Class name used to build the object</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="https://www.jcobridge.com/api-java_2.5.21/org/mases/jcobridge/JCType.html?is-external=true" title="class or interface in org.mases.jcobridge" class="externalLink">JCType</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getJCOType()">getJCOType</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the instantiated class Type</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getUseDefaultCursors()">getUseDefaultCursors</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i10" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getUseDefaultDragImage()">getUseDefaultDragImage</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i11" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setCursorOffset(system.drawing.Point)">setCursorOffset</a></span>&#8203;(<a href="../../drawing/Point.html" title="class in system.drawing">Point</a>&nbsp;CursorOffset)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i12" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setDragImage(system.drawing.Bitmap)">setDragImage</a></span>&#8203;(<a href="../../drawing/Bitmap.html" title="class in system.drawing">Bitmap</a>&nbsp;DragImage)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setJCOInstance(org.mases.jcobridge.JCObject)">setJCOInstance</a></span>&#8203;(<a href="https://www.jcobridge.com/api-java_2.5.21/org/mases/jcobridge/JCObject.html?is-external=true" title="class or interface in org.mases.jcobridge" class="externalLink">JCObject</a>&nbsp;instance)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setUseDefaultCursors(boolean)">setUseDefaultCursors</a></span>&#8203;(boolean&nbsp;UseDefaultCursors)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i15" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setUseDefaultDragImage(boolean)">setUseDefaultDragImage</a></span>&#8203;(boolean&nbsp;UseDefaultDragImage)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -358,7 +402,7 @@ extends <a href="../../EventArgs.html" title="class in system">EventArgs</a></pr
 <li class="blockList">
 <h4>assemblyFullName</h4>
 <pre>public static final&nbsp;java.lang.String assemblyFullName</pre>
-<div class="block">Fully assembly qualified name: System.Windows.Forms, Version=6.0.2.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</div>
+<div class="block">Fully assembly qualified name: System.Windows.Forms, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../constant-values.html#system.windows.forms.GiveFeedbackEventArgs.assemblyFullName">Constant Field Values</a></dd>
@@ -435,6 +479,24 @@ extends <a href="../../EventArgs.html" title="class in system">EventArgs</a></pr
 <li class="blockList">
 <h4>GiveFeedbackEventArgs</h4>
 <pre>public&nbsp;GiveFeedbackEventArgs()
+                      throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a id="&lt;init&gt;(system.windows.forms.DragDropEffects,boolean,system.drawing.Bitmap,system.drawing.Point,boolean)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>GiveFeedbackEventArgs</h4>
+<pre>public&nbsp;GiveFeedbackEventArgs&#8203;(<a href="DragDropEffects.html" title="class in system.windows.forms">DragDropEffects</a>&nbsp;effect,
+                             boolean&nbsp;useDefaultCursors,
+                             <a href="../../drawing/Bitmap.html" title="class in system.drawing">Bitmap</a>&nbsp;dragImage,
+                             <a href="../../drawing/Point.html" title="class in system.drawing">Point</a>&nbsp;cursorOffset,
+                             boolean&nbsp;useDefaultDragImage)
                       throws java.lang.Throwable</pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -617,6 +679,90 @@ extends <a href="../../EventArgs.html" title="class in system">EventArgs</a></pr
 <h4>setUseDefaultCursors</h4>
 <pre class="methodSignature">public&nbsp;void&nbsp;setUseDefaultCursors&#8203;(boolean&nbsp;UseDefaultCursors)
                           throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a id="getUseDefaultDragImage()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getUseDefaultDragImage</h4>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;getUseDefaultDragImage()
+                               throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a id="setUseDefaultDragImage(boolean)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setUseDefaultDragImage</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;setUseDefaultDragImage&#8203;(boolean&nbsp;UseDefaultDragImage)
+                            throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a id="getDragImage()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getDragImage</h4>
+<pre class="methodSignature">public&nbsp;<a href="../../drawing/Bitmap.html" title="class in system.drawing">Bitmap</a>&nbsp;getDragImage()
+                    throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a id="setDragImage(system.drawing.Bitmap)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setDragImage</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;setDragImage&#8203;(<a href="../../drawing/Bitmap.html" title="class in system.drawing">Bitmap</a>&nbsp;DragImage)
+                  throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a id="getCursorOffset()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getCursorOffset</h4>
+<pre class="methodSignature">public&nbsp;<a href="../../drawing/Point.html" title="class in system.drawing">Point</a>&nbsp;getCursorOffset()
+                      throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a id="setCursorOffset(system.drawing.Point)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setCursorOffset</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;setCursorOffset&#8203;(<a href="../../drawing/Point.html" title="class in system.drawing">Point</a>&nbsp;CursorOffset)
+                     throws java.lang.Throwable</pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>

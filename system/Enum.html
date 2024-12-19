@@ -22,6 +22,7 @@
 <meta name="keywords" content="TryParse()">
 <meta name="keywords" content="CompareTo()">
 <meta name="keywords" content="GetValues()">
+<meta name="keywords" content="GetValuesAsUnderlyingType()">
 <meta name="keywords" content="Parse()">
 <meta name="keywords" content="ToObject()">
 <meta name="keywords" content="Format()">
@@ -58,7 +59,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":9,"i1":10,"i2":9,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":9,"i9":9,"i10":10,"i11":9,"i12":9,"i13":10,"i14":9,"i15":9,"i16":9,"i17":10,"i18":9,"i19":9,"i20":9,"i21":9,"i22":9,"i23":9,"i24":9,"i25":9,"i26":9,"i27":10,"i28":10,"i29":10,"i30":9,"i31":9};
+var data = {"i0":9,"i1":10,"i2":9,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":9,"i9":9,"i10":10,"i11":9,"i12":9,"i13":9,"i14":10,"i15":9,"i16":9,"i17":9,"i18":10,"i19":9,"i20":9,"i21":9,"i22":9,"i23":9,"i24":9,"i25":9,"i26":9,"i27":9,"i28":10,"i29":10,"i30":10,"i31":9,"i32":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -167,7 +168,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <hr>
 <pre>public class <span class="typeNameLabel">Enum</span>
 extends <a href="ValueType.html" title="class in system">ValueType</a></pre>
-<div class="block">The base .NET class managing System.Enum, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e.
+<div class="block">The base .NET class managing System.Enum, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e.
  <p>
  
  .NET documentation at <a href="https://docs.microsoft.com/en-us/dotnet/api/System.Enum" target="_top">https://docs.microsoft.com/en-us/dotnet/api/System.Enum</a>
@@ -202,7 +203,7 @@ extends <a href="ValueType.html" title="class in system">ValueType</a></pre>
 <td class="colFirst"><code>static java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#assemblyFullName">assemblyFullName</a></span></code></th>
 <td class="colLast">
-<div class="block">Fully assembly qualified name: System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e</div>
+<div class="block">Fully assembly qualified name: System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e</div>
 </td>
 </tr>
 <tr class="rowColor">
@@ -359,105 +360,110 @@ extends <a href="ValueType.html" title="class in system">ValueType</a></pre>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i13" class="rowColor">
+<td class="colFirst"><code>static <a href="Array.html" title="class in system">Array</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#GetValuesAsUnderlyingType(org.mases.jcobridge.netreflection.NetType)">GetValuesAsUnderlyingType</a></span>&#8203;(<a href="../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;enumType)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#HasFlag(system.Enum)">HasFlag</a></span>&#8203;(<a href="Enum.html" title="class in system">Enum</a>&nbsp;flag)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>static boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#IsDefined(org.mases.jcobridge.netreflection.NetType,org.mases.jcobridge.netreflection.NetObject)">IsDefined</a></span>&#8203;(<a href="../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;enumType,
          <a href="../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;value)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>static <a href="../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Parse(org.mases.jcobridge.netreflection.NetType,java.lang.String)">Parse</a></span>&#8203;(<a href="../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;enumType,
      java.lang.String&nbsp;value)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>static <a href="../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Parse(org.mases.jcobridge.netreflection.NetType,java.lang.String,boolean)">Parse</a></span>&#8203;(<a href="../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;enumType,
      java.lang.String&nbsp;value,
      boolean&nbsp;ignoreCase)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setJCOInstance(org.mases.jcobridge.JCObject)">setJCOInstance</a></span>&#8203;(<a href="https://www.jcobridge.com/api-java_2.5.21/org/mases/jcobridge/JCObject.html?is-external=true" title="class or interface in org.mases.jcobridge" class="externalLink">JCObject</a>&nbsp;instance)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>static <a href="../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ToObject(org.mases.jcobridge.netreflection.NetType,byte)">ToObject</a></span>&#8203;(<a href="../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;enumType,
         byte&nbsp;value)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code>static <a href="../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ToObject(org.mases.jcobridge.netreflection.NetType,int)">ToObject</a></span>&#8203;(<a href="../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;enumType,
         int&nbsp;value)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code>static <a href="../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ToObject(org.mases.jcobridge.netreflection.NetType,long)">ToObject</a></span>&#8203;(<a href="../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;enumType,
         long&nbsp;value)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i22" class="altColor">
 <td class="colFirst"><code>static <a href="../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ToObject(org.mases.jcobridge.netreflection.NetType,short)">ToObject</a></span>&#8203;(<a href="../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;enumType,
         short&nbsp;value)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code>static <a href="../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ToObject(org.mases.jcobridge.netreflection.NetType,org.mases.jcobridge.netreflection.NetObject)">ToObject</a></span>&#8203;(<a href="../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;enumType,
         <a href="../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;value)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code>static <a href="../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ToObject(org.mases.jcobridge.netreflection.NetType,system.SByte)">ToObject</a></span>&#8203;(<a href="../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;enumType,
         <a href="SByte.html" title="class in system">SByte</a>&nbsp;value)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i24" class="altColor">
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code>static <a href="../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ToObject(org.mases.jcobridge.netreflection.NetType,system.UInt16)">ToObject</a></span>&#8203;(<a href="../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;enumType,
         <a href="UInt16.html" title="class in system">UInt16</a>&nbsp;value)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i25" class="rowColor">
+<tr id="i26" class="altColor">
 <td class="colFirst"><code>static <a href="../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ToObject(org.mases.jcobridge.netreflection.NetType,system.UInt32)">ToObject</a></span>&#8203;(<a href="../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;enumType,
         <a href="UInt32.html" title="class in system">UInt32</a>&nbsp;value)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i26" class="altColor">
+<tr id="i27" class="rowColor">
 <td class="colFirst"><code>static <a href="../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ToObject(org.mases.jcobridge.netreflection.NetType,system.UInt64)">ToObject</a></span>&#8203;(<a href="../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;enumType,
         <a href="UInt64.html" title="class in system">UInt64</a>&nbsp;value)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i27" class="rowColor">
+<tr id="i28" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ToString(java.lang.String)">ToString</a></span>&#8203;(java.lang.String&nbsp;format)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i28" class="altColor">
+<tr id="i29" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ToString(java.lang.String,system.IFormatProvider)">ToString</a></span>&#8203;(java.lang.String&nbsp;format,
         <a href="IFormatProvider.html" title="interface in system">IFormatProvider</a>&nbsp;provider)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i29" class="rowColor">
+<tr id="i30" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ToString(system.IFormatProvider)">ToString</a></span>&#8203;(<a href="IFormatProvider.html" title="interface in system">IFormatProvider</a>&nbsp;provider)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i30" class="altColor">
+<tr id="i31" class="rowColor">
 <td class="colFirst"><code>static boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#TryParse(org.mases.jcobridge.netreflection.NetType,java.lang.String,boolean,org.mases.jcobridge.netreflection.JCORefOut)">TryParse</a></span>&#8203;(<a href="../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;enumType,
         java.lang.String&nbsp;value,
@@ -465,7 +471,7 @@ extends <a href="ValueType.html" title="class in system">ValueType</a></pre>
         <a href="../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&gt;&nbsp;result)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i31" class="rowColor">
+<tr id="i32" class="altColor">
 <td class="colFirst"><code>static boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#TryParse(org.mases.jcobridge.netreflection.NetType,java.lang.String,org.mases.jcobridge.netreflection.JCORefOut)">TryParse</a></span>&#8203;(<a href="../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;enumType,
         java.lang.String&nbsp;value,
@@ -510,7 +516,7 @@ extends <a href="ValueType.html" title="class in system">ValueType</a></pre>
 <li class="blockList">
 <h4>assemblyFullName</h4>
 <pre>public static final&nbsp;java.lang.String assemblyFullName</pre>
-<div class="block">Fully assembly qualified name: System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e</div>
+<div class="block">Fully assembly qualified name: System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../constant-values.html#system.Enum.assemblyFullName">Constant Field Values</a></dd>
@@ -742,27 +748,29 @@ extends <a href="ValueType.html" title="class in system">ValueType</a></pre>
                 throws java.lang.Throwable,
                        <a href="ArgumentException.html" title="class in system">ArgumentException</a>,
                        <a href="ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                       <a href="ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                       <a href="InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                        <a href="PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                       <a href="ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
-                       <a href="IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
                        <a href="NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                       <a href="globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
-                       <a href="ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></pre>
+                       <a href="ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                       <a href="InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                       <a href="RankException.html" title="class in system">RankException</a>,
+                       <a href="ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                       <a href="ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                       <a href="IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                       <a href="FormatException.html" title="class in system">FormatException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 <dd><code><a href="ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
-<dd><code><a href="IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 <dd><code><a href="NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
 <dd><code><a href="ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="FormatException.html" title="class in system">FormatException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -777,27 +785,29 @@ extends <a href="ValueType.html" title="class in system">ValueType</a></pre>
                          throws java.lang.Throwable,
                                 <a href="ArgumentException.html" title="class in system">ArgumentException</a>,
                                 <a href="ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                                <a href="ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                                <a href="InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                                 <a href="PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                                <a href="ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
-                                <a href="IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
                                 <a href="NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                                <a href="globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
-                                <a href="ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></pre>
+                                <a href="ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                <a href="InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                <a href="RankException.html" title="class in system">RankException</a>,
+                                <a href="ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                                <a href="ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                <a href="IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                <a href="FormatException.html" title="class in system">FormatException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 <dd><code><a href="ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
-<dd><code><a href="IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 <dd><code><a href="NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
 <dd><code><a href="ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="FormatException.html" title="class in system">FormatException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -812,30 +822,28 @@ extends <a href="ValueType.html" title="class in system">ValueType</a></pre>
                                boolean&nbsp;ignoreCase,
                                <a href="../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&gt;&nbsp;result)
                         throws java.lang.Throwable,
-                               <a href="ArgumentException.html" title="class in system">ArgumentException</a>,
-                               <a href="ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                               <a href="ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                               <a href="InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                               <a href="PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                               <a href="ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
-                               <a href="IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
                                <a href="NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                               <a href="ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
-                               <a href="RankException.html" title="class in system">RankException</a>,
+                               <a href="ArgumentException.html" title="class in system">ArgumentException</a>,
+                               <a href="ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                               <a href="IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                               <a href="PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                               <a href="ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                               <a href="InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                               <a href="globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                               <a href="OverflowException.html" title="class in system">OverflowException</a>,
                                <a href="InvalidCastException.html" title="class in system">InvalidCastException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
-<dd><code><a href="IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 <dd><code><a href="NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
-<dd><code><a href="RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="OverflowException.html" title="class in system">OverflowException</a></code></dd>
 <dd><code><a href="InvalidCastException.html" title="class in system">InvalidCastException</a></code></dd>
 </dl>
 </li>
@@ -850,30 +858,28 @@ extends <a href="ValueType.html" title="class in system">ValueType</a></pre>
                                java.lang.String&nbsp;value,
                                <a href="../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&gt;&nbsp;result)
                         throws java.lang.Throwable,
+                               <a href="ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                                <a href="ArgumentException.html" title="class in system">ArgumentException</a>,
-                               <a href="ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
                                <a href="IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
                                <a href="PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                               <a href="NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                               <a href="ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                               <a href="ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                               <a href="ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
                                <a href="InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                               <a href="RankException.html" title="class in system">RankException</a>,
-                               <a href="ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                               <a href="NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                               <a href="NullReferenceException.html" title="class in system">NullReferenceException</a>,
+                               <a href="OverflowException.html" title="class in system">OverflowException</a>,
                                <a href="InvalidCastException.html" title="class in system">InvalidCastException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 <dd><code><a href="ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 <dd><code><a href="IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 <dd><code><a href="PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 <dd><code><a href="InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="RankException.html" title="class in system">RankException</a></code></dd>
-<dd><code><a href="ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
+<dd><code><a href="OverflowException.html" title="class in system">OverflowException</a></code></dd>
 <dd><code><a href="InvalidCastException.html" title="class in system">InvalidCastException</a></code></dd>
 </dl>
 </li>
@@ -892,8 +898,8 @@ extends <a href="ValueType.html" title="class in system">ValueType</a></pre>
                      <a href="InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                      <a href="PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                      <a href="ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
-                     <a href="IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
                      <a href="NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                     <a href="IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
                      <a href="RankException.html" title="class in system">RankException</a>,
                      <a href="globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
                      <a href="ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></pre>
@@ -906,8 +912,8 @@ extends <a href="ValueType.html" title="class in system">ValueType</a></pre>
 <dd><code><a href="InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
-<dd><code><a href="IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 <dd><code><a href="NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 <dd><code><a href="RankException.html" title="class in system">RankException</a></code></dd>
 <dd><code><a href="globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
 <dd><code><a href="ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
@@ -924,27 +930,57 @@ extends <a href="ValueType.html" title="class in system">ValueType</a></pre>
                        throws java.lang.Throwable,
                               <a href="ArgumentException.html" title="class in system">ArgumentException</a>,
                               <a href="ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                              <a href="ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                              <a href="InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                               <a href="PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                              <a href="ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
-                              <a href="IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
                               <a href="NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                              <a href="globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
-                              <a href="ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></pre>
+                              <a href="ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                              <a href="InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                              <a href="RankException.html" title="class in system">RankException</a>,
+                              <a href="ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                              <a href="ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 <dd><code><a href="ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
-<dd><code><a href="IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 <dd><code><a href="NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
 <dd><code><a href="ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="GetValuesAsUnderlyingType(org.mases.jcobridge.netreflection.NetType)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>GetValuesAsUnderlyingType</h4>
+<pre class="methodSignature">public static&nbsp;<a href="Array.html" title="class in system">Array</a>&nbsp;GetValuesAsUnderlyingType&#8203;(<a href="../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;enumType)
+                                       throws java.lang.Throwable,
+                                              <a href="ArgumentException.html" title="class in system">ArgumentException</a>,
+                                              <a href="ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                              <a href="PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                              <a href="NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                              <a href="ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                              <a href="InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                              <a href="RankException.html" title="class in system">RankException</a>,
+                                              <a href="ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                                              <a href="ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -960,28 +996,30 @@ extends <a href="ValueType.html" title="class in system">ValueType</a></pre>
                        throws java.lang.Throwable,
                               <a href="ArgumentException.html" title="class in system">ArgumentException</a>,
                               <a href="ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                              <a href="ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                               <a href="InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                               <a href="PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                               <a href="ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
-                              <a href="IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
                               <a href="NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                              <a href="ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                               <a href="ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
                               <a href="RankException.html" title="class in system">RankException</a>,
+                              <a href="IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                              <a href="OverflowException.html" title="class in system">OverflowException</a>,
                               <a href="InvalidCastException.html" title="class in system">InvalidCastException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 <dd><code><a href="ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 <dd><code><a href="InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
-<dd><code><a href="IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 <dd><code><a href="NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 <dd><code><a href="ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
 <dd><code><a href="RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="OverflowException.html" title="class in system">OverflowException</a></code></dd>
 <dd><code><a href="InvalidCastException.html" title="class in system">InvalidCastException</a></code></dd>
 </dl>
 </li>
@@ -997,28 +1035,32 @@ extends <a href="ValueType.html" title="class in system">ValueType</a></pre>
                        throws java.lang.Throwable,
                               <a href="ArgumentException.html" title="class in system">ArgumentException</a>,
                               <a href="ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                              <a href="IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
                               <a href="PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                               <a href="NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                              <a href="ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                               <a href="ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
                               <a href="InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                               <a href="RankException.html" title="class in system">RankException</a>,
                               <a href="ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                              <a href="ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                              <a href="IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                              <a href="NullReferenceException.html" title="class in system">NullReferenceException</a>,
+                              <a href="OverflowException.html" title="class in system">OverflowException</a>,
                               <a href="InvalidCastException.html" title="class in system">InvalidCastException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 <dd><code><a href="ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 <dd><code><a href="PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 <dd><code><a href="ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
 <dd><code><a href="InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="RankException.html" title="class in system">RankException</a></code></dd>
 <dd><code><a href="ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
+<dd><code><a href="OverflowException.html" title="class in system">OverflowException</a></code></dd>
 <dd><code><a href="InvalidCastException.html" title="class in system">InvalidCastException</a></code></dd>
 </dl>
 </li>
@@ -1033,28 +1075,22 @@ extends <a href="ValueType.html" title="class in system">ValueType</a></pre>
                                  byte&nbsp;value)
                           throws java.lang.Throwable,
                                  <a href="ArgumentException.html" title="class in system">ArgumentException</a>,
+                                 <a href="NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                 <a href="InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                                  <a href="ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
                                  <a href="ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                                 <a href="InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                                  <a href="PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                                 <a href="ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
-                                 <a href="IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
-                                 <a href="NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                                 <a href="ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
-                                 <a href="RankException.html" title="class in system">RankException</a></pre>
+                                 <a href="NullReferenceException.html" title="class in system">NullReferenceException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 <dd><code><a href="ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
-<dd><code><a href="IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
-<dd><code><a href="NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
-<dd><code><a href="RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1068,28 +1104,22 @@ extends <a href="ValueType.html" title="class in system">ValueType</a></pre>
                                  short&nbsp;value)
                           throws java.lang.Throwable,
                                  <a href="ArgumentException.html" title="class in system">ArgumentException</a>,
+                                 <a href="NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                 <a href="InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                                  <a href="ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
                                  <a href="ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                                 <a href="InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                                  <a href="PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                                 <a href="ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
-                                 <a href="IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
-                                 <a href="NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                                 <a href="ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
-                                 <a href="RankException.html" title="class in system">RankException</a></pre>
+                                 <a href="NullReferenceException.html" title="class in system">NullReferenceException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 <dd><code><a href="ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
-<dd><code><a href="IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
-<dd><code><a href="NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
-<dd><code><a href="RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1103,28 +1133,22 @@ extends <a href="ValueType.html" title="class in system">ValueType</a></pre>
                                  int&nbsp;value)
                           throws java.lang.Throwable,
                                  <a href="ArgumentException.html" title="class in system">ArgumentException</a>,
+                                 <a href="NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                 <a href="InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                                  <a href="ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
                                  <a href="ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                                 <a href="InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                                  <a href="PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                                 <a href="ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
-                                 <a href="IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
-                                 <a href="NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                                 <a href="ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
-                                 <a href="RankException.html" title="class in system">RankException</a></pre>
+                                 <a href="NullReferenceException.html" title="class in system">NullReferenceException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 <dd><code><a href="ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
-<dd><code><a href="IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
-<dd><code><a href="NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
-<dd><code><a href="RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1138,28 +1162,22 @@ extends <a href="ValueType.html" title="class in system">ValueType</a></pre>
                                  long&nbsp;value)
                           throws java.lang.Throwable,
                                  <a href="ArgumentException.html" title="class in system">ArgumentException</a>,
+                                 <a href="NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                 <a href="InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                                  <a href="ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
                                  <a href="ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                                 <a href="InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                                  <a href="PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                                 <a href="ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
-                                 <a href="IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
-                                 <a href="NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                                 <a href="ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
-                                 <a href="RankException.html" title="class in system">RankException</a></pre>
+                                 <a href="NullReferenceException.html" title="class in system">NullReferenceException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 <dd><code><a href="ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
-<dd><code><a href="IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
-<dd><code><a href="NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
-<dd><code><a href="RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1173,28 +1191,22 @@ extends <a href="ValueType.html" title="class in system">ValueType</a></pre>
                                  <a href="SByte.html" title="class in system">SByte</a>&nbsp;value)
                           throws java.lang.Throwable,
                                  <a href="ArgumentException.html" title="class in system">ArgumentException</a>,
+                                 <a href="NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                 <a href="InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                                  <a href="ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
                                  <a href="ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                                 <a href="InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                                  <a href="PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                                 <a href="ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
-                                 <a href="IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
-                                 <a href="NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                                 <a href="ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
-                                 <a href="RankException.html" title="class in system">RankException</a></pre>
+                                 <a href="NullReferenceException.html" title="class in system">NullReferenceException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 <dd><code><a href="ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
-<dd><code><a href="IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
-<dd><code><a href="NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
-<dd><code><a href="RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1209,27 +1221,25 @@ extends <a href="ValueType.html" title="class in system">ValueType</a></pre>
                           throws java.lang.Throwable,
                                  <a href="ArgumentException.html" title="class in system">ArgumentException</a>,
                                  <a href="ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                                 <a href="ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                                 <a href="InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                                  <a href="PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                                 <a href="ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
-                                 <a href="IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
                                  <a href="NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                                 <a href="globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
-                                 <a href="ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></pre>
+                                 <a href="ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                 <a href="InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                 <a href="RankException.html" title="class in system">RankException</a>,
+                                 <a href="ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                                 <a href="ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 <dd><code><a href="ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
-<dd><code><a href="IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 <dd><code><a href="NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
 <dd><code><a href="ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1243,28 +1253,22 @@ extends <a href="ValueType.html" title="class in system">ValueType</a></pre>
                                  <a href="UInt16.html" title="class in system">UInt16</a>&nbsp;value)
                           throws java.lang.Throwable,
                                  <a href="ArgumentException.html" title="class in system">ArgumentException</a>,
+                                 <a href="NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                 <a href="InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                                  <a href="ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
                                  <a href="ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                                 <a href="InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                                  <a href="PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                                 <a href="ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
-                                 <a href="IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
-                                 <a href="NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                                 <a href="ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
-                                 <a href="RankException.html" title="class in system">RankException</a></pre>
+                                 <a href="NullReferenceException.html" title="class in system">NullReferenceException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 <dd><code><a href="ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
-<dd><code><a href="IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
-<dd><code><a href="NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
-<dd><code><a href="RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1278,28 +1282,22 @@ extends <a href="ValueType.html" title="class in system">ValueType</a></pre>
                                  <a href="UInt32.html" title="class in system">UInt32</a>&nbsp;value)
                           throws java.lang.Throwable,
                                  <a href="ArgumentException.html" title="class in system">ArgumentException</a>,
+                                 <a href="NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                 <a href="InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                                  <a href="ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
                                  <a href="ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                                 <a href="InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                                  <a href="PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                                 <a href="ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
-                                 <a href="IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
-                                 <a href="NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                                 <a href="ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
-                                 <a href="RankException.html" title="class in system">RankException</a></pre>
+                                 <a href="NullReferenceException.html" title="class in system">NullReferenceException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 <dd><code><a href="ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
-<dd><code><a href="IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
-<dd><code><a href="NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
-<dd><code><a href="RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1313,28 +1311,22 @@ extends <a href="ValueType.html" title="class in system">ValueType</a></pre>
                                  <a href="UInt64.html" title="class in system">UInt64</a>&nbsp;value)
                           throws java.lang.Throwable,
                                  <a href="ArgumentException.html" title="class in system">ArgumentException</a>,
+                                 <a href="NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                 <a href="InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                                  <a href="ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
                                  <a href="ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                                 <a href="InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                                  <a href="PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                                 <a href="ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
-                                 <a href="IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
-                                 <a href="NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                                 <a href="ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
-                                 <a href="RankException.html" title="class in system">RankException</a></pre>
+                                 <a href="NullReferenceException.html" title="class in system">NullReferenceException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 <dd><code><a href="ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
-<dd><code><a href="IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
-<dd><code><a href="NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
-<dd><code><a href="RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1350,29 +1342,31 @@ extends <a href="ValueType.html" title="class in system">ValueType</a></pre>
                                throws java.lang.Throwable,
                                       <a href="ArgumentException.html" title="class in system">ArgumentException</a>,
                                       <a href="ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                                      <a href="ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                                      <a href="InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                                       <a href="PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                                      <a href="ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
-                                      <a href="IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
                                       <a href="NotSupportedException.html" title="class in system">NotSupportedException</a>,
                                       <a href="ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                      <a href="InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                                       <a href="RankException.html" title="class in system">RankException</a>,
-                                      <a href="FormatException.html" title="class in system">FormatException</a></pre>
+                                      <a href="ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                                      <a href="ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                      <a href="IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                      <a href="FormatException.html" title="class in system">FormatException</a>,
+                                      <a href="OverflowException.html" title="class in system">OverflowException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 <dd><code><a href="ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
-<dd><code><a href="IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 <dd><code><a href="NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
 <dd><code><a href="ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 <dd><code><a href="FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="OverflowException.html" title="class in system">OverflowException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1387,27 +1381,27 @@ extends <a href="ValueType.html" title="class in system">ValueType</a></pre>
                                 throws java.lang.Throwable,
                                        <a href="ArgumentException.html" title="class in system">ArgumentException</a>,
                                        <a href="ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                                       <a href="ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                                       <a href="InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                                        <a href="PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                                       <a href="ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
-                                       <a href="IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
                                        <a href="NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                                       <a href="globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
-                                       <a href="ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></pre>
+                                       <a href="ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                       <a href="InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                       <a href="RankException.html" title="class in system">RankException</a>,
+                                       <a href="ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                                       <a href="ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                       <a href="IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 <dd><code><a href="ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
-<dd><code><a href="IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 <dd><code><a href="NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
 <dd><code><a href="ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1435,26 +1429,26 @@ extends <a href="ValueType.html" title="class in system">ValueType</a></pre>
                                  <a href="IFormatProvider.html" title="interface in system">IFormatProvider</a>&nbsp;provider)
                           throws java.lang.Throwable,
                                  <a href="ArgumentException.html" title="class in system">ArgumentException</a>,
-                                 <a href="PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                                  <a href="NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                                 <a href="ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                                  <a href="InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                                  <a href="ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
                                  <a href="IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
-                                 <a href="FormatException.html" title="class in system">FormatException</a>,
-                                 <a href="ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></pre>
+                                 <a href="PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                 <a href="ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                 <a href="OverflowException.html" title="class in system">OverflowException</a>,
+                                 <a href="FormatException.html" title="class in system">FormatException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 <dd><code><a href="InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 <dd><code><a href="IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="OverflowException.html" title="class in system">OverflowException</a></code></dd>
 <dd><code><a href="FormatException.html" title="class in system">FormatException</a></code></dd>
-<dd><code><a href="ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1470,12 +1464,13 @@ extends <a href="ValueType.html" title="class in system">ValueType</a></pre>
                                  <a href="ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
                                  <a href="PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                                  <a href="NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                                 <a href="ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                                  <a href="ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
                                  <a href="InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                                  <a href="RankException.html" title="class in system">RankException</a>,
                                  <a href="ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
                                  <a href="IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                 <a href="ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                 <a href="OverflowException.html" title="class in system">OverflowException</a>,
                                  <a href="FormatException.html" title="class in system">FormatException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -1484,12 +1479,13 @@ extends <a href="ValueType.html" title="class in system">ValueType</a></pre>
 <dd><code><a href="ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 <dd><code><a href="PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 <dd><code><a href="ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
 <dd><code><a href="InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="RankException.html" title="class in system">RankException</a></code></dd>
 <dd><code><a href="ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
 <dd><code><a href="IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="OverflowException.html" title="class in system">OverflowException</a></code></dd>
 <dd><code><a href="FormatException.html" title="class in system">FormatException</a></code></dd>
 </dl>
 </li>
@@ -1504,27 +1500,25 @@ extends <a href="ValueType.html" title="class in system">ValueType</a></pre>
                                    throws java.lang.Throwable,
                                           <a href="ArgumentException.html" title="class in system">ArgumentException</a>,
                                           <a href="ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                                          <a href="ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                                          <a href="InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                                           <a href="PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                                          <a href="ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
-                                          <a href="IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
                                           <a href="NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                                          <a href="globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
-                                          <a href="ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></pre>
+                                          <a href="ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                          <a href="InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                          <a href="RankException.html" title="class in system">RankException</a>,
+                                          <a href="ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                                          <a href="ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 <dd><code><a href="ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
-<dd><code><a href="IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 <dd><code><a href="NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
 <dd><code><a href="ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1538,27 +1532,25 @@ extends <a href="ValueType.html" title="class in system">ValueType</a></pre>
                                  throws java.lang.Throwable,
                                         <a href="ArgumentException.html" title="class in system">ArgumentException</a>,
                                         <a href="ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                                        <a href="ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                                        <a href="InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                                         <a href="PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                                        <a href="ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
-                                        <a href="IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
                                         <a href="NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                                        <a href="globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
-                                        <a href="ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></pre>
+                                        <a href="ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                        <a href="InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                        <a href="RankException.html" title="class in system">RankException</a>,
+                                        <a href="ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                                        <a href="ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 <dd><code><a href="ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
-<dd><code><a href="IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 <dd><code><a href="NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
 <dd><code><a href="ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1570,31 +1562,17 @@ extends <a href="ValueType.html" title="class in system">ValueType</a></pre>
 <h4>GetTypeCode</h4>
 <pre class="methodSignature">public&nbsp;<a href="TypeCode.html" title="class in system">TypeCode</a>&nbsp;GetTypeCode()
                      throws java.lang.Throwable,
-                            <a href="ArgumentException.html" title="class in system">ArgumentException</a>,
-                            <a href="ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                            <a href="ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                            <a href="InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                            <a href="PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                            <a href="ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
-                            <a href="IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
                             <a href="NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                            <a href="RankException.html" title="class in system">RankException</a>,
-                            <a href="globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
-                            <a href="ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></pre>
+                            <a href="ArgumentException.html" title="class in system">ArgumentException</a>,
+                            <a href="PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                            <a href="InvalidOperationException.html" title="class in system">InvalidOperationException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
-<dd><code><a href="IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 <dd><code><a href="NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="RankException.html" title="class in system">RankException</a></code></dd>
-<dd><code><a href="globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
-<dd><code><a href="ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 </dl>
 </li>
 </ul>

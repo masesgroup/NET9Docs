@@ -19,8 +19,12 @@
 <meta name="keywords" content="cast()">
 <meta name="keywords" content="OpenFile()">
 <meta name="keywords" content="Reset()">
+<meta name="keywords" content="getCheckWriteAccess()">
+<meta name="keywords" content="setCheckWriteAccess()">
 <meta name="keywords" content="getCreatePrompt()">
 <meta name="keywords" content="setCreatePrompt()">
+<meta name="keywords" content="getExpandedMode()">
+<meta name="keywords" content="setExpandedMode()">
 <meta name="keywords" content="getOverwritePrompt()">
 <meta name="keywords" content="setOverwritePrompt()">
 <link rel="stylesheet" type="text/css" href="../../../stylesheet.css" title="Style">
@@ -36,7 +40,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10};
+var data = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -160,7 +164,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <hr>
 <pre>public class <span class="typeNameLabel">SaveFileDialog</span>
 extends <a href="FileDialog.html" title="class in system.windows.forms">FileDialog</a></pre>
-<div class="block">The base .NET class managing System.Windows.Forms.SaveFileDialog, System.Windows.Forms, Version=6.0.2.0, Culture=neutral, PublicKeyToken=b77a5c561934e089.
+<div class="block">The base .NET class managing System.Windows.Forms.SaveFileDialog, System.Windows.Forms, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089.
  <p>
  
  .NET documentation at <a href="https://docs.microsoft.com/en-us/dotnet/api/System.Windows.Forms.SaveFileDialog" target="_top">https://docs.microsoft.com/en-us/dotnet/api/System.Windows.Forms.SaveFileDialog</a>
@@ -195,7 +199,7 @@ extends <a href="FileDialog.html" title="class in system.windows.forms">FileDial
 <td class="colFirst"><code>static java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#assemblyFullName">assemblyFullName</a></span></code></th>
 <td class="colLast">
-<div class="block">Fully assembly qualified name: System.Windows.Forms, Version=6.0.2.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</div>
+<div class="block">Fully assembly qualified name: System.Windows.Forms, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</div>
 </td>
 </tr>
 <tr class="rowColor">
@@ -280,70 +284,90 @@ extends <a href="FileDialog.html" title="class in system.windows.forms">FileDial
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getCreatePrompt()">getCreatePrompt</a></span>()</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getCheckWriteAccess()">getCheckWriteAccess</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getCreatePrompt()">getCreatePrompt</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getExpandedMode()">getExpandedMode</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getJCOAssemblyName()">getJCOAssemblyName</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the reflected Assembly name</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getJCOClassName()">getJCOClassName</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the reflected Class name</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getJCOInstance()">getJCOInstance</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the instantiated class</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getJCOObjectName()">getJCOObjectName</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the reflected Class name used to build the object</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="https://www.jcobridge.com/api-java_2.5.21/org/mases/jcobridge/JCType.html?is-external=true" title="class or interface in org.mases.jcobridge" class="externalLink">JCType</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getJCOType()">getJCOType</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the instantiated class Type</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getOverwritePrompt()">getOverwritePrompt</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="../../io/Stream.html" title="class in system.io">Stream</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#OpenFile()">OpenFile</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Reset()">Reset</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i12" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setCheckWriteAccess(boolean)">setCheckWriteAccess</a></span>&#8203;(boolean&nbsp;CheckWriteAccess)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setCreatePrompt(boolean)">setCreatePrompt</a></span>&#8203;(boolean&nbsp;CreatePrompt)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i14" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setExpandedMode(boolean)">setExpandedMode</a></span>&#8203;(boolean&nbsp;ExpandedMode)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setJCOInstance(org.mases.jcobridge.JCObject)">setJCOInstance</a></span>&#8203;(<a href="https://www.jcobridge.com/api-java_2.5.21/org/mases/jcobridge/JCObject.html?is-external=true" title="class or interface in org.mases.jcobridge" class="externalLink">JCObject</a>&nbsp;instance)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setOverwritePrompt(boolean)">setOverwritePrompt</a></span>&#8203;(boolean&nbsp;OverwritePrompt)</code></th>
 <td class="colLast">&nbsp;</td>
@@ -354,7 +378,7 @@ extends <a href="FileDialog.html" title="class in system.windows.forms">FileDial
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;system.windows.forms.<a href="FileDialog.html" title="class in system.windows.forms">FileDialog</a></h3>
-<code><a href="FileDialog.html#addFileOk(system.componentmodel.CancelEventHandler)">addFileOk</a>, <a href="FileDialog.html#getAddExtension()">getAddExtension</a>, <a href="FileDialog.html#getAutoUpgradeEnabled()">getAutoUpgradeEnabled</a>, <a href="FileDialog.html#getCheckFileExists()">getCheckFileExists</a>, <a href="FileDialog.html#getCheckPathExists()">getCheckPathExists</a>, <a href="FileDialog.html#getCustomPlaces()">getCustomPlaces</a>, <a href="FileDialog.html#getDefaultExt()">getDefaultExt</a>, <a href="FileDialog.html#getDereferenceLinks()">getDereferenceLinks</a>, <a href="FileDialog.html#getFileName()">getFileName</a>, <a href="FileDialog.html#getFileNames()">getFileNames</a>, <a href="FileDialog.html#getFilter()">getFilter</a>, <a href="FileDialog.html#getFilterIndex()">getFilterIndex</a>, <a href="FileDialog.html#getInitialDirectory()">getInitialDirectory</a>, <a href="FileDialog.html#getRestoreDirectory()">getRestoreDirectory</a>, <a href="FileDialog.html#getShowHelp()">getShowHelp</a>, <a href="FileDialog.html#getSupportMultiDottedExtensions()">getSupportMultiDottedExtensions</a>, <a href="FileDialog.html#getTitle()">getTitle</a>, <a href="FileDialog.html#getValidateNames()">getValidateNames</a>, <a href="FileDialog.html#removeFileOk(system.componentmodel.CancelEventHandler)">removeFileOk</a>, <a href="FileDialog.html#setAddExtension(boolean)">setAddExtension</a>, <a href="FileDialog.html#setAutoUpgradeEnabled(boolean)">setAutoUpgradeEnabled</a>, <a href="FileDialog.html#setCheckFileExists(boolean)">setCheckFileExists</a>, <a href="FileDialog.html#setCheckPathExists(boolean)">setCheckPathExists</a>, <a href="FileDialog.html#setDefaultExt(java.lang.String)">setDefaultExt</a>, <a href="FileDialog.html#setDereferenceLinks(boolean)">setDereferenceLinks</a>, <a href="FileDialog.html#setFileName(java.lang.String)">setFileName</a>, <a href="FileDialog.html#setFilter(java.lang.String)">setFilter</a>, <a href="FileDialog.html#setFilterIndex(int)">setFilterIndex</a>, <a href="FileDialog.html#setInitialDirectory(java.lang.String)">setInitialDirectory</a>, <a href="FileDialog.html#setRestoreDirectory(boolean)">setRestoreDirectory</a>, <a href="FileDialog.html#setShowHelp(boolean)">setShowHelp</a>, <a href="FileDialog.html#setSupportMultiDottedExtensions(boolean)">setSupportMultiDottedExtensions</a>, <a href="FileDialog.html#setTitle(java.lang.String)">setTitle</a>, <a href="FileDialog.html#setValidateNames(boolean)">setValidateNames</a></code></li>
+<code><a href="FileDialog.html#addFileOk(system.componentmodel.CancelEventHandler)">addFileOk</a>, <a href="FileDialog.html#getAddExtension()">getAddExtension</a>, <a href="FileDialog.html#getAddToRecent()">getAddToRecent</a>, <a href="FileDialog.html#getAutoUpgradeEnabled()">getAutoUpgradeEnabled</a>, <a href="FileDialog.html#getCheckFileExists()">getCheckFileExists</a>, <a href="FileDialog.html#getCheckPathExists()">getCheckPathExists</a>, <a href="FileDialog.html#getCustomPlaces()">getCustomPlaces</a>, <a href="FileDialog.html#getDefaultExt()">getDefaultExt</a>, <a href="FileDialog.html#getDereferenceLinks()">getDereferenceLinks</a>, <a href="FileDialog.html#getFileName()">getFileName</a>, <a href="FileDialog.html#getFileNames()">getFileNames</a>, <a href="FileDialog.html#getFilter()">getFilter</a>, <a href="FileDialog.html#getFilterIndex()">getFilterIndex</a>, <a href="FileDialog.html#getInitialDirectory()">getInitialDirectory</a>, <a href="FileDialog.html#getOkRequiresInteraction()">getOkRequiresInteraction</a>, <a href="FileDialog.html#getRestoreDirectory()">getRestoreDirectory</a>, <a href="FileDialog.html#getShowHelp()">getShowHelp</a>, <a href="FileDialog.html#getShowHiddenFiles()">getShowHiddenFiles</a>, <a href="FileDialog.html#getShowPinnedPlaces()">getShowPinnedPlaces</a>, <a href="FileDialog.html#getSupportMultiDottedExtensions()">getSupportMultiDottedExtensions</a>, <a href="FileDialog.html#getTitle()">getTitle</a>, <a href="FileDialog.html#getValidateNames()">getValidateNames</a>, <a href="FileDialog.html#removeFileOk(system.componentmodel.CancelEventHandler)">removeFileOk</a>, <a href="FileDialog.html#setAddExtension(boolean)">setAddExtension</a>, <a href="FileDialog.html#setAddToRecent(boolean)">setAddToRecent</a>, <a href="FileDialog.html#setAutoUpgradeEnabled(boolean)">setAutoUpgradeEnabled</a>, <a href="FileDialog.html#setCheckFileExists(boolean)">setCheckFileExists</a>, <a href="FileDialog.html#setCheckPathExists(boolean)">setCheckPathExists</a>, <a href="FileDialog.html#setDefaultExt(java.lang.String)">setDefaultExt</a>, <a href="FileDialog.html#setDereferenceLinks(boolean)">setDereferenceLinks</a>, <a href="FileDialog.html#setFileName(java.lang.String)">setFileName</a>, <a href="FileDialog.html#setFilter(java.lang.String)">setFilter</a>, <a href="FileDialog.html#setFilterIndex(int)">setFilterIndex</a>, <a href="FileDialog.html#setInitialDirectory(java.lang.String)">setInitialDirectory</a>, <a href="FileDialog.html#setOkRequiresInteraction(boolean)">setOkRequiresInteraction</a>, <a href="FileDialog.html#setRestoreDirectory(boolean)">setRestoreDirectory</a>, <a href="FileDialog.html#setShowHelp(boolean)">setShowHelp</a>, <a href="FileDialog.html#setShowHiddenFiles(boolean)">setShowHiddenFiles</a>, <a href="FileDialog.html#setShowPinnedPlaces(boolean)">setShowPinnedPlaces</a>, <a href="FileDialog.html#setSupportMultiDottedExtensions(boolean)">setSupportMultiDottedExtensions</a>, <a href="FileDialog.html#setTitle(java.lang.String)">setTitle</a>, <a href="FileDialog.html#setValidateNames(boolean)">setValidateNames</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.system.windows.forms.CommonDialog">
@@ -414,7 +438,7 @@ extends <a href="FileDialog.html" title="class in system.windows.forms">FileDial
 <li class="blockList">
 <h4>assemblyFullName</h4>
 <pre>public static final&nbsp;java.lang.String assemblyFullName</pre>
-<div class="block">Fully assembly qualified name: System.Windows.Forms, Version=6.0.2.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</div>
+<div class="block">Fully assembly qualified name: System.Windows.Forms, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../constant-values.html#system.windows.forms.SaveFileDialog.assemblyFullName">Constant Field Values</a></dd>
@@ -491,10 +515,14 @@ extends <a href="FileDialog.html" title="class in system.windows.forms">FileDial
 <li class="blockList">
 <h4>SaveFileDialog</h4>
 <pre>public&nbsp;SaveFileDialog()
-               throws java.lang.Throwable</pre>
+               throws java.lang.Throwable,
+                      <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                      <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -648,8 +676,7 @@ extends <a href="FileDialog.html" title="class in system.windows.forms">FileDial
                        <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                        <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
                        <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                       <a href="../../FormatException.html" title="class in system">FormatException</a>,
-                       <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                       <a href="../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
                        <a href="../../runtime/serialization/SerializationException.html" title="class in system.runtime.serialization">SerializationException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -658,8 +685,7 @@ extends <a href="FileDialog.html" title="class in system.windows.forms">FileDial
 <dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 <dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../FormatException.html" title="class in system">FormatException</a></code></dd>
-<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
 <dd><code><a href="../../runtime/serialization/SerializationException.html" title="class in system.runtime.serialization">SerializationException</a></code></dd>
 </dl>
 </li>
@@ -673,9 +699,7 @@ extends <a href="FileDialog.html" title="class in system.windows.forms">FileDial
 <pre class="methodSignature">public&nbsp;void&nbsp;Reset()
            throws java.lang.Throwable,
                   <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
-                  <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                   <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                  <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                   <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                   <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></pre>
 <dl>
@@ -684,11 +708,37 @@ extends <a href="FileDialog.html" title="class in system.windows.forms">FileDial
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 <dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="getCheckWriteAccess()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getCheckWriteAccess</h4>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;getCheckWriteAccess()
+                            throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a id="setCheckWriteAccess(boolean)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setCheckWriteAccess</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;setCheckWriteAccess&#8203;(boolean&nbsp;CheckWriteAccess)
+                         throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
 </dl>
 </li>
 </ul>
@@ -717,6 +767,66 @@ extends <a href="FileDialog.html" title="class in system.windows.forms">FileDial
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a id="getExpandedMode()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getExpandedMode</h4>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;getExpandedMode()
+                        throws java.lang.Throwable,
+                               <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
+                               <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                               <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                               <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                               <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                               <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                               <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                               <a href="../../FormatException.html" title="class in system">FormatException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../FormatException.html" title="class in system">FormatException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="setExpandedMode(boolean)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setExpandedMode</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;setExpandedMode&#8203;(boolean&nbsp;ExpandedMode)
+                     throws java.lang.Throwable,
+                            <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
+                            <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                            <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                            <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                            <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                            <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                            <a href="../../RankException.html" title="class in system">RankException</a>,
+                            <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
 </dl>
 </li>
 </ul>

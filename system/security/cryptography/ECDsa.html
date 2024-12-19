@@ -19,18 +19,13 @@
 <meta name="keywords" content="cast()">
 <meta name="keywords" content="VerifyData()">
 <meta name="keywords" content="VerifyHash()">
-<meta name="keywords" content="ExportECPrivateKey()">
 <meta name="keywords" content="SignData()">
 <meta name="keywords" content="SignHash()">
 <meta name="keywords" content="GetMaxSignatureSize()">
 <meta name="keywords" content="CreateNewECDsa()">
 <meta name="keywords" content="Create()">
-<meta name="keywords" content="ExportExplicitParameters()">
-<meta name="keywords" content="ExportParameters()">
 <meta name="keywords" content="ToXmlString()">
 <meta name="keywords" content="FromXmlString()">
-<meta name="keywords" content="GenerateKey()">
-<meta name="keywords" content="ImportParameters()">
 <link rel="stylesheet" type="text/css" href="../../../stylesheet.css" title="Style">
 <script type="text/javascript" src="../../../script.js"></script>
 </head>
@@ -44,7 +39,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":10,"i36":10,"i37":10,"i38":10,"i39":10,"i40":10,"i41":10,"i42":10,"i43":10,"i44":10,"i45":10,"i46":10,"i47":10,"i48":10};
+var data = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":10,"i36":10,"i37":10,"i38":10,"i39":10,"i40":10,"i41":10,"i42":10,"i43":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -135,7 +130,12 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li><a href="AsymmetricAlgorithm.html" title="class in system.security.cryptography">system.security.cryptography.AsymmetricAlgorithm</a></li>
 <li>
 <ul class="inheritance">
+<li><a href="ECAlgorithm.html" title="class in system.security.cryptography">system.security.cryptography.ECAlgorithm</a></li>
+<li>
+<ul class="inheritance">
 <li>system.security.cryptography.ECDsa</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -156,8 +156,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dl>
 <hr>
 <pre>public class <span class="typeNameLabel">ECDsa</span>
-extends <a href="AsymmetricAlgorithm.html" title="class in system.security.cryptography">AsymmetricAlgorithm</a></pre>
-<div class="block">The base .NET class managing System.Security.Cryptography.ECDsa, System.Security.Cryptography.Algorithms, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a.
+extends <a href="ECAlgorithm.html" title="class in system.security.cryptography">ECAlgorithm</a></pre>
+<div class="block">The base .NET class managing System.Security.Cryptography.ECDsa, System.Security.Cryptography, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a.
  <p>
  
  .NET documentation at <a href="https://docs.microsoft.com/en-us/dotnet/api/System.Security.Cryptography.ECDsa" target="_top">https://docs.microsoft.com/en-us/dotnet/api/System.Security.Cryptography.ECDsa</a>
@@ -192,14 +192,14 @@ extends <a href="AsymmetricAlgorithm.html" title="class in system.security.crypt
 <td class="colFirst"><code>static java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#assemblyFullName">assemblyFullName</a></span></code></th>
 <td class="colLast">
-<div class="block">Fully assembly qualified name: System.Security.Cryptography.Algorithms, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</div>
+<div class="block">Fully assembly qualified name: System.Security.Cryptography, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</div>
 </td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>static java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#assemblyShortName">assemblyShortName</a></span></code></th>
 <td class="colLast">
-<div class="block">Assembly name: System.Security.Cryptography.Algorithms</div>
+<div class="block">Assembly name: System.Security.Cryptography</div>
 </td>
 </tr>
 <tr class="altColor">
@@ -296,81 +296,56 @@ extends <a href="AsymmetricAlgorithm.html" title="class in system.security.crypt
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
-<td class="colFirst"><code>byte[]</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ExportECPrivateKey()">ExportECPrivateKey</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i6" class="altColor">
-<td class="colFirst"><code><a href="ECParameters.html" title="class in system.security.cryptography">ECParameters</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ExportExplicitParameters(boolean)">ExportExplicitParameters</a></span>&#8203;(boolean&nbsp;includePrivateParameters)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i7" class="rowColor">
-<td class="colFirst"><code><a href="ECParameters.html" title="class in system.security.cryptography">ECParameters</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ExportParameters(boolean)">ExportParameters</a></span>&#8203;(boolean&nbsp;includePrivateParameters)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#FromXmlString(java.lang.String)">FromXmlString</a></span>&#8203;(java.lang.String&nbsp;xmlString)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#GenerateKey(system.security.cryptography.ECCurve)">GenerateKey</a></span>&#8203;(<a href="ECCurve.html" title="class in system.security.cryptography">ECCurve</a>&nbsp;curve)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i10" class="altColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getJCOAssemblyName()">getJCOAssemblyName</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the reflected Assembly name</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getJCOClassName()">getJCOClassName</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the reflected Class name</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getJCOInstance()">getJCOInstance</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the instantiated class</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getJCOObjectName()">getJCOObjectName</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the reflected Class name used to build the object</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="https://www.jcobridge.com/api-java_2.5.21/org/mases/jcobridge/JCType.html?is-external=true" title="class or interface in org.mases.jcobridge" class="externalLink">JCType</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getJCOType()">getJCOType</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the instantiated class Type</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#GetMaxSignatureSize(system.security.cryptography.DSASignatureFormat)">GetMaxSignatureSize</a></span>&#8203;(<a href="DSASignatureFormat.html" title="class in system.security.cryptography">DSASignatureFormat</a>&nbsp;signatureFormat)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i16" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ImportParameters(system.security.cryptography.ECParameters)">ImportParameters</a></span>&#8203;(<a href="ECParameters.html" title="class in system.security.cryptography">ECParameters</a>&nbsp;parameters)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i17" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setJCOInstance(org.mases.jcobridge.JCObject)">setJCOInstance</a></span>&#8203;(<a href="https://www.jcobridge.com/api-java_2.5.21/org/mases/jcobridge/JCObject.html?is-external=true" title="class or interface in org.mases.jcobridge" class="externalLink">JCObject</a>&nbsp;instance)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>byte[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#SignData(byte%5B%5D,int,int,system.security.cryptography.HashAlgorithmName)">SignData</a></span>&#8203;(byte[]&nbsp;data,
         int&nbsp;offset,
@@ -378,7 +353,7 @@ extends <a href="AsymmetricAlgorithm.html" title="class in system.security.crypt
         <a href="HashAlgorithmName.html" title="class in system.security.cryptography">HashAlgorithmName</a>&nbsp;hashAlgorithm)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>byte[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#SignData(byte%5B%5D,int,int,system.security.cryptography.HashAlgorithmName,system.security.cryptography.DSASignatureFormat)">SignData</a></span>&#8203;(byte[]&nbsp;data,
         int&nbsp;offset,
@@ -387,20 +362,20 @@ extends <a href="AsymmetricAlgorithm.html" title="class in system.security.crypt
         <a href="DSASignatureFormat.html" title="class in system.security.cryptography">DSASignatureFormat</a>&nbsp;signatureFormat)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>byte[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#SignData(byte%5B%5D,system.security.cryptography.HashAlgorithmName)">SignData</a></span>&#8203;(byte[]&nbsp;data,
         <a href="HashAlgorithmName.html" title="class in system.security.cryptography">HashAlgorithmName</a>&nbsp;hashAlgorithm)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>byte[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#SignData(byte%5B%5D,system.security.cryptography.HashAlgorithmName,system.security.cryptography.DSASignatureFormat)">SignData</a></span>&#8203;(byte[]&nbsp;data,
         <a href="HashAlgorithmName.html" title="class in system.security.cryptography">HashAlgorithmName</a>&nbsp;hashAlgorithm,
         <a href="DSASignatureFormat.html" title="class in system.security.cryptography">DSASignatureFormat</a>&nbsp;signatureFormat)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>byte[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#SignData(org.mases.jcobridge.netreflection.JCORefOut,int,int,system.security.cryptography.HashAlgorithmName)">SignData</a></span>&#8203;(<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;dupParam0,
         int&nbsp;dupParam1,
@@ -408,7 +383,7 @@ extends <a href="AsymmetricAlgorithm.html" title="class in system.security.crypt
         <a href="HashAlgorithmName.html" title="class in system.security.cryptography">HashAlgorithmName</a>&nbsp;dupParam3)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>byte[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#SignData(org.mases.jcobridge.netreflection.JCORefOut,int,int,system.security.cryptography.HashAlgorithmName,system.security.cryptography.DSASignatureFormat)">SignData</a></span>&#8203;(<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;dupParam0,
         int&nbsp;dupParam1,
@@ -417,67 +392,67 @@ extends <a href="AsymmetricAlgorithm.html" title="class in system.security.crypt
         <a href="DSASignatureFormat.html" title="class in system.security.cryptography">DSASignatureFormat</a>&nbsp;dupParam4)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i24" class="altColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>byte[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#SignData(org.mases.jcobridge.netreflection.JCORefOut,system.security.cryptography.HashAlgorithmName)">SignData</a></span>&#8203;(<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;dupParam0,
         <a href="HashAlgorithmName.html" title="class in system.security.cryptography">HashAlgorithmName</a>&nbsp;dupParam1)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i25" class="rowColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code>byte[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#SignData(org.mases.jcobridge.netreflection.JCORefOut,system.security.cryptography.HashAlgorithmName,system.security.cryptography.DSASignatureFormat)">SignData</a></span>&#8203;(<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;dupParam0,
         <a href="HashAlgorithmName.html" title="class in system.security.cryptography">HashAlgorithmName</a>&nbsp;dupParam1,
         <a href="DSASignatureFormat.html" title="class in system.security.cryptography">DSASignatureFormat</a>&nbsp;dupParam2)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i26" class="altColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code>byte[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#SignData(system.io.Stream,system.security.cryptography.HashAlgorithmName)">SignData</a></span>&#8203;(<a href="../../io/Stream.html" title="class in system.io">Stream</a>&nbsp;data,
         <a href="HashAlgorithmName.html" title="class in system.security.cryptography">HashAlgorithmName</a>&nbsp;hashAlgorithm)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i27" class="rowColor">
+<tr id="i22" class="altColor">
 <td class="colFirst"><code>byte[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#SignData(system.io.Stream,system.security.cryptography.HashAlgorithmName,system.security.cryptography.DSASignatureFormat)">SignData</a></span>&#8203;(<a href="../../io/Stream.html" title="class in system.io">Stream</a>&nbsp;data,
         <a href="HashAlgorithmName.html" title="class in system.security.cryptography">HashAlgorithmName</a>&nbsp;hashAlgorithm,
         <a href="DSASignatureFormat.html" title="class in system.security.cryptography">DSASignatureFormat</a>&nbsp;signatureFormat)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i28" class="altColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code>byte[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#SignHash(byte%5B%5D)">SignHash</a></span>&#8203;(byte[]&nbsp;hash)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i29" class="rowColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code>byte[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#SignHash(byte%5B%5D,system.security.cryptography.DSASignatureFormat)">SignHash</a></span>&#8203;(byte[]&nbsp;hash,
         <a href="DSASignatureFormat.html" title="class in system.security.cryptography">DSASignatureFormat</a>&nbsp;signatureFormat)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i30" class="altColor">
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code>byte[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#SignHash(org.mases.jcobridge.netreflection.JCORefOut)">SignHash</a></span>&#8203;(<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;dupParam0)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i31" class="rowColor">
+<tr id="i26" class="altColor">
 <td class="colFirst"><code>byte[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#SignHash(org.mases.jcobridge.netreflection.JCORefOut,system.security.cryptography.DSASignatureFormat)">SignHash</a></span>&#8203;(<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;dupParam0,
         <a href="DSASignatureFormat.html" title="class in system.security.cryptography">DSASignatureFormat</a>&nbsp;dupParam1)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i32" class="altColor">
+<tr id="i27" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ToXmlString(boolean)">ToXmlString</a></span>&#8203;(boolean&nbsp;includePrivateParameters)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i33" class="rowColor">
+<tr id="i28" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#VerifyData(byte%5B%5D,byte%5B%5D,system.security.cryptography.HashAlgorithmName)">VerifyData</a></span>&#8203;(byte[]&nbsp;data,
           byte[]&nbsp;signature,
           <a href="HashAlgorithmName.html" title="class in system.security.cryptography">HashAlgorithmName</a>&nbsp;hashAlgorithm)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i34" class="altColor">
+<tr id="i29" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#VerifyData(byte%5B%5D,byte%5B%5D,system.security.cryptography.HashAlgorithmName,system.security.cryptography.DSASignatureFormat)">VerifyData</a></span>&#8203;(byte[]&nbsp;data,
           byte[]&nbsp;signature,
@@ -485,7 +460,7 @@ extends <a href="AsymmetricAlgorithm.html" title="class in system.security.crypt
           <a href="DSASignatureFormat.html" title="class in system.security.cryptography">DSASignatureFormat</a>&nbsp;signatureFormat)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i35" class="rowColor">
+<tr id="i30" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#VerifyData(byte%5B%5D,int,int,byte%5B%5D,system.security.cryptography.HashAlgorithmName)">VerifyData</a></span>&#8203;(byte[]&nbsp;data,
           int&nbsp;offset,
@@ -494,7 +469,7 @@ extends <a href="AsymmetricAlgorithm.html" title="class in system.security.crypt
           <a href="HashAlgorithmName.html" title="class in system.security.cryptography">HashAlgorithmName</a>&nbsp;hashAlgorithm)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i36" class="altColor">
+<tr id="i31" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#VerifyData(byte%5B%5D,int,int,byte%5B%5D,system.security.cryptography.HashAlgorithmName,system.security.cryptography.DSASignatureFormat)">VerifyData</a></span>&#8203;(byte[]&nbsp;data,
           int&nbsp;offset,
@@ -504,7 +479,7 @@ extends <a href="AsymmetricAlgorithm.html" title="class in system.security.crypt
           <a href="DSASignatureFormat.html" title="class in system.security.cryptography">DSASignatureFormat</a>&nbsp;signatureFormat)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i37" class="rowColor">
+<tr id="i32" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#VerifyData(org.mases.jcobridge.netreflection.JCORefOut,int,int,org.mases.jcobridge.netreflection.JCORefOut,system.security.cryptography.HashAlgorithmName)">VerifyData</a></span>&#8203;(<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;dupParam0,
           int&nbsp;dupParam1,
@@ -513,7 +488,7 @@ extends <a href="AsymmetricAlgorithm.html" title="class in system.security.crypt
           <a href="HashAlgorithmName.html" title="class in system.security.cryptography">HashAlgorithmName</a>&nbsp;dupParam4)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i38" class="altColor">
+<tr id="i33" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#VerifyData(org.mases.jcobridge.netreflection.JCORefOut,int,int,org.mases.jcobridge.netreflection.JCORefOut,system.security.cryptography.HashAlgorithmName,system.security.cryptography.DSASignatureFormat)">VerifyData</a></span>&#8203;(<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;dupParam0,
           int&nbsp;dupParam1,
@@ -523,14 +498,14 @@ extends <a href="AsymmetricAlgorithm.html" title="class in system.security.crypt
           <a href="DSASignatureFormat.html" title="class in system.security.cryptography">DSASignatureFormat</a>&nbsp;dupParam5)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i39" class="rowColor">
+<tr id="i34" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#VerifyData(org.mases.jcobridge.netreflection.JCORefOut,org.mases.jcobridge.netreflection.JCORefOut,system.security.cryptography.HashAlgorithmName)">VerifyData</a></span>&#8203;(<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;dupParam0,
           <a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;dupParam1,
           <a href="HashAlgorithmName.html" title="class in system.security.cryptography">HashAlgorithmName</a>&nbsp;dupParam2)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i40" class="altColor">
+<tr id="i35" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#VerifyData(org.mases.jcobridge.netreflection.JCORefOut,org.mases.jcobridge.netreflection.JCORefOut,system.security.cryptography.HashAlgorithmName,system.security.cryptography.DSASignatureFormat)">VerifyData</a></span>&#8203;(<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;dupParam0,
           <a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;dupParam1,
@@ -538,14 +513,14 @@ extends <a href="AsymmetricAlgorithm.html" title="class in system.security.crypt
           <a href="DSASignatureFormat.html" title="class in system.security.cryptography">DSASignatureFormat</a>&nbsp;dupParam3)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i41" class="rowColor">
+<tr id="i36" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#VerifyData(system.io.Stream,byte%5B%5D,system.security.cryptography.HashAlgorithmName)">VerifyData</a></span>&#8203;(<a href="../../io/Stream.html" title="class in system.io">Stream</a>&nbsp;data,
           byte[]&nbsp;signature,
           <a href="HashAlgorithmName.html" title="class in system.security.cryptography">HashAlgorithmName</a>&nbsp;hashAlgorithm)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i42" class="altColor">
+<tr id="i37" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#VerifyData(system.io.Stream,byte%5B%5D,system.security.cryptography.HashAlgorithmName,system.security.cryptography.DSASignatureFormat)">VerifyData</a></span>&#8203;(<a href="../../io/Stream.html" title="class in system.io">Stream</a>&nbsp;data,
           byte[]&nbsp;signature,
@@ -553,14 +528,14 @@ extends <a href="AsymmetricAlgorithm.html" title="class in system.security.crypt
           <a href="DSASignatureFormat.html" title="class in system.security.cryptography">DSASignatureFormat</a>&nbsp;signatureFormat)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i43" class="rowColor">
+<tr id="i38" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#VerifyData(system.io.Stream,org.mases.jcobridge.netreflection.JCORefOut,system.security.cryptography.HashAlgorithmName)">VerifyData</a></span>&#8203;(<a href="../../io/Stream.html" title="class in system.io">Stream</a>&nbsp;dupParam0,
           <a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;dupParam1,
           <a href="HashAlgorithmName.html" title="class in system.security.cryptography">HashAlgorithmName</a>&nbsp;dupParam2)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i44" class="altColor">
+<tr id="i39" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#VerifyData(system.io.Stream,org.mases.jcobridge.netreflection.JCORefOut,system.security.cryptography.HashAlgorithmName,system.security.cryptography.DSASignatureFormat)">VerifyData</a></span>&#8203;(<a href="../../io/Stream.html" title="class in system.io">Stream</a>&nbsp;dupParam0,
           <a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;dupParam1,
@@ -568,26 +543,26 @@ extends <a href="AsymmetricAlgorithm.html" title="class in system.security.crypt
           <a href="DSASignatureFormat.html" title="class in system.security.cryptography">DSASignatureFormat</a>&nbsp;dupParam3)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i45" class="rowColor">
+<tr id="i40" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#VerifyHash(byte%5B%5D,byte%5B%5D)">VerifyHash</a></span>&#8203;(byte[]&nbsp;hash,
           byte[]&nbsp;signature)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i46" class="altColor">
+<tr id="i41" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#VerifyHash(byte%5B%5D,byte%5B%5D,system.security.cryptography.DSASignatureFormat)">VerifyHash</a></span>&#8203;(byte[]&nbsp;hash,
           byte[]&nbsp;signature,
           <a href="DSASignatureFormat.html" title="class in system.security.cryptography">DSASignatureFormat</a>&nbsp;signatureFormat)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i47" class="rowColor">
+<tr id="i42" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#VerifyHash(org.mases.jcobridge.netreflection.JCORefOut,org.mases.jcobridge.netreflection.JCORefOut)">VerifyHash</a></span>&#8203;(<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;dupParam0,
           <a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;dupParam1)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i48" class="altColor">
+<tr id="i43" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#VerifyHash(org.mases.jcobridge.netreflection.JCORefOut,org.mases.jcobridge.netreflection.JCORefOut,system.security.cryptography.DSASignatureFormat)">VerifyHash</a></span>&#8203;(<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;dupParam0,
           <a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;dupParam1,
@@ -596,11 +571,18 @@ extends <a href="AsymmetricAlgorithm.html" title="class in system.security.crypt
 </tr>
 </table>
 <ul class="blockList">
+<li class="blockList"><a id="methods.inherited.from.class.system.security.cryptography.ECAlgorithm">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;system.security.cryptography.<a href="ECAlgorithm.html" title="class in system.security.cryptography">ECAlgorithm</a></h3>
+<code><a href="ECAlgorithm.html#ExportECPrivateKey()">ExportECPrivateKey</a>, <a href="ECAlgorithm.html#ExportECPrivateKeyPem()">ExportECPrivateKeyPem</a>, <a href="ECAlgorithm.html#ExportExplicitParameters(boolean)">ExportExplicitParameters</a>, <a href="ECAlgorithm.html#ExportParameters(boolean)">ExportParameters</a>, <a href="ECAlgorithm.html#GenerateKey(system.security.cryptography.ECCurve)">GenerateKey</a>, <a href="ECAlgorithm.html#ImportParameters(system.security.cryptography.ECParameters)">ImportParameters</a></code></li>
+</ul>
+<ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.system.security.cryptography.AsymmetricAlgorithm">
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;system.security.cryptography.<a href="AsymmetricAlgorithm.html" title="class in system.security.cryptography">AsymmetricAlgorithm</a></h3>
-<code><a href="AsymmetricAlgorithm.html#Clear()">Clear</a>, <a href="AsymmetricAlgorithm.html#close()">close</a>, <a href="AsymmetricAlgorithm.html#Create()">Create</a>, <a href="AsymmetricAlgorithm.html#Create(java.lang.String)">Create</a>, <a href="AsymmetricAlgorithm.html#Dispose()">Dispose</a>, <a href="AsymmetricAlgorithm.html#ExportPkcs8PrivateKey()">ExportPkcs8PrivateKey</a>, <a href="AsymmetricAlgorithm.html#ExportSubjectPublicKeyInfo()">ExportSubjectPublicKeyInfo</a>, <a href="AsymmetricAlgorithm.html#getKeyExchangeAlgorithm()">getKeyExchangeAlgorithm</a>, <a href="AsymmetricAlgorithm.html#getKeySize()">getKeySize</a>, <a href="AsymmetricAlgorithm.html#getLegalKeySizes()">getLegalKeySizes</a>, <a href="AsymmetricAlgorithm.html#getSignatureAlgorithm()">getSignatureAlgorithm</a>, <a href="AsymmetricAlgorithm.html#setKeySize(int)">setKeySize</a></code></li>
+<code><a href="AsymmetricAlgorithm.html#Clear()">Clear</a>, <a href="AsymmetricAlgorithm.html#close()">close</a>, <a href="AsymmetricAlgorithm.html#Create()">Create</a>, <a href="AsymmetricAlgorithm.html#Create(java.lang.String)">Create</a>, <a href="AsymmetricAlgorithm.html#Dispose()">Dispose</a>, <a href="AsymmetricAlgorithm.html#ExportPkcs8PrivateKey()">ExportPkcs8PrivateKey</a>, <a href="AsymmetricAlgorithm.html#ExportPkcs8PrivateKeyPem()">ExportPkcs8PrivateKeyPem</a>, <a href="AsymmetricAlgorithm.html#ExportSubjectPublicKeyInfo()">ExportSubjectPublicKeyInfo</a>, <a href="AsymmetricAlgorithm.html#ExportSubjectPublicKeyInfoPem()">ExportSubjectPublicKeyInfoPem</a>, <a href="AsymmetricAlgorithm.html#getKeyExchangeAlgorithm()">getKeyExchangeAlgorithm</a>, <a href="AsymmetricAlgorithm.html#getKeySize()">getKeySize</a>, <a href="AsymmetricAlgorithm.html#getLegalKeySizes()">getLegalKeySizes</a>, <a href="AsymmetricAlgorithm.html#getSignatureAlgorithm()">getSignatureAlgorithm</a>, <a href="AsymmetricAlgorithm.html#setKeySize(int)">setKeySize</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.org.mases.jcobridge.netreflection.NetObject">
@@ -639,7 +621,7 @@ extends <a href="AsymmetricAlgorithm.html" title="class in system.security.crypt
 <li class="blockList">
 <h4>assemblyFullName</h4>
 <pre>public static final&nbsp;java.lang.String assemblyFullName</pre>
-<div class="block">Fully assembly qualified name: System.Security.Cryptography.Algorithms, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</div>
+<div class="block">Fully assembly qualified name: System.Security.Cryptography, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../constant-values.html#system.security.cryptography.ECDsa.assemblyFullName">Constant Field Values</a></dd>
@@ -653,7 +635,7 @@ extends <a href="AsymmetricAlgorithm.html" title="class in system.security.crypt
 <li class="blockList">
 <h4>assemblyShortName</h4>
 <pre>public static final&nbsp;java.lang.String assemblyShortName</pre>
-<div class="block">Assembly name: System.Security.Cryptography.Algorithms</div>
+<div class="block">Assembly name: System.Security.Cryptography</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../constant-values.html#system.security.cryptography.ECDsa.assemblyShortName">Constant Field Values</a></dd>
@@ -746,7 +728,7 @@ extends <a href="AsymmetricAlgorithm.html" title="class in system.security.crypt
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOAssemblyName()">getJCOAssemblyName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="AsymmetricAlgorithm.html#getJCOAssemblyName()">getJCOAssemblyName</a></code>&nbsp;in class&nbsp;<code><a href="AsymmetricAlgorithm.html" title="class in system.security.cryptography">AsymmetricAlgorithm</a></code></dd>
+<dd><code><a href="ECAlgorithm.html#getJCOAssemblyName()">getJCOAssemblyName</a></code>&nbsp;in class&nbsp;<code><a href="ECAlgorithm.html" title="class in system.security.cryptography">ECAlgorithm</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>A <code>String</code> representing the Fullname of reflected Assembly</dd>
 </dl>
@@ -765,7 +747,7 @@ extends <a href="AsymmetricAlgorithm.html" title="class in system.security.crypt
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOClassName()">getJCOClassName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="AsymmetricAlgorithm.html#getJCOClassName()">getJCOClassName</a></code>&nbsp;in class&nbsp;<code><a href="AsymmetricAlgorithm.html" title="class in system.security.cryptography">AsymmetricAlgorithm</a></code></dd>
+<dd><code><a href="ECAlgorithm.html#getJCOClassName()">getJCOClassName</a></code>&nbsp;in class&nbsp;<code><a href="ECAlgorithm.html" title="class in system.security.cryptography">ECAlgorithm</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>A <code>String</code> representing the Fullname of reflected Class</dd>
 </dl>
@@ -784,7 +766,7 @@ extends <a href="AsymmetricAlgorithm.html" title="class in system.security.crypt
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOObjectName()">getJCOObjectName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="AsymmetricAlgorithm.html#getJCOObjectName()">getJCOObjectName</a></code>&nbsp;in class&nbsp;<code><a href="AsymmetricAlgorithm.html" title="class in system.security.cryptography">AsymmetricAlgorithm</a></code></dd>
+<dd><code><a href="ECAlgorithm.html#getJCOObjectName()">getJCOObjectName</a></code>&nbsp;in class&nbsp;<code><a href="ECAlgorithm.html" title="class in system.security.cryptography">ECAlgorithm</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>A <code>String</code> representing the name used to allocated the object
          in CLR context</dd>
@@ -804,7 +786,7 @@ extends <a href="AsymmetricAlgorithm.html" title="class in system.security.crypt
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOInstance()">getJCOInstance</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="AsymmetricAlgorithm.html#getJCOInstance()">getJCOInstance</a></code>&nbsp;in class&nbsp;<code><a href="AsymmetricAlgorithm.html" title="class in system.security.cryptography">AsymmetricAlgorithm</a></code></dd>
+<dd><code><a href="ECAlgorithm.html#getJCOInstance()">getJCOInstance</a></code>&nbsp;in class&nbsp;<code><a href="ECAlgorithm.html" title="class in system.security.cryptography">ECAlgorithm</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>An <code>Object</code> representing the CLR instance of the instantiated Class</dd>
 </dl>
@@ -819,7 +801,7 @@ extends <a href="AsymmetricAlgorithm.html" title="class in system.security.crypt
 <pre class="methodSignature">public&nbsp;void&nbsp;setJCOInstance&#8203;(<a href="https://www.jcobridge.com/api-java_2.5.21/org/mases/jcobridge/JCObject.html?is-external=true" title="class or interface in org.mases.jcobridge" class="externalLink">JCObject</a>&nbsp;instance)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="AsymmetricAlgorithm.html#setJCOInstance(org.mases.jcobridge.JCObject)">setJCOInstance</a></code>&nbsp;in class&nbsp;<code><a href="AsymmetricAlgorithm.html" title="class in system.security.cryptography">AsymmetricAlgorithm</a></code></dd>
+<dd><code><a href="ECAlgorithm.html#setJCOInstance(org.mases.jcobridge.JCObject)">setJCOInstance</a></code>&nbsp;in class&nbsp;<code><a href="ECAlgorithm.html" title="class in system.security.cryptography">ECAlgorithm</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -836,7 +818,7 @@ extends <a href="AsymmetricAlgorithm.html" title="class in system.security.crypt
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOType()">getJCOType</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="AsymmetricAlgorithm.html#getJCOType()">getJCOType</a></code>&nbsp;in class&nbsp;<code><a href="AsymmetricAlgorithm.html" title="class in system.security.cryptography">AsymmetricAlgorithm</a></code></dd>
+<dd><code><a href="ECAlgorithm.html#getJCOType()">getJCOType</a></code>&nbsp;in class&nbsp;<code><a href="ECAlgorithm.html" title="class in system.security.cryptography">ECAlgorithm</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>A <a href="https://www.jcobridge.com/api-java_2.5.21/org/mases/jcobridge/JCType.html?is-external=true" title="class or interface in org.mases.jcobridge" class="externalLink"><code>JCType</code></a> representing the CLR Type of the instantiated Class</dd>
 </dl>
@@ -874,31 +856,31 @@ extends <a href="AsymmetricAlgorithm.html" title="class in system.security.crypt
                    throws java.lang.Throwable,
                           <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
                           <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                          <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                          <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                           <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                          <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
-                          <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
                           <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                          <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
                           <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
-                          <a href="../../formats/asn1/AsnContentException.html" title="class in system.formats.asn1">AsnContentException</a>,
-                          <a href="CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a></pre>
+                          <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                          <a href="../../RankException.html" title="class in system">RankException</a>,
+                          <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                          <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                          <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                          <a href="CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a>,
+                          <a href="../../formats/asn1/AsnContentException.html" title="class in system.formats.asn1">AsnContentException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 <dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
-<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 <dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
 <dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
-<dd><code><a href="../../formats/asn1/AsnContentException.html" title="class in system.formats.asn1">AsnContentException</a></code></dd>
+<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 <dd><code><a href="CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a></code></dd>
+<dd><code><a href="../../formats/asn1/AsnContentException.html" title="class in system.formats.asn1">AsnContentException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -915,31 +897,31 @@ extends <a href="AsymmetricAlgorithm.html" title="class in system.security.crypt
                    throws java.lang.Throwable,
                           <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
                           <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                          <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                          <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                           <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                          <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
-                          <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
                           <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                          <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
                           <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
-                          <a href="../../formats/asn1/AsnContentException.html" title="class in system.formats.asn1">AsnContentException</a>,
-                          <a href="CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a></pre>
+                          <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                          <a href="../../RankException.html" title="class in system">RankException</a>,
+                          <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                          <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                          <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                          <a href="CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a>,
+                          <a href="../../formats/asn1/AsnContentException.html" title="class in system.formats.asn1">AsnContentException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 <dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
-<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 <dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
 <dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
-<dd><code><a href="../../formats/asn1/AsnContentException.html" title="class in system.formats.asn1">AsnContentException</a></code></dd>
+<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 <dd><code><a href="CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a></code></dd>
+<dd><code><a href="../../formats/asn1/AsnContentException.html" title="class in system.formats.asn1">AsnContentException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -955,27 +937,31 @@ extends <a href="AsymmetricAlgorithm.html" title="class in system.security.crypt
                    throws java.lang.Throwable,
                           <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
                           <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                          <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                          <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                           <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                          <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
-                          <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
                           <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                          <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
-                          <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></pre>
+                          <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                          <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                          <a href="../../RankException.html" title="class in system">RankException</a>,
+                          <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                          <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                          <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                          <a href="../../FormatException.html" title="class in system">FormatException</a>,
+                          <a href="CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 <dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
-<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 <dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
 <dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -991,27 +977,31 @@ extends <a href="AsymmetricAlgorithm.html" title="class in system.security.crypt
                    throws java.lang.Throwable,
                           <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
                           <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                          <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                          <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                           <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                          <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
-                          <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
                           <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                          <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
-                          <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></pre>
+                          <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                          <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                          <a href="../../RankException.html" title="class in system">RankException</a>,
+                          <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                          <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                          <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                          <a href="../../FormatException.html" title="class in system">FormatException</a>,
+                          <a href="CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 <dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
-<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 <dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
 <dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1030,31 +1020,33 @@ extends <a href="AsymmetricAlgorithm.html" title="class in system.security.crypt
                    throws java.lang.Throwable,
                           <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
                           <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                          <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                          <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                           <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                          <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
-                          <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
                           <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                          <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
                           <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
-                          <a href="../../formats/asn1/AsnContentException.html" title="class in system.formats.asn1">AsnContentException</a>,
-                          <a href="CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a></pre>
+                          <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                          <a href="../../RankException.html" title="class in system">RankException</a>,
+                          <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                          <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                          <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                          <a href="../../FormatException.html" title="class in system">FormatException</a>,
+                          <a href="CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a>,
+                          <a href="../../formats/asn1/AsnContentException.html" title="class in system.formats.asn1">AsnContentException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 <dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
-<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 <dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
 <dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
-<dd><code><a href="../../formats/asn1/AsnContentException.html" title="class in system.formats.asn1">AsnContentException</a></code></dd>
+<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../FormatException.html" title="class in system">FormatException</a></code></dd>
 <dd><code><a href="CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a></code></dd>
+<dd><code><a href="../../formats/asn1/AsnContentException.html" title="class in system.formats.asn1">AsnContentException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1073,31 +1065,33 @@ extends <a href="AsymmetricAlgorithm.html" title="class in system.security.crypt
                    throws java.lang.Throwable,
                           <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
                           <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                          <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                          <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                           <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                          <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
-                          <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
                           <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                          <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
                           <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
-                          <a href="../../formats/asn1/AsnContentException.html" title="class in system.formats.asn1">AsnContentException</a>,
-                          <a href="CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a></pre>
+                          <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                          <a href="../../RankException.html" title="class in system">RankException</a>,
+                          <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                          <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                          <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                          <a href="../../FormatException.html" title="class in system">FormatException</a>,
+                          <a href="CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a>,
+                          <a href="../../formats/asn1/AsnContentException.html" title="class in system.formats.asn1">AsnContentException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 <dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
-<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 <dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
 <dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
-<dd><code><a href="../../formats/asn1/AsnContentException.html" title="class in system.formats.asn1">AsnContentException</a></code></dd>
+<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../FormatException.html" title="class in system">FormatException</a></code></dd>
 <dd><code><a href="CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a></code></dd>
+<dd><code><a href="../../formats/asn1/AsnContentException.html" title="class in system.formats.asn1">AsnContentException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1115,27 +1109,35 @@ extends <a href="AsymmetricAlgorithm.html" title="class in system.security.crypt
                    throws java.lang.Throwable,
                           <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
                           <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                          <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                          <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                           <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                          <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
-                          <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
                           <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                          <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
-                          <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></pre>
+                          <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                          <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                          <a href="../../RankException.html" title="class in system">RankException</a>,
+                          <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                          <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                          <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                          <a href="../../FormatException.html" title="class in system">FormatException</a>,
+                          <a href="../../MissingMethodException.html" title="class in system">MissingMethodException</a>,
+                          <a href="../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
+                          <a href="CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 <dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
-<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 <dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
 <dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
+<dd><code><a href="../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
+<dd><code><a href="CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1153,27 +1155,35 @@ extends <a href="AsymmetricAlgorithm.html" title="class in system.security.crypt
                    throws java.lang.Throwable,
                           <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
                           <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                          <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                          <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                           <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                          <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
-                          <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
                           <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                          <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
-                          <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></pre>
+                          <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                          <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                          <a href="../../RankException.html" title="class in system">RankException</a>,
+                          <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                          <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                          <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                          <a href="../../FormatException.html" title="class in system">FormatException</a>,
+                          <a href="../../MissingMethodException.html" title="class in system">MissingMethodException</a>,
+                          <a href="../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
+                          <a href="CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 <dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
-<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 <dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
 <dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
+<dd><code><a href="../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
+<dd><code><a href="CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1190,31 +1200,33 @@ extends <a href="AsymmetricAlgorithm.html" title="class in system.security.crypt
                    throws java.lang.Throwable,
                           <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
                           <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                          <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                          <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                           <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                          <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
-                          <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
                           <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                          <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
                           <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
-                          <a href="../../formats/asn1/AsnContentException.html" title="class in system.formats.asn1">AsnContentException</a>,
-                          <a href="CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a></pre>
+                          <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                          <a href="../../RankException.html" title="class in system">RankException</a>,
+                          <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                          <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                          <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                          <a href="CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a>,
+                          <a href="../../io/IOException.html" title="class in system.io">IOException</a>,
+                          <a href="../../formats/asn1/AsnContentException.html" title="class in system.formats.asn1">AsnContentException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 <dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
-<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 <dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
 <dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
-<dd><code><a href="../../formats/asn1/AsnContentException.html" title="class in system.formats.asn1">AsnContentException</a></code></dd>
+<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 <dd><code><a href="CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a></code></dd>
+<dd><code><a href="../../io/IOException.html" title="class in system.io">IOException</a></code></dd>
+<dd><code><a href="../../formats/asn1/AsnContentException.html" title="class in system.formats.asn1">AsnContentException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1231,31 +1243,33 @@ extends <a href="AsymmetricAlgorithm.html" title="class in system.security.crypt
                    throws java.lang.Throwable,
                           <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
                           <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                          <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                          <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                           <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                          <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
-                          <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
                           <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                          <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
                           <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
-                          <a href="../../formats/asn1/AsnContentException.html" title="class in system.formats.asn1">AsnContentException</a>,
-                          <a href="CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a></pre>
+                          <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                          <a href="../../RankException.html" title="class in system">RankException</a>,
+                          <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                          <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                          <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                          <a href="CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a>,
+                          <a href="../../io/IOException.html" title="class in system.io">IOException</a>,
+                          <a href="../../formats/asn1/AsnContentException.html" title="class in system.formats.asn1">AsnContentException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 <dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
-<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 <dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
 <dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
-<dd><code><a href="../../formats/asn1/AsnContentException.html" title="class in system.formats.asn1">AsnContentException</a></code></dd>
+<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 <dd><code><a href="CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a></code></dd>
+<dd><code><a href="../../io/IOException.html" title="class in system.io">IOException</a></code></dd>
+<dd><code><a href="../../formats/asn1/AsnContentException.html" title="class in system.formats.asn1">AsnContentException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1271,27 +1285,35 @@ extends <a href="AsymmetricAlgorithm.html" title="class in system.security.crypt
                    throws java.lang.Throwable,
                           <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
                           <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                          <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                          <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                           <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                          <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
-                          <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
                           <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                          <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
-                          <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></pre>
+                          <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                          <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                          <a href="../../RankException.html" title="class in system">RankException</a>,
+                          <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                          <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                          <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                          <a href="../../MissingMethodException.html" title="class in system">MissingMethodException</a>,
+                          <a href="../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
+                          <a href="CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a>,
+                          <a href="../../io/IOException.html" title="class in system.io">IOException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 <dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
-<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 <dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
 <dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
+<dd><code><a href="../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
+<dd><code><a href="CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a></code></dd>
+<dd><code><a href="../../io/IOException.html" title="class in system.io">IOException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1307,27 +1329,35 @@ extends <a href="AsymmetricAlgorithm.html" title="class in system.security.crypt
                    throws java.lang.Throwable,
                           <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
                           <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                          <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                          <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                           <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                          <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
-                          <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
                           <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                          <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
-                          <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></pre>
+                          <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                          <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                          <a href="../../RankException.html" title="class in system">RankException</a>,
+                          <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                          <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                          <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                          <a href="../../MissingMethodException.html" title="class in system">MissingMethodException</a>,
+                          <a href="../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
+                          <a href="CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a>,
+                          <a href="../../io/IOException.html" title="class in system.io">IOException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 <dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
-<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 <dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
 <dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
+<dd><code><a href="../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
+<dd><code><a href="CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a></code></dd>
+<dd><code><a href="../../io/IOException.html" title="class in system.io">IOException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1343,30 +1373,30 @@ extends <a href="AsymmetricAlgorithm.html" title="class in system.security.crypt
                    throws java.lang.Throwable,
                           <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
                           <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                          <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                          <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                           <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                          <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
-                          <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
                           <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                          <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
                           <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                          <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                          <a href="../../RankException.html" title="class in system">RankException</a>,
+                          <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                          <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                           <a href="../../formats/asn1/AsnContentException.html" title="class in system.formats.asn1">AsnContentException</a>,
+                          <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
                           <a href="CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 <dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
-<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 <dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
 <dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 <dd><code><a href="../../formats/asn1/AsnContentException.html" title="class in system.formats.asn1">AsnContentException</a></code></dd>
+<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 <dd><code><a href="CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a></code></dd>
 </dl>
 </li>
@@ -1383,30 +1413,30 @@ extends <a href="AsymmetricAlgorithm.html" title="class in system.security.crypt
                    throws java.lang.Throwable,
                           <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
                           <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                          <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                          <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                           <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                          <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
-                          <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
                           <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                          <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
                           <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                          <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                          <a href="../../RankException.html" title="class in system">RankException</a>,
+                          <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                          <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                           <a href="../../formats/asn1/AsnContentException.html" title="class in system.formats.asn1">AsnContentException</a>,
+                          <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
                           <a href="CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 <dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
-<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 <dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
 <dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 <dd><code><a href="../../formats/asn1/AsnContentException.html" title="class in system.formats.asn1">AsnContentException</a></code></dd>
+<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 <dd><code><a href="CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a></code></dd>
 </dl>
 </li>
@@ -1441,42 +1471,6 @@ extends <a href="AsymmetricAlgorithm.html" title="class in system.security.crypt
 </dl>
 </li>
 </ul>
-<a id="ExportECPrivateKey()">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>ExportECPrivateKey</h4>
-<pre class="methodSignature">public&nbsp;byte[]&nbsp;ExportECPrivateKey()
-                          throws java.lang.Throwable,
-                                 <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                                 <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
-                                 <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                                 <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
-                                 <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                                 <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                                 <a href="../../OverflowException.html" title="class in system">OverflowException</a>,
-                                 <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                                 <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
-                                 <a href="../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
-                                 <a href="CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a></pre>
-<dl>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
-<dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../OverflowException.html" title="class in system">OverflowException</a></code></dd>
-<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
-<dd><code><a href="../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
-<dd><code><a href="CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a></code></dd>
-</dl>
-</li>
-</ul>
 <a id="SignData(byte[],int,int,system.security.cryptography.HashAlgorithmName,system.security.cryptography.DSASignatureFormat)">
 <!--   -->
 </a>
@@ -1491,28 +1485,30 @@ extends <a href="AsymmetricAlgorithm.html" title="class in system.security.crypt
                 throws java.lang.Throwable,
                        <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
                        <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                       <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                       <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                        <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                       <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
-                       <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
                        <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                       <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
                        <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                       <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                       <a href="../../RankException.html" title="class in system">RankException</a>,
+                       <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                       <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                       <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                       <a href="../../FormatException.html" title="class in system">FormatException</a>,
                        <a href="CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 <dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
-<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 <dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
 <dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../FormatException.html" title="class in system">FormatException</a></code></dd>
 <dd><code><a href="CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a></code></dd>
 </dl>
 </li>
@@ -1531,28 +1527,30 @@ extends <a href="AsymmetricAlgorithm.html" title="class in system.security.crypt
                 throws java.lang.Throwable,
                        <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
                        <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                       <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                       <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                        <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                       <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
-                       <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
                        <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                       <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
                        <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                       <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                       <a href="../../RankException.html" title="class in system">RankException</a>,
+                       <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                       <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                       <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                       <a href="../../FormatException.html" title="class in system">FormatException</a>,
                        <a href="CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 <dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
-<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 <dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
 <dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../FormatException.html" title="class in system">FormatException</a></code></dd>
 <dd><code><a href="CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a></code></dd>
 </dl>
 </li>
@@ -1570,27 +1568,35 @@ extends <a href="AsymmetricAlgorithm.html" title="class in system.security.crypt
                 throws java.lang.Throwable,
                        <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
                        <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                       <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                       <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                        <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                       <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
-                       <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
                        <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                       <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
-                       <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></pre>
+                       <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                       <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                       <a href="../../RankException.html" title="class in system">RankException</a>,
+                       <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                       <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                       <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                       <a href="../../FormatException.html" title="class in system">FormatException</a>,
+                       <a href="../../MissingMethodException.html" title="class in system">MissingMethodException</a>,
+                       <a href="../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
+                       <a href="CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 <dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
-<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 <dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
 <dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
+<dd><code><a href="../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
+<dd><code><a href="CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1607,27 +1613,35 @@ extends <a href="AsymmetricAlgorithm.html" title="class in system.security.crypt
                 throws java.lang.Throwable,
                        <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
                        <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                       <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                       <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                        <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                       <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
-                       <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
                        <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                       <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
-                       <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></pre>
+                       <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                       <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                       <a href="../../RankException.html" title="class in system">RankException</a>,
+                       <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                       <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                       <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                       <a href="../../FormatException.html" title="class in system">FormatException</a>,
+                       <a href="../../MissingMethodException.html" title="class in system">MissingMethodException</a>,
+                       <a href="../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
+                       <a href="CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 <dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
-<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 <dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
 <dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
+<dd><code><a href="../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
+<dd><code><a href="CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1643,28 +1657,28 @@ extends <a href="AsymmetricAlgorithm.html" title="class in system.security.crypt
                 throws java.lang.Throwable,
                        <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
                        <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                       <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                       <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                        <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                       <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
-                       <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
                        <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                       <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
                        <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                       <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                       <a href="../../RankException.html" title="class in system">RankException</a>,
+                       <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                       <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                       <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
                        <a href="CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 <dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
-<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 <dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
 <dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 <dd><code><a href="CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a></code></dd>
 </dl>
 </li>
@@ -1681,28 +1695,28 @@ extends <a href="AsymmetricAlgorithm.html" title="class in system.security.crypt
                 throws java.lang.Throwable,
                        <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
                        <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                       <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                       <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                        <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                       <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
-                       <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
                        <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                       <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
                        <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                       <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                       <a href="../../RankException.html" title="class in system">RankException</a>,
+                       <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                       <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                       <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
                        <a href="CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 <dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
-<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 <dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
 <dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 <dd><code><a href="CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a></code></dd>
 </dl>
 </li>
@@ -1718,27 +1732,31 @@ extends <a href="AsymmetricAlgorithm.html" title="class in system.security.crypt
                 throws java.lang.Throwable,
                        <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
                        <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                       <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                       <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                        <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                       <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
-                       <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
                        <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                       <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
-                       <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></pre>
+                       <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                       <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                       <a href="../../RankException.html" title="class in system">RankException</a>,
+                       <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                       <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                       <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                       <a href="../../FormatException.html" title="class in system">FormatException</a>,
+                       <a href="CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 <dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
-<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 <dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
 <dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1753,27 +1771,31 @@ extends <a href="AsymmetricAlgorithm.html" title="class in system.security.crypt
                 throws java.lang.Throwable,
                        <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
                        <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                       <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                       <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                        <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                       <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
-                       <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
                        <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                       <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
-                       <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></pre>
+                       <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                       <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                       <a href="../../RankException.html" title="class in system">RankException</a>,
+                       <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                       <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                       <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                       <a href="../../FormatException.html" title="class in system">FormatException</a>,
+                       <a href="CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 <dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
-<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 <dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
 <dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1789,29 +1811,31 @@ extends <a href="AsymmetricAlgorithm.html" title="class in system.security.crypt
                 throws java.lang.Throwable,
                        <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
                        <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                       <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                       <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                        <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                       <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
-                       <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
                        <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                       <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
                        <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
-                       <a href="CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a></pre>
+                       <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                       <a href="../../RankException.html" title="class in system">RankException</a>,
+                       <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                       <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                       <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                       <a href="CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a>,
+                       <a href="../../io/IOException.html" title="class in system.io">IOException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 <dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
-<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 <dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
 <dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 <dd><code><a href="CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a></code></dd>
+<dd><code><a href="../../io/IOException.html" title="class in system.io">IOException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1826,27 +1850,35 @@ extends <a href="AsymmetricAlgorithm.html" title="class in system.security.crypt
                 throws java.lang.Throwable,
                        <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
                        <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                       <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                       <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                        <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                       <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
-                       <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
                        <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                       <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
-                       <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></pre>
+                       <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                       <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                       <a href="../../RankException.html" title="class in system">RankException</a>,
+                       <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                       <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                       <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                       <a href="../../MissingMethodException.html" title="class in system">MissingMethodException</a>,
+                       <a href="../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
+                       <a href="CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a>,
+                       <a href="../../io/IOException.html" title="class in system.io">IOException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 <dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
-<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 <dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
 <dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
+<dd><code><a href="../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
+<dd><code><a href="CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a></code></dd>
+<dd><code><a href="../../io/IOException.html" title="class in system.io">IOException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1861,28 +1893,28 @@ extends <a href="AsymmetricAlgorithm.html" title="class in system.security.crypt
                 throws java.lang.Throwable,
                        <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
                        <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                       <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                       <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                        <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                       <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
-                       <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
                        <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                       <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
                        <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                       <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                       <a href="../../RankException.html" title="class in system">RankException</a>,
+                       <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                       <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                       <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
                        <a href="CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 <dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
-<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 <dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
 <dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 <dd><code><a href="CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a></code></dd>
 </dl>
 </li>
@@ -1898,28 +1930,28 @@ extends <a href="AsymmetricAlgorithm.html" title="class in system.security.crypt
                 throws java.lang.Throwable,
                        <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
                        <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                       <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                       <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                        <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                       <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
-                       <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
                        <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                       <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
                        <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                       <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                       <a href="../../RankException.html" title="class in system">RankException</a>,
+                       <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                       <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                       <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
                        <a href="CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 <dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
-<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 <dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
 <dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 <dd><code><a href="CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a></code></dd>
 </dl>
 </li>
@@ -1962,17 +1994,23 @@ extends <a href="AsymmetricAlgorithm.html" title="class in system.security.crypt
                         throws java.lang.Throwable,
                                <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                                <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
+                               <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                                <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
                                <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
-                               <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></pre>
+                               <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                               <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                               <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 <dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
 <dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1984,20 +2022,16 @@ extends <a href="AsymmetricAlgorithm.html" title="class in system.security.crypt
 <h4>CreateNewECDsa</h4>
 <pre class="methodSignature">public static&nbsp;<a href="ECDsa.html" title="class in system.security.cryptography">ECDsa</a>&nbsp;CreateNewECDsa()
                             throws java.lang.Throwable,
-                                   <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                                    <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                                    <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
-                                   <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
-                                   <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                   <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                                    <a href="CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
-<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a></code></dd>
 </dl>
 </li>
@@ -2012,6 +2046,8 @@ extends <a href="AsymmetricAlgorithm.html" title="class in system.security.crypt
                     throws java.lang.Throwable,
                            <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                            <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
+                           <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                           <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
                            <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
                            <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
                            <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
@@ -2021,6 +2057,8 @@ extends <a href="AsymmetricAlgorithm.html" title="class in system.security.crypt
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 <dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
 <dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
 <dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
@@ -2036,21 +2074,17 @@ extends <a href="AsymmetricAlgorithm.html" title="class in system.security.crypt
 <h4>Create</h4>
 <pre class="methodSignature">public static&nbsp;<a href="ECDsa.html" title="class in system.security.cryptography">ECDsa</a>&nbsp;Create&#8203;(<a href="ECParameters.html" title="class in system.security.cryptography">ECParameters</a>&nbsp;parameters)
                     throws java.lang.Throwable,
-                           <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                            <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                            <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
-                           <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
-                           <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                           <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                            <a href="CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a>,
                            <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
-<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a></code></dd>
 <dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
 </dl>
@@ -2066,79 +2100,37 @@ extends <a href="AsymmetricAlgorithm.html" title="class in system.security.crypt
                             throws java.lang.Throwable,
                                    <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
                                    <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                                   <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                                   <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                                    <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                                   <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
-                                   <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
                                    <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                                   <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
                                    <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                   <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                   <a href="../../RankException.html" title="class in system">RankException</a>,
+                                   <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                                   <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                                    <a href="../../TypeLoadException.html" title="class in system">TypeLoadException</a>,
-                                   <a href="CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a></pre>
+                                   <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                   <a href="../../io/FileLoadException.html" title="class in system.io">FileLoadException</a>,
+                                   <a href="../../io/FileNotFoundException.html" title="class in system.io">FileNotFoundException</a>,
+                                   <a href="CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a>,
+                                   <a href="../../NullReferenceException.html" title="class in system">NullReferenceException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 <dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
-<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 <dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
 <dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 <dd><code><a href="../../TypeLoadException.html" title="class in system">TypeLoadException</a></code></dd>
+<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../io/FileLoadException.html" title="class in system.io">FileLoadException</a></code></dd>
+<dd><code><a href="../../io/FileNotFoundException.html" title="class in system.io">FileNotFoundException</a></code></dd>
 <dd><code><a href="CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a></code></dd>
-</dl>
-</li>
-</ul>
-<a id="ExportExplicitParameters(boolean)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>ExportExplicitParameters</h4>
-<pre class="methodSignature">public&nbsp;<a href="ECParameters.html" title="class in system.security.cryptography">ECParameters</a>&nbsp;ExportExplicitParameters&#8203;(boolean&nbsp;includePrivateParameters)
-                                      throws java.lang.Throwable,
-                                             <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                                             <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
-                                             <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                                             <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                                             <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></pre>
-<dl>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
-</dl>
-</li>
-</ul>
-<a id="ExportParameters(boolean)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>ExportParameters</h4>
-<pre class="methodSignature">public&nbsp;<a href="ECParameters.html" title="class in system.security.cryptography">ECParameters</a>&nbsp;ExportParameters&#8203;(boolean&nbsp;includePrivateParameters)
-                              throws java.lang.Throwable,
-                                     <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                                     <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
-                                     <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                                     <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                                     <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></pre>
-<dl>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -2150,22 +2142,28 @@ extends <a href="AsymmetricAlgorithm.html" title="class in system.security.crypt
 <h4>ToXmlString</h4>
 <pre class="methodSignature">public&nbsp;java.lang.String&nbsp;ToXmlString&#8203;(boolean&nbsp;includePrivateParameters)
                              throws java.lang.Throwable,
-                                    <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                                    <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
                                     <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                    <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
+                                    <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                                     <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                    <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
                                     <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                                    <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                    <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                                     <a href="../../NotImplementedException.html" title="class in system">NotImplementedException</a></pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="AsymmetricAlgorithm.html#ToXmlString(boolean)">ToXmlString</a></code>&nbsp;in class&nbsp;<code><a href="AsymmetricAlgorithm.html" title="class in system.security.cryptography">AsymmetricAlgorithm</a></code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 <dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
 <dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../../NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
 </dl>
 </li>
@@ -2173,76 +2171,34 @@ extends <a href="AsymmetricAlgorithm.html" title="class in system.security.crypt
 <a id="FromXmlString(java.lang.String)">
 <!--   -->
 </a>
-<ul class="blockList">
+<ul class="blockListLast">
 <li class="blockList">
 <h4>FromXmlString</h4>
 <pre class="methodSignature">public&nbsp;void&nbsp;FromXmlString&#8203;(java.lang.String&nbsp;xmlString)
                    throws java.lang.Throwable,
-                          <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                          <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
                           <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                          <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
+                          <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                           <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                          <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
                           <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                          <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                          <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                           <a href="../../NotImplementedException.html" title="class in system">NotImplementedException</a></pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="AsymmetricAlgorithm.html#FromXmlString(java.lang.String)">FromXmlString</a></code>&nbsp;in class&nbsp;<code><a href="AsymmetricAlgorithm.html" title="class in system.security.cryptography">AsymmetricAlgorithm</a></code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 <dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
 <dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../../NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
-</dl>
-</li>
-</ul>
-<a id="GenerateKey(system.security.cryptography.ECCurve)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>GenerateKey</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;GenerateKey&#8203;(<a href="ECCurve.html" title="class in system.security.cryptography">ECCurve</a>&nbsp;curve)
-                 throws java.lang.Throwable,
-                        <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                        <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
-                        <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                        <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                        <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></pre>
-<dl>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
-</dl>
-</li>
-</ul>
-<a id="ImportParameters(system.security.cryptography.ECParameters)">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>ImportParameters</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;ImportParameters&#8203;(<a href="ECParameters.html" title="class in system.security.cryptography">ECParameters</a>&nbsp;parameters)
-                      throws java.lang.Throwable,
-                             <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                             <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
-                             <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                             <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                             <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></pre>
-<dl>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
 </dl>
 </li>
 </ul>

@@ -17,21 +17,14 @@
 <meta name="keywords" content="setJCOInstance()">
 <meta name="keywords" content="getJCOType()">
 <meta name="keywords" content="cast()">
-<meta name="keywords" content="GetRemoteAvailableBidirectionalStreamCount()">
-<meta name="keywords" content="GetRemoteAvailableUnidirectionalStreamCount()">
-<meta name="keywords" content="OpenBidirectionalStream()">
-<meta name="keywords" content="OpenUnidirectionalStream()">
 <meta name="keywords" content="CloseAsync()">
-<meta name="keywords" content="ConnectAsync()">
-<meta name="keywords" content="WaitForAvailableBidirectionalStreamsAsync()">
-<meta name="keywords" content="WaitForAvailableUnidirectionalStreamsAsync()">
-<meta name="keywords" content="Dispose()">
-<meta name="keywords" content="close()">
-<meta name="keywords" content="getConnected()">
-<meta name="keywords" content="getRemoteEndPoint()">
+<meta name="keywords" content="DisposeAsync()">
+<meta name="keywords" content="getIsSupported()">
 <meta name="keywords" content="getLocalEndPoint()">
+<meta name="keywords" content="getRemoteEndPoint()">
 <meta name="keywords" content="getNegotiatedApplicationProtocol()">
 <meta name="keywords" content="getRemoteCertificate()">
+<meta name="keywords" content="getTargetHostName()">
 <link rel="stylesheet" type="text/css" href="../../../stylesheet.css" title="Style">
 <script type="text/javascript" src="../../../script.js"></script>
 </head>
@@ -45,7 +38,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10};
+var data = {"i0":9,"i1":10,"i2":10,"i3":9,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -144,13 +137,12 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><code>java.lang.AutoCloseable</code>, <code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
+<dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
 </dl>
 <hr>
 <pre>public class <span class="typeNameLabel">QuicConnection</span>
-extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>
-implements java.lang.AutoCloseable</pre>
-<div class="block">The base .NET class managing System.Net.Quic.QuicConnection, System.Net.Quic, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a.
+extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></pre>
+<div class="block">The base .NET class managing System.Net.Quic.QuicConnection, System.Net.Quic, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a.
  <p>
  
  .NET documentation at <a href="https://docs.microsoft.com/en-us/dotnet/api/System.Net.Quic.QuicConnection" target="_top">https://docs.microsoft.com/en-us/dotnet/api/System.Net.Quic.QuicConnection</a>
@@ -185,7 +177,7 @@ implements java.lang.AutoCloseable</pre>
 <td class="colFirst"><code>static java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#assemblyFullName">assemblyFullName</a></span></code></th>
 <td class="colLast">
-<div class="block">Fully assembly qualified name: System.Net.Quic, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</div>
+<div class="block">Fully assembly qualified name: System.Net.Quic, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</div>
 </td>
 </tr>
 <tr class="rowColor">
@@ -243,28 +235,6 @@ implements java.lang.AutoCloseable</pre>
 <div class="block">Internal constructor.</div>
 </td>
 </tr>
-<tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(system.net.EndPoint,system.net.security.SslClientAuthenticationOptions,system.net.IPEndPoint)">QuicConnection</a></span>&#8203;(<a href="../EndPoint.html" title="class in system.net">EndPoint</a>&nbsp;remoteEndPoint,
-              <a href="../security/SslClientAuthenticationOptions.html" title="class in system.net.security">SslClientAuthenticationOptions</a>&nbsp;sslClientAuthenticationOptions,
-              <a href="../IPEndPoint.html" title="class in system.net">IPEndPoint</a>&nbsp;localEndPoint)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(system.net.quic.implementations.QuicImplementationProvider,system.net.EndPoint,system.net.security.SslClientAuthenticationOptions,system.net.IPEndPoint)">QuicConnection</a></span>&#8203;(<a href="implementations/QuicImplementationProvider.html" title="class in system.net.quic.implementations">QuicImplementationProvider</a>&nbsp;implementationProvider,
-              <a href="../EndPoint.html" title="class in system.net">EndPoint</a>&nbsp;remoteEndPoint,
-              <a href="../security/SslClientAuthenticationOptions.html" title="class in system.net.security">SslClientAuthenticationOptions</a>&nbsp;sslClientAuthenticationOptions,
-              <a href="../IPEndPoint.html" title="class in system.net">IPEndPoint</a>&nbsp;localEndPoint)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(system.net.quic.implementations.QuicImplementationProvider,system.net.quic.QuicClientConnectionOptions)">QuicConnection</a></span>&#8203;(<a href="implementations/QuicImplementationProvider.html" title="class in system.net.quic.implementations">QuicImplementationProvider</a>&nbsp;implementationProvider,
-              <a href="QuicClientConnectionOptions.html" title="class in system.net.quic">QuicClientConnectionOptions</a>&nbsp;options)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(system.net.quic.QuicClientConnectionOptions)">QuicConnection</a></span>&#8203;(<a href="QuicClientConnectionOptions.html" title="class in system.net.quic">QuicClientConnectionOptions</a>&nbsp;options)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
 </table>
 </li>
 </ul>
@@ -291,119 +261,84 @@ implements java.lang.AutoCloseable</pre>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#close()">close</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../threading/tasks/ValueTask.html" title="class in system.threading.tasks">ValueTask</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#CloseAsync(long,system.threading.CancellationToken)">CloseAsync</a></span>&#8203;(long&nbsp;errorCode,
           <a href="../../threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../threading/tasks/ValueTask.html" title="class in system.threading.tasks">ValueTask</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ConnectAsync(system.threading.CancellationToken)">ConnectAsync</a></span>&#8203;(<a href="../../threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#DisposeAsync()">DisposeAsync</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>static boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getIsSupported()">getIsSupported</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Dispose()">Dispose</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i5" class="rowColor">
-<td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getConnected()">getConnected</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i6" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getJCOAssemblyName()">getJCOAssemblyName</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the reflected Assembly name</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getJCOClassName()">getJCOClassName</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the reflected Class name</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getJCOInstance()">getJCOInstance</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the instantiated class</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getJCOObjectName()">getJCOObjectName</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the reflected Class name used to build the object</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="https://www.jcobridge.com/api-java_2.5.21/org/mases/jcobridge/JCType.html?is-external=true" title="class or interface in org.mases.jcobridge" class="externalLink">JCType</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getJCOType()">getJCOType</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the instantiated class Type</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="../IPEndPoint.html" title="class in system.net">IPEndPoint</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getLocalEndPoint()">getLocalEndPoint</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="../security/SslApplicationProtocol.html" title="class in system.net.security">SslApplicationProtocol</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getNegotiatedApplicationProtocol()">getNegotiatedApplicationProtocol</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
-<td class="colFirst"><code>int</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#GetRemoteAvailableBidirectionalStreamCount()">GetRemoteAvailableBidirectionalStreamCount</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i14" class="altColor">
-<td class="colFirst"><code>int</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#GetRemoteAvailableUnidirectionalStreamCount()">GetRemoteAvailableUnidirectionalStreamCount</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i15" class="rowColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="../../security/cryptography/x509certificates/X509Certificate.html" title="class in system.security.cryptography.x509certificates">X509Certificate</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getRemoteCertificate()">getRemoteCertificate</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i16" class="altColor">
-<td class="colFirst"><code><a href="../EndPoint.html" title="class in system.net">EndPoint</a></code></td>
+<tr id="i12" class="altColor">
+<td class="colFirst"><code><a href="../IPEndPoint.html" title="class in system.net">IPEndPoint</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getRemoteEndPoint()">getRemoteEndPoint</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i17" class="rowColor">
-<td class="colFirst"><code><a href="QuicStream.html" title="class in system.net.quic">QuicStream</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#OpenBidirectionalStream()">OpenBidirectionalStream</a></span>()</code></th>
+<tr id="i13" class="rowColor">
+<td class="colFirst"><code>java.lang.String</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getTargetHostName()">getTargetHostName</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i18" class="altColor">
-<td class="colFirst"><code><a href="QuicStream.html" title="class in system.net.quic">QuicStream</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#OpenUnidirectionalStream()">OpenUnidirectionalStream</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i19" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setJCOInstance(org.mases.jcobridge.JCObject)">setJCOInstance</a></span>&#8203;(<a href="https://www.jcobridge.com/api-java_2.5.21/org/mases/jcobridge/JCObject.html?is-external=true" title="class or interface in org.mases.jcobridge" class="externalLink">JCObject</a>&nbsp;instance)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i20" class="altColor">
-<td class="colFirst"><code><a href="../../threading/tasks/ValueTask.html" title="class in system.threading.tasks">ValueTask</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#WaitForAvailableBidirectionalStreamsAsync(system.threading.CancellationToken)">WaitForAvailableBidirectionalStreamsAsync</a></span>&#8203;(<a href="../../threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i21" class="rowColor">
-<td class="colFirst"><code><a href="../../threading/tasks/ValueTask.html" title="class in system.threading.tasks">ValueTask</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#WaitForAvailableUnidirectionalStreamsAsync(system.threading.CancellationToken)">WaitForAvailableUnidirectionalStreamsAsync</a></span>&#8203;(<a href="../../threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -444,7 +379,7 @@ implements java.lang.AutoCloseable</pre>
 <li class="blockList">
 <h4>assemblyFullName</h4>
 <pre>public static final&nbsp;java.lang.String assemblyFullName</pre>
-<div class="block">Fully assembly qualified name: System.Net.Quic, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</div>
+<div class="block">Fully assembly qualified name: System.Net.Quic, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../constant-values.html#system.net.quic.QuicConnection.assemblyFullName">Constant Field Values</a></dd>
@@ -517,72 +452,10 @@ implements java.lang.AutoCloseable</pre>
 <a id="&lt;init&gt;()">
 <!--   -->
 </a>
-<ul class="blockList">
-<li class="blockList">
-<h4>QuicConnection</h4>
-<pre>public&nbsp;QuicConnection()
-               throws java.lang.Throwable</pre>
-<dl>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-</dl>
-</li>
-</ul>
-<a id="&lt;init&gt;(system.net.EndPoint,system.net.security.SslClientAuthenticationOptions,system.net.IPEndPoint)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>QuicConnection</h4>
-<pre>public&nbsp;QuicConnection&#8203;(<a href="../EndPoint.html" title="class in system.net">EndPoint</a>&nbsp;remoteEndPoint,
-                      <a href="../security/SslClientAuthenticationOptions.html" title="class in system.net.security">SslClientAuthenticationOptions</a>&nbsp;sslClientAuthenticationOptions,
-                      <a href="../IPEndPoint.html" title="class in system.net">IPEndPoint</a>&nbsp;localEndPoint)
-               throws java.lang.Throwable</pre>
-<dl>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-</dl>
-</li>
-</ul>
-<a id="&lt;init&gt;(system.net.quic.implementations.QuicImplementationProvider,system.net.EndPoint,system.net.security.SslClientAuthenticationOptions,system.net.IPEndPoint)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>QuicConnection</h4>
-<pre>public&nbsp;QuicConnection&#8203;(<a href="implementations/QuicImplementationProvider.html" title="class in system.net.quic.implementations">QuicImplementationProvider</a>&nbsp;implementationProvider,
-                      <a href="../EndPoint.html" title="class in system.net">EndPoint</a>&nbsp;remoteEndPoint,
-                      <a href="../security/SslClientAuthenticationOptions.html" title="class in system.net.security">SslClientAuthenticationOptions</a>&nbsp;sslClientAuthenticationOptions,
-                      <a href="../IPEndPoint.html" title="class in system.net">IPEndPoint</a>&nbsp;localEndPoint)
-               throws java.lang.Throwable</pre>
-<dl>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-</dl>
-</li>
-</ul>
-<a id="&lt;init&gt;(system.net.quic.implementations.QuicImplementationProvider,system.net.quic.QuicClientConnectionOptions)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>QuicConnection</h4>
-<pre>public&nbsp;QuicConnection&#8203;(<a href="implementations/QuicImplementationProvider.html" title="class in system.net.quic.implementations">QuicImplementationProvider</a>&nbsp;implementationProvider,
-                      <a href="QuicClientConnectionOptions.html" title="class in system.net.quic">QuicClientConnectionOptions</a>&nbsp;options)
-               throws java.lang.Throwable</pre>
-<dl>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-</dl>
-</li>
-</ul>
-<a id="&lt;init&gt;(system.net.quic.QuicClientConnectionOptions)">
-<!--   -->
-</a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>QuicConnection</h4>
-<pre>public&nbsp;QuicConnection&#8203;(<a href="QuicClientConnectionOptions.html" title="class in system.net.quic">QuicClientConnectionOptions</a>&nbsp;options)
+<pre>public&nbsp;QuicConnection()
                throws java.lang.Throwable</pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -728,62 +601,6 @@ implements java.lang.AutoCloseable</pre>
 </dl>
 </li>
 </ul>
-<a id="GetRemoteAvailableBidirectionalStreamCount()">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>GetRemoteAvailableBidirectionalStreamCount</h4>
-<pre class="methodSignature">public&nbsp;int&nbsp;GetRemoteAvailableBidirectionalStreamCount()
-                                               throws java.lang.Throwable</pre>
-<dl>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-</dl>
-</li>
-</ul>
-<a id="GetRemoteAvailableUnidirectionalStreamCount()">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>GetRemoteAvailableUnidirectionalStreamCount</h4>
-<pre class="methodSignature">public&nbsp;int&nbsp;GetRemoteAvailableUnidirectionalStreamCount()
-                                                throws java.lang.Throwable</pre>
-<dl>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-</dl>
-</li>
-</ul>
-<a id="OpenBidirectionalStream()">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>OpenBidirectionalStream</h4>
-<pre class="methodSignature">public&nbsp;<a href="QuicStream.html" title="class in system.net.quic">QuicStream</a>&nbsp;OpenBidirectionalStream()
-                                   throws java.lang.Throwable</pre>
-<dl>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-</dl>
-</li>
-</ul>
-<a id="OpenUnidirectionalStream()">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>OpenUnidirectionalStream</h4>
-<pre class="methodSignature">public&nbsp;<a href="QuicStream.html" title="class in system.net.quic">QuicStream</a>&nbsp;OpenUnidirectionalStream()
-                                    throws java.lang.Throwable</pre>
-<dl>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-</dl>
-</li>
-</ul>
 <a id="CloseAsync(long,system.threading.CancellationToken)">
 <!--   -->
 </a>
@@ -792,107 +609,77 @@ implements java.lang.AutoCloseable</pre>
 <h4>CloseAsync</h4>
 <pre class="methodSignature">public&nbsp;<a href="../../threading/tasks/ValueTask.html" title="class in system.threading.tasks">ValueTask</a>&nbsp;CloseAsync&#8203;(long&nbsp;errorCode,
                             <a href="../../threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)
-                     throws java.lang.Throwable</pre>
+                     throws java.lang.Throwable,
+                            <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
+                            <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                            <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                            <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                            <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                            <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                            <a href="../../RankException.html" title="class in system">RankException</a>,
+                            <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                            <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                            <a href="../../FormatException.html" title="class in system">FormatException</a>,
+                            <a href="../../NullReferenceException.html" title="class in system">NullReferenceException</a>,
+                            <a href="../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
+                            <a href="../../diagnostics/tracing/EventSourceException.html" title="class in system.diagnostics.tracing">EventSourceException</a>,
+                            <a href="../../MissingMethodException.html" title="class in system">MissingMethodException</a>,
+                            <a href="../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
+                            <a href="../../MissingMemberException.html" title="class in system">MissingMemberException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
+<dd><code><a href="../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
+<dd><code><a href="../../diagnostics/tracing/EventSourceException.html" title="class in system.diagnostics.tracing">EventSourceException</a></code></dd>
+<dd><code><a href="../../MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
+<dd><code><a href="../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
+<dd><code><a href="../../MissingMemberException.html" title="class in system">MissingMemberException</a></code></dd>
 </dl>
 </li>
 </ul>
-<a id="ConnectAsync(system.threading.CancellationToken)">
+<a id="DisposeAsync()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>ConnectAsync</h4>
-<pre class="methodSignature">public&nbsp;<a href="../../threading/tasks/ValueTask.html" title="class in system.threading.tasks">ValueTask</a>&nbsp;ConnectAsync&#8203;(<a href="../../threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)
-                       throws java.lang.Throwable</pre>
+<h4>DisposeAsync</h4>
+<pre class="methodSignature">public&nbsp;<a href="../../threading/tasks/ValueTask.html" title="class in system.threading.tasks">ValueTask</a>&nbsp;DisposeAsync()
+                       throws java.lang.Throwable,
+                              <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
+                              <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                              <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                              <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                              <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 </dl>
 </li>
 </ul>
-<a id="WaitForAvailableBidirectionalStreamsAsync(system.threading.CancellationToken)">
+<a id="getIsSupported()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>WaitForAvailableBidirectionalStreamsAsync</h4>
-<pre class="methodSignature">public&nbsp;<a href="../../threading/tasks/ValueTask.html" title="class in system.threading.tasks">ValueTask</a>&nbsp;WaitForAvailableBidirectionalStreamsAsync&#8203;(<a href="../../threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)
-                                                    throws java.lang.Throwable</pre>
-<dl>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-</dl>
-</li>
-</ul>
-<a id="WaitForAvailableUnidirectionalStreamsAsync(system.threading.CancellationToken)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>WaitForAvailableUnidirectionalStreamsAsync</h4>
-<pre class="methodSignature">public&nbsp;<a href="../../threading/tasks/ValueTask.html" title="class in system.threading.tasks">ValueTask</a>&nbsp;WaitForAvailableUnidirectionalStreamsAsync&#8203;(<a href="../../threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)
-                                                     throws java.lang.Throwable</pre>
-<dl>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-</dl>
-</li>
-</ul>
-<a id="Dispose()">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>Dispose</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;Dispose()
-             throws java.lang.Throwable</pre>
-<dl>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-</dl>
-</li>
-</ul>
-<a id="close()">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>close</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;close()
-           throws java.lang.Exception</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code>close</code>&nbsp;in interface&nbsp;<code>java.lang.AutoCloseable</code></dd>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Exception</code></dd>
-</dl>
-</li>
-</ul>
-<a id="getConnected()">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getConnected</h4>
-<pre class="methodSignature">public&nbsp;boolean&nbsp;getConnected()
-                     throws java.lang.Throwable</pre>
-<dl>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-</dl>
-</li>
-</ul>
-<a id="getRemoteEndPoint()">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getRemoteEndPoint</h4>
-<pre class="methodSignature">public&nbsp;<a href="../EndPoint.html" title="class in system.net">EndPoint</a>&nbsp;getRemoteEndPoint()
-                           throws java.lang.Throwable</pre>
+<h4>getIsSupported</h4>
+<pre class="methodSignature">public static&nbsp;boolean&nbsp;getIsSupported()
+                              throws java.lang.Throwable</pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
@@ -907,6 +694,20 @@ implements java.lang.AutoCloseable</pre>
 <h4>getLocalEndPoint</h4>
 <pre class="methodSignature">public&nbsp;<a href="../IPEndPoint.html" title="class in system.net">IPEndPoint</a>&nbsp;getLocalEndPoint()
                             throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a id="getRemoteEndPoint()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getRemoteEndPoint</h4>
+<pre class="methodSignature">public&nbsp;<a href="../IPEndPoint.html" title="class in system.net">IPEndPoint</a>&nbsp;getRemoteEndPoint()
+                             throws java.lang.Throwable</pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
@@ -930,11 +731,25 @@ implements java.lang.AutoCloseable</pre>
 <a id="getRemoteCertificate()">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>getRemoteCertificate</h4>
 <pre class="methodSignature">public&nbsp;<a href="../../security/cryptography/x509certificates/X509Certificate.html" title="class in system.security.cryptography.x509certificates">X509Certificate</a>&nbsp;getRemoteCertificate()
                                      throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a id="getTargetHostName()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getTargetHostName</h4>
+<pre class="methodSignature">public&nbsp;java.lang.String&nbsp;getTargetHostName()
+                                   throws java.lang.Throwable</pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>

@@ -39,7 +39,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":9,"i1":10,"i2":9,"i3":9,"i4":9,"i5":9,"i6":9,"i7":9,"i8":9,"i9":9,"i10":9,"i11":9,"i12":9,"i13":9,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":9,"i28":9,"i29":9,"i30":10};
+var data = {"i0":9,"i1":10,"i2":9,"i3":9,"i4":9,"i5":9,"i6":9,"i7":9,"i8":9,"i9":9,"i10":9,"i11":9,"i12":9,"i13":9,"i14":9,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":9,"i29":9,"i30":9,"i31":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -144,7 +144,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <pre>public class <span class="typeNameLabel">MemoryMappedFile</span>
 extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>
 implements java.lang.AutoCloseable</pre>
-<div class="block">The base .NET class managing System.IO.MemoryMappedFiles.MemoryMappedFile, System.IO.MemoryMappedFiles, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a.
+<div class="block">The base .NET class managing System.IO.MemoryMappedFiles.MemoryMappedFile, System.IO.MemoryMappedFiles, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a.
  <p>
  
  .NET documentation at <a href="https://docs.microsoft.com/en-us/dotnet/api/System.IO.MemoryMappedFiles.MemoryMappedFile" target="_top">https://docs.microsoft.com/en-us/dotnet/api/System.IO.MemoryMappedFiles.MemoryMappedFile</a>
@@ -179,7 +179,7 @@ implements java.lang.AutoCloseable</pre>
 <td class="colFirst"><code>static java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#assemblyFullName">assemblyFullName</a></span></code></th>
 <td class="colLast">
-<div class="block">Fully assembly qualified name: System.IO.MemoryMappedFiles, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</div>
+<div class="block">Fully assembly qualified name: System.IO.MemoryMappedFiles, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</div>
 </td>
 </tr>
 <tr class="rowColor">
@@ -304,7 +304,7 @@ implements java.lang.AutoCloseable</pre>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>static <a href="MemoryMappedFile.html" title="class in system.io.memorymappedfiles">MemoryMappedFile</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#CreateFromFile(system.io.FileStream,java.lang.String,long,system.io.memorymappedfiles.MemoryMappedFileAccess,system.io.HandleInheritability,boolean)">CreateFromFile</a></span>&#8203;(<a href="../FileStream.html" title="class in system.io">FileStream</a>&nbsp;fileStream,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#CreateFromFile(microsoft.win32.safehandles.SafeFileHandle,java.lang.String,long,system.io.memorymappedfiles.MemoryMappedFileAccess,system.io.HandleInheritability,boolean)">CreateFromFile</a></span>&#8203;(<a href="../../../microsoft/win32/safehandles/SafeFileHandle.html" title="class in microsoft.win32.safehandles">SafeFileHandle</a>&nbsp;fileHandle,
               java.lang.String&nbsp;mapName,
               long&nbsp;capacity,
               <a href="MemoryMappedFileAccess.html" title="class in system.io.memorymappedfiles">MemoryMappedFileAccess</a>&nbsp;access,
@@ -314,18 +314,28 @@ implements java.lang.AutoCloseable</pre>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>static <a href="MemoryMappedFile.html" title="class in system.io.memorymappedfiles">MemoryMappedFile</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#CreateFromFile(system.io.FileStream,java.lang.String,long,system.io.memorymappedfiles.MemoryMappedFileAccess,system.io.HandleInheritability,boolean)">CreateFromFile</a></span>&#8203;(<a href="../FileStream.html" title="class in system.io">FileStream</a>&nbsp;fileStream,
+              java.lang.String&nbsp;mapName,
+              long&nbsp;capacity,
+              <a href="MemoryMappedFileAccess.html" title="class in system.io.memorymappedfiles">MemoryMappedFileAccess</a>&nbsp;access,
+              <a href="../HandleInheritability.html" title="class in system.io">HandleInheritability</a>&nbsp;inheritability,
+              boolean&nbsp;leaveOpen)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i9" class="rowColor">
+<td class="colFirst"><code>static <a href="MemoryMappedFile.html" title="class in system.io.memorymappedfiles">MemoryMappedFile</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#CreateNew(java.lang.String,long)">CreateNew</a></span>&#8203;(java.lang.String&nbsp;mapName,
          long&nbsp;capacity)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>static <a href="MemoryMappedFile.html" title="class in system.io.memorymappedfiles">MemoryMappedFile</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#CreateNew(java.lang.String,long,system.io.memorymappedfiles.MemoryMappedFileAccess)">CreateNew</a></span>&#8203;(java.lang.String&nbsp;mapName,
          long&nbsp;capacity,
          <a href="MemoryMappedFileAccess.html" title="class in system.io.memorymappedfiles">MemoryMappedFileAccess</a>&nbsp;access)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>static <a href="MemoryMappedFile.html" title="class in system.io.memorymappedfiles">MemoryMappedFile</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#CreateNew(java.lang.String,long,system.io.memorymappedfiles.MemoryMappedFileAccess,system.io.memorymappedfiles.MemoryMappedFileOptions,system.io.HandleInheritability)">CreateNew</a></span>&#8203;(java.lang.String&nbsp;mapName,
          long&nbsp;capacity,
@@ -334,20 +344,20 @@ implements java.lang.AutoCloseable</pre>
          <a href="../HandleInheritability.html" title="class in system.io">HandleInheritability</a>&nbsp;inheritability)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>static <a href="MemoryMappedFile.html" title="class in system.io.memorymappedfiles">MemoryMappedFile</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#CreateOrOpen(java.lang.String,long)">CreateOrOpen</a></span>&#8203;(java.lang.String&nbsp;mapName,
             long&nbsp;capacity)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>static <a href="MemoryMappedFile.html" title="class in system.io.memorymappedfiles">MemoryMappedFile</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#CreateOrOpen(java.lang.String,long,system.io.memorymappedfiles.MemoryMappedFileAccess)">CreateOrOpen</a></span>&#8203;(java.lang.String&nbsp;mapName,
             long&nbsp;capacity,
             <a href="MemoryMappedFileAccess.html" title="class in system.io.memorymappedfiles">MemoryMappedFileAccess</a>&nbsp;access)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>static <a href="MemoryMappedFile.html" title="class in system.io.memorymappedfiles">MemoryMappedFile</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#CreateOrOpen(java.lang.String,long,system.io.memorymappedfiles.MemoryMappedFileAccess,system.io.memorymappedfiles.MemoryMappedFileOptions,system.io.HandleInheritability)">CreateOrOpen</a></span>&#8203;(java.lang.String&nbsp;mapName,
             long&nbsp;capacity,
@@ -356,106 +366,106 @@ implements java.lang.AutoCloseable</pre>
             <a href="../HandleInheritability.html" title="class in system.io">HandleInheritability</a>&nbsp;inheritability)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code><a href="MemoryMappedViewAccessor.html" title="class in system.io.memorymappedfiles">MemoryMappedViewAccessor</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#CreateViewAccessor()">CreateViewAccessor</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code><a href="MemoryMappedViewAccessor.html" title="class in system.io.memorymappedfiles">MemoryMappedViewAccessor</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#CreateViewAccessor(long,long)">CreateViewAccessor</a></span>&#8203;(long&nbsp;offset,
                   long&nbsp;size)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code><a href="MemoryMappedViewAccessor.html" title="class in system.io.memorymappedfiles">MemoryMappedViewAccessor</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#CreateViewAccessor(long,long,system.io.memorymappedfiles.MemoryMappedFileAccess)">CreateViewAccessor</a></span>&#8203;(long&nbsp;offset,
                   long&nbsp;size,
                   <a href="MemoryMappedFileAccess.html" title="class in system.io.memorymappedfiles">MemoryMappedFileAccess</a>&nbsp;access)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code><a href="MemoryMappedViewStream.html" title="class in system.io.memorymappedfiles">MemoryMappedViewStream</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#CreateViewStream()">CreateViewStream</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code><a href="MemoryMappedViewStream.html" title="class in system.io.memorymappedfiles">MemoryMappedViewStream</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#CreateViewStream(long,long)">CreateViewStream</a></span>&#8203;(long&nbsp;offset,
                 long&nbsp;size)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code><a href="MemoryMappedViewStream.html" title="class in system.io.memorymappedfiles">MemoryMappedViewStream</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#CreateViewStream(long,long,system.io.memorymappedfiles.MemoryMappedFileAccess)">CreateViewStream</a></span>&#8203;(long&nbsp;offset,
                 long&nbsp;size,
                 <a href="MemoryMappedFileAccess.html" title="class in system.io.memorymappedfiles">MemoryMappedFileAccess</a>&nbsp;access)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Dispose()">Dispose</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i22" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getJCOAssemblyName()">getJCOAssemblyName</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the reflected Assembly name</div>
 </td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getJCOClassName()">getJCOClassName</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the reflected Class name</div>
 </td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getJCOInstance()">getJCOInstance</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the instantiated class</div>
 </td>
 </tr>
-<tr id="i24" class="altColor">
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getJCOObjectName()">getJCOObjectName</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the reflected Class name used to build the object</div>
 </td>
 </tr>
-<tr id="i25" class="rowColor">
+<tr id="i26" class="altColor">
 <td class="colFirst"><code><a href="https://www.jcobridge.com/api-java_2.5.21/org/mases/jcobridge/JCType.html?is-external=true" title="class or interface in org.mases.jcobridge" class="externalLink">JCType</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getJCOType()">getJCOType</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the instantiated class Type</div>
 </td>
 </tr>
-<tr id="i26" class="altColor">
+<tr id="i27" class="rowColor">
 <td class="colFirst"><code><a href="../../../microsoft/win32/safehandles/SafeMemoryMappedFileHandle.html" title="class in microsoft.win32.safehandles">SafeMemoryMappedFileHandle</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getSafeMemoryMappedFileHandle()">getSafeMemoryMappedFileHandle</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i27" class="rowColor">
+<tr id="i28" class="altColor">
 <td class="colFirst"><code>static <a href="MemoryMappedFile.html" title="class in system.io.memorymappedfiles">MemoryMappedFile</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#OpenExisting(java.lang.String)">OpenExisting</a></span>&#8203;(java.lang.String&nbsp;mapName)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i28" class="altColor">
+<tr id="i29" class="rowColor">
 <td class="colFirst"><code>static <a href="MemoryMappedFile.html" title="class in system.io.memorymappedfiles">MemoryMappedFile</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#OpenExisting(java.lang.String,system.io.memorymappedfiles.MemoryMappedFileRights)">OpenExisting</a></span>&#8203;(java.lang.String&nbsp;mapName,
             <a href="MemoryMappedFileRights.html" title="class in system.io.memorymappedfiles">MemoryMappedFileRights</a>&nbsp;desiredAccessRights)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i29" class="rowColor">
+<tr id="i30" class="altColor">
 <td class="colFirst"><code>static <a href="MemoryMappedFile.html" title="class in system.io.memorymappedfiles">MemoryMappedFile</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#OpenExisting(java.lang.String,system.io.memorymappedfiles.MemoryMappedFileRights,system.io.HandleInheritability)">OpenExisting</a></span>&#8203;(java.lang.String&nbsp;mapName,
             <a href="MemoryMappedFileRights.html" title="class in system.io.memorymappedfiles">MemoryMappedFileRights</a>&nbsp;desiredAccessRights,
             <a href="../HandleInheritability.html" title="class in system.io">HandleInheritability</a>&nbsp;inheritability)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i30" class="altColor">
+<tr id="i31" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setJCOInstance(org.mases.jcobridge.JCObject)">setJCOInstance</a></span>&#8203;(<a href="https://www.jcobridge.com/api-java_2.5.21/org/mases/jcobridge/JCObject.html?is-external=true" title="class or interface in org.mases.jcobridge" class="externalLink">JCObject</a>&nbsp;instance)</code></th>
 <td class="colLast">&nbsp;</td>
@@ -498,7 +508,7 @@ implements java.lang.AutoCloseable</pre>
 <li class="blockList">
 <h4>assemblyFullName</h4>
 <pre>public static final&nbsp;java.lang.String assemblyFullName</pre>
-<div class="block">Fully assembly qualified name: System.IO.MemoryMappedFiles, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</div>
+<div class="block">Fully assembly qualified name: System.IO.MemoryMappedFiles, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../constant-values.html#system.io.memorymappedfiles.MemoryMappedFile.assemblyFullName">Constant Field Values</a></dd>
@@ -720,6 +730,51 @@ implements java.lang.AutoCloseable</pre>
 </dl>
 </li>
 </ul>
+<a id="CreateFromFile(microsoft.win32.safehandles.SafeFileHandle,java.lang.String,long,system.io.memorymappedfiles.MemoryMappedFileAccess,system.io.HandleInheritability,boolean)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>CreateFromFile</h4>
+<pre class="methodSignature">public static&nbsp;<a href="MemoryMappedFile.html" title="class in system.io.memorymappedfiles">MemoryMappedFile</a>&nbsp;CreateFromFile&#8203;(<a href="../../../microsoft/win32/safehandles/SafeFileHandle.html" title="class in microsoft.win32.safehandles">SafeFileHandle</a>&nbsp;fileHandle,
+                                              java.lang.String&nbsp;mapName,
+                                              long&nbsp;capacity,
+                                              <a href="MemoryMappedFileAccess.html" title="class in system.io.memorymappedfiles">MemoryMappedFileAccess</a>&nbsp;access,
+                                              <a href="../HandleInheritability.html" title="class in system.io">HandleInheritability</a>&nbsp;inheritability,
+                                              boolean&nbsp;leaveOpen)
+                                       throws java.lang.Throwable,
+                                              <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
+                                              <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                              <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                              <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                              <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                              <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                              <a href="../../RankException.html" title="class in system">RankException</a>,
+                                              <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                                              <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                              <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                              <a href="../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
+                                              <a href="../../MissingMethodException.html" title="class in system">MissingMethodException</a>,
+                                              <a href="../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
+<dd><code><a href="../../MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
+<dd><code><a href="../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
+</dl>
+</li>
+</ul>
 <a id="CreateFromFile(system.io.FileStream,java.lang.String,long,system.io.memorymappedfiles.MemoryMappedFileAccess,system.io.HandleInheritability,boolean)">
 <!--   -->
 </a>
@@ -733,25 +788,37 @@ implements java.lang.AutoCloseable</pre>
                                               <a href="../HandleInheritability.html" title="class in system.io">HandleInheritability</a>&nbsp;inheritability,
                                               boolean&nbsp;leaveOpen)
                                        throws java.lang.Throwable,
-                                              <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
                                               <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
-                                              <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                                               <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                                              <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
-                                              <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
                                               <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                                              <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></pre>
+                                              <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                              <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                              <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                              <a href="../../RankException.html" title="class in system">RankException</a>,
+                                              <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                                              <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                              <a href="../../MissingMethodException.html" title="class in system">MissingMethodException</a>,
+                                              <a href="../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
+                                              <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                              <a href="../../FormatException.html" title="class in system">FormatException</a>,
+                                              <a href="../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 <dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
-<dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
 <dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
+<dd><code><a href="../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
 <dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -769,31 +836,41 @@ implements java.lang.AutoCloseable</pre>
                                        throws java.lang.Throwable,
                                               <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
                                               <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                                              <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                                              <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                                               <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                                              <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
-                                              <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
                                               <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                                              <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
                                               <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                              <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                              <a href="../../RankException.html" title="class in system">RankException</a>,
+                                              <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                                              <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                              <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                              <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                                              <a href="../../MissingMethodException.html" title="class in system">MissingMethodException</a>,
+                                              <a href="../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
+                                              <a href="../../FormatException.html" title="class in system">FormatException</a>,
                                               <a href="../../runtime/serialization/SerializationException.html" title="class in system.runtime.serialization">SerializationException</a>,
-                                              <a href="../IOException.html" title="class in system.io">IOException</a></pre>
+                                              <a href="../IOException.html" title="class in system.io">IOException</a>,
+                                              <a href="../../ApplicationException.html" title="class in system">ApplicationException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 <dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
-<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 <dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
 <dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
+<dd><code><a href="../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
+<dd><code><a href="../../FormatException.html" title="class in system">FormatException</a></code></dd>
 <dd><code><a href="../../runtime/serialization/SerializationException.html" title="class in system.runtime.serialization">SerializationException</a></code></dd>
 <dd><code><a href="../IOException.html" title="class in system.io">IOException</a></code></dd>
+<dd><code><a href="../../ApplicationException.html" title="class in system">ApplicationException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -809,32 +886,34 @@ implements java.lang.AutoCloseable</pre>
                                               long&nbsp;capacity)
                                        throws java.lang.Throwable,
                                               <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
+                                              <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                              <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                                               <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
                                               <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                                              <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                                              <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                                              <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
                                               <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
-                                              <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                                              <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
-                                              <a href="../../RankException.html" title="class in system">RankException</a>,
+                                              <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                              <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                                              <a href="../../MissingMethodException.html" title="class in system">MissingMethodException</a>,
+                                              <a href="../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
                                               <a href="../../runtime/serialization/SerializationException.html" title="class in system.runtime.serialization">SerializationException</a>,
+                                              <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
                                               <a href="../IOException.html" title="class in system.io">IOException</a>,
                                               <a href="../../FormatException.html" title="class in system">FormatException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 <dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
 <dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
-<dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
-<dd><code><a href="../../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
+<dd><code><a href="../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
 <dd><code><a href="../../runtime/serialization/SerializationException.html" title="class in system.runtime.serialization">SerializationException</a></code></dd>
+<dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
 <dd><code><a href="../IOException.html" title="class in system.io">IOException</a></code></dd>
 <dd><code><a href="../../FormatException.html" title="class in system">FormatException</a></code></dd>
 </dl>
@@ -851,32 +930,34 @@ implements java.lang.AutoCloseable</pre>
                                               java.lang.String&nbsp;mapName)
                                        throws java.lang.Throwable,
                                               <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
+                                              <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                              <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                                               <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
                                               <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                                              <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                                              <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                                              <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
                                               <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
-                                              <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                                              <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
-                                              <a href="../../RankException.html" title="class in system">RankException</a>,
+                                              <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                              <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                                              <a href="../../MissingMethodException.html" title="class in system">MissingMethodException</a>,
+                                              <a href="../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
                                               <a href="../../runtime/serialization/SerializationException.html" title="class in system.runtime.serialization">SerializationException</a>,
+                                              <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
                                               <a href="../IOException.html" title="class in system.io">IOException</a>,
                                               <a href="../../FormatException.html" title="class in system">FormatException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 <dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
 <dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
-<dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
-<dd><code><a href="../../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
+<dd><code><a href="../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
 <dd><code><a href="../../runtime/serialization/SerializationException.html" title="class in system.runtime.serialization">SerializationException</a></code></dd>
+<dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
 <dd><code><a href="../IOException.html" title="class in system.io">IOException</a></code></dd>
 <dd><code><a href="../../FormatException.html" title="class in system">FormatException</a></code></dd>
 </dl>
@@ -892,32 +973,34 @@ implements java.lang.AutoCloseable</pre>
                                               <a href="../FileMode.html" title="class in system.io">FileMode</a>&nbsp;mode)
                                        throws java.lang.Throwable,
                                               <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
+                                              <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                              <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                                               <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
                                               <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                                              <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                                              <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                                              <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
                                               <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
-                                              <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                                              <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
-                                              <a href="../../RankException.html" title="class in system">RankException</a>,
+                                              <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                              <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                                              <a href="../../MissingMethodException.html" title="class in system">MissingMethodException</a>,
+                                              <a href="../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
                                               <a href="../../runtime/serialization/SerializationException.html" title="class in system.runtime.serialization">SerializationException</a>,
+                                              <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
                                               <a href="../IOException.html" title="class in system.io">IOException</a>,
                                               <a href="../../FormatException.html" title="class in system">FormatException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 <dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
 <dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
-<dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
-<dd><code><a href="../../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
+<dd><code><a href="../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
 <dd><code><a href="../../runtime/serialization/SerializationException.html" title="class in system.runtime.serialization">SerializationException</a></code></dd>
+<dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
 <dd><code><a href="../IOException.html" title="class in system.io">IOException</a></code></dd>
 <dd><code><a href="../../FormatException.html" title="class in system">FormatException</a></code></dd>
 </dl>
@@ -932,32 +1015,34 @@ implements java.lang.AutoCloseable</pre>
 <pre class="methodSignature">public static&nbsp;<a href="MemoryMappedFile.html" title="class in system.io.memorymappedfiles">MemoryMappedFile</a>&nbsp;CreateFromFile&#8203;(java.lang.String&nbsp;path)
                                        throws java.lang.Throwable,
                                               <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
+                                              <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                              <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                                               <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
                                               <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                                              <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                                              <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                                              <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
                                               <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
-                                              <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                                              <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
-                                              <a href="../../RankException.html" title="class in system">RankException</a>,
+                                              <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                              <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                                              <a href="../../MissingMethodException.html" title="class in system">MissingMethodException</a>,
+                                              <a href="../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
                                               <a href="../../runtime/serialization/SerializationException.html" title="class in system.runtime.serialization">SerializationException</a>,
+                                              <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
                                               <a href="../IOException.html" title="class in system.io">IOException</a>,
                                               <a href="../../FormatException.html" title="class in system">FormatException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 <dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
 <dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
-<dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
-<dd><code><a href="../../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
+<dd><code><a href="../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
 <dd><code><a href="../../runtime/serialization/SerializationException.html" title="class in system.runtime.serialization">SerializationException</a></code></dd>
+<dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
 <dd><code><a href="../IOException.html" title="class in system.io">IOException</a></code></dd>
 <dd><code><a href="../../FormatException.html" title="class in system">FormatException</a></code></dd>
 </dl>
@@ -975,25 +1060,35 @@ implements java.lang.AutoCloseable</pre>
                                          <a href="MemoryMappedFileOptions.html" title="class in system.io.memorymappedfiles">MemoryMappedFileOptions</a>&nbsp;options,
                                          <a href="../HandleInheritability.html" title="class in system.io">HandleInheritability</a>&nbsp;inheritability)
                                   throws java.lang.Throwable,
-                                         <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                                         <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
                                          <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                         <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
+                                         <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                                          <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                         <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
                                          <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
                                          <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
-                                         <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                                         <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></pre>
+                                         <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                         <a href="../../MissingMethodException.html" title="class in system">MissingMethodException</a>,
+                                         <a href="../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
+                                         <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                         <a href="../../FormatException.html" title="class in system">FormatException</a>,
+                                         <a href="../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 <dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
 <dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
 <dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
-<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
+<dd><code><a href="../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
 <dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1009,23 +1104,29 @@ implements java.lang.AutoCloseable</pre>
                                   throws java.lang.Throwable,
                                          <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                                          <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
+                                         <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                                          <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
                                          <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
-                                         <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                         <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
                                          <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                                         <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                                         <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></pre>
+                                         <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                         <a href="../../MissingMethodException.html" title="class in system">MissingMethodException</a>,
+                                         <a href="../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
+                                         <a href="../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 <dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
-<dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
 <dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
+<dd><code><a href="../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
+<dd><code><a href="../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1040,23 +1141,29 @@ implements java.lang.AutoCloseable</pre>
                                   throws java.lang.Throwable,
                                          <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                                          <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
+                                         <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                                          <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
                                          <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
-                                         <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                         <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
                                          <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                                         <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                                         <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></pre>
+                                         <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                         <a href="../../MissingMethodException.html" title="class in system">MissingMethodException</a>,
+                                         <a href="../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
+                                         <a href="../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 <dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
-<dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
 <dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
+<dd><code><a href="../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
+<dd><code><a href="../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1075,24 +1182,26 @@ implements java.lang.AutoCloseable</pre>
                                             <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
                                             <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
                                             <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                                            <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                                            <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
-                                            <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
                                             <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                                             <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
-                                            <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></pre>
+                                            <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                            <a href="../../MissingMethodException.html" title="class in system">MissingMethodException</a>,
+                                            <a href="../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
+                                            <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                            <a href="../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 <dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
-<dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
 <dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
+<dd><code><a href="../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
 <dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1108,23 +1217,29 @@ implements java.lang.AutoCloseable</pre>
                                      throws java.lang.Throwable,
                                             <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                                             <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
-                                            <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                                            <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
-                                            <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
-                                            <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                                             <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                                            <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></pre>
+                                            <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                            <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                            <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                            <a href="../../FormatException.html" title="class in system">FormatException</a>,
+                                            <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                                            <a href="../../MissingMethodException.html" title="class in system">MissingMethodException</a>,
+                                            <a href="../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
+                                            <a href="../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
-<dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
-<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
+<dd><code><a href="../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
+<dd><code><a href="../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1139,23 +1254,29 @@ implements java.lang.AutoCloseable</pre>
                                      throws java.lang.Throwable,
                                             <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                                             <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
-                                            <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                                            <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
-                                            <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
-                                            <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                                             <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                                            <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></pre>
+                                            <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                            <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                            <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                            <a href="../../FormatException.html" title="class in system">FormatException</a>,
+                                            <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                                            <a href="../../MissingMethodException.html" title="class in system">MissingMethodException</a>,
+                                            <a href="../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
+                                            <a href="../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
-<dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
-<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
+<dd><code><a href="../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
+<dd><code><a href="../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1173,11 +1294,11 @@ implements java.lang.AutoCloseable</pre>
                                             <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
                                             <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                                             <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                                            <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
-                                            <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                            <a href="../../MissingMethodException.html" title="class in system">MissingMethodException</a>,
+                                            <a href="../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
                                             <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                                            <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
-                                            <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></pre>
+                                            <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                            <a href="../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
@@ -1185,11 +1306,11 @@ implements java.lang.AutoCloseable</pre>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 <dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 <dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
-<dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
+<dd><code><a href="../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
 <dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 <dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1205,22 +1326,20 @@ implements java.lang.AutoCloseable</pre>
                                             <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                                             <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
                                             <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                                            <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
-                                            <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
-                                            <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                            <a href="../../MissingMethodException.html" title="class in system">MissingMethodException</a>,
+                                            <a href="../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
                                             <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                                            <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></pre>
+                                            <a href="../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 <dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
-<dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
-<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
+<dd><code><a href="../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
 <dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1235,22 +1354,20 @@ implements java.lang.AutoCloseable</pre>
                                             <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                                             <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
                                             <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                                            <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
-                                            <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
-                                            <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                            <a href="../../MissingMethodException.html" title="class in system">MissingMethodException</a>,
+                                            <a href="../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
                                             <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                                            <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></pre>
+                                            <a href="../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 <dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
-<dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
-<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
+<dd><code><a href="../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
 <dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1262,27 +1379,37 @@ implements java.lang.AutoCloseable</pre>
 <h4>CreateViewAccessor</h4>
 <pre class="methodSignature">public&nbsp;<a href="MemoryMappedViewAccessor.html" title="class in system.io.memorymappedfiles">MemoryMappedViewAccessor</a>&nbsp;CreateViewAccessor()
                                             throws java.lang.Throwable,
-                                                   <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                                                    <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
                                                    <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                                                   <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
-                                                   <a href="../IOException.html" title="class in system.io">IOException</a>,
+                                                   <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                                   <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
                                                    <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
                                                    <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                                                   <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                                                   <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></pre>
+                                                   <a href="../../RankException.html" title="class in system">RankException</a>,
+                                                   <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                                                   <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                                   <a href="../../FormatException.html" title="class in system">FormatException</a>,
+                                                   <a href="../IOException.html" title="class in system.io">IOException</a>,
+                                                   <a href="../../MissingMethodException.html" title="class in system">MissingMethodException</a>,
+                                                   <a href="../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
+                                                   <a href="../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 <dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
-<dd><code><a href="../IOException.html" title="class in system.io">IOException</a></code></dd>
+<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
 <dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
 <dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
 <dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../IOException.html" title="class in system.io">IOException</a></code></dd>
+<dd><code><a href="../../MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
+<dd><code><a href="../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
+<dd><code><a href="../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1296,29 +1423,39 @@ implements java.lang.AutoCloseable</pre>
                                                    long&nbsp;size,
                                                    <a href="MemoryMappedFileAccess.html" title="class in system.io.memorymappedfiles">MemoryMappedFileAccess</a>&nbsp;access)
                                             throws java.lang.Throwable,
-                                                   <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
                                                    <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
-                                                   <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                                                    <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                                                   <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
-                                                   <a href="../IOException.html" title="class in system.io">IOException</a>,
-                                                   <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                                   <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                   <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                                                    <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                                   <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                                                   <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                                   <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                                   <a href="../../RankException.html" title="class in system">RankException</a>,
                                                    <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
-                                                   <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></pre>
+                                                   <a href="../IOException.html" title="class in system.io">IOException</a>,
+                                                   <a href="../../MissingMethodException.html" title="class in system">MissingMethodException</a>,
+                                                   <a href="../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
+                                                   <a href="../../FormatException.html" title="class in system">FormatException</a>,
+                                                   <a href="../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 <dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
-<dd><code><a href="../IOException.html" title="class in system.io">IOException</a></code></dd>
-<dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
-<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 <dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../IOException.html" title="class in system.io">IOException</a></code></dd>
+<dd><code><a href="../../MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
+<dd><code><a href="../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
+<dd><code><a href="../../FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1331,27 +1468,37 @@ implements java.lang.AutoCloseable</pre>
 <pre class="methodSignature">public&nbsp;<a href="MemoryMappedViewAccessor.html" title="class in system.io.memorymappedfiles">MemoryMappedViewAccessor</a>&nbsp;CreateViewAccessor&#8203;(long&nbsp;offset,
                                                    long&nbsp;size)
                                             throws java.lang.Throwable,
-                                                   <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                                                    <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
                                                    <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                                                   <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
-                                                   <a href="../IOException.html" title="class in system.io">IOException</a>,
+                                                   <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                                   <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
                                                    <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
                                                    <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                                                   <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                                                   <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></pre>
+                                                   <a href="../../RankException.html" title="class in system">RankException</a>,
+                                                   <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                                                   <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                                   <a href="../../FormatException.html" title="class in system">FormatException</a>,
+                                                   <a href="../IOException.html" title="class in system.io">IOException</a>,
+                                                   <a href="../../MissingMethodException.html" title="class in system">MissingMethodException</a>,
+                                                   <a href="../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
+                                                   <a href="../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 <dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
-<dd><code><a href="../IOException.html" title="class in system.io">IOException</a></code></dd>
+<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
 <dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
 <dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
 <dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../IOException.html" title="class in system.io">IOException</a></code></dd>
+<dd><code><a href="../../MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
+<dd><code><a href="../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
+<dd><code><a href="../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1363,27 +1510,37 @@ implements java.lang.AutoCloseable</pre>
 <h4>CreateViewStream</h4>
 <pre class="methodSignature">public&nbsp;<a href="MemoryMappedViewStream.html" title="class in system.io.memorymappedfiles">MemoryMappedViewStream</a>&nbsp;CreateViewStream()
                                         throws java.lang.Throwable,
-                                               <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                                                <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
                                                <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                                               <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
-                                               <a href="../IOException.html" title="class in system.io">IOException</a>,
+                                               <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                               <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
                                                <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
                                                <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                                               <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                                               <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></pre>
+                                               <a href="../../RankException.html" title="class in system">RankException</a>,
+                                               <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                                               <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                               <a href="../../FormatException.html" title="class in system">FormatException</a>,
+                                               <a href="../IOException.html" title="class in system.io">IOException</a>,
+                                               <a href="../../MissingMethodException.html" title="class in system">MissingMethodException</a>,
+                                               <a href="../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
+                                               <a href="../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 <dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
-<dd><code><a href="../IOException.html" title="class in system.io">IOException</a></code></dd>
+<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
 <dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
 <dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
 <dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../IOException.html" title="class in system.io">IOException</a></code></dd>
+<dd><code><a href="../../MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
+<dd><code><a href="../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
+<dd><code><a href="../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1397,29 +1554,39 @@ implements java.lang.AutoCloseable</pre>
                                                long&nbsp;size,
                                                <a href="MemoryMappedFileAccess.html" title="class in system.io.memorymappedfiles">MemoryMappedFileAccess</a>&nbsp;access)
                                         throws java.lang.Throwable,
-                                               <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
                                                <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
-                                               <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                                                <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                                               <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
-                                               <a href="../IOException.html" title="class in system.io">IOException</a>,
-                                               <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                               <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                               <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                                                <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                               <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                                               <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                               <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                               <a href="../../RankException.html" title="class in system">RankException</a>,
                                                <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
-                                               <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></pre>
+                                               <a href="../IOException.html" title="class in system.io">IOException</a>,
+                                               <a href="../../MissingMethodException.html" title="class in system">MissingMethodException</a>,
+                                               <a href="../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
+                                               <a href="../../FormatException.html" title="class in system">FormatException</a>,
+                                               <a href="../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 <dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
-<dd><code><a href="../IOException.html" title="class in system.io">IOException</a></code></dd>
-<dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
-<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 <dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../IOException.html" title="class in system.io">IOException</a></code></dd>
+<dd><code><a href="../../MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
+<dd><code><a href="../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
+<dd><code><a href="../../FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1432,27 +1599,37 @@ implements java.lang.AutoCloseable</pre>
 <pre class="methodSignature">public&nbsp;<a href="MemoryMappedViewStream.html" title="class in system.io.memorymappedfiles">MemoryMappedViewStream</a>&nbsp;CreateViewStream&#8203;(long&nbsp;offset,
                                                long&nbsp;size)
                                         throws java.lang.Throwable,
-                                               <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                                                <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
                                                <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                                               <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
-                                               <a href="../IOException.html" title="class in system.io">IOException</a>,
+                                               <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                               <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
                                                <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
                                                <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                                               <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                                               <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></pre>
+                                               <a href="../../RankException.html" title="class in system">RankException</a>,
+                                               <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                                               <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                               <a href="../../FormatException.html" title="class in system">FormatException</a>,
+                                               <a href="../IOException.html" title="class in system.io">IOException</a>,
+                                               <a href="../../MissingMethodException.html" title="class in system">MissingMethodException</a>,
+                                               <a href="../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
+                                               <a href="../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 <dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
-<dd><code><a href="../IOException.html" title="class in system.io">IOException</a></code></dd>
+<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
 <dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
 <dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
 <dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../IOException.html" title="class in system.io">IOException</a></code></dd>
+<dd><code><a href="../../MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
+<dd><code><a href="../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
+<dd><code><a href="../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1464,23 +1641,13 @@ implements java.lang.AutoCloseable</pre>
 <h4>Dispose</h4>
 <pre class="methodSignature">public&nbsp;void&nbsp;Dispose()
              throws java.lang.Throwable,
-                    <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
-                    <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                    <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                    <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                    <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                    <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                    <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></pre>
+                    <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                    <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 <dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 </dl>
 </li>
 </ul>

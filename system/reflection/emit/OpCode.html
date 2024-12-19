@@ -19,6 +19,7 @@
 <meta name="keywords" content="cast()">
 <meta name="keywords" content="Equals()">
 <meta name="keywords" content="getValue()">
+<meta name="keywords" content="getEvaluationStackDelta()">
 <meta name="keywords" content="getSize()">
 <meta name="keywords" content="getFlowControl()">
 <meta name="keywords" content="getOpCodeType()">
@@ -39,7 +40,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10};
+var data = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -148,7 +149,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <hr>
 <pre>public class <span class="typeNameLabel">OpCode</span>
 extends <a href="../../ValueType.html" title="class in system">ValueType</a></pre>
-<div class="block">The base .NET class managing System.Reflection.Emit.OpCode, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e.
+<div class="block">The base .NET class managing System.Reflection.Emit.OpCode, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e.
  <p>
  
  .NET documentation at <a href="https://docs.microsoft.com/en-us/dotnet/api/System.Reflection.Emit.OpCode" target="_top">https://docs.microsoft.com/en-us/dotnet/api/System.Reflection.Emit.OpCode</a>
@@ -183,7 +184,7 @@ extends <a href="../../ValueType.html" title="class in system">ValueType</a></pr
 <td class="colFirst"><code>static java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#assemblyFullName">assemblyFullName</a></span></code></th>
 <td class="colLast">
-<div class="block">Fully assembly qualified name: System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e</div>
+<div class="block">Fully assembly qualified name: System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e</div>
 </td>
 </tr>
 <tr class="rowColor">
@@ -272,81 +273,86 @@ extends <a href="../../ValueType.html" title="class in system">ValueType</a></pr
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
+<td class="colFirst"><code>int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getEvaluationStackDelta()">getEvaluationStackDelta</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="FlowControl.html" title="class in system.reflection.emit">FlowControl</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getFlowControl()">getFlowControl</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getJCOAssemblyName()">getJCOAssemblyName</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the reflected Assembly name</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getJCOClassName()">getJCOClassName</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the reflected Class name</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getJCOInstance()">getJCOInstance</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the instantiated class</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getJCOObjectName()">getJCOObjectName</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the reflected Class name used to build the object</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="https://www.jcobridge.com/api-java_2.5.21/org/mases/jcobridge/JCType.html?is-external=true" title="class or interface in org.mases.jcobridge" class="externalLink">JCType</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getJCOType()">getJCOType</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the instantiated class Type</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getName()">getName</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="OpCodeType.html" title="class in system.reflection.emit">OpCodeType</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getOpCodeType()">getOpCodeType</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="OperandType.html" title="class in system.reflection.emit">OperandType</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getOperandType()">getOperandType</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getSize()">getSize</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code><a href="StackBehaviour.html" title="class in system.reflection.emit">StackBehaviour</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getStackBehaviourPop()">getStackBehaviourPop</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code><a href="StackBehaviour.html" title="class in system.reflection.emit">StackBehaviour</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getStackBehaviourPush()">getStackBehaviourPush</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>short</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getValue()">getValue</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setJCOInstance(org.mases.jcobridge.JCObject)">setJCOInstance</a></span>&#8203;(<a href="https://www.jcobridge.com/api-java_2.5.21/org/mases/jcobridge/JCObject.html?is-external=true" title="class or interface in org.mases.jcobridge" class="externalLink">JCObject</a>&nbsp;instance)</code></th>
 <td class="colLast">&nbsp;</td>
@@ -389,7 +395,7 @@ extends <a href="../../ValueType.html" title="class in system">ValueType</a></pr
 <li class="blockList">
 <h4>assemblyFullName</h4>
 <pre>public static final&nbsp;java.lang.String assemblyFullName</pre>
-<div class="block">Fully assembly qualified name: System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e</div>
+<div class="block">Fully assembly qualified name: System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../constant-values.html#system.reflection.emit.OpCode.assemblyFullName">Constant Field Values</a></dd>
@@ -639,6 +645,20 @@ extends <a href="../../ValueType.html" title="class in system">ValueType</a></pr
 </dl>
 </li>
 </ul>
+<a id="getEvaluationStackDelta()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getEvaluationStackDelta</h4>
+<pre class="methodSignature">public&nbsp;int&nbsp;getEvaluationStackDelta()
+                            throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
 <a id="getSize()">
 <!--   -->
 </a>
@@ -733,28 +753,30 @@ extends <a href="../../ValueType.html" title="class in system">ValueType</a></pr
                          throws java.lang.Throwable,
                                 <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
                                 <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                                <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
                                 <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                                 <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                                <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                                 <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
                                 <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                                 <a href="../../RankException.html" title="class in system">RankException</a>,
                                 <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                                <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                <a href="../../NullReferenceException.html" title="class in system">NullReferenceException</a>,
+                                <a href="../../OverflowException.html" title="class in system">OverflowException</a>,
                                 <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 <dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 <dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 <dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
 <dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../../RankException.html" title="class in system">RankException</a></code></dd>
 <dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
+<dd><code><a href="../../OverflowException.html" title="class in system">OverflowException</a></code></dd>
 <dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
 </dl>
 </li>

@@ -18,9 +18,22 @@
 <meta name="keywords" content="getJCOType()">
 <meta name="keywords" content="cast()">
 <meta name="keywords" content="Equals()">
+<meta name="keywords" content="IsComplexNumber()">
+<meta name="keywords" content="IsEvenInteger()">
 <meta name="keywords" content="IsFinite()">
+<meta name="keywords" content="IsImaginaryNumber()">
 <meta name="keywords" content="IsInfinity()">
+<meta name="keywords" content="IsInteger()">
 <meta name="keywords" content="IsNaN()">
+<meta name="keywords" content="IsNegative()">
+<meta name="keywords" content="IsNegativeInfinity()">
+<meta name="keywords" content="IsNormal()">
+<meta name="keywords" content="IsOddInteger()">
+<meta name="keywords" content="IsPositive()">
+<meta name="keywords" content="IsPositiveInfinity()">
+<meta name="keywords" content="IsRealNumber()">
+<meta name="keywords" content="IsSubnormal()">
+<meta name="keywords" content="TryParse()">
 <meta name="keywords" content="Abs()">
 <meta name="keywords" content="Acos()">
 <meta name="keywords" content="Add()">
@@ -34,8 +47,11 @@
 <meta name="keywords" content="FromPolarCoordinates()">
 <meta name="keywords" content="Log()">
 <meta name="keywords" content="Log10()">
+<meta name="keywords" content="MaxMagnitude()">
+<meta name="keywords" content="MinMagnitude()">
 <meta name="keywords" content="Multiply()">
 <meta name="keywords" content="Negate()">
+<meta name="keywords" content="Parse()">
 <meta name="keywords" content="Pow()">
 <meta name="keywords" content="Reciprocal()">
 <meta name="keywords" content="Sin()">
@@ -62,7 +78,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9,"i5":9,"i6":9,"i7":9,"i8":9,"i9":9,"i10":9,"i11":9,"i12":9,"i13":9,"i14":10,"i15":9,"i16":9,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":9,"i27":9,"i28":9,"i29":9,"i30":9,"i31":9,"i32":9,"i33":9,"i34":9,"i35":9,"i36":9,"i37":9,"i38":9,"i39":10,"i40":9,"i41":9,"i42":9,"i43":9,"i44":9,"i45":9,"i46":9,"i47":9,"i48":10,"i49":10,"i50":10};
+var data = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9,"i5":9,"i6":9,"i7":9,"i8":9,"i9":9,"i10":9,"i11":9,"i12":9,"i13":9,"i14":10,"i15":9,"i16":9,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":9,"i27":9,"i28":9,"i29":9,"i30":9,"i31":9,"i32":9,"i33":9,"i34":9,"i35":9,"i36":9,"i37":9,"i38":9,"i39":9,"i40":9,"i41":9,"i42":9,"i43":9,"i44":9,"i45":9,"i46":9,"i47":9,"i48":9,"i49":9,"i50":9,"i51":9,"i52":9,"i53":9,"i54":9,"i55":10,"i56":9,"i57":9,"i58":9,"i59":9,"i60":9,"i61":9,"i62":9,"i63":9,"i64":10,"i65":10,"i66":10,"i67":9,"i68":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -171,7 +187,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <hr>
 <pre>public class <span class="typeNameLabel">Complex</span>
 extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
-<div class="block">The base .NET class managing System.Numerics.Complex, System.Runtime.Numerics, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a.
+<div class="block">The base .NET class managing System.Numerics.Complex, System.Runtime.Numerics, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a.
  <p>
  
  .NET documentation at <a href="https://docs.microsoft.com/en-us/dotnet/api/System.Numerics.Complex" target="_top">https://docs.microsoft.com/en-us/dotnet/api/System.Numerics.Complex</a>
@@ -206,7 +222,7 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <td class="colFirst"><code>static java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#assemblyFullName">assemblyFullName</a></span></code></th>
 <td class="colLast">
-<div class="block">Fully assembly qualified name: System.Runtime.Numerics, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</div>
+<div class="block">Fully assembly qualified name: System.Runtime.Numerics, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</div>
 </td>
 </tr>
 <tr class="rowColor">
@@ -438,137 +454,237 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 </tr>
 <tr id="i26" class="altColor">
 <td class="colFirst"><code>static boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#IsFinite(system.numerics.Complex)">IsFinite</a></span>&#8203;(<a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;value)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#IsComplexNumber(system.numerics.Complex)">IsComplexNumber</a></span>&#8203;(<a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;value)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i27" class="rowColor">
 <td class="colFirst"><code>static boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#IsInfinity(system.numerics.Complex)">IsInfinity</a></span>&#8203;(<a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;value)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#IsEvenInteger(system.numerics.Complex)">IsEvenInteger</a></span>&#8203;(<a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;value)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i28" class="altColor">
 <td class="colFirst"><code>static boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#IsNaN(system.numerics.Complex)">IsNaN</a></span>&#8203;(<a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;value)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#IsFinite(system.numerics.Complex)">IsFinite</a></span>&#8203;(<a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;value)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i29" class="rowColor">
+<td class="colFirst"><code>static boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#IsImaginaryNumber(system.numerics.Complex)">IsImaginaryNumber</a></span>&#8203;(<a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;value)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i30" class="altColor">
+<td class="colFirst"><code>static boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#IsInfinity(system.numerics.Complex)">IsInfinity</a></span>&#8203;(<a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;value)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i31" class="rowColor">
+<td class="colFirst"><code>static boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#IsInteger(system.numerics.Complex)">IsInteger</a></span>&#8203;(<a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;value)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i32" class="altColor">
+<td class="colFirst"><code>static boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#IsNaN(system.numerics.Complex)">IsNaN</a></span>&#8203;(<a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;value)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i33" class="rowColor">
+<td class="colFirst"><code>static boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#IsNegative(system.numerics.Complex)">IsNegative</a></span>&#8203;(<a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;value)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i34" class="altColor">
+<td class="colFirst"><code>static boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#IsNegativeInfinity(system.numerics.Complex)">IsNegativeInfinity</a></span>&#8203;(<a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;value)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i35" class="rowColor">
+<td class="colFirst"><code>static boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#IsNormal(system.numerics.Complex)">IsNormal</a></span>&#8203;(<a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;value)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i36" class="altColor">
+<td class="colFirst"><code>static boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#IsOddInteger(system.numerics.Complex)">IsOddInteger</a></span>&#8203;(<a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;value)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i37" class="rowColor">
+<td class="colFirst"><code>static boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#IsPositive(system.numerics.Complex)">IsPositive</a></span>&#8203;(<a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;value)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i38" class="altColor">
+<td class="colFirst"><code>static boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#IsPositiveInfinity(system.numerics.Complex)">IsPositiveInfinity</a></span>&#8203;(<a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;value)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i39" class="rowColor">
+<td class="colFirst"><code>static boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#IsRealNumber(system.numerics.Complex)">IsRealNumber</a></span>&#8203;(<a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;value)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i40" class="altColor">
+<td class="colFirst"><code>static boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#IsSubnormal(system.numerics.Complex)">IsSubnormal</a></span>&#8203;(<a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;value)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i41" class="rowColor">
 <td class="colFirst"><code>static <a href="Complex.html" title="class in system.numerics">Complex</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Log(system.numerics.Complex)">Log</a></span>&#8203;(<a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;value)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i30" class="altColor">
+<tr id="i42" class="altColor">
 <td class="colFirst"><code>static <a href="Complex.html" title="class in system.numerics">Complex</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Log(system.numerics.Complex,double)">Log</a></span>&#8203;(<a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;value,
    double&nbsp;baseValue)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i31" class="rowColor">
+<tr id="i43" class="rowColor">
 <td class="colFirst"><code>static <a href="Complex.html" title="class in system.numerics">Complex</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Log10(system.numerics.Complex)">Log10</a></span>&#8203;(<a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;value)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i32" class="altColor">
+<tr id="i44" class="altColor">
+<td class="colFirst"><code>static <a href="Complex.html" title="class in system.numerics">Complex</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#MaxMagnitude(system.numerics.Complex,system.numerics.Complex)">MaxMagnitude</a></span>&#8203;(<a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;x,
+            <a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;y)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i45" class="rowColor">
+<td class="colFirst"><code>static <a href="Complex.html" title="class in system.numerics">Complex</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#MinMagnitude(system.numerics.Complex,system.numerics.Complex)">MinMagnitude</a></span>&#8203;(<a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;x,
+            <a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;y)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i46" class="altColor">
 <td class="colFirst"><code>static <a href="Complex.html" title="class in system.numerics">Complex</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Multiply(double,system.numerics.Complex)">Multiply</a></span>&#8203;(double&nbsp;left,
         <a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;right)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i33" class="rowColor">
+<tr id="i47" class="rowColor">
 <td class="colFirst"><code>static <a href="Complex.html" title="class in system.numerics">Complex</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Multiply(system.numerics.Complex,double)">Multiply</a></span>&#8203;(<a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;left,
         double&nbsp;right)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i34" class="altColor">
+<tr id="i48" class="altColor">
 <td class="colFirst"><code>static <a href="Complex.html" title="class in system.numerics">Complex</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Multiply(system.numerics.Complex,system.numerics.Complex)">Multiply</a></span>&#8203;(<a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;left,
         <a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;right)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i35" class="rowColor">
+<tr id="i49" class="rowColor">
 <td class="colFirst"><code>static <a href="Complex.html" title="class in system.numerics">Complex</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Negate(system.numerics.Complex)">Negate</a></span>&#8203;(<a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;value)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i36" class="altColor">
+<tr id="i50" class="altColor">
+<td class="colFirst"><code>static <a href="Complex.html" title="class in system.numerics">Complex</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Parse(java.lang.String,system.globalization.NumberStyles,system.IFormatProvider)">Parse</a></span>&#8203;(java.lang.String&nbsp;s,
+     <a href="../globalization/NumberStyles.html" title="class in system.globalization">NumberStyles</a>&nbsp;style,
+     <a href="../IFormatProvider.html" title="interface in system">IFormatProvider</a>&nbsp;provider)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i51" class="rowColor">
+<td class="colFirst"><code>static <a href="Complex.html" title="class in system.numerics">Complex</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Parse(java.lang.String,system.IFormatProvider)">Parse</a></span>&#8203;(java.lang.String&nbsp;s,
+     <a href="../IFormatProvider.html" title="interface in system">IFormatProvider</a>&nbsp;provider)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i52" class="altColor">
 <td class="colFirst"><code>static <a href="Complex.html" title="class in system.numerics">Complex</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Pow(system.numerics.Complex,double)">Pow</a></span>&#8203;(<a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;value,
    double&nbsp;power)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i37" class="rowColor">
+<tr id="i53" class="rowColor">
 <td class="colFirst"><code>static <a href="Complex.html" title="class in system.numerics">Complex</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Pow(system.numerics.Complex,system.numerics.Complex)">Pow</a></span>&#8203;(<a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;value,
    <a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;power)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i38" class="altColor">
+<tr id="i54" class="altColor">
 <td class="colFirst"><code>static <a href="Complex.html" title="class in system.numerics">Complex</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Reciprocal(system.numerics.Complex)">Reciprocal</a></span>&#8203;(<a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;value)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i39" class="rowColor">
+<tr id="i55" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setJCOInstance(org.mases.jcobridge.JCObject)">setJCOInstance</a></span>&#8203;(<a href="https://www.jcobridge.com/api-java_2.5.21/org/mases/jcobridge/JCObject.html?is-external=true" title="class or interface in org.mases.jcobridge" class="externalLink">JCObject</a>&nbsp;instance)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i40" class="altColor">
+<tr id="i56" class="altColor">
 <td class="colFirst"><code>static <a href="Complex.html" title="class in system.numerics">Complex</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Sin(system.numerics.Complex)">Sin</a></span>&#8203;(<a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;value)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i41" class="rowColor">
+<tr id="i57" class="rowColor">
 <td class="colFirst"><code>static <a href="Complex.html" title="class in system.numerics">Complex</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Sinh(system.numerics.Complex)">Sinh</a></span>&#8203;(<a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;value)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i42" class="altColor">
+<tr id="i58" class="altColor">
 <td class="colFirst"><code>static <a href="Complex.html" title="class in system.numerics">Complex</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Sqrt(system.numerics.Complex)">Sqrt</a></span>&#8203;(<a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;value)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i43" class="rowColor">
+<tr id="i59" class="rowColor">
 <td class="colFirst"><code>static <a href="Complex.html" title="class in system.numerics">Complex</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Subtract(double,system.numerics.Complex)">Subtract</a></span>&#8203;(double&nbsp;left,
         <a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;right)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i44" class="altColor">
+<tr id="i60" class="altColor">
 <td class="colFirst"><code>static <a href="Complex.html" title="class in system.numerics">Complex</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Subtract(system.numerics.Complex,double)">Subtract</a></span>&#8203;(<a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;left,
         double&nbsp;right)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i45" class="rowColor">
+<tr id="i61" class="rowColor">
 <td class="colFirst"><code>static <a href="Complex.html" title="class in system.numerics">Complex</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Subtract(system.numerics.Complex,system.numerics.Complex)">Subtract</a></span>&#8203;(<a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;left,
         <a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;right)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i46" class="altColor">
+<tr id="i62" class="altColor">
 <td class="colFirst"><code>static <a href="Complex.html" title="class in system.numerics">Complex</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Tan(system.numerics.Complex)">Tan</a></span>&#8203;(<a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;value)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i47" class="rowColor">
+<tr id="i63" class="rowColor">
 <td class="colFirst"><code>static <a href="Complex.html" title="class in system.numerics">Complex</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Tanh(system.numerics.Complex)">Tanh</a></span>&#8203;(<a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;value)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i48" class="altColor">
+<tr id="i64" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ToString(java.lang.String)">ToString</a></span>&#8203;(java.lang.String&nbsp;format)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i49" class="rowColor">
+<tr id="i65" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ToString(java.lang.String,system.IFormatProvider)">ToString</a></span>&#8203;(java.lang.String&nbsp;format,
         <a href="../IFormatProvider.html" title="interface in system">IFormatProvider</a>&nbsp;provider)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i50" class="altColor">
+<tr id="i66" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ToString(system.IFormatProvider)">ToString</a></span>&#8203;(<a href="../IFormatProvider.html" title="interface in system">IFormatProvider</a>&nbsp;provider)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i67" class="rowColor">
+<td class="colFirst"><code>static boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#TryParse(java.lang.String,system.globalization.NumberStyles,system.IFormatProvider,org.mases.jcobridge.netreflection.JCORefOut)">TryParse</a></span>&#8203;(java.lang.String&nbsp;s,
+        <a href="../globalization/NumberStyles.html" title="class in system.globalization">NumberStyles</a>&nbsp;style,
+        <a href="../IFormatProvider.html" title="interface in system">IFormatProvider</a>&nbsp;provider,
+        <a href="../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="Complex.html" title="class in system.numerics">Complex</a>&gt;&nbsp;result)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i68" class="altColor">
+<td class="colFirst"><code>static boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#TryParse(java.lang.String,system.IFormatProvider,org.mases.jcobridge.netreflection.JCORefOut)">TryParse</a></span>&#8203;(java.lang.String&nbsp;s,
+        <a href="../IFormatProvider.html" title="interface in system">IFormatProvider</a>&nbsp;provider,
+        <a href="../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="Complex.html" title="class in system.numerics">Complex</a>&gt;&nbsp;result)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -609,7 +725,7 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <li class="blockList">
 <h4>assemblyFullName</h4>
 <pre>public static final&nbsp;java.lang.String assemblyFullName</pre>
-<div class="block">Fully assembly qualified name: System.Runtime.Numerics, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</div>
+<div class="block">Fully assembly qualified name: System.Runtime.Numerics, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../constant-values.html#system.numerics.Complex.assemblyFullName">Constant Field Values</a></dd>
@@ -860,6 +976,38 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 </dl>
 </li>
 </ul>
+<a id="IsComplexNumber(system.numerics.Complex)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>IsComplexNumber</h4>
+<pre class="methodSignature">public static&nbsp;boolean&nbsp;IsComplexNumber&#8203;(<a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;value)
+                               throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a id="IsEvenInteger(system.numerics.Complex)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>IsEvenInteger</h4>
+<pre class="methodSignature">public static&nbsp;boolean&nbsp;IsEvenInteger&#8203;(<a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;value)
+                             throws java.lang.Throwable,
+                                    <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                    <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+</dl>
+</li>
+</ul>
 <a id="IsFinite(system.numerics.Complex)">
 <!--   -->
 </a>
@@ -868,13 +1016,29 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <h4>IsFinite</h4>
 <pre class="methodSignature">public static&nbsp;boolean&nbsp;IsFinite&#8203;(<a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;value)
                         throws java.lang.Throwable,
-                               <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                               <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></pre>
+                               <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                               <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
+                               <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="IsImaginaryNumber(system.numerics.Complex)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>IsImaginaryNumber</h4>
+<pre class="methodSignature">public static&nbsp;boolean&nbsp;IsImaginaryNumber&#8203;(<a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;value)
+                                 throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
 </dl>
 </li>
 </ul>
@@ -886,13 +1050,33 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <h4>IsInfinity</h4>
 <pre class="methodSignature">public static&nbsp;boolean&nbsp;IsInfinity&#8203;(<a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;value)
                           throws java.lang.Throwable,
-                                 <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                                 <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></pre>
+                                 <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                 <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
+                                 <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="IsInteger(system.numerics.Complex)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>IsInteger</h4>
+<pre class="methodSignature">public static&nbsp;boolean&nbsp;IsInteger&#8203;(<a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;value)
+                         throws java.lang.Throwable,
+                                <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -904,13 +1088,222 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <h4>IsNaN</h4>
 <pre class="methodSignature">public static&nbsp;boolean&nbsp;IsNaN&#8203;(<a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;value)
                      throws java.lang.Throwable,
-                            <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                            <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></pre>
+                            <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                            <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="IsNegative(system.numerics.Complex)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>IsNegative</h4>
+<pre class="methodSignature">public static&nbsp;boolean&nbsp;IsNegative&#8203;(<a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;value)
+                          throws java.lang.Throwable,
+                                 <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                 <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
+                                 <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="IsNegativeInfinity(system.numerics.Complex)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>IsNegativeInfinity</h4>
+<pre class="methodSignature">public static&nbsp;boolean&nbsp;IsNegativeInfinity&#8203;(<a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;value)
+                                  throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a id="IsNormal(system.numerics.Complex)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>IsNormal</h4>
+<pre class="methodSignature">public static&nbsp;boolean&nbsp;IsNormal&#8203;(<a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;value)
+                        throws java.lang.Throwable,
+                               <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                               <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
+                               <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="IsOddInteger(system.numerics.Complex)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>IsOddInteger</h4>
+<pre class="methodSignature">public static&nbsp;boolean&nbsp;IsOddInteger&#8203;(<a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;value)
+                            throws java.lang.Throwable,
+                                   <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                   <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="IsPositive(system.numerics.Complex)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>IsPositive</h4>
+<pre class="methodSignature">public static&nbsp;boolean&nbsp;IsPositive&#8203;(<a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;value)
+                          throws java.lang.Throwable,
+                                 <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                 <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
+                                 <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="IsPositiveInfinity(system.numerics.Complex)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>IsPositiveInfinity</h4>
+<pre class="methodSignature">public static&nbsp;boolean&nbsp;IsPositiveInfinity&#8203;(<a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;value)
+                                  throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a id="IsRealNumber(system.numerics.Complex)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>IsRealNumber</h4>
+<pre class="methodSignature">public static&nbsp;boolean&nbsp;IsRealNumber&#8203;(<a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;value)
+                            throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a id="IsSubnormal(system.numerics.Complex)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>IsSubnormal</h4>
+<pre class="methodSignature">public static&nbsp;boolean&nbsp;IsSubnormal&#8203;(<a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;value)
+                           throws java.lang.Throwable,
+                                  <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                  <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
+                                  <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="TryParse(java.lang.String,system.globalization.NumberStyles,system.IFormatProvider,org.mases.jcobridge.netreflection.JCORefOut)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>TryParse</h4>
+<pre class="methodSignature">public static&nbsp;boolean&nbsp;TryParse&#8203;(java.lang.String&nbsp;s,
+                               <a href="../globalization/NumberStyles.html" title="class in system.globalization">NumberStyles</a>&nbsp;style,
+                               <a href="../IFormatProvider.html" title="interface in system">IFormatProvider</a>&nbsp;provider,
+                               <a href="../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="Complex.html" title="class in system.numerics">Complex</a>&gt;&nbsp;result)
+                        throws java.lang.Throwable,
+                               <a href="../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                               <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
+                               <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                               <a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                               <a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                               <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                               <a href="../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                               <a href="../NullReferenceException.html" title="class in system">NullReferenceException</a>,
+                               <a href="../OverflowException.html" title="class in system">OverflowException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
+<dd><code><a href="../OverflowException.html" title="class in system">OverflowException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="TryParse(java.lang.String,system.IFormatProvider,org.mases.jcobridge.netreflection.JCORefOut)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>TryParse</h4>
+<pre class="methodSignature">public static&nbsp;boolean&nbsp;TryParse&#8203;(java.lang.String&nbsp;s,
+                               <a href="../IFormatProvider.html" title="interface in system">IFormatProvider</a>&nbsp;provider,
+                               <a href="../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="Complex.html" title="class in system.numerics">Complex</a>&gt;&nbsp;result)
+                        throws java.lang.Throwable,
+                               <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
+                               <a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                               <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                               <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                               <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                               <a href="../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                               <a href="../NullReferenceException.html" title="class in system">NullReferenceException</a>,
+                               <a href="../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                               <a href="../OverflowException.html" title="class in system">OverflowException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
+<dd><code><a href="../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../OverflowException.html" title="class in system">OverflowException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -921,10 +1314,14 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <li class="blockList">
 <h4>Abs</h4>
 <pre class="methodSignature">public static&nbsp;double&nbsp;Abs&#8203;(<a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;value)
-                  throws java.lang.Throwable</pre>
+                  throws java.lang.Throwable,
+                         <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                         <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -935,10 +1332,16 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <li class="blockList">
 <h4>Acos</h4>
 <pre class="methodSignature">public static&nbsp;<a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;Acos&#8203;(<a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;value)
-                    throws java.lang.Throwable</pre>
+                    throws java.lang.Throwable,
+                           <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                           <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
+                           <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -994,10 +1397,16 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <li class="blockList">
 <h4>Asin</h4>
 <pre class="methodSignature">public static&nbsp;<a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;Asin&#8203;(<a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;value)
-                    throws java.lang.Throwable</pre>
+                    throws java.lang.Throwable,
+                           <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                           <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
+                           <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1008,10 +1417,14 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <li class="blockList">
 <h4>Atan</h4>
 <pre class="methodSignature">public static&nbsp;<a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;Atan&#8203;(<a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;value)
-                    throws java.lang.Throwable</pre>
+                    throws java.lang.Throwable,
+                           <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                           <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1065,10 +1478,14 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <h4>Divide</h4>
 <pre class="methodSignature">public static&nbsp;<a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;Divide&#8203;(double&nbsp;dividend,
                              <a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;divisor)
-                      throws java.lang.Throwable</pre>
+                      throws java.lang.Throwable,
+                             <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                             <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1081,13 +1498,13 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <pre class="methodSignature">public static&nbsp;<a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;Divide&#8203;(<a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;dividend,
                              double&nbsp;divisor)
                       throws java.lang.Throwable,
-                             <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                             <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></pre>
+                             <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                             <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1099,10 +1516,14 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <h4>Divide</h4>
 <pre class="methodSignature">public static&nbsp;<a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;Divide&#8203;(<a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;dividend,
                              <a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;divisor)
-                      throws java.lang.Throwable</pre>
+                      throws java.lang.Throwable,
+                             <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                             <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1143,10 +1564,14 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <h4>Log</h4>
 <pre class="methodSignature">public static&nbsp;<a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;Log&#8203;(<a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;value,
                           double&nbsp;baseValue)
-                   throws java.lang.Throwable</pre>
+                   throws java.lang.Throwable,
+                          <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                          <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1157,10 +1582,14 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <li class="blockList">
 <h4>Log</h4>
 <pre class="methodSignature">public static&nbsp;<a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;Log&#8203;(<a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;value)
-                   throws java.lang.Throwable</pre>
+                   throws java.lang.Throwable,
+                          <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                          <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1171,10 +1600,52 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <li class="blockList">
 <h4>Log10</h4>
 <pre class="methodSignature">public static&nbsp;<a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;Log10&#8203;(<a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;value)
-                     throws java.lang.Throwable</pre>
+                     throws java.lang.Throwable,
+                            <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                            <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="MaxMagnitude(system.numerics.Complex,system.numerics.Complex)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>MaxMagnitude</h4>
+<pre class="methodSignature">public static&nbsp;<a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;MaxMagnitude&#8203;(<a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;x,
+                                   <a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;y)
+                            throws java.lang.Throwable,
+                                   <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                   <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="MinMagnitude(system.numerics.Complex,system.numerics.Complex)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>MinMagnitude</h4>
+<pre class="methodSignature">public static&nbsp;<a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;MinMagnitude&#8203;(<a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;x,
+                                   <a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;y)
+                            throws java.lang.Throwable,
+                                   <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                   <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1187,13 +1658,13 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <pre class="methodSignature">public static&nbsp;<a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;Multiply&#8203;(double&nbsp;left,
                                <a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;right)
                         throws java.lang.Throwable,
-                               <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                               <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></pre>
+                               <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                               <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1206,13 +1677,13 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <pre class="methodSignature">public static&nbsp;<a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;Multiply&#8203;(<a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;left,
                                double&nbsp;right)
                         throws java.lang.Throwable,
-                               <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                               <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></pre>
+                               <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                               <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1245,6 +1716,81 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 </dl>
 </li>
 </ul>
+<a id="Parse(java.lang.String,system.globalization.NumberStyles,system.IFormatProvider)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>Parse</h4>
+<pre class="methodSignature">public static&nbsp;<a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;Parse&#8203;(java.lang.String&nbsp;s,
+                            <a href="../globalization/NumberStyles.html" title="class in system.globalization">NumberStyles</a>&nbsp;style,
+                            <a href="../IFormatProvider.html" title="interface in system">IFormatProvider</a>&nbsp;provider)
+                     throws java.lang.Throwable,
+                            <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
+                            <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                            <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                            <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                            <a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                            <a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                            <a href="../RankException.html" title="class in system">RankException</a>,
+                            <a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                            <a href="../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                            <a href="../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                            <a href="../NullReferenceException.html" title="class in system">NullReferenceException</a>,
+                            <a href="../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                            <a href="../OverflowException.html" title="class in system">OverflowException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
+<dd><code><a href="../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../OverflowException.html" title="class in system">OverflowException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="Parse(java.lang.String,system.IFormatProvider)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>Parse</h4>
+<pre class="methodSignature">public static&nbsp;<a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;Parse&#8203;(java.lang.String&nbsp;s,
+                            <a href="../IFormatProvider.html" title="interface in system">IFormatProvider</a>&nbsp;provider)
+                     throws java.lang.Throwable,
+                            <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
+                            <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                            <a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                            <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                            <a href="../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                            <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                            <a href="../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                            <a href="../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                            <a href="../OverflowException.html" title="class in system">OverflowException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../OverflowException.html" title="class in system">OverflowException</a></code></dd>
+</dl>
+</li>
+</ul>
 <a id="Pow(system.numerics.Complex,double)">
 <!--   -->
 </a>
@@ -1253,10 +1799,14 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <h4>Pow</h4>
 <pre class="methodSignature">public static&nbsp;<a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;Pow&#8203;(<a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;value,
                           double&nbsp;power)
-                   throws java.lang.Throwable</pre>
+                   throws java.lang.Throwable,
+                          <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                          <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1268,10 +1818,14 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <h4>Pow</h4>
 <pre class="methodSignature">public static&nbsp;<a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;Pow&#8203;(<a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;value,
                           <a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;power)
-                   throws java.lang.Throwable</pre>
+                   throws java.lang.Throwable,
+                          <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                          <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1282,10 +1836,14 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <li class="blockList">
 <h4>Reciprocal</h4>
 <pre class="methodSignature">public static&nbsp;<a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;Reciprocal&#8203;(<a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;value)
-                          throws java.lang.Throwable</pre>
+                          throws java.lang.Throwable,
+                                 <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                 <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1325,13 +1883,15 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <h4>Sqrt</h4>
 <pre class="methodSignature">public static&nbsp;<a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;Sqrt&#8203;(<a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;value)
                     throws java.lang.Throwable,
-                           <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                           <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></pre>
+                           <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                           <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
+                           <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1387,10 +1947,16 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <li class="blockList">
 <h4>Tan</h4>
 <pre class="methodSignature">public static&nbsp;<a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;Tan&#8203;(<a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;value)
-                   throws java.lang.Throwable</pre>
+                   throws java.lang.Throwable,
+                          <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                          <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
+                          <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1401,10 +1967,14 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <li class="blockList">
 <h4>Tanh</h4>
 <pre class="methodSignature">public static&nbsp;<a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;Tanh&#8203;(<a href="Complex.html" title="class in system.numerics">Complex</a>&nbsp;value)
-                    throws java.lang.Throwable</pre>
+                    throws java.lang.Throwable,
+                           <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                           <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1416,25 +1986,31 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <h4>ToString</h4>
 <pre class="methodSignature">public&nbsp;java.lang.String&nbsp;ToString&#8203;(<a href="../IFormatProvider.html" title="interface in system">IFormatProvider</a>&nbsp;provider)
                           throws java.lang.Throwable,
-                                 <a href="../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
-                                 <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                                 <a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                                 <a href="../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                                 <a href="../FormatException.html" title="class in system">FormatException</a>,
                                  <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
                                  <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                                 <a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></pre>
+                                 <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                 <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                 <a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                 <a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                 <a href="../RankException.html" title="class in system">RankException</a>,
+                                 <a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                                 <a href="../OverflowException.html" title="class in system">OverflowException</a>,
+                                 <a href="../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                 <a href="../FormatException.html" title="class in system">FormatException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
-<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../FormatException.html" title="class in system">FormatException</a></code></dd>
 <dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 <dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../RankException.html" title="class in system">RankException</a></code></dd>
 <dd><code><a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../OverflowException.html" title="class in system">OverflowException</a></code></dd>
+<dd><code><a href="../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../FormatException.html" title="class in system">FormatException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1447,27 +2023,33 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <pre class="methodSignature">public&nbsp;java.lang.String&nbsp;ToString&#8203;(java.lang.String&nbsp;format,
                                  <a href="../IFormatProvider.html" title="interface in system">IFormatProvider</a>&nbsp;provider)
                           throws java.lang.Throwable,
-                                 <a href="../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
-                                 <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                                 <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
                                  <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
+                                 <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
                                  <a href="../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                                  <a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                                 <a href="../FormatException.html" title="class in system">FormatException</a>,
-                                 <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                                 <a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></pre>
+                                 <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                 <a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                                 <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                 <a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                 <a href="../RankException.html" title="class in system">RankException</a>,
+                                 <a href="../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                 <a href="../OverflowException.html" title="class in system">OverflowException</a>,
+                                 <a href="../FormatException.html" title="class in system">FormatException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
-<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
 <dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 <dd><code><a href="../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 <dd><code><a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../FormatException.html" title="class in system">FormatException</a></code></dd>
-<dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../OverflowException.html" title="class in system">OverflowException</a></code></dd>
+<dd><code><a href="../FormatException.html" title="class in system">FormatException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1479,25 +2061,31 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <h4>ToString</h4>
 <pre class="methodSignature">public&nbsp;java.lang.String&nbsp;ToString&#8203;(java.lang.String&nbsp;format)
                           throws java.lang.Throwable,
-                                 <a href="../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
-                                 <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                                 <a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                                 <a href="../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                                 <a href="../FormatException.html" title="class in system">FormatException</a>,
                                  <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
                                  <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                                 <a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></pre>
+                                 <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                 <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                 <a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                 <a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                 <a href="../RankException.html" title="class in system">RankException</a>,
+                                 <a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                                 <a href="../OverflowException.html" title="class in system">OverflowException</a>,
+                                 <a href="../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                 <a href="../FormatException.html" title="class in system">FormatException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
-<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../FormatException.html" title="class in system">FormatException</a></code></dd>
 <dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 <dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../RankException.html" title="class in system">RankException</a></code></dd>
 <dd><code><a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../OverflowException.html" title="class in system">OverflowException</a></code></dd>
+<dd><code><a href="../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../FormatException.html" title="class in system">FormatException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1522,10 +2110,14 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <li class="blockList">
 <h4>getMagnitude</h4>
 <pre class="methodSignature">public&nbsp;double&nbsp;getMagnitude()
-                    throws java.lang.Throwable</pre>
+                    throws java.lang.Throwable,
+                           <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                           <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 </dl>
 </li>
 </ul>

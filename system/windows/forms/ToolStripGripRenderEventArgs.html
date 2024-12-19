@@ -147,7 +147,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <hr>
 <pre>public class <span class="typeNameLabel">ToolStripGripRenderEventArgs</span>
 extends <a href="ToolStripRenderEventArgs.html" title="class in system.windows.forms">ToolStripRenderEventArgs</a></pre>
-<div class="block">The base .NET class managing System.Windows.Forms.ToolStripGripRenderEventArgs, System.Windows.Forms, Version=6.0.2.0, Culture=neutral, PublicKeyToken=b77a5c561934e089.
+<div class="block">The base .NET class managing System.Windows.Forms.ToolStripGripRenderEventArgs, System.Windows.Forms, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089.
  <p>
  
  .NET documentation at <a href="https://docs.microsoft.com/en-us/dotnet/api/System.Windows.Forms.ToolStripGripRenderEventArgs" target="_top">https://docs.microsoft.com/en-us/dotnet/api/System.Windows.Forms.ToolStripGripRenderEventArgs</a>
@@ -182,7 +182,7 @@ extends <a href="ToolStripRenderEventArgs.html" title="class in system.windows.f
 <td class="colFirst"><code>static java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#assemblyFullName">assemblyFullName</a></span></code></th>
 <td class="colLast">
-<div class="block">Fully assembly qualified name: System.Windows.Forms, Version=6.0.2.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</div>
+<div class="block">Fully assembly qualified name: System.Windows.Forms, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</div>
 </td>
 </tr>
 <tr class="rowColor">
@@ -370,7 +370,7 @@ extends <a href="ToolStripRenderEventArgs.html" title="class in system.windows.f
 <li class="blockList">
 <h4>assemblyFullName</h4>
 <pre>public static final&nbsp;java.lang.String assemblyFullName</pre>
-<div class="block">Fully assembly qualified name: System.Windows.Forms, Version=6.0.2.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</div>
+<div class="block">Fully assembly qualified name: System.Windows.Forms, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../constant-values.html#system.windows.forms.ToolStripGripRenderEventArgs.assemblyFullName">Constant Field Values</a></dd>
@@ -462,10 +462,16 @@ extends <a href="ToolStripRenderEventArgs.html" title="class in system.windows.f
 <h4>ToolStripGripRenderEventArgs</h4>
 <pre>public&nbsp;ToolStripGripRenderEventArgs&#8203;(<a href="../../drawing/Graphics.html" title="class in system.drawing">Graphics</a>&nbsp;g,
                                     <a href="ToolStrip.html" title="class in system.windows.forms">ToolStrip</a>&nbsp;toolStrip)
-                             throws java.lang.Throwable</pre>
+                             throws java.lang.Throwable,
+                                    <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                    <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
+                                    <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -616,23 +622,23 @@ extends <a href="ToolStripRenderEventArgs.html" title="class in system.windows.f
 <pre class="methodSignature">public&nbsp;<a href="../../drawing/Rectangle.html" title="class in system.drawing">Rectangle</a>&nbsp;getGripBounds()
                         throws java.lang.Throwable,
                                <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                               <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                                <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
+                               <a href="../../threading/SynchronizationLockException.html" title="class in system.threading">SynchronizationLockException</a>,
                                <a href="../../componentmodel/InvalidEnumArgumentException.html" title="class in system.componentmodel">InvalidEnumArgumentException</a>,
                                <a href="../../collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a>,
                                <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                               <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                               <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                                <a href="../../componentmodel/Win32Exception.html" title="class in system.componentmodel">Win32Exception</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../threading/SynchronizationLockException.html" title="class in system.threading">SynchronizationLockException</a></code></dd>
 <dd><code><a href="../../componentmodel/InvalidEnumArgumentException.html" title="class in system.componentmodel">InvalidEnumArgumentException</a></code></dd>
 <dd><code><a href="../../collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a></code></dd>
 <dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="../../componentmodel/Win32Exception.html" title="class in system.componentmodel">Win32Exception</a></code></dd>
 </dl>
 </li>

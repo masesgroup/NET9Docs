@@ -152,7 +152,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <hr>
 <pre>public class <span class="typeNameLabel">Clipboard</span>
 extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></pre>
-<div class="block">The base .NET class managing System.Windows.Forms.Clipboard, System.Windows.Forms, Version=6.0.2.0, Culture=neutral, PublicKeyToken=b77a5c561934e089.
+<div class="block">The base .NET class managing System.Windows.Forms.Clipboard, System.Windows.Forms, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089.
  <p>
  
  .NET documentation at <a href="https://docs.microsoft.com/en-us/dotnet/api/System.Windows.Forms.Clipboard" target="_top">https://docs.microsoft.com/en-us/dotnet/api/System.Windows.Forms.Clipboard</a>
@@ -187,7 +187,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <td class="colFirst"><code>static java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#assemblyFullName">assemblyFullName</a></span></code></th>
 <td class="colLast">
-<div class="block">Fully assembly qualified name: System.Windows.Forms, Version=6.0.2.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</div>
+<div class="block">Fully assembly qualified name: System.Windows.Forms, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</div>
 </td>
 </tr>
 <tr class="rowColor">
@@ -479,7 +479,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <li class="blockList">
 <h4>assemblyFullName</h4>
 <pre>public static final&nbsp;java.lang.String assemblyFullName</pre>
-<div class="block">Fully assembly qualified name: System.Windows.Forms, Version=6.0.2.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</div>
+<div class="block">Fully assembly qualified name: System.Windows.Forms, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../constant-values.html#system.windows.forms.Clipboard.assemblyFullName">Constant Field Values</a></dd>
@@ -709,29 +709,27 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <h4>ContainsAudio</h4>
 <pre class="methodSignature">public static&nbsp;boolean&nbsp;ContainsAudio()
                              throws java.lang.Throwable,
+                                    <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
                                     <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
-                                    <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                                    <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                                    <a href="../../OverflowException.html" title="class in system">OverflowException</a>,
-                                    <a href="../../FormatException.html" title="class in system">FormatException</a>,
+                                    <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
                                     <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                                     <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                                    <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                                    <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                                     <a href="../../threading/ThreadStateException.html" title="class in system.threading">ThreadStateException</a>,
-                                    <a href="../../runtime/interopservices/ExternalException.html" title="class in system.runtime.interopservices">ExternalException</a></pre>
+                                    <a href="../../runtime/interopservices/ExternalException.html" title="class in system.runtime.interopservices">ExternalException</a>,
+                                    <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../OverflowException.html" title="class in system">OverflowException</a></code></dd>
-<dd><code><a href="../../FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 <dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../../threading/ThreadStateException.html" title="class in system.threading">ThreadStateException</a></code></dd>
 <dd><code><a href="../../runtime/interopservices/ExternalException.html" title="class in system.runtime.interopservices">ExternalException</a></code></dd>
+<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -744,30 +742,26 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <pre class="methodSignature">public static&nbsp;boolean&nbsp;ContainsData&#8203;(java.lang.String&nbsp;format)
                             throws java.lang.Throwable,
                                    <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
-                                   <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                                    <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                                   <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                                    <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                                    <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
                                    <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
-                                   <a href="../../OverflowException.html" title="class in system">OverflowException</a>,
-                                   <a href="../../FormatException.html" title="class in system">FormatException</a>,
+                                   <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                                    <a href="../../threading/ThreadStateException.html" title="class in system.threading">ThreadStateException</a>,
-                                   <a href="../../runtime/interopservices/ExternalException.html" title="class in system.runtime.interopservices">ExternalException</a></pre>
+                                   <a href="../../runtime/interopservices/ExternalException.html" title="class in system.runtime.interopservices">ExternalException</a>,
+                                   <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 <dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 <dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
-<dd><code><a href="../../OverflowException.html" title="class in system">OverflowException</a></code></dd>
-<dd><code><a href="../../FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="../../threading/ThreadStateException.html" title="class in system.threading">ThreadStateException</a></code></dd>
 <dd><code><a href="../../runtime/interopservices/ExternalException.html" title="class in system.runtime.interopservices">ExternalException</a></code></dd>
+<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -779,27 +773,27 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <h4>ContainsFileDropList</h4>
 <pre class="methodSignature">public static&nbsp;boolean&nbsp;ContainsFileDropList()
                                     throws java.lang.Throwable,
-                                           <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
-                                           <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                                            <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                                           <a href="../../OverflowException.html" title="class in system">OverflowException</a>,
-                                           <a href="../../FormatException.html" title="class in system">FormatException</a>,
+                                           <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                           <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
                                            <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                                            <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
                                            <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                                           <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                           <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
                                            <a href="../../threading/ThreadStateException.html" title="class in system.threading">ThreadStateException</a>,
                                            <a href="../../runtime/interopservices/ExternalException.html" title="class in system.runtime.interopservices">ExternalException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 <dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../OverflowException.html" title="class in system">OverflowException</a></code></dd>
-<dd><code><a href="../../FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 <dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 <dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
 <dd><code><a href="../../threading/ThreadStateException.html" title="class in system.threading">ThreadStateException</a></code></dd>
 <dd><code><a href="../../runtime/interopservices/ExternalException.html" title="class in system.runtime.interopservices">ExternalException</a></code></dd>
 </dl>
@@ -813,27 +807,27 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <h4>ContainsImage</h4>
 <pre class="methodSignature">public static&nbsp;boolean&nbsp;ContainsImage()
                              throws java.lang.Throwable,
-                                    <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
-                                    <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                                     <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                                    <a href="../../OverflowException.html" title="class in system">OverflowException</a>,
-                                    <a href="../../FormatException.html" title="class in system">FormatException</a>,
+                                    <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                    <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
                                     <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                                     <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
                                     <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                                    <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                    <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
                                     <a href="../../threading/ThreadStateException.html" title="class in system.threading">ThreadStateException</a>,
                                     <a href="../../runtime/interopservices/ExternalException.html" title="class in system.runtime.interopservices">ExternalException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 <dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../OverflowException.html" title="class in system">OverflowException</a></code></dd>
-<dd><code><a href="../../FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 <dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 <dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
 <dd><code><a href="../../threading/ThreadStateException.html" title="class in system.threading">ThreadStateException</a></code></dd>
 <dd><code><a href="../../runtime/interopservices/ExternalException.html" title="class in system.runtime.interopservices">ExternalException</a></code></dd>
 </dl>
@@ -847,27 +841,29 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <h4>ContainsText</h4>
 <pre class="methodSignature">public static&nbsp;boolean&nbsp;ContainsText()
                             throws java.lang.Throwable,
-                                   <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                                    <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
                                    <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                                   <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                   <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
                                    <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
                                    <a href="../../FormatException.html" title="class in system">FormatException</a>,
                                    <a href="../../componentmodel/InvalidEnumArgumentException.html" title="class in system.componentmodel">InvalidEnumArgumentException</a>,
+                                   <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                                    <a href="../../threading/ThreadStateException.html" title="class in system.threading">ThreadStateException</a>,
-                                   <a href="../../runtime/interopservices/ExternalException.html" title="class in system.runtime.interopservices">ExternalException</a></pre>
+                                   <a href="../../runtime/interopservices/ExternalException.html" title="class in system.runtime.interopservices">ExternalException</a>,
+                                   <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 <dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 <dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 <dd><code><a href="../../FormatException.html" title="class in system">FormatException</a></code></dd>
 <dd><code><a href="../../componentmodel/InvalidEnumArgumentException.html" title="class in system.componentmodel">InvalidEnumArgumentException</a></code></dd>
+<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../../threading/ThreadStateException.html" title="class in system.threading">ThreadStateException</a></code></dd>
 <dd><code><a href="../../runtime/interopservices/ExternalException.html" title="class in system.runtime.interopservices">ExternalException</a></code></dd>
+<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -879,31 +875,29 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <h4>ContainsText</h4>
 <pre class="methodSignature">public static&nbsp;boolean&nbsp;ContainsText&#8203;(<a href="TextDataFormat.html" title="class in system.windows.forms">TextDataFormat</a>&nbsp;format)
                             throws java.lang.Throwable,
-                                   <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                                    <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
                                    <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                                    <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                                   <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
                                    <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                   <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
                                    <a href="../../FormatException.html" title="class in system">FormatException</a>,
                                    <a href="../../componentmodel/InvalidEnumArgumentException.html" title="class in system.componentmodel">InvalidEnumArgumentException</a>,
-                                   <a href="../../OverflowException.html" title="class in system">OverflowException</a>,
                                    <a href="../../threading/ThreadStateException.html" title="class in system.threading">ThreadStateException</a>,
-                                   <a href="../../runtime/interopservices/ExternalException.html" title="class in system.runtime.interopservices">ExternalException</a></pre>
+                                   <a href="../../runtime/interopservices/ExternalException.html" title="class in system.runtime.interopservices">ExternalException</a>,
+                                   <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 <dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 <dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 <dd><code><a href="../../FormatException.html" title="class in system">FormatException</a></code></dd>
 <dd><code><a href="../../componentmodel/InvalidEnumArgumentException.html" title="class in system.componentmodel">InvalidEnumArgumentException</a></code></dd>
-<dd><code><a href="../../OverflowException.html" title="class in system">OverflowException</a></code></dd>
 <dd><code><a href="../../threading/ThreadStateException.html" title="class in system.threading">ThreadStateException</a></code></dd>
 <dd><code><a href="../../runtime/interopservices/ExternalException.html" title="class in system.runtime.interopservices">ExternalException</a></code></dd>
+<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -915,35 +909,37 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <h4>GetFileDropList</h4>
 <pre class="methodSignature">public static&nbsp;<a href="../../collections/specialized/StringCollection.html" title="class in system.collections.specialized">StringCollection</a>&nbsp;GetFileDropList()
                                         throws java.lang.Throwable,
-                                               <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
-                                               <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                                                <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                                               <a href="../../OverflowException.html" title="class in system">OverflowException</a>,
-                                               <a href="../../FormatException.html" title="class in system">FormatException</a>,
+                                               <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                               <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
                                                <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                                                <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
                                                <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                                               <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                               <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
                                                <a href="../../threading/ThreadStateException.html" title="class in system.threading">ThreadStateException</a>,
                                                <a href="../../runtime/interopservices/ExternalException.html" title="class in system.runtime.interopservices">ExternalException</a>,
                                                <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
                                                <a href="../../RankException.html" title="class in system">RankException</a>,
-                                               <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></pre>
+                                               <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                                               <a href="../../InvalidCastException.html" title="class in system">InvalidCastException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 <dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../OverflowException.html" title="class in system">OverflowException</a></code></dd>
-<dd><code><a href="../../FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 <dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 <dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
 <dd><code><a href="../../threading/ThreadStateException.html" title="class in system.threading">ThreadStateException</a></code></dd>
 <dd><code><a href="../../runtime/interopservices/ExternalException.html" title="class in system.runtime.interopservices">ExternalException</a></code></dd>
 <dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 <dd><code><a href="../../RankException.html" title="class in system">RankException</a></code></dd>
 <dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../InvalidCastException.html" title="class in system">InvalidCastException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -955,27 +951,27 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <h4>GetImage</h4>
 <pre class="methodSignature">public static&nbsp;<a href="../../drawing/Image.html" title="class in system.drawing">Image</a>&nbsp;GetImage()
                       throws java.lang.Throwable,
-                             <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
-                             <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                              <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                             <a href="../../OverflowException.html" title="class in system">OverflowException</a>,
-                             <a href="../../FormatException.html" title="class in system">FormatException</a>,
+                             <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                             <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
                              <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                              <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
                              <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                             <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                             <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
                              <a href="../../threading/ThreadStateException.html" title="class in system.threading">ThreadStateException</a>,
                              <a href="../../runtime/interopservices/ExternalException.html" title="class in system.runtime.interopservices">ExternalException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 <dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../OverflowException.html" title="class in system">OverflowException</a></code></dd>
-<dd><code><a href="../../FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 <dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 <dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
 <dd><code><a href="../../threading/ThreadStateException.html" title="class in system.threading">ThreadStateException</a></code></dd>
 <dd><code><a href="../../runtime/interopservices/ExternalException.html" title="class in system.runtime.interopservices">ExternalException</a></code></dd>
 </dl>
@@ -989,29 +985,27 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <h4>GetAudioStream</h4>
 <pre class="methodSignature">public static&nbsp;<a href="../../io/Stream.html" title="class in system.io">Stream</a>&nbsp;GetAudioStream()
                              throws java.lang.Throwable,
+                                    <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
                                     <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
-                                    <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                                    <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                                    <a href="../../OverflowException.html" title="class in system">OverflowException</a>,
-                                    <a href="../../FormatException.html" title="class in system">FormatException</a>,
+                                    <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
                                     <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                                     <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                                    <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                                    <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                                     <a href="../../threading/ThreadStateException.html" title="class in system.threading">ThreadStateException</a>,
-                                    <a href="../../runtime/interopservices/ExternalException.html" title="class in system.runtime.interopservices">ExternalException</a></pre>
+                                    <a href="../../runtime/interopservices/ExternalException.html" title="class in system.runtime.interopservices">ExternalException</a>,
+                                    <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../OverflowException.html" title="class in system">OverflowException</a></code></dd>
-<dd><code><a href="../../FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 <dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../../threading/ThreadStateException.html" title="class in system.threading">ThreadStateException</a></code></dd>
 <dd><code><a href="../../runtime/interopservices/ExternalException.html" title="class in system.runtime.interopservices">ExternalException</a></code></dd>
+<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1024,30 +1018,26 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <pre class="methodSignature">public static&nbsp;<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;GetData&#8203;(java.lang.String&nbsp;format)
                          throws java.lang.Throwable,
                                 <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
-                                <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                                 <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                                <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                                 <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                                 <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
                                 <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
-                                <a href="../../OverflowException.html" title="class in system">OverflowException</a>,
-                                <a href="../../FormatException.html" title="class in system">FormatException</a>,
+                                <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                                 <a href="../../threading/ThreadStateException.html" title="class in system.threading">ThreadStateException</a>,
-                                <a href="../../runtime/interopservices/ExternalException.html" title="class in system.runtime.interopservices">ExternalException</a></pre>
+                                <a href="../../runtime/interopservices/ExternalException.html" title="class in system.runtime.interopservices">ExternalException</a>,
+                                <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 <dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 <dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
-<dd><code><a href="../../OverflowException.html" title="class in system">OverflowException</a></code></dd>
-<dd><code><a href="../../FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="../../threading/ThreadStateException.html" title="class in system.threading">ThreadStateException</a></code></dd>
 <dd><code><a href="../../runtime/interopservices/ExternalException.html" title="class in system.runtime.interopservices">ExternalException</a></code></dd>
+<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1059,27 +1049,29 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <h4>GetText</h4>
 <pre class="methodSignature">public static&nbsp;java.lang.String&nbsp;GetText()
                                 throws java.lang.Throwable,
-                                       <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                                        <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
                                        <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                                       <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                       <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
                                        <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
                                        <a href="../../FormatException.html" title="class in system">FormatException</a>,
                                        <a href="../../componentmodel/InvalidEnumArgumentException.html" title="class in system.componentmodel">InvalidEnumArgumentException</a>,
+                                       <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                                        <a href="../../threading/ThreadStateException.html" title="class in system.threading">ThreadStateException</a>,
-                                       <a href="../../runtime/interopservices/ExternalException.html" title="class in system.runtime.interopservices">ExternalException</a></pre>
+                                       <a href="../../runtime/interopservices/ExternalException.html" title="class in system.runtime.interopservices">ExternalException</a>,
+                                       <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 <dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 <dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 <dd><code><a href="../../FormatException.html" title="class in system">FormatException</a></code></dd>
 <dd><code><a href="../../componentmodel/InvalidEnumArgumentException.html" title="class in system.componentmodel">InvalidEnumArgumentException</a></code></dd>
+<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../../threading/ThreadStateException.html" title="class in system.threading">ThreadStateException</a></code></dd>
 <dd><code><a href="../../runtime/interopservices/ExternalException.html" title="class in system.runtime.interopservices">ExternalException</a></code></dd>
+<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1091,31 +1083,29 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <h4>GetText</h4>
 <pre class="methodSignature">public static&nbsp;java.lang.String&nbsp;GetText&#8203;(<a href="TextDataFormat.html" title="class in system.windows.forms">TextDataFormat</a>&nbsp;format)
                                 throws java.lang.Throwable,
-                                       <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                                        <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
                                        <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                                        <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                                       <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
                                        <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                       <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
                                        <a href="../../FormatException.html" title="class in system">FormatException</a>,
                                        <a href="../../componentmodel/InvalidEnumArgumentException.html" title="class in system.componentmodel">InvalidEnumArgumentException</a>,
-                                       <a href="../../OverflowException.html" title="class in system">OverflowException</a>,
                                        <a href="../../threading/ThreadStateException.html" title="class in system.threading">ThreadStateException</a>,
-                                       <a href="../../runtime/interopservices/ExternalException.html" title="class in system.runtime.interopservices">ExternalException</a></pre>
+                                       <a href="../../runtime/interopservices/ExternalException.html" title="class in system.runtime.interopservices">ExternalException</a>,
+                                       <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 <dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 <dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 <dd><code><a href="../../FormatException.html" title="class in system">FormatException</a></code></dd>
 <dd><code><a href="../../componentmodel/InvalidEnumArgumentException.html" title="class in system.componentmodel">InvalidEnumArgumentException</a></code></dd>
-<dd><code><a href="../../OverflowException.html" title="class in system">OverflowException</a></code></dd>
 <dd><code><a href="../../threading/ThreadStateException.html" title="class in system.threading">ThreadStateException</a></code></dd>
 <dd><code><a href="../../runtime/interopservices/ExternalException.html" title="class in system.runtime.interopservices">ExternalException</a></code></dd>
+<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1127,29 +1117,29 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <h4>GetDataObject</h4>
 <pre class="methodSignature">public static&nbsp;<a href="IDataObject.html" title="interface in system.windows.forms">IDataObject</a>&nbsp;GetDataObject()
                                  throws java.lang.Throwable,
-                                        <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
                                         <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
-                                        <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                                        <a href="../../FormatException.html" title="class in system">FormatException</a>,
+                                        <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
                                         <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                                        <a href="../../OverflowException.html" title="class in system">OverflowException</a>,
-                                        <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                                         <a href="../../threading/ThreadStateException.html" title="class in system.threading">ThreadStateException</a>,
                                         <a href="../../runtime/interopservices/ExternalException.html" title="class in system.runtime.interopservices">ExternalException</a>,
-                                        <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></pre>
+                                        <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                        <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                        <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                        <a href="../../FormatException.html" title="class in system">FormatException</a>,
+                                        <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
 <dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../OverflowException.html" title="class in system">OverflowException</a></code></dd>
-<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="../../threading/ThreadStateException.html" title="class in system.threading">ThreadStateException</a></code></dd>
 <dd><code><a href="../../runtime/interopservices/ExternalException.html" title="class in system.runtime.interopservices">ExternalException</a></code></dd>
+<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 <dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1161,23 +1151,23 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <h4>Clear</h4>
 <pre class="methodSignature">public static&nbsp;void&nbsp;Clear()
                   throws java.lang.Throwable,
-                         <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
                          <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
-                         <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                         <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                         <a href="../../FormatException.html" title="class in system">FormatException</a>,
+                         <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
                          <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                         <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                         <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                         <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
                          <a href="../../threading/ThreadStateException.html" title="class in system.threading">ThreadStateException</a>,
                          <a href="../../runtime/interopservices/ExternalException.html" title="class in system.runtime.interopservices">ExternalException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
 <dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
 <dd><code><a href="../../threading/ThreadStateException.html" title="class in system.threading">ThreadStateException</a></code></dd>
 <dd><code><a href="../../runtime/interopservices/ExternalException.html" title="class in system.runtime.interopservices">ExternalException</a></code></dd>
 </dl>
@@ -1192,33 +1182,23 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <pre class="methodSignature">public static&nbsp;void&nbsp;SetAudio&#8203;(byte[]&nbsp;audioBytes)
                      throws java.lang.Throwable,
                             <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
+                            <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                            <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                             <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
                             <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                            <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                             <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                            <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
-                            <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
-                            <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                            <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
-                            <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
                             <a href="../../threading/ThreadStateException.html" title="class in system.threading">ThreadStateException</a>,
-                            <a href="../../FormatException.html" title="class in system">FormatException</a>,
                             <a href="../../runtime/interopservices/ExternalException.html" title="class in system.runtime.interopservices">ExternalException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 <dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
-<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
-<dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
-<dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
 <dd><code><a href="../../threading/ThreadStateException.html" title="class in system.threading">ThreadStateException</a></code></dd>
-<dd><code><a href="../../FormatException.html" title="class in system">FormatException</a></code></dd>
 <dd><code><a href="../../runtime/interopservices/ExternalException.html" title="class in system.runtime.interopservices">ExternalException</a></code></dd>
 </dl>
 </li>
@@ -1232,33 +1212,23 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <pre class="methodSignature">public static&nbsp;void&nbsp;SetAudio&#8203;(<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;dupParam0)
                      throws java.lang.Throwable,
                             <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
+                            <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                            <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                             <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
                             <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                            <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                             <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                            <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
-                            <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
-                            <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                            <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
-                            <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
                             <a href="../../threading/ThreadStateException.html" title="class in system.threading">ThreadStateException</a>,
-                            <a href="../../FormatException.html" title="class in system">FormatException</a>,
                             <a href="../../runtime/interopservices/ExternalException.html" title="class in system.runtime.interopservices">ExternalException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 <dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
-<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
-<dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
-<dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
 <dd><code><a href="../../threading/ThreadStateException.html" title="class in system.threading">ThreadStateException</a></code></dd>
-<dd><code><a href="../../FormatException.html" title="class in system">FormatException</a></code></dd>
 <dd><code><a href="../../runtime/interopservices/ExternalException.html" title="class in system.runtime.interopservices">ExternalException</a></code></dd>
 </dl>
 </li>
@@ -1272,15 +1242,12 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <pre class="methodSignature">public static&nbsp;void&nbsp;SetAudio&#8203;(<a href="../../io/Stream.html" title="class in system.io">Stream</a>&nbsp;audioStream)
                      throws java.lang.Throwable,
                             <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
+                            <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                            <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                             <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
                             <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                            <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                            <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                            <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
                             <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
-                            <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                            <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
-                            <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                            <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                             <a href="../../threading/ThreadStateException.html" title="class in system.threading">ThreadStateException</a>,
                             <a href="../../FormatException.html" title="class in system">FormatException</a>,
                             <a href="../../runtime/interopservices/ExternalException.html" title="class in system.runtime.interopservices">ExternalException</a></pre>
@@ -1288,15 +1255,12 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 <dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
 <dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
-<dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
-<dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="../../threading/ThreadStateException.html" title="class in system.threading">ThreadStateException</a></code></dd>
 <dd><code><a href="../../FormatException.html" title="class in system">FormatException</a></code></dd>
 <dd><code><a href="../../runtime/interopservices/ExternalException.html" title="class in system.runtime.interopservices">ExternalException</a></code></dd>
@@ -1313,27 +1277,27 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
                            <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;data)
                     throws java.lang.Throwable,
                            <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
-                           <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                            <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                           <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                            <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                            <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                           <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                            <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
-                           <a href="../../FormatException.html" title="class in system">FormatException</a>,
+                           <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                            <a href="../../threading/ThreadStateException.html" title="class in system.threading">ThreadStateException</a>,
+                           <a href="../../FormatException.html" title="class in system">FormatException</a>,
                            <a href="../../runtime/interopservices/ExternalException.html" title="class in system.runtime.interopservices">ExternalException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 <dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 <dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
-<dd><code><a href="../../FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="../../threading/ThreadStateException.html" title="class in system.threading">ThreadStateException</a></code></dd>
+<dd><code><a href="../../FormatException.html" title="class in system">FormatException</a></code></dd>
 <dd><code><a href="../../runtime/interopservices/ExternalException.html" title="class in system.runtime.interopservices">ExternalException</a></code></dd>
 </dl>
 </li>
@@ -1349,24 +1313,24 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
                                  int&nbsp;retryTimes,
                                  int&nbsp;retryDelay)
                           throws java.lang.Throwable,
-                                 <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
                                  <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
-                                 <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                                 <a href="../../FormatException.html" title="class in system">FormatException</a>,
+                                 <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
                                  <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                                 <a href="../../threading/ThreadStateException.html" title="class in system.threading">ThreadStateException</a>,
                                  <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                 <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                 <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                                 <a href="../../threading/ThreadStateException.html" title="class in system.threading">ThreadStateException</a>,
                                  <a href="../../runtime/interopservices/ExternalException.html" title="class in system.runtime.interopservices">ExternalException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
 <dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../threading/ThreadStateException.html" title="class in system.threading">ThreadStateException</a></code></dd>
 <dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../threading/ThreadStateException.html" title="class in system.threading">ThreadStateException</a></code></dd>
 <dd><code><a href="../../runtime/interopservices/ExternalException.html" title="class in system.runtime.interopservices">ExternalException</a></code></dd>
 </dl>
 </li>
@@ -1380,9 +1344,11 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <pre class="methodSignature">public static&nbsp;void&nbsp;SetDataObject&#8203;(<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;data,
                                  boolean&nbsp;copy)
                           throws java.lang.Throwable,
-                                 <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
                                  <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                 <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
                                  <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                 <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                 <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                                  <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
                                  <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
                                  <a href="../../threading/ThreadStateException.html" title="class in system.threading">ThreadStateException</a>,
@@ -1390,9 +1356,11 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 <dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 <dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 <dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
 <dd><code><a href="../../threading/ThreadStateException.html" title="class in system.threading">ThreadStateException</a></code></dd>
@@ -1408,26 +1376,22 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <h4>SetDataObject</h4>
 <pre class="methodSignature">public static&nbsp;void&nbsp;SetDataObject&#8203;(<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;data)
                           throws java.lang.Throwable,
-                                 <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
                                  <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                                 <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                                 <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                                 <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
                                  <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                                 <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
-                                 <a href="../../threading/ThreadStateException.html" title="class in system.threading">ThreadStateException</a>,
                                  <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                 <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                                 <a href="../../threading/ThreadStateException.html" title="class in system.threading">ThreadStateException</a>,
                                  <a href="../../runtime/interopservices/ExternalException.html" title="class in system.runtime.interopservices">ExternalException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 <dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 <dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
-<dd><code><a href="../../threading/ThreadStateException.html" title="class in system.threading">ThreadStateException</a></code></dd>
 <dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../threading/ThreadStateException.html" title="class in system.threading">ThreadStateException</a></code></dd>
 <dd><code><a href="../../runtime/interopservices/ExternalException.html" title="class in system.runtime.interopservices">ExternalException</a></code></dd>
 </dl>
 </li>
@@ -1441,36 +1405,28 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <pre class="methodSignature">public static&nbsp;void&nbsp;SetFileDropList&#8203;(<a href="../../collections/specialized/StringCollection.html" title="class in system.collections.specialized">StringCollection</a>&nbsp;filePaths)
                             throws java.lang.Throwable,
                                    <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
+                                   <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                   <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                                    <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
                                    <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                                   <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                                    <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                                   <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
                                    <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
-                                   <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                                   <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
-                                   <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
-                                   <a href="../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
-                                   <a href="../../runtime/interopservices/ExternalException.html" title="class in system.runtime.interopservices">ExternalException</a>,
+                                   <a href="../../FormatException.html" title="class in system">FormatException</a>,
                                    <a href="../../threading/ThreadStateException.html" title="class in system.threading">ThreadStateException</a>,
-                                   <a href="../../FormatException.html" title="class in system">FormatException</a></pre>
+                                   <a href="../../runtime/interopservices/ExternalException.html" title="class in system.runtime.interopservices">ExternalException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 <dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
 <dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
-<dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
-<dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
-<dd><code><a href="../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
-<dd><code><a href="../../runtime/interopservices/ExternalException.html" title="class in system.runtime.interopservices">ExternalException</a></code></dd>
-<dd><code><a href="../../threading/ThreadStateException.html" title="class in system.threading">ThreadStateException</a></code></dd>
 <dd><code><a href="../../FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../threading/ThreadStateException.html" title="class in system.threading">ThreadStateException</a></code></dd>
+<dd><code><a href="../../runtime/interopservices/ExternalException.html" title="class in system.runtime.interopservices">ExternalException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1483,15 +1439,12 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <pre class="methodSignature">public static&nbsp;void&nbsp;SetImage&#8203;(<a href="../../drawing/Image.html" title="class in system.drawing">Image</a>&nbsp;image)
                      throws java.lang.Throwable,
                             <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
+                            <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                            <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                             <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
                             <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                            <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                            <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                            <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
                             <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
-                            <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                            <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
-                            <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                            <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                             <a href="../../threading/ThreadStateException.html" title="class in system.threading">ThreadStateException</a>,
                             <a href="../../FormatException.html" title="class in system">FormatException</a>,
                             <a href="../../runtime/interopservices/ExternalException.html" title="class in system.runtime.interopservices">ExternalException</a></pre>
@@ -1499,15 +1452,12 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 <dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
 <dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
-<dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
-<dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="../../threading/ThreadStateException.html" title="class in system.threading">ThreadStateException</a></code></dd>
 <dd><code><a href="../../FormatException.html" title="class in system">FormatException</a></code></dd>
 <dd><code><a href="../../runtime/interopservices/ExternalException.html" title="class in system.runtime.interopservices">ExternalException</a></code></dd>
@@ -1529,10 +1479,10 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
                            <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                            <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                            <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
-                           <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
                            <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                           <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
                            <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                           <a href="../../RankException.html" title="class in system">RankException</a>,
+                           <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
                            <a href="../../FormatException.html" title="class in system">FormatException</a>,
                            <a href="../../componentmodel/InvalidEnumArgumentException.html" title="class in system.componentmodel">InvalidEnumArgumentException</a>,
                            <a href="../../threading/ThreadStateException.html" title="class in system.threading">ThreadStateException</a>,
@@ -1546,10 +1496,10 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
-<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 <dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
 <dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 <dd><code><a href="../../FormatException.html" title="class in system">FormatException</a></code></dd>
 <dd><code><a href="../../componentmodel/InvalidEnumArgumentException.html" title="class in system.componentmodel">InvalidEnumArgumentException</a></code></dd>
 <dd><code><a href="../../threading/ThreadStateException.html" title="class in system.threading">ThreadStateException</a></code></dd>
@@ -1567,14 +1517,13 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
                     throws java.lang.Throwable,
                            <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
                            <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                           <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                           <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                            <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                           <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
-                           <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
                            <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
                            <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                           <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                            <a href="../../RankException.html" title="class in system">RankException</a>,
+                           <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                           <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                            <a href="../../FormatException.html" title="class in system">FormatException</a>,
                            <a href="../../componentmodel/InvalidEnumArgumentException.html" title="class in system.componentmodel">InvalidEnumArgumentException</a>,
                            <a href="../../threading/ThreadStateException.html" title="class in system.threading">ThreadStateException</a>,
@@ -1584,14 +1533,13 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 <dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
-<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 <dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
 <dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 <dd><code><a href="../../FormatException.html" title="class in system">FormatException</a></code></dd>
 <dd><code><a href="../../componentmodel/InvalidEnumArgumentException.html" title="class in system.componentmodel">InvalidEnumArgumentException</a></code></dd>
 <dd><code><a href="../../threading/ThreadStateException.html" title="class in system.threading">ThreadStateException</a></code></dd>

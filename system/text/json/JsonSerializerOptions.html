@@ -17,7 +17,12 @@
 <meta name="keywords" content="setJCOInstance()">
 <meta name="keywords" content="getJCOType()">
 <meta name="keywords" content="cast()">
+<meta name="keywords" content="TryGetTypeInfo()">
 <meta name="keywords" content="GetConverter()">
+<meta name="keywords" content="GetTypeInfo()">
+<meta name="keywords" content="MakeReadOnly()">
+<meta name="keywords" content="getAllowOutOfOrderMetadataProperties()">
+<meta name="keywords" content="setAllowOutOfOrderMetadataProperties()">
 <meta name="keywords" content="getAllowTrailingCommas()">
 <meta name="keywords" content="setAllowTrailingCommas()">
 <meta name="keywords" content="getIgnoreNullValues()">
@@ -28,14 +33,25 @@
 <meta name="keywords" content="setIgnoreReadOnlyProperties()">
 <meta name="keywords" content="getIncludeFields()">
 <meta name="keywords" content="setIncludeFields()">
+<meta name="keywords" content="getIsReadOnly()">
 <meta name="keywords" content="getPropertyNameCaseInsensitive()">
 <meta name="keywords" content="setPropertyNameCaseInsensitive()">
+<meta name="keywords" content="getRespectNullableAnnotations()">
+<meta name="keywords" content="setRespectNullableAnnotations()">
+<meta name="keywords" content="getRespectRequiredConstructorParameters()">
+<meta name="keywords" content="setRespectRequiredConstructorParameters()">
 <meta name="keywords" content="getWriteIndented()">
 <meta name="keywords" content="setWriteIndented()">
+<meta name="keywords" content="getIndentCharacter()">
+<meta name="keywords" content="setIndentCharacter()">
 <meta name="keywords" content="getDefaultBufferSize()">
 <meta name="keywords" content="setDefaultBufferSize()">
+<meta name="keywords" content="getIndentSize()">
+<meta name="keywords" content="setIndentSize()">
 <meta name="keywords" content="getMaxDepth()">
 <meta name="keywords" content="setMaxDepth()">
+<meta name="keywords" content="getNewLine()">
+<meta name="keywords" content="setNewLine()">
 <meta name="keywords" content="getEncoder()">
 <meta name="keywords" content="setEncoder()">
 <meta name="keywords" content="getReadCommentHandling()">
@@ -44,12 +60,20 @@
 <meta name="keywords" content="setDictionaryKeyPolicy()">
 <meta name="keywords" content="getPropertyNamingPolicy()">
 <meta name="keywords" content="setPropertyNamingPolicy()">
+<meta name="keywords" content="getDefault()">
+<meta name="keywords" content="getWeb()">
 <meta name="keywords" content="getDefaultIgnoreCondition()">
 <meta name="keywords" content="setDefaultIgnoreCondition()">
 <meta name="keywords" content="getNumberHandling()">
 <meta name="keywords" content="setNumberHandling()">
+<meta name="keywords" content="getPreferredObjectCreationHandling()">
+<meta name="keywords" content="setPreferredObjectCreationHandling()">
 <meta name="keywords" content="getUnknownTypeHandling()">
 <meta name="keywords" content="setUnknownTypeHandling()">
+<meta name="keywords" content="getUnmappedMemberHandling()">
+<meta name="keywords" content="setUnmappedMemberHandling()">
+<meta name="keywords" content="getTypeInfoResolver()">
+<meta name="keywords" content="setTypeInfoResolver()">
 <meta name="keywords" content="getReferenceHandler()">
 <meta name="keywords" content="setReferenceHandler()">
 <link rel="stylesheet" type="text/css" href="../../../stylesheet.css" title="Style">
@@ -65,7 +89,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":10,"i36":10,"i37":10,"i38":10,"i39":10,"i40":10,"i41":10};
+var data = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":9,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":9,"i36":10,"i37":10,"i38":10,"i39":10,"i40":10,"i41":10,"i42":10,"i43":10,"i44":10,"i45":10,"i46":10,"i47":10,"i48":10,"i49":10,"i50":10,"i51":10,"i52":10,"i53":10,"i54":10,"i55":10,"i56":10,"i57":10,"i58":10,"i59":10,"i60":10,"i61":10,"i62":10,"i63":10,"i64":10,"i65":10,"i66":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -169,7 +193,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <hr>
 <pre>public class <span class="typeNameLabel">JsonSerializerOptions</span>
 extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></pre>
-<div class="block">The base .NET class managing System.Text.Json.JsonSerializerOptions, System.Text.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51.
+<div class="block">The base .NET class managing System.Text.Json.JsonSerializerOptions, System.Text.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51.
  <p>
  
  .NET documentation at <a href="https://docs.microsoft.com/en-us/dotnet/api/System.Text.Json.JsonSerializerOptions" target="_top">https://docs.microsoft.com/en-us/dotnet/api/System.Text.Json.JsonSerializerOptions</a>
@@ -204,7 +228,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <td class="colFirst"><code>static java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#assemblyFullName">assemblyFullName</a></span></code></th>
 <td class="colLast">
-<div class="block">Fully assembly qualified name: System.Text.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51</div>
+<div class="block">Fully assembly qualified name: System.Text.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51</div>
 </td>
 </tr>
 <tr class="rowColor">
@@ -297,217 +321,343 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getAllowTrailingCommas()">getAllowTrailingCommas</a></span>()</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getAllowOutOfOrderMetadataProperties()">getAllowOutOfOrderMetadataProperties</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getAllowTrailingCommas()">getAllowTrailingCommas</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="serialization/JsonConverter.html" title="class in system.text.json.serialization">JsonConverter</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#GetConverter(org.mases.jcobridge.netreflection.NetType)">GetConverter</a></span>&#8203;(<a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;typeToConvert)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
+<td class="colFirst"><code>static <a href="JsonSerializerOptions.html" title="class in system.text.json">JsonSerializerOptions</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getDefault()">getDefault</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getDefaultBufferSize()">getDefaultBufferSize</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="serialization/JsonIgnoreCondition.html" title="class in system.text.json.serialization">JsonIgnoreCondition</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getDefaultIgnoreCondition()">getDefaultIgnoreCondition</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="JsonNamingPolicy.html" title="class in system.text.json">JsonNamingPolicy</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getDictionaryKeyPolicy()">getDictionaryKeyPolicy</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../encodings/web/JavaScriptEncoder.html" title="class in system.text.encodings.web">JavaScriptEncoder</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getEncoder()">getEncoder</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getIgnoreNullValues()">getIgnoreNullValues</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getIgnoreReadOnlyFields()">getIgnoreReadOnlyFields</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getIgnoreReadOnlyProperties()">getIgnoreReadOnlyProperties</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getIncludeFields()">getIncludeFields</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i13" class="rowColor">
+<td class="colFirst"><code>char</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getIndentCharacter()">getIndentCharacter</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i14" class="altColor">
+<td class="colFirst"><code>int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getIndentSize()">getIndentSize</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i15" class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getIsReadOnly()">getIsReadOnly</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getJCOAssemblyName()">getJCOAssemblyName</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the reflected Assembly name</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getJCOClassName()">getJCOClassName</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the reflected Class name</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getJCOInstance()">getJCOInstance</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the instantiated class</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getJCOObjectName()">getJCOObjectName</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the reflected Class name used to build the object</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code><a href="https://www.jcobridge.com/api-java_2.5.21/org/mases/jcobridge/JCType.html?is-external=true" title="class or interface in org.mases.jcobridge" class="externalLink">JCType</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getJCOType()">getJCOType</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the instantiated class Type</div>
 </td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getMaxDepth()">getMaxDepth</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i22" class="altColor">
+<td class="colFirst"><code>java.lang.String</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getNewLine()">getNewLine</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code><a href="serialization/JsonNumberHandling.html" title="class in system.text.json.serialization">JsonNumberHandling</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getNumberHandling()">getNumberHandling</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i24" class="altColor">
+<td class="colFirst"><code><a href="serialization/JsonObjectCreationHandling.html" title="class in system.text.json.serialization">JsonObjectCreationHandling</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getPreferredObjectCreationHandling()">getPreferredObjectCreationHandling</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getPropertyNameCaseInsensitive()">getPropertyNameCaseInsensitive</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i26" class="altColor">
 <td class="colFirst"><code><a href="JsonNamingPolicy.html" title="class in system.text.json">JsonNamingPolicy</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getPropertyNamingPolicy()">getPropertyNamingPolicy</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i27" class="rowColor">
 <td class="colFirst"><code><a href="JsonCommentHandling.html" title="class in system.text.json">JsonCommentHandling</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getReadCommentHandling()">getReadCommentHandling</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i28" class="altColor">
 <td class="colFirst"><code><a href="serialization/ReferenceHandler.html" title="class in system.text.json.serialization">ReferenceHandler</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getReferenceHandler()">getReferenceHandler</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i29" class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getRespectNullableAnnotations()">getRespectNullableAnnotations</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i30" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getRespectRequiredConstructorParameters()">getRespectRequiredConstructorParameters</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i31" class="rowColor">
+<td class="colFirst"><code><a href="serialization/metadata/JsonTypeInfo.html" title="class in system.text.json.serialization.metadata">JsonTypeInfo</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#GetTypeInfo(org.mases.jcobridge.netreflection.NetType)">GetTypeInfo</a></span>&#8203;(<a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;type)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i32" class="altColor">
+<td class="colFirst"><code><a href="serialization/metadata/IJsonTypeInfoResolver.html" title="interface in system.text.json.serialization.metadata">IJsonTypeInfoResolver</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getTypeInfoResolver()">getTypeInfoResolver</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i33" class="rowColor">
 <td class="colFirst"><code><a href="serialization/JsonUnknownTypeHandling.html" title="class in system.text.json.serialization">JsonUnknownTypeHandling</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getUnknownTypeHandling()">getUnknownTypeHandling</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i34" class="altColor">
+<td class="colFirst"><code><a href="serialization/JsonUnmappedMemberHandling.html" title="class in system.text.json.serialization">JsonUnmappedMemberHandling</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getUnmappedMemberHandling()">getUnmappedMemberHandling</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i35" class="rowColor">
+<td class="colFirst"><code>static <a href="JsonSerializerOptions.html" title="class in system.text.json">JsonSerializerOptions</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getWeb()">getWeb</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i36" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getWriteIndented()">getWriteIndented</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i24" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setAllowTrailingCommas(boolean)">setAllowTrailingCommas</a></span>&#8203;(boolean&nbsp;AllowTrailingCommas)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i25" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setDefaultBufferSize(int)">setDefaultBufferSize</a></span>&#8203;(int&nbsp;DefaultBufferSize)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i26" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setDefaultIgnoreCondition(system.text.json.serialization.JsonIgnoreCondition)">setDefaultIgnoreCondition</a></span>&#8203;(<a href="serialization/JsonIgnoreCondition.html" title="class in system.text.json.serialization">JsonIgnoreCondition</a>&nbsp;DefaultIgnoreCondition)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i27" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setDictionaryKeyPolicy(system.text.json.JsonNamingPolicy)">setDictionaryKeyPolicy</a></span>&#8203;(<a href="JsonNamingPolicy.html" title="class in system.text.json">JsonNamingPolicy</a>&nbsp;DictionaryKeyPolicy)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i28" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setEncoder(system.text.encodings.web.JavaScriptEncoder)">setEncoder</a></span>&#8203;(<a href="../encodings/web/JavaScriptEncoder.html" title="class in system.text.encodings.web">JavaScriptEncoder</a>&nbsp;Encoder)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i29" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setIgnoreNullValues(boolean)">setIgnoreNullValues</a></span>&#8203;(boolean&nbsp;IgnoreNullValues)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i30" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setIgnoreReadOnlyFields(boolean)">setIgnoreReadOnlyFields</a></span>&#8203;(boolean&nbsp;IgnoreReadOnlyFields)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i31" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setIgnoreReadOnlyProperties(boolean)">setIgnoreReadOnlyProperties</a></span>&#8203;(boolean&nbsp;IgnoreReadOnlyProperties)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i32" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setIncludeFields(boolean)">setIncludeFields</a></span>&#8203;(boolean&nbsp;IncludeFields)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i33" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setJCOInstance(org.mases.jcobridge.JCObject)">setJCOInstance</a></span>&#8203;(<a href="https://www.jcobridge.com/api-java_2.5.21/org/mases/jcobridge/JCObject.html?is-external=true" title="class or interface in org.mases.jcobridge" class="externalLink">JCObject</a>&nbsp;instance)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i34" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setMaxDepth(int)">setMaxDepth</a></span>&#8203;(int&nbsp;MaxDepth)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i35" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setNumberHandling(system.text.json.serialization.JsonNumberHandling)">setNumberHandling</a></span>&#8203;(<a href="serialization/JsonNumberHandling.html" title="class in system.text.json.serialization">JsonNumberHandling</a>&nbsp;NumberHandling)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i36" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setPropertyNameCaseInsensitive(boolean)">setPropertyNameCaseInsensitive</a></span>&#8203;(boolean&nbsp;PropertyNameCaseInsensitive)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
 <tr id="i37" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setPropertyNamingPolicy(system.text.json.JsonNamingPolicy)">setPropertyNamingPolicy</a></span>&#8203;(<a href="JsonNamingPolicy.html" title="class in system.text.json">JsonNamingPolicy</a>&nbsp;PropertyNamingPolicy)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#MakeReadOnly()">MakeReadOnly</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i38" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setReadCommentHandling(system.text.json.JsonCommentHandling)">setReadCommentHandling</a></span>&#8203;(<a href="JsonCommentHandling.html" title="class in system.text.json">JsonCommentHandling</a>&nbsp;ReadCommentHandling)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#MakeReadOnly(boolean)">MakeReadOnly</a></span>&#8203;(boolean&nbsp;populateMissingResolver)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i39" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setReferenceHandler(system.text.json.serialization.ReferenceHandler)">setReferenceHandler</a></span>&#8203;(<a href="serialization/ReferenceHandler.html" title="class in system.text.json.serialization">ReferenceHandler</a>&nbsp;ReferenceHandler)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setAllowOutOfOrderMetadataProperties(boolean)">setAllowOutOfOrderMetadataProperties</a></span>&#8203;(boolean&nbsp;AllowOutOfOrderMetadataProperties)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i40" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setUnknownTypeHandling(system.text.json.serialization.JsonUnknownTypeHandling)">setUnknownTypeHandling</a></span>&#8203;(<a href="serialization/JsonUnknownTypeHandling.html" title="class in system.text.json.serialization">JsonUnknownTypeHandling</a>&nbsp;UnknownTypeHandling)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setAllowTrailingCommas(boolean)">setAllowTrailingCommas</a></span>&#8203;(boolean&nbsp;AllowTrailingCommas)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i41" class="rowColor">
 <td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setDefaultBufferSize(int)">setDefaultBufferSize</a></span>&#8203;(int&nbsp;DefaultBufferSize)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i42" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setDefaultIgnoreCondition(system.text.json.serialization.JsonIgnoreCondition)">setDefaultIgnoreCondition</a></span>&#8203;(<a href="serialization/JsonIgnoreCondition.html" title="class in system.text.json.serialization">JsonIgnoreCondition</a>&nbsp;DefaultIgnoreCondition)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i43" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setDictionaryKeyPolicy(system.text.json.JsonNamingPolicy)">setDictionaryKeyPolicy</a></span>&#8203;(<a href="JsonNamingPolicy.html" title="class in system.text.json">JsonNamingPolicy</a>&nbsp;DictionaryKeyPolicy)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i44" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setEncoder(system.text.encodings.web.JavaScriptEncoder)">setEncoder</a></span>&#8203;(<a href="../encodings/web/JavaScriptEncoder.html" title="class in system.text.encodings.web">JavaScriptEncoder</a>&nbsp;Encoder)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i45" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setIgnoreNullValues(boolean)">setIgnoreNullValues</a></span>&#8203;(boolean&nbsp;IgnoreNullValues)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i46" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setIgnoreReadOnlyFields(boolean)">setIgnoreReadOnlyFields</a></span>&#8203;(boolean&nbsp;IgnoreReadOnlyFields)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i47" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setIgnoreReadOnlyProperties(boolean)">setIgnoreReadOnlyProperties</a></span>&#8203;(boolean&nbsp;IgnoreReadOnlyProperties)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i48" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setIncludeFields(boolean)">setIncludeFields</a></span>&#8203;(boolean&nbsp;IncludeFields)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i49" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setIndentCharacter(char)">setIndentCharacter</a></span>&#8203;(char&nbsp;IndentCharacter)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i50" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setIndentSize(int)">setIndentSize</a></span>&#8203;(int&nbsp;IndentSize)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i51" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setJCOInstance(org.mases.jcobridge.JCObject)">setJCOInstance</a></span>&#8203;(<a href="https://www.jcobridge.com/api-java_2.5.21/org/mases/jcobridge/JCObject.html?is-external=true" title="class or interface in org.mases.jcobridge" class="externalLink">JCObject</a>&nbsp;instance)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i52" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setMaxDepth(int)">setMaxDepth</a></span>&#8203;(int&nbsp;MaxDepth)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i53" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setNewLine(java.lang.String)">setNewLine</a></span>&#8203;(java.lang.String&nbsp;NewLine)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i54" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setNumberHandling(system.text.json.serialization.JsonNumberHandling)">setNumberHandling</a></span>&#8203;(<a href="serialization/JsonNumberHandling.html" title="class in system.text.json.serialization">JsonNumberHandling</a>&nbsp;NumberHandling)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i55" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setPreferredObjectCreationHandling(system.text.json.serialization.JsonObjectCreationHandling)">setPreferredObjectCreationHandling</a></span>&#8203;(<a href="serialization/JsonObjectCreationHandling.html" title="class in system.text.json.serialization">JsonObjectCreationHandling</a>&nbsp;PreferredObjectCreationHandling)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i56" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setPropertyNameCaseInsensitive(boolean)">setPropertyNameCaseInsensitive</a></span>&#8203;(boolean&nbsp;PropertyNameCaseInsensitive)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i57" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setPropertyNamingPolicy(system.text.json.JsonNamingPolicy)">setPropertyNamingPolicy</a></span>&#8203;(<a href="JsonNamingPolicy.html" title="class in system.text.json">JsonNamingPolicy</a>&nbsp;PropertyNamingPolicy)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i58" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setReadCommentHandling(system.text.json.JsonCommentHandling)">setReadCommentHandling</a></span>&#8203;(<a href="JsonCommentHandling.html" title="class in system.text.json">JsonCommentHandling</a>&nbsp;ReadCommentHandling)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i59" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setReferenceHandler(system.text.json.serialization.ReferenceHandler)">setReferenceHandler</a></span>&#8203;(<a href="serialization/ReferenceHandler.html" title="class in system.text.json.serialization">ReferenceHandler</a>&nbsp;ReferenceHandler)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i60" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setRespectNullableAnnotations(boolean)">setRespectNullableAnnotations</a></span>&#8203;(boolean&nbsp;RespectNullableAnnotations)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i61" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setRespectRequiredConstructorParameters(boolean)">setRespectRequiredConstructorParameters</a></span>&#8203;(boolean&nbsp;RespectRequiredConstructorParameters)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i62" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setTypeInfoResolver(system.text.json.serialization.metadata.IJsonTypeInfoResolver)">setTypeInfoResolver</a></span>&#8203;(<a href="serialization/metadata/IJsonTypeInfoResolver.html" title="interface in system.text.json.serialization.metadata">IJsonTypeInfoResolver</a>&nbsp;TypeInfoResolver)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i63" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setUnknownTypeHandling(system.text.json.serialization.JsonUnknownTypeHandling)">setUnknownTypeHandling</a></span>&#8203;(<a href="serialization/JsonUnknownTypeHandling.html" title="class in system.text.json.serialization">JsonUnknownTypeHandling</a>&nbsp;UnknownTypeHandling)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i64" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setUnmappedMemberHandling(system.text.json.serialization.JsonUnmappedMemberHandling)">setUnmappedMemberHandling</a></span>&#8203;(<a href="serialization/JsonUnmappedMemberHandling.html" title="class in system.text.json.serialization">JsonUnmappedMemberHandling</a>&nbsp;UnmappedMemberHandling)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i65" class="rowColor">
+<td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setWriteIndented(boolean)">setWriteIndented</a></span>&#8203;(boolean&nbsp;WriteIndented)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i66" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#TryGetTypeInfo(org.mases.jcobridge.netreflection.NetType,org.mases.jcobridge.netreflection.JCORefOut)">TryGetTypeInfo</a></span>&#8203;(<a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;type,
+              <a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="serialization/metadata/JsonTypeInfo.html" title="class in system.text.json.serialization.metadata">JsonTypeInfo</a>&gt;&nbsp;typeInfo)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -548,7 +698,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <li class="blockList">
 <h4>assemblyFullName</h4>
 <pre>public static final&nbsp;java.lang.String assemblyFullName</pre>
-<div class="block">Fully assembly qualified name: System.Text.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51</div>
+<div class="block">Fully assembly qualified name: System.Text.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../constant-values.html#system.text.json.JsonSerializerOptions.assemblyFullName">Constant Field Values</a></dd>
@@ -626,22 +776,20 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <h4>JsonSerializerOptions</h4>
 <pre>public&nbsp;JsonSerializerOptions()
                       throws java.lang.Throwable,
-                             <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                              <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
-                             <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
-                             <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                             <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
                              <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                              <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                             <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                              <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
-<dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
 <dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 <dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 </dl>
 </li>
@@ -654,21 +802,21 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <h4>JsonSerializerOptions</h4>
 <pre>public&nbsp;JsonSerializerOptions&#8203;(<a href="JsonSerializerDefaults.html" title="class in system.text.json">JsonSerializerDefaults</a>&nbsp;defaults)
                       throws java.lang.Throwable,
-                             <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                             <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
                              <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
-                             <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                             <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                             <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                              <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                             <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                             <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></pre>
+                             <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -680,29 +828,29 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <h4>JsonSerializerOptions</h4>
 <pre>public&nbsp;JsonSerializerOptions&#8203;(<a href="JsonSerializerOptions.html" title="class in system.text.json">JsonSerializerOptions</a>&nbsp;options)
                       throws java.lang.Throwable,
-                             <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                              <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
-                             <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
-                             <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
-                             <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                              <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                             <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                             <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                              <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                             <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                             <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                             <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                             <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
                              <a href="../../RankException.html" title="class in system">RankException</a>,
-                             <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></pre>
+                             <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
-<dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
-<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
-<dd><code><a href="../../RankException.html" title="class in system">RankException</a></code></dd>
 <dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -844,6 +992,47 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </dl>
 </li>
 </ul>
+<a id="TryGetTypeInfo(org.mases.jcobridge.netreflection.NetType,org.mases.jcobridge.netreflection.JCORefOut)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>TryGetTypeInfo</h4>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;TryGetTypeInfo&#8203;(<a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;type,
+                              <a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="serialization/metadata/JsonTypeInfo.html" title="class in system.text.json.serialization.metadata">JsonTypeInfo</a>&gt;&nbsp;typeInfo)
+                       throws java.lang.Throwable,
+                              <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
+                              <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                              <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                              <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                              <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                              <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                              <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                              <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                              <a href="../../RankException.html" title="class in system">RankException</a>,
+                              <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                              <a href="../../FormatException.html" title="class in system">FormatException</a>,
+                              <a href="../../NullReferenceException.html" title="class in system">NullReferenceException</a>,
+                              <a href="../../collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
+<dd><code><a href="../../collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a></code></dd>
+</dl>
+</li>
+</ul>
 <a id="GetConverter(org.mases.jcobridge.netreflection.NetType)">
 <!--   -->
 </a>
@@ -858,14 +1047,15 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
                                   <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                                   <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                                   <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
-                                  <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
                                   <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                                  <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
                                   <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
-                                  <a href="../../MethodAccessException.html" title="class in system">MethodAccessException</a>,
+                                  <a href="../../RankException.html" title="class in system">RankException</a>,
+                                  <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                  <a href="../../FormatException.html" title="class in system">FormatException</a>,
+                                  <a href="../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
                                   <a href="../../MissingMethodException.html" title="class in system">MissingMethodException</a>,
-                                  <a href="../../MemberAccessException.html" title="class in system">MemberAccessException</a>,
-                                  <a href="../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></pre>
+                                  <a href="../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
+                                  <a href="../../collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
@@ -875,14 +1065,157 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
-<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 <dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
 <dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
-<dd><code><a href="../../MethodAccessException.html" title="class in system">MethodAccessException</a></code></dd>
+<dd><code><a href="../../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
 <dd><code><a href="../../MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
-<dd><code><a href="../../MemberAccessException.html" title="class in system">MemberAccessException</a></code></dd>
 <dd><code><a href="../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
+<dd><code><a href="../../collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="GetTypeInfo(org.mases.jcobridge.netreflection.NetType)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>GetTypeInfo</h4>
+<pre class="methodSignature">public&nbsp;<a href="serialization/metadata/JsonTypeInfo.html" title="class in system.text.json.serialization.metadata">JsonTypeInfo</a>&nbsp;GetTypeInfo&#8203;(<a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;type)
+                         throws java.lang.Throwable,
+                                <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
+                                <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                                <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                <a href="../../RankException.html" title="class in system">RankException</a>,
+                                <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                <a href="../../FormatException.html" title="class in system">FormatException</a>,
+                                <a href="../../NullReferenceException.html" title="class in system">NullReferenceException</a>,
+                                <a href="../../collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
+<dd><code><a href="../../collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="MakeReadOnly()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>MakeReadOnly</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;MakeReadOnly()
+                  throws java.lang.Throwable,
+                         <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                         <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
+                         <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                         <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                         <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                         <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                         <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                         <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="MakeReadOnly(boolean)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>MakeReadOnly</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;MakeReadOnly&#8203;(boolean&nbsp;populateMissingResolver)
+                  throws java.lang.Throwable,
+                         <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                         <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
+                         <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                         <a href="../../NullReferenceException.html" title="class in system">NullReferenceException</a>,
+                         <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                         <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                         <a href="../../diagnostics/tracing/EventSourceException.html" title="class in system.diagnostics.tracing">EventSourceException</a>,
+                         <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                         <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
+<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../diagnostics/tracing/EventSourceException.html" title="class in system.diagnostics.tracing">EventSourceException</a></code></dd>
+<dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="getAllowOutOfOrderMetadataProperties()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getAllowOutOfOrderMetadataProperties</h4>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;getAllowOutOfOrderMetadataProperties()
+                                             throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a id="setAllowOutOfOrderMetadataProperties(boolean)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setAllowOutOfOrderMetadataProperties</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;setAllowOutOfOrderMetadataProperties&#8203;(boolean&nbsp;AllowOutOfOrderMetadataProperties)
+                                          throws java.lang.Throwable,
+                                                 <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                 <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                 <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                                 <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                 <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                                                 <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -910,16 +1243,18 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
                             throws java.lang.Throwable,
                                    <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                                    <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
+                                   <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                   <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
                                    <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
-                                   <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
                                    <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 <dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
-<dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
 <dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 </dl>
 </li>
@@ -948,16 +1283,18 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
                          throws java.lang.Throwable,
                                 <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                                 <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
+                                <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
                                 <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
-                                <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
                                 <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 <dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
-<dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
 <dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 </dl>
 </li>
@@ -986,16 +1323,18 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
                              throws java.lang.Throwable,
                                     <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                                     <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
+                                    <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                    <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
                                     <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
-                                    <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
                                     <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 <dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
-<dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
 <dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 </dl>
 </li>
@@ -1024,16 +1363,18 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
                                  throws java.lang.Throwable,
                                         <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                                         <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
+                                        <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                        <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
                                         <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
-                                        <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
                                         <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 <dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
-<dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
 <dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 </dl>
 </li>
@@ -1062,17 +1403,33 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
                       throws java.lang.Throwable,
                              <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                              <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
+                             <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                             <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
                              <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
-                             <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
                              <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 <dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
-<dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
 <dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="getIsReadOnly()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getIsReadOnly</h4>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;getIsReadOnly()
+                      throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
 </dl>
 </li>
 </ul>
@@ -1100,16 +1457,98 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
                                     throws java.lang.Throwable,
                                            <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                                            <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
+                                           <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                           <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
                                            <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
-                                           <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
                                            <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 <dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
-<dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="getRespectNullableAnnotations()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getRespectNullableAnnotations</h4>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;getRespectNullableAnnotations()
+                                      throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a id="setRespectNullableAnnotations(boolean)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setRespectNullableAnnotations</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;setRespectNullableAnnotations&#8203;(boolean&nbsp;RespectNullableAnnotations)
+                                   throws java.lang.Throwable,
+                                          <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                          <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
+                                          <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                          <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                          <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                                          <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="getRespectRequiredConstructorParameters()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getRespectRequiredConstructorParameters</h4>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;getRespectRequiredConstructorParameters()
+                                                throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a id="setRespectRequiredConstructorParameters(boolean)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setRespectRequiredConstructorParameters</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;setRespectRequiredConstructorParameters&#8203;(boolean&nbsp;RespectRequiredConstructorParameters)
+                                             throws java.lang.Throwable,
+                                                    <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                    <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                    <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                                    <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                    <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                                                    <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
 <dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 </dl>
 </li>
@@ -1138,16 +1577,58 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
                       throws java.lang.Throwable,
                              <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                              <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
+                             <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                             <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
                              <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
-                             <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
                              <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 <dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
-<dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="getIndentCharacter()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getIndentCharacter</h4>
+<pre class="methodSignature">public&nbsp;char&nbsp;getIndentCharacter()
+                        throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a id="setIndentCharacter(char)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setIndentCharacter</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;setIndentCharacter&#8203;(char&nbsp;IndentCharacter)
+                        throws java.lang.Throwable,
+                               <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                               <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
+                               <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                               <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                               <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                               <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
 <dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 </dl>
 </li>
@@ -1176,16 +1657,58 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
                           throws java.lang.Throwable,
                                  <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                                  <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
+                                 <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                 <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
                                  <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
-                                 <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
                                  <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 <dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
-<dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="getIndentSize()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getIndentSize</h4>
+<pre class="methodSignature">public&nbsp;int&nbsp;getIndentSize()
+                  throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a id="setIndentSize(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setIndentSize</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;setIndentSize&#8203;(int&nbsp;IndentSize)
+                   throws java.lang.Throwable,
+                          <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                          <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
+                          <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                          <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                          <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                          <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
 <dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 </dl>
 </li>
@@ -1214,19 +1737,65 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
                  throws java.lang.Throwable,
                         <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                         <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
+                        <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                        <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
                         <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
-                        <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
-                        <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                        <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></pre>
+                        <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 <dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="getNewLine()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getNewLine</h4>
+<pre class="methodSignature">public&nbsp;java.lang.String&nbsp;getNewLine()
+                            throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a id="setNewLine(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setNewLine</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;setNewLine&#8203;(java.lang.String&nbsp;NewLine)
+                throws java.lang.Throwable,
+                       <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
+                       <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                       <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                       <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                       <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                       <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                       <a href="../../RankException.html" title="class in system">RankException</a>,
+                       <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                       <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
 <dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
 <dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1254,16 +1823,18 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
                 throws java.lang.Throwable,
                        <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                        <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
+                       <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                       <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
                        <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
-                       <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
                        <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 <dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
-<dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
 <dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 </dl>
 </li>
@@ -1292,19 +1863,19 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
                             throws java.lang.Throwable,
                                    <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                                    <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
+                                   <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                   <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
                                    <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
-                                   <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
-                                   <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                                   <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></pre>
+                                   <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
-<dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
-<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1332,16 +1903,18 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
                             throws java.lang.Throwable,
                                    <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                                    <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
+                                   <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                   <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
                                    <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
-                                   <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
                                    <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 <dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
-<dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
 <dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 </dl>
 </li>
@@ -1370,17 +1943,87 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
                              throws java.lang.Throwable,
                                     <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                                     <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
+                                    <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                    <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
                                     <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
-                                    <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
                                     <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 <dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
-<dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
 <dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="getDefault()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getDefault</h4>
+<pre class="methodSignature">public static&nbsp;<a href="JsonSerializerOptions.html" title="class in system.text.json">JsonSerializerOptions</a>&nbsp;getDefault()
+                                        throws java.lang.Throwable,
+                                               <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                               <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
+                                               <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                               <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                               <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                               <a href="../../NullReferenceException.html" title="class in system">NullReferenceException</a>,
+                                               <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                               <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                               <a href="../../RankException.html" title="class in system">RankException</a>,
+                                               <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
+<dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="getWeb()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getWeb</h4>
+<pre class="methodSignature">public static&nbsp;<a href="JsonSerializerOptions.html" title="class in system.text.json">JsonSerializerOptions</a>&nbsp;getWeb()
+                                    throws java.lang.Throwable,
+                                           <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                           <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
+                                           <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                           <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                           <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                           <a href="../../NullReferenceException.html" title="class in system">NullReferenceException</a>,
+                                           <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                           <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                           <a href="../../RankException.html" title="class in system">RankException</a>,
+                                           <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
+<dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1408,16 +2051,18 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
                                throws java.lang.Throwable,
                                       <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                                       <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
+                                      <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                      <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
                                       <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
-                                      <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
                                       <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 <dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
-<dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
 <dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 </dl>
 </li>
@@ -1446,19 +2091,59 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
                        throws java.lang.Throwable,
                               <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                               <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
+                              <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                              <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
                               <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
-                              <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
-                              <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                              <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></pre>
+                              <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
-<dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
-<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="getPreferredObjectCreationHandling()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getPreferredObjectCreationHandling</h4>
+<pre class="methodSignature">public&nbsp;<a href="serialization/JsonObjectCreationHandling.html" title="class in system.text.json.serialization">JsonObjectCreationHandling</a>&nbsp;getPreferredObjectCreationHandling()
+                                                              throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a id="setPreferredObjectCreationHandling(system.text.json.serialization.JsonObjectCreationHandling)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setPreferredObjectCreationHandling</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;setPreferredObjectCreationHandling&#8203;(<a href="serialization/JsonObjectCreationHandling.html" title="class in system.text.json.serialization">JsonObjectCreationHandling</a>&nbsp;PreferredObjectCreationHandling)
+                                        throws java.lang.Throwable,
+                                               <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                               <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
+                                               <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                               <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                               <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                                               <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1486,17 +2171,107 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
                             throws java.lang.Throwable,
                                    <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                                    <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
+                                   <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                   <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
                                    <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
-                                   <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
                                    <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 <dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
-<dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
 <dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="getUnmappedMemberHandling()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getUnmappedMemberHandling</h4>
+<pre class="methodSignature">public&nbsp;<a href="serialization/JsonUnmappedMemberHandling.html" title="class in system.text.json.serialization">JsonUnmappedMemberHandling</a>&nbsp;getUnmappedMemberHandling()
+                                                     throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a id="setUnmappedMemberHandling(system.text.json.serialization.JsonUnmappedMemberHandling)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setUnmappedMemberHandling</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;setUnmappedMemberHandling&#8203;(<a href="serialization/JsonUnmappedMemberHandling.html" title="class in system.text.json.serialization">JsonUnmappedMemberHandling</a>&nbsp;UnmappedMemberHandling)
+                               throws java.lang.Throwable,
+                                      <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                      <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
+                                      <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                      <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                      <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                                      <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="getTypeInfoResolver()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getTypeInfoResolver</h4>
+<pre class="methodSignature">public&nbsp;<a href="serialization/metadata/IJsonTypeInfoResolver.html" title="interface in system.text.json.serialization.metadata">IJsonTypeInfoResolver</a>&nbsp;getTypeInfoResolver()
+                                          throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a id="setTypeInfoResolver(system.text.json.serialization.metadata.IJsonTypeInfoResolver)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setTypeInfoResolver</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;setTypeInfoResolver&#8203;(<a href="serialization/metadata/IJsonTypeInfoResolver.html" title="interface in system.text.json.serialization.metadata">IJsonTypeInfoResolver</a>&nbsp;TypeInfoResolver)
+                         throws java.lang.Throwable,
+                                <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
+                                <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                                <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                <a href="../../RankException.html" title="class in system">RankException</a>,
+                                <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                                <a href="../../InvalidCastException.html" title="class in system">InvalidCastException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../InvalidCastException.html" title="class in system">InvalidCastException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1524,16 +2299,18 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
                          throws java.lang.Throwable,
                                 <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                                 <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
+                                <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
                                 <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
-                                <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
                                 <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 <dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
-<dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
 <dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 </dl>
 </li>

@@ -26,22 +26,53 @@
 <meta name="keywords" content="Abs()">
 <meta name="keywords" content="Add()">
 <meta name="keywords" content="Clamp()">
+<meta name="keywords" content="ClampNative()">
+<meta name="keywords" content="CopySign()">
+<meta name="keywords" content="Cos()">
+<meta name="keywords" content="Create()">
 <meta name="keywords" content="Cross()">
+<meta name="keywords" content="DegreesToRadians()">
 <meta name="keywords" content="Divide()">
+<meta name="keywords" content="Exp()">
+<meta name="keywords" content="FusedMultiplyAdd()">
+<meta name="keywords" content="Hypot()">
 <meta name="keywords" content="Lerp()">
+<meta name="keywords" content="Log()">
+<meta name="keywords" content="Log2()">
 <meta name="keywords" content="Max()">
+<meta name="keywords" content="MaxMagnitude()">
+<meta name="keywords" content="MaxMagnitudeNumber()">
+<meta name="keywords" content="MaxNative()">
+<meta name="keywords" content="MaxNumber()">
 <meta name="keywords" content="Min()">
+<meta name="keywords" content="MinMagnitude()">
+<meta name="keywords" content="MinMagnitudeNumber()">
+<meta name="keywords" content="MinNative()">
+<meta name="keywords" content="MinNumber()">
 <meta name="keywords" content="Multiply()">
+<meta name="keywords" content="MultiplyAddEstimate()">
 <meta name="keywords" content="Negate()">
 <meta name="keywords" content="Normalize()">
+<meta name="keywords" content="RadiansToDegrees()">
 <meta name="keywords" content="Reflect()">
+<meta name="keywords" content="Round()">
+<meta name="keywords" content="Sin()">
 <meta name="keywords" content="SquareRoot()">
 <meta name="keywords" content="Subtract()">
 <meta name="keywords" content="Transform()">
 <meta name="keywords" content="TransformNormal()">
+<meta name="keywords" content="Truncate()">
 <meta name="keywords" content="ToString()">
 <meta name="keywords" content="CopyTo()">
+<meta name="keywords" content="getE()">
+<meta name="keywords" content="getEpsilon()">
+<meta name="keywords" content="getNaN()">
+<meta name="keywords" content="getNegativeInfinity()">
+<meta name="keywords" content="getNegativeZero()">
 <meta name="keywords" content="getOne()">
+<meta name="keywords" content="getPi()">
+<meta name="keywords" content="getPositiveInfinity()">
+<meta name="keywords" content="getTau()">
 <meta name="keywords" content="getUnitX()">
 <meta name="keywords" content="getUnitY()">
 <meta name="keywords" content="getUnitZ()">
@@ -59,7 +90,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":10,"i5":10,"i6":9,"i7":9,"i8":9,"i9":9,"i10":9,"i11":9,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":9,"i19":9,"i20":9,"i21":9,"i22":9,"i23":10,"i24":10,"i25":9,"i26":9,"i27":9,"i28":9,"i29":9,"i30":9,"i31":9,"i32":9,"i33":9,"i34":10,"i35":9,"i36":9,"i37":10,"i38":10,"i39":9,"i40":9,"i41":9};
+var data = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9,"i5":9,"i6":10,"i7":10,"i8":9,"i9":9,"i10":9,"i11":9,"i12":9,"i13":9,"i14":9,"i15":9,"i16":9,"i17":9,"i18":9,"i19":10,"i20":9,"i21":9,"i22":9,"i23":9,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":9,"i30":9,"i31":9,"i32":9,"i33":9,"i34":9,"i35":9,"i36":9,"i37":9,"i38":9,"i39":9,"i40":9,"i41":10,"i42":10,"i43":9,"i44":9,"i45":9,"i46":9,"i47":9,"i48":9,"i49":9,"i50":9,"i51":9,"i52":9,"i53":9,"i54":9,"i55":9,"i56":9,"i57":9,"i58":9,"i59":9,"i60":9,"i61":9,"i62":9,"i63":9,"i64":9,"i65":9,"i66":9,"i67":10,"i68":9,"i69":9,"i70":9,"i71":10,"i72":10,"i73":9,"i74":9,"i75":9,"i76":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -168,7 +199,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <hr>
 <pre>public class <span class="typeNameLabel">Vector3</span>
 extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
-<div class="block">The base .NET class managing System.Numerics.Vector3, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e.
+<div class="block">The base .NET class managing System.Numerics.Vector3, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e.
  <p>
  
  .NET documentation at <a href="https://docs.microsoft.com/en-us/dotnet/api/System.Numerics.Vector3" target="_top">https://docs.microsoft.com/en-us/dotnet/api/System.Numerics.Vector3</a>
@@ -203,7 +234,7 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <td class="colFirst"><code>static java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#assemblyFullName">assemblyFullName</a></span></code></th>
 <td class="colLast">
-<div class="block">Fully assembly qualified name: System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e</div>
+<div class="block">Fully assembly qualified name: System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e</div>
 </td>
 </tr>
 <tr class="rowColor">
@@ -320,223 +351,420 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
+<td class="colFirst"><code>static <a href="Vector3.html" title="class in system.numerics">Vector3</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ClampNative(system.numerics.Vector3,system.numerics.Vector3,system.numerics.Vector3)">ClampNative</a></span>&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;value1,
+           <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;min,
+           <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;max)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>static <a href="Vector3.html" title="class in system.numerics">Vector3</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#CopySign(system.numerics.Vector3,system.numerics.Vector3)">CopySign</a></span>&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;value,
+        <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;sign)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#CopyTo(system.Single%5B%5D)">CopyTo</a></span>&#8203;(<a href="../Single.html" title="class in system">Single</a>[]&nbsp;array)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#CopyTo(system.Single%5B%5D,int)">CopyTo</a></span>&#8203;(<a href="../Single.html" title="class in system">Single</a>[]&nbsp;array,
       int&nbsp;index)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i8" class="altColor">
+<td class="colFirst"><code>static <a href="Vector3.html" title="class in system.numerics">Vector3</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Cos(system.numerics.Vector3)">Cos</a></span>&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;vector)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i9" class="rowColor">
+<td class="colFirst"><code>static <a href="Vector3.html" title="class in system.numerics">Vector3</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Create(system.numerics.Vector2,system.Single)">Create</a></span>&#8203;(<a href="Vector2.html" title="class in system.numerics">Vector2</a>&nbsp;vector,
+      <a href="../Single.html" title="class in system">Single</a>&nbsp;z)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i10" class="altColor">
+<td class="colFirst"><code>static <a href="Vector3.html" title="class in system.numerics">Vector3</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Create(system.Single)">Create</a></span>&#8203;(<a href="../Single.html" title="class in system">Single</a>&nbsp;value)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i11" class="rowColor">
+<td class="colFirst"><code>static <a href="Vector3.html" title="class in system.numerics">Vector3</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Create(system.Single,system.Single,system.Single)">Create</a></span>&#8203;(<a href="../Single.html" title="class in system">Single</a>&nbsp;x,
+      <a href="../Single.html" title="class in system">Single</a>&nbsp;y,
+      <a href="../Single.html" title="class in system">Single</a>&nbsp;z)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>static <a href="Vector3.html" title="class in system.numerics">Vector3</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Cross(system.numerics.Vector3,system.numerics.Vector3)">Cross</a></span>&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;vector1,
      <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;vector2)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i13" class="rowColor">
+<td class="colFirst"><code>static <a href="Vector3.html" title="class in system.numerics">Vector3</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#DegreesToRadians(system.numerics.Vector3)">DegreesToRadians</a></span>&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;degrees)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>static <a href="../Single.html" title="class in system">Single</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Distance(system.numerics.Vector3,system.numerics.Vector3)">Distance</a></span>&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;value1,
         <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;value2)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>static <a href="../Single.html" title="class in system">Single</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#DistanceSquared(system.numerics.Vector3,system.numerics.Vector3)">DistanceSquared</a></span>&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;value1,
                <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;value2)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>static <a href="Vector3.html" title="class in system.numerics">Vector3</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Divide(system.numerics.Vector3,system.numerics.Vector3)">Divide</a></span>&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;left,
       <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;right)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>static <a href="Vector3.html" title="class in system.numerics">Vector3</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Divide(system.numerics.Vector3,system.Single)">Divide</a></span>&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;left,
       <a href="../Single.html" title="class in system">Single</a>&nbsp;divisor)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>static <a href="../Single.html" title="class in system">Single</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Dot(system.numerics.Vector3,system.numerics.Vector3)">Dot</a></span>&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;vector1,
    <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;vector2)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Equals(system.numerics.Vector3)">Equals</a></span>&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;other)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i20" class="altColor">
+<td class="colFirst"><code>static <a href="Vector3.html" title="class in system.numerics">Vector3</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Exp(system.numerics.Vector3)">Exp</a></span>&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;vector)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i21" class="rowColor">
+<td class="colFirst"><code>static <a href="Vector3.html" title="class in system.numerics">Vector3</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#FusedMultiplyAdd(system.numerics.Vector3,system.numerics.Vector3,system.numerics.Vector3)">FusedMultiplyAdd</a></span>&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;left,
+                <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;right,
+                <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;addend)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i22" class="altColor">
+<td class="colFirst"><code>static <a href="Vector3.html" title="class in system.numerics">Vector3</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getE()">getE</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i23" class="rowColor">
+<td class="colFirst"><code>static <a href="Vector3.html" title="class in system.numerics">Vector3</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getEpsilon()">getEpsilon</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i24" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getJCOAssemblyName()">getJCOAssemblyName</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the reflected Assembly name</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getJCOClassName()">getJCOClassName</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the reflected Class name</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i26" class="altColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getJCOInstance()">getJCOInstance</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the instantiated class</div>
 </td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i27" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getJCOObjectName()">getJCOObjectName</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the reflected Class name used to build the object</div>
 </td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i28" class="altColor">
 <td class="colFirst"><code><a href="https://www.jcobridge.com/api-java_2.5.21/org/mases/jcobridge/JCType.html?is-external=true" title="class or interface in org.mases.jcobridge" class="externalLink">JCType</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getJCOType()">getJCOType</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the instantiated class Type</div>
 </td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i29" class="rowColor">
+<td class="colFirst"><code>static <a href="Vector3.html" title="class in system.numerics">Vector3</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getNaN()">getNaN</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i30" class="altColor">
+<td class="colFirst"><code>static <a href="Vector3.html" title="class in system.numerics">Vector3</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getNegativeInfinity()">getNegativeInfinity</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i31" class="rowColor">
+<td class="colFirst"><code>static <a href="Vector3.html" title="class in system.numerics">Vector3</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getNegativeZero()">getNegativeZero</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i32" class="altColor">
 <td class="colFirst"><code>static <a href="Vector3.html" title="class in system.numerics">Vector3</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getOne()">getOne</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i33" class="rowColor">
+<td class="colFirst"><code>static <a href="Vector3.html" title="class in system.numerics">Vector3</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getPi()">getPi</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i34" class="altColor">
+<td class="colFirst"><code>static <a href="Vector3.html" title="class in system.numerics">Vector3</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getPositiveInfinity()">getPositiveInfinity</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i35" class="rowColor">
+<td class="colFirst"><code>static <a href="Vector3.html" title="class in system.numerics">Vector3</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getTau()">getTau</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i36" class="altColor">
 <td class="colFirst"><code>static <a href="Vector3.html" title="class in system.numerics">Vector3</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getUnitX()">getUnitX</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i37" class="rowColor">
 <td class="colFirst"><code>static <a href="Vector3.html" title="class in system.numerics">Vector3</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getUnitY()">getUnitY</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i38" class="altColor">
 <td class="colFirst"><code>static <a href="Vector3.html" title="class in system.numerics">Vector3</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getUnitZ()">getUnitZ</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i39" class="rowColor">
 <td class="colFirst"><code>static <a href="Vector3.html" title="class in system.numerics">Vector3</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getZero()">getZero</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i40" class="altColor">
+<td class="colFirst"><code>static <a href="Vector3.html" title="class in system.numerics">Vector3</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Hypot(system.numerics.Vector3,system.numerics.Vector3)">Hypot</a></span>&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;x,
+     <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;y)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i41" class="rowColor">
 <td class="colFirst"><code><a href="../Single.html" title="class in system">Single</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Length()">Length</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i24" class="altColor">
+<tr id="i42" class="altColor">
 <td class="colFirst"><code><a href="../Single.html" title="class in system">Single</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#LengthSquared()">LengthSquared</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i25" class="rowColor">
+<tr id="i43" class="rowColor">
+<td class="colFirst"><code>static <a href="Vector3.html" title="class in system.numerics">Vector3</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Lerp(system.numerics.Vector3,system.numerics.Vector3,system.numerics.Vector3)">Lerp</a></span>&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;value1,
+    <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;value2,
+    <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;amount)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i44" class="altColor">
 <td class="colFirst"><code>static <a href="Vector3.html" title="class in system.numerics">Vector3</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Lerp(system.numerics.Vector3,system.numerics.Vector3,system.Single)">Lerp</a></span>&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;value1,
     <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;value2,
     <a href="../Single.html" title="class in system">Single</a>&nbsp;amount)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i26" class="altColor">
+<tr id="i45" class="rowColor">
+<td class="colFirst"><code>static <a href="Vector3.html" title="class in system.numerics">Vector3</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Log(system.numerics.Vector3)">Log</a></span>&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;vector)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i46" class="altColor">
+<td class="colFirst"><code>static <a href="Vector3.html" title="class in system.numerics">Vector3</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Log2(system.numerics.Vector3)">Log2</a></span>&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;vector)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i47" class="rowColor">
 <td class="colFirst"><code>static <a href="Vector3.html" title="class in system.numerics">Vector3</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Max(system.numerics.Vector3,system.numerics.Vector3)">Max</a></span>&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;value1,
    <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;value2)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i27" class="rowColor">
+<tr id="i48" class="altColor">
+<td class="colFirst"><code>static <a href="Vector3.html" title="class in system.numerics">Vector3</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#MaxMagnitude(system.numerics.Vector3,system.numerics.Vector3)">MaxMagnitude</a></span>&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;value1,
+            <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;value2)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i49" class="rowColor">
+<td class="colFirst"><code>static <a href="Vector3.html" title="class in system.numerics">Vector3</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#MaxMagnitudeNumber(system.numerics.Vector3,system.numerics.Vector3)">MaxMagnitudeNumber</a></span>&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;value1,
+                  <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;value2)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i50" class="altColor">
+<td class="colFirst"><code>static <a href="Vector3.html" title="class in system.numerics">Vector3</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#MaxNative(system.numerics.Vector3,system.numerics.Vector3)">MaxNative</a></span>&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;value1,
+         <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;value2)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i51" class="rowColor">
+<td class="colFirst"><code>static <a href="Vector3.html" title="class in system.numerics">Vector3</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#MaxNumber(system.numerics.Vector3,system.numerics.Vector3)">MaxNumber</a></span>&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;value1,
+         <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;value2)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i52" class="altColor">
 <td class="colFirst"><code>static <a href="Vector3.html" title="class in system.numerics">Vector3</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Min(system.numerics.Vector3,system.numerics.Vector3)">Min</a></span>&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;value1,
    <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;value2)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i28" class="altColor">
+<tr id="i53" class="rowColor">
+<td class="colFirst"><code>static <a href="Vector3.html" title="class in system.numerics">Vector3</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#MinMagnitude(system.numerics.Vector3,system.numerics.Vector3)">MinMagnitude</a></span>&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;value1,
+            <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;value2)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i54" class="altColor">
+<td class="colFirst"><code>static <a href="Vector3.html" title="class in system.numerics">Vector3</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#MinMagnitudeNumber(system.numerics.Vector3,system.numerics.Vector3)">MinMagnitudeNumber</a></span>&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;value1,
+                  <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;value2)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i55" class="rowColor">
+<td class="colFirst"><code>static <a href="Vector3.html" title="class in system.numerics">Vector3</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#MinNative(system.numerics.Vector3,system.numerics.Vector3)">MinNative</a></span>&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;value1,
+         <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;value2)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i56" class="altColor">
+<td class="colFirst"><code>static <a href="Vector3.html" title="class in system.numerics">Vector3</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#MinNumber(system.numerics.Vector3,system.numerics.Vector3)">MinNumber</a></span>&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;value1,
+         <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;value2)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i57" class="rowColor">
 <td class="colFirst"><code>static <a href="Vector3.html" title="class in system.numerics">Vector3</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Multiply(system.numerics.Vector3,system.numerics.Vector3)">Multiply</a></span>&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;left,
         <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;right)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i29" class="rowColor">
+<tr id="i58" class="altColor">
 <td class="colFirst"><code>static <a href="Vector3.html" title="class in system.numerics">Vector3</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Multiply(system.numerics.Vector3,system.Single)">Multiply</a></span>&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;left,
         <a href="../Single.html" title="class in system">Single</a>&nbsp;right)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i30" class="altColor">
+<tr id="i59" class="rowColor">
 <td class="colFirst"><code>static <a href="Vector3.html" title="class in system.numerics">Vector3</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Multiply(system.Single,system.numerics.Vector3)">Multiply</a></span>&#8203;(<a href="../Single.html" title="class in system">Single</a>&nbsp;left,
         <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;right)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i31" class="rowColor">
+<tr id="i60" class="altColor">
+<td class="colFirst"><code>static <a href="Vector3.html" title="class in system.numerics">Vector3</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#MultiplyAddEstimate(system.numerics.Vector3,system.numerics.Vector3,system.numerics.Vector3)">MultiplyAddEstimate</a></span>&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;left,
+                   <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;right,
+                   <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;addend)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i61" class="rowColor">
 <td class="colFirst"><code>static <a href="Vector3.html" title="class in system.numerics">Vector3</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Negate(system.numerics.Vector3)">Negate</a></span>&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;value)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i32" class="altColor">
+<tr id="i62" class="altColor">
 <td class="colFirst"><code>static <a href="Vector3.html" title="class in system.numerics">Vector3</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Normalize(system.numerics.Vector3)">Normalize</a></span>&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;value)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i33" class="rowColor">
+<tr id="i63" class="rowColor">
+<td class="colFirst"><code>static <a href="Vector3.html" title="class in system.numerics">Vector3</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#RadiansToDegrees(system.numerics.Vector3)">RadiansToDegrees</a></span>&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;radians)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i64" class="altColor">
 <td class="colFirst"><code>static <a href="Vector3.html" title="class in system.numerics">Vector3</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Reflect(system.numerics.Vector3,system.numerics.Vector3)">Reflect</a></span>&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;vector,
        <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;normal)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i34" class="altColor">
+<tr id="i65" class="rowColor">
+<td class="colFirst"><code>static <a href="Vector3.html" title="class in system.numerics">Vector3</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Round(system.numerics.Vector3)">Round</a></span>&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;vector)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i66" class="altColor">
+<td class="colFirst"><code>static <a href="Vector3.html" title="class in system.numerics">Vector3</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Round(system.numerics.Vector3,system.MidpointRounding)">Round</a></span>&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;vector,
+     <a href="../MidpointRounding.html" title="class in system">MidpointRounding</a>&nbsp;mode)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i67" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setJCOInstance(org.mases.jcobridge.JCObject)">setJCOInstance</a></span>&#8203;(<a href="https://www.jcobridge.com/api-java_2.5.21/org/mases/jcobridge/JCObject.html?is-external=true" title="class or interface in org.mases.jcobridge" class="externalLink">JCObject</a>&nbsp;instance)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i35" class="rowColor">
+<tr id="i68" class="altColor">
+<td class="colFirst"><code>static <a href="Vector3.html" title="class in system.numerics">Vector3</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Sin(system.numerics.Vector3)">Sin</a></span>&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;vector)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i69" class="rowColor">
 <td class="colFirst"><code>static <a href="Vector3.html" title="class in system.numerics">Vector3</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#SquareRoot(system.numerics.Vector3)">SquareRoot</a></span>&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;value)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i36" class="altColor">
+<tr id="i70" class="altColor">
 <td class="colFirst"><code>static <a href="Vector3.html" title="class in system.numerics">Vector3</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Subtract(system.numerics.Vector3,system.numerics.Vector3)">Subtract</a></span>&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;left,
         <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;right)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i37" class="rowColor">
+<tr id="i71" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ToString(java.lang.String)">ToString</a></span>&#8203;(java.lang.String&nbsp;format)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i38" class="altColor">
+<tr id="i72" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ToString(java.lang.String,system.IFormatProvider)">ToString</a></span>&#8203;(java.lang.String&nbsp;format,
         <a href="../IFormatProvider.html" title="interface in system">IFormatProvider</a>&nbsp;formatProvider)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i39" class="rowColor">
+<tr id="i73" class="rowColor">
 <td class="colFirst"><code>static <a href="Vector3.html" title="class in system.numerics">Vector3</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Transform(system.numerics.Vector3,system.numerics.Matrix4x4)">Transform</a></span>&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;position,
          <a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a>&nbsp;matrix)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i40" class="altColor">
+<tr id="i74" class="altColor">
 <td class="colFirst"><code>static <a href="Vector3.html" title="class in system.numerics">Vector3</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Transform(system.numerics.Vector3,system.numerics.Quaternion)">Transform</a></span>&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;value,
          <a href="Quaternion.html" title="class in system.numerics">Quaternion</a>&nbsp;rotation)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i41" class="rowColor">
+<tr id="i75" class="rowColor">
 <td class="colFirst"><code>static <a href="Vector3.html" title="class in system.numerics">Vector3</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#TransformNormal(system.numerics.Vector3,system.numerics.Matrix4x4)">TransformNormal</a></span>&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;normal,
                <a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a>&nbsp;matrix)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i76" class="altColor">
+<td class="colFirst"><code>static <a href="Vector3.html" title="class in system.numerics">Vector3</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Truncate(system.numerics.Vector3)">Truncate</a></span>&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;vector)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -577,7 +805,7 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <li class="blockList">
 <h4>assemblyFullName</h4>
 <pre>public static final&nbsp;java.lang.String assemblyFullName</pre>
-<div class="block">Fully assembly qualified name: System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e</div>
+<div class="block">Fully assembly qualified name: System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../constant-values.html#system.numerics.Vector3.assemblyFullName">Constant Field Values</a></dd>
@@ -670,10 +898,16 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <pre>public&nbsp;Vector3&#8203;(<a href="../Single.html" title="class in system">Single</a>&nbsp;x,
                <a href="../Single.html" title="class in system">Single</a>&nbsp;y,
                <a href="../Single.html" title="class in system">Single</a>&nbsp;z)
-        throws java.lang.Throwable</pre>
+        throws java.lang.Throwable,
+               <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+               <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
+               <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -684,10 +918,14 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <li class="blockList">
 <h4>Vector3</h4>
 <pre>public&nbsp;Vector3&#8203;(<a href="../Single.html" title="class in system">Single</a>&nbsp;value)
-        throws java.lang.Throwable</pre>
+        throws java.lang.Throwable,
+               <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+               <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -699,10 +937,20 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <h4>Vector3</h4>
 <pre>public&nbsp;Vector3&#8203;(<a href="Vector2.html" title="class in system.numerics">Vector2</a>&nbsp;value,
                <a href="../Single.html" title="class in system">Single</a>&nbsp;z)
-        throws java.lang.Throwable</pre>
+        throws java.lang.Throwable,
+               <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
+               <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+               <a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+               <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+               <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -851,10 +1099,18 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <li class="blockList">
 <h4>Equals</h4>
 <pre class="methodSignature">public&nbsp;boolean&nbsp;Equals&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;other)
-               throws java.lang.Throwable</pre>
+               throws java.lang.Throwable,
+                      <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                      <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
+                      <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                      <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -866,10 +1122,18 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <h4>Distance</h4>
 <pre class="methodSignature">public static&nbsp;<a href="../Single.html" title="class in system">Single</a>&nbsp;Distance&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;value1,
                               <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;value2)
-                       throws java.lang.Throwable</pre>
+                       throws java.lang.Throwable,
+                              <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                              <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
+                              <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                              <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -881,10 +1145,20 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <h4>DistanceSquared</h4>
 <pre class="methodSignature">public static&nbsp;<a href="../Single.html" title="class in system">Single</a>&nbsp;DistanceSquared&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;value1,
                                      <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;value2)
-                              throws java.lang.Throwable</pre>
+                              throws java.lang.Throwable,
+                                     <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
+                                     <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                     <a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                     <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                     <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -896,10 +1170,18 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <h4>Dot</h4>
 <pre class="methodSignature">public static&nbsp;<a href="../Single.html" title="class in system">Single</a>&nbsp;Dot&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;vector1,
                          <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;vector2)
-                  throws java.lang.Throwable</pre>
+                  throws java.lang.Throwable,
+                         <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                         <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
+                         <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                         <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -910,10 +1192,16 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <li class="blockList">
 <h4>Length</h4>
 <pre class="methodSignature">public&nbsp;<a href="../Single.html" title="class in system">Single</a>&nbsp;Length()
-              throws java.lang.Throwable</pre>
+              throws java.lang.Throwable,
+                     <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                     <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                     <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -924,10 +1212,16 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <li class="blockList">
 <h4>LengthSquared</h4>
 <pre class="methodSignature">public&nbsp;<a href="../Single.html" title="class in system">Single</a>&nbsp;LengthSquared()
-                     throws java.lang.Throwable</pre>
+                     throws java.lang.Throwable,
+                            <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                            <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                            <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -938,10 +1232,26 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <li class="blockList">
 <h4>Abs</h4>
 <pre class="methodSignature">public static&nbsp;<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;Abs&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;value)
-                   throws java.lang.Throwable</pre>
+                   throws java.lang.Throwable,
+                          <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
+                          <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                          <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                          <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                          <a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                          <a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                          <a href="../RankException.html" title="class in system">RankException</a>,
+                          <a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -953,10 +1263,20 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <h4>Add</h4>
 <pre class="methodSignature">public static&nbsp;<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;Add&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;left,
                           <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;right)
-                   throws java.lang.Throwable</pre>
+                   throws java.lang.Throwable,
+                          <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
+                          <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                          <a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                          <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                          <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -969,10 +1289,190 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <pre class="methodSignature">public static&nbsp;<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;Clamp&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;value1,
                             <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;min,
                             <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;max)
-                     throws java.lang.Throwable</pre>
+                     throws java.lang.Throwable,
+                            <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
+                            <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                            <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                            <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                            <a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                            <a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                            <a href="../RankException.html" title="class in system">RankException</a>,
+                            <a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="ClampNative(system.numerics.Vector3,system.numerics.Vector3,system.numerics.Vector3)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ClampNative</h4>
+<pre class="methodSignature">public static&nbsp;<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;ClampNative&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;value1,
+                                  <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;min,
+                                  <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;max)
+                           throws java.lang.Throwable,
+                                  <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
+                                  <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                  <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                  <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                  <a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                  <a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                  <a href="../RankException.html" title="class in system">RankException</a>,
+                                  <a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="CopySign(system.numerics.Vector3,system.numerics.Vector3)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>CopySign</h4>
+<pre class="methodSignature">public static&nbsp;<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;CopySign&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;value,
+                               <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;sign)
+                        throws java.lang.Throwable,
+                               <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
+                               <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                               <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                               <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                               <a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                               <a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                               <a href="../RankException.html" title="class in system">RankException</a>,
+                               <a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                               <a href="../OverflowException.html" title="class in system">OverflowException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../OverflowException.html" title="class in system">OverflowException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="Cos(system.numerics.Vector3)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>Cos</h4>
+<pre class="methodSignature">public static&nbsp;<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;Cos&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;vector)
+                   throws java.lang.Throwable,
+                          <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                          <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
+                          <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                          <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="Create(system.Single,system.Single,system.Single)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>Create</h4>
+<pre class="methodSignature">public static&nbsp;<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;Create&#8203;(<a href="../Single.html" title="class in system">Single</a>&nbsp;x,
+                             <a href="../Single.html" title="class in system">Single</a>&nbsp;y,
+                             <a href="../Single.html" title="class in system">Single</a>&nbsp;z)
+                      throws java.lang.Throwable,
+                             <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
+                             <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                             <a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                             <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                             <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="Create(system.Single)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>Create</h4>
+<pre class="methodSignature">public static&nbsp;<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;Create&#8203;(<a href="../Single.html" title="class in system">Single</a>&nbsp;value)
+                      throws java.lang.Throwable,
+                             <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                             <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
+                             <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="Create(system.numerics.Vector2,system.Single)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>Create</h4>
+<pre class="methodSignature">public static&nbsp;<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;Create&#8203;(<a href="Vector2.html" title="class in system.numerics">Vector2</a>&nbsp;vector,
+                             <a href="../Single.html" title="class in system">Single</a>&nbsp;z)
+                      throws java.lang.Throwable,
+                             <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
+                             <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                             <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                             <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                             <a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                             <a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                             <a href="../RankException.html" title="class in system">RankException</a>,
+                             <a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -984,10 +1484,48 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <h4>Cross</h4>
 <pre class="methodSignature">public static&nbsp;<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;Cross&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;vector1,
                             <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;vector2)
-                     throws java.lang.Throwable</pre>
+                     throws java.lang.Throwable,
+                            <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                            <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
+                            <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                            <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="DegreesToRadians(system.numerics.Vector3)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>DegreesToRadians</h4>
+<pre class="methodSignature">public static&nbsp;<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;DegreesToRadians&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;degrees)
+                                throws java.lang.Throwable,
+                                       <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
+                                       <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                       <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                       <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                       <a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                       <a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                       <a href="../RankException.html" title="class in system">RankException</a>,
+                                       <a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -999,10 +1537,20 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <h4>Divide</h4>
 <pre class="methodSignature">public static&nbsp;<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;Divide&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;left,
                              <a href="../Single.html" title="class in system">Single</a>&nbsp;divisor)
-                      throws java.lang.Throwable</pre>
+                      throws java.lang.Throwable,
+                             <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
+                             <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                             <a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                             <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                             <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1014,10 +1562,105 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <h4>Divide</h4>
 <pre class="methodSignature">public static&nbsp;<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;Divide&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;left,
                              <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;right)
-                      throws java.lang.Throwable</pre>
+                      throws java.lang.Throwable,
+                             <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
+                             <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                             <a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                             <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                             <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="Exp(system.numerics.Vector3)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>Exp</h4>
+<pre class="methodSignature">public static&nbsp;<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;Exp&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;vector)
+                   throws java.lang.Throwable,
+                          <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                          <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
+                          <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                          <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="FusedMultiplyAdd(system.numerics.Vector3,system.numerics.Vector3,system.numerics.Vector3)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>FusedMultiplyAdd</h4>
+<pre class="methodSignature">public static&nbsp;<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;FusedMultiplyAdd&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;left,
+                                       <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;right,
+                                       <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;addend)
+                                throws java.lang.Throwable,
+                                       <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
+                                       <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                       <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                       <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                       <a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                       <a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                       <a href="../RankException.html" title="class in system">RankException</a>,
+                                       <a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="Hypot(system.numerics.Vector3,system.numerics.Vector3)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>Hypot</h4>
+<pre class="methodSignature">public static&nbsp;<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;Hypot&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;x,
+                            <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;y)
+                     throws java.lang.Throwable,
+                            <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
+                            <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                            <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                            <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                            <a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                            <a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                            <a href="../RankException.html" title="class in system">RankException</a>,
+                            <a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1030,10 +1673,94 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <pre class="methodSignature">public static&nbsp;<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;Lerp&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;value1,
                            <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;value2,
                            <a href="../Single.html" title="class in system">Single</a>&nbsp;amount)
-                    throws java.lang.Throwable</pre>
+                    throws java.lang.Throwable,
+                           <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                           <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="Lerp(system.numerics.Vector3,system.numerics.Vector3,system.numerics.Vector3)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>Lerp</h4>
+<pre class="methodSignature">public static&nbsp;<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;Lerp&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;value1,
+                           <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;value2,
+                           <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;amount)
+                    throws java.lang.Throwable,
+                           <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
+                           <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                           <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                           <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                           <a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                           <a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                           <a href="../RankException.html" title="class in system">RankException</a>,
+                           <a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="Log(system.numerics.Vector3)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>Log</h4>
+<pre class="methodSignature">public static&nbsp;<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;Log&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;vector)
+                   throws java.lang.Throwable,
+                          <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
+                          <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                          <a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                          <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                          <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="Log2(system.numerics.Vector3)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>Log2</h4>
+<pre class="methodSignature">public static&nbsp;<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;Log2&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;vector)
+                    throws java.lang.Throwable,
+                           <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
+                           <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                           <a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                           <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                           <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1045,10 +1772,150 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <h4>Max</h4>
 <pre class="methodSignature">public static&nbsp;<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;Max&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;value1,
                           <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;value2)
-                   throws java.lang.Throwable</pre>
+                   throws java.lang.Throwable,
+                          <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
+                          <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                          <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                          <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                          <a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                          <a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                          <a href="../RankException.html" title="class in system">RankException</a>,
+                          <a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="MaxMagnitude(system.numerics.Vector3,system.numerics.Vector3)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>MaxMagnitude</h4>
+<pre class="methodSignature">public static&nbsp;<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;MaxMagnitude&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;value1,
+                                   <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;value2)
+                            throws java.lang.Throwable,
+                                   <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
+                                   <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                   <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                   <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                   <a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                   <a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                   <a href="../RankException.html" title="class in system">RankException</a>,
+                                   <a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="MaxMagnitudeNumber(system.numerics.Vector3,system.numerics.Vector3)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>MaxMagnitudeNumber</h4>
+<pre class="methodSignature">public static&nbsp;<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;MaxMagnitudeNumber&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;value1,
+                                         <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;value2)
+                                  throws java.lang.Throwable,
+                                         <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
+                                         <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                         <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                         <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                         <a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                         <a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                         <a href="../RankException.html" title="class in system">RankException</a>,
+                                         <a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="MaxNative(system.numerics.Vector3,system.numerics.Vector3)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>MaxNative</h4>
+<pre class="methodSignature">public static&nbsp;<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;MaxNative&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;value1,
+                                <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;value2)
+                         throws java.lang.Throwable,
+                                <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
+                                <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                <a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                <a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                <a href="../RankException.html" title="class in system">RankException</a>,
+                                <a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="MaxNumber(system.numerics.Vector3,system.numerics.Vector3)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>MaxNumber</h4>
+<pre class="methodSignature">public static&nbsp;<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;MaxNumber&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;value1,
+                                <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;value2)
+                         throws java.lang.Throwable,
+                                <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
+                                <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                <a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                <a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                <a href="../RankException.html" title="class in system">RankException</a>,
+                                <a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1060,10 +1927,150 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <h4>Min</h4>
 <pre class="methodSignature">public static&nbsp;<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;Min&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;value1,
                           <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;value2)
-                   throws java.lang.Throwable</pre>
+                   throws java.lang.Throwable,
+                          <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
+                          <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                          <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                          <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                          <a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                          <a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                          <a href="../RankException.html" title="class in system">RankException</a>,
+                          <a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="MinMagnitude(system.numerics.Vector3,system.numerics.Vector3)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>MinMagnitude</h4>
+<pre class="methodSignature">public static&nbsp;<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;MinMagnitude&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;value1,
+                                   <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;value2)
+                            throws java.lang.Throwable,
+                                   <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
+                                   <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                   <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                   <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                   <a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                   <a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                   <a href="../RankException.html" title="class in system">RankException</a>,
+                                   <a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="MinMagnitudeNumber(system.numerics.Vector3,system.numerics.Vector3)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>MinMagnitudeNumber</h4>
+<pre class="methodSignature">public static&nbsp;<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;MinMagnitudeNumber&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;value1,
+                                         <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;value2)
+                                  throws java.lang.Throwable,
+                                         <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
+                                         <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                         <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                         <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                         <a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                         <a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                         <a href="../RankException.html" title="class in system">RankException</a>,
+                                         <a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="MinNative(system.numerics.Vector3,system.numerics.Vector3)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>MinNative</h4>
+<pre class="methodSignature">public static&nbsp;<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;MinNative&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;value1,
+                                <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;value2)
+                         throws java.lang.Throwable,
+                                <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
+                                <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                <a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                <a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                <a href="../RankException.html" title="class in system">RankException</a>,
+                                <a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="MinNumber(system.numerics.Vector3,system.numerics.Vector3)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>MinNumber</h4>
+<pre class="methodSignature">public static&nbsp;<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;MinNumber&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;value1,
+                                <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;value2)
+                         throws java.lang.Throwable,
+                                <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
+                                <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                <a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                <a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                <a href="../RankException.html" title="class in system">RankException</a>,
+                                <a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1075,10 +2082,16 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <h4>Multiply</h4>
 <pre class="methodSignature">public static&nbsp;<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;Multiply&#8203;(<a href="../Single.html" title="class in system">Single</a>&nbsp;left,
                                <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;right)
-                        throws java.lang.Throwable</pre>
+                        throws java.lang.Throwable,
+                               <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                               <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
+                               <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1090,10 +2103,20 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <h4>Multiply</h4>
 <pre class="methodSignature">public static&nbsp;<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;Multiply&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;left,
                                <a href="../Single.html" title="class in system">Single</a>&nbsp;right)
-                        throws java.lang.Throwable</pre>
+                        throws java.lang.Throwable,
+                               <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
+                               <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                               <a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                               <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                               <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1105,10 +2128,52 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <h4>Multiply</h4>
 <pre class="methodSignature">public static&nbsp;<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;Multiply&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;left,
                                <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;right)
-                        throws java.lang.Throwable</pre>
+                        throws java.lang.Throwable,
+                               <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
+                               <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                               <a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                               <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                               <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="MultiplyAddEstimate(system.numerics.Vector3,system.numerics.Vector3,system.numerics.Vector3)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>MultiplyAddEstimate</h4>
+<pre class="methodSignature">public static&nbsp;<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;MultiplyAddEstimate&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;left,
+                                          <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;right,
+                                          <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;addend)
+                                   throws java.lang.Throwable,
+                                          <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
+                                          <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                          <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                          <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                          <a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                          <a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                          <a href="../RankException.html" title="class in system">RankException</a>,
+                                          <a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1119,10 +2184,20 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <li class="blockList">
 <h4>Negate</h4>
 <pre class="methodSignature">public static&nbsp;<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;Negate&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;value)
-                      throws java.lang.Throwable</pre>
+                      throws java.lang.Throwable,
+                             <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
+                             <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                             <a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                             <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                             <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1133,10 +2208,46 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <li class="blockList">
 <h4>Normalize</h4>
 <pre class="methodSignature">public static&nbsp;<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;Normalize&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;value)
-                         throws java.lang.Throwable</pre>
+                         throws java.lang.Throwable,
+                                <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="RadiansToDegrees(system.numerics.Vector3)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>RadiansToDegrees</h4>
+<pre class="methodSignature">public static&nbsp;<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;RadiansToDegrees&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;radians)
+                                throws java.lang.Throwable,
+                                       <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
+                                       <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                       <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                       <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                       <a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                       <a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                       <a href="../RankException.html" title="class in system">RankException</a>,
+                                       <a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1148,10 +2259,103 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <h4>Reflect</h4>
 <pre class="methodSignature">public static&nbsp;<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;Reflect&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;vector,
                               <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;normal)
-                       throws java.lang.Throwable</pre>
+                       throws java.lang.Throwable,
+                              <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                              <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                              <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="Round(system.numerics.Vector3,system.MidpointRounding)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>Round</h4>
+<pre class="methodSignature">public static&nbsp;<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;Round&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;vector,
+                            <a href="../MidpointRounding.html" title="class in system">MidpointRounding</a>&nbsp;mode)
+                     throws java.lang.Throwable,
+                            <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
+                            <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                            <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                            <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                            <a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                            <a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                            <a href="../RankException.html" title="class in system">RankException</a>,
+                            <a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                            <a href="../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                            <a href="../FormatException.html" title="class in system">FormatException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../FormatException.html" title="class in system">FormatException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="Round(system.numerics.Vector3)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>Round</h4>
+<pre class="methodSignature">public static&nbsp;<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;Round&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;vector)
+                     throws java.lang.Throwable,
+                            <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
+                            <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                            <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                            <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                            <a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                            <a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                            <a href="../RankException.html" title="class in system">RankException</a>,
+                            <a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="Sin(system.numerics.Vector3)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>Sin</h4>
+<pre class="methodSignature">public static&nbsp;<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;Sin&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;vector)
+                   throws java.lang.Throwable,
+                          <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                          <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
+                          <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                          <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1162,10 +2366,26 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <li class="blockList">
 <h4>SquareRoot</h4>
 <pre class="methodSignature">public static&nbsp;<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;SquareRoot&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;value)
-                          throws java.lang.Throwable</pre>
+                          throws java.lang.Throwable,
+                                 <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
+                                 <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                 <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                 <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                 <a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                 <a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                 <a href="../RankException.html" title="class in system">RankException</a>,
+                                 <a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1177,10 +2397,20 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <h4>Subtract</h4>
 <pre class="methodSignature">public static&nbsp;<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;Subtract&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;left,
                                <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;right)
-                        throws java.lang.Throwable</pre>
+                        throws java.lang.Throwable,
+                               <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
+                               <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                               <a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                               <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                               <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1192,10 +2422,26 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <h4>Transform</h4>
 <pre class="methodSignature">public static&nbsp;<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;Transform&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;position,
                                 <a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a>&nbsp;matrix)
-                         throws java.lang.Throwable</pre>
+                         throws java.lang.Throwable,
+                                <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
+                                <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                <a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                <a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                <a href="../RankException.html" title="class in system">RankException</a>,
+                                <a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1207,10 +2453,18 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <h4>Transform</h4>
 <pre class="methodSignature">public static&nbsp;<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;Transform&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;value,
                                 <a href="Quaternion.html" title="class in system.numerics">Quaternion</a>&nbsp;rotation)
-                         throws java.lang.Throwable</pre>
+                         throws java.lang.Throwable,
+                                <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
+                                <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1222,10 +2476,56 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <h4>TransformNormal</h4>
 <pre class="methodSignature">public static&nbsp;<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;TransformNormal&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;normal,
                                       <a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a>&nbsp;matrix)
-                               throws java.lang.Throwable</pre>
+                               throws java.lang.Throwable,
+                                      <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
+                                      <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                      <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                      <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                      <a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                      <a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                      <a href="../RankException.html" title="class in system">RankException</a>,
+                                      <a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="Truncate(system.numerics.Vector3)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>Truncate</h4>
+<pre class="methodSignature">public static&nbsp;<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;Truncate&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;vector)
+                        throws java.lang.Throwable,
+                               <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
+                               <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                               <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                               <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                               <a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                               <a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                               <a href="../RankException.html" title="class in system">RankException</a>,
+                               <a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1238,29 +2538,29 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <pre class="methodSignature">public&nbsp;java.lang.String&nbsp;ToString&#8203;(java.lang.String&nbsp;format,
                                  <a href="../IFormatProvider.html" title="interface in system">IFormatProvider</a>&nbsp;formatProvider)
                           throws java.lang.Throwable,
-                                 <a href="../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
-                                 <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                                  <a href="../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                 <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
                                  <a href="../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                                 <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                 <a href="../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
                                  <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                                 <a href="../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
-                                 <a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                 <a href="../NullReferenceException.html" title="class in system">NullReferenceException</a>,
                                  <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                                 <a href="../FormatException.html" title="class in system">FormatException</a>,
-                                 <a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></pre>
+                                 <a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                                 <a href="../FormatException.html" title="class in system">FormatException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
-<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 <dd><code><a href="../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 <dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
-<dd><code><a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
 <dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../FormatException.html" title="class in system">FormatException</a></code></dd>
 <dd><code><a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../FormatException.html" title="class in system">FormatException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1273,30 +2573,28 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <pre class="methodSignature">public&nbsp;java.lang.String&nbsp;ToString&#8203;(java.lang.String&nbsp;format)
                           throws java.lang.Throwable,
                                  <a href="../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                                 <a href="../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                 <a href="../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
                                  <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
                                  <a href="../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
                                  <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                                 <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                                 <a href="../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
-                                 <a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                 <a href="../NullReferenceException.html" title="class in system">NullReferenceException</a>,
                                  <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                 <a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
                                  <a href="../FormatException.html" title="class in system">FormatException</a>,
-                                 <a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></pre>
+                                 <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
 <dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 <dd><code><a href="../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
 <dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
-<dd><code><a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
 <dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../FormatException.html" title="class in system">FormatException</a></code></dd>
 <dd><code><a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1311,31 +2609,23 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
             throws java.lang.Throwable,
                    <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
                    <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                   <a href="../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                   <a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                    <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                   <a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
-                   <a href="../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
                    <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                   <a href="../RankException.html" title="class in system">RankException</a>,
-                   <a href="../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
                    <a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
-                   <a href="../NullReferenceException.html" title="class in system">NullReferenceException</a></pre>
+                   <a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                   <a href="../RankException.html" title="class in system">RankException</a>,
+                   <a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 <dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
-<dd><code><a href="../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 <dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../RankException.html" title="class in system">RankException</a></code></dd>
-<dd><code><a href="../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
 <dd><code><a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
-<dd><code><a href="../NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
+<dd><code><a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1353,11 +2643,9 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
                    <a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                    <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                    <a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
-                   <a href="../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
                    <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
                    <a href="../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
-                   <a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
-                   <a href="../NullReferenceException.html" title="class in system">NullReferenceException</a></pre>
+                   <a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
@@ -1367,11 +2655,99 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <dd><code><a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
-<dd><code><a href="../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 <dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
 <dd><code><a href="../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
 <dd><code><a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
-<dd><code><a href="../NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="getE()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getE</h4>
+<pre class="methodSignature">public static&nbsp;<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;getE()
+                    throws java.lang.Throwable,
+                           <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                           <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="getEpsilon()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getEpsilon</h4>
+<pre class="methodSignature">public static&nbsp;<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;getEpsilon()
+                          throws java.lang.Throwable,
+                                 <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                 <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="getNaN()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getNaN</h4>
+<pre class="methodSignature">public static&nbsp;<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;getNaN()
+                      throws java.lang.Throwable,
+                             <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                             <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="getNegativeInfinity()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getNegativeInfinity</h4>
+<pre class="methodSignature">public static&nbsp;<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;getNegativeInfinity()
+                                   throws java.lang.Throwable,
+                                          <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                          <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="getNegativeZero()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getNegativeZero</h4>
+<pre class="methodSignature">public static&nbsp;<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;getNegativeZero()
+                               throws java.lang.Throwable,
+                                      <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                      <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1382,10 +2758,68 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <li class="blockList">
 <h4>getOne</h4>
 <pre class="methodSignature">public static&nbsp;<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;getOne()
-                      throws java.lang.Throwable</pre>
+                      throws java.lang.Throwable,
+                             <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                             <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="getPi()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getPi</h4>
+<pre class="methodSignature">public static&nbsp;<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;getPi()
+                     throws java.lang.Throwable,
+                            <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                            <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="getPositiveInfinity()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getPositiveInfinity</h4>
+<pre class="methodSignature">public static&nbsp;<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;getPositiveInfinity()
+                                   throws java.lang.Throwable,
+                                          <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                          <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="getTau()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getTau</h4>
+<pre class="methodSignature">public static&nbsp;<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;getTau()
+                      throws java.lang.Throwable,
+                             <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                             <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1396,10 +2830,14 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <li class="blockList">
 <h4>getUnitX</h4>
 <pre class="methodSignature">public static&nbsp;<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;getUnitX()
-                        throws java.lang.Throwable</pre>
+                        throws java.lang.Throwable,
+                               <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                               <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1410,10 +2848,16 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <li class="blockList">
 <h4>getUnitY</h4>
 <pre class="methodSignature">public static&nbsp;<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;getUnitY()
-                        throws java.lang.Throwable</pre>
+                        throws java.lang.Throwable,
+                               <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                               <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
+                               <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1424,10 +2868,16 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <li class="blockList">
 <h4>getUnitZ</h4>
 <pre class="methodSignature">public static&nbsp;<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;getUnitZ()
-                        throws java.lang.Throwable</pre>
+                        throws java.lang.Throwable,
+                               <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                               <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
+                               <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 </dl>
 </li>
 </ul>

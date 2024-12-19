@@ -19,22 +19,24 @@
 <meta name="keywords" content="cast()">
 <meta name="keywords" content="EndRead()">
 <meta name="keywords" content="Read()">
+<meta name="keywords" content="ReadByte()">
 <meta name="keywords" content="Seek()">
 <meta name="keywords" content="BeginRead()">
 <meta name="keywords" content="BeginWrite()">
 <meta name="keywords" content="FlushAsync()">
 <meta name="keywords" content="WriteAsync()">
-<meta name="keywords" content="ShutdownCompleted()">
-<meta name="keywords" content="WaitForWriteCompletionAsync()">
-<meta name="keywords" content="AbortRead()">
-<meta name="keywords" content="AbortWrite()">
+<meta name="keywords" content="DisposeAsync()">
+<meta name="keywords" content="Abort()">
+<meta name="keywords" content="CompleteWrites()">
 <meta name="keywords" content="EndWrite()">
 <meta name="keywords" content="Flush()">
 <meta name="keywords" content="SetLength()">
-<meta name="keywords" content="Shutdown()">
 <meta name="keywords" content="Write()">
-<meta name="keywords" content="getReadsCompleted()">
-<meta name="keywords" content="getStreamId()">
+<meta name="keywords" content="WriteByte()">
+<meta name="keywords" content="getId()">
+<meta name="keywords" content="getType()">
+<meta name="keywords" content="getReadsClosed()">
+<meta name="keywords" content="getWritesClosed()">
 <link rel="stylesheet" type="text/css" href="../../../stylesheet.css" title="Style">
 <script type="text/javascript" src="../../../script.js"></script>
 </head>
@@ -48,7 +50,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":9,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10};
+var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":9,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -162,7 +164,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <hr>
 <pre>public class <span class="typeNameLabel">QuicStream</span>
 extends <a href="../../io/Stream.html" title="class in system.io">Stream</a></pre>
-<div class="block">The base .NET class managing System.Net.Quic.QuicStream, System.Net.Quic, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a.
+<div class="block">The base .NET class managing System.Net.Quic.QuicStream, System.Net.Quic, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a.
  <p>
  
  .NET documentation at <a href="https://docs.microsoft.com/en-us/dotnet/api/System.Net.Quic.QuicStream" target="_top">https://docs.microsoft.com/en-us/dotnet/api/System.Net.Quic.QuicStream</a>
@@ -197,7 +199,7 @@ extends <a href="../../io/Stream.html" title="class in system.io">Stream</a></pr
 <td class="colFirst"><code>static java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#assemblyFullName">assemblyFullName</a></span></code></th>
 <td class="colLast">
-<div class="block">Fully assembly qualified name: System.Net.Quic, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</div>
+<div class="block">Fully assembly qualified name: System.Net.Quic, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</div>
 </td>
 </tr>
 <tr class="rowColor">
@@ -275,15 +277,11 @@ extends <a href="../../io/Stream.html" title="class in system.io">Stream</a></pr
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#AbortRead(long)">AbortRead</a></span>&#8203;(long&nbsp;errorCode)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Abort(system.net.quic.QuicAbortDirection,long)">Abort</a></span>&#8203;(<a href="QuicAbortDirection.html" title="class in system.net.quic">QuicAbortDirection</a>&nbsp;abortDirection,
+     long&nbsp;errorCode)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#AbortWrite(long)">AbortWrite</a></span>&#8203;(long&nbsp;errorCode)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../IAsyncResult.html" title="interface in system">IAsyncResult</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#BeginRead(byte%5B%5D,int,int,system.AsyncCallback,org.mases.jcobridge.netreflection.NetObject)">BeginRead</a></span>&#8203;(byte[]&nbsp;buffer,
          int&nbsp;offset,
@@ -292,7 +290,7 @@ extends <a href="../../io/Stream.html" title="class in system.io">Stream</a></pr
          <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;state)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../IAsyncResult.html" title="interface in system">IAsyncResult</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#BeginRead(org.mases.jcobridge.netreflection.JCORefOut,int,int,system.AsyncCallback,org.mases.jcobridge.netreflection.NetObject)">BeginRead</a></span>&#8203;(<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;dupParam0,
          int&nbsp;dupParam1,
@@ -301,7 +299,7 @@ extends <a href="../../io/Stream.html" title="class in system.io">Stream</a></pr
          <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;dupParam4)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../IAsyncResult.html" title="interface in system">IAsyncResult</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#BeginWrite(byte%5B%5D,int,int,system.AsyncCallback,org.mases.jcobridge.netreflection.NetObject)">BeginWrite</a></span>&#8203;(byte[]&nbsp;buffer,
           int&nbsp;offset,
@@ -310,7 +308,7 @@ extends <a href="../../io/Stream.html" title="class in system.io">Stream</a></pr
           <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;state)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../IAsyncResult.html" title="interface in system">IAsyncResult</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#BeginWrite(org.mases.jcobridge.netreflection.JCORefOut,int,int,system.AsyncCallback,org.mases.jcobridge.netreflection.NetObject)">BeginWrite</a></span>&#8203;(<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;dupParam0,
           int&nbsp;dupParam1,
@@ -319,138 +317,148 @@ extends <a href="../../io/Stream.html" title="class in system.io">Stream</a></pr
           <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;dupParam4)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>static <a href="QuicStream.html" title="class in system.net.quic">QuicStream</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#cast(org.mases.jcobridge.netreflection.IJCOBridgeReflected)">cast</a></span>&#8203;(<a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&nbsp;from)</code></th>
 <td class="colLast">
 <div class="block">Try to cast the <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection"><code>IJCOBridgeReflected</code></a> instance into <a href="QuicStream.html" title="class in system.net.quic"><code>QuicStream</code></a>, a cast assert is made to check if types are compatible.</div>
 </td>
 </tr>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#CompleteWrites()">CompleteWrites</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
 <tr id="i7" class="rowColor">
+<td class="colFirst"><code><a href="../../threading/tasks/ValueTask.html" title="class in system.threading.tasks">ValueTask</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#DisposeAsync()">DisposeAsync</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#EndRead(system.IAsyncResult)">EndRead</a></span>&#8203;(<a href="../../IAsyncResult.html" title="interface in system">IAsyncResult</a>&nbsp;asyncResult)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#EndWrite(system.IAsyncResult)">EndWrite</a></span>&#8203;(<a href="../../IAsyncResult.html" title="interface in system">IAsyncResult</a>&nbsp;asyncResult)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Flush()">Flush</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="../../threading/tasks/Task.html" title="class in system.threading.tasks">Task</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#FlushAsync(system.threading.CancellationToken)">FlushAsync</a></span>&#8203;(<a href="../../threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
+<td class="colFirst"><code>long</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getId()">getId</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getJCOAssemblyName()">getJCOAssemblyName</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the reflected Assembly name</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getJCOClassName()">getJCOClassName</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the reflected Class name</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getJCOInstance()">getJCOInstance</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the instantiated class</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getJCOObjectName()">getJCOObjectName</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the reflected Class name used to build the object</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code><a href="https://www.jcobridge.com/api-java_2.5.21/org/mases/jcobridge/JCType.html?is-external=true" title="class or interface in org.mases.jcobridge" class="externalLink">JCType</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getJCOType()">getJCOType</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the instantiated class Type</div>
 </td>
 </tr>
-<tr id="i16" class="altColor">
-<td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getReadsCompleted()">getReadsCompleted</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i17" class="rowColor">
-<td class="colFirst"><code>long</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getStreamId()">getStreamId</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
 <tr id="i18" class="altColor">
+<td class="colFirst"><code><a href="../../threading/tasks/Task.html" title="class in system.threading.tasks">Task</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getReadsClosed()">getReadsClosed</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i19" class="rowColor">
+<td class="colFirst"><code><a href="QuicStreamType.html" title="class in system.net.quic">QuicStreamType</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getType()">getType</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i20" class="altColor">
+<td class="colFirst"><code><a href="../../threading/tasks/Task.html" title="class in system.threading.tasks">Task</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getWritesClosed()">getWritesClosed</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Read(byte%5B%5D,int,int)">Read</a></span>&#8203;(byte[]&nbsp;buffer,
     int&nbsp;offset,
     int&nbsp;count)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i22" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Read(org.mases.jcobridge.netreflection.JCORefOut,int,int)">Read</a></span>&#8203;(<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;dupParam0,
     int&nbsp;dupParam1,
     int&nbsp;dupParam2)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i23" class="rowColor">
+<td class="colFirst"><code>int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ReadByte()">ReadByte</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i24" class="altColor">
 <td class="colFirst"><code>long</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Seek(long,system.io.SeekOrigin)">Seek</a></span>&#8203;(long&nbsp;offset,
     <a href="../../io/SeekOrigin.html" title="class in system.io">SeekOrigin</a>&nbsp;origin)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setJCOInstance(org.mases.jcobridge.JCObject)">setJCOInstance</a></span>&#8203;(<a href="https://www.jcobridge.com/api-java_2.5.21/org/mases/jcobridge/JCObject.html?is-external=true" title="class or interface in org.mases.jcobridge" class="externalLink">JCObject</a>&nbsp;instance)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i26" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#SetLength(long)">SetLength</a></span>&#8203;(long&nbsp;value)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i23" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Shutdown()">Shutdown</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i24" class="altColor">
-<td class="colFirst"><code><a href="../../threading/tasks/ValueTask.html" title="class in system.threading.tasks">ValueTask</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ShutdownCompleted(system.threading.CancellationToken)">ShutdownCompleted</a></span>&#8203;(<a href="../../threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i25" class="rowColor">
-<td class="colFirst"><code><a href="../../threading/tasks/ValueTask.html" title="class in system.threading.tasks">ValueTask</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#WaitForWriteCompletionAsync(system.threading.CancellationToken)">WaitForWriteCompletionAsync</a></span>&#8203;(<a href="../../threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i26" class="altColor">
+<tr id="i27" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Write(byte%5B%5D,int,int)">Write</a></span>&#8203;(byte[]&nbsp;buffer,
      int&nbsp;offset,
      int&nbsp;count)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i27" class="rowColor">
+<tr id="i28" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Write(org.mases.jcobridge.netreflection.JCORefOut,int,int)">Write</a></span>&#8203;(<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;dupParam0,
      int&nbsp;dupParam1,
      int&nbsp;dupParam2)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i28" class="altColor">
+<tr id="i29" class="rowColor">
 <td class="colFirst"><code><a href="../../threading/tasks/Task.html" title="class in system.threading.tasks">Task</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#WriteAsync(byte%5B%5D,int,int,system.threading.CancellationToken)">WriteAsync</a></span>&#8203;(byte[]&nbsp;buffer,
           int&nbsp;offset,
@@ -458,12 +466,17 @@ extends <a href="../../io/Stream.html" title="class in system.io">Stream</a></pr
           <a href="../../threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i29" class="rowColor">
+<tr id="i30" class="altColor">
 <td class="colFirst"><code><a href="../../threading/tasks/Task.html" title="class in system.threading.tasks">Task</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#WriteAsync(org.mases.jcobridge.netreflection.JCORefOut,int,int,system.threading.CancellationToken)">WriteAsync</a></span>&#8203;(<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;dupParam0,
           int&nbsp;dupParam1,
           int&nbsp;dupParam2,
           <a href="../../threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;dupParam3)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i31" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#WriteByte(byte)">WriteByte</a></span>&#8203;(byte&nbsp;value)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -472,7 +485,7 @@ extends <a href="../../io/Stream.html" title="class in system.io">Stream</a></pr
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;system.io.<a href="../../io/Stream.html" title="class in system.io">Stream</a></h3>
-<code><a href="../../io/Stream.html#close()">close</a>, <a href="../../io/Stream.html#Close()">Close</a>, <a href="../../io/Stream.html#CopyTo(system.io.Stream)">CopyTo</a>, <a href="../../io/Stream.html#CopyTo(system.io.Stream,int)">CopyTo</a>, <a href="../../io/Stream.html#CopyToAsync(system.io.Stream)">CopyToAsync</a>, <a href="../../io/Stream.html#CopyToAsync(system.io.Stream,int)">CopyToAsync</a>, <a href="../../io/Stream.html#CopyToAsync(system.io.Stream,int,system.threading.CancellationToken)">CopyToAsync</a>, <a href="../../io/Stream.html#CopyToAsync(system.io.Stream,system.threading.CancellationToken)">CopyToAsync</a>, <a href="../../io/Stream.html#Dispose()">Dispose</a>, <a href="../../io/Stream.html#DisposeAsync()">DisposeAsync</a>, <a href="../../io/Stream.html#FlushAsync()">FlushAsync</a>, <a href="../../io/Stream.html#getCanRead()">getCanRead</a>, <a href="../../io/Stream.html#getCanSeek()">getCanSeek</a>, <a href="../../io/Stream.html#getCanTimeout()">getCanTimeout</a>, <a href="../../io/Stream.html#getCanWrite()">getCanWrite</a>, <a href="../../io/Stream.html#getLength()">getLength</a>, <a href="../../io/Stream.html#getPosition()">getPosition</a>, <a href="../../io/Stream.html#getReadTimeout()">getReadTimeout</a>, <a href="../../io/Stream.html#getWriteTimeout()">getWriteTimeout</a>, <a href="../../io/Stream.html#ReadByte()">ReadByte</a>, <a href="../../io/Stream.html#setPosition(long)">setPosition</a>, <a href="../../io/Stream.html#setReadTimeout(int)">setReadTimeout</a>, <a href="../../io/Stream.html#setWriteTimeout(int)">setWriteTimeout</a>, <a href="../../io/Stream.html#Synchronized(system.io.Stream)">Synchronized</a>, <a href="../../io/Stream.html#WriteAsync(byte%5B%5D,int,int)">WriteAsync</a>, <a href="../../io/Stream.html#WriteAsync(org.mases.jcobridge.netreflection.JCORefOut,int,int)">WriteAsync</a>, <a href="../../io/Stream.html#WriteByte(byte)">WriteByte</a></code></li>
+<code><a href="../../io/Stream.html#close()">close</a>, <a href="../../io/Stream.html#Close()">Close</a>, <a href="../../io/Stream.html#CopyTo(system.io.Stream)">CopyTo</a>, <a href="../../io/Stream.html#CopyTo(system.io.Stream,int)">CopyTo</a>, <a href="../../io/Stream.html#CopyToAsync(system.io.Stream)">CopyToAsync</a>, <a href="../../io/Stream.html#CopyToAsync(system.io.Stream,int)">CopyToAsync</a>, <a href="../../io/Stream.html#CopyToAsync(system.io.Stream,int,system.threading.CancellationToken)">CopyToAsync</a>, <a href="../../io/Stream.html#CopyToAsync(system.io.Stream,system.threading.CancellationToken)">CopyToAsync</a>, <a href="../../io/Stream.html#Dispose()">Dispose</a>, <a href="../../io/Stream.html#FlushAsync()">FlushAsync</a>, <a href="../../io/Stream.html#getCanRead()">getCanRead</a>, <a href="../../io/Stream.html#getCanSeek()">getCanSeek</a>, <a href="../../io/Stream.html#getCanTimeout()">getCanTimeout</a>, <a href="../../io/Stream.html#getCanWrite()">getCanWrite</a>, <a href="../../io/Stream.html#getLength()">getLength</a>, <a href="../../io/Stream.html#getPosition()">getPosition</a>, <a href="../../io/Stream.html#getReadTimeout()">getReadTimeout</a>, <a href="../../io/Stream.html#getWriteTimeout()">getWriteTimeout</a>, <a href="../../io/Stream.html#ReadExactly(byte%5B%5D,int,int)">ReadExactly</a>, <a href="../../io/Stream.html#ReadExactly(org.mases.jcobridge.netreflection.JCORefOut,int,int)">ReadExactly</a>, <a href="../../io/Stream.html#ReadExactlyAsync(byte%5B%5D,int,int,system.threading.CancellationToken)">ReadExactlyAsync</a>, <a href="../../io/Stream.html#ReadExactlyAsync(org.mases.jcobridge.netreflection.JCORefOut,int,int,system.threading.CancellationToken)">ReadExactlyAsync</a>, <a href="../../io/Stream.html#setPosition(long)">setPosition</a>, <a href="../../io/Stream.html#setReadTimeout(int)">setReadTimeout</a>, <a href="../../io/Stream.html#setWriteTimeout(int)">setWriteTimeout</a>, <a href="../../io/Stream.html#Synchronized(system.io.Stream)">Synchronized</a>, <a href="../../io/Stream.html#WriteAsync(byte%5B%5D,int,int)">WriteAsync</a>, <a href="../../io/Stream.html#WriteAsync(org.mases.jcobridge.netreflection.JCORefOut,int,int)">WriteAsync</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.system.MarshalByRefObject">
@@ -518,7 +531,7 @@ extends <a href="../../io/Stream.html" title="class in system.io">Stream</a></pr
 <li class="blockList">
 <h4>assemblyFullName</h4>
 <pre>public static final&nbsp;java.lang.String assemblyFullName</pre>
-<div class="block">Fully assembly qualified name: System.Net.Quic, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</div>
+<div class="block">Fully assembly qualified name: System.Net.Quic, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../constant-values.html#system.net.quic.QuicStream.assemblyFullName">Constant Field Values</a></dd>
@@ -748,13 +761,13 @@ extends <a href="../../io/Stream.html" title="class in system.io">Stream</a></pr
 <h4>EndRead</h4>
 <pre class="methodSignature">public&nbsp;int&nbsp;EndRead&#8203;(<a href="../../IAsyncResult.html" title="interface in system">IAsyncResult</a>&nbsp;asyncResult)
             throws java.lang.Throwable,
+                   <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                   <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
+                   <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                    <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                    <a href="../../diagnostics/tracing/EventSourceException.html" title="class in system.diagnostics.tracing">EventSourceException</a>,
                    <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                    <a href="../../threading/tasks/TaskSchedulerException.html" title="class in system.threading.tasks">TaskSchedulerException</a>,
-                   <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                   <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
-                   <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                    <a href="../../threading/tasks/TaskCanceledException.html" title="class in system.threading.tasks">TaskCanceledException</a>,
                    <a href="../../AggregateException.html" title="class in system">AggregateException</a></pre>
 <dl>
@@ -762,13 +775,13 @@ extends <a href="../../io/Stream.html" title="class in system.io">Stream</a></pr
 <dd><code><a href="../../io/Stream.html#EndRead(system.IAsyncResult)">EndRead</a></code>&nbsp;in class&nbsp;<code><a href="../../io/Stream.html" title="class in system.io">Stream</a></code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 <dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="../../diagnostics/tracing/EventSourceException.html" title="class in system.diagnostics.tracing">EventSourceException</a></code></dd>
 <dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../../threading/tasks/TaskSchedulerException.html" title="class in system.threading.tasks">TaskSchedulerException</a></code></dd>
-<dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
-<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 <dd><code><a href="../../threading/tasks/TaskCanceledException.html" title="class in system.threading.tasks">TaskCanceledException</a></code></dd>
 <dd><code><a href="../../AggregateException.html" title="class in system">AggregateException</a></code></dd>
 </dl>
@@ -786,14 +799,13 @@ extends <a href="../../io/Stream.html" title="class in system.io">Stream</a></pr
          throws java.lang.Throwable,
                 <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
                 <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
                 <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                 <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                 <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
                 <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                 <a href="../../RankException.html" title="class in system">RankException</a>,
                 <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                 <a href="../../io/IOException.html" title="class in system.io">IOException</a></pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
@@ -802,14 +814,13 @@ extends <a href="../../io/Stream.html" title="class in system.io">Stream</a></pr
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 <dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 <dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 <dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
 <dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../../RankException.html" title="class in system">RankException</a></code></dd>
 <dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 <dd><code><a href="../../io/IOException.html" title="class in system.io">IOException</a></code></dd>
 </dl>
 </li>
@@ -826,14 +837,13 @@ extends <a href="../../io/Stream.html" title="class in system.io">Stream</a></pr
          throws java.lang.Throwable,
                 <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
                 <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
                 <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                 <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                 <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
                 <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                 <a href="../../RankException.html" title="class in system">RankException</a>,
                 <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                 <a href="../../io/IOException.html" title="class in system.io">IOException</a></pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
@@ -842,14 +852,49 @@ extends <a href="../../io/Stream.html" title="class in system.io">Stream</a></pr
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 <dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 <dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 <dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
 <dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../../RankException.html" title="class in system">RankException</a></code></dd>
 <dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../io/IOException.html" title="class in system.io">IOException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="ReadByte()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ReadByte</h4>
+<pre class="methodSignature">public&nbsp;int&nbsp;ReadByte()
+             throws java.lang.Throwable,
+                    <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
+                    <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                    <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                    <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                    <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                    <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                    <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                    <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                    <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                    <a href="../../io/IOException.html" title="class in system.io">IOException</a></pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../io/Stream.html#ReadByte()">ReadByte</a></code>&nbsp;in class&nbsp;<code><a href="../../io/Stream.html" title="class in system.io">Stream</a></code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
 <dd><code><a href="../../io/IOException.html" title="class in system.io">IOException</a></code></dd>
 </dl>
 </li>
@@ -869,7 +914,6 @@ extends <a href="../../io/Stream.html" title="class in system.io">Stream</a></pr
                  <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                  <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                  <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
-                 <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
                  <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
                  <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
                  <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></pre>
@@ -884,7 +928,6 @@ extends <a href="../../io/Stream.html" title="class in system.io">Stream</a></pr
 <dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
-<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 <dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
 <dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
 <dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
@@ -907,14 +950,15 @@ extends <a href="../../io/Stream.html" title="class in system.io">Stream</a></pr
                               <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
                               <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
                               <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                              <a href="../../NullReferenceException.html" title="class in system">NullReferenceException</a>,
                               <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
                               <a href="../../OperationCanceledException.html" title="class in system">OperationCanceledException</a>,
                               <a href="../../threading/tasks/TaskCanceledException.html" title="class in system.threading.tasks">TaskCanceledException</a>,
                               <a href="../../AggregateException.html" title="class in system">AggregateException</a>,
                               <a href="../../threading/SemaphoreFullException.html" title="class in system.threading">SemaphoreFullException</a>,
-                              <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                               <a href="../../threading/tasks/TaskSchedulerException.html" title="class in system.threading.tasks">TaskSchedulerException</a>,
-                              <a href="../../ArgumentException.html" title="class in system">ArgumentException</a></pre>
+                              <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
+                              <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../io/Stream.html#BeginRead(byte%5B%5D,int,int,system.AsyncCallback,org.mases.jcobridge.netreflection.NetObject)">BeginRead</a></code>&nbsp;in class&nbsp;<code><a href="../../io/Stream.html" title="class in system.io">Stream</a></code></dd>
@@ -924,14 +968,15 @@ extends <a href="../../io/Stream.html" title="class in system.io">Stream</a></pr
 <dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 <dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
 <dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
 <dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
 <dd><code><a href="../../OperationCanceledException.html" title="class in system">OperationCanceledException</a></code></dd>
 <dd><code><a href="../../threading/tasks/TaskCanceledException.html" title="class in system.threading.tasks">TaskCanceledException</a></code></dd>
 <dd><code><a href="../../AggregateException.html" title="class in system">AggregateException</a></code></dd>
 <dd><code><a href="../../threading/SemaphoreFullException.html" title="class in system.threading">SemaphoreFullException</a></code></dd>
-<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../../threading/tasks/TaskSchedulerException.html" title="class in system.threading.tasks">TaskSchedulerException</a></code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -951,14 +996,15 @@ extends <a href="../../io/Stream.html" title="class in system.io">Stream</a></pr
                               <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
                               <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
                               <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                              <a href="../../NullReferenceException.html" title="class in system">NullReferenceException</a>,
                               <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
                               <a href="../../OperationCanceledException.html" title="class in system">OperationCanceledException</a>,
                               <a href="../../threading/tasks/TaskCanceledException.html" title="class in system.threading.tasks">TaskCanceledException</a>,
                               <a href="../../AggregateException.html" title="class in system">AggregateException</a>,
                               <a href="../../threading/SemaphoreFullException.html" title="class in system.threading">SemaphoreFullException</a>,
-                              <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                               <a href="../../threading/tasks/TaskSchedulerException.html" title="class in system.threading.tasks">TaskSchedulerException</a>,
-                              <a href="../../ArgumentException.html" title="class in system">ArgumentException</a></pre>
+                              <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
+                              <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../io/Stream.html#BeginRead(org.mases.jcobridge.netreflection.JCORefOut,int,int,system.AsyncCallback,org.mases.jcobridge.netreflection.NetObject)">BeginRead</a></code>&nbsp;in class&nbsp;<code><a href="../../io/Stream.html" title="class in system.io">Stream</a></code></dd>
@@ -968,14 +1014,15 @@ extends <a href="../../io/Stream.html" title="class in system.io">Stream</a></pr
 <dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 <dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
 <dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
 <dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
 <dd><code><a href="../../OperationCanceledException.html" title="class in system">OperationCanceledException</a></code></dd>
 <dd><code><a href="../../threading/tasks/TaskCanceledException.html" title="class in system.threading.tasks">TaskCanceledException</a></code></dd>
 <dd><code><a href="../../AggregateException.html" title="class in system">AggregateException</a></code></dd>
 <dd><code><a href="../../threading/SemaphoreFullException.html" title="class in system.threading">SemaphoreFullException</a></code></dd>
-<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../../threading/tasks/TaskSchedulerException.html" title="class in system.threading.tasks">TaskSchedulerException</a></code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -995,14 +1042,15 @@ extends <a href="../../io/Stream.html" title="class in system.io">Stream</a></pr
                                <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
                                <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
                                <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                               <a href="../../NullReferenceException.html" title="class in system">NullReferenceException</a>,
                                <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
                                <a href="../../OperationCanceledException.html" title="class in system">OperationCanceledException</a>,
                                <a href="../../threading/tasks/TaskCanceledException.html" title="class in system.threading.tasks">TaskCanceledException</a>,
                                <a href="../../AggregateException.html" title="class in system">AggregateException</a>,
                                <a href="../../threading/SemaphoreFullException.html" title="class in system.threading">SemaphoreFullException</a>,
-                               <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                                <a href="../../threading/tasks/TaskSchedulerException.html" title="class in system.threading.tasks">TaskSchedulerException</a>,
-                               <a href="../../ArgumentException.html" title="class in system">ArgumentException</a></pre>
+                               <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
+                               <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../io/Stream.html#BeginWrite(byte%5B%5D,int,int,system.AsyncCallback,org.mases.jcobridge.netreflection.NetObject)">BeginWrite</a></code>&nbsp;in class&nbsp;<code><a href="../../io/Stream.html" title="class in system.io">Stream</a></code></dd>
@@ -1012,14 +1060,15 @@ extends <a href="../../io/Stream.html" title="class in system.io">Stream</a></pr
 <dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 <dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
 <dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
 <dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
 <dd><code><a href="../../OperationCanceledException.html" title="class in system">OperationCanceledException</a></code></dd>
 <dd><code><a href="../../threading/tasks/TaskCanceledException.html" title="class in system.threading.tasks">TaskCanceledException</a></code></dd>
 <dd><code><a href="../../AggregateException.html" title="class in system">AggregateException</a></code></dd>
 <dd><code><a href="../../threading/SemaphoreFullException.html" title="class in system.threading">SemaphoreFullException</a></code></dd>
-<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../../threading/tasks/TaskSchedulerException.html" title="class in system.threading.tasks">TaskSchedulerException</a></code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1039,14 +1088,15 @@ extends <a href="../../io/Stream.html" title="class in system.io">Stream</a></pr
                                <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
                                <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
                                <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                               <a href="../../NullReferenceException.html" title="class in system">NullReferenceException</a>,
                                <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
                                <a href="../../OperationCanceledException.html" title="class in system">OperationCanceledException</a>,
                                <a href="../../threading/tasks/TaskCanceledException.html" title="class in system.threading.tasks">TaskCanceledException</a>,
                                <a href="../../AggregateException.html" title="class in system">AggregateException</a>,
                                <a href="../../threading/SemaphoreFullException.html" title="class in system.threading">SemaphoreFullException</a>,
-                               <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                                <a href="../../threading/tasks/TaskSchedulerException.html" title="class in system.threading.tasks">TaskSchedulerException</a>,
-                               <a href="../../ArgumentException.html" title="class in system">ArgumentException</a></pre>
+                               <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
+                               <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../io/Stream.html#BeginWrite(org.mases.jcobridge.netreflection.JCORefOut,int,int,system.AsyncCallback,org.mases.jcobridge.netreflection.NetObject)">BeginWrite</a></code>&nbsp;in class&nbsp;<code><a href="../../io/Stream.html" title="class in system.io">Stream</a></code></dd>
@@ -1056,14 +1106,15 @@ extends <a href="../../io/Stream.html" title="class in system.io">Stream</a></pr
 <dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 <dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
 <dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
 <dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
 <dd><code><a href="../../OperationCanceledException.html" title="class in system">OperationCanceledException</a></code></dd>
 <dd><code><a href="../../threading/tasks/TaskCanceledException.html" title="class in system.threading.tasks">TaskCanceledException</a></code></dd>
 <dd><code><a href="../../AggregateException.html" title="class in system">AggregateException</a></code></dd>
 <dd><code><a href="../../threading/SemaphoreFullException.html" title="class in system.threading">SemaphoreFullException</a></code></dd>
-<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../../threading/tasks/TaskSchedulerException.html" title="class in system.threading.tasks">TaskSchedulerException</a></code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1096,16 +1147,17 @@ extends <a href="../../io/Stream.html" title="class in system.io">Stream</a></pr
                 throws java.lang.Throwable,
                        <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
                        <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                       <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
                        <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                        <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                       <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                        <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
                        <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                        <a href="../../RankException.html" title="class in system">RankException</a>,
                        <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                       <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                       <a href="../../NullReferenceException.html" title="class in system">NullReferenceException</a>,
                        <a href="../../OperationCanceledException.html" title="class in system">OperationCanceledException</a>,
-                       <a href="../../threading/SemaphoreFullException.html" title="class in system.threading">SemaphoreFullException</a></pre>
+                       <a href="../../threading/SemaphoreFullException.html" title="class in system.threading">SemaphoreFullException</a>,
+                       <a href="../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../io/Stream.html#WriteAsync(byte%5B%5D,int,int,system.threading.CancellationToken)">WriteAsync</a></code>&nbsp;in class&nbsp;<code><a href="../../io/Stream.html" title="class in system.io">Stream</a></code></dd>
@@ -1113,16 +1165,17 @@ extends <a href="../../io/Stream.html" title="class in system.io">Stream</a></pr
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 <dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 <dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 <dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
 <dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../../RankException.html" title="class in system">RankException</a></code></dd>
 <dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
 <dd><code><a href="../../OperationCanceledException.html" title="class in system">OperationCanceledException</a></code></dd>
 <dd><code><a href="../../threading/SemaphoreFullException.html" title="class in system.threading">SemaphoreFullException</a></code></dd>
+<dd><code><a href="../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1139,16 +1192,17 @@ extends <a href="../../io/Stream.html" title="class in system.io">Stream</a></pr
                 throws java.lang.Throwable,
                        <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
                        <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                       <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
                        <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                        <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                       <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                        <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
                        <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                        <a href="../../RankException.html" title="class in system">RankException</a>,
                        <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                       <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                       <a href="../../NullReferenceException.html" title="class in system">NullReferenceException</a>,
                        <a href="../../OperationCanceledException.html" title="class in system">OperationCanceledException</a>,
-                       <a href="../../threading/SemaphoreFullException.html" title="class in system.threading">SemaphoreFullException</a></pre>
+                       <a href="../../threading/SemaphoreFullException.html" title="class in system.threading">SemaphoreFullException</a>,
+                       <a href="../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../io/Stream.html#WriteAsync(org.mases.jcobridge.netreflection.JCORefOut,int,int,system.threading.CancellationToken)">WriteAsync</a></code>&nbsp;in class&nbsp;<code><a href="../../io/Stream.html" title="class in system.io">Stream</a></code></dd>
@@ -1156,72 +1210,130 @@ extends <a href="../../io/Stream.html" title="class in system.io">Stream</a></pr
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 <dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 <dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 <dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
 <dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../../RankException.html" title="class in system">RankException</a></code></dd>
 <dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
 <dd><code><a href="../../OperationCanceledException.html" title="class in system">OperationCanceledException</a></code></dd>
 <dd><code><a href="../../threading/SemaphoreFullException.html" title="class in system.threading">SemaphoreFullException</a></code></dd>
+<dd><code><a href="../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
 </dl>
 </li>
 </ul>
-<a id="ShutdownCompleted(system.threading.CancellationToken)">
+<a id="DisposeAsync()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>ShutdownCompleted</h4>
-<pre class="methodSignature">public&nbsp;<a href="../../threading/tasks/ValueTask.html" title="class in system.threading.tasks">ValueTask</a>&nbsp;ShutdownCompleted&#8203;(<a href="../../threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)
-                            throws java.lang.Throwable</pre>
+<h4>DisposeAsync</h4>
+<pre class="methodSignature">public&nbsp;<a href="../../threading/tasks/ValueTask.html" title="class in system.threading.tasks">ValueTask</a>&nbsp;DisposeAsync()
+                       throws java.lang.Throwable,
+                              <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
+                              <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                              <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                              <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                              <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
 <dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../io/Stream.html#DisposeAsync()">DisposeAsync</a></code>&nbsp;in class&nbsp;<code><a href="../../io/Stream.html" title="class in system.io">Stream</a></code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 </dl>
 </li>
 </ul>
-<a id="WaitForWriteCompletionAsync(system.threading.CancellationToken)">
+<a id="Abort(system.net.quic.QuicAbortDirection,long)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>WaitForWriteCompletionAsync</h4>
-<pre class="methodSignature">public&nbsp;<a href="../../threading/tasks/ValueTask.html" title="class in system.threading.tasks">ValueTask</a>&nbsp;WaitForWriteCompletionAsync&#8203;(<a href="../../threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)
-                                      throws java.lang.Throwable</pre>
+<h4>Abort</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;Abort&#8203;(<a href="QuicAbortDirection.html" title="class in system.net.quic">QuicAbortDirection</a>&nbsp;abortDirection,
+                  long&nbsp;errorCode)
+           throws java.lang.Throwable,
+                  <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                  <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
+                  <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                  <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                  <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                  <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                  <a href="../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
+                  <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                  <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                  <a href="../../FormatException.html" title="class in system">FormatException</a>,
+                  <a href="../../diagnostics/tracing/EventSourceException.html" title="class in system.diagnostics.tracing">EventSourceException</a>,
+                  <a href="../../MissingMethodException.html" title="class in system">MissingMethodException</a>,
+                  <a href="../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
+                  <a href="../../MissingMemberException.html" title="class in system">MissingMemberException</a>,
+                  <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
+<dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../diagnostics/tracing/EventSourceException.html" title="class in system.diagnostics.tracing">EventSourceException</a></code></dd>
+<dd><code><a href="../../MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
+<dd><code><a href="../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
+<dd><code><a href="../../MissingMemberException.html" title="class in system">MissingMemberException</a></code></dd>
+<dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
 </dl>
 </li>
 </ul>
-<a id="AbortRead(long)">
+<a id="CompleteWrites()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>AbortRead</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;AbortRead&#8203;(long&nbsp;errorCode)
-               throws java.lang.Throwable</pre>
+<h4>CompleteWrites</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;CompleteWrites()
+                    throws java.lang.Throwable,
+                           <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
+                           <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                           <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                           <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                           <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                           <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                           <a href="../../RankException.html" title="class in system">RankException</a>,
+                           <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                           <a href="../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
+                           <a href="../../FormatException.html" title="class in system">FormatException</a>,
+                           <a href="../../diagnostics/tracing/EventSourceException.html" title="class in system.diagnostics.tracing">EventSourceException</a>,
+                           <a href="../../MissingMethodException.html" title="class in system">MissingMethodException</a>,
+                           <a href="../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
+                           <a href="../../MissingMemberException.html" title="class in system">MissingMemberException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
-</dl>
-</li>
-</ul>
-<a id="AbortWrite(long)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>AbortWrite</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;AbortWrite&#8203;(long&nbsp;errorCode)
-                throws java.lang.Throwable</pre>
-<dl>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
+<dd><code><a href="../../FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../diagnostics/tracing/EventSourceException.html" title="class in system.diagnostics.tracing">EventSourceException</a></code></dd>
+<dd><code><a href="../../MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
+<dd><code><a href="../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
+<dd><code><a href="../../MissingMemberException.html" title="class in system">MissingMemberException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1233,13 +1345,13 @@ extends <a href="../../io/Stream.html" title="class in system.io">Stream</a></pr
 <h4>EndWrite</h4>
 <pre class="methodSignature">public&nbsp;void&nbsp;EndWrite&#8203;(<a href="../../IAsyncResult.html" title="interface in system">IAsyncResult</a>&nbsp;asyncResult)
               throws java.lang.Throwable,
+                     <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                     <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
+                     <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                      <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                      <a href="../../diagnostics/tracing/EventSourceException.html" title="class in system.diagnostics.tracing">EventSourceException</a>,
                      <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                      <a href="../../threading/tasks/TaskSchedulerException.html" title="class in system.threading.tasks">TaskSchedulerException</a>,
-                     <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                     <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
-                     <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                      <a href="../../threading/tasks/TaskCanceledException.html" title="class in system.threading.tasks">TaskCanceledException</a>,
                      <a href="../../AggregateException.html" title="class in system">AggregateException</a></pre>
 <dl>
@@ -1247,13 +1359,13 @@ extends <a href="../../io/Stream.html" title="class in system.io">Stream</a></pr
 <dd><code><a href="../../io/Stream.html#EndWrite(system.IAsyncResult)">EndWrite</a></code>&nbsp;in class&nbsp;<code><a href="../../io/Stream.html" title="class in system.io">Stream</a></code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 <dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="../../diagnostics/tracing/EventSourceException.html" title="class in system.diagnostics.tracing">EventSourceException</a></code></dd>
 <dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../../threading/tasks/TaskSchedulerException.html" title="class in system.threading.tasks">TaskSchedulerException</a></code></dd>
-<dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
-<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 <dd><code><a href="../../threading/tasks/TaskCanceledException.html" title="class in system.threading.tasks">TaskCanceledException</a></code></dd>
 <dd><code><a href="../../AggregateException.html" title="class in system">AggregateException</a></code></dd>
 </dl>
@@ -1266,12 +1378,38 @@ extends <a href="../../io/Stream.html" title="class in system.io">Stream</a></pr
 <li class="blockList">
 <h4>Flush</h4>
 <pre class="methodSignature">public&nbsp;void&nbsp;Flush()
-           throws java.lang.Throwable</pre>
+           throws java.lang.Throwable,
+                  <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                  <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                  <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                  <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                  <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
+                  <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                  <a href="../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
+                  <a href="../../diagnostics/tracing/EventSourceException.html" title="class in system.diagnostics.tracing">EventSourceException</a>,
+                  <a href="../../threading/tasks/TaskSchedulerException.html" title="class in system.threading.tasks">TaskSchedulerException</a>,
+                  <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                  <a href="../../OperationCanceledException.html" title="class in system">OperationCanceledException</a>,
+                  <a href="../../threading/tasks/TaskCanceledException.html" title="class in system.threading.tasks">TaskCanceledException</a>,
+                  <a href="../../AggregateException.html" title="class in system">AggregateException</a></pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../io/Stream.html#Flush()">Flush</a></code>&nbsp;in class&nbsp;<code><a href="../../io/Stream.html" title="class in system.io">Stream</a></code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
+<dd><code><a href="../../diagnostics/tracing/EventSourceException.html" title="class in system.diagnostics.tracing">EventSourceException</a></code></dd>
+<dd><code><a href="../../threading/tasks/TaskSchedulerException.html" title="class in system.threading.tasks">TaskSchedulerException</a></code></dd>
+<dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../OperationCanceledException.html" title="class in system">OperationCanceledException</a></code></dd>
+<dd><code><a href="../../threading/tasks/TaskCanceledException.html" title="class in system.threading.tasks">TaskCanceledException</a></code></dd>
+<dd><code><a href="../../AggregateException.html" title="class in system">AggregateException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1289,7 +1427,6 @@ extends <a href="../../io/Stream.html" title="class in system.io">Stream</a></pr
                       <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                       <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                       <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
-                      <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
                       <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
                       <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
                       <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></pre>
@@ -1304,24 +1441,9 @@ extends <a href="../../io/Stream.html" title="class in system.io">Stream</a></pr
 <dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
-<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 <dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
 <dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
 <dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
-</dl>
-</li>
-</ul>
-<a id="Shutdown()">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>Shutdown</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;Shutdown()
-              throws java.lang.Throwable</pre>
-<dl>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
 </dl>
 </li>
 </ul>
@@ -1337,14 +1459,13 @@ extends <a href="../../io/Stream.html" title="class in system.io">Stream</a></pr
            throws java.lang.Throwable,
                   <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
                   <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                  <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
                   <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                   <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                  <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                   <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
                   <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                   <a href="../../RankException.html" title="class in system">RankException</a>,
-                  <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></pre>
+                  <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                  <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../io/Stream.html#Write(byte%5B%5D,int,int)">Write</a></code>&nbsp;in class&nbsp;<code><a href="../../io/Stream.html" title="class in system.io">Stream</a></code></dd>
@@ -1352,14 +1473,13 @@ extends <a href="../../io/Stream.html" title="class in system.io">Stream</a></pr
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 <dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 <dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 <dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
 <dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../../RankException.html" title="class in system">RankException</a></code></dd>
 <dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1375,14 +1495,13 @@ extends <a href="../../io/Stream.html" title="class in system.io">Stream</a></pr
            throws java.lang.Throwable,
                   <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
                   <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                  <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
                   <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                   <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                  <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                   <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
                   <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                   <a href="../../RankException.html" title="class in system">RankException</a>,
-                  <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></pre>
+                  <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                  <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../io/Stream.html#Write(org.mases.jcobridge.netreflection.JCORefOut,int,int)">Write</a></code>&nbsp;in class&nbsp;<code><a href="../../io/Stream.html" title="class in system.io">Stream</a></code></dd>
@@ -1390,10 +1509,41 @@ extends <a href="../../io/Stream.html" title="class in system.io">Stream</a></pr
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 <dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 <dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
 <dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="WriteByte(byte)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>WriteByte</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;WriteByte&#8203;(byte&nbsp;value)
+               throws java.lang.Throwable,
+                      <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
+                      <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                      <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                      <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                      <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                      <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                      <a href="../../RankException.html" title="class in system">RankException</a>,
+                      <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../io/Stream.html#WriteByte(byte)">WriteByte</a></code>&nbsp;in class&nbsp;<code><a href="../../io/Stream.html" title="class in system.io">Stream</a></code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
 <dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
 <dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../../RankException.html" title="class in system">RankException</a></code></dd>
@@ -1401,31 +1551,107 @@ extends <a href="../../io/Stream.html" title="class in system.io">Stream</a></pr
 </dl>
 </li>
 </ul>
-<a id="getReadsCompleted()">
+<a id="getId()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getReadsCompleted</h4>
-<pre class="methodSignature">public&nbsp;boolean&nbsp;getReadsCompleted()
-                          throws java.lang.Throwable</pre>
+<h4>getId</h4>
+<pre class="methodSignature">public&nbsp;long&nbsp;getId()
+           throws java.lang.Throwable</pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 </dl>
 </li>
 </ul>
-<a id="getStreamId()">
+<a id="getType()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getType</h4>
+<pre class="methodSignature">public&nbsp;<a href="QuicStreamType.html" title="class in system.net.quic">QuicStreamType</a>&nbsp;getType()
+                       throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a id="getReadsClosed()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getReadsClosed</h4>
+<pre class="methodSignature">public&nbsp;<a href="../../threading/tasks/Task.html" title="class in system.threading.tasks">Task</a>&nbsp;getReadsClosed()
+                    throws java.lang.Throwable,
+                           <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                           <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                           <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                           <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
+                           <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                           <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                           <a href="../../RankException.html" title="class in system">RankException</a>,
+                           <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                           <a href="../../NullReferenceException.html" title="class in system">NullReferenceException</a>,
+                           <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                           <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                           <a href="../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
+<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="getWritesClosed()">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>getStreamId</h4>
-<pre class="methodSignature">public&nbsp;long&nbsp;getStreamId()
-                 throws java.lang.Throwable</pre>
+<h4>getWritesClosed</h4>
+<pre class="methodSignature">public&nbsp;<a href="../../threading/tasks/Task.html" title="class in system.threading.tasks">Task</a>&nbsp;getWritesClosed()
+                     throws java.lang.Throwable,
+                            <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                            <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                            <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                            <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
+                            <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                            <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                            <a href="../../RankException.html" title="class in system">RankException</a>,
+                            <a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                            <a href="../../NullReferenceException.html" title="class in system">NullReferenceException</a>,
+                            <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                            <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                            <a href="../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
+<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
 </dl>
 </li>
 </ul>

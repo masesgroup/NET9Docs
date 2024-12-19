@@ -181,7 +181,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <pre>public class <span class="typeNameLabel">RectAnimationUsingKeyFrames</span>
 extends <a href="RectAnimationBase.html" title="class in system.windows.media.animation">RectAnimationBase</a>
 implements <a href="../../markup/IAddChild.html" title="interface in system.windows.markup">IAddChild</a></pre>
-<div class="block">The base .NET class managing System.Windows.Media.Animation.RectAnimationUsingKeyFrames, PresentationCore, Version=6.0.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35.
+<div class="block">The base .NET class managing System.Windows.Media.Animation.RectAnimationUsingKeyFrames, PresentationCore, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35.
  <p>
  
  .NET documentation at <a href="https://docs.microsoft.com/en-us/dotnet/api/System.Windows.Media.Animation.RectAnimationUsingKeyFrames" target="_top">https://docs.microsoft.com/en-us/dotnet/api/System.Windows.Media.Animation.RectAnimationUsingKeyFrames</a>
@@ -216,7 +216,7 @@ implements <a href="../../markup/IAddChild.html" title="interface in system.wind
 <td class="colFirst"><code>static java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#assemblyFullName">assemblyFullName</a></span></code></th>
 <td class="colLast">
-<div class="block">Fully assembly qualified name: PresentationCore, Version=6.0.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</div>
+<div class="block">Fully assembly qualified name: PresentationCore, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</div>
 </td>
 </tr>
 <tr class="rowColor">
@@ -478,7 +478,7 @@ implements <a href="../../markup/IAddChild.html" title="interface in system.wind
 <li class="blockList">
 <h4>assemblyFullName</h4>
 <pre>public static final&nbsp;java.lang.String assemblyFullName</pre>
-<div class="block">Fully assembly qualified name: PresentationCore, Version=6.0.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</div>
+<div class="block">Fully assembly qualified name: PresentationCore, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../constant-values.html#system.windows.media.animation.RectAnimationUsingKeyFrames.assemblyFullName">Constant Field Values</a></dd>
@@ -718,21 +718,13 @@ implements <a href="../../markup/IAddChild.html" title="interface in system.wind
 <h4>ShouldSerializeKeyFrames</h4>
 <pre class="methodSignature">public&nbsp;boolean&nbsp;ShouldSerializeKeyFrames()
                                  throws java.lang.Throwable,
-                                        <a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                                         <a href="../../../ArgumentException.html" title="class in system">ArgumentException</a>,
-                                        <a href="../../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
-                                        <a href="../../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                                        <a href="../../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
-                                        <a href="../../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></pre>
+                                        <a href="../../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 <dd><code><a href="../../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
 <dd><code><a href="../../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
-<dd><code><a href="../../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -745,13 +737,11 @@ implements <a href="../../markup/IAddChild.html" title="interface in system.wind
 <pre class="methodSignature">public&nbsp;<a href="RectAnimationUsingKeyFrames.html" title="class in system.windows.media.animation">RectAnimationUsingKeyFrames</a>&nbsp;CloneNewRectAnimationUsingKeyFrames()
                                                                 throws java.lang.Throwable,
                                                                        <a href="../../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                                                                       <a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                                                                        <a href="../../../ArgumentException.html" title="class in system">ArgumentException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="../../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 <dd><code><a href="../../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 </dl>
 </li>
@@ -764,22 +754,26 @@ implements <a href="../../markup/IAddChild.html" title="interface in system.wind
 <h4>CloneCurrentValueNewRectAnimationUsingKeyFrames</h4>
 <pre class="methodSignature">public&nbsp;<a href="RectAnimationUsingKeyFrames.html" title="class in system.windows.media.animation">RectAnimationUsingKeyFrames</a>&nbsp;CloneCurrentValueNewRectAnimationUsingKeyFrames()
                                                                             throws java.lang.Throwable,
+                                                                                   <a href="../../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                                                   <a href="../../../security/SecurityException.html" title="class in system.security">SecurityException</a>,
+                                                                                   <a href="../../../io/IOException.html" title="class in system.io">IOException</a>,
+                                                                                   <a href="../../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                                                                                    <a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                                                                                    <a href="../../../ArgumentException.html" title="class in system">ArgumentException</a>,
-                                                                                   <a href="../../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                                                                                    <a href="../../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                                                                                   <a href="../../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                                                                                    <a href="../../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
                                                                                    <a href="../../../FormatException.html" title="class in system">FormatException</a>,
                                                                                    <a href="../../../NotSupportedException.html" title="class in system">NotSupportedException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../security/SecurityException.html" title="class in system.security">SecurityException</a></code></dd>
+<dd><code><a href="../../../io/IOException.html" title="class in system.io">IOException</a></code></dd>
+<dd><code><a href="../../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 <dd><code><a href="../../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="../../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 <dd><code><a href="../../../FormatException.html" title="class in system">FormatException</a></code></dd>
 <dd><code><a href="../../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
@@ -794,11 +788,9 @@ implements <a href="../../markup/IAddChild.html" title="interface in system.wind
 <h4>getIsAdditive</h4>
 <pre class="methodSignature">public&nbsp;boolean&nbsp;getIsAdditive()
                       throws java.lang.Throwable,
-                             <a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                              <a href="../../../ArgumentException.html" title="class in system">ArgumentException</a>,
-                             <a href="../../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
                              <a href="../../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                             <a href="../../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                             <a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                              <a href="../../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                              <a href="../../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
                              <a href="../../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
@@ -807,11 +799,9 @@ implements <a href="../../markup/IAddChild.html" title="interface in system.wind
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 <dd><code><a href="../../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
 <dd><code><a href="../../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 <dd><code><a href="../../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="../../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 <dd><code><a href="../../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
@@ -828,29 +818,27 @@ implements <a href="../../markup/IAddChild.html" title="interface in system.wind
 <h4>setIsAdditive</h4>
 <pre class="methodSignature">public&nbsp;void&nbsp;setIsAdditive&#8203;(boolean&nbsp;IsAdditive)
                    throws java.lang.Throwable,
-                          <a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                           <a href="../../../ArgumentException.html" title="class in system">ArgumentException</a>,
-                          <a href="../../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
                           <a href="../../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                          <a href="../../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                          <a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                           <a href="../../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                           <a href="../../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
                           <a href="../../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                          <a href="../../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
                           <a href="../../../FormatException.html" title="class in system">FormatException</a>,
-                          <a href="../../../NotSupportedException.html" title="class in system">NotSupportedException</a></pre>
+                          <a href="../../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 <dd><code><a href="../../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
 <dd><code><a href="../../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 <dd><code><a href="../../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="../../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 <dd><code><a href="../../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
-<dd><code><a href="../../../FormatException.html" title="class in system">FormatException</a></code></dd>
 <dd><code><a href="../../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -862,11 +850,9 @@ implements <a href="../../markup/IAddChild.html" title="interface in system.wind
 <h4>getIsCumulative</h4>
 <pre class="methodSignature">public&nbsp;boolean&nbsp;getIsCumulative()
                         throws java.lang.Throwable,
-                               <a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                                <a href="../../../ArgumentException.html" title="class in system">ArgumentException</a>,
-                               <a href="../../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
                                <a href="../../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                               <a href="../../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                               <a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                                <a href="../../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                                <a href="../../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
                                <a href="../../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
@@ -875,11 +861,9 @@ implements <a href="../../markup/IAddChild.html" title="interface in system.wind
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 <dd><code><a href="../../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
 <dd><code><a href="../../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 <dd><code><a href="../../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="../../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 <dd><code><a href="../../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
@@ -896,29 +880,27 @@ implements <a href="../../markup/IAddChild.html" title="interface in system.wind
 <h4>setIsCumulative</h4>
 <pre class="methodSignature">public&nbsp;void&nbsp;setIsCumulative&#8203;(boolean&nbsp;IsCumulative)
                      throws java.lang.Throwable,
-                            <a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                             <a href="../../../ArgumentException.html" title="class in system">ArgumentException</a>,
-                            <a href="../../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
                             <a href="../../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                            <a href="../../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                            <a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                             <a href="../../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                             <a href="../../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
                             <a href="../../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                            <a href="../../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
                             <a href="../../../FormatException.html" title="class in system">FormatException</a>,
-                            <a href="../../../NotSupportedException.html" title="class in system">NotSupportedException</a></pre>
+                            <a href="../../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 <dd><code><a href="../../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
 <dd><code><a href="../../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 <dd><code><a href="../../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="../../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 <dd><code><a href="../../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
-<dd><code><a href="../../../FormatException.html" title="class in system">FormatException</a></code></dd>
 <dd><code><a href="../../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -930,28 +912,22 @@ implements <a href="../../markup/IAddChild.html" title="interface in system.wind
 <h4>getKeyFrames</h4>
 <pre class="methodSignature">public&nbsp;<a href="RectKeyFrameCollection.html" title="class in system.windows.media.animation">RectKeyFrameCollection</a>&nbsp;getKeyFrames()
                                     throws java.lang.Throwable,
-                                           <a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                                            <a href="../../../ArgumentException.html" title="class in system">ArgumentException</a>,
-                                           <a href="../../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
                                            <a href="../../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                                           <a href="../../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
-                                           <a href="../../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                                            <a href="../../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
                                            <a href="../../../componentmodel/Win32Exception.html" title="class in system.componentmodel">Win32Exception</a>,
                                            <a href="../../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                           <a href="../../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                                            <a href="../../../FormatException.html" title="class in system">FormatException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 <dd><code><a href="../../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
 <dd><code><a href="../../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
-<dd><code><a href="../../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="../../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 <dd><code><a href="../../../componentmodel/Win32Exception.html" title="class in system.componentmodel">Win32Exception</a></code></dd>
 <dd><code><a href="../../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="../../../FormatException.html" title="class in system">FormatException</a></code></dd>
 </dl>
 </li>
@@ -966,29 +942,29 @@ implements <a href="../../markup/IAddChild.html" title="interface in system.wind
                   throws java.lang.Throwable,
                          <a href="../../../ArgumentException.html" title="class in system">ArgumentException</a>,
                          <a href="../../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                         <a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                         <a href="../../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                          <a href="../../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                         <a href="../../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
-                         <a href="../../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
                          <a href="../../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                         <a href="../../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
                          <a href="../../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
-                         <a href="../../../FormatException.html" title="class in system">FormatException</a></pre>
+                         <a href="../../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                         <a href="../../../RankException.html" title="class in system">RankException</a>,
+                         <a href="../../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                         <a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                         <a href="../../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                         <a href="../../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="../../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 <dd><code><a href="../../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="../../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
-<dd><code><a href="../../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 <dd><code><a href="../../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
 <dd><code><a href="../../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
-<dd><code><a href="../../../FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
 </dl>
 </li>
 </ul>

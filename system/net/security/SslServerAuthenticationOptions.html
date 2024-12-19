@@ -19,6 +19,8 @@
 <meta name="keywords" content="cast()">
 <meta name="keywords" content="getAllowRenegotiation()">
 <meta name="keywords" content="setAllowRenegotiation()">
+<meta name="keywords" content="getAllowTlsResume()">
+<meta name="keywords" content="setAllowTlsResume()">
 <meta name="keywords" content="getClientCertificateRequired()">
 <meta name="keywords" content="setClientCertificateRequired()">
 <meta name="keywords" content="getCipherSuitesPolicy()">
@@ -35,6 +37,8 @@
 <meta name="keywords" content="setEnabledSslProtocols()">
 <meta name="keywords" content="getServerCertificate()">
 <meta name="keywords" content="setServerCertificate()">
+<meta name="keywords" content="getCertificateChainPolicy()">
+<meta name="keywords" content="setCertificateChainPolicy()">
 <meta name="keywords" content="getCertificateRevocationCheckMode()">
 <meta name="keywords" content="setCertificateRevocationCheckMode()">
 <link rel="stylesheet" type="text/css" href="../../../stylesheet.css" title="Style">
@@ -50,7 +54,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10};
+var data = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -154,7 +158,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <hr>
 <pre>public class <span class="typeNameLabel">SslServerAuthenticationOptions</span>
 extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></pre>
-<div class="block">The base .NET class managing System.Net.Security.SslServerAuthenticationOptions, System.Net.Security, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a.
+<div class="block">The base .NET class managing System.Net.Security.SslServerAuthenticationOptions, System.Net.Security, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a.
  <p>
  
  .NET documentation at <a href="https://docs.microsoft.com/en-us/dotnet/api/System.Net.Security.SslServerAuthenticationOptions" target="_top">https://docs.microsoft.com/en-us/dotnet/api/System.Net.Security.SslServerAuthenticationOptions</a>
@@ -189,7 +193,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <td class="colFirst"><code>static java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#assemblyFullName">assemblyFullName</a></span></code></th>
 <td class="colLast">
-<div class="block">Fully assembly qualified name: System.Net.Security, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</div>
+<div class="block">Fully assembly qualified name: System.Net.Security, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</div>
 </td>
 </tr>
 <tr class="rowColor">
@@ -278,136 +282,156 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getAllowTlsResume()">getAllowTlsResume</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code><a href="../../security/cryptography/x509certificates/X509ChainPolicy.html" title="class in system.security.cryptography.x509certificates">X509ChainPolicy</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getCertificateChainPolicy()">getCertificateChainPolicy</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../security/cryptography/x509certificates/X509RevocationMode.html" title="class in system.security.cryptography.x509certificates">X509RevocationMode</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getCertificateRevocationCheckMode()">getCertificateRevocationCheckMode</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="CipherSuitesPolicy.html" title="class in system.net.security">CipherSuitesPolicy</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getCipherSuitesPolicy()">getCipherSuitesPolicy</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getClientCertificateRequired()">getClientCertificateRequired</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../security/authentication/SslProtocols.html" title="class in system.security.authentication">SslProtocols</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getEnabledSslProtocols()">getEnabledSslProtocols</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="EncryptionPolicy.html" title="class in system.net.security">EncryptionPolicy</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getEncryptionPolicy()">getEncryptionPolicy</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getJCOAssemblyName()">getJCOAssemblyName</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the reflected Assembly name</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getJCOClassName()">getJCOClassName</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the reflected Class name</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getJCOInstance()">getJCOInstance</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the instantiated class</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getJCOObjectName()">getJCOObjectName</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the reflected Class name used to build the object</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code><a href="https://www.jcobridge.com/api-java_2.5.21/org/mases/jcobridge/JCType.html?is-external=true" title="class or interface in org.mases.jcobridge" class="externalLink">JCType</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getJCOType()">getJCOType</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the instantiated class Type</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code><a href="RemoteCertificateValidationCallback.html" title="class in system.net.security">RemoteCertificateValidationCallback</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getRemoteCertificateValidationCallback()">getRemoteCertificateValidationCallback</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code><a href="../../security/cryptography/x509certificates/X509Certificate.html" title="class in system.security.cryptography.x509certificates">X509Certificate</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getServerCertificate()">getServerCertificate</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code><a href="SslStreamCertificateContext.html" title="class in system.net.security">SslStreamCertificateContext</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getServerCertificateContext()">getServerCertificateContext</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code><a href="ServerCertificateSelectionCallback.html" title="class in system.net.security">ServerCertificateSelectionCallback</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getServerCertificateSelectionCallback()">getServerCertificateSelectionCallback</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setAllowRenegotiation(boolean)">setAllowRenegotiation</a></span>&#8203;(boolean&nbsp;AllowRenegotiation)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i17" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setCertificateRevocationCheckMode(system.security.cryptography.x509certificates.X509RevocationMode)">setCertificateRevocationCheckMode</a></span>&#8203;(<a href="../../security/cryptography/x509certificates/X509RevocationMode.html" title="class in system.security.cryptography.x509certificates">X509RevocationMode</a>&nbsp;CertificateRevocationCheckMode)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i18" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setCipherSuitesPolicy(system.net.security.CipherSuitesPolicy)">setCipherSuitesPolicy</a></span>&#8203;(<a href="CipherSuitesPolicy.html" title="class in system.net.security">CipherSuitesPolicy</a>&nbsp;CipherSuitesPolicy)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
 <tr id="i19" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setClientCertificateRequired(boolean)">setClientCertificateRequired</a></span>&#8203;(boolean&nbsp;ClientCertificateRequired)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setAllowTlsResume(boolean)">setAllowTlsResume</a></span>&#8203;(boolean&nbsp;AllowTlsResume)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i20" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setEnabledSslProtocols(system.security.authentication.SslProtocols)">setEnabledSslProtocols</a></span>&#8203;(<a href="../../security/authentication/SslProtocols.html" title="class in system.security.authentication">SslProtocols</a>&nbsp;EnabledSslProtocols)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setCertificateChainPolicy(system.security.cryptography.x509certificates.X509ChainPolicy)">setCertificateChainPolicy</a></span>&#8203;(<a href="../../security/cryptography/x509certificates/X509ChainPolicy.html" title="class in system.security.cryptography.x509certificates">X509ChainPolicy</a>&nbsp;CertificateChainPolicy)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i21" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setEncryptionPolicy(system.net.security.EncryptionPolicy)">setEncryptionPolicy</a></span>&#8203;(<a href="EncryptionPolicy.html" title="class in system.net.security">EncryptionPolicy</a>&nbsp;EncryptionPolicy)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setCertificateRevocationCheckMode(system.security.cryptography.x509certificates.X509RevocationMode)">setCertificateRevocationCheckMode</a></span>&#8203;(<a href="../../security/cryptography/x509certificates/X509RevocationMode.html" title="class in system.security.cryptography.x509certificates">X509RevocationMode</a>&nbsp;CertificateRevocationCheckMode)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i22" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setJCOInstance(org.mases.jcobridge.JCObject)">setJCOInstance</a></span>&#8203;(<a href="https://www.jcobridge.com/api-java_2.5.21/org/mases/jcobridge/JCObject.html?is-external=true" title="class or interface in org.mases.jcobridge" class="externalLink">JCObject</a>&nbsp;instance)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setCipherSuitesPolicy(system.net.security.CipherSuitesPolicy)">setCipherSuitesPolicy</a></span>&#8203;(<a href="CipherSuitesPolicy.html" title="class in system.net.security">CipherSuitesPolicy</a>&nbsp;CipherSuitesPolicy)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i23" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setRemoteCertificateValidationCallback(system.net.security.RemoteCertificateValidationCallback)">setRemoteCertificateValidationCallback</a></span>&#8203;(<a href="RemoteCertificateValidationCallback.html" title="class in system.net.security">RemoteCertificateValidationCallback</a>&nbsp;RemoteCertificateValidationCallback)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setClientCertificateRequired(boolean)">setClientCertificateRequired</a></span>&#8203;(boolean&nbsp;ClientCertificateRequired)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i24" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setServerCertificate(system.security.cryptography.x509certificates.X509Certificate)">setServerCertificate</a></span>&#8203;(<a href="../../security/cryptography/x509certificates/X509Certificate.html" title="class in system.security.cryptography.x509certificates">X509Certificate</a>&nbsp;ServerCertificate)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setEnabledSslProtocols(system.security.authentication.SslProtocols)">setEnabledSslProtocols</a></span>&#8203;(<a href="../../security/authentication/SslProtocols.html" title="class in system.security.authentication">SslProtocols</a>&nbsp;EnabledSslProtocols)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i25" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setServerCertificateContext(system.net.security.SslStreamCertificateContext)">setServerCertificateContext</a></span>&#8203;(<a href="SslStreamCertificateContext.html" title="class in system.net.security">SslStreamCertificateContext</a>&nbsp;ServerCertificateContext)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setEncryptionPolicy(system.net.security.EncryptionPolicy)">setEncryptionPolicy</a></span>&#8203;(<a href="EncryptionPolicy.html" title="class in system.net.security">EncryptionPolicy</a>&nbsp;EncryptionPolicy)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i26" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setJCOInstance(org.mases.jcobridge.JCObject)">setJCOInstance</a></span>&#8203;(<a href="https://www.jcobridge.com/api-java_2.5.21/org/mases/jcobridge/JCObject.html?is-external=true" title="class or interface in org.mases.jcobridge" class="externalLink">JCObject</a>&nbsp;instance)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i27" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setRemoteCertificateValidationCallback(system.net.security.RemoteCertificateValidationCallback)">setRemoteCertificateValidationCallback</a></span>&#8203;(<a href="RemoteCertificateValidationCallback.html" title="class in system.net.security">RemoteCertificateValidationCallback</a>&nbsp;RemoteCertificateValidationCallback)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i28" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setServerCertificate(system.security.cryptography.x509certificates.X509Certificate)">setServerCertificate</a></span>&#8203;(<a href="../../security/cryptography/x509certificates/X509Certificate.html" title="class in system.security.cryptography.x509certificates">X509Certificate</a>&nbsp;ServerCertificate)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i29" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setServerCertificateContext(system.net.security.SslStreamCertificateContext)">setServerCertificateContext</a></span>&#8203;(<a href="SslStreamCertificateContext.html" title="class in system.net.security">SslStreamCertificateContext</a>&nbsp;ServerCertificateContext)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i30" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setServerCertificateSelectionCallback(system.net.security.ServerCertificateSelectionCallback)">setServerCertificateSelectionCallback</a></span>&#8203;(<a href="ServerCertificateSelectionCallback.html" title="class in system.net.security">ServerCertificateSelectionCallback</a>&nbsp;ServerCertificateSelectionCallback)</code></th>
 <td class="colLast">&nbsp;</td>
@@ -450,7 +474,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <li class="blockList">
 <h4>assemblyFullName</h4>
 <pre>public static final&nbsp;java.lang.String assemblyFullName</pre>
-<div class="block">Fully assembly qualified name: System.Net.Security, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</div>
+<div class="block">Fully assembly qualified name: System.Net.Security, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../constant-values.html#system.net.security.SslServerAuthenticationOptions.assemblyFullName">Constant Field Values</a></dd>
@@ -700,6 +724,34 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </dl>
 </li>
 </ul>
+<a id="getAllowTlsResume()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getAllowTlsResume</h4>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;getAllowTlsResume()
+                          throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a id="setAllowTlsResume(boolean)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setAllowTlsResume</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;setAllowTlsResume&#8203;(boolean&nbsp;AllowTlsResume)
+                       throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
 <a id="getClientCertificateRequired()">
 <!--   -->
 </a>
@@ -778,19 +830,25 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <h4>setEncryptionPolicy</h4>
 <pre class="methodSignature">public&nbsp;void&nbsp;setEncryptionPolicy&#8203;(<a href="EncryptionPolicy.html" title="class in system.net.security">EncryptionPolicy</a>&nbsp;EncryptionPolicy)
                          throws java.lang.Throwable,
-                                <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                                <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
                                 <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
+                                <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                                 <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                                <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></pre>
+                                <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                                <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 <dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
 <dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -934,6 +992,34 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </dl>
 </li>
 </ul>
+<a id="getCertificateChainPolicy()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getCertificateChainPolicy</h4>
+<pre class="methodSignature">public&nbsp;<a href="../../security/cryptography/x509certificates/X509ChainPolicy.html" title="class in system.security.cryptography.x509certificates">X509ChainPolicy</a>&nbsp;getCertificateChainPolicy()
+                                          throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a id="setCertificateChainPolicy(system.security.cryptography.x509certificates.X509ChainPolicy)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setCertificateChainPolicy</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;setCertificateChainPolicy&#8203;(<a href="../../security/cryptography/x509certificates/X509ChainPolicy.html" title="class in system.security.cryptography.x509certificates">X509ChainPolicy</a>&nbsp;CertificateChainPolicy)
+                               throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
 <a id="getCertificateRevocationCheckMode()">
 <!--   -->
 </a>
@@ -956,19 +1042,25 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <h4>setCertificateRevocationCheckMode</h4>
 <pre class="methodSignature">public&nbsp;void&nbsp;setCertificateRevocationCheckMode&#8203;(<a href="../../security/cryptography/x509certificates/X509RevocationMode.html" title="class in system.security.cryptography.x509certificates">X509RevocationMode</a>&nbsp;CertificateRevocationCheckMode)
                                        throws java.lang.Throwable,
-                                              <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                                              <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
                                               <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                              <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
+                                              <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                                               <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                                              <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></pre>
+                                              <a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                              <a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                                              <a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                              <a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 <dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
 <dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 </dl>
 </li>
 </ul>

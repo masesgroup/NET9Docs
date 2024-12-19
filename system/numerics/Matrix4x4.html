@@ -28,11 +28,19 @@
 <meta name="keywords" content="CreateFromQuaternion()">
 <meta name="keywords" content="CreateFromYawPitchRoll()">
 <meta name="keywords" content="CreateLookAt()">
+<meta name="keywords" content="CreateLookAtLeftHanded()">
+<meta name="keywords" content="CreateLookTo()">
+<meta name="keywords" content="CreateLookToLeftHanded()">
 <meta name="keywords" content="CreateOrthographic()">
+<meta name="keywords" content="CreateOrthographicLeftHanded()">
 <meta name="keywords" content="CreateOrthographicOffCenter()">
+<meta name="keywords" content="CreateOrthographicOffCenterLeftHanded()">
 <meta name="keywords" content="CreatePerspective()">
 <meta name="keywords" content="CreatePerspectiveFieldOfView()">
+<meta name="keywords" content="CreatePerspectiveFieldOfViewLeftHanded()">
+<meta name="keywords" content="CreatePerspectiveLeftHanded()">
 <meta name="keywords" content="CreatePerspectiveOffCenter()">
+<meta name="keywords" content="CreatePerspectiveOffCenterLeftHanded()">
 <meta name="keywords" content="CreateReflection()">
 <meta name="keywords" content="CreateRotationX()">
 <meta name="keywords" content="CreateRotationY()">
@@ -40,6 +48,8 @@
 <meta name="keywords" content="CreateScale()">
 <meta name="keywords" content="CreateShadow()">
 <meta name="keywords" content="CreateTranslation()">
+<meta name="keywords" content="CreateViewport()">
+<meta name="keywords" content="CreateViewportLeftHanded()">
 <meta name="keywords" content="CreateWorld()">
 <meta name="keywords" content="Lerp()">
 <meta name="keywords" content="Multiply()">
@@ -64,7 +74,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9,"i5":9,"i6":9,"i7":9,"i8":9,"i9":9,"i10":9,"i11":9,"i12":9,"i13":9,"i14":9,"i15":9,"i16":9,"i17":9,"i18":9,"i19":9,"i20":9,"i21":9,"i22":9,"i23":9,"i24":9,"i25":9,"i26":9,"i27":9,"i28":9,"i29":9,"i30":9,"i31":10,"i32":10,"i33":9,"i34":10,"i35":10,"i36":10,"i37":10,"i38":10,"i39":10,"i40":10,"i41":9,"i42":9,"i43":9,"i44":9,"i45":9,"i46":10,"i47":10,"i48":9,"i49":9,"i50":9};
+var data = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9,"i5":9,"i6":9,"i7":9,"i8":9,"i9":9,"i10":9,"i11":9,"i12":9,"i13":9,"i14":9,"i15":9,"i16":9,"i17":9,"i18":9,"i19":9,"i20":9,"i21":9,"i22":9,"i23":9,"i24":9,"i25":9,"i26":9,"i27":9,"i28":9,"i29":9,"i30":9,"i31":9,"i32":9,"i33":9,"i34":9,"i35":9,"i36":9,"i37":9,"i38":9,"i39":9,"i40":9,"i41":10,"i42":10,"i43":9,"i44":10,"i45":10,"i46":10,"i47":10,"i48":10,"i49":10,"i50":10,"i51":9,"i52":9,"i53":9,"i54":9,"i55":9,"i56":10,"i57":10,"i58":9,"i59":9,"i60":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -173,7 +183,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <hr>
 <pre>public class <span class="typeNameLabel">Matrix4x4</span>
 extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
-<div class="block">The base .NET class managing System.Numerics.Matrix4x4, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e.
+<div class="block">The base .NET class managing System.Numerics.Matrix4x4, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e.
  <p>
  
  .NET documentation at <a href="https://docs.microsoft.com/en-us/dotnet/api/System.Numerics.Matrix4x4" target="_top">https://docs.microsoft.com/en-us/dotnet/api/System.Numerics.Matrix4x4</a>
@@ -208,7 +218,7 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <td class="colFirst"><code>static java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#assemblyFullName">assemblyFullName</a></span></code></th>
 <td class="colLast">
-<div class="block">Fully assembly qualified name: System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e</div>
+<div class="block">Fully assembly qualified name: System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e</div>
 </td>
 </tr>
 <tr class="rowColor">
@@ -364,13 +374,42 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>static <a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#CreateLookAtLeftHanded(system.numerics.Vector3,system.numerics.Vector3,system.numerics.Vector3)">CreateLookAtLeftHanded</a></span>&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;cameraPosition,
+                      <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;cameraTarget,
+                      <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;cameraUpVector)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i9" class="rowColor">
+<td class="colFirst"><code>static <a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#CreateLookTo(system.numerics.Vector3,system.numerics.Vector3,system.numerics.Vector3)">CreateLookTo</a></span>&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;cameraPosition,
+            <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;cameraDirection,
+            <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;cameraUpVector)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i10" class="altColor">
+<td class="colFirst"><code>static <a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#CreateLookToLeftHanded(system.numerics.Vector3,system.numerics.Vector3,system.numerics.Vector3)">CreateLookToLeftHanded</a></span>&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;cameraPosition,
+                      <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;cameraDirection,
+                      <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;cameraUpVector)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i11" class="rowColor">
+<td class="colFirst"><code>static <a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#CreateOrthographic(system.Single,system.Single,system.Single,system.Single)">CreateOrthographic</a></span>&#8203;(<a href="../Single.html" title="class in system">Single</a>&nbsp;width,
                   <a href="../Single.html" title="class in system">Single</a>&nbsp;height,
                   <a href="../Single.html" title="class in system">Single</a>&nbsp;zNearPlane,
                   <a href="../Single.html" title="class in system">Single</a>&nbsp;zFarPlane)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i12" class="altColor">
+<td class="colFirst"><code>static <a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#CreateOrthographicLeftHanded(system.Single,system.Single,system.Single,system.Single)">CreateOrthographicLeftHanded</a></span>&#8203;(<a href="../Single.html" title="class in system">Single</a>&nbsp;width,
+                            <a href="../Single.html" title="class in system">Single</a>&nbsp;height,
+                            <a href="../Single.html" title="class in system">Single</a>&nbsp;zNearPlane,
+                            <a href="../Single.html" title="class in system">Single</a>&nbsp;zFarPlane)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>static <a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#CreateOrthographicOffCenter(system.Single,system.Single,system.Single,system.Single,system.Single,system.Single)">CreateOrthographicOffCenter</a></span>&#8203;(<a href="../Single.html" title="class in system">Single</a>&nbsp;left,
                            <a href="../Single.html" title="class in system">Single</a>&nbsp;right,
@@ -380,7 +419,17 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
                            <a href="../Single.html" title="class in system">Single</a>&nbsp;zFarPlane)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i14" class="altColor">
+<td class="colFirst"><code>static <a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#CreateOrthographicOffCenterLeftHanded(system.Single,system.Single,system.Single,system.Single,system.Single,system.Single)">CreateOrthographicOffCenterLeftHanded</a></span>&#8203;(<a href="../Single.html" title="class in system">Single</a>&nbsp;left,
+                                     <a href="../Single.html" title="class in system">Single</a>&nbsp;right,
+                                     <a href="../Single.html" title="class in system">Single</a>&nbsp;bottom,
+                                     <a href="../Single.html" title="class in system">Single</a>&nbsp;top,
+                                     <a href="../Single.html" title="class in system">Single</a>&nbsp;zNearPlane,
+                                     <a href="../Single.html" title="class in system">Single</a>&nbsp;zFarPlane)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>static <a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#CreatePerspective(system.Single,system.Single,system.Single,system.Single)">CreatePerspective</a></span>&#8203;(<a href="../Single.html" title="class in system">Single</a>&nbsp;width,
                  <a href="../Single.html" title="class in system">Single</a>&nbsp;height,
@@ -388,7 +437,7 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
                  <a href="../Single.html" title="class in system">Single</a>&nbsp;farPlaneDistance)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>static <a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#CreatePerspectiveFieldOfView(system.Single,system.Single,system.Single,system.Single)">CreatePerspectiveFieldOfView</a></span>&#8203;(<a href="../Single.html" title="class in system">Single</a>&nbsp;fieldOfView,
                             <a href="../Single.html" title="class in system">Single</a>&nbsp;aspectRatio,
@@ -396,7 +445,23 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
                             <a href="../Single.html" title="class in system">Single</a>&nbsp;farPlaneDistance)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i17" class="rowColor">
+<td class="colFirst"><code>static <a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#CreatePerspectiveFieldOfViewLeftHanded(system.Single,system.Single,system.Single,system.Single)">CreatePerspectiveFieldOfViewLeftHanded</a></span>&#8203;(<a href="../Single.html" title="class in system">Single</a>&nbsp;fieldOfView,
+                                      <a href="../Single.html" title="class in system">Single</a>&nbsp;aspectRatio,
+                                      <a href="../Single.html" title="class in system">Single</a>&nbsp;nearPlaneDistance,
+                                      <a href="../Single.html" title="class in system">Single</a>&nbsp;farPlaneDistance)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i18" class="altColor">
+<td class="colFirst"><code>static <a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#CreatePerspectiveLeftHanded(system.Single,system.Single,system.Single,system.Single)">CreatePerspectiveLeftHanded</a></span>&#8203;(<a href="../Single.html" title="class in system">Single</a>&nbsp;width,
+                           <a href="../Single.html" title="class in system">Single</a>&nbsp;height,
+                           <a href="../Single.html" title="class in system">Single</a>&nbsp;nearPlaneDistance,
+                           <a href="../Single.html" title="class in system">Single</a>&nbsp;farPlaneDistance)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>static <a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#CreatePerspectiveOffCenter(system.Single,system.Single,system.Single,system.Single,system.Single,system.Single)">CreatePerspectiveOffCenter</a></span>&#8203;(<a href="../Single.html" title="class in system">Single</a>&nbsp;left,
                           <a href="../Single.html" title="class in system">Single</a>&nbsp;right,
@@ -406,74 +471,84 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
                           <a href="../Single.html" title="class in system">Single</a>&nbsp;farPlaneDistance)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i20" class="altColor">
+<td class="colFirst"><code>static <a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#CreatePerspectiveOffCenterLeftHanded(system.Single,system.Single,system.Single,system.Single,system.Single,system.Single)">CreatePerspectiveOffCenterLeftHanded</a></span>&#8203;(<a href="../Single.html" title="class in system">Single</a>&nbsp;left,
+                                    <a href="../Single.html" title="class in system">Single</a>&nbsp;right,
+                                    <a href="../Single.html" title="class in system">Single</a>&nbsp;bottom,
+                                    <a href="../Single.html" title="class in system">Single</a>&nbsp;top,
+                                    <a href="../Single.html" title="class in system">Single</a>&nbsp;nearPlaneDistance,
+                                    <a href="../Single.html" title="class in system">Single</a>&nbsp;farPlaneDistance)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code>static <a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#CreateReflection(system.numerics.Plane)">CreateReflection</a></span>&#8203;(<a href="Plane.html" title="class in system.numerics">Plane</a>&nbsp;value)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i22" class="altColor">
 <td class="colFirst"><code>static <a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#CreateRotationX(system.Single)">CreateRotationX</a></span>&#8203;(<a href="../Single.html" title="class in system">Single</a>&nbsp;radians)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code>static <a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#CreateRotationX(system.Single,system.numerics.Vector3)">CreateRotationX</a></span>&#8203;(<a href="../Single.html" title="class in system">Single</a>&nbsp;radians,
                <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;centerPoint)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code>static <a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#CreateRotationY(system.Single)">CreateRotationY</a></span>&#8203;(<a href="../Single.html" title="class in system">Single</a>&nbsp;radians)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code>static <a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#CreateRotationY(system.Single,system.numerics.Vector3)">CreateRotationY</a></span>&#8203;(<a href="../Single.html" title="class in system">Single</a>&nbsp;radians,
                <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;centerPoint)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i26" class="altColor">
 <td class="colFirst"><code>static <a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#CreateRotationZ(system.Single)">CreateRotationZ</a></span>&#8203;(<a href="../Single.html" title="class in system">Single</a>&nbsp;radians)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i27" class="rowColor">
 <td class="colFirst"><code>static <a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#CreateRotationZ(system.Single,system.numerics.Vector3)">CreateRotationZ</a></span>&#8203;(<a href="../Single.html" title="class in system">Single</a>&nbsp;radians,
                <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;centerPoint)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i28" class="altColor">
 <td class="colFirst"><code>static <a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#CreateScale(system.numerics.Vector3)">CreateScale</a></span>&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;scales)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i29" class="rowColor">
 <td class="colFirst"><code>static <a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#CreateScale(system.numerics.Vector3,system.numerics.Vector3)">CreateScale</a></span>&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;scales,
            <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;centerPoint)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i30" class="altColor">
 <td class="colFirst"><code>static <a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#CreateScale(system.Single)">CreateScale</a></span>&#8203;(<a href="../Single.html" title="class in system">Single</a>&nbsp;scale)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i31" class="rowColor">
 <td class="colFirst"><code>static <a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#CreateScale(system.Single,system.numerics.Vector3)">CreateScale</a></span>&#8203;(<a href="../Single.html" title="class in system">Single</a>&nbsp;scale,
            <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;centerPoint)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i24" class="altColor">
+<tr id="i32" class="altColor">
 <td class="colFirst"><code>static <a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#CreateScale(system.Single,system.Single,system.Single)">CreateScale</a></span>&#8203;(<a href="../Single.html" title="class in system">Single</a>&nbsp;xScale,
            <a href="../Single.html" title="class in system">Single</a>&nbsp;yScale,
            <a href="../Single.html" title="class in system">Single</a>&nbsp;zScale)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i25" class="rowColor">
+<tr id="i33" class="rowColor">
 <td class="colFirst"><code>static <a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#CreateScale(system.Single,system.Single,system.Single,system.numerics.Vector3)">CreateScale</a></span>&#8203;(<a href="../Single.html" title="class in system">Single</a>&nbsp;xScale,
            <a href="../Single.html" title="class in system">Single</a>&nbsp;yScale,
@@ -481,32 +556,52 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
            <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;centerPoint)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i26" class="altColor">
+<tr id="i34" class="altColor">
 <td class="colFirst"><code>static <a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#CreateShadow(system.numerics.Vector3,system.numerics.Plane)">CreateShadow</a></span>&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;lightDirection,
             <a href="Plane.html" title="class in system.numerics">Plane</a>&nbsp;plane)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i27" class="rowColor">
+<tr id="i35" class="rowColor">
 <td class="colFirst"><code>static <a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#CreateTranslation(system.numerics.Vector3)">CreateTranslation</a></span>&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;position)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i28" class="altColor">
+<tr id="i36" class="altColor">
 <td class="colFirst"><code>static <a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#CreateTranslation(system.Single,system.Single,system.Single)">CreateTranslation</a></span>&#8203;(<a href="../Single.html" title="class in system">Single</a>&nbsp;xPosition,
                  <a href="../Single.html" title="class in system">Single</a>&nbsp;yPosition,
                  <a href="../Single.html" title="class in system">Single</a>&nbsp;zPosition)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i29" class="rowColor">
+<tr id="i37" class="rowColor">
+<td class="colFirst"><code>static <a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#CreateViewport(system.Single,system.Single,system.Single,system.Single,system.Single,system.Single)">CreateViewport</a></span>&#8203;(<a href="../Single.html" title="class in system">Single</a>&nbsp;x,
+              <a href="../Single.html" title="class in system">Single</a>&nbsp;y,
+              <a href="../Single.html" title="class in system">Single</a>&nbsp;width,
+              <a href="../Single.html" title="class in system">Single</a>&nbsp;height,
+              <a href="../Single.html" title="class in system">Single</a>&nbsp;minDepth,
+              <a href="../Single.html" title="class in system">Single</a>&nbsp;maxDepth)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i38" class="altColor">
+<td class="colFirst"><code>static <a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#CreateViewportLeftHanded(system.Single,system.Single,system.Single,system.Single,system.Single,system.Single)">CreateViewportLeftHanded</a></span>&#8203;(<a href="../Single.html" title="class in system">Single</a>&nbsp;x,
+                        <a href="../Single.html" title="class in system">Single</a>&nbsp;y,
+                        <a href="../Single.html" title="class in system">Single</a>&nbsp;width,
+                        <a href="../Single.html" title="class in system">Single</a>&nbsp;height,
+                        <a href="../Single.html" title="class in system">Single</a>&nbsp;minDepth,
+                        <a href="../Single.html" title="class in system">Single</a>&nbsp;maxDepth)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i39" class="rowColor">
 <td class="colFirst"><code>static <a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#CreateWorld(system.numerics.Vector3,system.numerics.Vector3,system.numerics.Vector3)">CreateWorld</a></span>&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;position,
            <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;forward,
            <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;up)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i30" class="altColor">
+<tr id="i40" class="altColor">
 <td class="colFirst"><code>static boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Decompose(system.numerics.Matrix4x4,org.mases.jcobridge.netreflection.JCORefOut,org.mases.jcobridge.netreflection.JCORefOut,org.mases.jcobridge.netreflection.JCORefOut)">Decompose</a></span>&#8203;(<a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a>&nbsp;matrix,
          <a href="../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="Vector3.html" title="class in system.numerics">Vector3</a>&gt;&nbsp;scale,
@@ -514,119 +609,119 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
          <a href="../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="Vector3.html" title="class in system.numerics">Vector3</a>&gt;&nbsp;translation)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i31" class="rowColor">
+<tr id="i41" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Equals(system.numerics.Matrix4x4)">Equals</a></span>&#8203;(<a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a>&nbsp;other)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i32" class="altColor">
+<tr id="i42" class="altColor">
 <td class="colFirst"><code><a href="../Single.html" title="class in system">Single</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#GetDeterminant()">GetDeterminant</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i33" class="rowColor">
+<tr id="i43" class="rowColor">
 <td class="colFirst"><code>static <a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getIdentity()">getIdentity</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i34" class="altColor">
+<tr id="i44" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getIsIdentity()">getIsIdentity</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i35" class="rowColor">
+<tr id="i45" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getJCOAssemblyName()">getJCOAssemblyName</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the reflected Assembly name</div>
 </td>
 </tr>
-<tr id="i36" class="altColor">
+<tr id="i46" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getJCOClassName()">getJCOClassName</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the reflected Class name</div>
 </td>
 </tr>
-<tr id="i37" class="rowColor">
+<tr id="i47" class="rowColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getJCOInstance()">getJCOInstance</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the instantiated class</div>
 </td>
 </tr>
-<tr id="i38" class="altColor">
+<tr id="i48" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getJCOObjectName()">getJCOObjectName</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the reflected Class name used to build the object</div>
 </td>
 </tr>
-<tr id="i39" class="rowColor">
+<tr id="i49" class="rowColor">
 <td class="colFirst"><code><a href="https://www.jcobridge.com/api-java_2.5.21/org/mases/jcobridge/JCType.html?is-external=true" title="class or interface in org.mases.jcobridge" class="externalLink">JCType</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getJCOType()">getJCOType</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the instantiated class Type</div>
 </td>
 </tr>
-<tr id="i40" class="altColor">
+<tr id="i50" class="altColor">
 <td class="colFirst"><code><a href="Vector3.html" title="class in system.numerics">Vector3</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getTranslation()">getTranslation</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i41" class="rowColor">
+<tr id="i51" class="rowColor">
 <td class="colFirst"><code>static boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Invert(system.numerics.Matrix4x4,org.mases.jcobridge.netreflection.JCORefOut)">Invert</a></span>&#8203;(<a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a>&nbsp;matrix,
       <a href="../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a>&gt;&nbsp;result)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i42" class="altColor">
+<tr id="i52" class="altColor">
 <td class="colFirst"><code>static <a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Lerp(system.numerics.Matrix4x4,system.numerics.Matrix4x4,system.Single)">Lerp</a></span>&#8203;(<a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a>&nbsp;matrix1,
     <a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a>&nbsp;matrix2,
     <a href="../Single.html" title="class in system">Single</a>&nbsp;amount)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i43" class="rowColor">
+<tr id="i53" class="rowColor">
 <td class="colFirst"><code>static <a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Multiply(system.numerics.Matrix4x4,system.numerics.Matrix4x4)">Multiply</a></span>&#8203;(<a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a>&nbsp;value1,
         <a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a>&nbsp;value2)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i44" class="altColor">
+<tr id="i54" class="altColor">
 <td class="colFirst"><code>static <a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Multiply(system.numerics.Matrix4x4,system.Single)">Multiply</a></span>&#8203;(<a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a>&nbsp;value1,
         <a href="../Single.html" title="class in system">Single</a>&nbsp;value2)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i45" class="rowColor">
+<tr id="i55" class="rowColor">
 <td class="colFirst"><code>static <a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Negate(system.numerics.Matrix4x4)">Negate</a></span>&#8203;(<a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a>&nbsp;value)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i46" class="altColor">
+<tr id="i56" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setJCOInstance(org.mases.jcobridge.JCObject)">setJCOInstance</a></span>&#8203;(<a href="https://www.jcobridge.com/api-java_2.5.21/org/mases/jcobridge/JCObject.html?is-external=true" title="class or interface in org.mases.jcobridge" class="externalLink">JCObject</a>&nbsp;instance)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i47" class="rowColor">
+<tr id="i57" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setTranslation(system.numerics.Vector3)">setTranslation</a></span>&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;Translation)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i48" class="altColor">
+<tr id="i58" class="altColor">
 <td class="colFirst"><code>static <a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Subtract(system.numerics.Matrix4x4,system.numerics.Matrix4x4)">Subtract</a></span>&#8203;(<a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a>&nbsp;value1,
         <a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a>&nbsp;value2)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i49" class="rowColor">
+<tr id="i59" class="rowColor">
 <td class="colFirst"><code>static <a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Transform(system.numerics.Matrix4x4,system.numerics.Quaternion)">Transform</a></span>&#8203;(<a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a>&nbsp;value,
          <a href="Quaternion.html" title="class in system.numerics">Quaternion</a>&nbsp;rotation)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i50" class="altColor">
+<tr id="i60" class="altColor">
 <td class="colFirst"><code>static <a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Transpose(system.numerics.Matrix4x4)">Transpose</a></span>&#8203;(<a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a>&nbsp;matrix)</code></th>
 <td class="colLast">&nbsp;</td>
@@ -669,7 +764,7 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <li class="blockList">
 <h4>assemblyFullName</h4>
 <pre>public static final&nbsp;java.lang.String assemblyFullName</pre>
-<div class="block">Fully assembly qualified name: System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e</div>
+<div class="block">Fully assembly qualified name: System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../constant-values.html#system.numerics.Matrix4x4.assemblyFullName">Constant Field Values</a></dd>
@@ -775,10 +870,30 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
                  <a href="../Single.html" title="class in system">Single</a>&nbsp;m42,
                  <a href="../Single.html" title="class in system">Single</a>&nbsp;m43,
                  <a href="../Single.html" title="class in system">Single</a>&nbsp;m44)
-          throws java.lang.Throwable</pre>
+          throws java.lang.Throwable,
+                 <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
+                 <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                 <a href="../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                 <a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                 <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                 <a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                 <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                 <a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                 <a href="../RankException.html" title="class in system">RankException</a>,
+                 <a href="../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -789,10 +904,30 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <li class="blockList">
 <h4>Matrix4x4</h4>
 <pre>public&nbsp;Matrix4x4&#8203;(<a href="Matrix3x2.html" title="class in system.numerics">Matrix3x2</a>&nbsp;value)
-          throws java.lang.Throwable</pre>
+          throws java.lang.Throwable,
+                 <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
+                 <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                 <a href="../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                 <a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                 <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                 <a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                 <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                 <a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                 <a href="../RankException.html" title="class in system">RankException</a>,
+                 <a href="../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -944,10 +1079,26 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
                                 <a href="../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="Vector3.html" title="class in system.numerics">Vector3</a>&gt;&nbsp;scale,
                                 <a href="../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="Quaternion.html" title="class in system.numerics">Quaternion</a>&gt;&nbsp;rotation,
                                 <a href="../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="Vector3.html" title="class in system.numerics">Vector3</a>&gt;&nbsp;translation)
-                         throws java.lang.Throwable</pre>
+                         throws java.lang.Throwable,
+                                <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
+                                <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                <a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                <a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                <a href="../RankException.html" title="class in system">RankException</a>,
+                                <a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -961,10 +1112,8 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
                throws java.lang.Throwable,
                       <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
                       <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                      <a href="../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
                       <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                       <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                      <a href="../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                       <a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
                       <a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                       <a href="../RankException.html" title="class in system">RankException</a>,
@@ -974,10 +1123,8 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 <dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 <dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 <dd><code><a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
 <dd><code><a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../RankException.html" title="class in system">RankException</a></code></dd>
@@ -1000,10 +1147,10 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
                              <a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                              <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                              <a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
-                             <a href="../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
                              <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
                              <a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
-                             <a href="../RankException.html" title="class in system">RankException</a></pre>
+                             <a href="../RankException.html" title="class in system">RankException</a>,
+                             <a href="../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
@@ -1013,10 +1160,10 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <dd><code><a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
-<dd><code><a href="../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 <dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
 <dd><code><a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
 <dd><code><a href="../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1027,10 +1174,26 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <li class="blockList">
 <h4>GetDeterminant</h4>
 <pre class="methodSignature">public&nbsp;<a href="../Single.html" title="class in system">Single</a>&nbsp;GetDeterminant()
-                      throws java.lang.Throwable</pre>
+                      throws java.lang.Throwable,
+                             <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
+                             <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                             <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                             <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                             <a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                             <a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                             <a href="../RankException.html" title="class in system">RankException</a>,
+                             <a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1042,10 +1205,26 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <h4>Add</h4>
 <pre class="methodSignature">public static&nbsp;<a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a>&nbsp;Add&#8203;(<a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a>&nbsp;value1,
                             <a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a>&nbsp;value2)
-                     throws java.lang.Throwable</pre>
+                     throws java.lang.Throwable,
+                            <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
+                            <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                            <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                            <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                            <a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                            <a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                            <a href="../RankException.html" title="class in system">RankException</a>,
+                            <a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1059,10 +1238,18 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
                                         <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;cameraPosition,
                                         <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;cameraUpVector,
                                         <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;cameraForwardVector)
-                                 throws java.lang.Throwable</pre>
+                                 throws java.lang.Throwable,
+                                        <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                        <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
+                                        <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                        <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1077,10 +1264,18 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
                                                    <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;rotateAxis,
                                                    <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;cameraForwardVector,
                                                    <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;objectForwardVector)
-                                            throws java.lang.Throwable</pre>
+                                            throws java.lang.Throwable,
+                                                   <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                                   <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                   <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                                   <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1092,10 +1287,16 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <h4>CreateFromAxisAngle</h4>
 <pre class="methodSignature">public static&nbsp;<a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a>&nbsp;CreateFromAxisAngle&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;axis,
                                             <a href="../Single.html" title="class in system">Single</a>&nbsp;angle)
-                                     throws java.lang.Throwable</pre>
+                                     throws java.lang.Throwable,
+                                            <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                            <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                            <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1106,10 +1307,14 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <li class="blockList">
 <h4>CreateFromQuaternion</h4>
 <pre class="methodSignature">public static&nbsp;<a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a>&nbsp;CreateFromQuaternion&#8203;(<a href="Quaternion.html" title="class in system.numerics">Quaternion</a>&nbsp;quaternion)
-                                      throws java.lang.Throwable</pre>
+                                      throws java.lang.Throwable,
+                                             <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                             <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1122,10 +1327,16 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <pre class="methodSignature">public static&nbsp;<a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a>&nbsp;CreateFromYawPitchRoll&#8203;(<a href="../Single.html" title="class in system">Single</a>&nbsp;yaw,
                                                <a href="../Single.html" title="class in system">Single</a>&nbsp;pitch,
                                                <a href="../Single.html" title="class in system">Single</a>&nbsp;roll)
-                                        throws java.lang.Throwable</pre>
+                                        throws java.lang.Throwable,
+                                               <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                               <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                               <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1138,10 +1349,88 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <pre class="methodSignature">public static&nbsp;<a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a>&nbsp;CreateLookAt&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;cameraPosition,
                                      <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;cameraTarget,
                                      <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;cameraUpVector)
-                              throws java.lang.Throwable</pre>
+                              throws java.lang.Throwable,
+                                     <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
+                                     <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                     <a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                     <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                     <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="CreateLookAtLeftHanded(system.numerics.Vector3,system.numerics.Vector3,system.numerics.Vector3)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>CreateLookAtLeftHanded</h4>
+<pre class="methodSignature">public static&nbsp;<a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a>&nbsp;CreateLookAtLeftHanded&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;cameraPosition,
+                                               <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;cameraTarget,
+                                               <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;cameraUpVector)
+                                        throws java.lang.Throwable,
+                                               <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
+                                               <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                               <a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                               <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                               <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="CreateLookTo(system.numerics.Vector3,system.numerics.Vector3,system.numerics.Vector3)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>CreateLookTo</h4>
+<pre class="methodSignature">public static&nbsp;<a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a>&nbsp;CreateLookTo&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;cameraPosition,
+                                     <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;cameraDirection,
+                                     <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;cameraUpVector)
+                              throws java.lang.Throwable,
+                                     <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                     <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
+                                     <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="CreateLookToLeftHanded(system.numerics.Vector3,system.numerics.Vector3,system.numerics.Vector3)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>CreateLookToLeftHanded</h4>
+<pre class="methodSignature">public static&nbsp;<a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a>&nbsp;CreateLookToLeftHanded&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;cameraPosition,
+                                               <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;cameraDirection,
+                                               <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;cameraUpVector)
+                                        throws java.lang.Throwable,
+                                               <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                               <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1155,10 +1444,35 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
                                            <a href="../Single.html" title="class in system">Single</a>&nbsp;height,
                                            <a href="../Single.html" title="class in system">Single</a>&nbsp;zNearPlane,
                                            <a href="../Single.html" title="class in system">Single</a>&nbsp;zFarPlane)
-                                    throws java.lang.Throwable</pre>
+                                    throws java.lang.Throwable,
+                                           <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                           <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="CreateOrthographicLeftHanded(system.Single,system.Single,system.Single,system.Single)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>CreateOrthographicLeftHanded</h4>
+<pre class="methodSignature">public static&nbsp;<a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a>&nbsp;CreateOrthographicLeftHanded&#8203;(<a href="../Single.html" title="class in system">Single</a>&nbsp;width,
+                                                     <a href="../Single.html" title="class in system">Single</a>&nbsp;height,
+                                                     <a href="../Single.html" title="class in system">Single</a>&nbsp;zNearPlane,
+                                                     <a href="../Single.html" title="class in system">Single</a>&nbsp;zFarPlane)
+                                              throws java.lang.Throwable,
+                                                     <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                                     <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1174,10 +1488,37 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
                                                     <a href="../Single.html" title="class in system">Single</a>&nbsp;top,
                                                     <a href="../Single.html" title="class in system">Single</a>&nbsp;zNearPlane,
                                                     <a href="../Single.html" title="class in system">Single</a>&nbsp;zFarPlane)
-                                             throws java.lang.Throwable</pre>
+                                             throws java.lang.Throwable,
+                                                    <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                                    <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="CreateOrthographicOffCenterLeftHanded(system.Single,system.Single,system.Single,system.Single,system.Single,system.Single)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>CreateOrthographicOffCenterLeftHanded</h4>
+<pre class="methodSignature">public static&nbsp;<a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a>&nbsp;CreateOrthographicOffCenterLeftHanded&#8203;(<a href="../Single.html" title="class in system">Single</a>&nbsp;left,
+                                                              <a href="../Single.html" title="class in system">Single</a>&nbsp;right,
+                                                              <a href="../Single.html" title="class in system">Single</a>&nbsp;bottom,
+                                                              <a href="../Single.html" title="class in system">Single</a>&nbsp;top,
+                                                              <a href="../Single.html" title="class in system">Single</a>&nbsp;zNearPlane,
+                                                              <a href="../Single.html" title="class in system">Single</a>&nbsp;zFarPlane)
+                                                       throws java.lang.Throwable,
+                                                              <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                                              <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1194,27 +1535,27 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
                                    throws java.lang.Throwable,
                                           <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
                                           <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                                          <a href="../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                                          <a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                                           <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                          <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                          <a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                          <a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                          <a href="../RankException.html" title="class in system">RankException</a>,
                                           <a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
                                           <a href="../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
-                                          <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                                          <a href="../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
-                                          <a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></pre>
+                                          <a href="../FormatException.html" title="class in system">FormatException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 <dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../RankException.html" title="class in system">RankException</a></code></dd>
 <dd><code><a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
 <dd><code><a href="../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
-<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
-<dd><code><a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../FormatException.html" title="class in system">FormatException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1231,27 +1572,101 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
                                               throws java.lang.Throwable,
                                                      <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
                                                      <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                                                     <a href="../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                                                     <a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                                                      <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                                     <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                                     <a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                                     <a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                     <a href="../RankException.html" title="class in system">RankException</a>,
                                                      <a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
                                                      <a href="../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
-                                                     <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                                                     <a href="../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
-                                                     <a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></pre>
+                                                     <a href="../FormatException.html" title="class in system">FormatException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 <dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../RankException.html" title="class in system">RankException</a></code></dd>
 <dd><code><a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
 <dd><code><a href="../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../FormatException.html" title="class in system">FormatException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="CreatePerspectiveFieldOfViewLeftHanded(system.Single,system.Single,system.Single,system.Single)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>CreatePerspectiveFieldOfViewLeftHanded</h4>
+<pre class="methodSignature">public static&nbsp;<a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a>&nbsp;CreatePerspectiveFieldOfViewLeftHanded&#8203;(<a href="../Single.html" title="class in system">Single</a>&nbsp;fieldOfView,
+                                                               <a href="../Single.html" title="class in system">Single</a>&nbsp;aspectRatio,
+                                                               <a href="../Single.html" title="class in system">Single</a>&nbsp;nearPlaneDistance,
+                                                               <a href="../Single.html" title="class in system">Single</a>&nbsp;farPlaneDistance)
+                                                        throws java.lang.Throwable,
+                                                               <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                               <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                               <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                                               <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                                               <a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                                               <a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                               <a href="../RankException.html" title="class in system">RankException</a>,
+                                                               <a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                                                               <a href="../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                                               <a href="../FormatException.html" title="class in system">FormatException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
 <dd><code><a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../FormatException.html" title="class in system">FormatException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="CreatePerspectiveLeftHanded(system.Single,system.Single,system.Single,system.Single)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>CreatePerspectiveLeftHanded</h4>
+<pre class="methodSignature">public static&nbsp;<a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a>&nbsp;CreatePerspectiveLeftHanded&#8203;(<a href="../Single.html" title="class in system">Single</a>&nbsp;width,
+                                                    <a href="../Single.html" title="class in system">Single</a>&nbsp;height,
+                                                    <a href="../Single.html" title="class in system">Single</a>&nbsp;nearPlaneDistance,
+                                                    <a href="../Single.html" title="class in system">Single</a>&nbsp;farPlaneDistance)
+                                             throws java.lang.Throwable,
+                                                    <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                    <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                    <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                                    <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                                    <a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                                    <a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                    <a href="../RankException.html" title="class in system">RankException</a>,
+                                                    <a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                                                    <a href="../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                                    <a href="../FormatException.html" title="class in system">FormatException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../FormatException.html" title="class in system">FormatException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1270,27 +1685,66 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
                                             throws java.lang.Throwable,
                                                    <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
                                                    <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                                                   <a href="../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                                                   <a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                                                    <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                                   <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                                   <a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                                   <a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                   <a href="../RankException.html" title="class in system">RankException</a>,
                                                    <a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
                                                    <a href="../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
-                                                   <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                                                   <a href="../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
-                                                   <a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></pre>
+                                                   <a href="../FormatException.html" title="class in system">FormatException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 <dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../RankException.html" title="class in system">RankException</a></code></dd>
 <dd><code><a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
 <dd><code><a href="../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../FormatException.html" title="class in system">FormatException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="CreatePerspectiveOffCenterLeftHanded(system.Single,system.Single,system.Single,system.Single,system.Single,system.Single)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>CreatePerspectiveOffCenterLeftHanded</h4>
+<pre class="methodSignature">public static&nbsp;<a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a>&nbsp;CreatePerspectiveOffCenterLeftHanded&#8203;(<a href="../Single.html" title="class in system">Single</a>&nbsp;left,
+                                                             <a href="../Single.html" title="class in system">Single</a>&nbsp;right,
+                                                             <a href="../Single.html" title="class in system">Single</a>&nbsp;bottom,
+                                                             <a href="../Single.html" title="class in system">Single</a>&nbsp;top,
+                                                             <a href="../Single.html" title="class in system">Single</a>&nbsp;nearPlaneDistance,
+                                                             <a href="../Single.html" title="class in system">Single</a>&nbsp;farPlaneDistance)
+                                                      throws java.lang.Throwable,
+                                                             <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                             <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                             <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                                             <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                                             <a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                                             <a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                             <a href="../RankException.html" title="class in system">RankException</a>,
+                                                             <a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                                                             <a href="../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                                             <a href="../FormatException.html" title="class in system">FormatException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
 <dd><code><a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../FormatException.html" title="class in system">FormatException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1301,10 +1755,16 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <li class="blockList">
 <h4>CreateReflection</h4>
 <pre class="methodSignature">public static&nbsp;<a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a>&nbsp;CreateReflection&#8203;(<a href="Plane.html" title="class in system.numerics">Plane</a>&nbsp;value)
-                                  throws java.lang.Throwable</pre>
+                                  throws java.lang.Throwable,
+                                         <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                         <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                         <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1316,10 +1776,14 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <h4>CreateRotationX</h4>
 <pre class="methodSignature">public static&nbsp;<a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a>&nbsp;CreateRotationX&#8203;(<a href="../Single.html" title="class in system">Single</a>&nbsp;radians,
                                         <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;centerPoint)
-                                 throws java.lang.Throwable</pre>
+                                 throws java.lang.Throwable,
+                                        <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                        <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1330,10 +1794,14 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <li class="blockList">
 <h4>CreateRotationX</h4>
 <pre class="methodSignature">public static&nbsp;<a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a>&nbsp;CreateRotationX&#8203;(<a href="../Single.html" title="class in system">Single</a>&nbsp;radians)
-                                 throws java.lang.Throwable</pre>
+                                 throws java.lang.Throwable,
+                                        <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                        <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1345,10 +1813,14 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <h4>CreateRotationY</h4>
 <pre class="methodSignature">public static&nbsp;<a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a>&nbsp;CreateRotationY&#8203;(<a href="../Single.html" title="class in system">Single</a>&nbsp;radians,
                                         <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;centerPoint)
-                                 throws java.lang.Throwable</pre>
+                                 throws java.lang.Throwable,
+                                        <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                        <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1359,10 +1831,14 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <li class="blockList">
 <h4>CreateRotationY</h4>
 <pre class="methodSignature">public static&nbsp;<a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a>&nbsp;CreateRotationY&#8203;(<a href="../Single.html" title="class in system">Single</a>&nbsp;radians)
-                                 throws java.lang.Throwable</pre>
+                                 throws java.lang.Throwable,
+                                        <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                        <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1374,10 +1850,14 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <h4>CreateRotationZ</h4>
 <pre class="methodSignature">public static&nbsp;<a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a>&nbsp;CreateRotationZ&#8203;(<a href="../Single.html" title="class in system">Single</a>&nbsp;radians,
                                         <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;centerPoint)
-                                 throws java.lang.Throwable</pre>
+                                 throws java.lang.Throwable,
+                                        <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                        <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1388,10 +1868,14 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <li class="blockList">
 <h4>CreateRotationZ</h4>
 <pre class="methodSignature">public static&nbsp;<a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a>&nbsp;CreateRotationZ&#8203;(<a href="../Single.html" title="class in system">Single</a>&nbsp;radians)
-                                 throws java.lang.Throwable</pre>
+                                 throws java.lang.Throwable,
+                                        <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                        <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1405,10 +1889,16 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
                                     <a href="../Single.html" title="class in system">Single</a>&nbsp;yScale,
                                     <a href="../Single.html" title="class in system">Single</a>&nbsp;zScale,
                                     <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;centerPoint)
-                             throws java.lang.Throwable</pre>
+                             throws java.lang.Throwable,
+                                    <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                    <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                    <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1421,10 +1911,14 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <pre class="methodSignature">public static&nbsp;<a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a>&nbsp;CreateScale&#8203;(<a href="../Single.html" title="class in system">Single</a>&nbsp;xScale,
                                     <a href="../Single.html" title="class in system">Single</a>&nbsp;yScale,
                                     <a href="../Single.html" title="class in system">Single</a>&nbsp;zScale)
-                             throws java.lang.Throwable</pre>
+                             throws java.lang.Throwable,
+                                    <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                    <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1436,10 +1930,16 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <h4>CreateScale</h4>
 <pre class="methodSignature">public static&nbsp;<a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a>&nbsp;CreateScale&#8203;(<a href="../Single.html" title="class in system">Single</a>&nbsp;scale,
                                     <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;centerPoint)
-                             throws java.lang.Throwable</pre>
+                             throws java.lang.Throwable,
+                                    <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                    <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                    <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1450,10 +1950,14 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <li class="blockList">
 <h4>CreateScale</h4>
 <pre class="methodSignature">public static&nbsp;<a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a>&nbsp;CreateScale&#8203;(<a href="../Single.html" title="class in system">Single</a>&nbsp;scale)
-                             throws java.lang.Throwable</pre>
+                             throws java.lang.Throwable,
+                                    <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                    <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1465,10 +1969,16 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <h4>CreateScale</h4>
 <pre class="methodSignature">public static&nbsp;<a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a>&nbsp;CreateScale&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;scales,
                                     <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;centerPoint)
-                             throws java.lang.Throwable</pre>
+                             throws java.lang.Throwable,
+                                    <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                    <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                    <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1479,10 +1989,14 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <li class="blockList">
 <h4>CreateScale</h4>
 <pre class="methodSignature">public static&nbsp;<a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a>&nbsp;CreateScale&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;scales)
-                             throws java.lang.Throwable</pre>
+                             throws java.lang.Throwable,
+                                    <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                    <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1494,10 +2008,16 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <h4>CreateShadow</h4>
 <pre class="methodSignature">public static&nbsp;<a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a>&nbsp;CreateShadow&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;lightDirection,
                                      <a href="Plane.html" title="class in system.numerics">Plane</a>&nbsp;plane)
-                              throws java.lang.Throwable</pre>
+                              throws java.lang.Throwable,
+                                     <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                     <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                     <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1510,10 +2030,14 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <pre class="methodSignature">public static&nbsp;<a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a>&nbsp;CreateTranslation&#8203;(<a href="../Single.html" title="class in system">Single</a>&nbsp;xPosition,
                                           <a href="../Single.html" title="class in system">Single</a>&nbsp;yPosition,
                                           <a href="../Single.html" title="class in system">Single</a>&nbsp;zPosition)
-                                   throws java.lang.Throwable</pre>
+                                   throws java.lang.Throwable,
+                                          <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                          <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1524,10 +2048,62 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <li class="blockList">
 <h4>CreateTranslation</h4>
 <pre class="methodSignature">public static&nbsp;<a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a>&nbsp;CreateTranslation&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;position)
-                                   throws java.lang.Throwable</pre>
+                                   throws java.lang.Throwable,
+                                          <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                          <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                          <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="CreateViewport(system.Single,system.Single,system.Single,system.Single,system.Single,system.Single)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>CreateViewport</h4>
+<pre class="methodSignature">public static&nbsp;<a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a>&nbsp;CreateViewport&#8203;(<a href="../Single.html" title="class in system">Single</a>&nbsp;x,
+                                       <a href="../Single.html" title="class in system">Single</a>&nbsp;y,
+                                       <a href="../Single.html" title="class in system">Single</a>&nbsp;width,
+                                       <a href="../Single.html" title="class in system">Single</a>&nbsp;height,
+                                       <a href="../Single.html" title="class in system">Single</a>&nbsp;minDepth,
+                                       <a href="../Single.html" title="class in system">Single</a>&nbsp;maxDepth)
+                                throws java.lang.Throwable,
+                                       <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                       <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="CreateViewportLeftHanded(system.Single,system.Single,system.Single,system.Single,system.Single,system.Single)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>CreateViewportLeftHanded</h4>
+<pre class="methodSignature">public static&nbsp;<a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a>&nbsp;CreateViewportLeftHanded&#8203;(<a href="../Single.html" title="class in system">Single</a>&nbsp;x,
+                                                 <a href="../Single.html" title="class in system">Single</a>&nbsp;y,
+                                                 <a href="../Single.html" title="class in system">Single</a>&nbsp;width,
+                                                 <a href="../Single.html" title="class in system">Single</a>&nbsp;height,
+                                                 <a href="../Single.html" title="class in system">Single</a>&nbsp;minDepth,
+                                                 <a href="../Single.html" title="class in system">Single</a>&nbsp;maxDepth)
+                                          throws java.lang.Throwable,
+                                                 <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                                 <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1540,10 +2116,18 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <pre class="methodSignature">public static&nbsp;<a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a>&nbsp;CreateWorld&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;position,
                                     <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;forward,
                                     <a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;up)
-                             throws java.lang.Throwable</pre>
+                             throws java.lang.Throwable,
+                                    <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                    <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
+                                    <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                    <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1557,17 +2141,25 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
                              <a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a>&nbsp;matrix2,
                              <a href="../Single.html" title="class in system">Single</a>&nbsp;amount)
                       throws java.lang.Throwable,
-                             <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
                              <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
-                             <a href="../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                             <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></pre>
+                             <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                             <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                             <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                             <a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                             <a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                             <a href="../RankException.html" title="class in system">RankException</a>,
+                             <a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
 <dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 <dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1580,11 +2172,25 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <pre class="methodSignature">public static&nbsp;<a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a>&nbsp;Multiply&#8203;(<a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a>&nbsp;value1,
                                  <a href="../Single.html" title="class in system">Single</a>&nbsp;value2)
                           throws java.lang.Throwable,
-                                 <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></pre>
+                                 <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
+                                 <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                 <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                 <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                 <a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                 <a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                 <a href="../RankException.html" title="class in system">RankException</a>,
+                                 <a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 <dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1596,10 +2202,26 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <h4>Multiply</h4>
 <pre class="methodSignature">public static&nbsp;<a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a>&nbsp;Multiply&#8203;(<a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a>&nbsp;value1,
                                  <a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a>&nbsp;value2)
-                          throws java.lang.Throwable</pre>
+                          throws java.lang.Throwable,
+                                 <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
+                                 <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                 <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                 <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                 <a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                 <a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                 <a href="../RankException.html" title="class in system">RankException</a>,
+                                 <a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1611,15 +2233,25 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <h4>Negate</h4>
 <pre class="methodSignature">public static&nbsp;<a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a>&nbsp;Negate&#8203;(<a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a>&nbsp;value)
                         throws java.lang.Throwable,
-                               <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
                                <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
-                               <a href="../ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
+                               <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                               <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                               <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                               <a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                               <a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                               <a href="../RankException.html" title="class in system">RankException</a>,
+                               <a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
 <dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1631,10 +2263,26 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <h4>Subtract</h4>
 <pre class="methodSignature">public static&nbsp;<a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a>&nbsp;Subtract&#8203;(<a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a>&nbsp;value1,
                                  <a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a>&nbsp;value2)
-                          throws java.lang.Throwable</pre>
+                          throws java.lang.Throwable,
+                                 <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
+                                 <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                 <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                 <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                 <a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                 <a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                 <a href="../RankException.html" title="class in system">RankException</a>,
+                                 <a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1646,10 +2294,26 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <h4>Transform</h4>
 <pre class="methodSignature">public static&nbsp;<a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a>&nbsp;Transform&#8203;(<a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a>&nbsp;value,
                                   <a href="Quaternion.html" title="class in system.numerics">Quaternion</a>&nbsp;rotation)
-                           throws java.lang.Throwable</pre>
+                           throws java.lang.Throwable,
+                                  <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
+                                  <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                  <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                  <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                  <a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                  <a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                  <a href="../RankException.html" title="class in system">RankException</a>,
+                                  <a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1660,10 +2324,26 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <li class="blockList">
 <h4>Transpose</h4>
 <pre class="methodSignature">public static&nbsp;<a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a>&nbsp;Transpose&#8203;(<a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a>&nbsp;matrix)
-                           throws java.lang.Throwable</pre>
+                           throws java.lang.Throwable,
+                                  <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
+                                  <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                  <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                  <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                  <a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                  <a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                  <a href="../RankException.html" title="class in system">RankException</a>,
+                                  <a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1674,10 +2354,26 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <li class="blockList">
 <h4>getIsIdentity</h4>
 <pre class="methodSignature">public&nbsp;boolean&nbsp;getIsIdentity()
-                      throws java.lang.Throwable</pre>
+                      throws java.lang.Throwable,
+                             <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
+                             <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                             <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                             <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                             <a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                             <a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                             <a href="../RankException.html" title="class in system">RankException</a>,
+                             <a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1688,10 +2384,14 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <li class="blockList">
 <h4>getIdentity</h4>
 <pre class="methodSignature">public static&nbsp;<a href="Matrix4x4.html" title="class in system.numerics">Matrix4x4</a>&nbsp;getIdentity()
-                             throws java.lang.Throwable</pre>
+                             throws java.lang.Throwable,
+                                    <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                    <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1702,10 +2402,26 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <li class="blockList">
 <h4>getTranslation</h4>
 <pre class="methodSignature">public&nbsp;<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;getTranslation()
-                       throws java.lang.Throwable</pre>
+                       throws java.lang.Throwable,
+                              <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
+                              <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                              <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                              <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                              <a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                              <a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                              <a href="../RankException.html" title="class in system">RankException</a>,
+                              <a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1716,10 +2432,26 @@ extends <a href="../ValueType.html" title="class in system">ValueType</a></pre>
 <li class="blockList">
 <h4>setTranslation</h4>
 <pre class="methodSignature">public&nbsp;void&nbsp;setTranslation&#8203;(<a href="Vector3.html" title="class in system.numerics">Vector3</a>&nbsp;Translation)
-                    throws java.lang.Throwable</pre>
+                    throws java.lang.Throwable,
+                           <a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
+                           <a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                           <a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                           <a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                           <a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                           <a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                           <a href="../RankException.html" title="class in system">RankException</a>,
+                           <a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
 </dl>
 </li>
 </ul>

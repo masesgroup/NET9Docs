@@ -153,7 +153,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <pre>public class <span class="typeNameLabel">EventLogConfiguration</span>
 extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>
 implements java.lang.AutoCloseable</pre>
-<div class="block">The base .NET class managing System.Diagnostics.Eventing.Reader.EventLogConfiguration, System.Diagnostics.EventLog, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51.
+<div class="block">The base .NET class managing System.Diagnostics.Eventing.Reader.EventLogConfiguration, System.Diagnostics.EventLog, Version=9.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51.
  <p>
  
  .NET documentation at <a href="https://docs.microsoft.com/en-us/dotnet/api/System.Diagnostics.Eventing.Reader.EventLogConfiguration" target="_top">https://docs.microsoft.com/en-us/dotnet/api/System.Diagnostics.Eventing.Reader.EventLogConfiguration</a>
@@ -188,7 +188,7 @@ implements java.lang.AutoCloseable</pre>
 <td class="colFirst"><code>static java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#assemblyFullName">assemblyFullName</a></span></code></th>
 <td class="colLast">
-<div class="block">Fully assembly qualified name: System.Diagnostics.EventLog, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51</div>
+<div class="block">Fully assembly qualified name: System.Diagnostics.EventLog, Version=9.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51</div>
 </td>
 </tr>
 <tr class="rowColor">
@@ -448,7 +448,7 @@ implements java.lang.AutoCloseable</pre>
 <li class="blockList">
 <h4>assemblyFullName</h4>
 <pre>public static final&nbsp;java.lang.String assemblyFullName</pre>
-<div class="block">Fully assembly qualified name: System.Diagnostics.EventLog, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51</div>
+<div class="block">Fully assembly qualified name: System.Diagnostics.EventLog, Version=9.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../constant-values.html#system.diagnostics.eventing.reader.EventLogConfiguration.assemblyFullName">Constant Field Values</a></dd>
@@ -541,9 +541,12 @@ implements java.lang.AutoCloseable</pre>
 <pre>public&nbsp;EventLogConfiguration&#8203;(java.lang.String&nbsp;logName,
                              <a href="EventLogSession.html" title="class in system.diagnostics.eventing.reader">EventLogSession</a>&nbsp;session)
                       throws java.lang.Throwable,
-                             <a href="../../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                             <a href="../../../ArgumentException.html" title="class in system">ArgumentException</a>,
                              <a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                             <a href="../../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                             <a href="../../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                             <a href="../../../MissingMethodException.html" title="class in system">MissingMethodException</a>,
+                             <a href="../../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
+                             <a href="../../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
                              <a href="EventLogNotFoundException.html" title="class in system.diagnostics.eventing.reader">EventLogNotFoundException</a>,
                              <a href="EventLogInvalidDataException.html" title="class in system.diagnostics.eventing.reader">EventLogInvalidDataException</a>,
                              <a href="../../../OperationCanceledException.html" title="class in system">OperationCanceledException</a>,
@@ -554,9 +557,12 @@ implements java.lang.AutoCloseable</pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 <dd><code><a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
+<dd><code><a href="../../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
+<dd><code><a href="../../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
 <dd><code><a href="EventLogNotFoundException.html" title="class in system.diagnostics.eventing.reader">EventLogNotFoundException</a></code></dd>
 <dd><code><a href="EventLogInvalidDataException.html" title="class in system.diagnostics.eventing.reader">EventLogInvalidDataException</a></code></dd>
 <dd><code><a href="../../../OperationCanceledException.html" title="class in system">OperationCanceledException</a></code></dd>
@@ -576,6 +582,10 @@ implements java.lang.AutoCloseable</pre>
 <pre>public&nbsp;EventLogConfiguration&#8203;(java.lang.String&nbsp;logName)
                       throws java.lang.Throwable,
                              <a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                             <a href="../../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                             <a href="../../../MissingMethodException.html" title="class in system">MissingMethodException</a>,
+                             <a href="../../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
+                             <a href="../../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
                              <a href="EventLogNotFoundException.html" title="class in system.diagnostics.eventing.reader">EventLogNotFoundException</a>,
                              <a href="EventLogInvalidDataException.html" title="class in system.diagnostics.eventing.reader">EventLogInvalidDataException</a>,
                              <a href="../../../OperationCanceledException.html" title="class in system">OperationCanceledException</a>,
@@ -587,6 +597,10 @@ implements java.lang.AutoCloseable</pre>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
+<dd><code><a href="../../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
+<dd><code><a href="../../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
 <dd><code><a href="EventLogNotFoundException.html" title="class in system.diagnostics.eventing.reader">EventLogNotFoundException</a></code></dd>
 <dd><code><a href="EventLogInvalidDataException.html" title="class in system.diagnostics.eventing.reader">EventLogInvalidDataException</a></code></dd>
 <dd><code><a href="../../../OperationCanceledException.html" title="class in system">OperationCanceledException</a></code></dd>
@@ -743,23 +757,13 @@ implements java.lang.AutoCloseable</pre>
 <h4>Dispose</h4>
 <pre class="methodSignature">public&nbsp;void&nbsp;Dispose()
              throws java.lang.Throwable,
-                    <a href="../../../ArgumentException.html" title="class in system">ArgumentException</a>,
-                    <a href="../../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                    <a href="../../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                    <a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                    <a href="../../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                    <a href="../../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                    <a href="../../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></pre>
+                    <a href="../../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                    <a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="../../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 <dd><code><a href="../../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -771,18 +775,9 @@ implements java.lang.AutoCloseable</pre>
 <h4>SaveChanges</h4>
 <pre class="methodSignature">public&nbsp;void&nbsp;SaveChanges()
                  throws java.lang.Throwable,
+                        <a href="../../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
                         <a href="EventLogNotFoundException.html" title="class in system.diagnostics.eventing.reader">EventLogNotFoundException</a>,
                         <a href="EventLogInvalidDataException.html" title="class in system.diagnostics.eventing.reader">EventLogInvalidDataException</a>,
-                        <a href="../../../ArgumentException.html" title="class in system">ArgumentException</a>,
-                        <a href="../../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                        <a href="../../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
-                        <a href="../../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                        <a href="../../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                        <a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                        <a href="../../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
-                        <a href="../../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                        <a href="../../../RankException.html" title="class in system">RankException</a>,
-                        <a href="../../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
                         <a href="../../../OperationCanceledException.html" title="class in system">OperationCanceledException</a>,
                         <a href="EventLogProviderDisabledException.html" title="class in system.diagnostics.eventing.reader">EventLogProviderDisabledException</a>,
                         <a href="../../../UnauthorizedAccessException.html" title="class in system">UnauthorizedAccessException</a>,
@@ -791,18 +786,9 @@ implements java.lang.AutoCloseable</pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
 <dd><code><a href="EventLogNotFoundException.html" title="class in system.diagnostics.eventing.reader">EventLogNotFoundException</a></code></dd>
 <dd><code><a href="EventLogInvalidDataException.html" title="class in system.diagnostics.eventing.reader">EventLogInvalidDataException</a></code></dd>
-<dd><code><a href="../../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
-<dd><code><a href="../../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="../../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
-<dd><code><a href="../../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../../RankException.html" title="class in system">RankException</a></code></dd>
-<dd><code><a href="../../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
 <dd><code><a href="../../../OperationCanceledException.html" title="class in system">OperationCanceledException</a></code></dd>
 <dd><code><a href="EventLogProviderDisabledException.html" title="class in system.diagnostics.eventing.reader">EventLogProviderDisabledException</a></code></dd>
 <dd><code><a href="../../../UnauthorizedAccessException.html" title="class in system">UnauthorizedAccessException</a></code></dd>
@@ -835,56 +821,48 @@ implements java.lang.AutoCloseable</pre>
 <h4>getIsClassicLog</h4>
 <pre class="methodSignature">public&nbsp;boolean&nbsp;getIsClassicLog()
                         throws java.lang.Throwable,
+                               <a href="../../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
                                <a href="EventLogNotFoundException.html" title="class in system.diagnostics.eventing.reader">EventLogNotFoundException</a>,
                                <a href="EventLogInvalidDataException.html" title="class in system.diagnostics.eventing.reader">EventLogInvalidDataException</a>,
-                               <a href="../../../ArgumentException.html" title="class in system">ArgumentException</a>,
-                               <a href="../../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                               <a href="../../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
-                               <a href="../../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                               <a href="../../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                               <a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                               <a href="../../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
-                               <a href="../../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                               <a href="../../../RankException.html" title="class in system">RankException</a>,
-                               <a href="../../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
                                <a href="../../../OperationCanceledException.html" title="class in system">OperationCanceledException</a>,
                                <a href="EventLogProviderDisabledException.html" title="class in system.diagnostics.eventing.reader">EventLogProviderDisabledException</a>,
                                <a href="../../../UnauthorizedAccessException.html" title="class in system">UnauthorizedAccessException</a>,
                                <a href="EventLogReadingException.html" title="class in system.diagnostics.eventing.reader">EventLogReadingException</a>,
                                <a href="EventLogException.html" title="class in system.diagnostics.eventing.reader">EventLogException</a>,
+                               <a href="../../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                                <a href="../../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
-                               <a href="../../../MethodAccessException.html" title="class in system">MethodAccessException</a>,
+                               <a href="../../../ArgumentException.html" title="class in system">ArgumentException</a>,
+                               <a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                               <a href="../../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
                                <a href="../../../MissingMethodException.html" title="class in system">MissingMethodException</a>,
-                               <a href="../../../MemberAccessException.html" title="class in system">MemberAccessException</a>,
                                <a href="../../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
                                <a href="../../../AccessViolationException.html" title="class in system">AccessViolationException</a>,
+                               <a href="../../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                               <a href="../../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                               <a href="../../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
                                <a href="../../../OverflowException.html" title="class in system">OverflowException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
 <dd><code><a href="EventLogNotFoundException.html" title="class in system.diagnostics.eventing.reader">EventLogNotFoundException</a></code></dd>
 <dd><code><a href="EventLogInvalidDataException.html" title="class in system.diagnostics.eventing.reader">EventLogInvalidDataException</a></code></dd>
-<dd><code><a href="../../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
-<dd><code><a href="../../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="../../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
-<dd><code><a href="../../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../../RankException.html" title="class in system">RankException</a></code></dd>
-<dd><code><a href="../../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
 <dd><code><a href="../../../OperationCanceledException.html" title="class in system">OperationCanceledException</a></code></dd>
 <dd><code><a href="EventLogProviderDisabledException.html" title="class in system.diagnostics.eventing.reader">EventLogProviderDisabledException</a></code></dd>
 <dd><code><a href="../../../UnauthorizedAccessException.html" title="class in system">UnauthorizedAccessException</a></code></dd>
 <dd><code><a href="EventLogReadingException.html" title="class in system.diagnostics.eventing.reader">EventLogReadingException</a></code></dd>
 <dd><code><a href="EventLogException.html" title="class in system.diagnostics.eventing.reader">EventLogException</a></code></dd>
+<dd><code><a href="../../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="../../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
-<dd><code><a href="../../../MethodAccessException.html" title="class in system">MethodAccessException</a></code></dd>
+<dd><code><a href="../../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
 <dd><code><a href="../../../MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
-<dd><code><a href="../../../MemberAccessException.html" title="class in system">MemberAccessException</a></code></dd>
 <dd><code><a href="../../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
 <dd><code><a href="../../../AccessViolationException.html" title="class in system">AccessViolationException</a></code></dd>
+<dd><code><a href="../../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
 <dd><code><a href="../../../OverflowException.html" title="class in system">OverflowException</a></code></dd>
 </dl>
 </li>
@@ -897,56 +875,48 @@ implements java.lang.AutoCloseable</pre>
 <h4>getIsEnabled</h4>
 <pre class="methodSignature">public&nbsp;boolean&nbsp;getIsEnabled()
                      throws java.lang.Throwable,
+                            <a href="../../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
                             <a href="EventLogNotFoundException.html" title="class in system.diagnostics.eventing.reader">EventLogNotFoundException</a>,
                             <a href="EventLogInvalidDataException.html" title="class in system.diagnostics.eventing.reader">EventLogInvalidDataException</a>,
-                            <a href="../../../ArgumentException.html" title="class in system">ArgumentException</a>,
-                            <a href="../../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                            <a href="../../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
-                            <a href="../../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                            <a href="../../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                            <a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                            <a href="../../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
-                            <a href="../../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                            <a href="../../../RankException.html" title="class in system">RankException</a>,
-                            <a href="../../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
                             <a href="../../../OperationCanceledException.html" title="class in system">OperationCanceledException</a>,
                             <a href="EventLogProviderDisabledException.html" title="class in system.diagnostics.eventing.reader">EventLogProviderDisabledException</a>,
                             <a href="../../../UnauthorizedAccessException.html" title="class in system">UnauthorizedAccessException</a>,
                             <a href="EventLogReadingException.html" title="class in system.diagnostics.eventing.reader">EventLogReadingException</a>,
                             <a href="EventLogException.html" title="class in system.diagnostics.eventing.reader">EventLogException</a>,
+                            <a href="../../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                             <a href="../../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
-                            <a href="../../../MethodAccessException.html" title="class in system">MethodAccessException</a>,
+                            <a href="../../../ArgumentException.html" title="class in system">ArgumentException</a>,
+                            <a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                            <a href="../../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
                             <a href="../../../MissingMethodException.html" title="class in system">MissingMethodException</a>,
-                            <a href="../../../MemberAccessException.html" title="class in system">MemberAccessException</a>,
                             <a href="../../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
                             <a href="../../../AccessViolationException.html" title="class in system">AccessViolationException</a>,
+                            <a href="../../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                            <a href="../../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                            <a href="../../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
                             <a href="../../../OverflowException.html" title="class in system">OverflowException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
 <dd><code><a href="EventLogNotFoundException.html" title="class in system.diagnostics.eventing.reader">EventLogNotFoundException</a></code></dd>
 <dd><code><a href="EventLogInvalidDataException.html" title="class in system.diagnostics.eventing.reader">EventLogInvalidDataException</a></code></dd>
-<dd><code><a href="../../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
-<dd><code><a href="../../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="../../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
-<dd><code><a href="../../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../../RankException.html" title="class in system">RankException</a></code></dd>
-<dd><code><a href="../../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
 <dd><code><a href="../../../OperationCanceledException.html" title="class in system">OperationCanceledException</a></code></dd>
 <dd><code><a href="EventLogProviderDisabledException.html" title="class in system.diagnostics.eventing.reader">EventLogProviderDisabledException</a></code></dd>
 <dd><code><a href="../../../UnauthorizedAccessException.html" title="class in system">UnauthorizedAccessException</a></code></dd>
 <dd><code><a href="EventLogReadingException.html" title="class in system.diagnostics.eventing.reader">EventLogReadingException</a></code></dd>
 <dd><code><a href="EventLogException.html" title="class in system.diagnostics.eventing.reader">EventLogException</a></code></dd>
+<dd><code><a href="../../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="../../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
-<dd><code><a href="../../../MethodAccessException.html" title="class in system">MethodAccessException</a></code></dd>
+<dd><code><a href="../../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
 <dd><code><a href="../../../MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
-<dd><code><a href="../../../MemberAccessException.html" title="class in system">MemberAccessException</a></code></dd>
 <dd><code><a href="../../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
 <dd><code><a href="../../../AccessViolationException.html" title="class in system">AccessViolationException</a></code></dd>
+<dd><code><a href="../../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
 <dd><code><a href="../../../OverflowException.html" title="class in system">OverflowException</a></code></dd>
 </dl>
 </li>
@@ -959,14 +929,15 @@ implements java.lang.AutoCloseable</pre>
 <h4>setIsEnabled</h4>
 <pre class="methodSignature">public&nbsp;void&nbsp;setIsEnabled&#8203;(boolean&nbsp;IsEnabled)
                   throws java.lang.Throwable,
-                         <a href="../../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                         <a href="../../../ArgumentException.html" title="class in system">ArgumentException</a>,
                          <a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                         <a href="../../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
                          <a href="../../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                         <a href="../../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
                          <a href="../../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
-                         <a href="../../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                         <a href="../../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
                          <a href="../../../FormatException.html" title="class in system">FormatException</a>,
+                         <a href="../../../ArgumentException.html" title="class in system">ArgumentException</a>,
+                         <a href="../../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                         <a href="../../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
                          <a href="EventLogNotFoundException.html" title="class in system.diagnostics.eventing.reader">EventLogNotFoundException</a>,
                          <a href="EventLogInvalidDataException.html" title="class in system.diagnostics.eventing.reader">EventLogInvalidDataException</a>,
                          <a href="../../../OperationCanceledException.html" title="class in system">OperationCanceledException</a>,
@@ -977,14 +948,15 @@ implements java.lang.AutoCloseable</pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 <dd><code><a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 <dd><code><a href="../../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 <dd><code><a href="../../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
-<dd><code><a href="../../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 <dd><code><a href="../../../FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
 <dd><code><a href="EventLogNotFoundException.html" title="class in system.diagnostics.eventing.reader">EventLogNotFoundException</a></code></dd>
 <dd><code><a href="EventLogInvalidDataException.html" title="class in system.diagnostics.eventing.reader">EventLogInvalidDataException</a></code></dd>
 <dd><code><a href="../../../OperationCanceledException.html" title="class in system">OperationCanceledException</a></code></dd>
@@ -1003,56 +975,48 @@ implements java.lang.AutoCloseable</pre>
 <h4>getMaximumSizeInBytes</h4>
 <pre class="methodSignature">public&nbsp;long&nbsp;getMaximumSizeInBytes()
                            throws java.lang.Throwable,
+                                  <a href="../../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
                                   <a href="EventLogNotFoundException.html" title="class in system.diagnostics.eventing.reader">EventLogNotFoundException</a>,
                                   <a href="EventLogInvalidDataException.html" title="class in system.diagnostics.eventing.reader">EventLogInvalidDataException</a>,
-                                  <a href="../../../ArgumentException.html" title="class in system">ArgumentException</a>,
-                                  <a href="../../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                                  <a href="../../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
-                                  <a href="../../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                                  <a href="../../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                                  <a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                                  <a href="../../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
-                                  <a href="../../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                                  <a href="../../../RankException.html" title="class in system">RankException</a>,
-                                  <a href="../../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
                                   <a href="../../../OperationCanceledException.html" title="class in system">OperationCanceledException</a>,
                                   <a href="EventLogProviderDisabledException.html" title="class in system.diagnostics.eventing.reader">EventLogProviderDisabledException</a>,
                                   <a href="../../../UnauthorizedAccessException.html" title="class in system">UnauthorizedAccessException</a>,
                                   <a href="EventLogReadingException.html" title="class in system.diagnostics.eventing.reader">EventLogReadingException</a>,
                                   <a href="EventLogException.html" title="class in system.diagnostics.eventing.reader">EventLogException</a>,
+                                  <a href="../../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                                   <a href="../../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
-                                  <a href="../../../MethodAccessException.html" title="class in system">MethodAccessException</a>,
+                                  <a href="../../../ArgumentException.html" title="class in system">ArgumentException</a>,
+                                  <a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                  <a href="../../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
                                   <a href="../../../MissingMethodException.html" title="class in system">MissingMethodException</a>,
-                                  <a href="../../../MemberAccessException.html" title="class in system">MemberAccessException</a>,
                                   <a href="../../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
                                   <a href="../../../AccessViolationException.html" title="class in system">AccessViolationException</a>,
+                                  <a href="../../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                  <a href="../../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                  <a href="../../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
                                   <a href="../../../OverflowException.html" title="class in system">OverflowException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
 <dd><code><a href="EventLogNotFoundException.html" title="class in system.diagnostics.eventing.reader">EventLogNotFoundException</a></code></dd>
 <dd><code><a href="EventLogInvalidDataException.html" title="class in system.diagnostics.eventing.reader">EventLogInvalidDataException</a></code></dd>
-<dd><code><a href="../../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
-<dd><code><a href="../../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="../../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
-<dd><code><a href="../../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../../RankException.html" title="class in system">RankException</a></code></dd>
-<dd><code><a href="../../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
 <dd><code><a href="../../../OperationCanceledException.html" title="class in system">OperationCanceledException</a></code></dd>
 <dd><code><a href="EventLogProviderDisabledException.html" title="class in system.diagnostics.eventing.reader">EventLogProviderDisabledException</a></code></dd>
 <dd><code><a href="../../../UnauthorizedAccessException.html" title="class in system">UnauthorizedAccessException</a></code></dd>
 <dd><code><a href="EventLogReadingException.html" title="class in system.diagnostics.eventing.reader">EventLogReadingException</a></code></dd>
 <dd><code><a href="EventLogException.html" title="class in system.diagnostics.eventing.reader">EventLogException</a></code></dd>
+<dd><code><a href="../../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="../../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
-<dd><code><a href="../../../MethodAccessException.html" title="class in system">MethodAccessException</a></code></dd>
+<dd><code><a href="../../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
 <dd><code><a href="../../../MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
-<dd><code><a href="../../../MemberAccessException.html" title="class in system">MemberAccessException</a></code></dd>
 <dd><code><a href="../../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
 <dd><code><a href="../../../AccessViolationException.html" title="class in system">AccessViolationException</a></code></dd>
+<dd><code><a href="../../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
 <dd><code><a href="../../../OverflowException.html" title="class in system">OverflowException</a></code></dd>
 </dl>
 </li>
@@ -1065,14 +1029,15 @@ implements java.lang.AutoCloseable</pre>
 <h4>setMaximumSizeInBytes</h4>
 <pre class="methodSignature">public&nbsp;void&nbsp;setMaximumSizeInBytes&#8203;(long&nbsp;MaximumSizeInBytes)
                            throws java.lang.Throwable,
-                                  <a href="../../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                                  <a href="../../../ArgumentException.html" title="class in system">ArgumentException</a>,
                                   <a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                                  <a href="../../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
                                   <a href="../../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                  <a href="../../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
                                   <a href="../../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
-                                  <a href="../../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                  <a href="../../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
                                   <a href="../../../FormatException.html" title="class in system">FormatException</a>,
+                                  <a href="../../../ArgumentException.html" title="class in system">ArgumentException</a>,
+                                  <a href="../../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                  <a href="../../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
                                   <a href="EventLogNotFoundException.html" title="class in system.diagnostics.eventing.reader">EventLogNotFoundException</a>,
                                   <a href="EventLogInvalidDataException.html" title="class in system.diagnostics.eventing.reader">EventLogInvalidDataException</a>,
                                   <a href="../../../OperationCanceledException.html" title="class in system">OperationCanceledException</a>,
@@ -1083,14 +1048,15 @@ implements java.lang.AutoCloseable</pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 <dd><code><a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 <dd><code><a href="../../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 <dd><code><a href="../../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
-<dd><code><a href="../../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 <dd><code><a href="../../../FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
 <dd><code><a href="EventLogNotFoundException.html" title="class in system.diagnostics.eventing.reader">EventLogNotFoundException</a></code></dd>
 <dd><code><a href="EventLogInvalidDataException.html" title="class in system.diagnostics.eventing.reader">EventLogInvalidDataException</a></code></dd>
 <dd><code><a href="../../../OperationCanceledException.html" title="class in system">OperationCanceledException</a></code></dd>
@@ -1109,56 +1075,48 @@ implements java.lang.AutoCloseable</pre>
 <h4>getLogIsolation</h4>
 <pre class="methodSignature">public&nbsp;<a href="EventLogIsolation.html" title="class in system.diagnostics.eventing.reader">EventLogIsolation</a>&nbsp;getLogIsolation()
                                   throws java.lang.Throwable,
+                                         <a href="../../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
                                          <a href="EventLogNotFoundException.html" title="class in system.diagnostics.eventing.reader">EventLogNotFoundException</a>,
                                          <a href="EventLogInvalidDataException.html" title="class in system.diagnostics.eventing.reader">EventLogInvalidDataException</a>,
-                                         <a href="../../../ArgumentException.html" title="class in system">ArgumentException</a>,
-                                         <a href="../../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                                         <a href="../../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
-                                         <a href="../../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                                         <a href="../../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                                         <a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                                         <a href="../../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
-                                         <a href="../../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                                         <a href="../../../RankException.html" title="class in system">RankException</a>,
-                                         <a href="../../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
                                          <a href="../../../OperationCanceledException.html" title="class in system">OperationCanceledException</a>,
                                          <a href="EventLogProviderDisabledException.html" title="class in system.diagnostics.eventing.reader">EventLogProviderDisabledException</a>,
                                          <a href="../../../UnauthorizedAccessException.html" title="class in system">UnauthorizedAccessException</a>,
                                          <a href="EventLogReadingException.html" title="class in system.diagnostics.eventing.reader">EventLogReadingException</a>,
                                          <a href="EventLogException.html" title="class in system.diagnostics.eventing.reader">EventLogException</a>,
+                                         <a href="../../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                                          <a href="../../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
-                                         <a href="../../../MethodAccessException.html" title="class in system">MethodAccessException</a>,
+                                         <a href="../../../ArgumentException.html" title="class in system">ArgumentException</a>,
+                                         <a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                         <a href="../../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
                                          <a href="../../../MissingMethodException.html" title="class in system">MissingMethodException</a>,
-                                         <a href="../../../MemberAccessException.html" title="class in system">MemberAccessException</a>,
                                          <a href="../../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
                                          <a href="../../../AccessViolationException.html" title="class in system">AccessViolationException</a>,
+                                         <a href="../../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                         <a href="../../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                         <a href="../../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
                                          <a href="../../../OverflowException.html" title="class in system">OverflowException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
 <dd><code><a href="EventLogNotFoundException.html" title="class in system.diagnostics.eventing.reader">EventLogNotFoundException</a></code></dd>
 <dd><code><a href="EventLogInvalidDataException.html" title="class in system.diagnostics.eventing.reader">EventLogInvalidDataException</a></code></dd>
-<dd><code><a href="../../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
-<dd><code><a href="../../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="../../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
-<dd><code><a href="../../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../../RankException.html" title="class in system">RankException</a></code></dd>
-<dd><code><a href="../../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
 <dd><code><a href="../../../OperationCanceledException.html" title="class in system">OperationCanceledException</a></code></dd>
 <dd><code><a href="EventLogProviderDisabledException.html" title="class in system.diagnostics.eventing.reader">EventLogProviderDisabledException</a></code></dd>
 <dd><code><a href="../../../UnauthorizedAccessException.html" title="class in system">UnauthorizedAccessException</a></code></dd>
 <dd><code><a href="EventLogReadingException.html" title="class in system.diagnostics.eventing.reader">EventLogReadingException</a></code></dd>
 <dd><code><a href="EventLogException.html" title="class in system.diagnostics.eventing.reader">EventLogException</a></code></dd>
+<dd><code><a href="../../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="../../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
-<dd><code><a href="../../../MethodAccessException.html" title="class in system">MethodAccessException</a></code></dd>
+<dd><code><a href="../../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
 <dd><code><a href="../../../MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
-<dd><code><a href="../../../MemberAccessException.html" title="class in system">MemberAccessException</a></code></dd>
 <dd><code><a href="../../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
 <dd><code><a href="../../../AccessViolationException.html" title="class in system">AccessViolationException</a></code></dd>
+<dd><code><a href="../../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
 <dd><code><a href="../../../OverflowException.html" title="class in system">OverflowException</a></code></dd>
 </dl>
 </li>
@@ -1171,56 +1129,48 @@ implements java.lang.AutoCloseable</pre>
 <h4>getLogMode</h4>
 <pre class="methodSignature">public&nbsp;<a href="EventLogMode.html" title="class in system.diagnostics.eventing.reader">EventLogMode</a>&nbsp;getLogMode()
                         throws java.lang.Throwable,
+                               <a href="../../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
                                <a href="EventLogNotFoundException.html" title="class in system.diagnostics.eventing.reader">EventLogNotFoundException</a>,
                                <a href="EventLogInvalidDataException.html" title="class in system.diagnostics.eventing.reader">EventLogInvalidDataException</a>,
-                               <a href="../../../ArgumentException.html" title="class in system">ArgumentException</a>,
-                               <a href="../../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                               <a href="../../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
-                               <a href="../../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                               <a href="../../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                               <a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                               <a href="../../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
-                               <a href="../../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                               <a href="../../../RankException.html" title="class in system">RankException</a>,
-                               <a href="../../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
                                <a href="../../../OperationCanceledException.html" title="class in system">OperationCanceledException</a>,
                                <a href="EventLogProviderDisabledException.html" title="class in system.diagnostics.eventing.reader">EventLogProviderDisabledException</a>,
                                <a href="../../../UnauthorizedAccessException.html" title="class in system">UnauthorizedAccessException</a>,
                                <a href="EventLogReadingException.html" title="class in system.diagnostics.eventing.reader">EventLogReadingException</a>,
                                <a href="EventLogException.html" title="class in system.diagnostics.eventing.reader">EventLogException</a>,
+                               <a href="../../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                                <a href="../../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
-                               <a href="../../../MethodAccessException.html" title="class in system">MethodAccessException</a>,
+                               <a href="../../../ArgumentException.html" title="class in system">ArgumentException</a>,
+                               <a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                               <a href="../../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
                                <a href="../../../MissingMethodException.html" title="class in system">MissingMethodException</a>,
-                               <a href="../../../MemberAccessException.html" title="class in system">MemberAccessException</a>,
                                <a href="../../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
                                <a href="../../../AccessViolationException.html" title="class in system">AccessViolationException</a>,
+                               <a href="../../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                               <a href="../../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                               <a href="../../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
                                <a href="../../../OverflowException.html" title="class in system">OverflowException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
 <dd><code><a href="EventLogNotFoundException.html" title="class in system.diagnostics.eventing.reader">EventLogNotFoundException</a></code></dd>
 <dd><code><a href="EventLogInvalidDataException.html" title="class in system.diagnostics.eventing.reader">EventLogInvalidDataException</a></code></dd>
-<dd><code><a href="../../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
-<dd><code><a href="../../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="../../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
-<dd><code><a href="../../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../../RankException.html" title="class in system">RankException</a></code></dd>
-<dd><code><a href="../../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
 <dd><code><a href="../../../OperationCanceledException.html" title="class in system">OperationCanceledException</a></code></dd>
 <dd><code><a href="EventLogProviderDisabledException.html" title="class in system.diagnostics.eventing.reader">EventLogProviderDisabledException</a></code></dd>
 <dd><code><a href="../../../UnauthorizedAccessException.html" title="class in system">UnauthorizedAccessException</a></code></dd>
 <dd><code><a href="EventLogReadingException.html" title="class in system.diagnostics.eventing.reader">EventLogReadingException</a></code></dd>
 <dd><code><a href="EventLogException.html" title="class in system.diagnostics.eventing.reader">EventLogException</a></code></dd>
+<dd><code><a href="../../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="../../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
-<dd><code><a href="../../../MethodAccessException.html" title="class in system">MethodAccessException</a></code></dd>
+<dd><code><a href="../../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
 <dd><code><a href="../../../MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
-<dd><code><a href="../../../MemberAccessException.html" title="class in system">MemberAccessException</a></code></dd>
 <dd><code><a href="../../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
 <dd><code><a href="../../../AccessViolationException.html" title="class in system">AccessViolationException</a></code></dd>
+<dd><code><a href="../../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
 <dd><code><a href="../../../OverflowException.html" title="class in system">OverflowException</a></code></dd>
 </dl>
 </li>
@@ -1247,56 +1197,48 @@ implements java.lang.AutoCloseable</pre>
 <h4>getLogType</h4>
 <pre class="methodSignature">public&nbsp;<a href="EventLogType.html" title="class in system.diagnostics.eventing.reader">EventLogType</a>&nbsp;getLogType()
                         throws java.lang.Throwable,
+                               <a href="../../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
                                <a href="EventLogNotFoundException.html" title="class in system.diagnostics.eventing.reader">EventLogNotFoundException</a>,
                                <a href="EventLogInvalidDataException.html" title="class in system.diagnostics.eventing.reader">EventLogInvalidDataException</a>,
-                               <a href="../../../ArgumentException.html" title="class in system">ArgumentException</a>,
-                               <a href="../../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                               <a href="../../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
-                               <a href="../../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                               <a href="../../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                               <a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                               <a href="../../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
-                               <a href="../../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                               <a href="../../../RankException.html" title="class in system">RankException</a>,
-                               <a href="../../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
                                <a href="../../../OperationCanceledException.html" title="class in system">OperationCanceledException</a>,
                                <a href="EventLogProviderDisabledException.html" title="class in system.diagnostics.eventing.reader">EventLogProviderDisabledException</a>,
                                <a href="../../../UnauthorizedAccessException.html" title="class in system">UnauthorizedAccessException</a>,
                                <a href="EventLogReadingException.html" title="class in system.diagnostics.eventing.reader">EventLogReadingException</a>,
                                <a href="EventLogException.html" title="class in system.diagnostics.eventing.reader">EventLogException</a>,
+                               <a href="../../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                                <a href="../../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
-                               <a href="../../../MethodAccessException.html" title="class in system">MethodAccessException</a>,
+                               <a href="../../../ArgumentException.html" title="class in system">ArgumentException</a>,
+                               <a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                               <a href="../../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
                                <a href="../../../MissingMethodException.html" title="class in system">MissingMethodException</a>,
-                               <a href="../../../MemberAccessException.html" title="class in system">MemberAccessException</a>,
                                <a href="../../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
                                <a href="../../../AccessViolationException.html" title="class in system">AccessViolationException</a>,
+                               <a href="../../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                               <a href="../../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                               <a href="../../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
                                <a href="../../../OverflowException.html" title="class in system">OverflowException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
 <dd><code><a href="EventLogNotFoundException.html" title="class in system.diagnostics.eventing.reader">EventLogNotFoundException</a></code></dd>
 <dd><code><a href="EventLogInvalidDataException.html" title="class in system.diagnostics.eventing.reader">EventLogInvalidDataException</a></code></dd>
-<dd><code><a href="../../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
-<dd><code><a href="../../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="../../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
-<dd><code><a href="../../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../../RankException.html" title="class in system">RankException</a></code></dd>
-<dd><code><a href="../../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
 <dd><code><a href="../../../OperationCanceledException.html" title="class in system">OperationCanceledException</a></code></dd>
 <dd><code><a href="EventLogProviderDisabledException.html" title="class in system.diagnostics.eventing.reader">EventLogProviderDisabledException</a></code></dd>
 <dd><code><a href="../../../UnauthorizedAccessException.html" title="class in system">UnauthorizedAccessException</a></code></dd>
 <dd><code><a href="EventLogReadingException.html" title="class in system.diagnostics.eventing.reader">EventLogReadingException</a></code></dd>
 <dd><code><a href="EventLogException.html" title="class in system.diagnostics.eventing.reader">EventLogException</a></code></dd>
+<dd><code><a href="../../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="../../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
-<dd><code><a href="../../../MethodAccessException.html" title="class in system">MethodAccessException</a></code></dd>
+<dd><code><a href="../../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
 <dd><code><a href="../../../MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
-<dd><code><a href="../../../MemberAccessException.html" title="class in system">MemberAccessException</a></code></dd>
 <dd><code><a href="../../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
 <dd><code><a href="../../../AccessViolationException.html" title="class in system">AccessViolationException</a></code></dd>
+<dd><code><a href="../../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
 <dd><code><a href="../../../OverflowException.html" title="class in system">OverflowException</a></code></dd>
 </dl>
 </li>
@@ -1309,56 +1251,48 @@ implements java.lang.AutoCloseable</pre>
 <h4>getLogFilePath</h4>
 <pre class="methodSignature">public&nbsp;java.lang.String&nbsp;getLogFilePath()
                                 throws java.lang.Throwable,
+                                       <a href="../../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
                                        <a href="EventLogNotFoundException.html" title="class in system.diagnostics.eventing.reader">EventLogNotFoundException</a>,
                                        <a href="EventLogInvalidDataException.html" title="class in system.diagnostics.eventing.reader">EventLogInvalidDataException</a>,
-                                       <a href="../../../ArgumentException.html" title="class in system">ArgumentException</a>,
-                                       <a href="../../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                                       <a href="../../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
-                                       <a href="../../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                                       <a href="../../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                                       <a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                                       <a href="../../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
-                                       <a href="../../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                                       <a href="../../../RankException.html" title="class in system">RankException</a>,
-                                       <a href="../../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
                                        <a href="../../../OperationCanceledException.html" title="class in system">OperationCanceledException</a>,
                                        <a href="EventLogProviderDisabledException.html" title="class in system.diagnostics.eventing.reader">EventLogProviderDisabledException</a>,
                                        <a href="../../../UnauthorizedAccessException.html" title="class in system">UnauthorizedAccessException</a>,
                                        <a href="EventLogReadingException.html" title="class in system.diagnostics.eventing.reader">EventLogReadingException</a>,
                                        <a href="EventLogException.html" title="class in system.diagnostics.eventing.reader">EventLogException</a>,
+                                       <a href="../../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                                        <a href="../../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
-                                       <a href="../../../MethodAccessException.html" title="class in system">MethodAccessException</a>,
+                                       <a href="../../../ArgumentException.html" title="class in system">ArgumentException</a>,
+                                       <a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                       <a href="../../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
                                        <a href="../../../MissingMethodException.html" title="class in system">MissingMethodException</a>,
-                                       <a href="../../../MemberAccessException.html" title="class in system">MemberAccessException</a>,
                                        <a href="../../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
                                        <a href="../../../AccessViolationException.html" title="class in system">AccessViolationException</a>,
+                                       <a href="../../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                       <a href="../../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                       <a href="../../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
                                        <a href="../../../OverflowException.html" title="class in system">OverflowException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
 <dd><code><a href="EventLogNotFoundException.html" title="class in system.diagnostics.eventing.reader">EventLogNotFoundException</a></code></dd>
 <dd><code><a href="EventLogInvalidDataException.html" title="class in system.diagnostics.eventing.reader">EventLogInvalidDataException</a></code></dd>
-<dd><code><a href="../../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
-<dd><code><a href="../../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="../../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
-<dd><code><a href="../../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../../RankException.html" title="class in system">RankException</a></code></dd>
-<dd><code><a href="../../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
 <dd><code><a href="../../../OperationCanceledException.html" title="class in system">OperationCanceledException</a></code></dd>
 <dd><code><a href="EventLogProviderDisabledException.html" title="class in system.diagnostics.eventing.reader">EventLogProviderDisabledException</a></code></dd>
 <dd><code><a href="../../../UnauthorizedAccessException.html" title="class in system">UnauthorizedAccessException</a></code></dd>
 <dd><code><a href="EventLogReadingException.html" title="class in system.diagnostics.eventing.reader">EventLogReadingException</a></code></dd>
 <dd><code><a href="EventLogException.html" title="class in system.diagnostics.eventing.reader">EventLogException</a></code></dd>
+<dd><code><a href="../../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="../../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
-<dd><code><a href="../../../MethodAccessException.html" title="class in system">MethodAccessException</a></code></dd>
+<dd><code><a href="../../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
 <dd><code><a href="../../../MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
-<dd><code><a href="../../../MemberAccessException.html" title="class in system">MemberAccessException</a></code></dd>
 <dd><code><a href="../../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
 <dd><code><a href="../../../AccessViolationException.html" title="class in system">AccessViolationException</a></code></dd>
+<dd><code><a href="../../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
 <dd><code><a href="../../../OverflowException.html" title="class in system">OverflowException</a></code></dd>
 </dl>
 </li>
@@ -1371,14 +1305,15 @@ implements java.lang.AutoCloseable</pre>
 <h4>setLogFilePath</h4>
 <pre class="methodSignature">public&nbsp;void&nbsp;setLogFilePath&#8203;(java.lang.String&nbsp;LogFilePath)
                     throws java.lang.Throwable,
-                           <a href="../../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                           <a href="../../../ArgumentException.html" title="class in system">ArgumentException</a>,
                            <a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                           <a href="../../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
                            <a href="../../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                           <a href="../../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
                            <a href="../../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
-                           <a href="../../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                           <a href="../../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
                            <a href="../../../FormatException.html" title="class in system">FormatException</a>,
+                           <a href="../../../ArgumentException.html" title="class in system">ArgumentException</a>,
+                           <a href="../../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                           <a href="../../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
                            <a href="EventLogNotFoundException.html" title="class in system.diagnostics.eventing.reader">EventLogNotFoundException</a>,
                            <a href="EventLogInvalidDataException.html" title="class in system.diagnostics.eventing.reader">EventLogInvalidDataException</a>,
                            <a href="../../../OperationCanceledException.html" title="class in system">OperationCanceledException</a>,
@@ -1389,14 +1324,15 @@ implements java.lang.AutoCloseable</pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 <dd><code><a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 <dd><code><a href="../../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 <dd><code><a href="../../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
-<dd><code><a href="../../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 <dd><code><a href="../../../FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
 <dd><code><a href="EventLogNotFoundException.html" title="class in system.diagnostics.eventing.reader">EventLogNotFoundException</a></code></dd>
 <dd><code><a href="EventLogInvalidDataException.html" title="class in system.diagnostics.eventing.reader">EventLogInvalidDataException</a></code></dd>
 <dd><code><a href="../../../OperationCanceledException.html" title="class in system">OperationCanceledException</a></code></dd>
@@ -1429,56 +1365,48 @@ implements java.lang.AutoCloseable</pre>
 <h4>getOwningProviderName</h4>
 <pre class="methodSignature">public&nbsp;java.lang.String&nbsp;getOwningProviderName()
                                        throws java.lang.Throwable,
+                                              <a href="../../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
                                               <a href="EventLogNotFoundException.html" title="class in system.diagnostics.eventing.reader">EventLogNotFoundException</a>,
                                               <a href="EventLogInvalidDataException.html" title="class in system.diagnostics.eventing.reader">EventLogInvalidDataException</a>,
-                                              <a href="../../../ArgumentException.html" title="class in system">ArgumentException</a>,
-                                              <a href="../../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                                              <a href="../../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
-                                              <a href="../../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                                              <a href="../../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                                              <a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                                              <a href="../../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
-                                              <a href="../../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                                              <a href="../../../RankException.html" title="class in system">RankException</a>,
-                                              <a href="../../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
                                               <a href="../../../OperationCanceledException.html" title="class in system">OperationCanceledException</a>,
                                               <a href="EventLogProviderDisabledException.html" title="class in system.diagnostics.eventing.reader">EventLogProviderDisabledException</a>,
                                               <a href="../../../UnauthorizedAccessException.html" title="class in system">UnauthorizedAccessException</a>,
                                               <a href="EventLogReadingException.html" title="class in system.diagnostics.eventing.reader">EventLogReadingException</a>,
                                               <a href="EventLogException.html" title="class in system.diagnostics.eventing.reader">EventLogException</a>,
+                                              <a href="../../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                                               <a href="../../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
-                                              <a href="../../../MethodAccessException.html" title="class in system">MethodAccessException</a>,
+                                              <a href="../../../ArgumentException.html" title="class in system">ArgumentException</a>,
+                                              <a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                              <a href="../../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
                                               <a href="../../../MissingMethodException.html" title="class in system">MissingMethodException</a>,
-                                              <a href="../../../MemberAccessException.html" title="class in system">MemberAccessException</a>,
                                               <a href="../../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
                                               <a href="../../../AccessViolationException.html" title="class in system">AccessViolationException</a>,
+                                              <a href="../../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                              <a href="../../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                              <a href="../../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
                                               <a href="../../../OverflowException.html" title="class in system">OverflowException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
 <dd><code><a href="EventLogNotFoundException.html" title="class in system.diagnostics.eventing.reader">EventLogNotFoundException</a></code></dd>
 <dd><code><a href="EventLogInvalidDataException.html" title="class in system.diagnostics.eventing.reader">EventLogInvalidDataException</a></code></dd>
-<dd><code><a href="../../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
-<dd><code><a href="../../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="../../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
-<dd><code><a href="../../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../../RankException.html" title="class in system">RankException</a></code></dd>
-<dd><code><a href="../../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
 <dd><code><a href="../../../OperationCanceledException.html" title="class in system">OperationCanceledException</a></code></dd>
 <dd><code><a href="EventLogProviderDisabledException.html" title="class in system.diagnostics.eventing.reader">EventLogProviderDisabledException</a></code></dd>
 <dd><code><a href="../../../UnauthorizedAccessException.html" title="class in system">UnauthorizedAccessException</a></code></dd>
 <dd><code><a href="EventLogReadingException.html" title="class in system.diagnostics.eventing.reader">EventLogReadingException</a></code></dd>
 <dd><code><a href="EventLogException.html" title="class in system.diagnostics.eventing.reader">EventLogException</a></code></dd>
+<dd><code><a href="../../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="../../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
-<dd><code><a href="../../../MethodAccessException.html" title="class in system">MethodAccessException</a></code></dd>
+<dd><code><a href="../../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
 <dd><code><a href="../../../MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
-<dd><code><a href="../../../MemberAccessException.html" title="class in system">MemberAccessException</a></code></dd>
 <dd><code><a href="../../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
 <dd><code><a href="../../../AccessViolationException.html" title="class in system">AccessViolationException</a></code></dd>
+<dd><code><a href="../../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
 <dd><code><a href="../../../OverflowException.html" title="class in system">OverflowException</a></code></dd>
 </dl>
 </li>
@@ -1491,56 +1419,48 @@ implements java.lang.AutoCloseable</pre>
 <h4>getSecurityDescriptor</h4>
 <pre class="methodSignature">public&nbsp;java.lang.String&nbsp;getSecurityDescriptor()
                                        throws java.lang.Throwable,
+                                              <a href="../../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
                                               <a href="EventLogNotFoundException.html" title="class in system.diagnostics.eventing.reader">EventLogNotFoundException</a>,
                                               <a href="EventLogInvalidDataException.html" title="class in system.diagnostics.eventing.reader">EventLogInvalidDataException</a>,
-                                              <a href="../../../ArgumentException.html" title="class in system">ArgumentException</a>,
-                                              <a href="../../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                                              <a href="../../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
-                                              <a href="../../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                                              <a href="../../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                                              <a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                                              <a href="../../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
-                                              <a href="../../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                                              <a href="../../../RankException.html" title="class in system">RankException</a>,
-                                              <a href="../../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
                                               <a href="../../../OperationCanceledException.html" title="class in system">OperationCanceledException</a>,
                                               <a href="EventLogProviderDisabledException.html" title="class in system.diagnostics.eventing.reader">EventLogProviderDisabledException</a>,
                                               <a href="../../../UnauthorizedAccessException.html" title="class in system">UnauthorizedAccessException</a>,
                                               <a href="EventLogReadingException.html" title="class in system.diagnostics.eventing.reader">EventLogReadingException</a>,
                                               <a href="EventLogException.html" title="class in system.diagnostics.eventing.reader">EventLogException</a>,
+                                              <a href="../../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                                               <a href="../../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
-                                              <a href="../../../MethodAccessException.html" title="class in system">MethodAccessException</a>,
+                                              <a href="../../../ArgumentException.html" title="class in system">ArgumentException</a>,
+                                              <a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                              <a href="../../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
                                               <a href="../../../MissingMethodException.html" title="class in system">MissingMethodException</a>,
-                                              <a href="../../../MemberAccessException.html" title="class in system">MemberAccessException</a>,
                                               <a href="../../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
                                               <a href="../../../AccessViolationException.html" title="class in system">AccessViolationException</a>,
+                                              <a href="../../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                              <a href="../../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                              <a href="../../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
                                               <a href="../../../OverflowException.html" title="class in system">OverflowException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
 <dd><code><a href="EventLogNotFoundException.html" title="class in system.diagnostics.eventing.reader">EventLogNotFoundException</a></code></dd>
 <dd><code><a href="EventLogInvalidDataException.html" title="class in system.diagnostics.eventing.reader">EventLogInvalidDataException</a></code></dd>
-<dd><code><a href="../../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
-<dd><code><a href="../../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="../../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
-<dd><code><a href="../../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../../RankException.html" title="class in system">RankException</a></code></dd>
-<dd><code><a href="../../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
 <dd><code><a href="../../../OperationCanceledException.html" title="class in system">OperationCanceledException</a></code></dd>
 <dd><code><a href="EventLogProviderDisabledException.html" title="class in system.diagnostics.eventing.reader">EventLogProviderDisabledException</a></code></dd>
 <dd><code><a href="../../../UnauthorizedAccessException.html" title="class in system">UnauthorizedAccessException</a></code></dd>
 <dd><code><a href="EventLogReadingException.html" title="class in system.diagnostics.eventing.reader">EventLogReadingException</a></code></dd>
 <dd><code><a href="EventLogException.html" title="class in system.diagnostics.eventing.reader">EventLogException</a></code></dd>
+<dd><code><a href="../../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="../../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
-<dd><code><a href="../../../MethodAccessException.html" title="class in system">MethodAccessException</a></code></dd>
+<dd><code><a href="../../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
 <dd><code><a href="../../../MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
-<dd><code><a href="../../../MemberAccessException.html" title="class in system">MemberAccessException</a></code></dd>
 <dd><code><a href="../../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
 <dd><code><a href="../../../AccessViolationException.html" title="class in system">AccessViolationException</a></code></dd>
+<dd><code><a href="../../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
 <dd><code><a href="../../../OverflowException.html" title="class in system">OverflowException</a></code></dd>
 </dl>
 </li>
@@ -1553,14 +1473,15 @@ implements java.lang.AutoCloseable</pre>
 <h4>setSecurityDescriptor</h4>
 <pre class="methodSignature">public&nbsp;void&nbsp;setSecurityDescriptor&#8203;(java.lang.String&nbsp;SecurityDescriptor)
                            throws java.lang.Throwable,
-                                  <a href="../../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                                  <a href="../../../ArgumentException.html" title="class in system">ArgumentException</a>,
                                   <a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                                  <a href="../../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
                                   <a href="../../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                  <a href="../../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
                                   <a href="../../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
-                                  <a href="../../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                  <a href="../../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
                                   <a href="../../../FormatException.html" title="class in system">FormatException</a>,
+                                  <a href="../../../ArgumentException.html" title="class in system">ArgumentException</a>,
+                                  <a href="../../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                  <a href="../../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
                                   <a href="EventLogNotFoundException.html" title="class in system.diagnostics.eventing.reader">EventLogNotFoundException</a>,
                                   <a href="EventLogInvalidDataException.html" title="class in system.diagnostics.eventing.reader">EventLogInvalidDataException</a>,
                                   <a href="../../../OperationCanceledException.html" title="class in system">OperationCanceledException</a>,
@@ -1571,14 +1492,15 @@ implements java.lang.AutoCloseable</pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 <dd><code><a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 <dd><code><a href="../../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 <dd><code><a href="../../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
-<dd><code><a href="../../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 <dd><code><a href="../../../FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
 <dd><code><a href="EventLogNotFoundException.html" title="class in system.diagnostics.eventing.reader">EventLogNotFoundException</a></code></dd>
 <dd><code><a href="EventLogInvalidDataException.html" title="class in system.diagnostics.eventing.reader">EventLogInvalidDataException</a></code></dd>
 <dd><code><a href="../../../OperationCanceledException.html" title="class in system">OperationCanceledException</a></code></dd>
