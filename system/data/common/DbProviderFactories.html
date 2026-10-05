@@ -18,6 +18,7 @@
 <meta name="keywords" content="cast()">
 <meta name="keywords" content="TryGetFactory()">
 <meta name="keywords" content="UnregisterFactory()">
+<meta name="keywords" content="GetProviderInvariantNames()">
 <meta name="keywords" content="GetFactory()">
 <meta name="keywords" content="GetFactoryClasses()">
 <meta name="keywords" content="RegisterFactory()">
@@ -34,7 +35,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":9,"i11":9,"i12":9,"i13":10,"i14":9,"i15":9};
+var methods = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":9,"i11":9,"i12":9,"i13":9,"i14":10,"i15":9,"i16":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -282,30 +283,34 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </td>
 </tr>
 <tr id="i10" class="altColor">
+<td class="colFirst"><code>static <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/common/DbProviderFactories.html#GetProviderInvariantNames--">GetProviderInvariantNames</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/common/DbProviderFactories.html#RegisterFactory-java.lang.String-system.data.common.DbProviderFactory-">RegisterFactory</a></span>(java.lang.String&nbsp;providerInvariantName,
                <a href="../../../system/data/common/DbProviderFactory.html" title="class in system.data.common">DbProviderFactory</a>&nbsp;factory)</code>&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/common/DbProviderFactories.html#RegisterFactory-java.lang.String-org.mases.jcobridge.netreflection.NetType-">RegisterFactory</a></span>(java.lang.String&nbsp;providerInvariantName,
                <a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;providerFactoryClass)</code>&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/common/DbProviderFactories.html#RegisterFactory-java.lang.String-java.lang.String-">RegisterFactory</a></span>(java.lang.String&nbsp;providerInvariantName,
                java.lang.String&nbsp;factoryTypeAssemblyQualifiedName)</code>&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/common/DbProviderFactories.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>static boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/common/DbProviderFactories.html#TryGetFactory-java.lang.String-org.mases.jcobridge.netreflection.JCORefOut-">TryGetFactory</a></span>(java.lang.String&nbsp;providerInvariantName,
              <a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../../system/data/common/DbProviderFactory.html" title="class in system.data.common">DbProviderFactory</a>&gt;&nbsp;factory)</code>&nbsp;</td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>static boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/common/DbProviderFactories.html#UnregisterFactory-java.lang.String-">UnregisterFactory</a></span>(java.lang.String&nbsp;providerInvariantName)</code>&nbsp;</td>
 </tr>
@@ -707,6 +712,38 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html#getJCOType--">getJCOType</a></code>&nbsp;in class&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>A <code>JCType</code> representing the CLR Type of the instantiated Class</dd>
+</dl>
+</li>
+</ul>
+<a name="GetProviderInvariantNames--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>GetProviderInvariantNames</h4>
+<pre>public static&nbsp;<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;GetProviderInvariantNames()
+                                               throws java.lang.Throwable,
+                                                      <a href="../../../system/diagnostics/tracing/EventSourceException.html" title="class in system.diagnostics.tracing">EventSourceException</a>,
+                                                      <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                                      <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                      <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                      <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                                      <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                                      <a href="../../../system/RankException.html" title="class in system">RankException</a>,
+                                                      <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                      <a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/diagnostics/tracing/EventSourceException.html" title="class in system.diagnostics.tracing">EventSourceException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
 </dl>
 </li>
 </ul>

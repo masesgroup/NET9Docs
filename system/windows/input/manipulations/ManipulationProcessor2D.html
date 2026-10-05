@@ -17,6 +17,7 @@
 <meta name="keywords" content="getJCOType()">
 <meta name="keywords" content="cast()">
 <meta name="keywords" content="CompleteManipulation()">
+<meta name="keywords" content="ProcessManipulators()">
 <meta name="keywords" content="SetParameters()">
 <meta name="keywords" content="getMinimumScaleRotateRadius()">
 <meta name="keywords" content="setMinimumScaleRotateRadius()">
@@ -37,7 +38,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -293,21 +294,26 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/input/manipulations/ManipulationProcessor2D.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/input/manipulations/ManipulationProcessor2D.html#ProcessManipulators-long-system.collections.generic.IEnumerable_1-">ProcessManipulators</a></span>(long&nbsp;timestamp,
+                   <a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;manipulators)</code>&nbsp;</td>
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/input/manipulations/ManipulationProcessor2D.html#setMinimumScaleRotateRadius-system.Single-">setMinimumScaleRotateRadius</a></span>(<a href="../../../../system/Single.html" title="class in system">Single</a>&nbsp;MinimumScaleRotateRadius)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/input/manipulations/ManipulationProcessor2D.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
 <tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/input/manipulations/ManipulationProcessor2D.html#SetParameters-system.windows.input.manipulations.ManipulationParameters2D-">SetParameters</a></span>(<a href="../../../../system/windows/input/manipulations/ManipulationParameters2D.html" title="class in system.windows.input.manipulations">ManipulationParameters2D</a>&nbsp;parameters)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/input/manipulations/ManipulationProcessor2D.html#setMinimumScaleRotateRadius-system.Single-">setMinimumScaleRotateRadius</a></span>(<a href="../../../../system/Single.html" title="class in system">Single</a>&nbsp;MinimumScaleRotateRadius)</code>&nbsp;</td>
 </tr>
 <tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/input/manipulations/ManipulationProcessor2D.html#setPivot-system.windows.input.manipulations.ManipulationPivot2D-">setPivot</a></span>(<a href="../../../../system/windows/input/manipulations/ManipulationPivot2D.html" title="class in system.windows.input.manipulations">ManipulationPivot2D</a>&nbsp;Pivot)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/input/manipulations/ManipulationProcessor2D.html#SetParameters-system.windows.input.manipulations.ManipulationParameters2D-">SetParameters</a></span>(<a href="../../../../system/windows/input/manipulations/ManipulationParameters2D.html" title="class in system.windows.input.manipulations">ManipulationParameters2D</a>&nbsp;parameters)</code>&nbsp;</td>
 </tr>
 <tr id="i14" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/input/manipulations/ManipulationProcessor2D.html#setPivot-system.windows.input.manipulations.ManipulationPivot2D-">setPivot</a></span>(<a href="../../../../system/windows/input/manipulations/ManipulationPivot2D.html" title="class in system.windows.input.manipulations">ManipulationPivot2D</a>&nbsp;Pivot)</code>&nbsp;</td>
+</tr>
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/input/manipulations/ManipulationProcessor2D.html#setSupportedManipulations-system.windows.input.manipulations.Manipulations2D-">setSupportedManipulations</a></span>(<a href="../../../../system/windows/input/manipulations/Manipulations2D.html" title="class in system.windows.input.manipulations">Manipulations2D</a>&nbsp;SupportedManipulations)</code>&nbsp;</td>
 </tr>
@@ -694,6 +700,39 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="ProcessManipulators-long-system.collections.generic.IEnumerable_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ProcessManipulators</h4>
+<pre>public&nbsp;void&nbsp;ProcessManipulators(long&nbsp;timestamp,
+                                <a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;manipulators)
+                         throws java.lang.Throwable,
+                                <a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                <a href="../../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                <a href="../../../../system/MulticastNotSupportedException.html" title="class in system">MulticastNotSupportedException</a>,
+                                <a href="../../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                                <a href="../../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a>,
+                                <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                <a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../../system/MulticastNotSupportedException.html" title="class in system">MulticastNotSupportedException</a></code></dd>
+<dd><code><a href="../../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
+<dd><code><a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 </dl>
 </li>
 </ul>

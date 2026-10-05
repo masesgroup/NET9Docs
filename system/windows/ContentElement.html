@@ -56,6 +56,10 @@
 <meta name="keywords" content="getIsStylusCaptureWithin()">
 <meta name="keywords" content="getIsStylusDirectlyOver()">
 <meta name="keywords" content="getIsStylusOver()">
+<meta name="keywords" content="getTouchesCaptured()">
+<meta name="keywords" content="getTouchesCapturedWithin()">
+<meta name="keywords" content="getTouchesDirectlyOver()">
+<meta name="keywords" content="getTouchesOver()">
 <meta name="keywords" content="getCommandBindings()">
 <meta name="keywords" content="getInputBindings()">
 <meta name="keywords" content="addFocusableChanged()">
@@ -225,7 +229,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":10,"i36":10,"i37":10,"i38":10,"i39":10,"i40":10,"i41":10,"i42":10,"i43":10,"i44":10,"i45":10,"i46":10,"i47":10,"i48":10,"i49":10,"i50":10,"i51":10,"i52":10,"i53":10,"i54":10,"i55":10,"i56":10,"i57":10,"i58":10,"i59":10,"i60":10,"i61":10,"i62":10,"i63":10,"i64":10,"i65":10,"i66":10,"i67":10,"i68":10,"i69":10,"i70":10,"i71":10,"i72":10,"i73":10,"i74":10,"i75":10,"i76":10,"i77":10,"i78":10,"i79":10,"i80":10,"i81":10,"i82":10,"i83":10,"i84":10,"i85":9,"i86":10,"i87":10,"i88":10,"i89":10,"i90":10,"i91":10,"i92":10,"i93":10,"i94":10,"i95":10,"i96":10,"i97":10,"i98":10,"i99":10,"i100":10,"i101":10,"i102":10,"i103":10,"i104":10,"i105":10,"i106":10,"i107":10,"i108":10,"i109":10,"i110":10,"i111":10,"i112":10,"i113":10,"i114":10,"i115":10,"i116":10,"i117":10,"i118":10,"i119":10,"i120":10,"i121":10,"i122":10,"i123":10,"i124":10,"i125":10,"i126":10,"i127":10,"i128":10,"i129":10,"i130":10,"i131":10,"i132":10,"i133":10,"i134":10,"i135":10,"i136":10,"i137":10,"i138":10,"i139":10,"i140":10,"i141":10,"i142":10,"i143":10,"i144":10,"i145":10,"i146":10,"i147":10,"i148":10,"i149":10,"i150":10,"i151":10,"i152":10,"i153":10,"i154":10,"i155":10,"i156":10,"i157":10,"i158":10,"i159":10,"i160":10,"i161":10,"i162":10,"i163":10,"i164":10,"i165":10,"i166":10,"i167":10,"i168":10,"i169":10,"i170":10,"i171":10,"i172":10,"i173":10,"i174":10,"i175":10,"i176":10,"i177":10,"i178":10,"i179":10,"i180":10,"i181":10,"i182":10,"i183":10,"i184":10,"i185":10,"i186":10,"i187":10,"i188":10,"i189":10,"i190":10,"i191":10,"i192":10,"i193":10,"i194":10,"i195":10,"i196":10,"i197":10,"i198":10,"i199":10,"i200":10,"i201":10,"i202":10,"i203":10,"i204":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":10,"i36":10,"i37":10,"i38":10,"i39":10,"i40":10,"i41":10,"i42":10,"i43":10,"i44":10,"i45":10,"i46":10,"i47":10,"i48":10,"i49":10,"i50":10,"i51":10,"i52":10,"i53":10,"i54":10,"i55":10,"i56":10,"i57":10,"i58":10,"i59":10,"i60":10,"i61":10,"i62":10,"i63":10,"i64":10,"i65":10,"i66":10,"i67":10,"i68":10,"i69":10,"i70":10,"i71":10,"i72":10,"i73":10,"i74":10,"i75":10,"i76":10,"i77":10,"i78":10,"i79":10,"i80":10,"i81":10,"i82":10,"i83":10,"i84":10,"i85":9,"i86":10,"i87":10,"i88":10,"i89":10,"i90":10,"i91":10,"i92":10,"i93":10,"i94":10,"i95":10,"i96":10,"i97":10,"i98":10,"i99":10,"i100":10,"i101":10,"i102":10,"i103":10,"i104":10,"i105":10,"i106":10,"i107":10,"i108":10,"i109":10,"i110":10,"i111":10,"i112":10,"i113":10,"i114":10,"i115":10,"i116":10,"i117":10,"i118":10,"i119":10,"i120":10,"i121":10,"i122":10,"i123":10,"i124":10,"i125":10,"i126":10,"i127":10,"i128":10,"i129":10,"i130":10,"i131":10,"i132":10,"i133":10,"i134":10,"i135":10,"i136":10,"i137":10,"i138":10,"i139":10,"i140":10,"i141":10,"i142":10,"i143":10,"i144":10,"i145":10,"i146":10,"i147":10,"i148":10,"i149":10,"i150":10,"i151":10,"i152":10,"i153":10,"i154":10,"i155":10,"i156":10,"i157":10,"i158":10,"i159":10,"i160":10,"i161":10,"i162":10,"i163":10,"i164":10,"i165":10,"i166":10,"i167":10,"i168":10,"i169":10,"i170":10,"i171":10,"i172":10,"i173":10,"i174":10,"i175":10,"i176":10,"i177":10,"i178":10,"i179":10,"i180":10,"i181":10,"i182":10,"i183":10,"i184":10,"i185":10,"i186":10,"i187":10,"i188":10,"i189":10,"i190":10,"i191":10,"i192":10,"i193":10,"i194":10,"i195":10,"i196":10,"i197":10,"i198":10,"i199":10,"i200":10,"i201":10,"i202":10,"i203":10,"i204":10,"i205":10,"i206":10,"i207":10,"i208":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -914,362 +918,378 @@ extends <a href="../../system/windows/DependencyObject.html" title="class in sys
 </td>
 </tr>
 <tr id="i115" class="rowColor">
+<td class="colFirst"><code><a href="../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ContentElement.html#getTouchesCaptured--">getTouchesCaptured</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i116" class="altColor">
+<td class="colFirst"><code><a href="../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ContentElement.html#getTouchesCapturedWithin--">getTouchesCapturedWithin</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i117" class="rowColor">
+<td class="colFirst"><code><a href="../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ContentElement.html#getTouchesDirectlyOver--">getTouchesDirectlyOver</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i118" class="altColor">
+<td class="colFirst"><code><a href="../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ContentElement.html#getTouchesOver--">getTouchesOver</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i119" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ContentElement.html#MoveFocus-system.windows.input.TraversalRequest-">MoveFocus</a></span>(<a href="../../system/windows/input/TraversalRequest.html" title="class in system.windows.input">TraversalRequest</a>&nbsp;request)</code>&nbsp;</td>
 </tr>
-<tr id="i116" class="altColor">
+<tr id="i120" class="altColor">
 <td class="colFirst"><code><a href="../../system/windows/DependencyObject.html" title="class in system.windows">DependencyObject</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ContentElement.html#PredictFocus-system.windows.input.FocusNavigationDirection-">PredictFocus</a></span>(<a href="../../system/windows/input/FocusNavigationDirection.html" title="class in system.windows.input">FocusNavigationDirection</a>&nbsp;direction)</code>&nbsp;</td>
 </tr>
-<tr id="i117" class="rowColor">
+<tr id="i121" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ContentElement.html#RaiseEvent-system.windows.RoutedEventArgs-">RaiseEvent</a></span>(<a href="../../system/windows/RoutedEventArgs.html" title="class in system.windows">RoutedEventArgs</a>&nbsp;e)</code>&nbsp;</td>
 </tr>
-<tr id="i118" class="altColor">
+<tr id="i122" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ContentElement.html#ReleaseAllTouchCaptures--">ReleaseAllTouchCaptures</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i119" class="rowColor">
+<tr id="i123" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ContentElement.html#ReleaseMouseCapture--">ReleaseMouseCapture</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i120" class="altColor">
+<tr id="i124" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ContentElement.html#ReleaseStylusCapture--">ReleaseStylusCapture</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i121" class="rowColor">
+<tr id="i125" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ContentElement.html#ReleaseTouchCapture-system.windows.input.TouchDevice-">ReleaseTouchCapture</a></span>(<a href="../../system/windows/input/TouchDevice.html" title="class in system.windows.input">TouchDevice</a>&nbsp;touchDevice)</code>&nbsp;</td>
 </tr>
-<tr id="i122" class="altColor">
+<tr id="i126" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ContentElement.html#removeDragEnter-system.windows.DragEventHandler-">removeDragEnter</a></span>(<a href="../../system/windows/DragEventHandler.html" title="class in system.windows">DragEventHandler</a>&nbsp;handler)</code>&nbsp;</td>
 </tr>
-<tr id="i123" class="rowColor">
+<tr id="i127" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ContentElement.html#removeDragLeave-system.windows.DragEventHandler-">removeDragLeave</a></span>(<a href="../../system/windows/DragEventHandler.html" title="class in system.windows">DragEventHandler</a>&nbsp;handler)</code>&nbsp;</td>
 </tr>
-<tr id="i124" class="altColor">
+<tr id="i128" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ContentElement.html#removeDragOver-system.windows.DragEventHandler-">removeDragOver</a></span>(<a href="../../system/windows/DragEventHandler.html" title="class in system.windows">DragEventHandler</a>&nbsp;handler)</code>&nbsp;</td>
 </tr>
-<tr id="i125" class="rowColor">
+<tr id="i129" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ContentElement.html#removeDrop-system.windows.DragEventHandler-">removeDrop</a></span>(<a href="../../system/windows/DragEventHandler.html" title="class in system.windows">DragEventHandler</a>&nbsp;handler)</code>&nbsp;</td>
 </tr>
-<tr id="i126" class="altColor">
+<tr id="i130" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ContentElement.html#removeFocusableChanged-system.windows.DependencyPropertyChangedEventHandler-">removeFocusableChanged</a></span>(<a href="../../system/windows/DependencyPropertyChangedEventHandler.html" title="class in system.windows">DependencyPropertyChangedEventHandler</a>&nbsp;handler)</code>&nbsp;</td>
 </tr>
-<tr id="i127" class="rowColor">
+<tr id="i131" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ContentElement.html#removeGiveFeedback-system.windows.GiveFeedbackEventHandler-">removeGiveFeedback</a></span>(<a href="../../system/windows/GiveFeedbackEventHandler.html" title="class in system.windows">GiveFeedbackEventHandler</a>&nbsp;handler)</code>&nbsp;</td>
 </tr>
-<tr id="i128" class="altColor">
+<tr id="i132" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ContentElement.html#removeGotFocus-system.windows.RoutedEventHandler-">removeGotFocus</a></span>(<a href="../../system/windows/RoutedEventHandler.html" title="class in system.windows">RoutedEventHandler</a>&nbsp;handler)</code>&nbsp;</td>
 </tr>
-<tr id="i129" class="rowColor">
+<tr id="i133" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ContentElement.html#removeGotKeyboardFocus-system.windows.input.KeyboardFocusChangedEventHandler-">removeGotKeyboardFocus</a></span>(<a href="../../system/windows/input/KeyboardFocusChangedEventHandler.html" title="class in system.windows.input">KeyboardFocusChangedEventHandler</a>&nbsp;handler)</code>&nbsp;</td>
 </tr>
-<tr id="i130" class="altColor">
+<tr id="i134" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ContentElement.html#removeGotMouseCapture-system.windows.input.MouseEventHandler-">removeGotMouseCapture</a></span>(<a href="../../system/windows/input/MouseEventHandler.html" title="class in system.windows.input">MouseEventHandler</a>&nbsp;handler)</code>&nbsp;</td>
 </tr>
-<tr id="i131" class="rowColor">
+<tr id="i135" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ContentElement.html#removeGotStylusCapture-system.windows.input.StylusEventHandler-">removeGotStylusCapture</a></span>(<a href="../../system/windows/input/StylusEventHandler.html" title="class in system.windows.input">StylusEventHandler</a>&nbsp;handler)</code>&nbsp;</td>
 </tr>
-<tr id="i132" class="altColor">
+<tr id="i136" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ContentElement.html#removeIsEnabledChanged-system.windows.DependencyPropertyChangedEventHandler-">removeIsEnabledChanged</a></span>(<a href="../../system/windows/DependencyPropertyChangedEventHandler.html" title="class in system.windows">DependencyPropertyChangedEventHandler</a>&nbsp;handler)</code>&nbsp;</td>
 </tr>
-<tr id="i133" class="rowColor">
+<tr id="i137" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ContentElement.html#removeIsKeyboardFocusedChanged-system.windows.DependencyPropertyChangedEventHandler-">removeIsKeyboardFocusedChanged</a></span>(<a href="../../system/windows/DependencyPropertyChangedEventHandler.html" title="class in system.windows">DependencyPropertyChangedEventHandler</a>&nbsp;handler)</code>&nbsp;</td>
 </tr>
-<tr id="i134" class="altColor">
+<tr id="i138" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ContentElement.html#removeIsKeyboardFocusWithinChanged-system.windows.DependencyPropertyChangedEventHandler-">removeIsKeyboardFocusWithinChanged</a></span>(<a href="../../system/windows/DependencyPropertyChangedEventHandler.html" title="class in system.windows">DependencyPropertyChangedEventHandler</a>&nbsp;handler)</code>&nbsp;</td>
 </tr>
-<tr id="i135" class="rowColor">
+<tr id="i139" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ContentElement.html#removeIsMouseCapturedChanged-system.windows.DependencyPropertyChangedEventHandler-">removeIsMouseCapturedChanged</a></span>(<a href="../../system/windows/DependencyPropertyChangedEventHandler.html" title="class in system.windows">DependencyPropertyChangedEventHandler</a>&nbsp;handler)</code>&nbsp;</td>
 </tr>
-<tr id="i136" class="altColor">
+<tr id="i140" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ContentElement.html#removeIsMouseCaptureWithinChanged-system.windows.DependencyPropertyChangedEventHandler-">removeIsMouseCaptureWithinChanged</a></span>(<a href="../../system/windows/DependencyPropertyChangedEventHandler.html" title="class in system.windows">DependencyPropertyChangedEventHandler</a>&nbsp;handler)</code>&nbsp;</td>
 </tr>
-<tr id="i137" class="rowColor">
+<tr id="i141" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ContentElement.html#removeIsMouseDirectlyOverChanged-system.windows.DependencyPropertyChangedEventHandler-">removeIsMouseDirectlyOverChanged</a></span>(<a href="../../system/windows/DependencyPropertyChangedEventHandler.html" title="class in system.windows">DependencyPropertyChangedEventHandler</a>&nbsp;handler)</code>&nbsp;</td>
 </tr>
-<tr id="i138" class="altColor">
+<tr id="i142" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ContentElement.html#removeIsStylusCapturedChanged-system.windows.DependencyPropertyChangedEventHandler-">removeIsStylusCapturedChanged</a></span>(<a href="../../system/windows/DependencyPropertyChangedEventHandler.html" title="class in system.windows">DependencyPropertyChangedEventHandler</a>&nbsp;handler)</code>&nbsp;</td>
 </tr>
-<tr id="i139" class="rowColor">
+<tr id="i143" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ContentElement.html#removeIsStylusCaptureWithinChanged-system.windows.DependencyPropertyChangedEventHandler-">removeIsStylusCaptureWithinChanged</a></span>(<a href="../../system/windows/DependencyPropertyChangedEventHandler.html" title="class in system.windows">DependencyPropertyChangedEventHandler</a>&nbsp;handler)</code>&nbsp;</td>
 </tr>
-<tr id="i140" class="altColor">
+<tr id="i144" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ContentElement.html#removeIsStylusDirectlyOverChanged-system.windows.DependencyPropertyChangedEventHandler-">removeIsStylusDirectlyOverChanged</a></span>(<a href="../../system/windows/DependencyPropertyChangedEventHandler.html" title="class in system.windows">DependencyPropertyChangedEventHandler</a>&nbsp;handler)</code>&nbsp;</td>
 </tr>
-<tr id="i141" class="rowColor">
+<tr id="i145" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ContentElement.html#removeKeyDown-system.windows.input.KeyEventHandler-">removeKeyDown</a></span>(<a href="../../system/windows/input/KeyEventHandler.html" title="class in system.windows.input">KeyEventHandler</a>&nbsp;handler)</code>&nbsp;</td>
 </tr>
-<tr id="i142" class="altColor">
+<tr id="i146" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ContentElement.html#removeKeyUp-system.windows.input.KeyEventHandler-">removeKeyUp</a></span>(<a href="../../system/windows/input/KeyEventHandler.html" title="class in system.windows.input">KeyEventHandler</a>&nbsp;handler)</code>&nbsp;</td>
 </tr>
-<tr id="i143" class="rowColor">
+<tr id="i147" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ContentElement.html#removeLostFocus-system.windows.RoutedEventHandler-">removeLostFocus</a></span>(<a href="../../system/windows/RoutedEventHandler.html" title="class in system.windows">RoutedEventHandler</a>&nbsp;handler)</code>&nbsp;</td>
 </tr>
-<tr id="i144" class="altColor">
+<tr id="i148" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ContentElement.html#removeLostKeyboardFocus-system.windows.input.KeyboardFocusChangedEventHandler-">removeLostKeyboardFocus</a></span>(<a href="../../system/windows/input/KeyboardFocusChangedEventHandler.html" title="class in system.windows.input">KeyboardFocusChangedEventHandler</a>&nbsp;handler)</code>&nbsp;</td>
 </tr>
-<tr id="i145" class="rowColor">
+<tr id="i149" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ContentElement.html#removeLostMouseCapture-system.windows.input.MouseEventHandler-">removeLostMouseCapture</a></span>(<a href="../../system/windows/input/MouseEventHandler.html" title="class in system.windows.input">MouseEventHandler</a>&nbsp;handler)</code>&nbsp;</td>
 </tr>
-<tr id="i146" class="altColor">
+<tr id="i150" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ContentElement.html#removeLostStylusCapture-system.windows.input.StylusEventHandler-">removeLostStylusCapture</a></span>(<a href="../../system/windows/input/StylusEventHandler.html" title="class in system.windows.input">StylusEventHandler</a>&nbsp;handler)</code>&nbsp;</td>
 </tr>
-<tr id="i147" class="rowColor">
+<tr id="i151" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ContentElement.html#removeMouseDown-system.windows.input.MouseButtonEventHandler-">removeMouseDown</a></span>(<a href="../../system/windows/input/MouseButtonEventHandler.html" title="class in system.windows.input">MouseButtonEventHandler</a>&nbsp;handler)</code>&nbsp;</td>
 </tr>
-<tr id="i148" class="altColor">
+<tr id="i152" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ContentElement.html#removeMouseEnter-system.windows.input.MouseEventHandler-">removeMouseEnter</a></span>(<a href="../../system/windows/input/MouseEventHandler.html" title="class in system.windows.input">MouseEventHandler</a>&nbsp;handler)</code>&nbsp;</td>
 </tr>
-<tr id="i149" class="rowColor">
+<tr id="i153" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ContentElement.html#removeMouseLeave-system.windows.input.MouseEventHandler-">removeMouseLeave</a></span>(<a href="../../system/windows/input/MouseEventHandler.html" title="class in system.windows.input">MouseEventHandler</a>&nbsp;handler)</code>&nbsp;</td>
 </tr>
-<tr id="i150" class="altColor">
+<tr id="i154" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ContentElement.html#removeMouseLeftButtonDown-system.windows.input.MouseButtonEventHandler-">removeMouseLeftButtonDown</a></span>(<a href="../../system/windows/input/MouseButtonEventHandler.html" title="class in system.windows.input">MouseButtonEventHandler</a>&nbsp;handler)</code>&nbsp;</td>
 </tr>
-<tr id="i151" class="rowColor">
+<tr id="i155" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ContentElement.html#removeMouseLeftButtonUp-system.windows.input.MouseButtonEventHandler-">removeMouseLeftButtonUp</a></span>(<a href="../../system/windows/input/MouseButtonEventHandler.html" title="class in system.windows.input">MouseButtonEventHandler</a>&nbsp;handler)</code>&nbsp;</td>
 </tr>
-<tr id="i152" class="altColor">
+<tr id="i156" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ContentElement.html#removeMouseMove-system.windows.input.MouseEventHandler-">removeMouseMove</a></span>(<a href="../../system/windows/input/MouseEventHandler.html" title="class in system.windows.input">MouseEventHandler</a>&nbsp;handler)</code>&nbsp;</td>
 </tr>
-<tr id="i153" class="rowColor">
+<tr id="i157" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ContentElement.html#removeMouseRightButtonDown-system.windows.input.MouseButtonEventHandler-">removeMouseRightButtonDown</a></span>(<a href="../../system/windows/input/MouseButtonEventHandler.html" title="class in system.windows.input">MouseButtonEventHandler</a>&nbsp;handler)</code>&nbsp;</td>
 </tr>
-<tr id="i154" class="altColor">
+<tr id="i158" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ContentElement.html#removeMouseRightButtonUp-system.windows.input.MouseButtonEventHandler-">removeMouseRightButtonUp</a></span>(<a href="../../system/windows/input/MouseButtonEventHandler.html" title="class in system.windows.input">MouseButtonEventHandler</a>&nbsp;handler)</code>&nbsp;</td>
 </tr>
-<tr id="i155" class="rowColor">
+<tr id="i159" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ContentElement.html#removeMouseUp-system.windows.input.MouseButtonEventHandler-">removeMouseUp</a></span>(<a href="../../system/windows/input/MouseButtonEventHandler.html" title="class in system.windows.input">MouseButtonEventHandler</a>&nbsp;handler)</code>&nbsp;</td>
 </tr>
-<tr id="i156" class="altColor">
+<tr id="i160" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ContentElement.html#removeMouseWheel-system.windows.input.MouseWheelEventHandler-">removeMouseWheel</a></span>(<a href="../../system/windows/input/MouseWheelEventHandler.html" title="class in system.windows.input">MouseWheelEventHandler</a>&nbsp;handler)</code>&nbsp;</td>
 </tr>
-<tr id="i157" class="rowColor">
+<tr id="i161" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ContentElement.html#removePreviewDragEnter-system.windows.DragEventHandler-">removePreviewDragEnter</a></span>(<a href="../../system/windows/DragEventHandler.html" title="class in system.windows">DragEventHandler</a>&nbsp;handler)</code>&nbsp;</td>
 </tr>
-<tr id="i158" class="altColor">
+<tr id="i162" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ContentElement.html#removePreviewDragLeave-system.windows.DragEventHandler-">removePreviewDragLeave</a></span>(<a href="../../system/windows/DragEventHandler.html" title="class in system.windows">DragEventHandler</a>&nbsp;handler)</code>&nbsp;</td>
 </tr>
-<tr id="i159" class="rowColor">
+<tr id="i163" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ContentElement.html#removePreviewDragOver-system.windows.DragEventHandler-">removePreviewDragOver</a></span>(<a href="../../system/windows/DragEventHandler.html" title="class in system.windows">DragEventHandler</a>&nbsp;handler)</code>&nbsp;</td>
 </tr>
-<tr id="i160" class="altColor">
+<tr id="i164" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ContentElement.html#removePreviewDrop-system.windows.DragEventHandler-">removePreviewDrop</a></span>(<a href="../../system/windows/DragEventHandler.html" title="class in system.windows">DragEventHandler</a>&nbsp;handler)</code>&nbsp;</td>
 </tr>
-<tr id="i161" class="rowColor">
+<tr id="i165" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ContentElement.html#removePreviewGiveFeedback-system.windows.GiveFeedbackEventHandler-">removePreviewGiveFeedback</a></span>(<a href="../../system/windows/GiveFeedbackEventHandler.html" title="class in system.windows">GiveFeedbackEventHandler</a>&nbsp;handler)</code>&nbsp;</td>
 </tr>
-<tr id="i162" class="altColor">
+<tr id="i166" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ContentElement.html#removePreviewGotKeyboardFocus-system.windows.input.KeyboardFocusChangedEventHandler-">removePreviewGotKeyboardFocus</a></span>(<a href="../../system/windows/input/KeyboardFocusChangedEventHandler.html" title="class in system.windows.input">KeyboardFocusChangedEventHandler</a>&nbsp;handler)</code>&nbsp;</td>
 </tr>
-<tr id="i163" class="rowColor">
+<tr id="i167" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ContentElement.html#removePreviewKeyDown-system.windows.input.KeyEventHandler-">removePreviewKeyDown</a></span>(<a href="../../system/windows/input/KeyEventHandler.html" title="class in system.windows.input">KeyEventHandler</a>&nbsp;handler)</code>&nbsp;</td>
 </tr>
-<tr id="i164" class="altColor">
+<tr id="i168" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ContentElement.html#removePreviewKeyUp-system.windows.input.KeyEventHandler-">removePreviewKeyUp</a></span>(<a href="../../system/windows/input/KeyEventHandler.html" title="class in system.windows.input">KeyEventHandler</a>&nbsp;handler)</code>&nbsp;</td>
 </tr>
-<tr id="i165" class="rowColor">
+<tr id="i169" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ContentElement.html#removePreviewLostKeyboardFocus-system.windows.input.KeyboardFocusChangedEventHandler-">removePreviewLostKeyboardFocus</a></span>(<a href="../../system/windows/input/KeyboardFocusChangedEventHandler.html" title="class in system.windows.input">KeyboardFocusChangedEventHandler</a>&nbsp;handler)</code>&nbsp;</td>
 </tr>
-<tr id="i166" class="altColor">
+<tr id="i170" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ContentElement.html#removePreviewMouseDown-system.windows.input.MouseButtonEventHandler-">removePreviewMouseDown</a></span>(<a href="../../system/windows/input/MouseButtonEventHandler.html" title="class in system.windows.input">MouseButtonEventHandler</a>&nbsp;handler)</code>&nbsp;</td>
 </tr>
-<tr id="i167" class="rowColor">
+<tr id="i171" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ContentElement.html#removePreviewMouseLeftButtonDown-system.windows.input.MouseButtonEventHandler-">removePreviewMouseLeftButtonDown</a></span>(<a href="../../system/windows/input/MouseButtonEventHandler.html" title="class in system.windows.input">MouseButtonEventHandler</a>&nbsp;handler)</code>&nbsp;</td>
 </tr>
-<tr id="i168" class="altColor">
+<tr id="i172" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ContentElement.html#removePreviewMouseLeftButtonUp-system.windows.input.MouseButtonEventHandler-">removePreviewMouseLeftButtonUp</a></span>(<a href="../../system/windows/input/MouseButtonEventHandler.html" title="class in system.windows.input">MouseButtonEventHandler</a>&nbsp;handler)</code>&nbsp;</td>
 </tr>
-<tr id="i169" class="rowColor">
+<tr id="i173" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ContentElement.html#removePreviewMouseMove-system.windows.input.MouseEventHandler-">removePreviewMouseMove</a></span>(<a href="../../system/windows/input/MouseEventHandler.html" title="class in system.windows.input">MouseEventHandler</a>&nbsp;handler)</code>&nbsp;</td>
 </tr>
-<tr id="i170" class="altColor">
+<tr id="i174" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ContentElement.html#removePreviewMouseRightButtonDown-system.windows.input.MouseButtonEventHandler-">removePreviewMouseRightButtonDown</a></span>(<a href="../../system/windows/input/MouseButtonEventHandler.html" title="class in system.windows.input">MouseButtonEventHandler</a>&nbsp;handler)</code>&nbsp;</td>
 </tr>
-<tr id="i171" class="rowColor">
+<tr id="i175" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ContentElement.html#removePreviewMouseRightButtonUp-system.windows.input.MouseButtonEventHandler-">removePreviewMouseRightButtonUp</a></span>(<a href="../../system/windows/input/MouseButtonEventHandler.html" title="class in system.windows.input">MouseButtonEventHandler</a>&nbsp;handler)</code>&nbsp;</td>
 </tr>
-<tr id="i172" class="altColor">
+<tr id="i176" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ContentElement.html#removePreviewMouseUp-system.windows.input.MouseButtonEventHandler-">removePreviewMouseUp</a></span>(<a href="../../system/windows/input/MouseButtonEventHandler.html" title="class in system.windows.input">MouseButtonEventHandler</a>&nbsp;handler)</code>&nbsp;</td>
 </tr>
-<tr id="i173" class="rowColor">
+<tr id="i177" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ContentElement.html#removePreviewMouseWheel-system.windows.input.MouseWheelEventHandler-">removePreviewMouseWheel</a></span>(<a href="../../system/windows/input/MouseWheelEventHandler.html" title="class in system.windows.input">MouseWheelEventHandler</a>&nbsp;handler)</code>&nbsp;</td>
 </tr>
-<tr id="i174" class="altColor">
+<tr id="i178" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ContentElement.html#removePreviewQueryContinueDrag-system.windows.QueryContinueDragEventHandler-">removePreviewQueryContinueDrag</a></span>(<a href="../../system/windows/QueryContinueDragEventHandler.html" title="class in system.windows">QueryContinueDragEventHandler</a>&nbsp;handler)</code>&nbsp;</td>
 </tr>
-<tr id="i175" class="rowColor">
+<tr id="i179" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ContentElement.html#removePreviewStylusButtonDown-system.windows.input.StylusButtonEventHandler-">removePreviewStylusButtonDown</a></span>(<a href="../../system/windows/input/StylusButtonEventHandler.html" title="class in system.windows.input">StylusButtonEventHandler</a>&nbsp;handler)</code>&nbsp;</td>
 </tr>
-<tr id="i176" class="altColor">
+<tr id="i180" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ContentElement.html#removePreviewStylusButtonUp-system.windows.input.StylusButtonEventHandler-">removePreviewStylusButtonUp</a></span>(<a href="../../system/windows/input/StylusButtonEventHandler.html" title="class in system.windows.input">StylusButtonEventHandler</a>&nbsp;handler)</code>&nbsp;</td>
 </tr>
-<tr id="i177" class="rowColor">
+<tr id="i181" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ContentElement.html#removePreviewStylusDown-system.windows.input.StylusDownEventHandler-">removePreviewStylusDown</a></span>(<a href="../../system/windows/input/StylusDownEventHandler.html" title="class in system.windows.input">StylusDownEventHandler</a>&nbsp;handler)</code>&nbsp;</td>
 </tr>
-<tr id="i178" class="altColor">
+<tr id="i182" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ContentElement.html#removePreviewStylusInAirMove-system.windows.input.StylusEventHandler-">removePreviewStylusInAirMove</a></span>(<a href="../../system/windows/input/StylusEventHandler.html" title="class in system.windows.input">StylusEventHandler</a>&nbsp;handler)</code>&nbsp;</td>
 </tr>
-<tr id="i179" class="rowColor">
+<tr id="i183" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ContentElement.html#removePreviewStylusInRange-system.windows.input.StylusEventHandler-">removePreviewStylusInRange</a></span>(<a href="../../system/windows/input/StylusEventHandler.html" title="class in system.windows.input">StylusEventHandler</a>&nbsp;handler)</code>&nbsp;</td>
 </tr>
-<tr id="i180" class="altColor">
+<tr id="i184" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ContentElement.html#removePreviewStylusMove-system.windows.input.StylusEventHandler-">removePreviewStylusMove</a></span>(<a href="../../system/windows/input/StylusEventHandler.html" title="class in system.windows.input">StylusEventHandler</a>&nbsp;handler)</code>&nbsp;</td>
 </tr>
-<tr id="i181" class="rowColor">
+<tr id="i185" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ContentElement.html#removePreviewStylusOutOfRange-system.windows.input.StylusEventHandler-">removePreviewStylusOutOfRange</a></span>(<a href="../../system/windows/input/StylusEventHandler.html" title="class in system.windows.input">StylusEventHandler</a>&nbsp;handler)</code>&nbsp;</td>
 </tr>
-<tr id="i182" class="altColor">
+<tr id="i186" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ContentElement.html#removePreviewStylusSystemGesture-system.windows.input.StylusSystemGestureEventHandler-">removePreviewStylusSystemGesture</a></span>(<a href="../../system/windows/input/StylusSystemGestureEventHandler.html" title="class in system.windows.input">StylusSystemGestureEventHandler</a>&nbsp;handler)</code>&nbsp;</td>
 </tr>
-<tr id="i183" class="rowColor">
+<tr id="i187" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ContentElement.html#removePreviewStylusUp-system.windows.input.StylusEventHandler-">removePreviewStylusUp</a></span>(<a href="../../system/windows/input/StylusEventHandler.html" title="class in system.windows.input">StylusEventHandler</a>&nbsp;handler)</code>&nbsp;</td>
 </tr>
-<tr id="i184" class="altColor">
+<tr id="i188" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ContentElement.html#removePreviewTextInput-system.windows.input.TextCompositionEventHandler-">removePreviewTextInput</a></span>(<a href="../../system/windows/input/TextCompositionEventHandler.html" title="class in system.windows.input">TextCompositionEventHandler</a>&nbsp;handler)</code>&nbsp;</td>
 </tr>
-<tr id="i185" class="rowColor">
+<tr id="i189" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ContentElement.html#removeQueryContinueDrag-system.windows.QueryContinueDragEventHandler-">removeQueryContinueDrag</a></span>(<a href="../../system/windows/QueryContinueDragEventHandler.html" title="class in system.windows">QueryContinueDragEventHandler</a>&nbsp;handler)</code>&nbsp;</td>
 </tr>
-<tr id="i186" class="altColor">
+<tr id="i190" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ContentElement.html#removeQueryCursor-system.windows.input.QueryCursorEventHandler-">removeQueryCursor</a></span>(<a href="../../system/windows/input/QueryCursorEventHandler.html" title="class in system.windows.input">QueryCursorEventHandler</a>&nbsp;handler)</code>&nbsp;</td>
 </tr>
-<tr id="i187" class="rowColor">
+<tr id="i191" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ContentElement.html#removeStylusButtonDown-system.windows.input.StylusButtonEventHandler-">removeStylusButtonDown</a></span>(<a href="../../system/windows/input/StylusButtonEventHandler.html" title="class in system.windows.input">StylusButtonEventHandler</a>&nbsp;handler)</code>&nbsp;</td>
 </tr>
-<tr id="i188" class="altColor">
+<tr id="i192" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ContentElement.html#removeStylusButtonUp-system.windows.input.StylusButtonEventHandler-">removeStylusButtonUp</a></span>(<a href="../../system/windows/input/StylusButtonEventHandler.html" title="class in system.windows.input">StylusButtonEventHandler</a>&nbsp;handler)</code>&nbsp;</td>
 </tr>
-<tr id="i189" class="rowColor">
+<tr id="i193" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ContentElement.html#removeStylusDown-system.windows.input.StylusDownEventHandler-">removeStylusDown</a></span>(<a href="../../system/windows/input/StylusDownEventHandler.html" title="class in system.windows.input">StylusDownEventHandler</a>&nbsp;handler)</code>&nbsp;</td>
 </tr>
-<tr id="i190" class="altColor">
+<tr id="i194" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ContentElement.html#removeStylusEnter-system.windows.input.StylusEventHandler-">removeStylusEnter</a></span>(<a href="../../system/windows/input/StylusEventHandler.html" title="class in system.windows.input">StylusEventHandler</a>&nbsp;handler)</code>&nbsp;</td>
 </tr>
-<tr id="i191" class="rowColor">
+<tr id="i195" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ContentElement.html#removeStylusInAirMove-system.windows.input.StylusEventHandler-">removeStylusInAirMove</a></span>(<a href="../../system/windows/input/StylusEventHandler.html" title="class in system.windows.input">StylusEventHandler</a>&nbsp;handler)</code>&nbsp;</td>
 </tr>
-<tr id="i192" class="altColor">
+<tr id="i196" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ContentElement.html#removeStylusInRange-system.windows.input.StylusEventHandler-">removeStylusInRange</a></span>(<a href="../../system/windows/input/StylusEventHandler.html" title="class in system.windows.input">StylusEventHandler</a>&nbsp;handler)</code>&nbsp;</td>
 </tr>
-<tr id="i193" class="rowColor">
+<tr id="i197" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ContentElement.html#removeStylusLeave-system.windows.input.StylusEventHandler-">removeStylusLeave</a></span>(<a href="../../system/windows/input/StylusEventHandler.html" title="class in system.windows.input">StylusEventHandler</a>&nbsp;handler)</code>&nbsp;</td>
 </tr>
-<tr id="i194" class="altColor">
+<tr id="i198" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ContentElement.html#removeStylusMove-system.windows.input.StylusEventHandler-">removeStylusMove</a></span>(<a href="../../system/windows/input/StylusEventHandler.html" title="class in system.windows.input">StylusEventHandler</a>&nbsp;handler)</code>&nbsp;</td>
 </tr>
-<tr id="i195" class="rowColor">
+<tr id="i199" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ContentElement.html#removeStylusOutOfRange-system.windows.input.StylusEventHandler-">removeStylusOutOfRange</a></span>(<a href="../../system/windows/input/StylusEventHandler.html" title="class in system.windows.input">StylusEventHandler</a>&nbsp;handler)</code>&nbsp;</td>
 </tr>
-<tr id="i196" class="altColor">
+<tr id="i200" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ContentElement.html#removeStylusSystemGesture-system.windows.input.StylusSystemGestureEventHandler-">removeStylusSystemGesture</a></span>(<a href="../../system/windows/input/StylusSystemGestureEventHandler.html" title="class in system.windows.input">StylusSystemGestureEventHandler</a>&nbsp;handler)</code>&nbsp;</td>
 </tr>
-<tr id="i197" class="rowColor">
+<tr id="i201" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ContentElement.html#removeStylusUp-system.windows.input.StylusEventHandler-">removeStylusUp</a></span>(<a href="../../system/windows/input/StylusEventHandler.html" title="class in system.windows.input">StylusEventHandler</a>&nbsp;handler)</code>&nbsp;</td>
 </tr>
-<tr id="i198" class="altColor">
+<tr id="i202" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ContentElement.html#removeTextInput-system.windows.input.TextCompositionEventHandler-">removeTextInput</a></span>(<a href="../../system/windows/input/TextCompositionEventHandler.html" title="class in system.windows.input">TextCompositionEventHandler</a>&nbsp;handler)</code>&nbsp;</td>
 </tr>
-<tr id="i199" class="rowColor">
+<tr id="i203" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ContentElement.html#setAllowDrop-boolean-">setAllowDrop</a></span>(boolean&nbsp;AllowDrop)</code>&nbsp;</td>
 </tr>
-<tr id="i200" class="altColor">
+<tr id="i204" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ContentElement.html#setFocusable-boolean-">setFocusable</a></span>(boolean&nbsp;Focusable)</code>&nbsp;</td>
 </tr>
-<tr id="i201" class="rowColor">
+<tr id="i205" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ContentElement.html#setIsEnabled-boolean-">setIsEnabled</a></span>(boolean&nbsp;IsEnabled)</code>&nbsp;</td>
 </tr>
-<tr id="i202" class="altColor">
+<tr id="i206" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ContentElement.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
-<tr id="i203" class="rowColor">
+<tr id="i207" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ContentElement.html#ShouldSerializeCommandBindings--">ShouldSerializeCommandBindings</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i204" class="altColor">
+<tr id="i208" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ContentElement.html#ShouldSerializeInputBindings--">ShouldSerializeInputBindings</a></span>()</code>&nbsp;</td>
 </tr>
@@ -3526,6 +3546,126 @@ extends <a href="../../system/windows/DependencyObject.html" title="class in sys
 <dd><code><a href="../../system/windows/DependencyObject.html#getJCOType--">getJCOType</a></code>&nbsp;in class&nbsp;<code><a href="../../system/windows/DependencyObject.html" title="class in system.windows">DependencyObject</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>A <code>JCType</code> representing the CLR Type of the instantiated Class</dd>
+</dl>
+</li>
+</ul>
+<a name="getTouchesCaptured--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getTouchesCaptured</h4>
+<pre>public&nbsp;<a href="../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;getTouchesCaptured()
+                                 throws java.lang.Throwable,
+                                        <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                        <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                        <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                        <a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                        <a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                        <a href="../../system/RankException.html" title="class in system">RankException</a>,
+                                        <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                        <a href="../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="getTouchesCapturedWithin--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getTouchesCapturedWithin</h4>
+<pre>public&nbsp;<a href="../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;getTouchesCapturedWithin()
+                                       throws java.lang.Throwable,
+                                              <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                              <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                              <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                              <a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                              <a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                              <a href="../../system/RankException.html" title="class in system">RankException</a>,
+                                              <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                              <a href="../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="getTouchesDirectlyOver--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getTouchesDirectlyOver</h4>
+<pre>public&nbsp;<a href="../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;getTouchesDirectlyOver()
+                                     throws java.lang.Throwable,
+                                            <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                            <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                            <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                            <a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                            <a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                            <a href="../../system/RankException.html" title="class in system">RankException</a>,
+                                            <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                            <a href="../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="getTouchesOver--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getTouchesOver</h4>
+<pre>public&nbsp;<a href="../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;getTouchesOver()
+                             throws java.lang.Throwable,
+                                    <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                    <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                    <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                    <a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                    <a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                    <a href="../../system/RankException.html" title="class in system">RankException</a>,
+                                    <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                    <a href="../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
 </dl>
 </li>
 </ul>

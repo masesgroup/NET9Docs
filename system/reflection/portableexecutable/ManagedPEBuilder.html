@@ -16,6 +16,7 @@
 <meta name="keywords" content="setJCOInstance()">
 <meta name="keywords" content="getJCOType()">
 <meta name="keywords" content="cast()">
+<meta name="keywords" content="Sign()">
 <link rel="stylesheet" type="text/css" href="../../../stylesheet.css" title="Style">
 <script type="text/javascript" src="../../../script.js"></script>
 </head>
@@ -29,7 +30,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -214,6 +215,19 @@ extends <a href="../../../system/reflection/portableexecutable/PEBuilder.html" t
 <div class="block">Internal constructor.</div>
 </td>
 </tr>
+<tr class="altColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/reflection/portableexecutable/ManagedPEBuilder.html#ManagedPEBuilder-system.reflection.portableexecutable.PEHeaderBuilder-system.reflection.metadata.ecma335.MetadataRootBuilder-system.reflection.metadata.BlobBuilder-system.reflection.metadata.BlobBuilder-system.reflection.metadata.BlobBuilder-system.reflection.portableexecutable.ResourceSectionBuilder-system.reflection.portableexecutable.DebugDirectoryBuilder-int-system.reflection.metadata.MethodDefinitionHandle-system.reflection.portableexecutable.CorFlags-system.Func_2-">ManagedPEBuilder</a></span>(<a href="../../../system/reflection/portableexecutable/PEHeaderBuilder.html" title="class in system.reflection.portableexecutable">PEHeaderBuilder</a>&nbsp;header,
+                <a href="../../../system/reflection/metadata/ecma335/MetadataRootBuilder.html" title="class in system.reflection.metadata.ecma335">MetadataRootBuilder</a>&nbsp;metadataRootBuilder,
+                <a href="../../../system/reflection/metadata/BlobBuilder.html" title="class in system.reflection.metadata">BlobBuilder</a>&nbsp;ilStream,
+                <a href="../../../system/reflection/metadata/BlobBuilder.html" title="class in system.reflection.metadata">BlobBuilder</a>&nbsp;mappedFieldData,
+                <a href="../../../system/reflection/metadata/BlobBuilder.html" title="class in system.reflection.metadata">BlobBuilder</a>&nbsp;managedResources,
+                <a href="../../../system/reflection/portableexecutable/ResourceSectionBuilder.html" title="class in system.reflection.portableexecutable">ResourceSectionBuilder</a>&nbsp;nativeResources,
+                <a href="../../../system/reflection/portableexecutable/DebugDirectoryBuilder.html" title="class in system.reflection.portableexecutable">DebugDirectoryBuilder</a>&nbsp;debugDirectoryBuilder,
+                int&nbsp;strongNameSignatureSize,
+                <a href="../../../system/reflection/metadata/MethodDefinitionHandle.html" title="class in system.reflection.metadata">MethodDefinitionHandle</a>&nbsp;entryPoint,
+                <a href="../../../system/reflection/portableexecutable/CorFlags.html" title="class in system.reflection.portableexecutable">CorFlags</a>&nbsp;flags,
+                <a href="../../../system/Func_2.html" title="class in system">Func_2</a>&nbsp;deterministicIdProvider)</code>&nbsp;</td>
+</tr>
 </table>
 </li>
 </ul>
@@ -269,13 +283,18 @@ extends <a href="../../../system/reflection/portableexecutable/PEBuilder.html" t
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/reflection/portableexecutable/ManagedPEBuilder.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/reflection/portableexecutable/ManagedPEBuilder.html#Sign-system.reflection.metadata.BlobBuilder-system.Func_2-">Sign</a></span>(<a href="../../../system/reflection/metadata/BlobBuilder.html" title="class in system.reflection.metadata">BlobBuilder</a>&nbsp;peImage,
+    <a href="../../../system/Func_2.html" title="class in system">Func_2</a>&nbsp;signatureProvider)</code>&nbsp;</td>
+</tr>
 </table>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.system.reflection.portableexecutable.PEBuilder">
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;system.reflection.portableexecutable.<a href="../../../system/reflection/portableexecutable/PEBuilder.html" title="class in system.reflection.portableexecutable">PEBuilder</a></h3>
-<code><a href="../../../system/reflection/portableexecutable/PEBuilder.html#getHeader--">getHeader</a>, <a href="../../../system/reflection/portableexecutable/PEBuilder.html#getIsDeterministic--">getIsDeterministic</a>, <a href="../../../system/reflection/portableexecutable/PEBuilder.html#Serialize-system.reflection.metadata.BlobBuilder-">Serialize</a></code></li>
+<code><a href="../../../system/reflection/portableexecutable/PEBuilder.html#getHeader--">getHeader</a>, <a href="../../../system/reflection/portableexecutable/PEBuilder.html#getIdProvider--">getIdProvider</a>, <a href="../../../system/reflection/portableexecutable/PEBuilder.html#getIsDeterministic--">getIsDeterministic</a>, <a href="../../../system/reflection/portableexecutable/PEBuilder.html#Serialize-system.reflection.metadata.BlobBuilder-">Serialize</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.org.mases.jcobridge.netreflection.NetObject">
@@ -382,7 +401,7 @@ extends <a href="../../../system/reflection/portableexecutable/PEBuilder.html" t
 <a name="ManagedPEBuilder-java.lang.Object-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>ManagedPEBuilder</h4>
 <pre>public&nbsp;ManagedPEBuilder(java.lang.Object&nbsp;instance)
@@ -391,6 +410,50 @@ extends <a href="../../../system/reflection/portableexecutable/PEBuilder.html" t
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="ManagedPEBuilder-system.reflection.portableexecutable.PEHeaderBuilder-system.reflection.metadata.ecma335.MetadataRootBuilder-system.reflection.metadata.BlobBuilder-system.reflection.metadata.BlobBuilder-system.reflection.metadata.BlobBuilder-system.reflection.portableexecutable.ResourceSectionBuilder-system.reflection.portableexecutable.DebugDirectoryBuilder-int-system.reflection.metadata.MethodDefinitionHandle-system.reflection.portableexecutable.CorFlags-system.Func_2-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>ManagedPEBuilder</h4>
+<pre>public&nbsp;ManagedPEBuilder(<a href="../../../system/reflection/portableexecutable/PEHeaderBuilder.html" title="class in system.reflection.portableexecutable">PEHeaderBuilder</a>&nbsp;header,
+                        <a href="../../../system/reflection/metadata/ecma335/MetadataRootBuilder.html" title="class in system.reflection.metadata.ecma335">MetadataRootBuilder</a>&nbsp;metadataRootBuilder,
+                        <a href="../../../system/reflection/metadata/BlobBuilder.html" title="class in system.reflection.metadata">BlobBuilder</a>&nbsp;ilStream,
+                        <a href="../../../system/reflection/metadata/BlobBuilder.html" title="class in system.reflection.metadata">BlobBuilder</a>&nbsp;mappedFieldData,
+                        <a href="../../../system/reflection/metadata/BlobBuilder.html" title="class in system.reflection.metadata">BlobBuilder</a>&nbsp;managedResources,
+                        <a href="../../../system/reflection/portableexecutable/ResourceSectionBuilder.html" title="class in system.reflection.portableexecutable">ResourceSectionBuilder</a>&nbsp;nativeResources,
+                        <a href="../../../system/reflection/portableexecutable/DebugDirectoryBuilder.html" title="class in system.reflection.portableexecutable">DebugDirectoryBuilder</a>&nbsp;debugDirectoryBuilder,
+                        int&nbsp;strongNameSignatureSize,
+                        <a href="../../../system/reflection/metadata/MethodDefinitionHandle.html" title="class in system.reflection.metadata">MethodDefinitionHandle</a>&nbsp;entryPoint,
+                        <a href="../../../system/reflection/portableexecutable/CorFlags.html" title="class in system.reflection.portableexecutable">CorFlags</a>&nbsp;flags,
+                        <a href="../../../system/Func_2.html" title="class in system">Func_2</a>&nbsp;deterministicIdProvider)
+                 throws java.lang.Throwable,
+                        <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                        <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                        <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                        <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                        <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                        <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                        <a href="../../../system/RankException.html" title="class in system">RankException</a>,
+                        <a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                        <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                        <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -520,13 +583,60 @@ extends <a href="../../../system/reflection/portableexecutable/PEBuilder.html" t
 <a name="setJCOInstance-org.mases.jcobridge.JCObject-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>setJCOInstance</h4>
 <pre>public&nbsp;void&nbsp;setJCOInstance(org.mases.jcobridge.JCObject&nbsp;instance)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../system/reflection/portableexecutable/PEBuilder.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/reflection/portableexecutable/PEBuilder.html" title="class in system.reflection.portableexecutable">PEBuilder</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="Sign-system.reflection.metadata.BlobBuilder-system.Func_2-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>Sign</h4>
+<pre>public&nbsp;void&nbsp;Sign(<a href="../../../system/reflection/metadata/BlobBuilder.html" title="class in system.reflection.metadata">BlobBuilder</a>&nbsp;peImage,
+                 <a href="../../../system/Func_2.html" title="class in system">Func_2</a>&nbsp;signatureProvider)
+          throws java.lang.Throwable,
+                 <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                 <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                 <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                 <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                 <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                 <a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                 <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                 <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                 <a href="../../../system/RankException.html" title="class in system">RankException</a>,
+                 <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                 <a href="../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a>,
+                 <a href="../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
+                 <a href="../../../system/MissingMemberException.html" title="class in system">MissingMemberException</a>,
+                 <a href="../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a>,
+                 <a href="../../../system/FormatException.html" title="class in system">FormatException</a>,
+                 <a href="../../../system/BadImageFormatException.html" title="class in system">BadImageFormatException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
+<dd><code><a href="../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
+<dd><code><a href="../../../system/MissingMemberException.html" title="class in system">MissingMemberException</a></code></dd>
+<dd><code><a href="../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
+<dd><code><a href="../../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../../system/BadImageFormatException.html" title="class in system">BadImageFormatException</a></code></dd>
 </dl>
 </li>
 </ul>

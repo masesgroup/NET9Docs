@@ -21,6 +21,23 @@
 <meta name="keywords" content="MakeReadOnly()">
 <meta name="keywords" content="getIsReadOnly()">
 <meta name="keywords" content="setIsReadOnly()">
+<meta name="keywords" content="getOnDeserialized()">
+<meta name="keywords" content="setOnDeserialized()">
+<meta name="keywords" content="getOnDeserializing()">
+<meta name="keywords" content="setOnDeserializing()">
+<meta name="keywords" content="getOnSerialized()">
+<meta name="keywords" content="setOnSerialized()">
+<meta name="keywords" content="getOnSerializing()">
+<meta name="keywords" content="setOnSerializing()">
+<meta name="keywords" content="getProperties()">
+<meta name="keywords" content="getCreateObject()">
+<meta name="keywords" content="setCreateObject()">
+<meta name="keywords" content="getNumberHandling()">
+<meta name="keywords" content="setNumberHandling()">
+<meta name="keywords" content="getPreferredPropertyObjectCreationHandling()">
+<meta name="keywords" content="setPreferredPropertyObjectCreationHandling()">
+<meta name="keywords" content="getUnmappedMemberHandling()">
+<meta name="keywords" content="setUnmappedMemberHandling()">
 <meta name="keywords" content="getConstructorAttributeProvider()">
 <meta name="keywords" content="setConstructorAttributeProvider()">
 <meta name="keywords" content="getOptions()">
@@ -46,7 +63,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":9,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10};
+var methods = {"i0":9,"i1":10,"i2":9,"i3":9,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":10,"i36":10,"i37":10,"i38":10,"i39":10,"i40":10,"i41":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -73,8 +90,8 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../../system/text/json/serialization/metadata/JsonPropertyInfo.html" title="class in system.text.json.serialization.metadata"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../../system/text/json/serialization/metadata/JsonTypeInfoKind.html" title="class in system.text.json.serialization.metadata"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../../system/text/json/serialization/metadata/JsonPropertyInfoValues_1.html" title="class in system.text.json.serialization.metadata"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../../system/text/json/serialization/metadata/JsonTypeInfo_1.html" title="class in system.text.json.serialization.metadata"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../index.html?system/text/json/serialization/metadata/JsonTypeInfo.html" target="_top">Frames</a></li>
@@ -139,6 +156,10 @@ var activeTableTab = "activeTableTab";
 <dl>
 <dt>All Implemented Interfaces:</dt>
 <dd><a href="../../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></dd>
+</dl>
+<dl>
+<dt>Direct Known Subclasses:</dt>
+<dd><a href="../../../../../system/text/json/serialization/metadata/JsonTypeInfo_1.html" title="class in system.text.json.serialization.metadata">JsonTypeInfo_1</a></dd>
 </dl>
 <hr>
 <br>
@@ -253,103 +274,175 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
                       java.lang.String&nbsp;name)</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
+<td class="colFirst"><code>static &lt;T extends <a href="../../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;<br><a href="../../../../../system/text/json/serialization/metadata/JsonTypeInfo_1.html" title="class in system.text.json.serialization.metadata">JsonTypeInfo_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../system/text/json/serialization/metadata/JsonTypeInfo.html#CreateJsonTypeInfo-system.text.json.JsonSerializerOptions-">CreateJsonTypeInfo</a></span>(<a href="../../../../../system/text/json/JsonSerializerOptions.html" title="class in system.text.json">JsonSerializerOptions</a>&nbsp;options)</code>&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../../../system/text/json/serialization/metadata/JsonTypeInfo.html" title="class in system.text.json.serialization.metadata">JsonTypeInfo</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../system/text/json/serialization/metadata/JsonTypeInfo.html#CreateJsonTypeInfo-org.mases.jcobridge.netreflection.NetType-system.text.json.JsonSerializerOptions-">CreateJsonTypeInfo</a></span>(<a href="../../../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;type,
                   <a href="../../../../../system/text/json/JsonSerializerOptions.html" title="class in system.text.json">JsonSerializerOptions</a>&nbsp;options)</code>&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../../../../system/reflection/ICustomAttributeProvider.html" title="interface in system.reflection">ICustomAttributeProvider</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../system/text/json/serialization/metadata/JsonTypeInfo.html#getConstructorAttributeProvider--">getConstructorAttributeProvider</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../system/text/json/serialization/JsonConverter.html" title="class in system.text.json.serialization">JsonConverter</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../system/text/json/serialization/metadata/JsonTypeInfo.html#getConverter--">getConverter</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
+<td class="colFirst"><code><a href="../../../../../system/Func_1.html" title="class in system">Func_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../system/text/json/serialization/metadata/JsonTypeInfo.html#getCreateObject--">getCreateObject</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../system/text/json/serialization/metadata/JsonTypeInfo.html#getElementType--">getElementType</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../system/text/json/serialization/metadata/JsonTypeInfo.html#getIsReadOnly--">getIsReadOnly</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../system/text/json/serialization/metadata/JsonTypeInfo.html#getJCOAssemblyName--">getJCOAssemblyName</a></span>()</code>
 <div class="block">Returns the reflected Assembly name</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../system/text/json/serialization/metadata/JsonTypeInfo.html#getJCOClassName--">getJCOClassName</a></span>()</code>
 <div class="block">Returns the reflected Class name</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../system/text/json/serialization/metadata/JsonTypeInfo.html#getJCOInstance--">getJCOInstance</a></span>()</code>
 <div class="block">Returns the instantiated class</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../system/text/json/serialization/metadata/JsonTypeInfo.html#getJCOObjectName--">getJCOObjectName</a></span>()</code>
 <div class="block">Returns the reflected Class name used to build the object</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>org.mases.jcobridge.JCType</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../system/text/json/serialization/metadata/JsonTypeInfo.html#getJCOType--">getJCOType</a></span>()</code>
 <div class="block">Returns the instantiated class Type</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code><a href="../../../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../system/text/json/serialization/metadata/JsonTypeInfo.html#getKeyType--">getKeyType</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../system/text/json/serialization/metadata/JsonTypeInfoKind.html" title="class in system.text.json.serialization.metadata">JsonTypeInfoKind</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../system/text/json/serialization/metadata/JsonTypeInfo.html#getKind--">getKind</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i16" class="altColor">
+<td class="colFirst"><code><a href="../../../../../system/Nullable_1.html" title="class in system">Nullable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../system/text/json/serialization/metadata/JsonTypeInfo.html#getNumberHandling--">getNumberHandling</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i17" class="rowColor">
+<td class="colFirst"><code><a href="../../../../../system/Action_1.html" title="class in system">Action_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../system/text/json/serialization/metadata/JsonTypeInfo.html#getOnDeserialized--">getOnDeserialized</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i18" class="altColor">
+<td class="colFirst"><code><a href="../../../../../system/Action_1.html" title="class in system">Action_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../system/text/json/serialization/metadata/JsonTypeInfo.html#getOnDeserializing--">getOnDeserializing</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i19" class="rowColor">
+<td class="colFirst"><code><a href="../../../../../system/Action_1.html" title="class in system">Action_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../system/text/json/serialization/metadata/JsonTypeInfo.html#getOnSerialized--">getOnSerialized</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i20" class="altColor">
+<td class="colFirst"><code><a href="../../../../../system/Action_1.html" title="class in system">Action_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../system/text/json/serialization/metadata/JsonTypeInfo.html#getOnSerializing--">getOnSerializing</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../system/text/json/JsonSerializerOptions.html" title="class in system.text.json">JsonSerializerOptions</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../system/text/json/serialization/metadata/JsonTypeInfo.html#getOptions--">getOptions</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i22" class="altColor">
 <td class="colFirst"><code><a href="../../../../../system/text/json/serialization/metadata/IJsonTypeInfoResolver.html" title="interface in system.text.json.serialization.metadata">IJsonTypeInfoResolver</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../system/text/json/serialization/metadata/JsonTypeInfo.html#getOriginatingResolver--">getOriginatingResolver</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../system/text/json/serialization/metadata/JsonPolymorphismOptions.html" title="class in system.text.json.serialization.metadata">JsonPolymorphismOptions</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../system/text/json/serialization/metadata/JsonTypeInfo.html#getPolymorphismOptions--">getPolymorphismOptions</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i24" class="altColor">
+<td class="colFirst"><code><a href="../../../../../system/Nullable_1.html" title="class in system">Nullable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../system/text/json/serialization/metadata/JsonTypeInfo.html#getPreferredPropertyObjectCreationHandling--">getPreferredPropertyObjectCreationHandling</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i25" class="rowColor">
+<td class="colFirst"><code><a href="../../../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../system/text/json/serialization/metadata/JsonTypeInfo.html#getProperties--">getProperties</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i26" class="altColor">
 <td class="colFirst"><code><a href="../../../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../system/text/json/serialization/metadata/JsonTypeInfo.html#getType--">getType</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i27" class="rowColor">
+<td class="colFirst"><code><a href="../../../../../system/Nullable_1.html" title="class in system">Nullable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../system/text/json/serialization/metadata/JsonTypeInfo.html#getUnmappedMemberHandling--">getUnmappedMemberHandling</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i28" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../system/text/json/serialization/metadata/JsonTypeInfo.html#MakeReadOnly--">MakeReadOnly</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i29" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../system/text/json/serialization/metadata/JsonTypeInfo.html#setConstructorAttributeProvider-system.reflection.ICustomAttributeProvider-">setConstructorAttributeProvider</a></span>(<a href="../../../../../system/reflection/ICustomAttributeProvider.html" title="interface in system.reflection">ICustomAttributeProvider</a>&nbsp;ConstructorAttributeProvider)</code>&nbsp;</td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i30" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../system/text/json/serialization/metadata/JsonTypeInfo.html#setCreateObject-system.Func_1-">setCreateObject</a></span>(<a href="../../../../../system/Func_1.html" title="class in system">Func_1</a>&nbsp;CreateObject)</code>&nbsp;</td>
+</tr>
+<tr id="i31" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../system/text/json/serialization/metadata/JsonTypeInfo.html#setIsReadOnly-boolean-">setIsReadOnly</a></span>(boolean&nbsp;IsReadOnly)</code>&nbsp;</td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i32" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../system/text/json/serialization/metadata/JsonTypeInfo.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i33" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../system/text/json/serialization/metadata/JsonTypeInfo.html#setNumberHandling-system.Nullable_1-">setNumberHandling</a></span>(<a href="../../../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;NumberHandling)</code>&nbsp;</td>
+</tr>
+<tr id="i34" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../system/text/json/serialization/metadata/JsonTypeInfo.html#setOnDeserialized-system.Action_1-">setOnDeserialized</a></span>(<a href="../../../../../system/Action_1.html" title="class in system">Action_1</a>&nbsp;OnDeserialized)</code>&nbsp;</td>
+</tr>
+<tr id="i35" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../system/text/json/serialization/metadata/JsonTypeInfo.html#setOnDeserializing-system.Action_1-">setOnDeserializing</a></span>(<a href="../../../../../system/Action_1.html" title="class in system">Action_1</a>&nbsp;OnDeserializing)</code>&nbsp;</td>
+</tr>
+<tr id="i36" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../system/text/json/serialization/metadata/JsonTypeInfo.html#setOnSerialized-system.Action_1-">setOnSerialized</a></span>(<a href="../../../../../system/Action_1.html" title="class in system">Action_1</a>&nbsp;OnSerialized)</code>&nbsp;</td>
+</tr>
+<tr id="i37" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../system/text/json/serialization/metadata/JsonTypeInfo.html#setOnSerializing-system.Action_1-">setOnSerializing</a></span>(<a href="../../../../../system/Action_1.html" title="class in system">Action_1</a>&nbsp;OnSerializing)</code>&nbsp;</td>
+</tr>
+<tr id="i38" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../system/text/json/serialization/metadata/JsonTypeInfo.html#setOriginatingResolver-system.text.json.serialization.metadata.IJsonTypeInfoResolver-">setOriginatingResolver</a></span>(<a href="../../../../../system/text/json/serialization/metadata/IJsonTypeInfoResolver.html" title="interface in system.text.json.serialization.metadata">IJsonTypeInfoResolver</a>&nbsp;OriginatingResolver)</code>&nbsp;</td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i39" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../system/text/json/serialization/metadata/JsonTypeInfo.html#setPolymorphismOptions-system.text.json.serialization.metadata.JsonPolymorphismOptions-">setPolymorphismOptions</a></span>(<a href="../../../../../system/text/json/serialization/metadata/JsonPolymorphismOptions.html" title="class in system.text.json.serialization.metadata">JsonPolymorphismOptions</a>&nbsp;PolymorphismOptions)</code>&nbsp;</td>
+</tr>
+<tr id="i40" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../system/text/json/serialization/metadata/JsonTypeInfo.html#setPreferredPropertyObjectCreationHandling-system.Nullable_1-">setPreferredPropertyObjectCreationHandling</a></span>(<a href="../../../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;PreferredPropertyObjectCreationHandling)</code>&nbsp;</td>
+</tr>
+<tr id="i41" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../system/text/json/serialization/metadata/JsonTypeInfo.html#setUnmappedMemberHandling-system.Nullable_1-">setUnmappedMemberHandling</a></span>(<a href="../../../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;UnmappedMemberHandling)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -533,6 +626,48 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 </dl>
 </li>
 </ul>
+<a name="CreateJsonTypeInfo-system.text.json.JsonSerializerOptions-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>CreateJsonTypeInfo</h4>
+<pre>public static&nbsp;&lt;T extends <a href="../../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;&nbsp;<a href="../../../../../system/text/json/serialization/metadata/JsonTypeInfo_1.html" title="class in system.text.json.serialization.metadata">JsonTypeInfo_1</a>&nbsp;CreateJsonTypeInfo(<a href="../../../../../system/text/json/JsonSerializerOptions.html" title="class in system.text.json">JsonSerializerOptions</a>&nbsp;options)
+                                                                         throws java.lang.Throwable,
+                                                                                <a href="../../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                                                <a href="../../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                                                <a href="../../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                                                <a href="../../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                                                <a href="../../../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                                                                <a href="../../../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                                                                                <a href="../../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                                                                <a href="../../../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                                                                <a href="../../../../../system/RankException.html" title="class in system">RankException</a>,
+                                                                                <a href="../../../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                                                                <a href="../../../../../system/FormatException.html" title="class in system">FormatException</a>,
+                                                                                <a href="../../../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
+                                                                                <a href="../../../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a>,
+                                                                                <a href="../../../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../../../system/RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
+<dd><code><a href="../../../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
+<dd><code><a href="../../../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
+</dl>
+</li>
+</ul>
 <a name="CreateJsonTypeInfo-org.mases.jcobridge.netreflection.NetType-system.text.json.JsonSerializerOptions-">
 <!--   -->
 </a>
@@ -614,6 +749,20 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 <h4>getConverter</h4>
 <pre>public&nbsp;<a href="../../../../../system/text/json/serialization/JsonConverter.html" title="class in system.text.json.serialization">JsonConverter</a>&nbsp;getConverter()
                            throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="getCreateObject--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getCreateObject</h4>
+<pre>public&nbsp;<a href="../../../../../system/Func_1.html" title="class in system">Func_1</a>&nbsp;getCreateObject()
+                       throws java.lang.Throwable</pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
@@ -772,6 +921,76 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 </dl>
 </li>
 </ul>
+<a name="getNumberHandling--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getNumberHandling</h4>
+<pre>public&nbsp;<a href="../../../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;getNumberHandling()
+                             throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="getOnDeserialized--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getOnDeserialized</h4>
+<pre>public&nbsp;<a href="../../../../../system/Action_1.html" title="class in system">Action_1</a>&nbsp;getOnDeserialized()
+                           throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="getOnDeserializing--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getOnDeserializing</h4>
+<pre>public&nbsp;<a href="../../../../../system/Action_1.html" title="class in system">Action_1</a>&nbsp;getOnDeserializing()
+                            throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="getOnSerialized--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getOnSerialized</h4>
+<pre>public&nbsp;<a href="../../../../../system/Action_1.html" title="class in system">Action_1</a>&nbsp;getOnSerialized()
+                         throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="getOnSerializing--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getOnSerializing</h4>
+<pre>public&nbsp;<a href="../../../../../system/Action_1.html" title="class in system">Action_1</a>&nbsp;getOnSerializing()
+                          throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
 <a name="getOptions--">
 <!--   -->
 </a>
@@ -814,6 +1033,54 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 </dl>
 </li>
 </ul>
+<a name="getPreferredPropertyObjectCreationHandling--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getPreferredPropertyObjectCreationHandling</h4>
+<pre>public&nbsp;<a href="../../../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;getPreferredPropertyObjectCreationHandling()
+                                                      throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="getProperties--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getProperties</h4>
+<pre>public&nbsp;<a href="../../../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;getProperties()
+                      throws java.lang.Throwable,
+                             <a href="../../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                             <a href="../../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                             <a href="../../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                             <a href="../../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                             <a href="../../../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                             <a href="../../../../../system/FormatException.html" title="class in system">FormatException</a>,
+                             <a href="../../../../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a>,
+                             <a href="../../../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                             <a href="../../../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a>,
+                             <a href="../../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../../../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a></code></dd>
+<dd><code><a href="../../../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
+<dd><code><a href="../../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+</dl>
+</li>
+</ul>
 <a name="getType--">
 <!--   -->
 </a>
@@ -822,6 +1089,20 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 <h4>getType</h4>
 <pre>public&nbsp;<a href="../../../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;getType()
                 throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="getUnmappedMemberHandling--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getUnmappedMemberHandling</h4>
+<pre>public&nbsp;<a href="../../../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;getUnmappedMemberHandling()
+                                     throws java.lang.Throwable</pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
@@ -872,6 +1153,20 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 </dl>
 </li>
 </ul>
+<a name="setCreateObject-system.Func_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setCreateObject</h4>
+<pre>public&nbsp;void&nbsp;setCreateObject(<a href="../../../../../system/Func_1.html" title="class in system">Func_1</a>&nbsp;CreateObject)
+                     throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
 <a name="setIsReadOnly-boolean-">
 <!--   -->
 </a>
@@ -896,6 +1191,136 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="setNumberHandling-system.Nullable_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setNumberHandling</h4>
+<pre>public&nbsp;void&nbsp;setNumberHandling(<a href="../../../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;NumberHandling)
+                       throws java.lang.Throwable,
+                              <a href="../../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                              <a href="../../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                              <a href="../../../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                              <a href="../../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                              <a href="../../../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                              <a href="../../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="setOnDeserialized-system.Action_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setOnDeserialized</h4>
+<pre>public&nbsp;void&nbsp;setOnDeserialized(<a href="../../../../../system/Action_1.html" title="class in system">Action_1</a>&nbsp;OnDeserialized)
+                       throws java.lang.Throwable,
+                              <a href="../../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                              <a href="../../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                              <a href="../../../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                              <a href="../../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                              <a href="../../../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                              <a href="../../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="setOnDeserializing-system.Action_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setOnDeserializing</h4>
+<pre>public&nbsp;void&nbsp;setOnDeserializing(<a href="../../../../../system/Action_1.html" title="class in system">Action_1</a>&nbsp;OnDeserializing)
+                        throws java.lang.Throwable,
+                               <a href="../../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                               <a href="../../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                               <a href="../../../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                               <a href="../../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                               <a href="../../../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                               <a href="../../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="setOnSerialized-system.Action_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setOnSerialized</h4>
+<pre>public&nbsp;void&nbsp;setOnSerialized(<a href="../../../../../system/Action_1.html" title="class in system">Action_1</a>&nbsp;OnSerialized)
+                     throws java.lang.Throwable,
+                            <a href="../../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                            <a href="../../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                            <a href="../../../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                            <a href="../../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                            <a href="../../../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                            <a href="../../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="setOnSerializing-system.Action_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setOnSerializing</h4>
+<pre>public&nbsp;void&nbsp;setOnSerializing(<a href="../../../../../system/Action_1.html" title="class in system">Action_1</a>&nbsp;OnSerializing)
+                      throws java.lang.Throwable,
+                             <a href="../../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                             <a href="../../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                             <a href="../../../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                             <a href="../../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                             <a href="../../../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                             <a href="../../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -928,7 +1353,7 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 <a name="setPolymorphismOptions-system.text.json.serialization.metadata.JsonPolymorphismOptions-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>setPolymorphismOptions</h4>
 <pre>public&nbsp;void&nbsp;setPolymorphismOptions(<a href="../../../../../system/text/json/serialization/metadata/JsonPolymorphismOptions.html" title="class in system.text.json.serialization.metadata">JsonPolymorphismOptions</a>&nbsp;PolymorphismOptions)
@@ -939,6 +1364,58 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
                                    <a href="../../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
                                    <a href="../../../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
                                    <a href="../../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="setPreferredPropertyObjectCreationHandling-system.Nullable_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setPreferredPropertyObjectCreationHandling</h4>
+<pre>public&nbsp;void&nbsp;setPreferredPropertyObjectCreationHandling(<a href="../../../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;PreferredPropertyObjectCreationHandling)
+                                                throws java.lang.Throwable,
+                                                       <a href="../../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                       <a href="../../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                       <a href="../../../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                                       <a href="../../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                       <a href="../../../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                                                       <a href="../../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="setUnmappedMemberHandling-system.Nullable_1-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>setUnmappedMemberHandling</h4>
+<pre>public&nbsp;void&nbsp;setUnmappedMemberHandling(<a href="../../../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;UnmappedMemberHandling)
+                               throws java.lang.Throwable,
+                                      <a href="../../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                      <a href="../../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                      <a href="../../../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                      <a href="../../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                      <a href="../../../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                                      <a href="../../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
@@ -975,8 +1452,8 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../../system/text/json/serialization/metadata/JsonPropertyInfo.html" title="class in system.text.json.serialization.metadata"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../../system/text/json/serialization/metadata/JsonTypeInfoKind.html" title="class in system.text.json.serialization.metadata"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../../system/text/json/serialization/metadata/JsonPropertyInfoValues_1.html" title="class in system.text.json.serialization.metadata"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../../system/text/json/serialization/metadata/JsonTypeInfo_1.html" title="class in system.text.json.serialization.metadata"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../index.html?system/text/json/serialization/metadata/JsonTypeInfo.html" target="_top">Frames</a></li>

@@ -21,6 +21,10 @@
 <meta name="keywords" content="GetTableMetadataOffset()">
 <meta name="keywords" content="GetTableRowCount()">
 <meta name="keywords" content="GetTableRowSize()">
+<meta name="keywords" content="GetEditAndContinueLogEntries()">
+<meta name="keywords" content="GetEditAndContinueMapEntries()">
+<meta name="keywords" content="GetTypesWithEvents()">
+<meta name="keywords" content="GetTypesWithProperties()">
 <meta name="keywords" content="GetNextHandle()">
 <meta name="keywords" content="ResolveSignatureTypeKind()">
 <link rel="stylesheet" type="text/css" href="../../../../stylesheet.css" title="Style">
@@ -36,7 +40,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":9,"i2":9,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":9,"i9":9,"i10":9,"i11":9,"i12":9,"i13":9,"i14":9,"i15":10};
+var methods = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":9,"i11":9,"i12":9,"i13":9,"i14":9,"i15":9,"i16":9,"i17":9,"i18":9,"i19":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -238,82 +242,98 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 </td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/reflection/metadata/ecma335/MetadataReaderExtensions.html#GetEditAndContinueLogEntries-system.reflection.metadata.MetadataReader-">GetEditAndContinueLogEntries</a></span>(<a href="../../../../system/reflection/metadata/MetadataReader.html" title="class in system.reflection.metadata">MetadataReader</a>&nbsp;reader)</code>&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>static <a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/reflection/metadata/ecma335/MetadataReaderExtensions.html#GetEditAndContinueMapEntries-system.reflection.metadata.MetadataReader-">GetEditAndContinueMapEntries</a></span>(<a href="../../../../system/reflection/metadata/MetadataReader.html" title="class in system.reflection.metadata">MetadataReader</a>&nbsp;reader)</code>&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>static int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/reflection/metadata/ecma335/MetadataReaderExtensions.html#GetHeapMetadataOffset-system.reflection.metadata.MetadataReader-system.reflection.metadata.ecma335.HeapIndex-">GetHeapMetadataOffset</a></span>(<a href="../../../../system/reflection/metadata/MetadataReader.html" title="class in system.reflection.metadata">MetadataReader</a>&nbsp;reader,
                      <a href="../../../../system/reflection/metadata/ecma335/HeapIndex.html" title="class in system.reflection.metadata.ecma335">HeapIndex</a>&nbsp;heapIndex)</code>&nbsp;</td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>static int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/reflection/metadata/ecma335/MetadataReaderExtensions.html#GetHeapSize-system.reflection.metadata.MetadataReader-system.reflection.metadata.ecma335.HeapIndex-">GetHeapSize</a></span>(<a href="../../../../system/reflection/metadata/MetadataReader.html" title="class in system.reflection.metadata">MetadataReader</a>&nbsp;reader,
            <a href="../../../../system/reflection/metadata/ecma335/HeapIndex.html" title="class in system.reflection.metadata.ecma335">HeapIndex</a>&nbsp;heapIndex)</code>&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/reflection/metadata/ecma335/MetadataReaderExtensions.html#getJCOAssemblyName--">getJCOAssemblyName</a></span>()</code>
 <div class="block">Returns the reflected Assembly name</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/reflection/metadata/ecma335/MetadataReaderExtensions.html#getJCOClassName--">getJCOClassName</a></span>()</code>
 <div class="block">Returns the reflected Class name</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/reflection/metadata/ecma335/MetadataReaderExtensions.html#getJCOInstance--">getJCOInstance</a></span>()</code>
 <div class="block">Returns the instantiated class</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/reflection/metadata/ecma335/MetadataReaderExtensions.html#getJCOObjectName--">getJCOObjectName</a></span>()</code>
 <div class="block">Returns the reflected Class name used to build the object</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>org.mases.jcobridge.JCType</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/reflection/metadata/ecma335/MetadataReaderExtensions.html#getJCOType--">getJCOType</a></span>()</code>
 <div class="block">Returns the instantiated class Type</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>static <a href="../../../../system/reflection/metadata/BlobHandle.html" title="class in system.reflection.metadata">BlobHandle</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/reflection/metadata/ecma335/MetadataReaderExtensions.html#GetNextHandle-system.reflection.metadata.MetadataReader-system.reflection.metadata.BlobHandle-">GetNextHandle</a></span>(<a href="../../../../system/reflection/metadata/MetadataReader.html" title="class in system.reflection.metadata">MetadataReader</a>&nbsp;reader,
              <a href="../../../../system/reflection/metadata/BlobHandle.html" title="class in system.reflection.metadata">BlobHandle</a>&nbsp;handle)</code>&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../../system/reflection/metadata/StringHandle.html" title="class in system.reflection.metadata">StringHandle</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/reflection/metadata/ecma335/MetadataReaderExtensions.html#GetNextHandle-system.reflection.metadata.MetadataReader-system.reflection.metadata.StringHandle-">GetNextHandle</a></span>(<a href="../../../../system/reflection/metadata/MetadataReader.html" title="class in system.reflection.metadata">MetadataReader</a>&nbsp;reader,
              <a href="../../../../system/reflection/metadata/StringHandle.html" title="class in system.reflection.metadata">StringHandle</a>&nbsp;handle)</code>&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>static <a href="../../../../system/reflection/metadata/UserStringHandle.html" title="class in system.reflection.metadata">UserStringHandle</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/reflection/metadata/ecma335/MetadataReaderExtensions.html#GetNextHandle-system.reflection.metadata.MetadataReader-system.reflection.metadata.UserStringHandle-">GetNextHandle</a></span>(<a href="../../../../system/reflection/metadata/MetadataReader.html" title="class in system.reflection.metadata">MetadataReader</a>&nbsp;reader,
              <a href="../../../../system/reflection/metadata/UserStringHandle.html" title="class in system.reflection.metadata">UserStringHandle</a>&nbsp;handle)</code>&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>static int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/reflection/metadata/ecma335/MetadataReaderExtensions.html#GetTableMetadataOffset-system.reflection.metadata.MetadataReader-system.reflection.metadata.ecma335.TableIndex-">GetTableMetadataOffset</a></span>(<a href="../../../../system/reflection/metadata/MetadataReader.html" title="class in system.reflection.metadata">MetadataReader</a>&nbsp;reader,
                       <a href="../../../../system/reflection/metadata/ecma335/TableIndex.html" title="class in system.reflection.metadata.ecma335">TableIndex</a>&nbsp;tableIndex)</code>&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>static int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/reflection/metadata/ecma335/MetadataReaderExtensions.html#GetTableRowCount-system.reflection.metadata.MetadataReader-system.reflection.metadata.ecma335.TableIndex-">GetTableRowCount</a></span>(<a href="../../../../system/reflection/metadata/MetadataReader.html" title="class in system.reflection.metadata">MetadataReader</a>&nbsp;reader,
                 <a href="../../../../system/reflection/metadata/ecma335/TableIndex.html" title="class in system.reflection.metadata.ecma335">TableIndex</a>&nbsp;tableIndex)</code>&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>static int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/reflection/metadata/ecma335/MetadataReaderExtensions.html#GetTableRowSize-system.reflection.metadata.MetadataReader-system.reflection.metadata.ecma335.TableIndex-">GetTableRowSize</a></span>(<a href="../../../../system/reflection/metadata/MetadataReader.html" title="class in system.reflection.metadata">MetadataReader</a>&nbsp;reader,
                <a href="../../../../system/reflection/metadata/ecma335/TableIndex.html" title="class in system.reflection.metadata.ecma335">TableIndex</a>&nbsp;tableIndex)</code>&nbsp;</td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i16" class="altColor">
+<td class="colFirst"><code>static <a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/reflection/metadata/ecma335/MetadataReaderExtensions.html#GetTypesWithEvents-system.reflection.metadata.MetadataReader-">GetTypesWithEvents</a></span>(<a href="../../../../system/reflection/metadata/MetadataReader.html" title="class in system.reflection.metadata">MetadataReader</a>&nbsp;reader)</code>&nbsp;</td>
+</tr>
+<tr id="i17" class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/reflection/metadata/ecma335/MetadataReaderExtensions.html#GetTypesWithProperties-system.reflection.metadata.MetadataReader-">GetTypesWithProperties</a></span>(<a href="../../../../system/reflection/metadata/MetadataReader.html" title="class in system.reflection.metadata">MetadataReader</a>&nbsp;reader)</code>&nbsp;</td>
+</tr>
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>static <a href="../../../../system/reflection/metadata/SignatureTypeKind.html" title="class in system.reflection.metadata">SignatureTypeKind</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/reflection/metadata/ecma335/MetadataReaderExtensions.html#ResolveSignatureTypeKind-system.reflection.metadata.MetadataReader-system.reflection.metadata.EntityHandle-byte-">ResolveSignatureTypeKind</a></span>(<a href="../../../../system/reflection/metadata/MetadataReader.html" title="class in system.reflection.metadata">MetadataReader</a>&nbsp;reader,
                         <a href="../../../../system/reflection/metadata/EntityHandle.html" title="class in system.reflection.metadata">EntityHandle</a>&nbsp;typeHandle,
                         byte&nbsp;rawTypeKind)</code>&nbsp;</td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/reflection/metadata/ecma335/MetadataReaderExtensions.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
@@ -459,6 +479,74 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <dd><a href="../../../../system/reflection/metadata/ecma335/MetadataReaderExtensions.html" title="class in system.reflection.metadata.ecma335"><code>MetadataReaderExtensions</code></a> instance</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - in case of error during cast operation</dd>
+</dl>
+</li>
+</ul>
+<a name="GetEditAndContinueLogEntries-system.reflection.metadata.MetadataReader-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>GetEditAndContinueLogEntries</h4>
+<pre>public static&nbsp;<a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;GetEditAndContinueLogEntries(<a href="../../../../system/reflection/metadata/MetadataReader.html" title="class in system.reflection.metadata">MetadataReader</a>&nbsp;reader)
+                                                  throws java.lang.Throwable,
+                                                         <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                         <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                         <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                         <a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                         <a href="../../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                                         <a href="../../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                                                         <a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                                         <a href="../../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                                         <a href="../../../../system/RankException.html" title="class in system">RankException</a>,
+                                                         <a href="../../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../../system/RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="GetEditAndContinueMapEntries-system.reflection.metadata.MetadataReader-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>GetEditAndContinueMapEntries</h4>
+<pre>public static&nbsp;<a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;GetEditAndContinueMapEntries(<a href="../../../../system/reflection/metadata/MetadataReader.html" title="class in system.reflection.metadata">MetadataReader</a>&nbsp;reader)
+                                                  throws java.lang.Throwable,
+                                                         <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                         <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                         <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                         <a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                         <a href="../../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                                         <a href="../../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                                                         <a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                                         <a href="../../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                                         <a href="../../../../system/RankException.html" title="class in system">RankException</a>,
+                                                         <a href="../../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../../system/RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -828,6 +916,74 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
                                   <a href="../../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
                                   <a href="../../../../system/RankException.html" title="class in system">RankException</a>,
                                   <a href="../../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../../system/RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="GetTypesWithEvents-system.reflection.metadata.MetadataReader-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>GetTypesWithEvents</h4>
+<pre>public static&nbsp;<a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;GetTypesWithEvents(<a href="../../../../system/reflection/metadata/MetadataReader.html" title="class in system.reflection.metadata">MetadataReader</a>&nbsp;reader)
+                                        throws java.lang.Throwable,
+                                               <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                               <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                               <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                               <a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                               <a href="../../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                               <a href="../../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                                               <a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                               <a href="../../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                               <a href="../../../../system/RankException.html" title="class in system">RankException</a>,
+                                               <a href="../../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../../system/RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="GetTypesWithProperties-system.reflection.metadata.MetadataReader-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>GetTypesWithProperties</h4>
+<pre>public static&nbsp;<a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;GetTypesWithProperties(<a href="../../../../system/reflection/metadata/MetadataReader.html" title="class in system.reflection.metadata">MetadataReader</a>&nbsp;reader)
+                                            throws java.lang.Throwable,
+                                                   <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                   <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                   <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                   <a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                   <a href="../../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                                   <a href="../../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                                                   <a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                                   <a href="../../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                                   <a href="../../../../system/RankException.html" title="class in system">RankException</a>,
+                                                   <a href="../../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>

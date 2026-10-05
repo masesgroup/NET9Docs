@@ -30,6 +30,7 @@
 <meta name="keywords" content="NegotiateClientCertificateAsync()">
 <meta name="keywords" content="ShutdownAsync()">
 <meta name="keywords" content="WriteAsync()">
+<meta name="keywords" content="ReadAsync()">
 <meta name="keywords" content="DisposeAsync()">
 <meta name="keywords" content="AuthenticateAsClient()">
 <meta name="keywords" content="AuthenticateAsServer()">
@@ -67,7 +68,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":9,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":10,"i36":10,"i37":10,"i38":10,"i39":10,"i40":10,"i41":10,"i42":10,"i43":10,"i44":10,"i45":10,"i46":10,"i47":10,"i48":10,"i49":10,"i50":10,"i51":10,"i52":10,"i53":10,"i54":10,"i55":10,"i56":10,"i57":10,"i58":10,"i59":10,"i60":10,"i61":10,"i62":10,"i63":10,"i64":10,"i65":10,"i66":10,"i67":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":9,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":10,"i36":10,"i37":10,"i38":10,"i39":10,"i40":10,"i41":10,"i42":10,"i43":10,"i44":10,"i45":10,"i46":10,"i47":10,"i48":10,"i49":10,"i50":10,"i51":10,"i52":10,"i53":10,"i54":10,"i55":10,"i56":10,"i57":10,"i58":10,"i59":10,"i60":10,"i61":10,"i62":10,"i63":10,"i64":10,"i65":10,"i66":10,"i67":10,"i68":10,"i69":10,"i70":10,"i71":10,"i72":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -368,33 +369,39 @@ extends <a href="../../../system/net/security/AuthenticatedStream.html" title="c
 </tr>
 <tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="../../../system/threading/tasks/Task.html" title="class in system.threading.tasks">Task</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/security/SslStream.html#AuthenticateAsServerAsync-system.net.security.SslServerAuthenticationOptions-system.threading.CancellationToken-">AuthenticateAsServerAsync</a></span>(<a href="../../../system/net/security/SslServerAuthenticationOptions.html" title="class in system.net.security">SslServerAuthenticationOptions</a>&nbsp;sslServerAuthenticationOptions,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/security/SslStream.html#AuthenticateAsServerAsync-system.net.security.ServerOptionsSelectionCallback-org.mases.jcobridge.netreflection.NetObject-system.threading.CancellationToken-">AuthenticateAsServerAsync</a></span>(<a href="../../../system/net/security/ServerOptionsSelectionCallback.html" title="class in system.net.security">ServerOptionsSelectionCallback</a>&nbsp;optionsCallback,
+                         <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;state,
                          <a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)</code>&nbsp;</td>
 </tr>
 <tr id="i13" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/threading/tasks/Task.html" title="class in system.threading.tasks">Task</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/security/SslStream.html#AuthenticateAsServerAsync-system.security.cryptography.x509certificates.X509Certificate-">AuthenticateAsServerAsync</a></span>(<a href="../../../system/security/cryptography/x509certificates/X509Certificate.html" title="class in system.security.cryptography.x509certificates">X509Certificate</a>&nbsp;serverCertificate)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/security/SslStream.html#AuthenticateAsServerAsync-system.net.security.SslServerAuthenticationOptions-system.threading.CancellationToken-">AuthenticateAsServerAsync</a></span>(<a href="../../../system/net/security/SslServerAuthenticationOptions.html" title="class in system.net.security">SslServerAuthenticationOptions</a>&nbsp;sslServerAuthenticationOptions,
+                         <a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)</code>&nbsp;</td>
 </tr>
 <tr id="i14" class="altColor">
+<td class="colFirst"><code><a href="../../../system/threading/tasks/Task.html" title="class in system.threading.tasks">Task</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/security/SslStream.html#AuthenticateAsServerAsync-system.security.cryptography.x509certificates.X509Certificate-">AuthenticateAsServerAsync</a></span>(<a href="../../../system/security/cryptography/x509certificates/X509Certificate.html" title="class in system.security.cryptography.x509certificates">X509Certificate</a>&nbsp;serverCertificate)</code>&nbsp;</td>
+</tr>
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/threading/tasks/Task.html" title="class in system.threading.tasks">Task</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/security/SslStream.html#AuthenticateAsServerAsync-system.security.cryptography.x509certificates.X509Certificate-boolean-boolean-">AuthenticateAsServerAsync</a></span>(<a href="../../../system/security/cryptography/x509certificates/X509Certificate.html" title="class in system.security.cryptography.x509certificates">X509Certificate</a>&nbsp;serverCertificate,
                          boolean&nbsp;clientCertificateRequired,
                          boolean&nbsp;checkCertificateRevocation)</code>&nbsp;</td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code><a href="../../../system/threading/tasks/Task.html" title="class in system.threading.tasks">Task</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/security/SslStream.html#AuthenticateAsServerAsync-system.security.cryptography.x509certificates.X509Certificate-boolean-system.security.authentication.SslProtocols-boolean-">AuthenticateAsServerAsync</a></span>(<a href="../../../system/security/cryptography/x509certificates/X509Certificate.html" title="class in system.security.cryptography.x509certificates">X509Certificate</a>&nbsp;serverCertificate,
                          boolean&nbsp;clientCertificateRequired,
                          <a href="../../../system/security/authentication/SslProtocols.html" title="class in system.security.authentication">SslProtocols</a>&nbsp;enabledSslProtocols,
                          boolean&nbsp;checkCertificateRevocation)</code>&nbsp;</td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/IAsyncResult.html" title="interface in system">IAsyncResult</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/security/SslStream.html#BeginAuthenticateAsClient-java.lang.String-system.AsyncCallback-org.mases.jcobridge.netreflection.NetObject-">BeginAuthenticateAsClient</a></span>(java.lang.String&nbsp;targetHost,
                          <a href="../../../system/AsyncCallback.html" title="class in system">AsyncCallback</a>&nbsp;asyncCallback,
                          <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;asyncState)</code>&nbsp;</td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code><a href="../../../system/IAsyncResult.html" title="interface in system">IAsyncResult</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/security/SslStream.html#BeginAuthenticateAsClient-java.lang.String-system.security.cryptography.x509certificates.X509CertificateCollection-boolean-system.AsyncCallback-org.mases.jcobridge.netreflection.NetObject-">BeginAuthenticateAsClient</a></span>(java.lang.String&nbsp;targetHost,
                          <a href="../../../system/security/cryptography/x509certificates/X509CertificateCollection.html" title="class in system.security.cryptography.x509certificates">X509CertificateCollection</a>&nbsp;clientCertificates,
@@ -402,7 +409,7 @@ extends <a href="../../../system/net/security/AuthenticatedStream.html" title="c
                          <a href="../../../system/AsyncCallback.html" title="class in system">AsyncCallback</a>&nbsp;asyncCallback,
                          <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;asyncState)</code>&nbsp;</td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/IAsyncResult.html" title="interface in system">IAsyncResult</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/security/SslStream.html#BeginAuthenticateAsClient-java.lang.String-system.security.cryptography.x509certificates.X509CertificateCollection-system.security.authentication.SslProtocols-boolean-system.AsyncCallback-org.mases.jcobridge.netreflection.NetObject-">BeginAuthenticateAsClient</a></span>(java.lang.String&nbsp;targetHost,
                          <a href="../../../system/security/cryptography/x509certificates/X509CertificateCollection.html" title="class in system.security.cryptography.x509certificates">X509CertificateCollection</a>&nbsp;clientCertificates,
@@ -411,13 +418,13 @@ extends <a href="../../../system/net/security/AuthenticatedStream.html" title="c
                          <a href="../../../system/AsyncCallback.html" title="class in system">AsyncCallback</a>&nbsp;asyncCallback,
                          <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;asyncState)</code>&nbsp;</td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code><a href="../../../system/IAsyncResult.html" title="interface in system">IAsyncResult</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/security/SslStream.html#BeginAuthenticateAsServer-system.security.cryptography.x509certificates.X509Certificate-system.AsyncCallback-org.mases.jcobridge.netreflection.NetObject-">BeginAuthenticateAsServer</a></span>(<a href="../../../system/security/cryptography/x509certificates/X509Certificate.html" title="class in system.security.cryptography.x509certificates">X509Certificate</a>&nbsp;serverCertificate,
                          <a href="../../../system/AsyncCallback.html" title="class in system">AsyncCallback</a>&nbsp;asyncCallback,
                          <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;asyncState)</code>&nbsp;</td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/IAsyncResult.html" title="interface in system">IAsyncResult</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/security/SslStream.html#BeginAuthenticateAsServer-system.security.cryptography.x509certificates.X509Certificate-boolean-boolean-system.AsyncCallback-org.mases.jcobridge.netreflection.NetObject-">BeginAuthenticateAsServer</a></span>(<a href="../../../system/security/cryptography/x509certificates/X509Certificate.html" title="class in system.security.cryptography.x509certificates">X509Certificate</a>&nbsp;serverCertificate,
                          boolean&nbsp;clientCertificateRequired,
@@ -425,7 +432,7 @@ extends <a href="../../../system/net/security/AuthenticatedStream.html" title="c
                          <a href="../../../system/AsyncCallback.html" title="class in system">AsyncCallback</a>&nbsp;asyncCallback,
                          <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;asyncState)</code>&nbsp;</td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i22" class="altColor">
 <td class="colFirst"><code><a href="../../../system/IAsyncResult.html" title="interface in system">IAsyncResult</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/security/SslStream.html#BeginAuthenticateAsServer-system.security.cryptography.x509certificates.X509Certificate-boolean-system.security.authentication.SslProtocols-boolean-system.AsyncCallback-org.mases.jcobridge.netreflection.NetObject-">BeginAuthenticateAsServer</a></span>(<a href="../../../system/security/cryptography/x509certificates/X509Certificate.html" title="class in system.security.cryptography.x509certificates">X509Certificate</a>&nbsp;serverCertificate,
                          boolean&nbsp;clientCertificateRequired,
@@ -434,7 +441,7 @@ extends <a href="../../../system/net/security/AuthenticatedStream.html" title="c
                          <a href="../../../system/AsyncCallback.html" title="class in system">AsyncCallback</a>&nbsp;asyncCallback,
                          <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;asyncState)</code>&nbsp;</td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/IAsyncResult.html" title="interface in system">IAsyncResult</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/security/SslStream.html#BeginRead-byte:A-int-int-system.AsyncCallback-org.mases.jcobridge.netreflection.NetObject-">BeginRead</a></span>(byte[]&nbsp;buffer,
          int&nbsp;offset,
@@ -442,7 +449,7 @@ extends <a href="../../../system/net/security/AuthenticatedStream.html" title="c
          <a href="../../../system/AsyncCallback.html" title="class in system">AsyncCallback</a>&nbsp;asyncCallback,
          <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;asyncState)</code>&nbsp;</td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code><a href="../../../system/IAsyncResult.html" title="interface in system">IAsyncResult</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/security/SslStream.html#BeginRead-org.mases.jcobridge.netreflection.JCORefOut-int-int-system.AsyncCallback-org.mases.jcobridge.netreflection.NetObject-">BeginRead</a></span>(<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;dupParam0,
          int&nbsp;dupParam1,
@@ -450,7 +457,7 @@ extends <a href="../../../system/net/security/AuthenticatedStream.html" title="c
          <a href="../../../system/AsyncCallback.html" title="class in system">AsyncCallback</a>&nbsp;dupParam3,
          <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;dupParam4)</code>&nbsp;</td>
 </tr>
-<tr id="i24" class="altColor">
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/IAsyncResult.html" title="interface in system">IAsyncResult</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/security/SslStream.html#BeginWrite-byte:A-int-int-system.AsyncCallback-org.mases.jcobridge.netreflection.NetObject-">BeginWrite</a></span>(byte[]&nbsp;buffer,
           int&nbsp;offset,
@@ -458,7 +465,7 @@ extends <a href="../../../system/net/security/AuthenticatedStream.html" title="c
           <a href="../../../system/AsyncCallback.html" title="class in system">AsyncCallback</a>&nbsp;asyncCallback,
           <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;asyncState)</code>&nbsp;</td>
 </tr>
-<tr id="i25" class="rowColor">
+<tr id="i26" class="altColor">
 <td class="colFirst"><code><a href="../../../system/IAsyncResult.html" title="interface in system">IAsyncResult</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/security/SslStream.html#BeginWrite-org.mases.jcobridge.netreflection.JCORefOut-int-int-system.AsyncCallback-org.mases.jcobridge.netreflection.NetObject-">BeginWrite</a></span>(<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;dupParam0,
           int&nbsp;dupParam1,
@@ -466,198 +473,222 @@ extends <a href="../../../system/net/security/AuthenticatedStream.html" title="c
           <a href="../../../system/AsyncCallback.html" title="class in system">AsyncCallback</a>&nbsp;dupParam3,
           <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;dupParam4)</code>&nbsp;</td>
 </tr>
-<tr id="i26" class="altColor">
+<tr id="i27" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../system/net/security/SslStream.html" title="class in system.net.security">SslStream</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/security/SslStream.html#cast-org.mases.jcobridge.netreflection.IJCOBridgeReflected-">cast</a></span>(<a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&nbsp;from)</code>
 <div class="block">Try to cast the <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection"><code>IJCOBridgeReflected</code></a> instance into <a href="../../../system/net/security/SslStream.html" title="class in system.net.security"><code>SslStream</code></a>, a cast assert is made to check if types are compatible.</div>
 </td>
 </tr>
-<tr id="i27" class="rowColor">
+<tr id="i28" class="altColor">
 <td class="colFirst"><code><a href="../../../system/threading/tasks/ValueTask.html" title="class in system.threading.tasks">ValueTask</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/security/SslStream.html#DisposeAsync--">DisposeAsync</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i28" class="altColor">
+<tr id="i29" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/security/SslStream.html#EndAuthenticateAsClient-system.IAsyncResult-">EndAuthenticateAsClient</a></span>(<a href="../../../system/IAsyncResult.html" title="interface in system">IAsyncResult</a>&nbsp;asyncResult)</code>&nbsp;</td>
 </tr>
-<tr id="i29" class="rowColor">
+<tr id="i30" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/security/SslStream.html#EndAuthenticateAsServer-system.IAsyncResult-">EndAuthenticateAsServer</a></span>(<a href="../../../system/IAsyncResult.html" title="interface in system">IAsyncResult</a>&nbsp;asyncResult)</code>&nbsp;</td>
 </tr>
-<tr id="i30" class="altColor">
+<tr id="i31" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/security/SslStream.html#EndRead-system.IAsyncResult-">EndRead</a></span>(<a href="../../../system/IAsyncResult.html" title="interface in system">IAsyncResult</a>&nbsp;asyncResult)</code>&nbsp;</td>
 </tr>
-<tr id="i31" class="rowColor">
+<tr id="i32" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/security/SslStream.html#EndWrite-system.IAsyncResult-">EndWrite</a></span>(<a href="../../../system/IAsyncResult.html" title="interface in system">IAsyncResult</a>&nbsp;asyncResult)</code>&nbsp;</td>
 </tr>
-<tr id="i32" class="altColor">
+<tr id="i33" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/security/SslStream.html#Flush--">Flush</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i33" class="rowColor">
+<tr id="i34" class="altColor">
 <td class="colFirst"><code><a href="../../../system/threading/tasks/Task.html" title="class in system.threading.tasks">Task</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/security/SslStream.html#FlushAsync-system.threading.CancellationToken-">FlushAsync</a></span>(<a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)</code>&nbsp;</td>
 </tr>
-<tr id="i34" class="altColor">
+<tr id="i35" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/security/SslStream.html#getCheckCertRevocationStatus--">getCheckCertRevocationStatus</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i35" class="rowColor">
+<tr id="i36" class="altColor">
 <td class="colFirst"><code><a href="../../../system/security/authentication/CipherAlgorithmType.html" title="class in system.security.authentication">CipherAlgorithmType</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/security/SslStream.html#getCipherAlgorithm--">getCipherAlgorithm</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i36" class="altColor">
+<tr id="i37" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/security/SslStream.html#getCipherStrength--">getCipherStrength</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i37" class="rowColor">
+<tr id="i38" class="altColor">
 <td class="colFirst"><code><a href="../../../system/security/authentication/HashAlgorithmType.html" title="class in system.security.authentication">HashAlgorithmType</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/security/SslStream.html#getHashAlgorithm--">getHashAlgorithm</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i38" class="altColor">
+<tr id="i39" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/security/SslStream.html#getHashStrength--">getHashStrength</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i39" class="rowColor">
+<tr id="i40" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/security/SslStream.html#getJCOAssemblyName--">getJCOAssemblyName</a></span>()</code>
 <div class="block">Returns the reflected Assembly name</div>
 </td>
 </tr>
-<tr id="i40" class="altColor">
+<tr id="i41" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/security/SslStream.html#getJCOClassName--">getJCOClassName</a></span>()</code>
 <div class="block">Returns the reflected Class name</div>
 </td>
 </tr>
-<tr id="i41" class="rowColor">
+<tr id="i42" class="altColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/security/SslStream.html#getJCOInstance--">getJCOInstance</a></span>()</code>
 <div class="block">Returns the instantiated class</div>
 </td>
 </tr>
-<tr id="i42" class="altColor">
+<tr id="i43" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/security/SslStream.html#getJCOObjectName--">getJCOObjectName</a></span>()</code>
 <div class="block">Returns the reflected Class name used to build the object</div>
 </td>
 </tr>
-<tr id="i43" class="rowColor">
+<tr id="i44" class="altColor">
 <td class="colFirst"><code>org.mases.jcobridge.JCType</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/security/SslStream.html#getJCOType--">getJCOType</a></span>()</code>
 <div class="block">Returns the instantiated class Type</div>
 </td>
 </tr>
-<tr id="i44" class="altColor">
+<tr id="i45" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/security/authentication/ExchangeAlgorithmType.html" title="class in system.security.authentication">ExchangeAlgorithmType</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/security/SslStream.html#getKeyExchangeAlgorithm--">getKeyExchangeAlgorithm</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i45" class="rowColor">
+<tr id="i46" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/security/SslStream.html#getKeyExchangeStrength--">getKeyExchangeStrength</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i46" class="altColor">
+<tr id="i47" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/security/cryptography/x509certificates/X509Certificate.html" title="class in system.security.cryptography.x509certificates">X509Certificate</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/security/SslStream.html#getLocalCertificate--">getLocalCertificate</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i47" class="rowColor">
+<tr id="i48" class="altColor">
 <td class="colFirst"><code><a href="../../../system/net/security/SslApplicationProtocol.html" title="class in system.net.security">SslApplicationProtocol</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/security/SslStream.html#getNegotiatedApplicationProtocol--">getNegotiatedApplicationProtocol</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i48" class="altColor">
+<tr id="i49" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/net/security/TlsCipherSuite.html" title="class in system.net.security">TlsCipherSuite</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/security/SslStream.html#getNegotiatedCipherSuite--">getNegotiatedCipherSuite</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i49" class="rowColor">
+<tr id="i50" class="altColor">
 <td class="colFirst"><code><a href="../../../system/security/cryptography/x509certificates/X509Certificate.html" title="class in system.security.cryptography.x509certificates">X509Certificate</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/security/SslStream.html#getRemoteCertificate--">getRemoteCertificate</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i50" class="altColor">
+<tr id="i51" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/security/authentication/SslProtocols.html" title="class in system.security.authentication">SslProtocols</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/security/SslStream.html#getSslProtocol--">getSslProtocol</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i51" class="rowColor">
+<tr id="i52" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/security/SslStream.html#getTargetHostName--">getTargetHostName</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i52" class="altColor">
+<tr id="i53" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/net/TransportContext.html" title="class in system.net">TransportContext</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/security/SslStream.html#getTransportContext--">getTransportContext</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i53" class="rowColor">
+<tr id="i54" class="altColor">
 <td class="colFirst"><code><a href="../../../system/threading/tasks/Task.html" title="class in system.threading.tasks">Task</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/security/SslStream.html#NegotiateClientCertificateAsync-system.threading.CancellationToken-">NegotiateClientCertificateAsync</a></span>(<a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)</code>&nbsp;</td>
 </tr>
-<tr id="i54" class="altColor">
+<tr id="i55" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/security/SslStream.html#Read-byte:A-int-int-">Read</a></span>(byte[]&nbsp;buffer,
     int&nbsp;offset,
     int&nbsp;count)</code>&nbsp;</td>
 </tr>
-<tr id="i55" class="rowColor">
+<tr id="i56" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/security/SslStream.html#Read-org.mases.jcobridge.netreflection.JCORefOut-int-int-">Read</a></span>(<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;dupParam0,
     int&nbsp;dupParam1,
     int&nbsp;dupParam2)</code>&nbsp;</td>
 </tr>
-<tr id="i56" class="altColor">
+<tr id="i57" class="rowColor">
+<td class="colFirst"><code><a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/security/SslStream.html#ReadAsync-byte:A-int-int-system.threading.CancellationToken-">ReadAsync</a></span>(byte[]&nbsp;buffer,
+         int&nbsp;offset,
+         int&nbsp;count,
+         <a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)</code>&nbsp;</td>
+</tr>
+<tr id="i58" class="altColor">
+<td class="colFirst"><code><a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/security/SslStream.html#ReadAsync-org.mases.jcobridge.netreflection.JCORefOut-int-int-system.threading.CancellationToken-">ReadAsync</a></span>(<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;dupParam0,
+         int&nbsp;dupParam1,
+         int&nbsp;dupParam2,
+         <a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;dupParam3)</code>&nbsp;</td>
+</tr>
+<tr id="i59" class="rowColor">
+<td class="colFirst"><code><a href="../../../system/threading/tasks/ValueTask_1.html" title="class in system.threading.tasks">ValueTask_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/security/SslStream.html#ReadAsync-system.Memory_1-system.threading.CancellationToken-">ReadAsync</a></span>(<a href="../../../system/Memory_1.html" title="class in system">Memory_1</a>&nbsp;buffer,
+         <a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)</code>&nbsp;</td>
+</tr>
+<tr id="i60" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/security/SslStream.html#ReadByte--">ReadByte</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i57" class="rowColor">
+<tr id="i61" class="rowColor">
 <td class="colFirst"><code>long</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/security/SslStream.html#Seek-long-system.io.SeekOrigin-">Seek</a></span>(long&nbsp;offset,
     <a href="../../../system/io/SeekOrigin.html" title="class in system.io">SeekOrigin</a>&nbsp;origin)</code>&nbsp;</td>
 </tr>
-<tr id="i58" class="altColor">
+<tr id="i62" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/security/SslStream.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
-<tr id="i59" class="rowColor">
+<tr id="i63" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/security/SslStream.html#SetLength-long-">SetLength</a></span>(long&nbsp;value)</code>&nbsp;</td>
 </tr>
-<tr id="i60" class="altColor">
+<tr id="i64" class="altColor">
 <td class="colFirst"><code><a href="../../../system/threading/tasks/Task.html" title="class in system.threading.tasks">Task</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/security/SslStream.html#ShutdownAsync--">ShutdownAsync</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i61" class="rowColor">
+<tr id="i65" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/security/SslStream.html#Write-byte:A-">Write</a></span>(byte[]&nbsp;buffer)</code>&nbsp;</td>
 </tr>
-<tr id="i62" class="altColor">
+<tr id="i66" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/security/SslStream.html#Write-byte:A-int-int-">Write</a></span>(byte[]&nbsp;buffer,
      int&nbsp;offset,
      int&nbsp;count)</code>&nbsp;</td>
 </tr>
-<tr id="i63" class="rowColor">
+<tr id="i67" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/security/SslStream.html#Write-org.mases.jcobridge.netreflection.JCORefOut-">Write</a></span>(<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;dupParam0)</code>&nbsp;</td>
 </tr>
-<tr id="i64" class="altColor">
+<tr id="i68" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/security/SslStream.html#Write-org.mases.jcobridge.netreflection.JCORefOut-int-int-">Write</a></span>(<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;dupParam0,
      int&nbsp;dupParam1,
      int&nbsp;dupParam2)</code>&nbsp;</td>
 </tr>
-<tr id="i65" class="rowColor">
+<tr id="i69" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/threading/tasks/Task.html" title="class in system.threading.tasks">Task</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/security/SslStream.html#WriteAsync-byte:A-int-int-system.threading.CancellationToken-">WriteAsync</a></span>(byte[]&nbsp;buffer,
           int&nbsp;offset,
           int&nbsp;count,
           <a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)</code>&nbsp;</td>
 </tr>
-<tr id="i66" class="altColor">
+<tr id="i70" class="altColor">
 <td class="colFirst"><code><a href="../../../system/threading/tasks/Task.html" title="class in system.threading.tasks">Task</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/security/SslStream.html#WriteAsync-org.mases.jcobridge.netreflection.JCORefOut-int-int-system.threading.CancellationToken-">WriteAsync</a></span>(<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;dupParam0,
           int&nbsp;dupParam1,
           int&nbsp;dupParam2,
           <a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;dupParam3)</code>&nbsp;</td>
 </tr>
-<tr id="i67" class="rowColor">
+<tr id="i71" class="rowColor">
+<td class="colFirst"><code><a href="../../../system/threading/tasks/ValueTask.html" title="class in system.threading.tasks">ValueTask</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/security/SslStream.html#WriteAsync-system.ReadOnlyMemory_1-system.threading.CancellationToken-">WriteAsync</a></span>(<a href="../../../system/ReadOnlyMemory_1.html" title="class in system">ReadOnlyMemory_1</a>&nbsp;buffer,
+          <a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)</code>&nbsp;</td>
+</tr>
+<tr id="i72" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/security/SslStream.html#WriteByte-byte-">WriteByte</a></span>(byte&nbsp;value)</code>&nbsp;</td>
 </tr>
@@ -674,7 +705,7 @@ extends <a href="../../../system/net/security/AuthenticatedStream.html" title="c
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;system.io.<a href="../../../system/io/Stream.html" title="class in system.io">Stream</a></h3>
-<code><a href="../../../system/io/Stream.html#close--">close</a>, <a href="../../../system/io/Stream.html#Close--">Close</a>, <a href="../../../system/io/Stream.html#CopyTo-system.io.Stream-">CopyTo</a>, <a href="../../../system/io/Stream.html#CopyTo-system.io.Stream-int-">CopyTo</a>, <a href="../../../system/io/Stream.html#CopyToAsync-system.io.Stream-">CopyToAsync</a>, <a href="../../../system/io/Stream.html#CopyToAsync-system.io.Stream-system.threading.CancellationToken-">CopyToAsync</a>, <a href="../../../system/io/Stream.html#CopyToAsync-system.io.Stream-int-">CopyToAsync</a>, <a href="../../../system/io/Stream.html#CopyToAsync-system.io.Stream-int-system.threading.CancellationToken-">CopyToAsync</a>, <a href="../../../system/io/Stream.html#Dispose--">Dispose</a>, <a href="../../../system/io/Stream.html#FlushAsync--">FlushAsync</a>, <a href="../../../system/io/Stream.html#getCanRead--">getCanRead</a>, <a href="../../../system/io/Stream.html#getCanSeek--">getCanSeek</a>, <a href="../../../system/io/Stream.html#getCanTimeout--">getCanTimeout</a>, <a href="../../../system/io/Stream.html#getCanWrite--">getCanWrite</a>, <a href="../../../system/io/Stream.html#getLength--">getLength</a>, <a href="../../../system/io/Stream.html#getPosition--">getPosition</a>, <a href="../../../system/io/Stream.html#getReadTimeout--">getReadTimeout</a>, <a href="../../../system/io/Stream.html#getWriteTimeout--">getWriteTimeout</a>, <a href="../../../system/io/Stream.html#ReadExactly-byte:A-int-int-">ReadExactly</a>, <a href="../../../system/io/Stream.html#ReadExactly-org.mases.jcobridge.netreflection.JCORefOut-int-int-">ReadExactly</a>, <a href="../../../system/io/Stream.html#ReadExactlyAsync-byte:A-int-int-system.threading.CancellationToken-">ReadExactlyAsync</a>, <a href="../../../system/io/Stream.html#ReadExactlyAsync-org.mases.jcobridge.netreflection.JCORefOut-int-int-system.threading.CancellationToken-">ReadExactlyAsync</a>, <a href="../../../system/io/Stream.html#setPosition-long-">setPosition</a>, <a href="../../../system/io/Stream.html#setReadTimeout-int-">setReadTimeout</a>, <a href="../../../system/io/Stream.html#setWriteTimeout-int-">setWriteTimeout</a>, <a href="../../../system/io/Stream.html#Synchronized-system.io.Stream-">Synchronized</a>, <a href="../../../system/io/Stream.html#WriteAsync-byte:A-int-int-">WriteAsync</a>, <a href="../../../system/io/Stream.html#WriteAsync-org.mases.jcobridge.netreflection.JCORefOut-int-int-">WriteAsync</a></code></li>
+<code><a href="../../../system/io/Stream.html#close--">close</a>, <a href="../../../system/io/Stream.html#Close--">Close</a>, <a href="../../../system/io/Stream.html#CopyTo-system.io.Stream-">CopyTo</a>, <a href="../../../system/io/Stream.html#CopyTo-system.io.Stream-int-">CopyTo</a>, <a href="../../../system/io/Stream.html#CopyToAsync-system.io.Stream-">CopyToAsync</a>, <a href="../../../system/io/Stream.html#CopyToAsync-system.io.Stream-system.threading.CancellationToken-">CopyToAsync</a>, <a href="../../../system/io/Stream.html#CopyToAsync-system.io.Stream-int-">CopyToAsync</a>, <a href="../../../system/io/Stream.html#CopyToAsync-system.io.Stream-int-system.threading.CancellationToken-">CopyToAsync</a>, <a href="../../../system/io/Stream.html#Dispose--">Dispose</a>, <a href="../../../system/io/Stream.html#FlushAsync--">FlushAsync</a>, <a href="../../../system/io/Stream.html#getCanRead--">getCanRead</a>, <a href="../../../system/io/Stream.html#getCanSeek--">getCanSeek</a>, <a href="../../../system/io/Stream.html#getCanTimeout--">getCanTimeout</a>, <a href="../../../system/io/Stream.html#getCanWrite--">getCanWrite</a>, <a href="../../../system/io/Stream.html#getLength--">getLength</a>, <a href="../../../system/io/Stream.html#getPosition--">getPosition</a>, <a href="../../../system/io/Stream.html#getReadTimeout--">getReadTimeout</a>, <a href="../../../system/io/Stream.html#getWriteTimeout--">getWriteTimeout</a>, <a href="../../../system/io/Stream.html#ReadAsync-byte:A-int-int-">ReadAsync</a>, <a href="../../../system/io/Stream.html#ReadAsync-org.mases.jcobridge.netreflection.JCORefOut-int-int-">ReadAsync</a>, <a href="../../../system/io/Stream.html#ReadAtLeastAsync-system.Memory_1-int-boolean-system.threading.CancellationToken-">ReadAtLeastAsync</a>, <a href="../../../system/io/Stream.html#ReadExactly-byte:A-int-int-">ReadExactly</a>, <a href="../../../system/io/Stream.html#ReadExactly-org.mases.jcobridge.netreflection.JCORefOut-int-int-">ReadExactly</a>, <a href="../../../system/io/Stream.html#ReadExactlyAsync-byte:A-int-int-system.threading.CancellationToken-">ReadExactlyAsync</a>, <a href="../../../system/io/Stream.html#ReadExactlyAsync-org.mases.jcobridge.netreflection.JCORefOut-int-int-system.threading.CancellationToken-">ReadExactlyAsync</a>, <a href="../../../system/io/Stream.html#ReadExactlyAsync-system.Memory_1-system.threading.CancellationToken-">ReadExactlyAsync</a>, <a href="../../../system/io/Stream.html#setPosition-long-">setPosition</a>, <a href="../../../system/io/Stream.html#setReadTimeout-int-">setReadTimeout</a>, <a href="../../../system/io/Stream.html#setWriteTimeout-int-">setWriteTimeout</a>, <a href="../../../system/io/Stream.html#Synchronized-system.io.Stream-">Synchronized</a>, <a href="../../../system/io/Stream.html#WriteAsync-byte:A-int-int-">WriteAsync</a>, <a href="../../../system/io/Stream.html#WriteAsync-org.mases.jcobridge.netreflection.JCORefOut-int-int-">WriteAsync</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.system.MarshalByRefObject">
@@ -1499,6 +1530,26 @@ extends <a href="../../../system/net/security/AuthenticatedStream.html" title="c
 <dd><code><a href="../../../system/threading/tasks/TaskSchedulerException.html" title="class in system.threading.tasks">TaskSchedulerException</a></code></dd>
 <dd><code><a href="../../../system/threading/tasks/TaskCanceledException.html" title="class in system.threading.tasks">TaskCanceledException</a></code></dd>
 <dd><code><a href="../../../system/AggregateException.html" title="class in system">AggregateException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="AuthenticateAsServerAsync-system.net.security.ServerOptionsSelectionCallback-org.mases.jcobridge.netreflection.NetObject-system.threading.CancellationToken-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>AuthenticateAsServerAsync</h4>
+<pre>public&nbsp;<a href="../../../system/threading/tasks/Task.html" title="class in system.threading.tasks">Task</a>&nbsp;AuthenticateAsServerAsync(<a href="../../../system/net/security/ServerOptionsSelectionCallback.html" title="class in system.net.security">ServerOptionsSelectionCallback</a>&nbsp;optionsCallback,
+                                      <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;state,
+                                      <a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)
+                               throws java.lang.Throwable,
+                                      <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                      <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -2901,6 +2952,115 @@ extends <a href="../../../system/net/security/AuthenticatedStream.html" title="c
 </dl>
 </li>
 </ul>
+<a name="ReadAsync-byte:A-int-int-system.threading.CancellationToken-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ReadAsync</h4>
+<pre>public&nbsp;<a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a>&nbsp;ReadAsync(byte[]&nbsp;buffer,
+                        int&nbsp;offset,
+                        int&nbsp;count,
+                        <a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)
+                 throws java.lang.Throwable,
+                        <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                        <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                        <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                        <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                        <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                        <a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                        <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                        <a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                        <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                        <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../system/io/Stream.html#ReadAsync-byte:A-int-int-system.threading.CancellationToken-">ReadAsync</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/io/Stream.html" title="class in system.io">Stream</a></code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="ReadAsync-org.mases.jcobridge.netreflection.JCORefOut-int-int-system.threading.CancellationToken-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ReadAsync</h4>
+<pre>public&nbsp;<a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a>&nbsp;ReadAsync(<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;dupParam0,
+                        int&nbsp;dupParam1,
+                        int&nbsp;dupParam2,
+                        <a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;dupParam3)
+                 throws java.lang.Throwable,
+                        <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                        <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                        <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                        <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                        <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                        <a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                        <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                        <a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                        <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                        <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../system/io/Stream.html#ReadAsync-org.mases.jcobridge.netreflection.JCORefOut-int-int-system.threading.CancellationToken-">ReadAsync</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/io/Stream.html" title="class in system.io">Stream</a></code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="ReadAsync-system.Memory_1-system.threading.CancellationToken-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ReadAsync</h4>
+<pre>public&nbsp;<a href="../../../system/threading/tasks/ValueTask_1.html" title="class in system.threading.tasks">ValueTask_1</a>&nbsp;ReadAsync(<a href="../../../system/Memory_1.html" title="class in system">Memory_1</a>&nbsp;buffer,
+                             <a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)
+                      throws java.lang.Throwable,
+                             <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                             <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                             <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                             <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                             <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                             <a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                             <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../system/io/Stream.html#ReadAsync-system.Memory_1-system.threading.CancellationToken-">ReadAsync</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/io/Stream.html" title="class in system.io">Stream</a></code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+</dl>
+</li>
+</ul>
 <a name="ReadByte--">
 <!--   -->
 </a>
@@ -3234,6 +3394,37 @@ extends <a href="../../../system/net/security/AuthenticatedStream.html" title="c
 <dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
 <dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="WriteAsync-system.ReadOnlyMemory_1-system.threading.CancellationToken-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>WriteAsync</h4>
+<pre>public&nbsp;<a href="../../../system/threading/tasks/ValueTask.html" title="class in system.threading.tasks">ValueTask</a>&nbsp;WriteAsync(<a href="../../../system/ReadOnlyMemory_1.html" title="class in system">ReadOnlyMemory_1</a>&nbsp;buffer,
+                            <a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)
+                     throws java.lang.Throwable,
+                            <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                            <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                            <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                            <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                            <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                            <a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                            <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../system/io/Stream.html#WriteAsync-system.ReadOnlyMemory_1-system.threading.CancellationToken-">WriteAsync</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/io/Stream.html" title="class in system.io">Stream</a></code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 </dl>
 </li>
 </ul>

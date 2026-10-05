@@ -17,6 +17,7 @@
 <meta name="keywords" content="getJCOType()">
 <meta name="keywords" content="cast()">
 <meta name="keywords" content="Serialize()">
+<meta name="keywords" content="getIdProvider()">
 <meta name="keywords" content="getMetadataVersion()">
 <meta name="keywords" content="getFormatVersion()">
 <link rel="stylesheet" type="text/css" href="../../../../stylesheet.css" title="Style">
@@ -32,7 +33,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -208,6 +209,12 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../system/reflection/metadata/ecma335/PortablePdbBuilder.html#PortablePdbBuilder--">PortablePdbBuilder</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../system/reflection/metadata/ecma335/PortablePdbBuilder.html#PortablePdbBuilder-system.reflection.metadata.ecma335.MetadataBuilder-system.collections.immutable.ImmutableArray_1-system.reflection.metadata.MethodDefinitionHandle-system.Func_2-">PortablePdbBuilder</a></span>(<a href="../../../../system/reflection/metadata/ecma335/MetadataBuilder.html" title="class in system.reflection.metadata.ecma335">MetadataBuilder</a>&nbsp;tablesAndHeaps,
+                  <a href="../../../../system/collections/immutable/ImmutableArray_1.html" title="class in system.collections.immutable">ImmutableArray_1</a>&nbsp;typeSystemRowCounts,
+                  <a href="../../../../system/reflection/metadata/MethodDefinitionHandle.html" title="class in system.reflection.metadata">MethodDefinitionHandle</a>&nbsp;entryPoint,
+                  <a href="../../../../system/Func_2.html" title="class in system">Func_2</a>&nbsp;idProvider)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../system/reflection/metadata/ecma335/PortablePdbBuilder.html#PortablePdbBuilder-java.lang.Object-">PortablePdbBuilder</a></span>(java.lang.Object&nbsp;instance)</code>
 <div class="block">Internal constructor.</div>
 </td>
@@ -238,44 +245,48 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/reflection/metadata/ecma335/PortablePdbBuilder.html#getFormatVersion--">getFormatVersion</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
+<td class="colFirst"><code><a href="../../../../system/Func_2.html" title="class in system">Func_2</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/reflection/metadata/ecma335/PortablePdbBuilder.html#getIdProvider--">getIdProvider</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/reflection/metadata/ecma335/PortablePdbBuilder.html#getJCOAssemblyName--">getJCOAssemblyName</a></span>()</code>
 <div class="block">Returns the reflected Assembly name</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/reflection/metadata/ecma335/PortablePdbBuilder.html#getJCOClassName--">getJCOClassName</a></span>()</code>
 <div class="block">Returns the reflected Class name</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/reflection/metadata/ecma335/PortablePdbBuilder.html#getJCOInstance--">getJCOInstance</a></span>()</code>
 <div class="block">Returns the instantiated class</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/reflection/metadata/ecma335/PortablePdbBuilder.html#getJCOObjectName--">getJCOObjectName</a></span>()</code>
 <div class="block">Returns the reflected Class name used to build the object</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>org.mases.jcobridge.JCType</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/reflection/metadata/ecma335/PortablePdbBuilder.html#getJCOType--">getJCOType</a></span>()</code>
 <div class="block">Returns the instantiated class Type</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/reflection/metadata/ecma335/PortablePdbBuilder.html#getMetadataVersion--">getMetadataVersion</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="../../../../system/reflection/metadata/BlobContentId.html" title="class in system.reflection.metadata">BlobContentId</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/reflection/metadata/ecma335/PortablePdbBuilder.html#Serialize-system.reflection.metadata.BlobBuilder-">Serialize</a></span>(<a href="../../../../system/reflection/metadata/BlobBuilder.html" title="class in system.reflection.metadata">BlobBuilder</a>&nbsp;builder)</code>&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/reflection/metadata/ecma335/PortablePdbBuilder.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
@@ -382,6 +393,51 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 </dl>
 </li>
 </ul>
+<a name="PortablePdbBuilder-system.reflection.metadata.ecma335.MetadataBuilder-system.collections.immutable.ImmutableArray_1-system.reflection.metadata.MethodDefinitionHandle-system.Func_2-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>PortablePdbBuilder</h4>
+<pre>public&nbsp;PortablePdbBuilder(<a href="../../../../system/reflection/metadata/ecma335/MetadataBuilder.html" title="class in system.reflection.metadata.ecma335">MetadataBuilder</a>&nbsp;tablesAndHeaps,
+                          <a href="../../../../system/collections/immutable/ImmutableArray_1.html" title="class in system.collections.immutable">ImmutableArray_1</a>&nbsp;typeSystemRowCounts,
+                          <a href="../../../../system/reflection/metadata/MethodDefinitionHandle.html" title="class in system.reflection.metadata">MethodDefinitionHandle</a>&nbsp;entryPoint,
+                          <a href="../../../../system/Func_2.html" title="class in system">Func_2</a>&nbsp;idProvider)
+                   throws java.lang.Throwable,
+                          <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                          <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                          <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                          <a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                          <a href="../../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                          <a href="../../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                          <a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                          <a href="../../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                          <a href="../../../../system/RankException.html" title="class in system">RankException</a>,
+                          <a href="../../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                          <a href="../../../../system/FormatException.html" title="class in system">FormatException</a>,
+                          <a href="../../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                          <a href="../../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
+                          <a href="../../../../system/runtime/interopservices/ExternalException.html" title="class in system.runtime.interopservices">ExternalException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../../system/RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
+<dd><code><a href="../../../../system/runtime/interopservices/ExternalException.html" title="class in system.runtime.interopservices">ExternalException</a></code></dd>
+</dl>
+</li>
+</ul>
 <a name="PortablePdbBuilder-java.lang.Object-">
 <!--   -->
 </a>
@@ -432,6 +488,20 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <h4>getFormatVersion</h4>
 <pre>public&nbsp;<a href="../../../../system/UInt16.html" title="class in system">UInt16</a>&nbsp;getFormatVersion()
                         throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="getIdProvider--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getIdProvider</h4>
+<pre>public&nbsp;<a href="../../../../system/Func_2.html" title="class in system">Func_2</a>&nbsp;getIdProvider()
+                     throws java.lang.Throwable</pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>

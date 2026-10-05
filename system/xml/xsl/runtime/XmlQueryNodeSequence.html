@@ -17,7 +17,16 @@
 <meta name="keywords" content="getJCOType()">
 <meta name="keywords" content="cast()">
 <meta name="keywords" content="CreateOrReuse()">
+<meta name="keywords" content="DocOrderDistinct()">
 <meta name="keywords" content="AddClone()">
+<meta name="keywords" content="IndexOf()">
+<meta name="keywords" content="Insert()">
+<meta name="keywords" content="RemoveAt()">
+<meta name="keywords" content="Contains()">
+<meta name="keywords" content="Remove()">
+<meta name="keywords" content="Add()">
+<meta name="keywords" content="Clear()">
+<meta name="keywords" content="CopyTo()">
 <meta name="keywords" content="getIsDocOrderDistinct()">
 <meta name="keywords" content="setIsDocOrderDistinct()">
 <link rel="stylesheet" type="text/css" href="../../../../stylesheet.css" title="Style">
@@ -33,7 +42,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":9,"i2":9,"i3":9,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10};
+var methods = {"i0":10,"i1":9,"i2":9,"i3":9,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -117,7 +126,12 @@ var activeTableTab = "activeTableTab";
 <li><a href="../../../../org/mases/jcobridge/netreflection/NetObjectEnumerable.html" title="class in org.mases.jcobridge.netreflection">org.mases.jcobridge.netreflection.NetObjectEnumerable</a></li>
 <li>
 <ul class="inheritance">
+<li><a href="../../../../system/xml/xsl/runtime/XmlQuerySequence_1.html" title="class in system.xml.xsl.runtime">system.xml.xsl.runtime.XmlQuerySequence_1</a>&lt;<a href="../../../../system/xml/xpath/XPathNavigator.html" title="class in system.xml.xpath">XPathNavigator</a>&gt;</li>
+<li>
+<ul class="inheritance">
 <li>system.xml.xsl.runtime.XmlQueryNodeSequence</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -135,7 +149,7 @@ var activeTableTab = "activeTableTab";
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">XmlQueryNodeSequence</span>
-extends <a href="../../../../org/mases/jcobridge/netreflection/NetObjectEnumerable.html" title="class in org.mases.jcobridge.netreflection">NetObjectEnumerable</a></pre>
+extends <a href="../../../../system/xml/xsl/runtime/XmlQuerySequence_1.html" title="class in system.xml.xsl.runtime">XmlQuerySequence_1</a>&lt;<a href="../../../../system/xml/xpath/XPathNavigator.html" title="class in system.xml.xpath">XPathNavigator</a>&gt;</pre>
 <div class="block">The base .NET class managing System.Xml.Xsl.Runtime.XmlQueryNodeSequence, System.Private.Xml, Version=9.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51.
  <p>
  
@@ -214,17 +228,20 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObjectEnumerab
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../system/xml/xsl/runtime/XmlQueryNodeSequence.html#XmlQueryNodeSequence--">XmlQueryNodeSequence</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../system/xml/xsl/runtime/XmlQueryNodeSequence.html#XmlQueryNodeSequence-int-">XmlQueryNodeSequence</a></span>(int&nbsp;capacity)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../system/xml/xsl/runtime/XmlQueryNodeSequence.html#XmlQueryNodeSequence-system.collections.generic.IList_1-">XmlQueryNodeSequence</a></span>(<a href="../../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;list)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../system/xml/xsl/runtime/XmlQueryNodeSequence.html#XmlQueryNodeSequence-int-">XmlQueryNodeSequence</a></span>(int&nbsp;capacity)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../system/xml/xsl/runtime/XmlQueryNodeSequence.html#XmlQueryNodeSequence-java.lang.Object-">XmlQueryNodeSequence</a></span>(java.lang.Object&nbsp;instance)</code>
 <div class="block">Internal constructor.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../system/xml/xsl/runtime/XmlQueryNodeSequence.html#XmlQueryNodeSequence-system.xml.xpath.XPathNavigator-">XmlQueryNodeSequence</a></span>(<a href="../../../../system/xml/xpath/XPathNavigator.html" title="class in system.xml.xpath">XPathNavigator</a>&nbsp;navigator)</code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../system/xml/xsl/runtime/XmlQueryNodeSequence.html#XmlQueryNodeSequence-system.xml.xpath.XPathNavigator:A-int-">XmlQueryNodeSequence</a></span>(<a href="../../../../system/xml/xpath/XPathNavigator.html" title="class in system.xml.xpath">XPathNavigator</a>[]&nbsp;array,
                     int&nbsp;size)</code>&nbsp;</td>
 </tr>
@@ -263,48 +280,59 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObjectEnumerab
              <a href="../../../../system/xml/xpath/XPathNavigator.html" title="class in system.xml.xpath">XPathNavigator</a>&nbsp;navigator)</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
+<td class="colFirst"><code><a href="../../../../system/xml/xsl/runtime/XmlQueryNodeSequence.html" title="class in system.xml.xsl.runtime">XmlQueryNodeSequence</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/xml/xsl/runtime/XmlQueryNodeSequence.html#DocOrderDistinct-system.collections.generic.IComparer_1-">DocOrderDistinct</a></span>(<a href="../../../../system/collections/generic/IComparer_1.html" title="interface in system.collections.generic">IComparer_1</a>&nbsp;comparer)</code>&nbsp;</td>
+</tr>
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/xml/xsl/runtime/XmlQueryNodeSequence.html#getIsDocOrderDistinct--">getIsDocOrderDistinct</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/xml/xsl/runtime/XmlQueryNodeSequence.html#getJCOAssemblyName--">getJCOAssemblyName</a></span>()</code>
 <div class="block">Returns the reflected Assembly name</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/xml/xsl/runtime/XmlQueryNodeSequence.html#getJCOClassName--">getJCOClassName</a></span>()</code>
 <div class="block">Returns the reflected Class name</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/xml/xsl/runtime/XmlQueryNodeSequence.html#getJCOInstance--">getJCOInstance</a></span>()</code>
 <div class="block">Returns the instantiated class</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/xml/xsl/runtime/XmlQueryNodeSequence.html#getJCOObjectName--">getJCOObjectName</a></span>()</code>
 <div class="block">Returns the reflected Class name used to build the object</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>org.mases.jcobridge.JCType</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/xml/xsl/runtime/XmlQueryNodeSequence.html#getJCOType--">getJCOType</a></span>()</code>
 <div class="block">Returns the instantiated class Type</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/xml/xsl/runtime/XmlQueryNodeSequence.html#setIsDocOrderDistinct-boolean-">setIsDocOrderDistinct</a></span>(boolean&nbsp;IsDocOrderDistinct)</code>&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/xml/xsl/runtime/XmlQueryNodeSequence.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
 </table>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.system.xml.xsl.runtime.XmlQuerySequence_1">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;system.xml.xsl.runtime.<a href="../../../../system/xml/xsl/runtime/XmlQuerySequence_1.html" title="class in system.xml.xsl.runtime">XmlQuerySequence_1</a></h3>
+<code><a href="../../../../system/xml/xsl/runtime/XmlQuerySequence_1.html#Add-T-">Add</a>, <a href="../../../../system/xml/xsl/runtime/XmlQuerySequence_1.html#Clear--">Clear</a>, <a href="../../../../system/xml/xsl/runtime/XmlQuerySequence_1.html#Contains-T-">Contains</a>, <a href="../../../../system/xml/xsl/runtime/XmlQuerySequence_1.html#CopyTo-T:A-int-">CopyTo</a>, <a href="../../../../system/xml/xsl/runtime/XmlQuerySequence_1.html#getCount--">getCount</a>, <a href="../../../../system/xml/xsl/runtime/XmlQuerySequence_1.html#IndexOf-T-">IndexOf</a>, <a href="../../../../system/xml/xsl/runtime/XmlQuerySequence_1.html#SortByKeys-system.Array-">SortByKeys</a></code></li>
+</ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.org.mases.jcobridge.netreflection.NetObjectEnumerable">
 <!--   -->
@@ -425,6 +453,22 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObjectEnumerab
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="XmlQueryNodeSequence-system.collections.generic.IList_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>XmlQueryNodeSequence</h4>
+<pre>public&nbsp;XmlQueryNodeSequence(<a href="../../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;list)
+                     throws java.lang.Throwable,
+                            <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -566,6 +610,40 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObjectEnumerab
 </dl>
 </li>
 </ul>
+<a name="DocOrderDistinct-system.collections.generic.IComparer_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>DocOrderDistinct</h4>
+<pre>public&nbsp;<a href="../../../../system/xml/xsl/runtime/XmlQueryNodeSequence.html" title="class in system.xml.xsl.runtime">XmlQueryNodeSequence</a>&nbsp;DocOrderDistinct(<a href="../../../../system/collections/generic/IComparer_1.html" title="interface in system.collections.generic">IComparer_1</a>&nbsp;comparer)
+                                      throws java.lang.Throwable,
+                                             <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                             <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                             <a href="../../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                             <a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                             <a href="../../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                             <a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                             <a href="../../../../system/RankException.html" title="class in system">RankException</a>,
+                                             <a href="../../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                                             <a href="../../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                             <a href="../../../../system/FormatException.html" title="class in system">FormatException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../../system/RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
+</dl>
+</li>
+</ul>
 <a name="getIsDocOrderDistinct--">
 <!--   -->
 </a>
@@ -593,7 +671,7 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObjectEnumerab
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOAssemblyName--">getJCOAssemblyName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../org/mases/jcobridge/netreflection/NetObjectEnumerable.html#getJCOAssemblyName--">getJCOAssemblyName</a></code>&nbsp;in class&nbsp;<code><a href="../../../../org/mases/jcobridge/netreflection/NetObjectEnumerable.html" title="class in org.mases.jcobridge.netreflection">NetObjectEnumerable</a></code></dd>
+<dd><code><a href="../../../../system/xml/xsl/runtime/XmlQuerySequence_1.html#getJCOAssemblyName--">getJCOAssemblyName</a></code>&nbsp;in class&nbsp;<code><a href="../../../../system/xml/xsl/runtime/XmlQuerySequence_1.html" title="class in system.xml.xsl.runtime">XmlQuerySequence_1</a>&lt;<a href="../../../../system/xml/xpath/XPathNavigator.html" title="class in system.xml.xpath">XPathNavigator</a>&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>A <code>String</code> representing the Fullname of reflected Assembly</dd>
 </dl>
@@ -612,7 +690,7 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObjectEnumerab
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOClassName--">getJCOClassName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../org/mases/jcobridge/netreflection/NetObjectEnumerable.html#getJCOClassName--">getJCOClassName</a></code>&nbsp;in class&nbsp;<code><a href="../../../../org/mases/jcobridge/netreflection/NetObjectEnumerable.html" title="class in org.mases.jcobridge.netreflection">NetObjectEnumerable</a></code></dd>
+<dd><code><a href="../../../../system/xml/xsl/runtime/XmlQuerySequence_1.html#getJCOClassName--">getJCOClassName</a></code>&nbsp;in class&nbsp;<code><a href="../../../../system/xml/xsl/runtime/XmlQuerySequence_1.html" title="class in system.xml.xsl.runtime">XmlQuerySequence_1</a>&lt;<a href="../../../../system/xml/xpath/XPathNavigator.html" title="class in system.xml.xpath">XPathNavigator</a>&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>A <code>String</code> representing the Fullname of reflected Class</dd>
 </dl>
@@ -631,7 +709,7 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObjectEnumerab
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOInstance--">getJCOInstance</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../org/mases/jcobridge/netreflection/NetObjectEnumerable.html#getJCOInstance--">getJCOInstance</a></code>&nbsp;in class&nbsp;<code><a href="../../../../org/mases/jcobridge/netreflection/NetObjectEnumerable.html" title="class in org.mases.jcobridge.netreflection">NetObjectEnumerable</a></code></dd>
+<dd><code><a href="../../../../system/xml/xsl/runtime/XmlQuerySequence_1.html#getJCOInstance--">getJCOInstance</a></code>&nbsp;in class&nbsp;<code><a href="../../../../system/xml/xsl/runtime/XmlQuerySequence_1.html" title="class in system.xml.xsl.runtime">XmlQuerySequence_1</a>&lt;<a href="../../../../system/xml/xpath/XPathNavigator.html" title="class in system.xml.xpath">XPathNavigator</a>&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>An <code>Object</code> representing the CLR instance of the instantiated Class</dd>
 </dl>
@@ -650,7 +728,7 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObjectEnumerab
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOObjectName--">getJCOObjectName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../org/mases/jcobridge/netreflection/NetObjectEnumerable.html#getJCOObjectName--">getJCOObjectName</a></code>&nbsp;in class&nbsp;<code><a href="../../../../org/mases/jcobridge/netreflection/NetObjectEnumerable.html" title="class in org.mases.jcobridge.netreflection">NetObjectEnumerable</a></code></dd>
+<dd><code><a href="../../../../system/xml/xsl/runtime/XmlQuerySequence_1.html#getJCOObjectName--">getJCOObjectName</a></code>&nbsp;in class&nbsp;<code><a href="../../../../system/xml/xsl/runtime/XmlQuerySequence_1.html" title="class in system.xml.xsl.runtime">XmlQuerySequence_1</a>&lt;<a href="../../../../system/xml/xpath/XPathNavigator.html" title="class in system.xml.xpath">XPathNavigator</a>&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>A <code>String</code> representing the name used to allocated the object
          in CLR context</dd>
@@ -670,7 +748,7 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObjectEnumerab
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOType--">getJCOType</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../org/mases/jcobridge/netreflection/NetObjectEnumerable.html#getJCOType--">getJCOType</a></code>&nbsp;in class&nbsp;<code><a href="../../../../org/mases/jcobridge/netreflection/NetObjectEnumerable.html" title="class in org.mases.jcobridge.netreflection">NetObjectEnumerable</a></code></dd>
+<dd><code><a href="../../../../system/xml/xsl/runtime/XmlQuerySequence_1.html#getJCOType--">getJCOType</a></code>&nbsp;in class&nbsp;<code><a href="../../../../system/xml/xsl/runtime/XmlQuerySequence_1.html" title="class in system.xml.xsl.runtime">XmlQuerySequence_1</a>&lt;<a href="../../../../system/xml/xpath/XPathNavigator.html" title="class in system.xml.xpath">XPathNavigator</a>&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>A <code>JCType</code> representing the CLR Type of the instantiated Class</dd>
 </dl>
@@ -699,7 +777,7 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObjectEnumerab
 <pre>public&nbsp;void&nbsp;setJCOInstance(org.mases.jcobridge.JCObject&nbsp;instance)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../org/mases/jcobridge/netreflection/NetObjectEnumerable.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></code>&nbsp;in class&nbsp;<code><a href="../../../../org/mases/jcobridge/netreflection/NetObjectEnumerable.html" title="class in org.mases.jcobridge.netreflection">NetObjectEnumerable</a></code></dd>
+<dd><code><a href="../../../../system/xml/xsl/runtime/XmlQuerySequence_1.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></code>&nbsp;in class&nbsp;<code><a href="../../../../system/xml/xsl/runtime/XmlQuerySequence_1.html" title="class in system.xml.xsl.runtime">XmlQuerySequence_1</a>&lt;<a href="../../../../system/xml/xpath/XPathNavigator.html" title="class in system.xml.xpath">XPathNavigator</a>&gt;</code></dd>
 </dl>
 </li>
 </ul>

@@ -20,6 +20,7 @@
 <meta name="keywords" content="getMinimumSegmentSize()">
 <meta name="keywords" content="getPauseWriterThreshold()">
 <meta name="keywords" content="getResumeWriterThreshold()">
+<meta name="keywords" content="getPool()">
 <meta name="keywords" content="getDefault()">
 <meta name="keywords" content="getReaderScheduler()">
 <meta name="keywords" content="getWriterScheduler()">
@@ -36,7 +37,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":9,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10};
+var methods = {"i0":9,"i1":9,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -212,6 +213,15 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../system/io/pipelines/PipeOptions.html#PipeOptions--">PipeOptions</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/io/pipelines/PipeOptions.html#PipeOptions-system.buffers.MemoryPool_1-system.io.pipelines.PipeScheduler-system.io.pipelines.PipeScheduler-long-long-int-boolean-">PipeOptions</a></span>(<a href="../../../system/buffers/MemoryPool_1.html" title="class in system.buffers">MemoryPool_1</a>&nbsp;pool,
+           <a href="../../../system/io/pipelines/PipeScheduler.html" title="class in system.io.pipelines">PipeScheduler</a>&nbsp;readerScheduler,
+           <a href="../../../system/io/pipelines/PipeScheduler.html" title="class in system.io.pipelines">PipeScheduler</a>&nbsp;writerScheduler,
+           long&nbsp;pauseWriterThreshold,
+           long&nbsp;resumeWriterThreshold,
+           int&nbsp;minimumSegmentSize,
+           boolean&nbsp;useSynchronizationContext)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../system/io/pipelines/PipeOptions.html#PipeOptions-java.lang.Object-">PipeOptions</a></span>(java.lang.Object&nbsp;instance)</code>
 <div class="block">Internal constructor.</div>
 </td>
@@ -280,22 +290,26 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/io/pipelines/PipeOptions.html#getPauseWriterThreshold--">getPauseWriterThreshold</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i9" class="rowColor">
+<td class="colFirst"><code><a href="../../../system/buffers/MemoryPool_1.html" title="class in system.buffers">MemoryPool_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/io/pipelines/PipeOptions.html#getPool--">getPool</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="../../../system/io/pipelines/PipeScheduler.html" title="class in system.io.pipelines">PipeScheduler</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/io/pipelines/PipeOptions.html#getReaderScheduler--">getReaderScheduler</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>long</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/io/pipelines/PipeOptions.html#getResumeWriterThreshold--">getResumeWriterThreshold</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/io/pipelines/PipeOptions.html#getUseSynchronizationContext--">getUseSynchronizationContext</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/io/pipelines/PipeScheduler.html" title="class in system.io.pipelines">PipeScheduler</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/io/pipelines/PipeOptions.html#getWriterScheduler--">getWriterScheduler</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/io/pipelines/PipeOptions.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
@@ -399,6 +413,42 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="PipeOptions-system.buffers.MemoryPool_1-system.io.pipelines.PipeScheduler-system.io.pipelines.PipeScheduler-long-long-int-boolean-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>PipeOptions</h4>
+<pre>public&nbsp;PipeOptions(<a href="../../../system/buffers/MemoryPool_1.html" title="class in system.buffers">MemoryPool_1</a>&nbsp;pool,
+                   <a href="../../../system/io/pipelines/PipeScheduler.html" title="class in system.io.pipelines">PipeScheduler</a>&nbsp;readerScheduler,
+                   <a href="../../../system/io/pipelines/PipeScheduler.html" title="class in system.io.pipelines">PipeScheduler</a>&nbsp;writerScheduler,
+                   long&nbsp;pauseWriterThreshold,
+                   long&nbsp;resumeWriterThreshold,
+                   int&nbsp;minimumSegmentSize,
+                   boolean&nbsp;useSynchronizationContext)
+            throws java.lang.Throwable,
+                   <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                   <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                   <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                   <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                   <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                   <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                   <a href="../../../system/RankException.html" title="class in system">RankException</a>,
+                   <a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -576,6 +626,20 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <h4>getPauseWriterThreshold</h4>
 <pre>public&nbsp;long&nbsp;getPauseWriterThreshold()
                              throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="getPool--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getPool</h4>
+<pre>public&nbsp;<a href="../../../system/buffers/MemoryPool_1.html" title="class in system.buffers">MemoryPool_1</a>&nbsp;getPool()
+                     throws java.lang.Throwable</pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>

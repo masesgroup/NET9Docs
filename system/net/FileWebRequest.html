@@ -22,6 +22,8 @@
 <meta name="keywords" content="GetRequestStream()">
 <meta name="keywords" content="EndGetResponse()">
 <meta name="keywords" content="GetResponse()">
+<meta name="keywords" content="GetRequestStreamAsync()">
+<meta name="keywords" content="GetResponseAsync()">
 <meta name="keywords" content="Abort()">
 <link rel="stylesheet" type="text/css" href="../../stylesheet.css" title="Style">
 <script type="text/javascript" src="../../script.js"></script>
@@ -36,7 +38,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":9,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":9,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -138,7 +140,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>, <a href="../../system/runtime/serialization/ISerializable.html" title="interface in system.runtime.serialization">ISerializable</a></dd>
+<dd><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></dd>
 </dl>
 <hr>
 <br>
@@ -304,10 +306,18 @@ extends <a href="../../system/net/WebRequest.html" title="class in system.net">W
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/net/FileWebRequest.html#GetRequestStream--">GetRequestStream</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i12" class="altColor">
+<td class="colFirst"><code><a href="../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/net/FileWebRequest.html#GetRequestStreamAsync--">GetRequestStreamAsync</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code><a href="../../system/net/WebResponse.html" title="class in system.net">WebResponse</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/net/FileWebRequest.html#GetResponse--">GetResponse</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
+<td class="colFirst"><code><a href="../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/net/FileWebRequest.html#GetResponseAsync--">GetResponseAsync</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/net/FileWebRequest.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
@@ -339,13 +349,6 @@ extends <a href="../../system/net/WebRequest.html" title="class in system.net">W
 </a>
 <h3>Methods inherited from class&nbsp;java.lang.Object</h3>
 <code>equals, getClass, notify, notifyAll, wait, wait, wait</code></li>
-</ul>
-<ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.system.runtime.serialization.ISerializable">
-<!--   -->
-</a>
-<h3>Methods inherited from interface&nbsp;system.runtime.serialization.<a href="../../system/runtime/serialization/ISerializable.html" title="interface in system.runtime.serialization">ISerializable</a></h3>
-<code><a href="../../system/runtime/serialization/ISerializable.html#GetObjectData-system.runtime.serialization.SerializationInfo-system.runtime.serialization.StreamingContext-">GetObjectData</a>, <a href="../../system/runtime/serialization/ISerializable.html#ToISerializable-org.mases.jcobridge.netreflection.IJCOBridgeReflected-">ToISerializable</a></code></li>
 </ul>
 </li>
 </ul>
@@ -673,8 +676,6 @@ extends <a href="../../system/net/WebRequest.html" title="class in system.net">W
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOAssemblyName--">getJCOAssemblyName</a></code>&nbsp;in interface&nbsp;<code><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../system/runtime/serialization/ISerializable.html#getJCOAssemblyName--">getJCOAssemblyName</a></code>&nbsp;in interface&nbsp;<code><a href="../../system/runtime/serialization/ISerializable.html" title="interface in system.runtime.serialization">ISerializable</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../system/net/WebRequest.html#getJCOAssemblyName--">getJCOAssemblyName</a></code>&nbsp;in class&nbsp;<code><a href="../../system/net/WebRequest.html" title="class in system.net">WebRequest</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -694,8 +695,6 @@ extends <a href="../../system/net/WebRequest.html" title="class in system.net">W
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOClassName--">getJCOClassName</a></code>&nbsp;in interface&nbsp;<code><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../system/runtime/serialization/ISerializable.html#getJCOClassName--">getJCOClassName</a></code>&nbsp;in interface&nbsp;<code><a href="../../system/runtime/serialization/ISerializable.html" title="interface in system.runtime.serialization">ISerializable</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../system/net/WebRequest.html#getJCOClassName--">getJCOClassName</a></code>&nbsp;in class&nbsp;<code><a href="../../system/net/WebRequest.html" title="class in system.net">WebRequest</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -715,8 +714,6 @@ extends <a href="../../system/net/WebRequest.html" title="class in system.net">W
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOInstance--">getJCOInstance</a></code>&nbsp;in interface&nbsp;<code><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../system/runtime/serialization/ISerializable.html#getJCOInstance--">getJCOInstance</a></code>&nbsp;in interface&nbsp;<code><a href="../../system/runtime/serialization/ISerializable.html" title="interface in system.runtime.serialization">ISerializable</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../system/net/WebRequest.html#getJCOInstance--">getJCOInstance</a></code>&nbsp;in class&nbsp;<code><a href="../../system/net/WebRequest.html" title="class in system.net">WebRequest</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -736,8 +733,6 @@ extends <a href="../../system/net/WebRequest.html" title="class in system.net">W
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOObjectName--">getJCOObjectName</a></code>&nbsp;in interface&nbsp;<code><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../system/runtime/serialization/ISerializable.html#getJCOObjectName--">getJCOObjectName</a></code>&nbsp;in interface&nbsp;<code><a href="../../system/runtime/serialization/ISerializable.html" title="interface in system.runtime.serialization">ISerializable</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../system/net/WebRequest.html#getJCOObjectName--">getJCOObjectName</a></code>&nbsp;in class&nbsp;<code><a href="../../system/net/WebRequest.html" title="class in system.net">WebRequest</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -758,8 +753,6 @@ extends <a href="../../system/net/WebRequest.html" title="class in system.net">W
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOType--">getJCOType</a></code>&nbsp;in interface&nbsp;<code><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../system/runtime/serialization/ISerializable.html#getJCOType--">getJCOType</a></code>&nbsp;in interface&nbsp;<code><a href="../../system/runtime/serialization/ISerializable.html" title="interface in system.runtime.serialization">ISerializable</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../system/net/WebRequest.html#getJCOType--">getJCOType</a></code>&nbsp;in class&nbsp;<code><a href="../../system/net/WebRequest.html" title="class in system.net">WebRequest</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -803,6 +796,54 @@ extends <a href="../../system/net/WebRequest.html" title="class in system.net">W
 </dl>
 </li>
 </ul>
+<a name="GetRequestStreamAsync--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>GetRequestStreamAsync</h4>
+<pre>public&nbsp;<a href="../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a>&nbsp;GetRequestStreamAsync()
+                             throws java.lang.Throwable,
+                                    <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                    <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                    <a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                    <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                    <a href="../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                                    <a href="../../system/net/WebException.html" title="class in system.net">WebException</a>,
+                                    <a href="../../system/NullReferenceException.html" title="class in system">NullReferenceException</a>,
+                                    <a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                    <a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                    <a href="../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
+                                    <a href="../../system/runtime/interopservices/ExternalException.html" title="class in system.runtime.interopservices">ExternalException</a>,
+                                    <a href="../../system/net/ProtocolViolationException.html" title="class in system.net">ProtocolViolationException</a>,
+                                    <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                    <a href="../../system/UriFormatException.html" title="class in system">UriFormatException</a>,
+                                    <a href="../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                                    <a href="../../system/diagnostics/tracing/EventSourceException.html" title="class in system.diagnostics.tracing">EventSourceException</a></pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../system/net/WebRequest.html#GetRequestStreamAsync--">GetRequestStreamAsync</a></code>&nbsp;in class&nbsp;<code><a href="../../system/net/WebRequest.html" title="class in system.net">WebRequest</a></code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../system/net/WebException.html" title="class in system.net">WebException</a></code></dd>
+<dd><code><a href="../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
+<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
+<dd><code><a href="../../system/runtime/interopservices/ExternalException.html" title="class in system.runtime.interopservices">ExternalException</a></code></dd>
+<dd><code><a href="../../system/net/ProtocolViolationException.html" title="class in system.net">ProtocolViolationException</a></code></dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../system/UriFormatException.html" title="class in system">UriFormatException</a></code></dd>
+<dd><code><a href="../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../system/diagnostics/tracing/EventSourceException.html" title="class in system.diagnostics.tracing">EventSourceException</a></code></dd>
+</dl>
+</li>
+</ul>
 <a name="GetResponse--">
 <!--   -->
 </a>
@@ -836,6 +877,52 @@ extends <a href="../../system/net/WebRequest.html" title="class in system.net">W
 <dd><code><a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
 <dd><code><a href="../../system/threading/AbandonedMutexException.html" title="class in system.threading">AbandonedMutexException</a></code></dd>
 <dd><code><a href="../../system/net/WebException.html" title="class in system.net">WebException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="GetResponseAsync--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>GetResponseAsync</h4>
+<pre>public&nbsp;<a href="../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a>&nbsp;GetResponseAsync()
+                        throws java.lang.Throwable,
+                               <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                               <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                               <a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                               <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                               <a href="../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                               <a href="../../system/net/WebException.html" title="class in system.net">WebException</a>,
+                               <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                               <a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                               <a href="../../system/OperationCanceledException.html" title="class in system">OperationCanceledException</a>,
+                               <a href="../../system/NullReferenceException.html" title="class in system">NullReferenceException</a>,
+                               <a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                               <a href="../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
+                               <a href="../../system/UriFormatException.html" title="class in system">UriFormatException</a>,
+                               <a href="../../system/FormatException.html" title="class in system">FormatException</a>,
+                               <a href="../../system/diagnostics/tracing/EventSourceException.html" title="class in system.diagnostics.tracing">EventSourceException</a></pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../system/net/WebRequest.html#GetResponseAsync--">GetResponseAsync</a></code>&nbsp;in class&nbsp;<code><a href="../../system/net/WebRequest.html" title="class in system.net">WebRequest</a></code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../system/net/WebException.html" title="class in system.net">WebException</a></code></dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../system/OperationCanceledException.html" title="class in system">OperationCanceledException</a></code></dd>
+<dd><code><a href="../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
+<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
+<dd><code><a href="../../system/UriFormatException.html" title="class in system">UriFormatException</a></code></dd>
+<dd><code><a href="../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../system/diagnostics/tracing/EventSourceException.html" title="class in system.diagnostics.tracing">EventSourceException</a></code></dd>
 </dl>
 </li>
 </ul>

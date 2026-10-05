@@ -19,6 +19,7 @@
 <meta name="keywords" content="Clone()">
 <meta name="keywords" content="GetAnonymous()">
 <meta name="keywords" content="GetCurrent()">
+<meta name="keywords" content="RunImpersonatedAsync()">
 <meta name="keywords" content="Dispose()">
 <meta name="keywords" content="RunImpersonated()">
 <meta name="keywords" content="GetObjectData()">
@@ -28,6 +29,8 @@
 <meta name="keywords" content="getIsGuest()">
 <meta name="keywords" content="getIsSystem()">
 <meta name="keywords" content="getAccessToken()">
+<meta name="keywords" content="getDeviceClaims()">
+<meta name="keywords" content="getUserClaims()">
 <meta name="keywords" content="getGroups()">
 <meta name="keywords" content="getOwner()">
 <meta name="keywords" content="getUser()">
@@ -45,7 +48,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":9,"i6":9,"i7":9,"i8":9,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":9,"i22":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":9,"i6":9,"i7":9,"i8":9,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":9,"i24":9,"i25":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -142,13 +145,13 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd>java.lang.AutoCloseable, <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>, <a href="../../../system/runtime/serialization/IDeserializationCallback.html" title="interface in system.runtime.serialization">IDeserializationCallback</a>, <a href="../../../system/runtime/serialization/ISerializable.html" title="interface in system.runtime.serialization">ISerializable</a></dd>
+<dd>java.lang.AutoCloseable, <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></dd>
 </dl>
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">WindowsIdentity</span>
 extends <a href="../../../system/security/claims/ClaimsIdentity.html" title="class in system.security.claims">ClaimsIdentity</a>
-implements <a href="../../../system/runtime/serialization/ISerializable.html" title="interface in system.runtime.serialization">ISerializable</a>, <a href="../../../system/runtime/serialization/IDeserializationCallback.html" title="interface in system.runtime.serialization">IDeserializationCallback</a>, java.lang.AutoCloseable</pre>
+implements java.lang.AutoCloseable</pre>
 <div class="block">The base .NET class managing System.Security.Principal.WindowsIdentity, System.Security.Principal.Windows, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a.
  <p>
  
@@ -292,69 +295,82 @@ implements <a href="../../../system/runtime/serialization/ISerializable.html" ti
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/security/principal/WindowsIdentity.html#GetCurrent-system.security.principal.TokenAccessLevels-">GetCurrent</a></span>(<a href="../../../system/security/principal/TokenAccessLevels.html" title="class in system.security.principal">TokenAccessLevels</a>&nbsp;desiredAccess)</code>&nbsp;</td>
 </tr>
 <tr id="i9" class="rowColor">
+<td class="colFirst"><code><a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/security/principal/WindowsIdentity.html#getDeviceClaims--">getDeviceClaims</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="../../../system/security/principal/IdentityReferenceCollection.html" title="class in system.security.principal">IdentityReferenceCollection</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/security/principal/WindowsIdentity.html#getGroups--">getGroups</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/security/principal/TokenImpersonationLevel.html" title="class in system.security.principal">TokenImpersonationLevel</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/security/principal/WindowsIdentity.html#getImpersonationLevel--">getImpersonationLevel</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/security/principal/WindowsIdentity.html#getIsAnonymous--">getIsAnonymous</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/security/principal/WindowsIdentity.html#getIsGuest--">getIsGuest</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/security/principal/WindowsIdentity.html#getIsSystem--">getIsSystem</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/security/principal/WindowsIdentity.html#getJCOAssemblyName--">getJCOAssemblyName</a></span>()</code>
 <div class="block">Returns the reflected Assembly name</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/security/principal/WindowsIdentity.html#getJCOClassName--">getJCOClassName</a></span>()</code>
 <div class="block">Returns the reflected Class name</div>
 </td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/security/principal/WindowsIdentity.html#getJCOInstance--">getJCOInstance</a></span>()</code>
 <div class="block">Returns the instantiated class</div>
 </td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/security/principal/WindowsIdentity.html#getJCOObjectName--">getJCOObjectName</a></span>()</code>
 <div class="block">Returns the reflected Class name used to build the object</div>
 </td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>org.mases.jcobridge.JCType</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/security/principal/WindowsIdentity.html#getJCOType--">getJCOType</a></span>()</code>
 <div class="block">Returns the instantiated class Type</div>
 </td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code><a href="../../../system/security/principal/SecurityIdentifier.html" title="class in system.security.principal">SecurityIdentifier</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/security/principal/WindowsIdentity.html#getOwner--">getOwner</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/security/principal/SecurityIdentifier.html" title="class in system.security.principal">SecurityIdentifier</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/security/principal/WindowsIdentity.html#getUser--">getUser</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i22" class="altColor">
+<td class="colFirst"><code><a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/security/principal/WindowsIdentity.html#getUserClaims--">getUserClaims</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/security/principal/WindowsIdentity.html#RunImpersonated-microsoft.win32.safehandles.SafeAccessTokenHandle-system.Action-">RunImpersonated</a></span>(<a href="../../../microsoft/win32/safehandles/SafeAccessTokenHandle.html" title="class in microsoft.win32.safehandles">SafeAccessTokenHandle</a>&nbsp;safeAccessTokenHandle,
                <a href="../../../system/Action.html" title="class in system">Action</a>&nbsp;action)</code>&nbsp;</td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i24" class="altColor">
+<td class="colFirst"><code>static <a href="../../../system/threading/tasks/Task.html" title="class in system.threading.tasks">Task</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/security/principal/WindowsIdentity.html#RunImpersonatedAsync-microsoft.win32.safehandles.SafeAccessTokenHandle-system.Func_1-">RunImpersonatedAsync</a></span>(<a href="../../../microsoft/win32/safehandles/SafeAccessTokenHandle.html" title="class in microsoft.win32.safehandles">SafeAccessTokenHandle</a>&nbsp;safeAccessTokenHandle,
+                    <a href="../../../system/Func_1.html" title="class in system">Func_1</a>&nbsp;func)</code>&nbsp;</td>
+</tr>
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/security/principal/WindowsIdentity.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
@@ -364,7 +380,7 @@ implements <a href="../../../system/runtime/serialization/ISerializable.html" ti
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;system.security.claims.<a href="../../../system/security/claims/ClaimsIdentity.html" title="class in system.security.claims">ClaimsIdentity</a></h3>
-<code><a href="../../../system/security/claims/ClaimsIdentity.html#AddClaim-system.security.claims.Claim-">AddClaim</a>, <a href="../../../system/security/claims/ClaimsIdentity.html#FindFirst-java.lang.String-">FindFirst</a>, <a href="../../../system/security/claims/ClaimsIdentity.html#getActor--">getActor</a>, <a href="../../../system/security/claims/ClaimsIdentity.html#getAuthenticationType--">getAuthenticationType</a>, <a href="../../../system/security/claims/ClaimsIdentity.html#getBootstrapContext--">getBootstrapContext</a>, <a href="../../../system/security/claims/ClaimsIdentity.html#getIsAuthenticated--">getIsAuthenticated</a>, <a href="../../../system/security/claims/ClaimsIdentity.html#getLabel--">getLabel</a>, <a href="../../../system/security/claims/ClaimsIdentity.html#getName--">getName</a>, <a href="../../../system/security/claims/ClaimsIdentity.html#getNameClaimType--">getNameClaimType</a>, <a href="../../../system/security/claims/ClaimsIdentity.html#getRoleClaimType--">getRoleClaimType</a>, <a href="../../../system/security/claims/ClaimsIdentity.html#HasClaim-java.lang.String-java.lang.String-">HasClaim</a>, <a href="../../../system/security/claims/ClaimsIdentity.html#RemoveClaim-system.security.claims.Claim-">RemoveClaim</a>, <a href="../../../system/security/claims/ClaimsIdentity.html#setActor-system.security.claims.ClaimsIdentity-">setActor</a>, <a href="../../../system/security/claims/ClaimsIdentity.html#setBootstrapContext-org.mases.jcobridge.netreflection.NetObject-">setBootstrapContext</a>, <a href="../../../system/security/claims/ClaimsIdentity.html#setLabel-java.lang.String-">setLabel</a>, <a href="../../../system/security/claims/ClaimsIdentity.html#TryRemoveClaim-system.security.claims.Claim-">TryRemoveClaim</a>, <a href="../../../system/security/claims/ClaimsIdentity.html#WriteTo-system.io.BinaryWriter-">WriteTo</a></code></li>
+<code><a href="../../../system/security/claims/ClaimsIdentity.html#AddClaim-system.security.claims.Claim-">AddClaim</a>, <a href="../../../system/security/claims/ClaimsIdentity.html#AddClaims-system.collections.generic.IEnumerable_1-">AddClaims</a>, <a href="../../../system/security/claims/ClaimsIdentity.html#FindAll-system.Predicate_1-">FindAll</a>, <a href="../../../system/security/claims/ClaimsIdentity.html#FindAll-java.lang.String-">FindAll</a>, <a href="../../../system/security/claims/ClaimsIdentity.html#FindFirst-system.Predicate_1-">FindFirst</a>, <a href="../../../system/security/claims/ClaimsIdentity.html#FindFirst-java.lang.String-">FindFirst</a>, <a href="../../../system/security/claims/ClaimsIdentity.html#getActor--">getActor</a>, <a href="../../../system/security/claims/ClaimsIdentity.html#getAuthenticationType--">getAuthenticationType</a>, <a href="../../../system/security/claims/ClaimsIdentity.html#getBootstrapContext--">getBootstrapContext</a>, <a href="../../../system/security/claims/ClaimsIdentity.html#getClaims--">getClaims</a>, <a href="../../../system/security/claims/ClaimsIdentity.html#getIsAuthenticated--">getIsAuthenticated</a>, <a href="../../../system/security/claims/ClaimsIdentity.html#getLabel--">getLabel</a>, <a href="../../../system/security/claims/ClaimsIdentity.html#getName--">getName</a>, <a href="../../../system/security/claims/ClaimsIdentity.html#getNameClaimType--">getNameClaimType</a>, <a href="../../../system/security/claims/ClaimsIdentity.html#getRoleClaimType--">getRoleClaimType</a>, <a href="../../../system/security/claims/ClaimsIdentity.html#HasClaim-system.Predicate_1-">HasClaim</a>, <a href="../../../system/security/claims/ClaimsIdentity.html#HasClaim-java.lang.String-java.lang.String-">HasClaim</a>, <a href="../../../system/security/claims/ClaimsIdentity.html#RemoveClaim-system.security.claims.Claim-">RemoveClaim</a>, <a href="../../../system/security/claims/ClaimsIdentity.html#setActor-system.security.claims.ClaimsIdentity-">setActor</a>, <a href="../../../system/security/claims/ClaimsIdentity.html#setBootstrapContext-org.mases.jcobridge.netreflection.NetObject-">setBootstrapContext</a>, <a href="../../../system/security/claims/ClaimsIdentity.html#setLabel-java.lang.String-">setLabel</a>, <a href="../../../system/security/claims/ClaimsIdentity.html#TryRemoveClaim-system.security.claims.Claim-">TryRemoveClaim</a>, <a href="../../../system/security/claims/ClaimsIdentity.html#WriteTo-system.io.BinaryWriter-">WriteTo</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.org.mases.jcobridge.netreflection.NetObject">
@@ -379,20 +395,6 @@ implements <a href="../../../system/runtime/serialization/ISerializable.html" ti
 </a>
 <h3>Methods inherited from class&nbsp;java.lang.Object</h3>
 <code>equals, getClass, notify, notifyAll, wait, wait, wait</code></li>
-</ul>
-<ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.system.runtime.serialization.ISerializable">
-<!--   -->
-</a>
-<h3>Methods inherited from interface&nbsp;system.runtime.serialization.<a href="../../../system/runtime/serialization/ISerializable.html" title="interface in system.runtime.serialization">ISerializable</a></h3>
-<code><a href="../../../system/runtime/serialization/ISerializable.html#GetObjectData-system.runtime.serialization.SerializationInfo-system.runtime.serialization.StreamingContext-">GetObjectData</a>, <a href="../../../system/runtime/serialization/ISerializable.html#ToISerializable-org.mases.jcobridge.netreflection.IJCOBridgeReflected-">ToISerializable</a></code></li>
-</ul>
-<ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.system.runtime.serialization.IDeserializationCallback">
-<!--   -->
-</a>
-<h3>Methods inherited from interface&nbsp;system.runtime.serialization.<a href="../../../system/runtime/serialization/IDeserializationCallback.html" title="interface in system.runtime.serialization">IDeserializationCallback</a></h3>
-<code><a href="../../../system/runtime/serialization/IDeserializationCallback.html#OnDeserialization-org.mases.jcobridge.netreflection.NetObject-">OnDeserialization</a>, <a href="../../../system/runtime/serialization/IDeserializationCallback.html#ToIDeserializationCallback-org.mases.jcobridge.netreflection.IJCOBridgeReflected-">ToIDeserializationCallback</a></code></li>
 </ul>
 </li>
 </ul>
@@ -845,6 +847,46 @@ implements <a href="../../../system/runtime/serialization/ISerializable.html" ti
 </dl>
 </li>
 </ul>
+<a name="getDeviceClaims--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getDeviceClaims</h4>
+<pre>public&nbsp;<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;getDeviceClaims()
+                              throws java.lang.Throwable,
+                                     <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                     <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                     <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                     <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                     <a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                                     <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                     <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                     <a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
+                                     <a href="../../../system/security/SecurityException.html" title="class in system.security">SecurityException</a>,
+                                     <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                     <a href="../../../system/AccessViolationException.html" title="class in system">AccessViolationException</a>,
+                                     <a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                                     <a href="../../../system/FormatException.html" title="class in system">FormatException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
+<dd><code><a href="../../../system/security/SecurityException.html" title="class in system.security">SecurityException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/AccessViolationException.html" title="class in system">AccessViolationException</a></code></dd>
+<dd><code><a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
+</dl>
+</li>
+</ul>
 <a name="getGroups--">
 <!--   -->
 </a>
@@ -1057,10 +1099,6 @@ implements <a href="../../../system/runtime/serialization/ISerializable.html" ti
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOAssemblyName--">getJCOAssemblyName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../system/runtime/serialization/IDeserializationCallback.html#getJCOAssemblyName--">getJCOAssemblyName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/runtime/serialization/IDeserializationCallback.html" title="interface in system.runtime.serialization">IDeserializationCallback</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../system/runtime/serialization/ISerializable.html#getJCOAssemblyName--">getJCOAssemblyName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/runtime/serialization/ISerializable.html" title="interface in system.runtime.serialization">ISerializable</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../system/security/claims/ClaimsIdentity.html#getJCOAssemblyName--">getJCOAssemblyName</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/security/claims/ClaimsIdentity.html" title="class in system.security.claims">ClaimsIdentity</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -1080,10 +1118,6 @@ implements <a href="../../../system/runtime/serialization/ISerializable.html" ti
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOClassName--">getJCOClassName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../system/runtime/serialization/IDeserializationCallback.html#getJCOClassName--">getJCOClassName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/runtime/serialization/IDeserializationCallback.html" title="interface in system.runtime.serialization">IDeserializationCallback</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../system/runtime/serialization/ISerializable.html#getJCOClassName--">getJCOClassName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/runtime/serialization/ISerializable.html" title="interface in system.runtime.serialization">ISerializable</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../system/security/claims/ClaimsIdentity.html#getJCOClassName--">getJCOClassName</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/security/claims/ClaimsIdentity.html" title="class in system.security.claims">ClaimsIdentity</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -1103,10 +1137,6 @@ implements <a href="../../../system/runtime/serialization/ISerializable.html" ti
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOInstance--">getJCOInstance</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../system/runtime/serialization/IDeserializationCallback.html#getJCOInstance--">getJCOInstance</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/runtime/serialization/IDeserializationCallback.html" title="interface in system.runtime.serialization">IDeserializationCallback</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../system/runtime/serialization/ISerializable.html#getJCOInstance--">getJCOInstance</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/runtime/serialization/ISerializable.html" title="interface in system.runtime.serialization">ISerializable</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../system/security/claims/ClaimsIdentity.html#getJCOInstance--">getJCOInstance</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/security/claims/ClaimsIdentity.html" title="class in system.security.claims">ClaimsIdentity</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -1126,10 +1156,6 @@ implements <a href="../../../system/runtime/serialization/ISerializable.html" ti
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOObjectName--">getJCOObjectName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../system/runtime/serialization/IDeserializationCallback.html#getJCOObjectName--">getJCOObjectName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/runtime/serialization/IDeserializationCallback.html" title="interface in system.runtime.serialization">IDeserializationCallback</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../system/runtime/serialization/ISerializable.html#getJCOObjectName--">getJCOObjectName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/runtime/serialization/ISerializable.html" title="interface in system.runtime.serialization">ISerializable</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../system/security/claims/ClaimsIdentity.html#getJCOObjectName--">getJCOObjectName</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/security/claims/ClaimsIdentity.html" title="class in system.security.claims">ClaimsIdentity</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -1150,10 +1176,6 @@ implements <a href="../../../system/runtime/serialization/ISerializable.html" ti
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOType--">getJCOType</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../system/runtime/serialization/IDeserializationCallback.html#getJCOType--">getJCOType</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/runtime/serialization/IDeserializationCallback.html" title="interface in system.runtime.serialization">IDeserializationCallback</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../system/runtime/serialization/ISerializable.html#getJCOType--">getJCOType</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/runtime/serialization/ISerializable.html" title="interface in system.runtime.serialization">ISerializable</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../system/security/claims/ClaimsIdentity.html#getJCOType--">getJCOType</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/security/claims/ClaimsIdentity.html" title="class in system.security.claims">ClaimsIdentity</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -1245,6 +1267,46 @@ implements <a href="../../../system/runtime/serialization/ISerializable.html" ti
 </dl>
 </li>
 </ul>
+<a name="getUserClaims--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getUserClaims</h4>
+<pre>public&nbsp;<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;getUserClaims()
+                            throws java.lang.Throwable,
+                                   <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                   <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                   <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                   <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                   <a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                                   <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                   <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                   <a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
+                                   <a href="../../../system/security/SecurityException.html" title="class in system.security">SecurityException</a>,
+                                   <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                   <a href="../../../system/AccessViolationException.html" title="class in system">AccessViolationException</a>,
+                                   <a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                                   <a href="../../../system/FormatException.html" title="class in system">FormatException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
+<dd><code><a href="../../../system/security/SecurityException.html" title="class in system.security">SecurityException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/AccessViolationException.html" title="class in system">AccessViolationException</a></code></dd>
+<dd><code><a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
+</dl>
+</li>
+</ul>
 <a name="RunImpersonated-microsoft.win32.safehandles.SafeAccessTokenHandle-system.Action-">
 <!--   -->
 </a>
@@ -1280,6 +1342,41 @@ implements <a href="../../../system/runtime/serialization/ISerializable.html" ti
 <dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 <dd><code><a href="../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
 <dd><code><a href="../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
+<dd><code><a href="../../../system/security/SecurityException.html" title="class in system.security">SecurityException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="RunImpersonatedAsync-microsoft.win32.safehandles.SafeAccessTokenHandle-system.Func_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>RunImpersonatedAsync</h4>
+<pre>public static&nbsp;<a href="../../../system/threading/tasks/Task.html" title="class in system.threading.tasks">Task</a>&nbsp;RunImpersonatedAsync(<a href="../../../microsoft/win32/safehandles/SafeAccessTokenHandle.html" title="class in microsoft.win32.safehandles">SafeAccessTokenHandle</a>&nbsp;safeAccessTokenHandle,
+                                        <a href="../../../system/Func_1.html" title="class in system">Func_1</a>&nbsp;func)
+                                 throws java.lang.Throwable,
+                                        <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                        <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                        <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                        <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                        <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                        <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                        <a href="../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a>,
+                                        <a href="../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
+                                        <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                        <a href="../../../system/security/SecurityException.html" title="class in system.security">SecurityException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
+<dd><code><a href="../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
+<dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="../../../system/security/SecurityException.html" title="class in system.security">SecurityException</a></code></dd>
 </dl>
 </li>

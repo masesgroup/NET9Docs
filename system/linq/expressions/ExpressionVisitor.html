@@ -17,6 +17,7 @@
 <meta name="keywords" content="getJCOType()">
 <meta name="keywords" content="cast()">
 <meta name="keywords" content="Visit()">
+<meta name="keywords" content="VisitAndConvert()">
 <link rel="stylesheet" type="text/css" href="../../../stylesheet.css" title="Style">
 <script type="text/javascript" src="../../../script.js"></script>
 </head>
@@ -30,7 +31,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":9,"i10":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -272,6 +273,20 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/linq/expressions/ExpressionVisitor.html#Visit-system.linq.expressions.Expression-">Visit</a></span>(<a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&nbsp;node)</code>&nbsp;</td>
+</tr>
+<tr id="i8" class="altColor">
+<td class="colFirst"><code><a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/linq/expressions/ExpressionVisitor.html#Visit-system.collections.objectmodel.ReadOnlyCollection_1-">Visit</a></span>(<a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;nodes)</code>&nbsp;</td>
+</tr>
+<tr id="i9" class="rowColor">
+<td class="colFirst"><code>static &lt;T extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;<br><a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/linq/expressions/ExpressionVisitor.html#Visit-system.collections.objectmodel.ReadOnlyCollection_1-system.Func_2-">Visit</a></span>(<a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;nodes,
+     <a href="../../../system/Func_2.html" title="class in system">Func_2</a>&nbsp;elementVisitor)</code>&nbsp;</td>
+</tr>
+<tr id="i10" class="altColor">
+<td class="colFirst"><code>&lt;T extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;<br><a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/linq/expressions/ExpressionVisitor.html#VisitAndConvert-system.collections.objectmodel.ReadOnlyCollection_1-java.lang.String-">VisitAndConvert</a></span>(<a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;nodes,
+               java.lang.String&nbsp;callerName)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -530,7 +545,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <a name="Visit-system.linq.expressions.Expression-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>Visit</h4>
 <pre>public&nbsp;<a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&nbsp;Visit(<a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&nbsp;node)
@@ -546,6 +561,108 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 <dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="Visit-system.collections.objectmodel.ReadOnlyCollection_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>Visit</h4>
+<pre>public&nbsp;<a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;Visit(<a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;nodes)
+                           throws java.lang.Throwable,
+                                  <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                  <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                  <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                  <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                  <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                  <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                  <a href="../../../system/RankException.html" title="class in system">RankException</a>,
+                                  <a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                                  <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="Visit-system.collections.objectmodel.ReadOnlyCollection_1-system.Func_2-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>Visit</h4>
+<pre>public static&nbsp;&lt;T extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;&nbsp;<a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;Visit(<a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;nodes,
+                                                                         <a href="../../../system/Func_2.html" title="class in system">Func_2</a>&nbsp;elementVisitor)
+                                                                  throws java.lang.Throwable,
+                                                                         <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                                         <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                                         <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                                                         <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                                                         <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                                                         <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                                         <a href="../../../system/RankException.html" title="class in system">RankException</a>,
+                                                                         <a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                                                                         <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="VisitAndConvert-system.collections.objectmodel.ReadOnlyCollection_1-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>VisitAndConvert</h4>
+<pre>public&nbsp;&lt;T extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;&nbsp;<a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;VisitAndConvert(<a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;nodes,
+                                                                            java.lang.String&nbsp;callerName)
+                                                                     throws java.lang.Throwable,
+                                                                            <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                                            <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                                            <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                                                            <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                                                            <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                                                            <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                                            <a href="../../../system/RankException.html" title="class in system">RankException</a>,
+                                                                            <a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                                                                            <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                                            <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                                                            <a href="../../../system/FormatException.html" title="class in system">FormatException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
 </dl>
 </li>
 </ul>

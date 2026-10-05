@@ -17,6 +17,15 @@
 <meta name="keywords" content="getJCOType()">
 <meta name="keywords" content="cast()">
 <meta name="keywords" content="GetObjectData()">
+<meta name="keywords" content="ThrowIfEqual()">
+<meta name="keywords" content="ThrowIfGreaterThan()">
+<meta name="keywords" content="ThrowIfGreaterThanOrEqual()">
+<meta name="keywords" content="ThrowIfLessThan()">
+<meta name="keywords" content="ThrowIfLessThanOrEqual()">
+<meta name="keywords" content="ThrowIfNegative()">
+<meta name="keywords" content="ThrowIfNegativeOrZero()">
+<meta name="keywords" content="ThrowIfNotEqual()">
+<meta name="keywords" content="ThrowIfZero()">
 <meta name="keywords" content="getActualValue()">
 <link rel="stylesheet" type="text/css" href="../stylesheet.css" title="Style">
 <script type="text/javascript" src="../script.js"></script>
@@ -31,7 +40,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":9,"i10":9,"i11":9,"i12":9,"i13":9,"i14":9,"i15":9,"i16":9,"i17":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -303,6 +312,57 @@ extends <a href="../system/ArgumentException.html" title="class in system">Argum
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../system/ArgumentOutOfRangeException.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
+</tr>
+<tr id="i9" class="rowColor">
+<td class="colFirst"><code>static &lt;T extends <a href="../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;<br>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../system/ArgumentOutOfRangeException.html#ThrowIfEqual-T-T-java.lang.String-">ThrowIfEqual</a></span>(T&nbsp;value,
+            T&nbsp;other,
+            java.lang.String&nbsp;paramName)</code>&nbsp;</td>
+</tr>
+<tr id="i10" class="altColor">
+<td class="colFirst"><code>static &lt;T extends <a href="../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;<br>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../system/ArgumentOutOfRangeException.html#ThrowIfGreaterThan-T-T-java.lang.String-">ThrowIfGreaterThan</a></span>(T&nbsp;value,
+                  T&nbsp;other,
+                  java.lang.String&nbsp;paramName)</code>&nbsp;</td>
+</tr>
+<tr id="i11" class="rowColor">
+<td class="colFirst"><code>static &lt;T extends <a href="../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;<br>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../system/ArgumentOutOfRangeException.html#ThrowIfGreaterThanOrEqual-T-T-java.lang.String-">ThrowIfGreaterThanOrEqual</a></span>(T&nbsp;value,
+                         T&nbsp;other,
+                         java.lang.String&nbsp;paramName)</code>&nbsp;</td>
+</tr>
+<tr id="i12" class="altColor">
+<td class="colFirst"><code>static &lt;T extends <a href="../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;<br>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../system/ArgumentOutOfRangeException.html#ThrowIfLessThan-T-T-java.lang.String-">ThrowIfLessThan</a></span>(T&nbsp;value,
+               T&nbsp;other,
+               java.lang.String&nbsp;paramName)</code>&nbsp;</td>
+</tr>
+<tr id="i13" class="rowColor">
+<td class="colFirst"><code>static &lt;T extends <a href="../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;<br>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../system/ArgumentOutOfRangeException.html#ThrowIfLessThanOrEqual-T-T-java.lang.String-">ThrowIfLessThanOrEqual</a></span>(T&nbsp;value,
+                      T&nbsp;other,
+                      java.lang.String&nbsp;paramName)</code>&nbsp;</td>
+</tr>
+<tr id="i14" class="altColor">
+<td class="colFirst"><code>static &lt;T extends <a href="../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;<br>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../system/ArgumentOutOfRangeException.html#ThrowIfNegative-T-java.lang.String-">ThrowIfNegative</a></span>(T&nbsp;value,
+               java.lang.String&nbsp;paramName)</code>&nbsp;</td>
+</tr>
+<tr id="i15" class="rowColor">
+<td class="colFirst"><code>static &lt;T extends <a href="../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;<br>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../system/ArgumentOutOfRangeException.html#ThrowIfNegativeOrZero-T-java.lang.String-">ThrowIfNegativeOrZero</a></span>(T&nbsp;value,
+                     java.lang.String&nbsp;paramName)</code>&nbsp;</td>
+</tr>
+<tr id="i16" class="altColor">
+<td class="colFirst"><code>static &lt;T extends <a href="../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;<br>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../system/ArgumentOutOfRangeException.html#ThrowIfNotEqual-T-T-java.lang.String-">ThrowIfNotEqual</a></span>(T&nbsp;value,
+               T&nbsp;other,
+               java.lang.String&nbsp;paramName)</code>&nbsp;</td>
+</tr>
+<tr id="i17" class="rowColor">
+<td class="colFirst"><code>static &lt;T extends <a href="../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;<br>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../system/ArgumentOutOfRangeException.html#ThrowIfZero-T-java.lang.String-">ThrowIfZero</a></span>(T&nbsp;value,
+           java.lang.String&nbsp;paramName)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -704,13 +764,358 @@ extends <a href="../system/ArgumentException.html" title="class in system">Argum
 <a name="setJCOInstance-org.mases.jcobridge.JCObject-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>setJCOInstance</h4>
 <pre>public&nbsp;void&nbsp;setJCOInstance(org.mases.jcobridge.JCObject&nbsp;instance)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../system/ArgumentException.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></code>&nbsp;in class&nbsp;<code><a href="../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="ThrowIfEqual-org.mases.jcobridge.netreflection.IJCOBridgeReflected-org.mases.jcobridge.netreflection.IJCOBridgeReflected-java.lang.String-">
+<!--   -->
+</a><a name="ThrowIfEqual-T-T-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ThrowIfEqual</h4>
+<pre>public static&nbsp;&lt;T extends <a href="../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;&nbsp;void&nbsp;ThrowIfEqual(T&nbsp;value,
+                                                                T&nbsp;other,
+                                                                java.lang.String&nbsp;paramName)
+                                                         throws java.lang.Throwable,
+                                                                <a href="../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                                <a href="../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                                <a href="../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                                <a href="../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                                <a href="../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                                                <a href="../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                                                                <a href="../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                                                <a href="../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                                                                <a href="../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                                                <a href="../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                                                <a href="../system/FormatException.html" title="class in system">FormatException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../system/FormatException.html" title="class in system">FormatException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="ThrowIfGreaterThan-org.mases.jcobridge.netreflection.IJCOBridgeReflected-org.mases.jcobridge.netreflection.IJCOBridgeReflected-java.lang.String-">
+<!--   -->
+</a><a name="ThrowIfGreaterThan-T-T-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ThrowIfGreaterThan</h4>
+<pre>public static&nbsp;&lt;T extends <a href="../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;&nbsp;void&nbsp;ThrowIfGreaterThan(T&nbsp;value,
+                                                                      T&nbsp;other,
+                                                                      java.lang.String&nbsp;paramName)
+                                                               throws java.lang.Throwable,
+                                                                      <a href="../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                                      <a href="../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                                      <a href="../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                                      <a href="../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                                      <a href="../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                                                      <a href="../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                                                                      <a href="../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                                                      <a href="../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                                                                      <a href="../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                                                      <a href="../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                                                      <a href="../system/FormatException.html" title="class in system">FormatException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../system/FormatException.html" title="class in system">FormatException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="ThrowIfGreaterThanOrEqual-org.mases.jcobridge.netreflection.IJCOBridgeReflected-org.mases.jcobridge.netreflection.IJCOBridgeReflected-java.lang.String-">
+<!--   -->
+</a><a name="ThrowIfGreaterThanOrEqual-T-T-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ThrowIfGreaterThanOrEqual</h4>
+<pre>public static&nbsp;&lt;T extends <a href="../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;&nbsp;void&nbsp;ThrowIfGreaterThanOrEqual(T&nbsp;value,
+                                                                             T&nbsp;other,
+                                                                             java.lang.String&nbsp;paramName)
+                                                                      throws java.lang.Throwable,
+                                                                             <a href="../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                                             <a href="../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                                             <a href="../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                                             <a href="../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                                             <a href="../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                                                             <a href="../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                                                                             <a href="../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                                                             <a href="../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                                                                             <a href="../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                                                             <a href="../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                                                             <a href="../system/FormatException.html" title="class in system">FormatException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../system/FormatException.html" title="class in system">FormatException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="ThrowIfLessThan-org.mases.jcobridge.netreflection.IJCOBridgeReflected-org.mases.jcobridge.netreflection.IJCOBridgeReflected-java.lang.String-">
+<!--   -->
+</a><a name="ThrowIfLessThan-T-T-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ThrowIfLessThan</h4>
+<pre>public static&nbsp;&lt;T extends <a href="../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;&nbsp;void&nbsp;ThrowIfLessThan(T&nbsp;value,
+                                                                   T&nbsp;other,
+                                                                   java.lang.String&nbsp;paramName)
+                                                            throws java.lang.Throwable,
+                                                                   <a href="../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                                   <a href="../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                                   <a href="../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                                   <a href="../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                                   <a href="../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                                                   <a href="../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                                                                   <a href="../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                                                   <a href="../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                                                                   <a href="../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                                                   <a href="../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                                                   <a href="../system/FormatException.html" title="class in system">FormatException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../system/FormatException.html" title="class in system">FormatException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="ThrowIfLessThanOrEqual-org.mases.jcobridge.netreflection.IJCOBridgeReflected-org.mases.jcobridge.netreflection.IJCOBridgeReflected-java.lang.String-">
+<!--   -->
+</a><a name="ThrowIfLessThanOrEqual-T-T-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ThrowIfLessThanOrEqual</h4>
+<pre>public static&nbsp;&lt;T extends <a href="../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;&nbsp;void&nbsp;ThrowIfLessThanOrEqual(T&nbsp;value,
+                                                                          T&nbsp;other,
+                                                                          java.lang.String&nbsp;paramName)
+                                                                   throws java.lang.Throwable,
+                                                                          <a href="../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                                          <a href="../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                                          <a href="../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                                          <a href="../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                                          <a href="../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                                                          <a href="../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                                                                          <a href="../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                                                          <a href="../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                                                                          <a href="../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                                                          <a href="../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                                                          <a href="../system/FormatException.html" title="class in system">FormatException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../system/FormatException.html" title="class in system">FormatException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="ThrowIfNegative-org.mases.jcobridge.netreflection.IJCOBridgeReflected-java.lang.String-">
+<!--   -->
+</a><a name="ThrowIfNegative-T-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ThrowIfNegative</h4>
+<pre>public static&nbsp;&lt;T extends <a href="../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;&nbsp;void&nbsp;ThrowIfNegative(T&nbsp;value,
+                                                                   java.lang.String&nbsp;paramName)
+                                                            throws java.lang.Throwable,
+                                                                   <a href="../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                                   <a href="../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                                   <a href="../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                                   <a href="../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                                   <a href="../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                                                   <a href="../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                                                                   <a href="../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                                                   <a href="../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                                                                   <a href="../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="ThrowIfNegativeOrZero-org.mases.jcobridge.netreflection.IJCOBridgeReflected-java.lang.String-">
+<!--   -->
+</a><a name="ThrowIfNegativeOrZero-T-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ThrowIfNegativeOrZero</h4>
+<pre>public static&nbsp;&lt;T extends <a href="../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;&nbsp;void&nbsp;ThrowIfNegativeOrZero(T&nbsp;value,
+                                                                         java.lang.String&nbsp;paramName)
+                                                                  throws java.lang.Throwable,
+                                                                         <a href="../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                                         <a href="../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                                         <a href="../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                                         <a href="../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                                         <a href="../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                                                         <a href="../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                                                                         <a href="../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                                                         <a href="../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                                                                         <a href="../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="ThrowIfNotEqual-org.mases.jcobridge.netreflection.IJCOBridgeReflected-org.mases.jcobridge.netreflection.IJCOBridgeReflected-java.lang.String-">
+<!--   -->
+</a><a name="ThrowIfNotEqual-T-T-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ThrowIfNotEqual</h4>
+<pre>public static&nbsp;&lt;T extends <a href="../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;&nbsp;void&nbsp;ThrowIfNotEqual(T&nbsp;value,
+                                                                   T&nbsp;other,
+                                                                   java.lang.String&nbsp;paramName)
+                                                            throws java.lang.Throwable,
+                                                                   <a href="../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                                   <a href="../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                                   <a href="../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                                   <a href="../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                                   <a href="../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                                                   <a href="../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                                                                   <a href="../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                                                   <a href="../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                                                                   <a href="../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                                                   <a href="../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                                                   <a href="../system/FormatException.html" title="class in system">FormatException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../system/FormatException.html" title="class in system">FormatException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="ThrowIfZero-org.mases.jcobridge.netreflection.IJCOBridgeReflected-java.lang.String-">
+<!--   -->
+</a><a name="ThrowIfZero-T-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>ThrowIfZero</h4>
+<pre>public static&nbsp;&lt;T extends <a href="../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;&nbsp;void&nbsp;ThrowIfZero(T&nbsp;value,
+                                                               java.lang.String&nbsp;paramName)
+                                                        throws java.lang.Throwable,
+                                                               <a href="../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                               <a href="../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                               <a href="../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                               <a href="../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                               <a href="../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                                               <a href="../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                                                               <a href="../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                                               <a href="../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                                                               <a href="../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
 </dl>
 </li>
 </ul>

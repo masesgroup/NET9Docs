@@ -23,6 +23,7 @@
 <meta name="keywords" content="getHasError()">
 <meta name="keywords" content="getHasValidationError()">
 <meta name="keywords" content="getIsDirty()">
+<meta name="keywords" content="getValidationErrors()">
 <meta name="keywords" content="getValidationError()">
 <meta name="keywords" content="getParentBindingBase()">
 <meta name="keywords" content="getBindingGroup()">
@@ -42,7 +43,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -139,7 +140,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>, <a href="../../../system/windows/IWeakEventListener.html" title="interface in system.windows">IWeakEventListener</a></dd>
+<dd><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></dd>
 </dl>
 <dl>
 <dt>Direct Known Subclasses:</dt>
@@ -148,8 +149,7 @@ var activeTableTab = "activeTableTab";
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">BindingExpressionBase</span>
-extends <a href="../../../system/windows/Expression.html" title="class in system.windows">Expression</a>
-implements <a href="../../../system/windows/IWeakEventListener.html" title="interface in system.windows">IWeakEventListener</a></pre>
+extends <a href="../../../system/windows/Expression.html" title="class in system.windows">Expression</a></pre>
 <div class="block">The base .NET class managing System.Windows.Data.BindingExpressionBase, PresentationFramework, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35.
  <p>
  
@@ -320,18 +320,22 @@ implements <a href="../../../system/windows/IWeakEventListener.html" title="inte
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/data/BindingExpressionBase.html#getValidationError--">getValidationError</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i15" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/data/BindingExpressionBase.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/data/BindingExpressionBase.html#getValidationErrors--">getValidationErrors</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i16" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/data/BindingExpressionBase.html#UpdateSource--">UpdateSource</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/data/BindingExpressionBase.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
 <tr id="i17" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/data/BindingExpressionBase.html#UpdateTarget--">UpdateTarget</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/data/BindingExpressionBase.html#UpdateSource--">UpdateSource</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i18" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/data/BindingExpressionBase.html#UpdateTarget--">UpdateTarget</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/data/BindingExpressionBase.html#ValidateWithoutUpdate--">ValidateWithoutUpdate</a></span>()</code>&nbsp;</td>
 </tr>
@@ -349,13 +353,6 @@ implements <a href="../../../system/windows/IWeakEventListener.html" title="inte
 </a>
 <h3>Methods inherited from class&nbsp;java.lang.Object</h3>
 <code>equals, getClass, notify, notifyAll, wait, wait, wait</code></li>
-</ul>
-<ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.system.windows.IWeakEventListener">
-<!--   -->
-</a>
-<h3>Methods inherited from interface&nbsp;system.windows.<a href="../../../system/windows/IWeakEventListener.html" title="interface in system.windows">IWeakEventListener</a></h3>
-<code><a href="../../../system/windows/IWeakEventListener.html#ReceiveWeakEvent-org.mases.jcobridge.netreflection.NetType-org.mases.jcobridge.netreflection.NetObject-system.EventArgs-">ReceiveWeakEvent</a>, <a href="../../../system/windows/IWeakEventListener.html#ToIWeakEventListener-org.mases.jcobridge.netreflection.IJCOBridgeReflected-">ToIWeakEventListener</a></code></li>
 </ul>
 </li>
 </ul>
@@ -561,8 +558,6 @@ implements <a href="../../../system/windows/IWeakEventListener.html" title="inte
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOAssemblyName--">getJCOAssemblyName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../system/windows/IWeakEventListener.html#getJCOAssemblyName--">getJCOAssemblyName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/windows/IWeakEventListener.html" title="interface in system.windows">IWeakEventListener</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../system/windows/Expression.html#getJCOAssemblyName--">getJCOAssemblyName</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/windows/Expression.html" title="class in system.windows">Expression</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -582,8 +577,6 @@ implements <a href="../../../system/windows/IWeakEventListener.html" title="inte
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOClassName--">getJCOClassName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../system/windows/IWeakEventListener.html#getJCOClassName--">getJCOClassName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/windows/IWeakEventListener.html" title="interface in system.windows">IWeakEventListener</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../system/windows/Expression.html#getJCOClassName--">getJCOClassName</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/windows/Expression.html" title="class in system.windows">Expression</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -603,8 +596,6 @@ implements <a href="../../../system/windows/IWeakEventListener.html" title="inte
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOInstance--">getJCOInstance</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../system/windows/IWeakEventListener.html#getJCOInstance--">getJCOInstance</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/windows/IWeakEventListener.html" title="interface in system.windows">IWeakEventListener</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../system/windows/Expression.html#getJCOInstance--">getJCOInstance</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/windows/Expression.html" title="class in system.windows">Expression</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -624,8 +615,6 @@ implements <a href="../../../system/windows/IWeakEventListener.html" title="inte
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOObjectName--">getJCOObjectName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../system/windows/IWeakEventListener.html#getJCOObjectName--">getJCOObjectName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/windows/IWeakEventListener.html" title="interface in system.windows">IWeakEventListener</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../system/windows/Expression.html#getJCOObjectName--">getJCOObjectName</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/windows/Expression.html" title="class in system.windows">Expression</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -646,8 +635,6 @@ implements <a href="../../../system/windows/IWeakEventListener.html" title="inte
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOType--">getJCOType</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../system/windows/IWeakEventListener.html#getJCOType--">getJCOType</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/windows/IWeakEventListener.html" title="interface in system.windows">IWeakEventListener</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../system/windows/Expression.html#getJCOType--">getJCOType</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/windows/Expression.html" title="class in system.windows">Expression</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -742,6 +729,38 @@ implements <a href="../../../system/windows/IWeakEventListener.html" title="inte
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="getValidationErrors--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getValidationErrors</h4>
+<pre>public&nbsp;<a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;getValidationErrors()
+                                         throws java.lang.Throwable,
+                                                <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                                <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                                <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                                <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                <a href="../../../system/RankException.html" title="class in system">RankException</a>,
+                                                <a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                                                <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 </dl>
 </li>
 </ul>

@@ -18,6 +18,7 @@
 <meta name="keywords" content="cast()">
 <meta name="keywords" content="getIsCanceled()">
 <meta name="keywords" content="getIsCompleted()">
+<meta name="keywords" content="getBuffer()">
 <link rel="stylesheet" type="text/css" href="../../../stylesheet.css" title="Style">
 <script type="text/javascript" src="../../../script.js"></script>
 </head>
@@ -31,7 +32,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -216,6 +217,11 @@ extends <a href="../../../system/ValueType.html" title="class in system">ValueTy
 <div class="block">Internal constructor.</div>
 </td>
 </tr>
+<tr class="altColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/io/pipelines/ReadResult.html#ReadResult-system.buffers.ReadOnlySequence_1-boolean-boolean-">ReadResult</a></span>(<a href="../../../system/buffers/ReadOnlySequence_1.html" title="class in system.buffers">ReadOnlySequence_1</a>&nbsp;buffer,
+          boolean&nbsp;isCanceled,
+          boolean&nbsp;isCompleted)</code>&nbsp;</td>
+</tr>
 </table>
 </li>
 </ul>
@@ -238,44 +244,48 @@ extends <a href="../../../system/ValueType.html" title="class in system">ValueTy
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/io/pipelines/ReadResult.html#getIsCanceled--">getIsCanceled</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../system/buffers/ReadOnlySequence_1.html" title="class in system.buffers">ReadOnlySequence_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/io/pipelines/ReadResult.html#getBuffer--">getBuffer</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/io/pipelines/ReadResult.html#getIsCompleted--">getIsCompleted</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/io/pipelines/ReadResult.html#getIsCanceled--">getIsCanceled</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/io/pipelines/ReadResult.html#getIsCompleted--">getIsCompleted</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/io/pipelines/ReadResult.html#getJCOAssemblyName--">getJCOAssemblyName</a></span>()</code>
 <div class="block">Returns the reflected Assembly name</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/io/pipelines/ReadResult.html#getJCOClassName--">getJCOClassName</a></span>()</code>
 <div class="block">Returns the reflected Class name</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/io/pipelines/ReadResult.html#getJCOInstance--">getJCOInstance</a></span>()</code>
 <div class="block">Returns the instantiated class</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/io/pipelines/ReadResult.html#getJCOObjectName--">getJCOObjectName</a></span>()</code>
 <div class="block">Returns the reflected Class name used to build the object</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>org.mases.jcobridge.JCType</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/io/pipelines/ReadResult.html#getJCOType--">getJCOType</a></span>()</code>
 <div class="block">Returns the instantiated class Type</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/io/pipelines/ReadResult.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
@@ -385,12 +395,28 @@ extends <a href="../../../system/ValueType.html" title="class in system">ValueTy
 <a name="ReadResult-java.lang.Object-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>ReadResult</h4>
 <pre>public&nbsp;ReadResult(java.lang.Object&nbsp;instance)
            throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="ReadResult-system.buffers.ReadOnlySequence_1-boolean-boolean-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>ReadResult</h4>
+<pre>public&nbsp;ReadResult(<a href="../../../system/buffers/ReadOnlySequence_1.html" title="class in system.buffers">ReadOnlySequence_1</a>&nbsp;buffer,
+                  boolean&nbsp;isCanceled,
+                  boolean&nbsp;isCompleted)
+           throws java.lang.Throwable</pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
@@ -421,6 +447,20 @@ extends <a href="../../../system/ValueType.html" title="class in system">ValueTy
 <dd><a href="../../../system/io/pipelines/ReadResult.html" title="class in system.io.pipelines"><code>ReadResult</code></a> instance</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - in case of error during cast operation</dd>
+</dl>
+</li>
+</ul>
+<a name="getBuffer--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getBuffer</h4>
+<pre>public&nbsp;<a href="../../../system/buffers/ReadOnlySequence_1.html" title="class in system.buffers">ReadOnlySequence_1</a>&nbsp;getBuffer()
+                             throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
 </dl>
 </li>
 </ul>

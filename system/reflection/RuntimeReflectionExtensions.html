@@ -16,6 +16,10 @@
 <meta name="keywords" content="setJCOInstance()">
 <meta name="keywords" content="getJCOType()">
 <meta name="keywords" content="cast()">
+<meta name="keywords" content="GetRuntimeEvents()">
+<meta name="keywords" content="GetRuntimeFields()">
+<meta name="keywords" content="GetRuntimeMethods()">
+<meta name="keywords" content="GetRuntimeProperties()">
 <meta name="keywords" content="GetRuntimeEvent()">
 <meta name="keywords" content="GetRuntimeField()">
 <meta name="keywords" content="GetRuntimeInterfaceMap()">
@@ -35,7 +39,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":9,"i7":9,"i8":9,"i9":9,"i10":9,"i11":9,"i12":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":9,"i7":9,"i8":9,"i9":9,"i10":9,"i11":9,"i12":9,"i13":9,"i14":9,"i15":9,"i16":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -276,27 +280,43 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
                java.lang.String&nbsp;name)</code>&nbsp;</td>
 </tr>
 <tr id="i8" class="altColor">
+<td class="colFirst"><code>static <a href="../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/RuntimeReflectionExtensions.html#GetRuntimeEvents-org.mases.jcobridge.netreflection.NetType-">GetRuntimeEvents</a></span>(<a href="../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;type)</code>&nbsp;</td>
+</tr>
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>static <a href="../../system/reflection/FieldInfo.html" title="class in system.reflection">FieldInfo</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/RuntimeReflectionExtensions.html#GetRuntimeField-org.mases.jcobridge.netreflection.NetType-java.lang.String-">GetRuntimeField</a></span>(<a href="../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;type,
                java.lang.String&nbsp;name)</code>&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
+<td class="colFirst"><code>static <a href="../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/RuntimeReflectionExtensions.html#GetRuntimeFields-org.mases.jcobridge.netreflection.NetType-">GetRuntimeFields</a></span>(<a href="../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;type)</code>&nbsp;</td>
+</tr>
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>static <a href="../../system/reflection/InterfaceMapping.html" title="class in system.reflection">InterfaceMapping</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/RuntimeReflectionExtensions.html#GetRuntimeInterfaceMap-system.reflection.TypeInfo-org.mases.jcobridge.netreflection.NetType-">GetRuntimeInterfaceMap</a></span>(<a href="../../system/reflection/TypeInfo.html" title="class in system.reflection">TypeInfo</a>&nbsp;typeInfo,
                       <a href="../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;interfaceType)</code>&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>static <a href="../../system/reflection/MethodInfo.html" title="class in system.reflection">MethodInfo</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/RuntimeReflectionExtensions.html#GetRuntimeMethod-org.mases.jcobridge.netreflection.NetType-java.lang.String-org.mases.jcobridge.netreflection.NetType:A-">GetRuntimeMethod</a></span>(<a href="../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;type,
                 java.lang.String&nbsp;name,
                 <a href="../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>[]&nbsp;parameters)</code>&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i13" class="rowColor">
+<td class="colFirst"><code>static <a href="../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/RuntimeReflectionExtensions.html#GetRuntimeMethods-org.mases.jcobridge.netreflection.NetType-">GetRuntimeMethods</a></span>(<a href="../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;type)</code>&nbsp;</td>
+</tr>
+<tr id="i14" class="altColor">
+<td class="colFirst"><code>static <a href="../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/RuntimeReflectionExtensions.html#GetRuntimeProperties-org.mases.jcobridge.netreflection.NetType-">GetRuntimeProperties</a></span>(<a href="../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;type)</code>&nbsp;</td>
+</tr>
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>static <a href="../../system/reflection/PropertyInfo.html" title="class in system.reflection">PropertyInfo</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/RuntimeReflectionExtensions.html#GetRuntimeProperty-org.mases.jcobridge.netreflection.NetType-java.lang.String-">GetRuntimeProperty</a></span>(<a href="../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;type,
                   java.lang.String&nbsp;name)</code>&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/RuntimeReflectionExtensions.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
@@ -606,6 +626,38 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
 </dl>
 </li>
 </ul>
+<a name="GetRuntimeEvents-org.mases.jcobridge.netreflection.NetType-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>GetRuntimeEvents</h4>
+<pre>public static&nbsp;<a href="../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;GetRuntimeEvents(<a href="../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;type)
+                                      throws java.lang.Throwable,
+                                             <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                             <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                             <a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                             <a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                             <a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                             <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                             <a href="../../system/RankException.html" title="class in system">RankException</a>,
+                                             <a href="../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                                             <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../system/RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+</dl>
+</li>
+</ul>
 <a name="GetRuntimeField-org.mases.jcobridge.netreflection.NetType-java.lang.String-">
 <!--   -->
 </a>
@@ -624,6 +676,38 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
                                         <a href="../../system/RankException.html" title="class in system">RankException</a>,
                                         <a href="../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
                                         <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../system/RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="GetRuntimeFields-org.mases.jcobridge.netreflection.NetType-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>GetRuntimeFields</h4>
+<pre>public static&nbsp;<a href="../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;GetRuntimeFields(<a href="../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;type)
+                                      throws java.lang.Throwable,
+                                             <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                             <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                             <a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                             <a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                             <a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                             <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                             <a href="../../system/RankException.html" title="class in system">RankException</a>,
+                                             <a href="../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                                             <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
@@ -691,6 +775,70 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
                                           <a href="../../system/RankException.html" title="class in system">RankException</a>,
                                           <a href="../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
                                           <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../system/RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="GetRuntimeMethods-org.mases.jcobridge.netreflection.NetType-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>GetRuntimeMethods</h4>
+<pre>public static&nbsp;<a href="../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;GetRuntimeMethods(<a href="../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;type)
+                                       throws java.lang.Throwable,
+                                              <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                              <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                              <a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                              <a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                              <a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                              <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                              <a href="../../system/RankException.html" title="class in system">RankException</a>,
+                                              <a href="../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                                              <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../system/RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="GetRuntimeProperties-org.mases.jcobridge.netreflection.NetType-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>GetRuntimeProperties</h4>
+<pre>public static&nbsp;<a href="../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;GetRuntimeProperties(<a href="../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;type)
+                                          throws java.lang.Throwable,
+                                                 <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                 <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                 <a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                                 <a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                                 <a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                                 <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                 <a href="../../system/RankException.html" title="class in system">RankException</a>,
+                                                 <a href="../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                                                 <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>

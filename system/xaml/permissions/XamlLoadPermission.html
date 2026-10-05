@@ -24,6 +24,7 @@
 <meta name="keywords" content="Union()">
 <meta name="keywords" content="ToXml()">
 <meta name="keywords" content="FromXml()">
+<meta name="keywords" content="getAllowedAccess()">
 <link rel="stylesheet" type="text/css" href="../../../stylesheet.css" title="Style">
 <script type="text/javascript" src="../../../script.js"></script>
 </head>
@@ -37,7 +38,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -218,14 +219,17 @@ extends <a href="../../../system/security/CodeAccessPermission.html" title="clas
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../system/xaml/permissions/XamlLoadPermission.html#XamlLoadPermission--">XamlLoadPermission</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/xaml/permissions/XamlLoadPermission.html#XamlLoadPermission-system.collections.generic.IEnumerable_1-">XamlLoadPermission</a></span>(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;allowedAccess)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../system/xaml/permissions/XamlLoadPermission.html#XamlLoadPermission-java.lang.Object-">XamlLoadPermission</a></span>(java.lang.Object&nbsp;instance)</code>
 <div class="block">Internal constructor.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../system/xaml/permissions/XamlLoadPermission.html#XamlLoadPermission-system.security.permissions.PermissionState-">XamlLoadPermission</a></span>(<a href="../../../system/security/permissions/PermissionState.html" title="class in system.security.permissions">PermissionState</a>&nbsp;state)</code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../system/xaml/permissions/XamlLoadPermission.html#XamlLoadPermission-system.xaml.permissions.XamlAccessLevel-">XamlLoadPermission</a></span>(<a href="../../../system/xaml/permissions/XamlAccessLevel.html" title="class in system.xaml.permissions">XamlAccessLevel</a>&nbsp;allowedAccess)</code>&nbsp;</td>
 </tr>
 </table>
@@ -258,60 +262,64 @@ extends <a href="../../../system/security/CodeAccessPermission.html" title="clas
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/xaml/permissions/XamlLoadPermission.html#FromXml-system.security.SecurityElement-">FromXml</a></span>(<a href="../../../system/security/SecurityElement.html" title="class in system.security">SecurityElement</a>&nbsp;elem)</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
+<td class="colFirst"><code><a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/xaml/permissions/XamlLoadPermission.html#getAllowedAccess--">getAllowedAccess</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/xaml/permissions/XamlLoadPermission.html#getJCOAssemblyName--">getJCOAssemblyName</a></span>()</code>
 <div class="block">Returns the reflected Assembly name</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/xaml/permissions/XamlLoadPermission.html#getJCOClassName--">getJCOClassName</a></span>()</code>
 <div class="block">Returns the reflected Class name</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/xaml/permissions/XamlLoadPermission.html#getJCOInstance--">getJCOInstance</a></span>()</code>
 <div class="block">Returns the instantiated class</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/xaml/permissions/XamlLoadPermission.html#getJCOObjectName--">getJCOObjectName</a></span>()</code>
 <div class="block">Returns the reflected Class name used to build the object</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>org.mases.jcobridge.JCType</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/xaml/permissions/XamlLoadPermission.html#getJCOType--">getJCOType</a></span>()</code>
 <div class="block">Returns the instantiated class Type</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/xaml/permissions/XamlLoadPermission.html#Includes-system.xaml.permissions.XamlAccessLevel-">Includes</a></span>(<a href="../../../system/xaml/permissions/XamlAccessLevel.html" title="class in system.xaml.permissions">XamlAccessLevel</a>&nbsp;requestedAccess)</code>&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="../../../system/security/IPermission.html" title="interface in system.security">IPermission</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/xaml/permissions/XamlLoadPermission.html#Intersect-system.security.IPermission-">Intersect</a></span>(<a href="../../../system/security/IPermission.html" title="interface in system.security">IPermission</a>&nbsp;target)</code>&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/xaml/permissions/XamlLoadPermission.html#IsSubsetOf-system.security.IPermission-">IsSubsetOf</a></span>(<a href="../../../system/security/IPermission.html" title="interface in system.security">IPermission</a>&nbsp;target)</code>&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/xaml/permissions/XamlLoadPermission.html#IsUnrestricted--">IsUnrestricted</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/xaml/permissions/XamlLoadPermission.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code><a href="../../../system/security/SecurityElement.html" title="class in system.security">SecurityElement</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/xaml/permissions/XamlLoadPermission.html#ToXml--">ToXml</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/security/IPermission.html" title="interface in system.security">IPermission</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/xaml/permissions/XamlLoadPermission.html#Union-system.security.IPermission-">Union</a></span>(<a href="../../../system/security/IPermission.html" title="interface in system.security">IPermission</a>&nbsp;other)</code>&nbsp;</td>
 </tr>
@@ -422,6 +430,38 @@ extends <a href="../../../system/security/CodeAccessPermission.html" title="clas
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="XamlLoadPermission-system.collections.generic.IEnumerable_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>XamlLoadPermission</h4>
+<pre>public&nbsp;XamlLoadPermission(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;allowedAccess)
+                   throws java.lang.Throwable,
+                          <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                          <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                          <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                          <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                          <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                          <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                          <a href="../../../system/RankException.html" title="class in system">RankException</a>,
+                          <a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                          <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -568,6 +608,20 @@ extends <a href="../../../system/security/CodeAccessPermission.html" title="clas
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../system/security/CodeAccessPermission.html#FromXml-system.security.SecurityElement-">FromXml</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/security/CodeAccessPermission.html" title="class in system.security">CodeAccessPermission</a></code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="getAllowedAccess--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getAllowedAccess</h4>
+<pre>public&nbsp;<a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;getAllowedAccess()
+                         throws java.lang.Throwable</pre>
+<dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 </dl>

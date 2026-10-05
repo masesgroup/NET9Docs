@@ -26,6 +26,7 @@
 <meta name="keywords" content="setShowFrequentCategory()">
 <meta name="keywords" content="getShowRecentCategory()">
 <meta name="keywords" content="setShowRecentCategory()">
+<meta name="keywords" content="getJumpItems()">
 <link rel="stylesheet" type="text/css" href="../../../stylesheet.css" title="Style">
 <script type="text/javascript" src="../../../script.js"></script>
 </head>
@@ -39,7 +40,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":9,"i2":9,"i3":10,"i4":10,"i5":9,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":9,"i13":10,"i14":10,"i15":10,"i16":9,"i17":10,"i18":10};
+var methods = {"i0":9,"i1":9,"i2":9,"i3":10,"i4":10,"i5":9,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":9,"i14":10,"i15":10,"i16":10,"i17":9,"i18":10,"i19":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -215,6 +216,11 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../system/windows/shell/JumpList.html#JumpList--">JumpList</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/windows/shell/JumpList.html#JumpList-system.collections.generic.IEnumerable_1-boolean-boolean-">JumpList</a></span>(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;items,
+        boolean&nbsp;showFrequent,
+        boolean&nbsp;showRecent)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../system/windows/shell/JumpList.html#JumpList-java.lang.Object-">JumpList</a></span>(java.lang.Object&nbsp;instance)</code>
 <div class="block">Internal constructor.</div>
 </td>
@@ -295,31 +301,35 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </td>
 </tr>
 <tr id="i12" class="altColor">
+<td class="colFirst"><code><a href="../../../system/collections/generic/List_1.html" title="class in system.collections.generic">List_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/shell/JumpList.html#getJumpItems--">getJumpItems</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../system/windows/shell/JumpList.html" title="class in system.windows.shell">JumpList</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/shell/JumpList.html#GetJumpList-system.windows.Application-">GetJumpList</a></span>(<a href="../../../system/windows/Application.html" title="class in system.windows">Application</a>&nbsp;application)</code>&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/shell/JumpList.html#getShowFrequentCategory--">getShowFrequentCategory</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/shell/JumpList.html#getShowRecentCategory--">getShowRecentCategory</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/shell/JumpList.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/shell/JumpList.html#SetJumpList-system.windows.Application-system.windows.shell.JumpList-">SetJumpList</a></span>(<a href="../../../system/windows/Application.html" title="class in system.windows">Application</a>&nbsp;application,
            <a href="../../../system/windows/shell/JumpList.html" title="class in system.windows.shell">JumpList</a>&nbsp;value)</code>&nbsp;</td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/shell/JumpList.html#setShowFrequentCategory-boolean-">setShowFrequentCategory</a></span>(boolean&nbsp;ShowFrequentCategory)</code>&nbsp;</td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/shell/JumpList.html#setShowRecentCategory-boolean-">setShowRecentCategory</a></span>(boolean&nbsp;ShowRecentCategory)</code>&nbsp;</td>
 </tr>
@@ -437,6 +447,40 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 <dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 <dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="JumpList-system.collections.generic.IEnumerable_1-boolean-boolean-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>JumpList</h4>
+<pre>public&nbsp;JumpList(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;items,
+                boolean&nbsp;showFrequent,
+                boolean&nbsp;showRecent)
+         throws java.lang.Throwable,
+                <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                <a href="../../../system/RankException.html" title="class in system">RankException</a>,
+                <a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -817,6 +861,20 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html#getJCOType--">getJCOType</a></code>&nbsp;in class&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>A <code>JCType</code> representing the CLR Type of the instantiated Class</dd>
+</dl>
+</li>
+</ul>
+<a name="getJumpItems--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getJumpItems</h4>
+<pre>public&nbsp;<a href="../../../system/collections/generic/List_1.html" title="class in system.collections.generic">List_1</a>&nbsp;getJumpItems()
+                    throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
 </dl>
 </li>
 </ul>

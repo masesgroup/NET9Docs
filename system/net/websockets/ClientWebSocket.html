@@ -19,8 +19,12 @@
 <meta name="keywords" content="CloseAsync()">
 <meta name="keywords" content="CloseOutputAsync()">
 <meta name="keywords" content="ConnectAsync()">
+<meta name="keywords" content="SendAsync()">
+<meta name="keywords" content="ReceiveAsync()">
 <meta name="keywords" content="Abort()">
 <meta name="keywords" content="Dispose()">
+<meta name="keywords" content="getHttpResponseHeaders()">
+<meta name="keywords" content="setHttpResponseHeaders()">
 <meta name="keywords" content="getHttpStatusCode()">
 <meta name="keywords" content="getOptions()">
 <link rel="stylesheet" type="text/css" href="../../../stylesheet.css" title="Style">
@@ -36,7 +40,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":9,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10};
+var methods = {"i0":10,"i1":9,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -274,44 +278,83 @@ extends <a href="../../../system/net/websockets/WebSocket.html" title="class in 
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/websockets/ClientWebSocket.html#Dispose--">Dispose</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i7" class="rowColor">
+<td class="colFirst"><code><a href="../../../system/collections/generic/IReadOnlyDictionary_2.html" title="interface in system.collections.generic">IReadOnlyDictionary_2</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/websockets/ClientWebSocket.html#getHttpResponseHeaders--">getHttpResponseHeaders</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../../../system/net/HttpStatusCode.html" title="class in system.net">HttpStatusCode</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/websockets/ClientWebSocket.html#getHttpStatusCode--">getHttpStatusCode</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/websockets/ClientWebSocket.html#getJCOAssemblyName--">getJCOAssemblyName</a></span>()</code>
 <div class="block">Returns the reflected Assembly name</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/websockets/ClientWebSocket.html#getJCOClassName--">getJCOClassName</a></span>()</code>
 <div class="block">Returns the reflected Class name</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/websockets/ClientWebSocket.html#getJCOInstance--">getJCOInstance</a></span>()</code>
 <div class="block">Returns the instantiated class</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/websockets/ClientWebSocket.html#getJCOObjectName--">getJCOObjectName</a></span>()</code>
 <div class="block">Returns the reflected Class name used to build the object</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>org.mases.jcobridge.JCType</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/websockets/ClientWebSocket.html#getJCOType--">getJCOType</a></span>()</code>
 <div class="block">Returns the instantiated class Type</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code><a href="../../../system/net/websockets/ClientWebSocketOptions.html" title="class in system.net.websockets">ClientWebSocketOptions</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/websockets/ClientWebSocket.html#getOptions--">getOptions</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i15" class="rowColor">
+<td class="colFirst"><code><a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/websockets/ClientWebSocket.html#ReceiveAsync-system.ArraySegment_1-system.threading.CancellationToken-">ReceiveAsync</a></span>(<a href="../../../system/ArraySegment_1.html" title="class in system">ArraySegment_1</a>&nbsp;buffer,
+            <a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)</code>&nbsp;</td>
+</tr>
+<tr id="i16" class="altColor">
+<td class="colFirst"><code><a href="../../../system/threading/tasks/ValueTask_1.html" title="class in system.threading.tasks">ValueTask_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/websockets/ClientWebSocket.html#ReceiveAsync-system.Memory_1-system.threading.CancellationToken-">ReceiveAsync</a></span>(<a href="../../../system/Memory_1.html" title="class in system">Memory_1</a>&nbsp;buffer,
+            <a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)</code>&nbsp;</td>
+</tr>
+<tr id="i17" class="rowColor">
+<td class="colFirst"><code><a href="../../../system/threading/tasks/Task.html" title="class in system.threading.tasks">Task</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/websockets/ClientWebSocket.html#SendAsync-system.ArraySegment_1-system.net.websockets.WebSocketMessageType-boolean-system.threading.CancellationToken-">SendAsync</a></span>(<a href="../../../system/ArraySegment_1.html" title="class in system">ArraySegment_1</a>&nbsp;buffer,
+         <a href="../../../system/net/websockets/WebSocketMessageType.html" title="class in system.net.websockets">WebSocketMessageType</a>&nbsp;messageType,
+         boolean&nbsp;endOfMessage,
+         <a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)</code>&nbsp;</td>
+</tr>
+<tr id="i18" class="altColor">
+<td class="colFirst"><code><a href="../../../system/threading/tasks/ValueTask.html" title="class in system.threading.tasks">ValueTask</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/websockets/ClientWebSocket.html#SendAsync-system.ReadOnlyMemory_1-system.net.websockets.WebSocketMessageType-boolean-system.threading.CancellationToken-">SendAsync</a></span>(<a href="../../../system/ReadOnlyMemory_1.html" title="class in system">ReadOnlyMemory_1</a>&nbsp;buffer,
+         <a href="../../../system/net/websockets/WebSocketMessageType.html" title="class in system.net.websockets">WebSocketMessageType</a>&nbsp;messageType,
+         boolean&nbsp;endOfMessage,
+         <a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)</code>&nbsp;</td>
+</tr>
+<tr id="i19" class="rowColor">
+<td class="colFirst"><code><a href="../../../system/threading/tasks/ValueTask.html" title="class in system.threading.tasks">ValueTask</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/websockets/ClientWebSocket.html#SendAsync-system.ReadOnlyMemory_1-system.net.websockets.WebSocketMessageType-system.net.websockets.WebSocketMessageFlags-system.threading.CancellationToken-">SendAsync</a></span>(<a href="../../../system/ReadOnlyMemory_1.html" title="class in system">ReadOnlyMemory_1</a>&nbsp;buffer,
+         <a href="../../../system/net/websockets/WebSocketMessageType.html" title="class in system.net.websockets">WebSocketMessageType</a>&nbsp;messageType,
+         <a href="../../../system/net/websockets/WebSocketMessageFlags.html" title="class in system.net.websockets">WebSocketMessageFlags</a>&nbsp;messageFlags,
+         <a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)</code>&nbsp;</td>
+</tr>
+<tr id="i20" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/websockets/ClientWebSocket.html#setHttpResponseHeaders-system.collections.generic.IReadOnlyDictionary_2-">setHttpResponseHeaders</a></span>(<a href="../../../system/collections/generic/IReadOnlyDictionary_2.html" title="interface in system.collections.generic">IReadOnlyDictionary_2</a>&nbsp;HttpResponseHeaders)</code>&nbsp;</td>
+</tr>
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/websockets/ClientWebSocket.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
@@ -321,7 +364,7 @@ extends <a href="../../../system/net/websockets/WebSocket.html" title="class in 
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;system.net.websockets.<a href="../../../system/net/websockets/WebSocket.html" title="class in system.net.websockets">WebSocket</a></h3>
-<code><a href="../../../system/net/websockets/WebSocket.html#close--">close</a>, <a href="../../../system/net/websockets/WebSocket.html#CreateFromStream-system.io.Stream-boolean-java.lang.String-system.TimeSpan-">CreateFromStream</a>, <a href="../../../system/net/websockets/WebSocket.html#CreateFromStream-system.io.Stream-system.net.websockets.WebSocketCreationOptions-">CreateFromStream</a>, <a href="../../../system/net/websockets/WebSocket.html#getCloseStatusDescription--">getCloseStatusDescription</a>, <a href="../../../system/net/websockets/WebSocket.html#getDefaultKeepAliveInterval--">getDefaultKeepAliveInterval</a>, <a href="../../../system/net/websockets/WebSocket.html#getState--">getState</a>, <a href="../../../system/net/websockets/WebSocket.html#getSubProtocol--">getSubProtocol</a>, <a href="../../../system/net/websockets/WebSocket.html#IsApplicationTargeting45--">IsApplicationTargeting45</a>, <a href="../../../system/net/websockets/WebSocket.html#RegisterPrefixes--">RegisterPrefixes</a></code></li>
+<code><a href="../../../system/net/websockets/WebSocket.html#close--">close</a>, <a href="../../../system/net/websockets/WebSocket.html#CreateClientBuffer-int-int-">CreateClientBuffer</a>, <a href="../../../system/net/websockets/WebSocket.html#CreateClientWebSocket-system.io.Stream-java.lang.String-int-int-system.TimeSpan-boolean-system.ArraySegment_1-">CreateClientWebSocket</a>, <a href="../../../system/net/websockets/WebSocket.html#CreateFromStream-system.io.Stream-boolean-java.lang.String-system.TimeSpan-">CreateFromStream</a>, <a href="../../../system/net/websockets/WebSocket.html#CreateFromStream-system.io.Stream-system.net.websockets.WebSocketCreationOptions-">CreateFromStream</a>, <a href="../../../system/net/websockets/WebSocket.html#CreateServerBuffer-int-">CreateServerBuffer</a>, <a href="../../../system/net/websockets/WebSocket.html#getCloseStatus--">getCloseStatus</a>, <a href="../../../system/net/websockets/WebSocket.html#getCloseStatusDescription--">getCloseStatusDescription</a>, <a href="../../../system/net/websockets/WebSocket.html#getDefaultKeepAliveInterval--">getDefaultKeepAliveInterval</a>, <a href="../../../system/net/websockets/WebSocket.html#getState--">getState</a>, <a href="../../../system/net/websockets/WebSocket.html#getSubProtocol--">getSubProtocol</a>, <a href="../../../system/net/websockets/WebSocket.html#IsApplicationTargeting45--">IsApplicationTargeting45</a>, <a href="../../../system/net/websockets/WebSocket.html#RegisterPrefixes--">RegisterPrefixes</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.org.mases.jcobridge.netreflection.NetObject">
@@ -664,6 +707,20 @@ extends <a href="../../../system/net/websockets/WebSocket.html" title="class in 
 </dl>
 </li>
 </ul>
+<a name="getHttpResponseHeaders--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getHttpResponseHeaders</h4>
+<pre>public&nbsp;<a href="../../../system/collections/generic/IReadOnlyDictionary_2.html" title="interface in system.collections.generic">IReadOnlyDictionary_2</a>&nbsp;getHttpResponseHeaders()
+                                             throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
 <a name="getHttpStatusCode--">
 <!--   -->
 </a>
@@ -782,6 +839,175 @@ extends <a href="../../../system/net/websockets/WebSocket.html" title="class in 
 <h4>getOptions</h4>
 <pre>public&nbsp;<a href="../../../system/net/websockets/ClientWebSocketOptions.html" title="class in system.net.websockets">ClientWebSocketOptions</a>&nbsp;getOptions()
                                   throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="ReceiveAsync-system.ArraySegment_1-system.threading.CancellationToken-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ReceiveAsync</h4>
+<pre>public&nbsp;<a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a>&nbsp;ReceiveAsync(<a href="../../../system/ArraySegment_1.html" title="class in system">ArraySegment_1</a>&nbsp;buffer,
+                           <a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)
+                    throws java.lang.Throwable,
+                           <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                           <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                           <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                           <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                           <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../system/net/websockets/WebSocket.html#ReceiveAsync-system.ArraySegment_1-system.threading.CancellationToken-">ReceiveAsync</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/net/websockets/WebSocket.html" title="class in system.net.websockets">WebSocket</a></code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="ReceiveAsync-system.Memory_1-system.threading.CancellationToken-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ReceiveAsync</h4>
+<pre>public&nbsp;<a href="../../../system/threading/tasks/ValueTask_1.html" title="class in system.threading.tasks">ValueTask_1</a>&nbsp;ReceiveAsync(<a href="../../../system/Memory_1.html" title="class in system">Memory_1</a>&nbsp;buffer,
+                                <a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)
+                         throws java.lang.Throwable,
+                                <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../system/net/websockets/WebSocket.html#ReceiveAsync-system.Memory_1-system.threading.CancellationToken-">ReceiveAsync</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/net/websockets/WebSocket.html" title="class in system.net.websockets">WebSocket</a></code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="SendAsync-system.ArraySegment_1-system.net.websockets.WebSocketMessageType-boolean-system.threading.CancellationToken-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>SendAsync</h4>
+<pre>public&nbsp;<a href="../../../system/threading/tasks/Task.html" title="class in system.threading.tasks">Task</a>&nbsp;SendAsync(<a href="../../../system/ArraySegment_1.html" title="class in system">ArraySegment_1</a>&nbsp;buffer,
+                      <a href="../../../system/net/websockets/WebSocketMessageType.html" title="class in system.net.websockets">WebSocketMessageType</a>&nbsp;messageType,
+                      boolean&nbsp;endOfMessage,
+                      <a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)
+               throws java.lang.Throwable,
+                      <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                      <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                      <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                      <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                      <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../system/net/websockets/WebSocket.html#SendAsync-system.ArraySegment_1-system.net.websockets.WebSocketMessageType-boolean-system.threading.CancellationToken-">SendAsync</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/net/websockets/WebSocket.html" title="class in system.net.websockets">WebSocket</a></code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="SendAsync-system.ReadOnlyMemory_1-system.net.websockets.WebSocketMessageType-boolean-system.threading.CancellationToken-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>SendAsync</h4>
+<pre>public&nbsp;<a href="../../../system/threading/tasks/ValueTask.html" title="class in system.threading.tasks">ValueTask</a>&nbsp;SendAsync(<a href="../../../system/ReadOnlyMemory_1.html" title="class in system">ReadOnlyMemory_1</a>&nbsp;buffer,
+                           <a href="../../../system/net/websockets/WebSocketMessageType.html" title="class in system.net.websockets">WebSocketMessageType</a>&nbsp;messageType,
+                           boolean&nbsp;endOfMessage,
+                           <a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)
+                    throws java.lang.Throwable,
+                           <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                           <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                           <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                           <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                           <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                           <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                           <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../system/net/websockets/WebSocket.html#SendAsync-system.ReadOnlyMemory_1-system.net.websockets.WebSocketMessageType-boolean-system.threading.CancellationToken-">SendAsync</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/net/websockets/WebSocket.html" title="class in system.net.websockets">WebSocket</a></code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="SendAsync-system.ReadOnlyMemory_1-system.net.websockets.WebSocketMessageType-system.net.websockets.WebSocketMessageFlags-system.threading.CancellationToken-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>SendAsync</h4>
+<pre>public&nbsp;<a href="../../../system/threading/tasks/ValueTask.html" title="class in system.threading.tasks">ValueTask</a>&nbsp;SendAsync(<a href="../../../system/ReadOnlyMemory_1.html" title="class in system">ReadOnlyMemory_1</a>&nbsp;buffer,
+                           <a href="../../../system/net/websockets/WebSocketMessageType.html" title="class in system.net.websockets">WebSocketMessageType</a>&nbsp;messageType,
+                           <a href="../../../system/net/websockets/WebSocketMessageFlags.html" title="class in system.net.websockets">WebSocketMessageFlags</a>&nbsp;messageFlags,
+                           <a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)
+                    throws java.lang.Throwable,
+                           <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                           <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                           <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                           <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                           <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                           <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                           <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                           <a href="../../../system/FormatException.html" title="class in system">FormatException</a>,
+                           <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../system/net/websockets/WebSocket.html#SendAsync-system.ReadOnlyMemory_1-system.net.websockets.WebSocketMessageType-system.net.websockets.WebSocketMessageFlags-system.threading.CancellationToken-">SendAsync</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/net/websockets/WebSocket.html" title="class in system.net.websockets">WebSocket</a></code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="setHttpResponseHeaders-system.collections.generic.IReadOnlyDictionary_2-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setHttpResponseHeaders</h4>
+<pre>public&nbsp;void&nbsp;setHttpResponseHeaders(<a href="../../../system/collections/generic/IReadOnlyDictionary_2.html" title="interface in system.collections.generic">IReadOnlyDictionary_2</a>&nbsp;HttpResponseHeaders)
+                            throws java.lang.Throwable</pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>

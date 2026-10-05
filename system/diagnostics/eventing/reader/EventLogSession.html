@@ -16,6 +16,8 @@
 <meta name="keywords" content="setJCOInstance()">
 <meta name="keywords" content="getJCOType()">
 <meta name="keywords" content="cast()">
+<meta name="keywords" content="GetLogNames()">
+<meta name="keywords" content="GetProviderNames()">
 <meta name="keywords" content="GetLogInformation()">
 <meta name="keywords" content="CancelCurrentOperations()">
 <meta name="keywords" content="ClearLog()">
@@ -37,7 +39,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":9,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":9,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10};
+var methods = {"i0":10,"i1":9,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":9,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -341,6 +343,14 @@ implements java.lang.AutoCloseable</pre>
                  <a href="../../../../system/diagnostics/eventing/reader/PathType.html" title="class in system.diagnostics.eventing.reader">PathType</a>&nbsp;pathType)</code>&nbsp;</td>
 </tr>
 <tr id="i17" class="rowColor">
+<td class="colFirst"><code><a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/diagnostics/eventing/reader/EventLogSession.html#GetLogNames--">GetLogNames</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i18" class="altColor">
+<td class="colFirst"><code><a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/diagnostics/eventing/reader/EventLogSession.html#GetProviderNames--">GetProviderNames</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/diagnostics/eventing/reader/EventLogSession.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
@@ -1121,6 +1131,94 @@ implements java.lang.AutoCloseable</pre>
 <dd><code><a href="../../../../system/AccessViolationException.html" title="class in system">AccessViolationException</a></code></dd>
 <dd><code><a href="../../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 <dd><code><a href="../../../../system/OverflowException.html" title="class in system">OverflowException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="GetLogNames--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>GetLogNames</h4>
+<pre>public&nbsp;<a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;GetLogNames()
+                          throws java.lang.Throwable,
+                                 <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                 <a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                 <a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                 <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                 <a href="../../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                 <a href="../../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a>,
+                                 <a href="../../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
+                                 <a href="../../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                 <a href="../../../../system/diagnostics/eventing/reader/EventLogNotFoundException.html" title="class in system.diagnostics.eventing.reader">EventLogNotFoundException</a>,
+                                 <a href="../../../../system/diagnostics/eventing/reader/EventLogInvalidDataException.html" title="class in system.diagnostics.eventing.reader">EventLogInvalidDataException</a>,
+                                 <a href="../../../../system/OperationCanceledException.html" title="class in system">OperationCanceledException</a>,
+                                 <a href="../../../../system/diagnostics/eventing/reader/EventLogProviderDisabledException.html" title="class in system.diagnostics.eventing.reader">EventLogProviderDisabledException</a>,
+                                 <a href="../../../../system/UnauthorizedAccessException.html" title="class in system">UnauthorizedAccessException</a>,
+                                 <a href="../../../../system/diagnostics/eventing/reader/EventLogReadingException.html" title="class in system.diagnostics.eventing.reader">EventLogReadingException</a>,
+                                 <a href="../../../../system/diagnostics/eventing/reader/EventLogException.html" title="class in system.diagnostics.eventing.reader">EventLogException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
+<dd><code><a href="../../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
+<dd><code><a href="../../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../../system/diagnostics/eventing/reader/EventLogNotFoundException.html" title="class in system.diagnostics.eventing.reader">EventLogNotFoundException</a></code></dd>
+<dd><code><a href="../../../../system/diagnostics/eventing/reader/EventLogInvalidDataException.html" title="class in system.diagnostics.eventing.reader">EventLogInvalidDataException</a></code></dd>
+<dd><code><a href="../../../../system/OperationCanceledException.html" title="class in system">OperationCanceledException</a></code></dd>
+<dd><code><a href="../../../../system/diagnostics/eventing/reader/EventLogProviderDisabledException.html" title="class in system.diagnostics.eventing.reader">EventLogProviderDisabledException</a></code></dd>
+<dd><code><a href="../../../../system/UnauthorizedAccessException.html" title="class in system">UnauthorizedAccessException</a></code></dd>
+<dd><code><a href="../../../../system/diagnostics/eventing/reader/EventLogReadingException.html" title="class in system.diagnostics.eventing.reader">EventLogReadingException</a></code></dd>
+<dd><code><a href="../../../../system/diagnostics/eventing/reader/EventLogException.html" title="class in system.diagnostics.eventing.reader">EventLogException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="GetProviderNames--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>GetProviderNames</h4>
+<pre>public&nbsp;<a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;GetProviderNames()
+                               throws java.lang.Throwable,
+                                      <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                      <a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                      <a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                      <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                      <a href="../../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                      <a href="../../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a>,
+                                      <a href="../../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
+                                      <a href="../../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                      <a href="../../../../system/diagnostics/eventing/reader/EventLogNotFoundException.html" title="class in system.diagnostics.eventing.reader">EventLogNotFoundException</a>,
+                                      <a href="../../../../system/diagnostics/eventing/reader/EventLogInvalidDataException.html" title="class in system.diagnostics.eventing.reader">EventLogInvalidDataException</a>,
+                                      <a href="../../../../system/OperationCanceledException.html" title="class in system">OperationCanceledException</a>,
+                                      <a href="../../../../system/diagnostics/eventing/reader/EventLogProviderDisabledException.html" title="class in system.diagnostics.eventing.reader">EventLogProviderDisabledException</a>,
+                                      <a href="../../../../system/UnauthorizedAccessException.html" title="class in system">UnauthorizedAccessException</a>,
+                                      <a href="../../../../system/diagnostics/eventing/reader/EventLogReadingException.html" title="class in system.diagnostics.eventing.reader">EventLogReadingException</a>,
+                                      <a href="../../../../system/diagnostics/eventing/reader/EventLogException.html" title="class in system.diagnostics.eventing.reader">EventLogException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
+<dd><code><a href="../../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
+<dd><code><a href="../../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../../system/diagnostics/eventing/reader/EventLogNotFoundException.html" title="class in system.diagnostics.eventing.reader">EventLogNotFoundException</a></code></dd>
+<dd><code><a href="../../../../system/diagnostics/eventing/reader/EventLogInvalidDataException.html" title="class in system.diagnostics.eventing.reader">EventLogInvalidDataException</a></code></dd>
+<dd><code><a href="../../../../system/OperationCanceledException.html" title="class in system">OperationCanceledException</a></code></dd>
+<dd><code><a href="../../../../system/diagnostics/eventing/reader/EventLogProviderDisabledException.html" title="class in system.diagnostics.eventing.reader">EventLogProviderDisabledException</a></code></dd>
+<dd><code><a href="../../../../system/UnauthorizedAccessException.html" title="class in system">UnauthorizedAccessException</a></code></dd>
+<dd><code><a href="../../../../system/diagnostics/eventing/reader/EventLogReadingException.html" title="class in system.diagnostics.eventing.reader">EventLogReadingException</a></code></dd>
+<dd><code><a href="../../../../system/diagnostics/eventing/reader/EventLogException.html" title="class in system.diagnostics.eventing.reader">EventLogException</a></code></dd>
 </dl>
 </li>
 </ul>

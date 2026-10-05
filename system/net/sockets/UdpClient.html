@@ -22,6 +22,8 @@
 <meta name="keywords" content="Send()">
 <meta name="keywords" content="BeginReceive()">
 <meta name="keywords" content="BeginSend()">
+<meta name="keywords" content="SendAsync()">
+<meta name="keywords" content="ReceiveAsync()">
 <meta name="keywords" content="AllowNatTraversal()">
 <meta name="keywords" content="Close()">
 <meta name="keywords" content="Connect()">
@@ -55,7 +57,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":9,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":10,"i36":10,"i37":10,"i38":10,"i39":10,"i40":10,"i41":10,"i42":10,"i43":10,"i44":10,"i45":10,"i46":10,"i47":10,"i48":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":9,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":10,"i36":10,"i37":10,"i38":10,"i39":10,"i40":10,"i41":10,"i42":10,"i43":10,"i44":10,"i45":10,"i46":10,"i47":10,"i48":10,"i49":10,"i50":10,"i51":10,"i52":10,"i53":10,"i54":10,"i55":10,"i56":10,"i57":10,"i58":10,"i59":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -457,66 +459,128 @@ implements java.lang.AutoCloseable</pre>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/sockets/UdpClient.html#Receive-org.mases.jcobridge.netreflection.JCORefOut-">Receive</a></span>(<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../../system/net/IPEndPoint.html" title="class in system.net">IPEndPoint</a>&gt;&nbsp;remoteEP)</code>&nbsp;</td>
 </tr>
 <tr id="i36" class="altColor">
+<td class="colFirst"><code><a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/sockets/UdpClient.html#ReceiveAsync--">ReceiveAsync</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i37" class="rowColor">
+<td class="colFirst"><code><a href="../../../system/threading/tasks/ValueTask_1.html" title="class in system.threading.tasks">ValueTask_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/sockets/UdpClient.html#ReceiveAsync-system.threading.CancellationToken-">ReceiveAsync</a></span>(<a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)</code>&nbsp;</td>
+</tr>
+<tr id="i38" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/sockets/UdpClient.html#Send-byte:A-int-">Send</a></span>(byte[]&nbsp;dgram,
     int&nbsp;bytes)</code>&nbsp;</td>
 </tr>
-<tr id="i37" class="rowColor">
+<tr id="i39" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/sockets/UdpClient.html#Send-byte:A-int-system.net.IPEndPoint-">Send</a></span>(byte[]&nbsp;dgram,
     int&nbsp;bytes,
     <a href="../../../system/net/IPEndPoint.html" title="class in system.net">IPEndPoint</a>&nbsp;endPoint)</code>&nbsp;</td>
 </tr>
-<tr id="i38" class="altColor">
+<tr id="i40" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/sockets/UdpClient.html#Send-byte:A-int-java.lang.String-int-">Send</a></span>(byte[]&nbsp;dgram,
     int&nbsp;bytes,
     java.lang.String&nbsp;hostname,
     int&nbsp;port)</code>&nbsp;</td>
 </tr>
-<tr id="i39" class="rowColor">
+<tr id="i41" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/sockets/UdpClient.html#Send-org.mases.jcobridge.netreflection.JCORefOut-int-">Send</a></span>(<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;dupParam0,
     int&nbsp;dupParam1)</code>&nbsp;</td>
 </tr>
-<tr id="i40" class="altColor">
+<tr id="i42" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/sockets/UdpClient.html#Send-org.mases.jcobridge.netreflection.JCORefOut-int-system.net.IPEndPoint-">Send</a></span>(<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;dupParam0,
     int&nbsp;dupParam1,
     <a href="../../../system/net/IPEndPoint.html" title="class in system.net">IPEndPoint</a>&nbsp;dupParam2)</code>&nbsp;</td>
 </tr>
-<tr id="i41" class="rowColor">
+<tr id="i43" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/sockets/UdpClient.html#Send-org.mases.jcobridge.netreflection.JCORefOut-int-java.lang.String-int-">Send</a></span>(<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;dupParam0,
     int&nbsp;dupParam1,
     java.lang.String&nbsp;dupParam2,
     int&nbsp;dupParam3)</code>&nbsp;</td>
 </tr>
-<tr id="i42" class="altColor">
+<tr id="i44" class="altColor">
+<td class="colFirst"><code><a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/sockets/UdpClient.html#SendAsync-byte:A-int-">SendAsync</a></span>(byte[]&nbsp;datagram,
+         int&nbsp;bytes)</code>&nbsp;</td>
+</tr>
+<tr id="i45" class="rowColor">
+<td class="colFirst"><code><a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/sockets/UdpClient.html#SendAsync-byte:A-int-system.net.IPEndPoint-">SendAsync</a></span>(byte[]&nbsp;datagram,
+         int&nbsp;bytes,
+         <a href="../../../system/net/IPEndPoint.html" title="class in system.net">IPEndPoint</a>&nbsp;endPoint)</code>&nbsp;</td>
+</tr>
+<tr id="i46" class="altColor">
+<td class="colFirst"><code><a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/sockets/UdpClient.html#SendAsync-byte:A-int-java.lang.String-int-">SendAsync</a></span>(byte[]&nbsp;datagram,
+         int&nbsp;bytes,
+         java.lang.String&nbsp;hostname,
+         int&nbsp;port)</code>&nbsp;</td>
+</tr>
+<tr id="i47" class="rowColor">
+<td class="colFirst"><code><a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/sockets/UdpClient.html#SendAsync-org.mases.jcobridge.netreflection.JCORefOut-int-">SendAsync</a></span>(<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;dupParam0,
+         int&nbsp;dupParam1)</code>&nbsp;</td>
+</tr>
+<tr id="i48" class="altColor">
+<td class="colFirst"><code><a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/sockets/UdpClient.html#SendAsync-org.mases.jcobridge.netreflection.JCORefOut-int-system.net.IPEndPoint-">SendAsync</a></span>(<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;dupParam0,
+         int&nbsp;dupParam1,
+         <a href="../../../system/net/IPEndPoint.html" title="class in system.net">IPEndPoint</a>&nbsp;dupParam2)</code>&nbsp;</td>
+</tr>
+<tr id="i49" class="rowColor">
+<td class="colFirst"><code><a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/sockets/UdpClient.html#SendAsync-org.mases.jcobridge.netreflection.JCORefOut-int-java.lang.String-int-">SendAsync</a></span>(<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;dupParam0,
+         int&nbsp;dupParam1,
+         java.lang.String&nbsp;dupParam2,
+         int&nbsp;dupParam3)</code>&nbsp;</td>
+</tr>
+<tr id="i50" class="altColor">
+<td class="colFirst"><code><a href="../../../system/threading/tasks/ValueTask_1.html" title="class in system.threading.tasks">ValueTask_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/sockets/UdpClient.html#SendAsync-system.ReadOnlyMemory_1-system.threading.CancellationToken-">SendAsync</a></span>(<a href="../../../system/ReadOnlyMemory_1.html" title="class in system">ReadOnlyMemory_1</a>&nbsp;datagram,
+         <a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)</code>&nbsp;</td>
+</tr>
+<tr id="i51" class="rowColor">
+<td class="colFirst"><code><a href="../../../system/threading/tasks/ValueTask_1.html" title="class in system.threading.tasks">ValueTask_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/sockets/UdpClient.html#SendAsync-system.ReadOnlyMemory_1-system.net.IPEndPoint-system.threading.CancellationToken-">SendAsync</a></span>(<a href="../../../system/ReadOnlyMemory_1.html" title="class in system">ReadOnlyMemory_1</a>&nbsp;datagram,
+         <a href="../../../system/net/IPEndPoint.html" title="class in system.net">IPEndPoint</a>&nbsp;endPoint,
+         <a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)</code>&nbsp;</td>
+</tr>
+<tr id="i52" class="altColor">
+<td class="colFirst"><code><a href="../../../system/threading/tasks/ValueTask_1.html" title="class in system.threading.tasks">ValueTask_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/sockets/UdpClient.html#SendAsync-system.ReadOnlyMemory_1-java.lang.String-int-system.threading.CancellationToken-">SendAsync</a></span>(<a href="../../../system/ReadOnlyMemory_1.html" title="class in system">ReadOnlyMemory_1</a>&nbsp;datagram,
+         java.lang.String&nbsp;hostname,
+         int&nbsp;port,
+         <a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)</code>&nbsp;</td>
+</tr>
+<tr id="i53" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/sockets/UdpClient.html#setClient-system.net.sockets.Socket-">setClient</a></span>(<a href="../../../system/net/sockets/Socket.html" title="class in system.net.sockets">Socket</a>&nbsp;Client)</code>&nbsp;</td>
 </tr>
-<tr id="i43" class="rowColor">
+<tr id="i54" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/sockets/UdpClient.html#setDontFragment-boolean-">setDontFragment</a></span>(boolean&nbsp;DontFragment)</code>&nbsp;</td>
 </tr>
-<tr id="i44" class="altColor">
+<tr id="i55" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/sockets/UdpClient.html#setEnableBroadcast-boolean-">setEnableBroadcast</a></span>(boolean&nbsp;EnableBroadcast)</code>&nbsp;</td>
 </tr>
-<tr id="i45" class="rowColor">
+<tr id="i56" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/sockets/UdpClient.html#setExclusiveAddressUse-boolean-">setExclusiveAddressUse</a></span>(boolean&nbsp;ExclusiveAddressUse)</code>&nbsp;</td>
 </tr>
-<tr id="i46" class="altColor">
+<tr id="i57" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/sockets/UdpClient.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
-<tr id="i47" class="rowColor">
+<tr id="i58" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/sockets/UdpClient.html#setMulticastLoopback-boolean-">setMulticastLoopback</a></span>(boolean&nbsp;MulticastLoopback)</code>&nbsp;</td>
 </tr>
-<tr id="i48" class="altColor">
+<tr id="i59" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/sockets/UdpClient.html#setTtl-short-">setTtl</a></span>(short&nbsp;Ttl)</code>&nbsp;</td>
 </tr>
@@ -2125,6 +2189,82 @@ implements java.lang.AutoCloseable</pre>
 </dl>
 </li>
 </ul>
+<a name="ReceiveAsync--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ReceiveAsync</h4>
+<pre>public&nbsp;<a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a>&nbsp;ReceiveAsync()
+                    throws java.lang.Throwable,
+                           <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                           <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                           <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                           <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                           <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                           <a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                           <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                           <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                           <a href="../../../system/FormatException.html" title="class in system">FormatException</a>,
+                           <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                           <a href="../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a>,
+                           <a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
+<dd><code><a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="ReceiveAsync-system.threading.CancellationToken-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ReceiveAsync</h4>
+<pre>public&nbsp;<a href="../../../system/threading/tasks/ValueTask_1.html" title="class in system.threading.tasks">ValueTask_1</a>&nbsp;ReceiveAsync(<a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)
+                         throws java.lang.Throwable,
+                                <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                <a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                                <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                <a href="../../../system/FormatException.html" title="class in system">FormatException</a>,
+                                <a href="../../../system/net/sockets/SocketException.html" title="class in system.net.sockets">SocketException</a>,
+                                <a href="../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a>,
+                                <a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../../system/net/sockets/SocketException.html" title="class in system.net.sockets">SocketException</a></code></dd>
+<dd><code><a href="../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
+<dd><code><a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
+</dl>
+</li>
+</ul>
 <a name="Send-byte:A-int-">
 <!--   -->
 </a>
@@ -2338,6 +2478,378 @@ implements java.lang.AutoCloseable</pre>
 <dd><code><a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
 <dd><code><a href="../../../system/diagnostics/tracing/EventSourceException.html" title="class in system.diagnostics.tracing">EventSourceException</a></code></dd>
 <dd><code><a href="../../../system/net/sockets/SocketException.html" title="class in system.net.sockets">SocketException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="SendAsync-byte:A-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>SendAsync</h4>
+<pre>public&nbsp;<a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a>&nbsp;SendAsync(byte[]&nbsp;datagram,
+                        int&nbsp;bytes)
+                 throws java.lang.Throwable,
+                        <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                        <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                        <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                        <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                        <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                        <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                        <a href="../../../system/FormatException.html" title="class in system">FormatException</a>,
+                        <a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                        <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                        <a href="../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a>,
+                        <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                        <a href="../../../system/net/sockets/SocketException.html" title="class in system.net.sockets">SocketException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/net/sockets/SocketException.html" title="class in system.net.sockets">SocketException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="SendAsync-byte:A-int-system.net.IPEndPoint-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>SendAsync</h4>
+<pre>public&nbsp;<a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a>&nbsp;SendAsync(byte[]&nbsp;datagram,
+                        int&nbsp;bytes,
+                        <a href="../../../system/net/IPEndPoint.html" title="class in system.net">IPEndPoint</a>&nbsp;endPoint)
+                 throws java.lang.Throwable,
+                        <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                        <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                        <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                        <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                        <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                        <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                        <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                        <a href="../../../system/FormatException.html" title="class in system">FormatException</a>,
+                        <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                        <a href="../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a>,
+                        <a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                        <a href="../../../system/net/sockets/SocketException.html" title="class in system.net.sockets">SocketException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
+<dd><code><a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../../system/net/sockets/SocketException.html" title="class in system.net.sockets">SocketException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="SendAsync-byte:A-int-java.lang.String-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>SendAsync</h4>
+<pre>public&nbsp;<a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a>&nbsp;SendAsync(byte[]&nbsp;datagram,
+                        int&nbsp;bytes,
+                        java.lang.String&nbsp;hostname,
+                        int&nbsp;port)
+                 throws java.lang.Throwable,
+                        <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                        <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                        <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                        <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                        <a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                        <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                        <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                        <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                        <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                        <a href="../../../system/FormatException.html" title="class in system">FormatException</a>,
+                        <a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
+                        <a href="../../../system/diagnostics/tracing/EventSourceException.html" title="class in system.diagnostics.tracing">EventSourceException</a>,
+                        <a href="../../../system/net/sockets/SocketException.html" title="class in system.net.sockets">SocketException</a>,
+                        <a href="../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
+<dd><code><a href="../../../system/diagnostics/tracing/EventSourceException.html" title="class in system.diagnostics.tracing">EventSourceException</a></code></dd>
+<dd><code><a href="../../../system/net/sockets/SocketException.html" title="class in system.net.sockets">SocketException</a></code></dd>
+<dd><code><a href="../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="SendAsync-org.mases.jcobridge.netreflection.JCORefOut-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>SendAsync</h4>
+<pre>public&nbsp;<a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a>&nbsp;SendAsync(<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;dupParam0,
+                        int&nbsp;dupParam1)
+                 throws java.lang.Throwable,
+                        <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                        <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                        <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                        <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                        <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                        <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                        <a href="../../../system/FormatException.html" title="class in system">FormatException</a>,
+                        <a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                        <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                        <a href="../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a>,
+                        <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                        <a href="../../../system/net/sockets/SocketException.html" title="class in system.net.sockets">SocketException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/net/sockets/SocketException.html" title="class in system.net.sockets">SocketException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="SendAsync-org.mases.jcobridge.netreflection.JCORefOut-int-system.net.IPEndPoint-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>SendAsync</h4>
+<pre>public&nbsp;<a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a>&nbsp;SendAsync(<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;dupParam0,
+                        int&nbsp;dupParam1,
+                        <a href="../../../system/net/IPEndPoint.html" title="class in system.net">IPEndPoint</a>&nbsp;dupParam2)
+                 throws java.lang.Throwable,
+                        <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                        <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                        <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                        <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                        <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                        <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                        <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                        <a href="../../../system/FormatException.html" title="class in system">FormatException</a>,
+                        <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                        <a href="../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a>,
+                        <a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                        <a href="../../../system/net/sockets/SocketException.html" title="class in system.net.sockets">SocketException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
+<dd><code><a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../../system/net/sockets/SocketException.html" title="class in system.net.sockets">SocketException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="SendAsync-org.mases.jcobridge.netreflection.JCORefOut-int-java.lang.String-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>SendAsync</h4>
+<pre>public&nbsp;<a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a>&nbsp;SendAsync(<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;dupParam0,
+                        int&nbsp;dupParam1,
+                        java.lang.String&nbsp;dupParam2,
+                        int&nbsp;dupParam3)
+                 throws java.lang.Throwable,
+                        <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                        <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                        <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                        <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                        <a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                        <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                        <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                        <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                        <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                        <a href="../../../system/FormatException.html" title="class in system">FormatException</a>,
+                        <a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
+                        <a href="../../../system/diagnostics/tracing/EventSourceException.html" title="class in system.diagnostics.tracing">EventSourceException</a>,
+                        <a href="../../../system/net/sockets/SocketException.html" title="class in system.net.sockets">SocketException</a>,
+                        <a href="../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
+<dd><code><a href="../../../system/diagnostics/tracing/EventSourceException.html" title="class in system.diagnostics.tracing">EventSourceException</a></code></dd>
+<dd><code><a href="../../../system/net/sockets/SocketException.html" title="class in system.net.sockets">SocketException</a></code></dd>
+<dd><code><a href="../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="SendAsync-system.ReadOnlyMemory_1-system.threading.CancellationToken-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>SendAsync</h4>
+<pre>public&nbsp;<a href="../../../system/threading/tasks/ValueTask_1.html" title="class in system.threading.tasks">ValueTask_1</a>&nbsp;SendAsync(<a href="../../../system/ReadOnlyMemory_1.html" title="class in system">ReadOnlyMemory_1</a>&nbsp;datagram,
+                             <a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)
+                      throws java.lang.Throwable,
+                             <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                             <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                             <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                             <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                             <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                             <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                             <a href="../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a>,
+                             <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                             <a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                             <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                             <a href="../../../system/net/sockets/SocketException.html" title="class in system.net.sockets">SocketException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/net/sockets/SocketException.html" title="class in system.net.sockets">SocketException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="SendAsync-system.ReadOnlyMemory_1-system.net.IPEndPoint-system.threading.CancellationToken-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>SendAsync</h4>
+<pre>public&nbsp;<a href="../../../system/threading/tasks/ValueTask_1.html" title="class in system.threading.tasks">ValueTask_1</a>&nbsp;SendAsync(<a href="../../../system/ReadOnlyMemory_1.html" title="class in system">ReadOnlyMemory_1</a>&nbsp;datagram,
+                             <a href="../../../system/net/IPEndPoint.html" title="class in system.net">IPEndPoint</a>&nbsp;endPoint,
+                             <a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)
+                      throws java.lang.Throwable,
+                             <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                             <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                             <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                             <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                             <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                             <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                             <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                             <a href="../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a>,
+                             <a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
+                             <a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                             <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                             <a href="../../../system/FormatException.html" title="class in system">FormatException</a>,
+                             <a href="../../../system/net/sockets/SocketException.html" title="class in system.net.sockets">SocketException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
+<dd><code><a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
+<dd><code><a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../../system/net/sockets/SocketException.html" title="class in system.net.sockets">SocketException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="SendAsync-system.ReadOnlyMemory_1-java.lang.String-int-system.threading.CancellationToken-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>SendAsync</h4>
+<pre>public&nbsp;<a href="../../../system/threading/tasks/ValueTask_1.html" title="class in system.threading.tasks">ValueTask_1</a>&nbsp;SendAsync(<a href="../../../system/ReadOnlyMemory_1.html" title="class in system">ReadOnlyMemory_1</a>&nbsp;datagram,
+                             java.lang.String&nbsp;hostname,
+                             int&nbsp;port,
+                             <a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)
+                      throws java.lang.Throwable,
+                             <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                             <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                             <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                             <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                             <a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                             <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                             <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                             <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                             <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                             <a href="../../../system/FormatException.html" title="class in system">FormatException</a>,
+                             <a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
+                             <a href="../../../system/diagnostics/tracing/EventSourceException.html" title="class in system.diagnostics.tracing">EventSourceException</a>,
+                             <a href="../../../system/net/sockets/SocketException.html" title="class in system.net.sockets">SocketException</a>,
+                             <a href="../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
+<dd><code><a href="../../../system/diagnostics/tracing/EventSourceException.html" title="class in system.diagnostics.tracing">EventSourceException</a></code></dd>
+<dd><code><a href="../../../system/net/sockets/SocketException.html" title="class in system.net.sockets">SocketException</a></code></dd>
+<dd><code><a href="../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
 </dl>
 </li>
 </ul>

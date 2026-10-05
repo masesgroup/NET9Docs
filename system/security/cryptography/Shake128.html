@@ -21,6 +21,7 @@
 <meta name="keywords" content="HashData()">
 <meta name="keywords" content="Read()">
 <meta name="keywords" content="Clone()">
+<meta name="keywords" content="HashDataAsync()">
 <meta name="keywords" content="AppendData()">
 <meta name="keywords" content="Dispose()">
 <meta name="keywords" content="Reset()">
@@ -39,7 +40,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":9,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":9,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":9,"i15":9,"i16":9,"i17":10,"i18":10,"i19":10};
+var methods = {"i0":10,"i1":10,"i2":9,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":9,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":9,"i15":9,"i16":9,"i17":9,"i18":9,"i19":10,"i20":10,"i21":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -319,14 +320,26 @@ implements java.lang.AutoCloseable</pre>
         int&nbsp;outputLength)</code>&nbsp;</td>
 </tr>
 <tr id="i17" class="rowColor">
+<td class="colFirst"><code>static <a href="../../../system/threading/tasks/ValueTask_1.html" title="class in system.threading.tasks">ValueTask_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/security/cryptography/Shake128.html#HashDataAsync-system.io.Stream-int-system.threading.CancellationToken-">HashDataAsync</a></span>(<a href="../../../system/io/Stream.html" title="class in system.io">Stream</a>&nbsp;source,
+             int&nbsp;outputLength,
+             <a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)</code>&nbsp;</td>
+</tr>
+<tr id="i18" class="altColor">
+<td class="colFirst"><code>static <a href="../../../system/threading/tasks/ValueTask.html" title="class in system.threading.tasks">ValueTask</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/security/cryptography/Shake128.html#HashDataAsync-system.io.Stream-system.Memory_1-system.threading.CancellationToken-">HashDataAsync</a></span>(<a href="../../../system/io/Stream.html" title="class in system.io">Stream</a>&nbsp;source,
+             <a href="../../../system/Memory_1.html" title="class in system">Memory_1</a>&nbsp;destination,
+             <a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)</code>&nbsp;</td>
+</tr>
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>byte[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/security/cryptography/Shake128.html#Read-int-">Read</a></span>(int&nbsp;outputLength)</code>&nbsp;</td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/security/cryptography/Shake128.html#Reset--">Reset</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/security/cryptography/Shake128.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
@@ -943,6 +956,82 @@ implements java.lang.AutoCloseable</pre>
 <dd><code><a href="../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
 <dd><code><a href="../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
 <dd><code><a href="../../../system/io/IOException.html" title="class in system.io">IOException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="HashDataAsync-system.io.Stream-int-system.threading.CancellationToken-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>HashDataAsync</h4>
+<pre>public static&nbsp;<a href="../../../system/threading/tasks/ValueTask_1.html" title="class in system.threading.tasks">ValueTask_1</a>&nbsp;HashDataAsync(<a href="../../../system/io/Stream.html" title="class in system.io">Stream</a>&nbsp;source,
+                                        int&nbsp;outputLength,
+                                        <a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)
+                                 throws java.lang.Throwable,
+                                        <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                        <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                        <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                        <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                        <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                        <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                        <a href="../../../system/RankException.html" title="class in system">RankException</a>,
+                                        <a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                                        <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                        <a href="../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a>,
+                                        <a href="../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
+<dd><code><a href="../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="HashDataAsync-system.io.Stream-system.Memory_1-system.threading.CancellationToken-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>HashDataAsync</h4>
+<pre>public static&nbsp;<a href="../../../system/threading/tasks/ValueTask.html" title="class in system.threading.tasks">ValueTask</a>&nbsp;HashDataAsync(<a href="../../../system/io/Stream.html" title="class in system.io">Stream</a>&nbsp;source,
+                                      <a href="../../../system/Memory_1.html" title="class in system">Memory_1</a>&nbsp;destination,
+                                      <a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)
+                               throws java.lang.Throwable,
+                                      <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                      <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                      <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                      <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                      <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                      <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                      <a href="../../../system/RankException.html" title="class in system">RankException</a>,
+                                      <a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                                      <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                      <a href="../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a>,
+                                      <a href="../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
+<dd><code><a href="../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
 </dl>
 </li>
 </ul>

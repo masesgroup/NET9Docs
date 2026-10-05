@@ -17,6 +17,8 @@
 <meta name="keywords" content="getJCOType()">
 <meta name="keywords" content="cast()">
 <meta name="keywords" content="getQuicError()">
+<meta name="keywords" content="getApplicationErrorCode()">
+<meta name="keywords" content="getTransportErrorCode()">
 <link rel="stylesheet" type="text/css" href="../../../stylesheet.css" title="Style">
 <script type="text/javascript" src="../../../script.js"></script>
 </head>
@@ -30,7 +32,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -224,9 +226,14 @@ extends <a href="../../../system/io/IOException.html" title="class in system.io"
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/net/quic/QuicException.html#QuicException-java.lang.String-">QuicException</a></span>(java.lang.String&nbsp;message)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/net/quic/QuicException.html#QuicException-system.net.quic.QuicError-system.Nullable_1-java.lang.String-">QuicException</a></span>(<a href="../../../system/net/quic/QuicError.html" title="class in system.net.quic">QuicError</a>&nbsp;error,
+             <a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;applicationErrorCode,
+             java.lang.String&nbsp;message)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/net/quic/QuicException.html#QuicException-java.lang.String-">QuicException</a></span>(java.lang.String&nbsp;message)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../system/net/quic/QuicException.html#QuicException-java.lang.String-org.mases.jcobridge.netreflection.NetException-">QuicException</a></span>(java.lang.String&nbsp;message,
              <a href="../../../org/mases/jcobridge/netreflection/NetException.html" title="class in org.mases.jcobridge.netreflection">NetException</a>&nbsp;cause)</code>&nbsp;</td>
 </tr>
@@ -252,40 +259,48 @@ extends <a href="../../../system/io/IOException.html" title="class in system.io"
 </td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code><a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/quic/QuicException.html#getApplicationErrorCode--">getApplicationErrorCode</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/quic/QuicException.html#getJCOAssemblyName--">getJCOAssemblyName</a></span>()</code>
 <div class="block">Returns the reflected Assembly name</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/quic/QuicException.html#getJCOClassName--">getJCOClassName</a></span>()</code>
 <div class="block">Returns the reflected Class name</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/quic/QuicException.html#getJCOInstance--">getJCOInstance</a></span>()</code>
 <div class="block">Returns the instantiated class</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/quic/QuicException.html#getJCOObjectName--">getJCOObjectName</a></span>()</code>
 <div class="block">Returns the reflected Class name used to build the object</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>org.mases.jcobridge.JCType</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/quic/QuicException.html#getJCOType--">getJCOType</a></span>()</code>
 <div class="block">Returns the instantiated class Type</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/net/quic/QuicError.html" title="class in system.net.quic">QuicError</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/quic/QuicException.html#getQuicError--">getQuicError</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
+<td class="colFirst"><code><a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/quic/QuicException.html#getTransportErrorCode--">getTransportErrorCode</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/quic/QuicException.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
@@ -413,6 +428,22 @@ extends <a href="../../../system/io/IOException.html" title="class in system.io"
 <div class="block">Internal constructor. Use with caution</div>
 </li>
 </ul>
+<a name="QuicException-system.net.quic.QuicError-system.Nullable_1-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>QuicException</h4>
+<pre>public&nbsp;QuicException(<a href="../../../system/net/quic/QuicError.html" title="class in system.net.quic">QuicError</a>&nbsp;error,
+                     <a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;applicationErrorCode,
+                     java.lang.String&nbsp;message)
+              throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
 <a name="QuicException-java.lang.String-">
 <!--   -->
 </a>
@@ -456,6 +487,20 @@ extends <a href="../../../system/io/IOException.html" title="class in system.io"
 <dd><a href="../../../system/net/quic/QuicException.html" title="class in system.net.quic"><code>QuicException</code></a> instance</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - in case of error during cast operation</dd>
+</dl>
+</li>
+</ul>
+<a name="getApplicationErrorCode--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getApplicationErrorCode</h4>
+<pre>public&nbsp;<a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;getApplicationErrorCode()
+                                   throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
 </dl>
 </li>
 </ul>
@@ -563,6 +608,20 @@ extends <a href="../../../system/io/IOException.html" title="class in system.io"
 <h4>getQuicError</h4>
 <pre>public&nbsp;<a href="../../../system/net/quic/QuicError.html" title="class in system.net.quic">QuicError</a>&nbsp;getQuicError()
                        throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="getTransportErrorCode--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getTransportErrorCode</h4>
+<pre>public&nbsp;<a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;getTransportErrorCode()
+                                 throws java.lang.Throwable</pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>

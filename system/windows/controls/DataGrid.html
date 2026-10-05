@@ -19,6 +19,7 @@
 <meta name="keywords" content="BeginEdit()">
 <meta name="keywords" content="CancelEdit()">
 <meta name="keywords" content="CommitEdit()">
+<meta name="keywords" content="GenerateColumns()">
 <meta name="keywords" content="ColumnFromDisplayIndex()">
 <meta name="keywords" content="GetDetailsVisibilityForItem()">
 <meta name="keywords" content="ClearDetailsVisibilityForItem()">
@@ -69,6 +70,9 @@
 <meta name="keywords" content="setRowHeight()">
 <meta name="keywords" content="getFrozenColumnCount()">
 <meta name="keywords" content="setFrozenColumnCount()">
+<meta name="keywords" content="getSelectedCells()">
+<meta name="keywords" content="getColumns()">
+<meta name="keywords" content="getRowValidationRules()">
 <meta name="keywords" content="getCurrentItem()">
 <meta name="keywords" content="setCurrentItem()">
 <meta name="keywords" content="getFocusBorderBrushKey()">
@@ -153,7 +157,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":9,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":9,"i32":10,"i33":10,"i34":10,"i35":10,"i36":10,"i37":9,"i38":10,"i39":10,"i40":10,"i41":9,"i42":10,"i43":10,"i44":10,"i45":10,"i46":10,"i47":10,"i48":10,"i49":10,"i50":10,"i51":10,"i52":10,"i53":10,"i54":10,"i55":10,"i56":9,"i57":10,"i58":10,"i59":10,"i60":10,"i61":10,"i62":10,"i63":10,"i64":10,"i65":10,"i66":10,"i67":10,"i68":10,"i69":9,"i70":10,"i71":10,"i72":10,"i73":10,"i74":10,"i75":10,"i76":10,"i77":10,"i78":10,"i79":10,"i80":10,"i81":10,"i82":10,"i83":10,"i84":10,"i85":10,"i86":10,"i87":10,"i88":10,"i89":10,"i90":10,"i91":10,"i92":10,"i93":10,"i94":10,"i95":10,"i96":10,"i97":10,"i98":10,"i99":10,"i100":10,"i101":10,"i102":10,"i103":10,"i104":10,"i105":10,"i106":10,"i107":10,"i108":10,"i109":10,"i110":10,"i111":10,"i112":10,"i113":10,"i114":10,"i115":10,"i116":10,"i117":10,"i118":10,"i119":10,"i120":10,"i121":10,"i122":10,"i123":10,"i124":10,"i125":10,"i126":10,"i127":10,"i128":10,"i129":10,"i130":10,"i131":10,"i132":10,"i133":10,"i134":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":9,"i9":10,"i10":10,"i11":10,"i12":10,"i13":9,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":9,"i34":10,"i35":10,"i36":10,"i37":10,"i38":10,"i39":9,"i40":10,"i41":10,"i42":10,"i43":9,"i44":10,"i45":10,"i46":10,"i47":10,"i48":10,"i49":10,"i50":10,"i51":10,"i52":10,"i53":10,"i54":10,"i55":10,"i56":10,"i57":10,"i58":9,"i59":10,"i60":10,"i61":10,"i62":10,"i63":10,"i64":10,"i65":10,"i66":10,"i67":10,"i68":10,"i69":10,"i70":10,"i71":10,"i72":9,"i73":10,"i74":10,"i75":10,"i76":10,"i77":10,"i78":10,"i79":10,"i80":10,"i81":10,"i82":10,"i83":10,"i84":10,"i85":10,"i86":10,"i87":10,"i88":10,"i89":10,"i90":10,"i91":10,"i92":10,"i93":10,"i94":10,"i95":10,"i96":10,"i97":10,"i98":10,"i99":10,"i100":10,"i101":10,"i102":10,"i103":10,"i104":10,"i105":10,"i106":10,"i107":10,"i108":10,"i109":10,"i110":10,"i111":10,"i112":10,"i113":10,"i114":10,"i115":10,"i116":10,"i117":10,"i118":10,"i119":10,"i120":10,"i121":10,"i122":10,"i123":10,"i124":10,"i125":10,"i126":10,"i127":10,"i128":10,"i129":10,"i130":10,"i131":10,"i132":10,"i133":10,"i134":10,"i135":10,"i136":10,"i137":10,"i138":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -290,7 +294,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>, <a href="../../../system/windows/controls/primitives/IContainItemStorage.html" title="interface in system.windows.controls.primitives">IContainItemStorage</a>, <a href="../../../system/windows/markup/IAddChild.html" title="interface in system.windows.markup">IAddChild</a>, <a href="../../../system/windows/markup/IQueryAmbient.html" title="interface in system.windows.markup">IQueryAmbient</a></dd>
+<dd><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></dd>
 </dl>
 <hr>
 <br>
@@ -449,502 +453,518 @@ extends <a href="../../../system/windows/controls/primitives/MultiSelector.html"
           boolean&nbsp;exitEditingMode)</code>&nbsp;</td>
 </tr>
 <tr id="i13" class="rowColor">
+<td class="colFirst"><code>static <a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#GenerateColumns-system.componentmodel.IItemProperties-">GenerateColumns</a></span>(<a href="../../../system/componentmodel/IItemProperties.html" title="interface in system.componentmodel">IItemProperties</a>&nbsp;itemProperties)</code>&nbsp;</td>
+</tr>
+<tr id="i14" class="altColor">
 <td class="colFirst"><code><a href="../../../system/windows/media/Brush.html" title="class in system.windows.media">Brush</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#getAlternatingRowBackground--">getAlternatingRowBackground</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#getAreRowDetailsFrozen--">getAreRowDetailsFrozen</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#getAutoGenerateColumns--">getAutoGenerateColumns</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#getCanUserAddRows--">getCanUserAddRows</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#getCanUserDeleteRows--">getCanUserDeleteRows</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#getCanUserReorderColumns--">getCanUserReorderColumns</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#getCanUserResizeColumns--">getCanUserResizeColumns</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#getCanUserResizeRows--">getCanUserResizeRows</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i22" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#getCanUserSortColumns--">getCanUserSortColumns</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code>double</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#getCellsPanelHorizontalOffset--">getCellsPanelHorizontalOffset</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code><a href="../../../system/windows/Style.html" title="class in system.windows">Style</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#getCellStyle--">getCellStyle</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i24" class="altColor">
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/windows/controls/DataGridClipboardCopyMode.html" title="class in system.windows.controls">DataGridClipboardCopyMode</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#getClipboardCopyMode--">getClipboardCopyMode</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i25" class="rowColor">
+<tr id="i26" class="altColor">
 <td class="colFirst"><code>double</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#getColumnHeaderHeight--">getColumnHeaderHeight</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i26" class="altColor">
+<tr id="i27" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/windows/Style.html" title="class in system.windows">Style</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#getColumnHeaderStyle--">getColumnHeaderStyle</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i27" class="rowColor">
+<tr id="i28" class="altColor">
+<td class="colFirst"><code><a href="../../../system/collections/objectmodel/ObservableCollection_1.html" title="class in system.collections.objectmodel">ObservableCollection_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#getColumns--">getColumns</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i29" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/windows/controls/DataGridLength.html" title="class in system.windows.controls">DataGridLength</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#getColumnWidth--">getColumnWidth</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i28" class="altColor">
+<tr id="i30" class="altColor">
 <td class="colFirst"><code><a href="../../../system/windows/controls/DataGridCellInfo.html" title="class in system.windows.controls">DataGridCellInfo</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#getCurrentCell--">getCurrentCell</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i29" class="rowColor">
+<tr id="i31" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/windows/controls/DataGridColumn.html" title="class in system.windows.controls">DataGridColumn</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#getCurrentColumn--">getCurrentColumn</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i30" class="altColor">
+<tr id="i32" class="altColor">
 <td class="colFirst"><code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#getCurrentItem--">getCurrentItem</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i31" class="rowColor">
+<tr id="i33" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../system/windows/input/RoutedUICommand.html" title="class in system.windows.input">RoutedUICommand</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#getDeleteCommand--">getDeleteCommand</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i32" class="altColor">
+<tr id="i34" class="altColor">
 <td class="colFirst"><code><a href="../../../system/windows/Visibility.html" title="class in system.windows">Visibility</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#GetDetailsVisibilityForItem-org.mases.jcobridge.netreflection.NetObject-">GetDetailsVisibilityForItem</a></span>(<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;item)</code>&nbsp;</td>
 </tr>
-<tr id="i33" class="rowColor">
+<tr id="i35" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/windows/Style.html" title="class in system.windows">Style</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#getDragIndicatorStyle--">getDragIndicatorStyle</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i34" class="altColor">
+<tr id="i36" class="altColor">
 <td class="colFirst"><code><a href="../../../system/windows/Style.html" title="class in system.windows">Style</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#getDropLocationIndicatorStyle--">getDropLocationIndicatorStyle</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i35" class="rowColor">
+<tr id="i37" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#getEnableColumnVirtualization--">getEnableColumnVirtualization</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i36" class="altColor">
+<tr id="i38" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#getEnableRowVirtualization--">getEnableRowVirtualization</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i37" class="rowColor">
+<tr id="i39" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../system/windows/ComponentResourceKey.html" title="class in system.windows">ComponentResourceKey</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#getFocusBorderBrushKey--">getFocusBorderBrushKey</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i38" class="altColor">
+<tr id="i40" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#getFrozenColumnCount--">getFrozenColumnCount</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i39" class="rowColor">
+<tr id="i41" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/windows/controls/DataGridGridLinesVisibility.html" title="class in system.windows.controls">DataGridGridLinesVisibility</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#getGridLinesVisibility--">getGridLinesVisibility</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i40" class="altColor">
+<tr id="i42" class="altColor">
 <td class="colFirst"><code><a href="../../../system/windows/controls/DataGridHeadersVisibility.html" title="class in system.windows.controls">DataGridHeadersVisibility</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#getHeadersVisibility--">getHeadersVisibility</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i41" class="rowColor">
+<tr id="i43" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../system/windows/data/IValueConverter.html" title="interface in system.windows.data">IValueConverter</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#getHeadersVisibilityConverter--">getHeadersVisibilityConverter</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i42" class="altColor">
+<tr id="i44" class="altColor">
 <td class="colFirst"><code><a href="../../../system/windows/media/Brush.html" title="class in system.windows.media">Brush</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#getHorizontalGridLinesBrush--">getHorizontalGridLinesBrush</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i43" class="rowColor">
+<tr id="i45" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/windows/controls/ScrollBarVisibility.html" title="class in system.windows.controls">ScrollBarVisibility</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#getHorizontalScrollBarVisibility--">getHorizontalScrollBarVisibility</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i44" class="altColor">
+<tr id="i46" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#getIsReadOnly--">getIsReadOnly</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i45" class="rowColor">
+<tr id="i47" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#getJCOAssemblyName--">getJCOAssemblyName</a></span>()</code>
 <div class="block">Returns the reflected Assembly name</div>
 </td>
 </tr>
-<tr id="i46" class="altColor">
+<tr id="i48" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#getJCOClassName--">getJCOClassName</a></span>()</code>
 <div class="block">Returns the reflected Class name</div>
 </td>
 </tr>
-<tr id="i47" class="rowColor">
+<tr id="i49" class="rowColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#getJCOInstance--">getJCOInstance</a></span>()</code>
 <div class="block">Returns the instantiated class</div>
 </td>
 </tr>
-<tr id="i48" class="altColor">
+<tr id="i50" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#getJCOObjectName--">getJCOObjectName</a></span>()</code>
 <div class="block">Returns the reflected Class name used to build the object</div>
 </td>
 </tr>
-<tr id="i49" class="rowColor">
+<tr id="i51" class="rowColor">
 <td class="colFirst"><code>org.mases.jcobridge.JCType</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#getJCOType--">getJCOType</a></span>()</code>
 <div class="block">Returns the instantiated class Type</div>
 </td>
 </tr>
-<tr id="i50" class="altColor">
+<tr id="i52" class="altColor">
 <td class="colFirst"><code>double</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#getMaxColumnWidth--">getMaxColumnWidth</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i51" class="rowColor">
+<tr id="i53" class="rowColor">
 <td class="colFirst"><code>double</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#getMinColumnWidth--">getMinColumnWidth</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i52" class="altColor">
+<tr id="i54" class="altColor">
 <td class="colFirst"><code>double</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#getMinRowHeight--">getMinRowHeight</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i53" class="rowColor">
+<tr id="i55" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/windows/Thickness.html" title="class in system.windows">Thickness</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#getNewItemMargin--">getNewItemMargin</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i54" class="altColor">
+<tr id="i56" class="altColor">
 <td class="colFirst"><code>double</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#getNonFrozenColumnsViewportHorizontalOffset--">getNonFrozenColumnsViewportHorizontalOffset</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i55" class="rowColor">
+<tr id="i57" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/windows/media/Brush.html" title="class in system.windows.media">Brush</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#getRowBackground--">getRowBackground</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i56" class="altColor">
+<tr id="i58" class="altColor">
 <td class="colFirst"><code>static <a href="../../../system/windows/data/IValueConverter.html" title="interface in system.windows.data">IValueConverter</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#getRowDetailsScrollingConverter--">getRowDetailsScrollingConverter</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i57" class="rowColor">
+<tr id="i59" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/windows/DataTemplate.html" title="class in system.windows">DataTemplate</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#getRowDetailsTemplate--">getRowDetailsTemplate</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i58" class="altColor">
+<tr id="i60" class="altColor">
 <td class="colFirst"><code><a href="../../../system/windows/controls/DataTemplateSelector.html" title="class in system.windows.controls">DataTemplateSelector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#getRowDetailsTemplateSelector--">getRowDetailsTemplateSelector</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i59" class="rowColor">
+<tr id="i61" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/windows/controls/DataGridRowDetailsVisibilityMode.html" title="class in system.windows.controls">DataGridRowDetailsVisibilityMode</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#getRowDetailsVisibilityMode--">getRowDetailsVisibilityMode</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i60" class="altColor">
+<tr id="i62" class="altColor">
 <td class="colFirst"><code>double</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#getRowHeaderActualWidth--">getRowHeaderActualWidth</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i61" class="rowColor">
+<tr id="i63" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/windows/Style.html" title="class in system.windows">Style</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#getRowHeaderStyle--">getRowHeaderStyle</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i62" class="altColor">
+<tr id="i64" class="altColor">
 <td class="colFirst"><code><a href="../../../system/windows/DataTemplate.html" title="class in system.windows">DataTemplate</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#getRowHeaderTemplate--">getRowHeaderTemplate</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i63" class="rowColor">
+<tr id="i65" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/windows/controls/DataTemplateSelector.html" title="class in system.windows.controls">DataTemplateSelector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#getRowHeaderTemplateSelector--">getRowHeaderTemplateSelector</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i64" class="altColor">
+<tr id="i66" class="altColor">
 <td class="colFirst"><code>double</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#getRowHeaderWidth--">getRowHeaderWidth</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i65" class="rowColor">
+<tr id="i67" class="rowColor">
 <td class="colFirst"><code>double</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#getRowHeight--">getRowHeight</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i66" class="altColor">
+<tr id="i68" class="altColor">
 <td class="colFirst"><code><a href="../../../system/windows/Style.html" title="class in system.windows">Style</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#getRowStyle--">getRowStyle</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i67" class="rowColor">
+<tr id="i69" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/windows/controls/StyleSelector.html" title="class in system.windows.controls">StyleSelector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#getRowStyleSelector--">getRowStyleSelector</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i68" class="altColor">
+<tr id="i70" class="altColor">
 <td class="colFirst"><code><a href="../../../system/windows/controls/ControlTemplate.html" title="class in system.windows.controls">ControlTemplate</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#getRowValidationErrorTemplate--">getRowValidationErrorTemplate</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i69" class="rowColor">
+<tr id="i71" class="rowColor">
+<td class="colFirst"><code><a href="../../../system/collections/objectmodel/ObservableCollection_1.html" title="class in system.collections.objectmodel">ObservableCollection_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#getRowValidationRules--">getRowValidationRules</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i72" class="altColor">
 <td class="colFirst"><code>static <a href="../../../system/windows/input/RoutedUICommand.html" title="class in system.windows.input">RoutedUICommand</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#getSelectAllCommand--">getSelectAllCommand</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i70" class="altColor">
+<tr id="i73" class="rowColor">
+<td class="colFirst"><code><a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#getSelectedCells--">getSelectedCells</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i74" class="altColor">
 <td class="colFirst"><code><a href="../../../system/windows/controls/DataGridSelectionMode.html" title="class in system.windows.controls">DataGridSelectionMode</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#getSelectionMode--">getSelectionMode</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i71" class="rowColor">
+<tr id="i75" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/windows/controls/DataGridSelectionUnit.html" title="class in system.windows.controls">DataGridSelectionUnit</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#getSelectionUnit--">getSelectionUnit</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i72" class="altColor">
+<tr id="i76" class="altColor">
 <td class="colFirst"><code><a href="../../../system/windows/media/Brush.html" title="class in system.windows.media">Brush</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#getVerticalGridLinesBrush--">getVerticalGridLinesBrush</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i73" class="rowColor">
+<tr id="i77" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/windows/controls/ScrollBarVisibility.html" title="class in system.windows.controls">ScrollBarVisibility</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#getVerticalScrollBarVisibility--">getVerticalScrollBarVisibility</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i74" class="altColor">
+<tr id="i78" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#OnApplyTemplate--">OnApplyTemplate</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i75" class="rowColor">
+<tr id="i79" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#removeAutoGeneratedColumns-system.EventHandler-">removeAutoGeneratedColumns</a></span>(<a href="../../../system/EventHandler.html" title="class in system">EventHandler</a>&nbsp;handler)</code>&nbsp;</td>
 </tr>
-<tr id="i76" class="altColor">
+<tr id="i80" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#removeInitializingNewItem-system.windows.controls.InitializingNewItemEventHandler-">removeInitializingNewItem</a></span>(<a href="../../../system/windows/controls/InitializingNewItemEventHandler.html" title="class in system.windows.controls">InitializingNewItemEventHandler</a>&nbsp;handler)</code>&nbsp;</td>
 </tr>
-<tr id="i77" class="rowColor">
+<tr id="i81" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#removeSelectedCellsChanged-system.windows.controls.SelectedCellsChangedEventHandler-">removeSelectedCellsChanged</a></span>(<a href="../../../system/windows/controls/SelectedCellsChangedEventHandler.html" title="class in system.windows.controls">SelectedCellsChangedEventHandler</a>&nbsp;handler)</code>&nbsp;</td>
 </tr>
-<tr id="i78" class="altColor">
+<tr id="i82" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#removeSorting-system.windows.controls.DataGridSortingEventHandler-">removeSorting</a></span>(<a href="../../../system/windows/controls/DataGridSortingEventHandler.html" title="class in system.windows.controls">DataGridSortingEventHandler</a>&nbsp;handler)</code>&nbsp;</td>
 </tr>
-<tr id="i79" class="rowColor">
+<tr id="i83" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#ScrollIntoView-org.mases.jcobridge.netreflection.NetObject-">ScrollIntoView</a></span>(<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;item)</code>&nbsp;</td>
 </tr>
-<tr id="i80" class="altColor">
+<tr id="i84" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#ScrollIntoView-org.mases.jcobridge.netreflection.NetObject-system.windows.controls.DataGridColumn-">ScrollIntoView</a></span>(<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;item,
               <a href="../../../system/windows/controls/DataGridColumn.html" title="class in system.windows.controls">DataGridColumn</a>&nbsp;column)</code>&nbsp;</td>
 </tr>
-<tr id="i81" class="rowColor">
+<tr id="i85" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#SelectAllCells--">SelectAllCells</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i82" class="altColor">
+<tr id="i86" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#setAlternatingRowBackground-system.windows.media.Brush-">setAlternatingRowBackground</a></span>(<a href="../../../system/windows/media/Brush.html" title="class in system.windows.media">Brush</a>&nbsp;AlternatingRowBackground)</code>&nbsp;</td>
 </tr>
-<tr id="i83" class="rowColor">
+<tr id="i87" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#setAreRowDetailsFrozen-boolean-">setAreRowDetailsFrozen</a></span>(boolean&nbsp;AreRowDetailsFrozen)</code>&nbsp;</td>
 </tr>
-<tr id="i84" class="altColor">
+<tr id="i88" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#setAutoGenerateColumns-boolean-">setAutoGenerateColumns</a></span>(boolean&nbsp;AutoGenerateColumns)</code>&nbsp;</td>
 </tr>
-<tr id="i85" class="rowColor">
+<tr id="i89" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#setCanUserAddRows-boolean-">setCanUserAddRows</a></span>(boolean&nbsp;CanUserAddRows)</code>&nbsp;</td>
 </tr>
-<tr id="i86" class="altColor">
+<tr id="i90" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#setCanUserDeleteRows-boolean-">setCanUserDeleteRows</a></span>(boolean&nbsp;CanUserDeleteRows)</code>&nbsp;</td>
 </tr>
-<tr id="i87" class="rowColor">
+<tr id="i91" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#setCanUserReorderColumns-boolean-">setCanUserReorderColumns</a></span>(boolean&nbsp;CanUserReorderColumns)</code>&nbsp;</td>
 </tr>
-<tr id="i88" class="altColor">
+<tr id="i92" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#setCanUserResizeColumns-boolean-">setCanUserResizeColumns</a></span>(boolean&nbsp;CanUserResizeColumns)</code>&nbsp;</td>
 </tr>
-<tr id="i89" class="rowColor">
+<tr id="i93" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#setCanUserResizeRows-boolean-">setCanUserResizeRows</a></span>(boolean&nbsp;CanUserResizeRows)</code>&nbsp;</td>
 </tr>
-<tr id="i90" class="altColor">
+<tr id="i94" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#setCanUserSortColumns-boolean-">setCanUserSortColumns</a></span>(boolean&nbsp;CanUserSortColumns)</code>&nbsp;</td>
 </tr>
-<tr id="i91" class="rowColor">
+<tr id="i95" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#setCellsPanelHorizontalOffset-double-">setCellsPanelHorizontalOffset</a></span>(double&nbsp;CellsPanelHorizontalOffset)</code>&nbsp;</td>
 </tr>
-<tr id="i92" class="altColor">
+<tr id="i96" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#setCellStyle-system.windows.Style-">setCellStyle</a></span>(<a href="../../../system/windows/Style.html" title="class in system.windows">Style</a>&nbsp;CellStyle)</code>&nbsp;</td>
 </tr>
-<tr id="i93" class="rowColor">
+<tr id="i97" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#setClipboardCopyMode-system.windows.controls.DataGridClipboardCopyMode-">setClipboardCopyMode</a></span>(<a href="../../../system/windows/controls/DataGridClipboardCopyMode.html" title="class in system.windows.controls">DataGridClipboardCopyMode</a>&nbsp;ClipboardCopyMode)</code>&nbsp;</td>
 </tr>
-<tr id="i94" class="altColor">
+<tr id="i98" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#setColumnHeaderHeight-double-">setColumnHeaderHeight</a></span>(double&nbsp;ColumnHeaderHeight)</code>&nbsp;</td>
 </tr>
-<tr id="i95" class="rowColor">
+<tr id="i99" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#setColumnHeaderStyle-system.windows.Style-">setColumnHeaderStyle</a></span>(<a href="../../../system/windows/Style.html" title="class in system.windows">Style</a>&nbsp;ColumnHeaderStyle)</code>&nbsp;</td>
 </tr>
-<tr id="i96" class="altColor">
+<tr id="i100" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#setColumnWidth-system.windows.controls.DataGridLength-">setColumnWidth</a></span>(<a href="../../../system/windows/controls/DataGridLength.html" title="class in system.windows.controls">DataGridLength</a>&nbsp;ColumnWidth)</code>&nbsp;</td>
 </tr>
-<tr id="i97" class="rowColor">
+<tr id="i101" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#setCurrentCell-system.windows.controls.DataGridCellInfo-">setCurrentCell</a></span>(<a href="../../../system/windows/controls/DataGridCellInfo.html" title="class in system.windows.controls">DataGridCellInfo</a>&nbsp;CurrentCell)</code>&nbsp;</td>
 </tr>
-<tr id="i98" class="altColor">
+<tr id="i102" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#setCurrentColumn-system.windows.controls.DataGridColumn-">setCurrentColumn</a></span>(<a href="../../../system/windows/controls/DataGridColumn.html" title="class in system.windows.controls">DataGridColumn</a>&nbsp;CurrentColumn)</code>&nbsp;</td>
 </tr>
-<tr id="i99" class="rowColor">
+<tr id="i103" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#setCurrentItem-org.mases.jcobridge.netreflection.NetObject-">setCurrentItem</a></span>(<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;CurrentItem)</code>&nbsp;</td>
 </tr>
-<tr id="i100" class="altColor">
+<tr id="i104" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#SetDetailsVisibilityForItem-org.mases.jcobridge.netreflection.NetObject-system.windows.Visibility-">SetDetailsVisibilityForItem</a></span>(<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;item,
                            <a href="../../../system/windows/Visibility.html" title="class in system.windows">Visibility</a>&nbsp;detailsVisibility)</code>&nbsp;</td>
 </tr>
-<tr id="i101" class="rowColor">
+<tr id="i105" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#setDragIndicatorStyle-system.windows.Style-">setDragIndicatorStyle</a></span>(<a href="../../../system/windows/Style.html" title="class in system.windows">Style</a>&nbsp;DragIndicatorStyle)</code>&nbsp;</td>
 </tr>
-<tr id="i102" class="altColor">
+<tr id="i106" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#setDropLocationIndicatorStyle-system.windows.Style-">setDropLocationIndicatorStyle</a></span>(<a href="../../../system/windows/Style.html" title="class in system.windows">Style</a>&nbsp;DropLocationIndicatorStyle)</code>&nbsp;</td>
 </tr>
-<tr id="i103" class="rowColor">
+<tr id="i107" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#setEnableColumnVirtualization-boolean-">setEnableColumnVirtualization</a></span>(boolean&nbsp;EnableColumnVirtualization)</code>&nbsp;</td>
 </tr>
-<tr id="i104" class="altColor">
+<tr id="i108" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#setEnableRowVirtualization-boolean-">setEnableRowVirtualization</a></span>(boolean&nbsp;EnableRowVirtualization)</code>&nbsp;</td>
 </tr>
-<tr id="i105" class="rowColor">
+<tr id="i109" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#setFrozenColumnCount-int-">setFrozenColumnCount</a></span>(int&nbsp;FrozenColumnCount)</code>&nbsp;</td>
 </tr>
-<tr id="i106" class="altColor">
+<tr id="i110" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#setGridLinesVisibility-system.windows.controls.DataGridGridLinesVisibility-">setGridLinesVisibility</a></span>(<a href="../../../system/windows/controls/DataGridGridLinesVisibility.html" title="class in system.windows.controls">DataGridGridLinesVisibility</a>&nbsp;GridLinesVisibility)</code>&nbsp;</td>
 </tr>
-<tr id="i107" class="rowColor">
+<tr id="i111" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#setHeadersVisibility-system.windows.controls.DataGridHeadersVisibility-">setHeadersVisibility</a></span>(<a href="../../../system/windows/controls/DataGridHeadersVisibility.html" title="class in system.windows.controls">DataGridHeadersVisibility</a>&nbsp;HeadersVisibility)</code>&nbsp;</td>
 </tr>
-<tr id="i108" class="altColor">
+<tr id="i112" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#setHorizontalGridLinesBrush-system.windows.media.Brush-">setHorizontalGridLinesBrush</a></span>(<a href="../../../system/windows/media/Brush.html" title="class in system.windows.media">Brush</a>&nbsp;HorizontalGridLinesBrush)</code>&nbsp;</td>
 </tr>
-<tr id="i109" class="rowColor">
+<tr id="i113" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#setHorizontalScrollBarVisibility-system.windows.controls.ScrollBarVisibility-">setHorizontalScrollBarVisibility</a></span>(<a href="../../../system/windows/controls/ScrollBarVisibility.html" title="class in system.windows.controls">ScrollBarVisibility</a>&nbsp;HorizontalScrollBarVisibility)</code>&nbsp;</td>
 </tr>
-<tr id="i110" class="altColor">
+<tr id="i114" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#setIsReadOnly-boolean-">setIsReadOnly</a></span>(boolean&nbsp;IsReadOnly)</code>&nbsp;</td>
 </tr>
-<tr id="i111" class="rowColor">
+<tr id="i115" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
-<tr id="i112" class="altColor">
+<tr id="i116" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#setMaxColumnWidth-double-">setMaxColumnWidth</a></span>(double&nbsp;MaxColumnWidth)</code>&nbsp;</td>
 </tr>
-<tr id="i113" class="rowColor">
+<tr id="i117" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#setMinColumnWidth-double-">setMinColumnWidth</a></span>(double&nbsp;MinColumnWidth)</code>&nbsp;</td>
 </tr>
-<tr id="i114" class="altColor">
+<tr id="i118" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#setMinRowHeight-double-">setMinRowHeight</a></span>(double&nbsp;MinRowHeight)</code>&nbsp;</td>
 </tr>
-<tr id="i115" class="rowColor">
+<tr id="i119" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#setNewItemMargin-system.windows.Thickness-">setNewItemMargin</a></span>(<a href="../../../system/windows/Thickness.html" title="class in system.windows">Thickness</a>&nbsp;NewItemMargin)</code>&nbsp;</td>
 </tr>
-<tr id="i116" class="altColor">
+<tr id="i120" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#setNonFrozenColumnsViewportHorizontalOffset-double-">setNonFrozenColumnsViewportHorizontalOffset</a></span>(double&nbsp;NonFrozenColumnsViewportHorizontalOffset)</code>&nbsp;</td>
 </tr>
-<tr id="i117" class="rowColor">
+<tr id="i121" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#setRowBackground-system.windows.media.Brush-">setRowBackground</a></span>(<a href="../../../system/windows/media/Brush.html" title="class in system.windows.media">Brush</a>&nbsp;RowBackground)</code>&nbsp;</td>
 </tr>
-<tr id="i118" class="altColor">
+<tr id="i122" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#setRowDetailsTemplate-system.windows.DataTemplate-">setRowDetailsTemplate</a></span>(<a href="../../../system/windows/DataTemplate.html" title="class in system.windows">DataTemplate</a>&nbsp;RowDetailsTemplate)</code>&nbsp;</td>
 </tr>
-<tr id="i119" class="rowColor">
+<tr id="i123" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#setRowDetailsTemplateSelector-system.windows.controls.DataTemplateSelector-">setRowDetailsTemplateSelector</a></span>(<a href="../../../system/windows/controls/DataTemplateSelector.html" title="class in system.windows.controls">DataTemplateSelector</a>&nbsp;RowDetailsTemplateSelector)</code>&nbsp;</td>
 </tr>
-<tr id="i120" class="altColor">
+<tr id="i124" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#setRowDetailsVisibilityMode-system.windows.controls.DataGridRowDetailsVisibilityMode-">setRowDetailsVisibilityMode</a></span>(<a href="../../../system/windows/controls/DataGridRowDetailsVisibilityMode.html" title="class in system.windows.controls">DataGridRowDetailsVisibilityMode</a>&nbsp;RowDetailsVisibilityMode)</code>&nbsp;</td>
 </tr>
-<tr id="i121" class="rowColor">
+<tr id="i125" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#setRowHeaderActualWidth-double-">setRowHeaderActualWidth</a></span>(double&nbsp;RowHeaderActualWidth)</code>&nbsp;</td>
 </tr>
-<tr id="i122" class="altColor">
+<tr id="i126" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#setRowHeaderStyle-system.windows.Style-">setRowHeaderStyle</a></span>(<a href="../../../system/windows/Style.html" title="class in system.windows">Style</a>&nbsp;RowHeaderStyle)</code>&nbsp;</td>
 </tr>
-<tr id="i123" class="rowColor">
+<tr id="i127" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#setRowHeaderTemplate-system.windows.DataTemplate-">setRowHeaderTemplate</a></span>(<a href="../../../system/windows/DataTemplate.html" title="class in system.windows">DataTemplate</a>&nbsp;RowHeaderTemplate)</code>&nbsp;</td>
 </tr>
-<tr id="i124" class="altColor">
+<tr id="i128" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#setRowHeaderTemplateSelector-system.windows.controls.DataTemplateSelector-">setRowHeaderTemplateSelector</a></span>(<a href="../../../system/windows/controls/DataTemplateSelector.html" title="class in system.windows.controls">DataTemplateSelector</a>&nbsp;RowHeaderTemplateSelector)</code>&nbsp;</td>
 </tr>
-<tr id="i125" class="rowColor">
+<tr id="i129" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#setRowHeaderWidth-double-">setRowHeaderWidth</a></span>(double&nbsp;RowHeaderWidth)</code>&nbsp;</td>
 </tr>
-<tr id="i126" class="altColor">
+<tr id="i130" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#setRowHeight-double-">setRowHeight</a></span>(double&nbsp;RowHeight)</code>&nbsp;</td>
 </tr>
-<tr id="i127" class="rowColor">
+<tr id="i131" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#setRowStyle-system.windows.Style-">setRowStyle</a></span>(<a href="../../../system/windows/Style.html" title="class in system.windows">Style</a>&nbsp;RowStyle)</code>&nbsp;</td>
 </tr>
-<tr id="i128" class="altColor">
+<tr id="i132" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#setRowStyleSelector-system.windows.controls.StyleSelector-">setRowStyleSelector</a></span>(<a href="../../../system/windows/controls/StyleSelector.html" title="class in system.windows.controls">StyleSelector</a>&nbsp;RowStyleSelector)</code>&nbsp;</td>
 </tr>
-<tr id="i129" class="rowColor">
+<tr id="i133" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#setRowValidationErrorTemplate-system.windows.controls.ControlTemplate-">setRowValidationErrorTemplate</a></span>(<a href="../../../system/windows/controls/ControlTemplate.html" title="class in system.windows.controls">ControlTemplate</a>&nbsp;RowValidationErrorTemplate)</code>&nbsp;</td>
 </tr>
-<tr id="i130" class="altColor">
+<tr id="i134" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#setSelectionMode-system.windows.controls.DataGridSelectionMode-">setSelectionMode</a></span>(<a href="../../../system/windows/controls/DataGridSelectionMode.html" title="class in system.windows.controls">DataGridSelectionMode</a>&nbsp;SelectionMode)</code>&nbsp;</td>
 </tr>
-<tr id="i131" class="rowColor">
+<tr id="i135" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#setSelectionUnit-system.windows.controls.DataGridSelectionUnit-">setSelectionUnit</a></span>(<a href="../../../system/windows/controls/DataGridSelectionUnit.html" title="class in system.windows.controls">DataGridSelectionUnit</a>&nbsp;SelectionUnit)</code>&nbsp;</td>
 </tr>
-<tr id="i132" class="altColor">
+<tr id="i136" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#setVerticalGridLinesBrush-system.windows.media.Brush-">setVerticalGridLinesBrush</a></span>(<a href="../../../system/windows/media/Brush.html" title="class in system.windows.media">Brush</a>&nbsp;VerticalGridLinesBrush)</code>&nbsp;</td>
 </tr>
-<tr id="i133" class="rowColor">
+<tr id="i137" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#setVerticalScrollBarVisibility-system.windows.controls.ScrollBarVisibility-">setVerticalScrollBarVisibility</a></span>(<a href="../../../system/windows/controls/ScrollBarVisibility.html" title="class in system.windows.controls">ScrollBarVisibility</a>&nbsp;VerticalScrollBarVisibility)</code>&nbsp;</td>
 </tr>
-<tr id="i134" class="altColor">
+<tr id="i138" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/DataGrid.html#UnselectAllCells--">UnselectAllCells</a></span>()</code>&nbsp;</td>
 </tr>
@@ -961,14 +981,14 @@ extends <a href="../../../system/windows/controls/primitives/MultiSelector.html"
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;system.windows.controls.primitives.<a href="../../../system/windows/controls/primitives/Selector.html" title="class in system.windows.controls.primitives">Selector</a></h3>
-<code><a href="../../../system/windows/controls/primitives/Selector.html#AddSelectedHandler-system.windows.DependencyObject-system.windows.RoutedEventHandler-">AddSelectedHandler</a>, <a href="../../../system/windows/controls/primitives/Selector.html#addSelectionChanged-system.windows.controls.SelectionChangedEventHandler-">addSelectionChanged</a>, <a href="../../../system/windows/controls/primitives/Selector.html#AddUnselectedHandler-system.windows.DependencyObject-system.windows.RoutedEventHandler-">AddUnselectedHandler</a>, <a href="../../../system/windows/controls/primitives/Selector.html#GetIsSelected-system.windows.DependencyObject-">GetIsSelected</a>, <a href="../../../system/windows/controls/primitives/Selector.html#GetIsSelectionActive-system.windows.DependencyObject-">GetIsSelectionActive</a>, <a href="../../../system/windows/controls/primitives/Selector.html#getSelectedIndex--">getSelectedIndex</a>, <a href="../../../system/windows/controls/primitives/Selector.html#getSelectedItem--">getSelectedItem</a>, <a href="../../../system/windows/controls/primitives/Selector.html#getSelectedValue--">getSelectedValue</a>, <a href="../../../system/windows/controls/primitives/Selector.html#getSelectedValuePath--">getSelectedValuePath</a>, <a href="../../../system/windows/controls/primitives/Selector.html#RemoveSelectedHandler-system.windows.DependencyObject-system.windows.RoutedEventHandler-">RemoveSelectedHandler</a>, <a href="../../../system/windows/controls/primitives/Selector.html#removeSelectionChanged-system.windows.controls.SelectionChangedEventHandler-">removeSelectionChanged</a>, <a href="../../../system/windows/controls/primitives/Selector.html#RemoveUnselectedHandler-system.windows.DependencyObject-system.windows.RoutedEventHandler-">RemoveUnselectedHandler</a>, <a href="../../../system/windows/controls/primitives/Selector.html#SetIsSelected-system.windows.DependencyObject-boolean-">SetIsSelected</a>, <a href="../../../system/windows/controls/primitives/Selector.html#setSelectedIndex-int-">setSelectedIndex</a>, <a href="../../../system/windows/controls/primitives/Selector.html#setSelectedItem-org.mases.jcobridge.netreflection.NetObject-">setSelectedItem</a>, <a href="../../../system/windows/controls/primitives/Selector.html#setSelectedValue-org.mases.jcobridge.netreflection.NetObject-">setSelectedValue</a>, <a href="../../../system/windows/controls/primitives/Selector.html#setSelectedValuePath-java.lang.String-">setSelectedValuePath</a></code></li>
+<code><a href="../../../system/windows/controls/primitives/Selector.html#AddSelectedHandler-system.windows.DependencyObject-system.windows.RoutedEventHandler-">AddSelectedHandler</a>, <a href="../../../system/windows/controls/primitives/Selector.html#addSelectionChanged-system.windows.controls.SelectionChangedEventHandler-">addSelectionChanged</a>, <a href="../../../system/windows/controls/primitives/Selector.html#AddUnselectedHandler-system.windows.DependencyObject-system.windows.RoutedEventHandler-">AddUnselectedHandler</a>, <a href="../../../system/windows/controls/primitives/Selector.html#GetIsSelected-system.windows.DependencyObject-">GetIsSelected</a>, <a href="../../../system/windows/controls/primitives/Selector.html#GetIsSelectionActive-system.windows.DependencyObject-">GetIsSelectionActive</a>, <a href="../../../system/windows/controls/primitives/Selector.html#getIsSynchronizedWithCurrentItem--">getIsSynchronizedWithCurrentItem</a>, <a href="../../../system/windows/controls/primitives/Selector.html#getSelectedIndex--">getSelectedIndex</a>, <a href="../../../system/windows/controls/primitives/Selector.html#getSelectedItem--">getSelectedItem</a>, <a href="../../../system/windows/controls/primitives/Selector.html#getSelectedValue--">getSelectedValue</a>, <a href="../../../system/windows/controls/primitives/Selector.html#getSelectedValuePath--">getSelectedValuePath</a>, <a href="../../../system/windows/controls/primitives/Selector.html#RemoveSelectedHandler-system.windows.DependencyObject-system.windows.RoutedEventHandler-">RemoveSelectedHandler</a>, <a href="../../../system/windows/controls/primitives/Selector.html#removeSelectionChanged-system.windows.controls.SelectionChangedEventHandler-">removeSelectionChanged</a>, <a href="../../../system/windows/controls/primitives/Selector.html#RemoveUnselectedHandler-system.windows.DependencyObject-system.windows.RoutedEventHandler-">RemoveUnselectedHandler</a>, <a href="../../../system/windows/controls/primitives/Selector.html#SetIsSelected-system.windows.DependencyObject-boolean-">SetIsSelected</a>, <a href="../../../system/windows/controls/primitives/Selector.html#setIsSynchronizedWithCurrentItem-system.Nullable_1-">setIsSynchronizedWithCurrentItem</a>, <a href="../../../system/windows/controls/primitives/Selector.html#setSelectedIndex-int-">setSelectedIndex</a>, <a href="../../../system/windows/controls/primitives/Selector.html#setSelectedItem-org.mases.jcobridge.netreflection.NetObject-">setSelectedItem</a>, <a href="../../../system/windows/controls/primitives/Selector.html#setSelectedValue-org.mases.jcobridge.netreflection.NetObject-">setSelectedValue</a>, <a href="../../../system/windows/controls/primitives/Selector.html#setSelectedValuePath-java.lang.String-">setSelectedValuePath</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.system.windows.controls.ItemsControl">
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;system.windows.controls.<a href="../../../system/windows/controls/ItemsControl.html" title="class in system.windows.controls">ItemsControl</a></h3>
-<code><a href="../../../system/windows/controls/ItemsControl.html#BeginInit--">BeginInit</a>, <a href="../../../system/windows/controls/ItemsControl.html#ContainerFromElement-system.windows.DependencyObject-">ContainerFromElement</a>, <a href="../../../system/windows/controls/ItemsControl.html#ContainerFromElement-system.windows.controls.ItemsControl-system.windows.DependencyObject-">ContainerFromElement</a>, <a href="../../../system/windows/controls/ItemsControl.html#EndInit--">EndInit</a>, <a href="../../../system/windows/controls/ItemsControl.html#getAlternationCount--">getAlternationCount</a>, <a href="../../../system/windows/controls/ItemsControl.html#GetAlternationIndex-system.windows.DependencyObject-">GetAlternationIndex</a>, <a href="../../../system/windows/controls/ItemsControl.html#getDisplayMemberPath--">getDisplayMemberPath</a>, <a href="../../../system/windows/controls/ItemsControl.html#getGroupStyleSelector--">getGroupStyleSelector</a>, <a href="../../../system/windows/controls/ItemsControl.html#getHasItems--">getHasItems</a>, <a href="../../../system/windows/controls/ItemsControl.html#getIsGrouping--">getIsGrouping</a>, <a href="../../../system/windows/controls/ItemsControl.html#getIsTextSearchCaseSensitive--">getIsTextSearchCaseSensitive</a>, <a href="../../../system/windows/controls/ItemsControl.html#getIsTextSearchEnabled--">getIsTextSearchEnabled</a>, <a href="../../../system/windows/controls/ItemsControl.html#getItemBindingGroup--">getItemBindingGroup</a>, <a href="../../../system/windows/controls/ItemsControl.html#getItemContainerGenerator--">getItemContainerGenerator</a>, <a href="../../../system/windows/controls/ItemsControl.html#getItemContainerStyle--">getItemContainerStyle</a>, <a href="../../../system/windows/controls/ItemsControl.html#getItemContainerStyleSelector--">getItemContainerStyleSelector</a>, <a href="../../../system/windows/controls/ItemsControl.html#getItems--">getItems</a>, <a href="../../../system/windows/controls/ItemsControl.html#GetItemsOwner-system.windows.DependencyObject-">GetItemsOwner</a>, <a href="../../../system/windows/controls/ItemsControl.html#getItemsPanel--">getItemsPanel</a>, <a href="../../../system/windows/controls/ItemsControl.html#getItemsSource--">getItemsSource</a>, <a href="../../../system/windows/controls/ItemsControl.html#getItemStringFormat--">getItemStringFormat</a>, <a href="../../../system/windows/controls/ItemsControl.html#getItemTemplate--">getItemTemplate</a>, <a href="../../../system/windows/controls/ItemsControl.html#getItemTemplateSelector--">getItemTemplateSelector</a>, <a href="../../../system/windows/controls/ItemsControl.html#IsItemItsOwnContainer-org.mases.jcobridge.netreflection.NetObject-">IsItemItsOwnContainer</a>, <a href="../../../system/windows/controls/ItemsControl.html#ItemsControlFromItemContainer-system.windows.DependencyObject-">ItemsControlFromItemContainer</a>, <a href="../../../system/windows/controls/ItemsControl.html#setAlternationCount-int-">setAlternationCount</a>, <a href="../../../system/windows/controls/ItemsControl.html#setDisplayMemberPath-java.lang.String-">setDisplayMemberPath</a>, <a href="../../../system/windows/controls/ItemsControl.html#setGroupStyleSelector-system.windows.controls.GroupStyleSelector-">setGroupStyleSelector</a>, <a href="../../../system/windows/controls/ItemsControl.html#setIsTextSearchCaseSensitive-boolean-">setIsTextSearchCaseSensitive</a>, <a href="../../../system/windows/controls/ItemsControl.html#setIsTextSearchEnabled-boolean-">setIsTextSearchEnabled</a>, <a href="../../../system/windows/controls/ItemsControl.html#setItemBindingGroup-system.windows.data.BindingGroup-">setItemBindingGroup</a>, <a href="../../../system/windows/controls/ItemsControl.html#setItemContainerStyle-system.windows.Style-">setItemContainerStyle</a>, <a href="../../../system/windows/controls/ItemsControl.html#setItemContainerStyleSelector-system.windows.controls.StyleSelector-">setItemContainerStyleSelector</a>, <a href="../../../system/windows/controls/ItemsControl.html#setItemsPanel-system.windows.controls.ItemsPanelTemplate-">setItemsPanel</a>, <a href="../../../system/windows/controls/ItemsControl.html#setItemsSource-org.mases.jcobridge.netreflection.IEnumerable-">setItemsSource</a>, <a href="../../../system/windows/controls/ItemsControl.html#setItemStringFormat-java.lang.String-">setItemStringFormat</a>, <a href="../../../system/windows/controls/ItemsControl.html#setItemTemplate-system.windows.DataTemplate-">setItemTemplate</a>, <a href="../../../system/windows/controls/ItemsControl.html#setItemTemplateSelector-system.windows.controls.DataTemplateSelector-">setItemTemplateSelector</a>, <a href="../../../system/windows/controls/ItemsControl.html#ShouldSerializeGroupStyle--">ShouldSerializeGroupStyle</a>, <a href="../../../system/windows/controls/ItemsControl.html#ShouldSerializeItems--">ShouldSerializeItems</a></code></li>
+<code><a href="../../../system/windows/controls/ItemsControl.html#BeginInit--">BeginInit</a>, <a href="../../../system/windows/controls/ItemsControl.html#ContainerFromElement-system.windows.DependencyObject-">ContainerFromElement</a>, <a href="../../../system/windows/controls/ItemsControl.html#ContainerFromElement-system.windows.controls.ItemsControl-system.windows.DependencyObject-">ContainerFromElement</a>, <a href="../../../system/windows/controls/ItemsControl.html#EndInit--">EndInit</a>, <a href="../../../system/windows/controls/ItemsControl.html#getAlternationCount--">getAlternationCount</a>, <a href="../../../system/windows/controls/ItemsControl.html#GetAlternationIndex-system.windows.DependencyObject-">GetAlternationIndex</a>, <a href="../../../system/windows/controls/ItemsControl.html#getDisplayMemberPath--">getDisplayMemberPath</a>, <a href="../../../system/windows/controls/ItemsControl.html#getGroupStyle--">getGroupStyle</a>, <a href="../../../system/windows/controls/ItemsControl.html#getGroupStyleSelector--">getGroupStyleSelector</a>, <a href="../../../system/windows/controls/ItemsControl.html#getHasItems--">getHasItems</a>, <a href="../../../system/windows/controls/ItemsControl.html#getIsGrouping--">getIsGrouping</a>, <a href="../../../system/windows/controls/ItemsControl.html#getIsTextSearchCaseSensitive--">getIsTextSearchCaseSensitive</a>, <a href="../../../system/windows/controls/ItemsControl.html#getIsTextSearchEnabled--">getIsTextSearchEnabled</a>, <a href="../../../system/windows/controls/ItemsControl.html#getItemBindingGroup--">getItemBindingGroup</a>, <a href="../../../system/windows/controls/ItemsControl.html#getItemContainerGenerator--">getItemContainerGenerator</a>, <a href="../../../system/windows/controls/ItemsControl.html#getItemContainerStyle--">getItemContainerStyle</a>, <a href="../../../system/windows/controls/ItemsControl.html#getItemContainerStyleSelector--">getItemContainerStyleSelector</a>, <a href="../../../system/windows/controls/ItemsControl.html#getItems--">getItems</a>, <a href="../../../system/windows/controls/ItemsControl.html#GetItemsOwner-system.windows.DependencyObject-">GetItemsOwner</a>, <a href="../../../system/windows/controls/ItemsControl.html#getItemsPanel--">getItemsPanel</a>, <a href="../../../system/windows/controls/ItemsControl.html#getItemsSource--">getItemsSource</a>, <a href="../../../system/windows/controls/ItemsControl.html#getItemStringFormat--">getItemStringFormat</a>, <a href="../../../system/windows/controls/ItemsControl.html#getItemTemplate--">getItemTemplate</a>, <a href="../../../system/windows/controls/ItemsControl.html#getItemTemplateSelector--">getItemTemplateSelector</a>, <a href="../../../system/windows/controls/ItemsControl.html#IsItemItsOwnContainer-org.mases.jcobridge.netreflection.NetObject-">IsItemItsOwnContainer</a>, <a href="../../../system/windows/controls/ItemsControl.html#ItemsControlFromItemContainer-system.windows.DependencyObject-">ItemsControlFromItemContainer</a>, <a href="../../../system/windows/controls/ItemsControl.html#setAlternationCount-int-">setAlternationCount</a>, <a href="../../../system/windows/controls/ItemsControl.html#setDisplayMemberPath-java.lang.String-">setDisplayMemberPath</a>, <a href="../../../system/windows/controls/ItemsControl.html#setGroupStyleSelector-system.windows.controls.GroupStyleSelector-">setGroupStyleSelector</a>, <a href="../../../system/windows/controls/ItemsControl.html#setIsTextSearchCaseSensitive-boolean-">setIsTextSearchCaseSensitive</a>, <a href="../../../system/windows/controls/ItemsControl.html#setIsTextSearchEnabled-boolean-">setIsTextSearchEnabled</a>, <a href="../../../system/windows/controls/ItemsControl.html#setItemBindingGroup-system.windows.data.BindingGroup-">setItemBindingGroup</a>, <a href="../../../system/windows/controls/ItemsControl.html#setItemContainerStyle-system.windows.Style-">setItemContainerStyle</a>, <a href="../../../system/windows/controls/ItemsControl.html#setItemContainerStyleSelector-system.windows.controls.StyleSelector-">setItemContainerStyleSelector</a>, <a href="../../../system/windows/controls/ItemsControl.html#setItemsPanel-system.windows.controls.ItemsPanelTemplate-">setItemsPanel</a>, <a href="../../../system/windows/controls/ItemsControl.html#setItemsSource-org.mases.jcobridge.netreflection.IEnumerable-">setItemsSource</a>, <a href="../../../system/windows/controls/ItemsControl.html#setItemStringFormat-java.lang.String-">setItemStringFormat</a>, <a href="../../../system/windows/controls/ItemsControl.html#setItemTemplate-system.windows.DataTemplate-">setItemTemplate</a>, <a href="../../../system/windows/controls/ItemsControl.html#setItemTemplateSelector-system.windows.controls.DataTemplateSelector-">setItemTemplateSelector</a>, <a href="../../../system/windows/controls/ItemsControl.html#ShouldSerializeGroupStyle--">ShouldSerializeGroupStyle</a>, <a href="../../../system/windows/controls/ItemsControl.html#ShouldSerializeItems--">ShouldSerializeItems</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.system.windows.controls.Control">
@@ -989,7 +1009,7 @@ extends <a href="../../../system/windows/controls/primitives/MultiSelector.html"
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;system.windows.<a href="../../../system/windows/UIElement.html" title="class in system.windows">UIElement</a></h3>
-<code><a href="../../../system/windows/UIElement.html#addDragEnter-system.windows.DragEventHandler-">addDragEnter</a>, <a href="../../../system/windows/UIElement.html#addDragLeave-system.windows.DragEventHandler-">addDragLeave</a>, <a href="../../../system/windows/UIElement.html#addDragOver-system.windows.DragEventHandler-">addDragOver</a>, <a href="../../../system/windows/UIElement.html#addDrop-system.windows.DragEventHandler-">addDrop</a>, <a href="../../../system/windows/UIElement.html#addFocusableChanged-system.windows.DependencyPropertyChangedEventHandler-">addFocusableChanged</a>, <a href="../../../system/windows/UIElement.html#addGiveFeedback-system.windows.GiveFeedbackEventHandler-">addGiveFeedback</a>, <a href="../../../system/windows/UIElement.html#addGotFocus-system.windows.RoutedEventHandler-">addGotFocus</a>, <a href="../../../system/windows/UIElement.html#addGotKeyboardFocus-system.windows.input.KeyboardFocusChangedEventHandler-">addGotKeyboardFocus</a>, <a href="../../../system/windows/UIElement.html#addGotMouseCapture-system.windows.input.MouseEventHandler-">addGotMouseCapture</a>, <a href="../../../system/windows/UIElement.html#addGotStylusCapture-system.windows.input.StylusEventHandler-">addGotStylusCapture</a>, <a href="../../../system/windows/UIElement.html#addIsEnabledChanged-system.windows.DependencyPropertyChangedEventHandler-">addIsEnabledChanged</a>, <a href="../../../system/windows/UIElement.html#addIsHitTestVisibleChanged-system.windows.DependencyPropertyChangedEventHandler-">addIsHitTestVisibleChanged</a>, <a href="../../../system/windows/UIElement.html#addIsKeyboardFocusedChanged-system.windows.DependencyPropertyChangedEventHandler-">addIsKeyboardFocusedChanged</a>, <a href="../../../system/windows/UIElement.html#addIsKeyboardFocusWithinChanged-system.windows.DependencyPropertyChangedEventHandler-">addIsKeyboardFocusWithinChanged</a>, <a href="../../../system/windows/UIElement.html#addIsMouseCapturedChanged-system.windows.DependencyPropertyChangedEventHandler-">addIsMouseCapturedChanged</a>, <a href="../../../system/windows/UIElement.html#addIsMouseCaptureWithinChanged-system.windows.DependencyPropertyChangedEventHandler-">addIsMouseCaptureWithinChanged</a>, <a href="../../../system/windows/UIElement.html#addIsMouseDirectlyOverChanged-system.windows.DependencyPropertyChangedEventHandler-">addIsMouseDirectlyOverChanged</a>, <a href="../../../system/windows/UIElement.html#addIsStylusCapturedChanged-system.windows.DependencyPropertyChangedEventHandler-">addIsStylusCapturedChanged</a>, <a href="../../../system/windows/UIElement.html#addIsStylusCaptureWithinChanged-system.windows.DependencyPropertyChangedEventHandler-">addIsStylusCaptureWithinChanged</a>, <a href="../../../system/windows/UIElement.html#addIsStylusDirectlyOverChanged-system.windows.DependencyPropertyChangedEventHandler-">addIsStylusDirectlyOverChanged</a>, <a href="../../../system/windows/UIElement.html#addIsVisibleChanged-system.windows.DependencyPropertyChangedEventHandler-">addIsVisibleChanged</a>, <a href="../../../system/windows/UIElement.html#addKeyDown-system.windows.input.KeyEventHandler-">addKeyDown</a>, <a href="../../../system/windows/UIElement.html#addKeyUp-system.windows.input.KeyEventHandler-">addKeyUp</a>, <a href="../../../system/windows/UIElement.html#addLayoutUpdated-system.EventHandler-">addLayoutUpdated</a>, <a href="../../../system/windows/UIElement.html#addLostFocus-system.windows.RoutedEventHandler-">addLostFocus</a>, <a href="../../../system/windows/UIElement.html#addLostKeyboardFocus-system.windows.input.KeyboardFocusChangedEventHandler-">addLostKeyboardFocus</a>, <a href="../../../system/windows/UIElement.html#addLostMouseCapture-system.windows.input.MouseEventHandler-">addLostMouseCapture</a>, <a href="../../../system/windows/UIElement.html#addLostStylusCapture-system.windows.input.StylusEventHandler-">addLostStylusCapture</a>, <a href="../../../system/windows/UIElement.html#addMouseDown-system.windows.input.MouseButtonEventHandler-">addMouseDown</a>, <a href="../../../system/windows/UIElement.html#addMouseEnter-system.windows.input.MouseEventHandler-">addMouseEnter</a>, <a href="../../../system/windows/UIElement.html#addMouseLeave-system.windows.input.MouseEventHandler-">addMouseLeave</a>, <a href="../../../system/windows/UIElement.html#addMouseLeftButtonDown-system.windows.input.MouseButtonEventHandler-">addMouseLeftButtonDown</a>, <a href="../../../system/windows/UIElement.html#addMouseLeftButtonUp-system.windows.input.MouseButtonEventHandler-">addMouseLeftButtonUp</a>, <a href="../../../system/windows/UIElement.html#addMouseMove-system.windows.input.MouseEventHandler-">addMouseMove</a>, <a href="../../../system/windows/UIElement.html#addMouseRightButtonDown-system.windows.input.MouseButtonEventHandler-">addMouseRightButtonDown</a>, <a href="../../../system/windows/UIElement.html#addMouseRightButtonUp-system.windows.input.MouseButtonEventHandler-">addMouseRightButtonUp</a>, <a href="../../../system/windows/UIElement.html#addMouseUp-system.windows.input.MouseButtonEventHandler-">addMouseUp</a>, <a href="../../../system/windows/UIElement.html#addMouseWheel-system.windows.input.MouseWheelEventHandler-">addMouseWheel</a>, <a href="../../../system/windows/UIElement.html#addPreviewDragEnter-system.windows.DragEventHandler-">addPreviewDragEnter</a>, <a href="../../../system/windows/UIElement.html#addPreviewDragLeave-system.windows.DragEventHandler-">addPreviewDragLeave</a>, <a href="../../../system/windows/UIElement.html#addPreviewDragOver-system.windows.DragEventHandler-">addPreviewDragOver</a>, <a href="../../../system/windows/UIElement.html#addPreviewDrop-system.windows.DragEventHandler-">addPreviewDrop</a>, <a href="../../../system/windows/UIElement.html#addPreviewGiveFeedback-system.windows.GiveFeedbackEventHandler-">addPreviewGiveFeedback</a>, <a href="../../../system/windows/UIElement.html#addPreviewGotKeyboardFocus-system.windows.input.KeyboardFocusChangedEventHandler-">addPreviewGotKeyboardFocus</a>, <a href="../../../system/windows/UIElement.html#addPreviewKeyDown-system.windows.input.KeyEventHandler-">addPreviewKeyDown</a>, <a href="../../../system/windows/UIElement.html#addPreviewKeyUp-system.windows.input.KeyEventHandler-">addPreviewKeyUp</a>, <a href="../../../system/windows/UIElement.html#addPreviewLostKeyboardFocus-system.windows.input.KeyboardFocusChangedEventHandler-">addPreviewLostKeyboardFocus</a>, <a href="../../../system/windows/UIElement.html#addPreviewMouseDown-system.windows.input.MouseButtonEventHandler-">addPreviewMouseDown</a>, <a href="../../../system/windows/UIElement.html#addPreviewMouseLeftButtonDown-system.windows.input.MouseButtonEventHandler-">addPreviewMouseLeftButtonDown</a>, <a href="../../../system/windows/UIElement.html#addPreviewMouseLeftButtonUp-system.windows.input.MouseButtonEventHandler-">addPreviewMouseLeftButtonUp</a>, <a href="../../../system/windows/UIElement.html#addPreviewMouseMove-system.windows.input.MouseEventHandler-">addPreviewMouseMove</a>, <a href="../../../system/windows/UIElement.html#addPreviewMouseRightButtonDown-system.windows.input.MouseButtonEventHandler-">addPreviewMouseRightButtonDown</a>, <a href="../../../system/windows/UIElement.html#addPreviewMouseRightButtonUp-system.windows.input.MouseButtonEventHandler-">addPreviewMouseRightButtonUp</a>, <a href="../../../system/windows/UIElement.html#addPreviewMouseUp-system.windows.input.MouseButtonEventHandler-">addPreviewMouseUp</a>, <a href="../../../system/windows/UIElement.html#addPreviewMouseWheel-system.windows.input.MouseWheelEventHandler-">addPreviewMouseWheel</a>, <a href="../../../system/windows/UIElement.html#addPreviewQueryContinueDrag-system.windows.QueryContinueDragEventHandler-">addPreviewQueryContinueDrag</a>, <a href="../../../system/windows/UIElement.html#addPreviewStylusButtonDown-system.windows.input.StylusButtonEventHandler-">addPreviewStylusButtonDown</a>, <a href="../../../system/windows/UIElement.html#addPreviewStylusButtonUp-system.windows.input.StylusButtonEventHandler-">addPreviewStylusButtonUp</a>, <a href="../../../system/windows/UIElement.html#addPreviewStylusDown-system.windows.input.StylusDownEventHandler-">addPreviewStylusDown</a>, <a href="../../../system/windows/UIElement.html#addPreviewStylusInAirMove-system.windows.input.StylusEventHandler-">addPreviewStylusInAirMove</a>, <a href="../../../system/windows/UIElement.html#addPreviewStylusInRange-system.windows.input.StylusEventHandler-">addPreviewStylusInRange</a>, <a href="../../../system/windows/UIElement.html#addPreviewStylusMove-system.windows.input.StylusEventHandler-">addPreviewStylusMove</a>, <a href="../../../system/windows/UIElement.html#addPreviewStylusOutOfRange-system.windows.input.StylusEventHandler-">addPreviewStylusOutOfRange</a>, <a href="../../../system/windows/UIElement.html#addPreviewStylusSystemGesture-system.windows.input.StylusSystemGestureEventHandler-">addPreviewStylusSystemGesture</a>, <a href="../../../system/windows/UIElement.html#addPreviewStylusUp-system.windows.input.StylusEventHandler-">addPreviewStylusUp</a>, <a href="../../../system/windows/UIElement.html#addPreviewTextInput-system.windows.input.TextCompositionEventHandler-">addPreviewTextInput</a>, <a href="../../../system/windows/UIElement.html#addQueryContinueDrag-system.windows.QueryContinueDragEventHandler-">addQueryContinueDrag</a>, <a href="../../../system/windows/UIElement.html#addQueryCursor-system.windows.input.QueryCursorEventHandler-">addQueryCursor</a>, <a href="../../../system/windows/UIElement.html#addStylusButtonDown-system.windows.input.StylusButtonEventHandler-">addStylusButtonDown</a>, <a href="../../../system/windows/UIElement.html#addStylusButtonUp-system.windows.input.StylusButtonEventHandler-">addStylusButtonUp</a>, <a href="../../../system/windows/UIElement.html#addStylusDown-system.windows.input.StylusDownEventHandler-">addStylusDown</a>, <a href="../../../system/windows/UIElement.html#addStylusEnter-system.windows.input.StylusEventHandler-">addStylusEnter</a>, <a href="../../../system/windows/UIElement.html#addStylusInAirMove-system.windows.input.StylusEventHandler-">addStylusInAirMove</a>, <a href="../../../system/windows/UIElement.html#addStylusInRange-system.windows.input.StylusEventHandler-">addStylusInRange</a>, <a href="../../../system/windows/UIElement.html#addStylusLeave-system.windows.input.StylusEventHandler-">addStylusLeave</a>, <a href="../../../system/windows/UIElement.html#addStylusMove-system.windows.input.StylusEventHandler-">addStylusMove</a>, <a href="../../../system/windows/UIElement.html#addStylusOutOfRange-system.windows.input.StylusEventHandler-">addStylusOutOfRange</a>, <a href="../../../system/windows/UIElement.html#addStylusSystemGesture-system.windows.input.StylusSystemGestureEventHandler-">addStylusSystemGesture</a>, <a href="../../../system/windows/UIElement.html#addStylusUp-system.windows.input.StylusEventHandler-">addStylusUp</a>, <a href="../../../system/windows/UIElement.html#addTextInput-system.windows.input.TextCompositionEventHandler-">addTextInput</a>, <a href="../../../system/windows/UIElement.html#AddToEventRoute-system.windows.EventRoute-system.windows.RoutedEventArgs-">AddToEventRoute</a>, <a href="../../../system/windows/UIElement.html#ApplyAnimationClock-system.windows.DependencyProperty-system.windows.media.animation.AnimationClock-">ApplyAnimationClock</a>, <a href="../../../system/windows/UIElement.html#ApplyAnimationClock-system.windows.DependencyProperty-system.windows.media.animation.AnimationClock-system.windows.media.animation.HandoffBehavior-">ApplyAnimationClock</a>, <a href="../../../system/windows/UIElement.html#Arrange-system.windows.Rect-">Arrange</a>, <a href="../../../system/windows/UIElement.html#BeginAnimation-system.windows.DependencyProperty-system.windows.media.animation.AnimationTimeline-">BeginAnimation</a>, <a href="../../../system/windows/UIElement.html#BeginAnimation-system.windows.DependencyProperty-system.windows.media.animation.AnimationTimeline-system.windows.media.animation.HandoffBehavior-">BeginAnimation</a>, <a href="../../../system/windows/UIElement.html#CaptureMouse--">CaptureMouse</a>, <a href="../../../system/windows/UIElement.html#CaptureStylus--">CaptureStylus</a>, <a href="../../../system/windows/UIElement.html#CaptureTouch-system.windows.input.TouchDevice-">CaptureTouch</a>, <a href="../../../system/windows/UIElement.html#Focus--">Focus</a>, <a href="../../../system/windows/UIElement.html#getAllowDrop--">getAllowDrop</a>, <a href="../../../system/windows/UIElement.html#GetAnimationBaseValue-system.windows.DependencyProperty-">GetAnimationBaseValue</a>, <a href="../../../system/windows/UIElement.html#getAreAnyTouchesCaptured--">getAreAnyTouchesCaptured</a>, <a href="../../../system/windows/UIElement.html#getAreAnyTouchesCapturedWithin--">getAreAnyTouchesCapturedWithin</a>, <a href="../../../system/windows/UIElement.html#getAreAnyTouchesDirectlyOver--">getAreAnyTouchesDirectlyOver</a>, <a href="../../../system/windows/UIElement.html#getAreAnyTouchesOver--">getAreAnyTouchesOver</a>, <a href="../../../system/windows/UIElement.html#getBitmapEffect--">getBitmapEffect</a>, <a href="../../../system/windows/UIElement.html#getBitmapEffectInput--">getBitmapEffectInput</a>, <a href="../../../system/windows/UIElement.html#getCacheMode--">getCacheMode</a>, <a href="../../../system/windows/UIElement.html#getClip--">getClip</a>, <a href="../../../system/windows/UIElement.html#getClipToBounds--">getClipToBounds</a>, <a href="../../../system/windows/UIElement.html#getCommandBindings--">getCommandBindings</a>, <a href="../../../system/windows/UIElement.html#getDesiredSize--">getDesiredSize</a>, <a href="../../../system/windows/UIElement.html#getEffect--">getEffect</a>, <a href="../../../system/windows/UIElement.html#getFocusable--">getFocusable</a>, <a href="../../../system/windows/UIElement.html#getHasAnimatedProperties--">getHasAnimatedProperties</a>, <a href="../../../system/windows/UIElement.html#getInputBindings--">getInputBindings</a>, <a href="../../../system/windows/UIElement.html#getIsArrangeValid--">getIsArrangeValid</a>, <a href="../../../system/windows/UIElement.html#getIsEnabled--">getIsEnabled</a>, <a href="../../../system/windows/UIElement.html#getIsFocused--">getIsFocused</a>, <a href="../../../system/windows/UIElement.html#getIsHitTestVisible--">getIsHitTestVisible</a>, <a href="../../../system/windows/UIElement.html#getIsInputMethodEnabled--">getIsInputMethodEnabled</a>, <a href="../../../system/windows/UIElement.html#getIsKeyboardFocused--">getIsKeyboardFocused</a>, <a href="../../../system/windows/UIElement.html#getIsKeyboardFocusWithin--">getIsKeyboardFocusWithin</a>, <a href="../../../system/windows/UIElement.html#getIsManipulationEnabled--">getIsManipulationEnabled</a>, <a href="../../../system/windows/UIElement.html#getIsMeasureValid--">getIsMeasureValid</a>, <a href="../../../system/windows/UIElement.html#getIsMouseCaptured--">getIsMouseCaptured</a>, <a href="../../../system/windows/UIElement.html#getIsMouseCaptureWithin--">getIsMouseCaptureWithin</a>, <a href="../../../system/windows/UIElement.html#getIsMouseDirectlyOver--">getIsMouseDirectlyOver</a>, <a href="../../../system/windows/UIElement.html#getIsMouseOver--">getIsMouseOver</a>, <a href="../../../system/windows/UIElement.html#getIsStylusCaptured--">getIsStylusCaptured</a>, <a href="../../../system/windows/UIElement.html#getIsStylusCaptureWithin--">getIsStylusCaptureWithin</a>, <a href="../../../system/windows/UIElement.html#getIsStylusDirectlyOver--">getIsStylusDirectlyOver</a>, <a href="../../../system/windows/UIElement.html#getIsStylusOver--">getIsStylusOver</a>, <a href="../../../system/windows/UIElement.html#getIsVisible--">getIsVisible</a>, <a href="../../../system/windows/UIElement.html#getOpacity--">getOpacity</a>, <a href="../../../system/windows/UIElement.html#getOpacityMask--">getOpacityMask</a>, <a href="../../../system/windows/UIElement.html#getPersistId--">getPersistId</a>, <a href="../../../system/windows/UIElement.html#getRenderSize--">getRenderSize</a>, <a href="../../../system/windows/UIElement.html#getRenderTransform--">getRenderTransform</a>, <a href="../../../system/windows/UIElement.html#getRenderTransformOrigin--">getRenderTransformOrigin</a>, <a href="../../../system/windows/UIElement.html#getSnapsToDevicePixels--">getSnapsToDevicePixels</a>, <a href="../../../system/windows/UIElement.html#getUid--">getUid</a>, <a href="../../../system/windows/UIElement.html#getVisibility--">getVisibility</a>, <a href="../../../system/windows/UIElement.html#InputHitTest-system.windows.Point-">InputHitTest</a>, <a href="../../../system/windows/UIElement.html#InvalidateArrange--">InvalidateArrange</a>, <a href="../../../system/windows/UIElement.html#InvalidateMeasure--">InvalidateMeasure</a>, <a href="../../../system/windows/UIElement.html#InvalidateVisual--">InvalidateVisual</a>, <a href="../../../system/windows/UIElement.html#Measure-system.windows.Size-">Measure</a>, <a href="../../../system/windows/UIElement.html#RaiseEvent-system.windows.RoutedEventArgs-">RaiseEvent</a>, <a href="../../../system/windows/UIElement.html#ReleaseAllTouchCaptures--">ReleaseAllTouchCaptures</a>, <a href="../../../system/windows/UIElement.html#ReleaseMouseCapture--">ReleaseMouseCapture</a>, <a href="../../../system/windows/UIElement.html#ReleaseStylusCapture--">ReleaseStylusCapture</a>, <a href="../../../system/windows/UIElement.html#ReleaseTouchCapture-system.windows.input.TouchDevice-">ReleaseTouchCapture</a>, <a href="../../../system/windows/UIElement.html#removeDragEnter-system.windows.DragEventHandler-">removeDragEnter</a>, <a href="../../../system/windows/UIElement.html#removeDragLeave-system.windows.DragEventHandler-">removeDragLeave</a>, <a href="../../../system/windows/UIElement.html#removeDragOver-system.windows.DragEventHandler-">removeDragOver</a>, <a href="../../../system/windows/UIElement.html#removeDrop-system.windows.DragEventHandler-">removeDrop</a>, <a href="../../../system/windows/UIElement.html#removeFocusableChanged-system.windows.DependencyPropertyChangedEventHandler-">removeFocusableChanged</a>, <a href="../../../system/windows/UIElement.html#removeGiveFeedback-system.windows.GiveFeedbackEventHandler-">removeGiveFeedback</a>, <a href="../../../system/windows/UIElement.html#removeGotFocus-system.windows.RoutedEventHandler-">removeGotFocus</a>, <a href="../../../system/windows/UIElement.html#removeGotKeyboardFocus-system.windows.input.KeyboardFocusChangedEventHandler-">removeGotKeyboardFocus</a>, <a href="../../../system/windows/UIElement.html#removeGotMouseCapture-system.windows.input.MouseEventHandler-">removeGotMouseCapture</a>, <a href="../../../system/windows/UIElement.html#removeGotStylusCapture-system.windows.input.StylusEventHandler-">removeGotStylusCapture</a>, <a href="../../../system/windows/UIElement.html#removeIsEnabledChanged-system.windows.DependencyPropertyChangedEventHandler-">removeIsEnabledChanged</a>, <a href="../../../system/windows/UIElement.html#removeIsHitTestVisibleChanged-system.windows.DependencyPropertyChangedEventHandler-">removeIsHitTestVisibleChanged</a>, <a href="../../../system/windows/UIElement.html#removeIsKeyboardFocusedChanged-system.windows.DependencyPropertyChangedEventHandler-">removeIsKeyboardFocusedChanged</a>, <a href="../../../system/windows/UIElement.html#removeIsKeyboardFocusWithinChanged-system.windows.DependencyPropertyChangedEventHandler-">removeIsKeyboardFocusWithinChanged</a>, <a href="../../../system/windows/UIElement.html#removeIsMouseCapturedChanged-system.windows.DependencyPropertyChangedEventHandler-">removeIsMouseCapturedChanged</a>, <a href="../../../system/windows/UIElement.html#removeIsMouseCaptureWithinChanged-system.windows.DependencyPropertyChangedEventHandler-">removeIsMouseCaptureWithinChanged</a>, <a href="../../../system/windows/UIElement.html#removeIsMouseDirectlyOverChanged-system.windows.DependencyPropertyChangedEventHandler-">removeIsMouseDirectlyOverChanged</a>, <a href="../../../system/windows/UIElement.html#removeIsStylusCapturedChanged-system.windows.DependencyPropertyChangedEventHandler-">removeIsStylusCapturedChanged</a>, <a href="../../../system/windows/UIElement.html#removeIsStylusCaptureWithinChanged-system.windows.DependencyPropertyChangedEventHandler-">removeIsStylusCaptureWithinChanged</a>, <a href="../../../system/windows/UIElement.html#removeIsStylusDirectlyOverChanged-system.windows.DependencyPropertyChangedEventHandler-">removeIsStylusDirectlyOverChanged</a>, <a href="../../../system/windows/UIElement.html#removeIsVisibleChanged-system.windows.DependencyPropertyChangedEventHandler-">removeIsVisibleChanged</a>, <a href="../../../system/windows/UIElement.html#removeKeyDown-system.windows.input.KeyEventHandler-">removeKeyDown</a>, <a href="../../../system/windows/UIElement.html#removeKeyUp-system.windows.input.KeyEventHandler-">removeKeyUp</a>, <a href="../../../system/windows/UIElement.html#removeLayoutUpdated-system.EventHandler-">removeLayoutUpdated</a>, <a href="../../../system/windows/UIElement.html#removeLostFocus-system.windows.RoutedEventHandler-">removeLostFocus</a>, <a href="../../../system/windows/UIElement.html#removeLostKeyboardFocus-system.windows.input.KeyboardFocusChangedEventHandler-">removeLostKeyboardFocus</a>, <a href="../../../system/windows/UIElement.html#removeLostMouseCapture-system.windows.input.MouseEventHandler-">removeLostMouseCapture</a>, <a href="../../../system/windows/UIElement.html#removeLostStylusCapture-system.windows.input.StylusEventHandler-">removeLostStylusCapture</a>, <a href="../../../system/windows/UIElement.html#removeMouseDown-system.windows.input.MouseButtonEventHandler-">removeMouseDown</a>, <a href="../../../system/windows/UIElement.html#removeMouseEnter-system.windows.input.MouseEventHandler-">removeMouseEnter</a>, <a href="../../../system/windows/UIElement.html#removeMouseLeave-system.windows.input.MouseEventHandler-">removeMouseLeave</a>, <a href="../../../system/windows/UIElement.html#removeMouseLeftButtonDown-system.windows.input.MouseButtonEventHandler-">removeMouseLeftButtonDown</a>, <a href="../../../system/windows/UIElement.html#removeMouseLeftButtonUp-system.windows.input.MouseButtonEventHandler-">removeMouseLeftButtonUp</a>, <a href="../../../system/windows/UIElement.html#removeMouseMove-system.windows.input.MouseEventHandler-">removeMouseMove</a>, <a href="../../../system/windows/UIElement.html#removeMouseRightButtonDown-system.windows.input.MouseButtonEventHandler-">removeMouseRightButtonDown</a>, <a href="../../../system/windows/UIElement.html#removeMouseRightButtonUp-system.windows.input.MouseButtonEventHandler-">removeMouseRightButtonUp</a>, <a href="../../../system/windows/UIElement.html#removeMouseUp-system.windows.input.MouseButtonEventHandler-">removeMouseUp</a>, <a href="../../../system/windows/UIElement.html#removeMouseWheel-system.windows.input.MouseWheelEventHandler-">removeMouseWheel</a>, <a href="../../../system/windows/UIElement.html#removePreviewDragEnter-system.windows.DragEventHandler-">removePreviewDragEnter</a>, <a href="../../../system/windows/UIElement.html#removePreviewDragLeave-system.windows.DragEventHandler-">removePreviewDragLeave</a>, <a href="../../../system/windows/UIElement.html#removePreviewDragOver-system.windows.DragEventHandler-">removePreviewDragOver</a>, <a href="../../../system/windows/UIElement.html#removePreviewDrop-system.windows.DragEventHandler-">removePreviewDrop</a>, <a href="../../../system/windows/UIElement.html#removePreviewGiveFeedback-system.windows.GiveFeedbackEventHandler-">removePreviewGiveFeedback</a>, <a href="../../../system/windows/UIElement.html#removePreviewGotKeyboardFocus-system.windows.input.KeyboardFocusChangedEventHandler-">removePreviewGotKeyboardFocus</a>, <a href="../../../system/windows/UIElement.html#removePreviewKeyDown-system.windows.input.KeyEventHandler-">removePreviewKeyDown</a>, <a href="../../../system/windows/UIElement.html#removePreviewKeyUp-system.windows.input.KeyEventHandler-">removePreviewKeyUp</a>, <a href="../../../system/windows/UIElement.html#removePreviewLostKeyboardFocus-system.windows.input.KeyboardFocusChangedEventHandler-">removePreviewLostKeyboardFocus</a>, <a href="../../../system/windows/UIElement.html#removePreviewMouseDown-system.windows.input.MouseButtonEventHandler-">removePreviewMouseDown</a>, <a href="../../../system/windows/UIElement.html#removePreviewMouseLeftButtonDown-system.windows.input.MouseButtonEventHandler-">removePreviewMouseLeftButtonDown</a>, <a href="../../../system/windows/UIElement.html#removePreviewMouseLeftButtonUp-system.windows.input.MouseButtonEventHandler-">removePreviewMouseLeftButtonUp</a>, <a href="../../../system/windows/UIElement.html#removePreviewMouseMove-system.windows.input.MouseEventHandler-">removePreviewMouseMove</a>, <a href="../../../system/windows/UIElement.html#removePreviewMouseRightButtonDown-system.windows.input.MouseButtonEventHandler-">removePreviewMouseRightButtonDown</a>, <a href="../../../system/windows/UIElement.html#removePreviewMouseRightButtonUp-system.windows.input.MouseButtonEventHandler-">removePreviewMouseRightButtonUp</a>, <a href="../../../system/windows/UIElement.html#removePreviewMouseUp-system.windows.input.MouseButtonEventHandler-">removePreviewMouseUp</a>, <a href="../../../system/windows/UIElement.html#removePreviewMouseWheel-system.windows.input.MouseWheelEventHandler-">removePreviewMouseWheel</a>, <a href="../../../system/windows/UIElement.html#removePreviewQueryContinueDrag-system.windows.QueryContinueDragEventHandler-">removePreviewQueryContinueDrag</a>, <a href="../../../system/windows/UIElement.html#removePreviewStylusButtonDown-system.windows.input.StylusButtonEventHandler-">removePreviewStylusButtonDown</a>, <a href="../../../system/windows/UIElement.html#removePreviewStylusButtonUp-system.windows.input.StylusButtonEventHandler-">removePreviewStylusButtonUp</a>, <a href="../../../system/windows/UIElement.html#removePreviewStylusDown-system.windows.input.StylusDownEventHandler-">removePreviewStylusDown</a>, <a href="../../../system/windows/UIElement.html#removePreviewStylusInAirMove-system.windows.input.StylusEventHandler-">removePreviewStylusInAirMove</a>, <a href="../../../system/windows/UIElement.html#removePreviewStylusInRange-system.windows.input.StylusEventHandler-">removePreviewStylusInRange</a>, <a href="../../../system/windows/UIElement.html#removePreviewStylusMove-system.windows.input.StylusEventHandler-">removePreviewStylusMove</a>, <a href="../../../system/windows/UIElement.html#removePreviewStylusOutOfRange-system.windows.input.StylusEventHandler-">removePreviewStylusOutOfRange</a>, <a href="../../../system/windows/UIElement.html#removePreviewStylusSystemGesture-system.windows.input.StylusSystemGestureEventHandler-">removePreviewStylusSystemGesture</a>, <a href="../../../system/windows/UIElement.html#removePreviewStylusUp-system.windows.input.StylusEventHandler-">removePreviewStylusUp</a>, <a href="../../../system/windows/UIElement.html#removePreviewTextInput-system.windows.input.TextCompositionEventHandler-">removePreviewTextInput</a>, <a href="../../../system/windows/UIElement.html#removeQueryContinueDrag-system.windows.QueryContinueDragEventHandler-">removeQueryContinueDrag</a>, <a href="../../../system/windows/UIElement.html#removeQueryCursor-system.windows.input.QueryCursorEventHandler-">removeQueryCursor</a>, <a href="../../../system/windows/UIElement.html#removeStylusButtonDown-system.windows.input.StylusButtonEventHandler-">removeStylusButtonDown</a>, <a href="../../../system/windows/UIElement.html#removeStylusButtonUp-system.windows.input.StylusButtonEventHandler-">removeStylusButtonUp</a>, <a href="../../../system/windows/UIElement.html#removeStylusDown-system.windows.input.StylusDownEventHandler-">removeStylusDown</a>, <a href="../../../system/windows/UIElement.html#removeStylusEnter-system.windows.input.StylusEventHandler-">removeStylusEnter</a>, <a href="../../../system/windows/UIElement.html#removeStylusInAirMove-system.windows.input.StylusEventHandler-">removeStylusInAirMove</a>, <a href="../../../system/windows/UIElement.html#removeStylusInRange-system.windows.input.StylusEventHandler-">removeStylusInRange</a>, <a href="../../../system/windows/UIElement.html#removeStylusLeave-system.windows.input.StylusEventHandler-">removeStylusLeave</a>, <a href="../../../system/windows/UIElement.html#removeStylusMove-system.windows.input.StylusEventHandler-">removeStylusMove</a>, <a href="../../../system/windows/UIElement.html#removeStylusOutOfRange-system.windows.input.StylusEventHandler-">removeStylusOutOfRange</a>, <a href="../../../system/windows/UIElement.html#removeStylusSystemGesture-system.windows.input.StylusSystemGestureEventHandler-">removeStylusSystemGesture</a>, <a href="../../../system/windows/UIElement.html#removeStylusUp-system.windows.input.StylusEventHandler-">removeStylusUp</a>, <a href="../../../system/windows/UIElement.html#removeTextInput-system.windows.input.TextCompositionEventHandler-">removeTextInput</a>, <a href="../../../system/windows/UIElement.html#setAllowDrop-boolean-">setAllowDrop</a>, <a href="../../../system/windows/UIElement.html#setBitmapEffect-system.windows.media.effects.BitmapEffect-">setBitmapEffect</a>, <a href="../../../system/windows/UIElement.html#setBitmapEffectInput-system.windows.media.effects.BitmapEffectInput-">setBitmapEffectInput</a>, <a href="../../../system/windows/UIElement.html#setCacheMode-system.windows.media.CacheMode-">setCacheMode</a>, <a href="../../../system/windows/UIElement.html#setClip-system.windows.media.Geometry-">setClip</a>, <a href="../../../system/windows/UIElement.html#setClipToBounds-boolean-">setClipToBounds</a>, <a href="../../../system/windows/UIElement.html#setEffect-system.windows.media.effects.Effect-">setEffect</a>, <a href="../../../system/windows/UIElement.html#setFocusable-boolean-">setFocusable</a>, <a href="../../../system/windows/UIElement.html#setIsEnabled-boolean-">setIsEnabled</a>, <a href="../../../system/windows/UIElement.html#setIsHitTestVisible-boolean-">setIsHitTestVisible</a>, <a href="../../../system/windows/UIElement.html#setIsManipulationEnabled-boolean-">setIsManipulationEnabled</a>, <a href="../../../system/windows/UIElement.html#setOpacity-double-">setOpacity</a>, <a href="../../../system/windows/UIElement.html#setOpacityMask-system.windows.media.Brush-">setOpacityMask</a>, <a href="../../../system/windows/UIElement.html#setRenderSize-system.windows.Size-">setRenderSize</a>, <a href="../../../system/windows/UIElement.html#setRenderTransform-system.windows.media.Transform-">setRenderTransform</a>, <a href="../../../system/windows/UIElement.html#setRenderTransformOrigin-system.windows.Point-">setRenderTransformOrigin</a>, <a href="../../../system/windows/UIElement.html#setSnapsToDevicePixels-boolean-">setSnapsToDevicePixels</a>, <a href="../../../system/windows/UIElement.html#setUid-java.lang.String-">setUid</a>, <a href="../../../system/windows/UIElement.html#setVisibility-system.windows.Visibility-">setVisibility</a>, <a href="../../../system/windows/UIElement.html#ShouldSerializeCommandBindings--">ShouldSerializeCommandBindings</a>, <a href="../../../system/windows/UIElement.html#ShouldSerializeInputBindings--">ShouldSerializeInputBindings</a>, <a href="../../../system/windows/UIElement.html#TranslatePoint-system.windows.Point-system.windows.UIElement-">TranslatePoint</a>, <a href="../../../system/windows/UIElement.html#UpdateLayout--">UpdateLayout</a></code></li>
+<code><a href="../../../system/windows/UIElement.html#addDragEnter-system.windows.DragEventHandler-">addDragEnter</a>, <a href="../../../system/windows/UIElement.html#addDragLeave-system.windows.DragEventHandler-">addDragLeave</a>, <a href="../../../system/windows/UIElement.html#addDragOver-system.windows.DragEventHandler-">addDragOver</a>, <a href="../../../system/windows/UIElement.html#addDrop-system.windows.DragEventHandler-">addDrop</a>, <a href="../../../system/windows/UIElement.html#addFocusableChanged-system.windows.DependencyPropertyChangedEventHandler-">addFocusableChanged</a>, <a href="../../../system/windows/UIElement.html#addGiveFeedback-system.windows.GiveFeedbackEventHandler-">addGiveFeedback</a>, <a href="../../../system/windows/UIElement.html#addGotFocus-system.windows.RoutedEventHandler-">addGotFocus</a>, <a href="../../../system/windows/UIElement.html#addGotKeyboardFocus-system.windows.input.KeyboardFocusChangedEventHandler-">addGotKeyboardFocus</a>, <a href="../../../system/windows/UIElement.html#addGotMouseCapture-system.windows.input.MouseEventHandler-">addGotMouseCapture</a>, <a href="../../../system/windows/UIElement.html#addGotStylusCapture-system.windows.input.StylusEventHandler-">addGotStylusCapture</a>, <a href="../../../system/windows/UIElement.html#addIsEnabledChanged-system.windows.DependencyPropertyChangedEventHandler-">addIsEnabledChanged</a>, <a href="../../../system/windows/UIElement.html#addIsHitTestVisibleChanged-system.windows.DependencyPropertyChangedEventHandler-">addIsHitTestVisibleChanged</a>, <a href="../../../system/windows/UIElement.html#addIsKeyboardFocusedChanged-system.windows.DependencyPropertyChangedEventHandler-">addIsKeyboardFocusedChanged</a>, <a href="../../../system/windows/UIElement.html#addIsKeyboardFocusWithinChanged-system.windows.DependencyPropertyChangedEventHandler-">addIsKeyboardFocusWithinChanged</a>, <a href="../../../system/windows/UIElement.html#addIsMouseCapturedChanged-system.windows.DependencyPropertyChangedEventHandler-">addIsMouseCapturedChanged</a>, <a href="../../../system/windows/UIElement.html#addIsMouseCaptureWithinChanged-system.windows.DependencyPropertyChangedEventHandler-">addIsMouseCaptureWithinChanged</a>, <a href="../../../system/windows/UIElement.html#addIsMouseDirectlyOverChanged-system.windows.DependencyPropertyChangedEventHandler-">addIsMouseDirectlyOverChanged</a>, <a href="../../../system/windows/UIElement.html#addIsStylusCapturedChanged-system.windows.DependencyPropertyChangedEventHandler-">addIsStylusCapturedChanged</a>, <a href="../../../system/windows/UIElement.html#addIsStylusCaptureWithinChanged-system.windows.DependencyPropertyChangedEventHandler-">addIsStylusCaptureWithinChanged</a>, <a href="../../../system/windows/UIElement.html#addIsStylusDirectlyOverChanged-system.windows.DependencyPropertyChangedEventHandler-">addIsStylusDirectlyOverChanged</a>, <a href="../../../system/windows/UIElement.html#addIsVisibleChanged-system.windows.DependencyPropertyChangedEventHandler-">addIsVisibleChanged</a>, <a href="../../../system/windows/UIElement.html#addKeyDown-system.windows.input.KeyEventHandler-">addKeyDown</a>, <a href="../../../system/windows/UIElement.html#addKeyUp-system.windows.input.KeyEventHandler-">addKeyUp</a>, <a href="../../../system/windows/UIElement.html#addLayoutUpdated-system.EventHandler-">addLayoutUpdated</a>, <a href="../../../system/windows/UIElement.html#addLostFocus-system.windows.RoutedEventHandler-">addLostFocus</a>, <a href="../../../system/windows/UIElement.html#addLostKeyboardFocus-system.windows.input.KeyboardFocusChangedEventHandler-">addLostKeyboardFocus</a>, <a href="../../../system/windows/UIElement.html#addLostMouseCapture-system.windows.input.MouseEventHandler-">addLostMouseCapture</a>, <a href="../../../system/windows/UIElement.html#addLostStylusCapture-system.windows.input.StylusEventHandler-">addLostStylusCapture</a>, <a href="../../../system/windows/UIElement.html#addMouseDown-system.windows.input.MouseButtonEventHandler-">addMouseDown</a>, <a href="../../../system/windows/UIElement.html#addMouseEnter-system.windows.input.MouseEventHandler-">addMouseEnter</a>, <a href="../../../system/windows/UIElement.html#addMouseLeave-system.windows.input.MouseEventHandler-">addMouseLeave</a>, <a href="../../../system/windows/UIElement.html#addMouseLeftButtonDown-system.windows.input.MouseButtonEventHandler-">addMouseLeftButtonDown</a>, <a href="../../../system/windows/UIElement.html#addMouseLeftButtonUp-system.windows.input.MouseButtonEventHandler-">addMouseLeftButtonUp</a>, <a href="../../../system/windows/UIElement.html#addMouseMove-system.windows.input.MouseEventHandler-">addMouseMove</a>, <a href="../../../system/windows/UIElement.html#addMouseRightButtonDown-system.windows.input.MouseButtonEventHandler-">addMouseRightButtonDown</a>, <a href="../../../system/windows/UIElement.html#addMouseRightButtonUp-system.windows.input.MouseButtonEventHandler-">addMouseRightButtonUp</a>, <a href="../../../system/windows/UIElement.html#addMouseUp-system.windows.input.MouseButtonEventHandler-">addMouseUp</a>, <a href="../../../system/windows/UIElement.html#addMouseWheel-system.windows.input.MouseWheelEventHandler-">addMouseWheel</a>, <a href="../../../system/windows/UIElement.html#addPreviewDragEnter-system.windows.DragEventHandler-">addPreviewDragEnter</a>, <a href="../../../system/windows/UIElement.html#addPreviewDragLeave-system.windows.DragEventHandler-">addPreviewDragLeave</a>, <a href="../../../system/windows/UIElement.html#addPreviewDragOver-system.windows.DragEventHandler-">addPreviewDragOver</a>, <a href="../../../system/windows/UIElement.html#addPreviewDrop-system.windows.DragEventHandler-">addPreviewDrop</a>, <a href="../../../system/windows/UIElement.html#addPreviewGiveFeedback-system.windows.GiveFeedbackEventHandler-">addPreviewGiveFeedback</a>, <a href="../../../system/windows/UIElement.html#addPreviewGotKeyboardFocus-system.windows.input.KeyboardFocusChangedEventHandler-">addPreviewGotKeyboardFocus</a>, <a href="../../../system/windows/UIElement.html#addPreviewKeyDown-system.windows.input.KeyEventHandler-">addPreviewKeyDown</a>, <a href="../../../system/windows/UIElement.html#addPreviewKeyUp-system.windows.input.KeyEventHandler-">addPreviewKeyUp</a>, <a href="../../../system/windows/UIElement.html#addPreviewLostKeyboardFocus-system.windows.input.KeyboardFocusChangedEventHandler-">addPreviewLostKeyboardFocus</a>, <a href="../../../system/windows/UIElement.html#addPreviewMouseDown-system.windows.input.MouseButtonEventHandler-">addPreviewMouseDown</a>, <a href="../../../system/windows/UIElement.html#addPreviewMouseLeftButtonDown-system.windows.input.MouseButtonEventHandler-">addPreviewMouseLeftButtonDown</a>, <a href="../../../system/windows/UIElement.html#addPreviewMouseLeftButtonUp-system.windows.input.MouseButtonEventHandler-">addPreviewMouseLeftButtonUp</a>, <a href="../../../system/windows/UIElement.html#addPreviewMouseMove-system.windows.input.MouseEventHandler-">addPreviewMouseMove</a>, <a href="../../../system/windows/UIElement.html#addPreviewMouseRightButtonDown-system.windows.input.MouseButtonEventHandler-">addPreviewMouseRightButtonDown</a>, <a href="../../../system/windows/UIElement.html#addPreviewMouseRightButtonUp-system.windows.input.MouseButtonEventHandler-">addPreviewMouseRightButtonUp</a>, <a href="../../../system/windows/UIElement.html#addPreviewMouseUp-system.windows.input.MouseButtonEventHandler-">addPreviewMouseUp</a>, <a href="../../../system/windows/UIElement.html#addPreviewMouseWheel-system.windows.input.MouseWheelEventHandler-">addPreviewMouseWheel</a>, <a href="../../../system/windows/UIElement.html#addPreviewQueryContinueDrag-system.windows.QueryContinueDragEventHandler-">addPreviewQueryContinueDrag</a>, <a href="../../../system/windows/UIElement.html#addPreviewStylusButtonDown-system.windows.input.StylusButtonEventHandler-">addPreviewStylusButtonDown</a>, <a href="../../../system/windows/UIElement.html#addPreviewStylusButtonUp-system.windows.input.StylusButtonEventHandler-">addPreviewStylusButtonUp</a>, <a href="../../../system/windows/UIElement.html#addPreviewStylusDown-system.windows.input.StylusDownEventHandler-">addPreviewStylusDown</a>, <a href="../../../system/windows/UIElement.html#addPreviewStylusInAirMove-system.windows.input.StylusEventHandler-">addPreviewStylusInAirMove</a>, <a href="../../../system/windows/UIElement.html#addPreviewStylusInRange-system.windows.input.StylusEventHandler-">addPreviewStylusInRange</a>, <a href="../../../system/windows/UIElement.html#addPreviewStylusMove-system.windows.input.StylusEventHandler-">addPreviewStylusMove</a>, <a href="../../../system/windows/UIElement.html#addPreviewStylusOutOfRange-system.windows.input.StylusEventHandler-">addPreviewStylusOutOfRange</a>, <a href="../../../system/windows/UIElement.html#addPreviewStylusSystemGesture-system.windows.input.StylusSystemGestureEventHandler-">addPreviewStylusSystemGesture</a>, <a href="../../../system/windows/UIElement.html#addPreviewStylusUp-system.windows.input.StylusEventHandler-">addPreviewStylusUp</a>, <a href="../../../system/windows/UIElement.html#addPreviewTextInput-system.windows.input.TextCompositionEventHandler-">addPreviewTextInput</a>, <a href="../../../system/windows/UIElement.html#addQueryContinueDrag-system.windows.QueryContinueDragEventHandler-">addQueryContinueDrag</a>, <a href="../../../system/windows/UIElement.html#addQueryCursor-system.windows.input.QueryCursorEventHandler-">addQueryCursor</a>, <a href="../../../system/windows/UIElement.html#addStylusButtonDown-system.windows.input.StylusButtonEventHandler-">addStylusButtonDown</a>, <a href="../../../system/windows/UIElement.html#addStylusButtonUp-system.windows.input.StylusButtonEventHandler-">addStylusButtonUp</a>, <a href="../../../system/windows/UIElement.html#addStylusDown-system.windows.input.StylusDownEventHandler-">addStylusDown</a>, <a href="../../../system/windows/UIElement.html#addStylusEnter-system.windows.input.StylusEventHandler-">addStylusEnter</a>, <a href="../../../system/windows/UIElement.html#addStylusInAirMove-system.windows.input.StylusEventHandler-">addStylusInAirMove</a>, <a href="../../../system/windows/UIElement.html#addStylusInRange-system.windows.input.StylusEventHandler-">addStylusInRange</a>, <a href="../../../system/windows/UIElement.html#addStylusLeave-system.windows.input.StylusEventHandler-">addStylusLeave</a>, <a href="../../../system/windows/UIElement.html#addStylusMove-system.windows.input.StylusEventHandler-">addStylusMove</a>, <a href="../../../system/windows/UIElement.html#addStylusOutOfRange-system.windows.input.StylusEventHandler-">addStylusOutOfRange</a>, <a href="../../../system/windows/UIElement.html#addStylusSystemGesture-system.windows.input.StylusSystemGestureEventHandler-">addStylusSystemGesture</a>, <a href="../../../system/windows/UIElement.html#addStylusUp-system.windows.input.StylusEventHandler-">addStylusUp</a>, <a href="../../../system/windows/UIElement.html#addTextInput-system.windows.input.TextCompositionEventHandler-">addTextInput</a>, <a href="../../../system/windows/UIElement.html#AddToEventRoute-system.windows.EventRoute-system.windows.RoutedEventArgs-">AddToEventRoute</a>, <a href="../../../system/windows/UIElement.html#ApplyAnimationClock-system.windows.DependencyProperty-system.windows.media.animation.AnimationClock-">ApplyAnimationClock</a>, <a href="../../../system/windows/UIElement.html#ApplyAnimationClock-system.windows.DependencyProperty-system.windows.media.animation.AnimationClock-system.windows.media.animation.HandoffBehavior-">ApplyAnimationClock</a>, <a href="../../../system/windows/UIElement.html#Arrange-system.windows.Rect-">Arrange</a>, <a href="../../../system/windows/UIElement.html#BeginAnimation-system.windows.DependencyProperty-system.windows.media.animation.AnimationTimeline-">BeginAnimation</a>, <a href="../../../system/windows/UIElement.html#BeginAnimation-system.windows.DependencyProperty-system.windows.media.animation.AnimationTimeline-system.windows.media.animation.HandoffBehavior-">BeginAnimation</a>, <a href="../../../system/windows/UIElement.html#CaptureMouse--">CaptureMouse</a>, <a href="../../../system/windows/UIElement.html#CaptureStylus--">CaptureStylus</a>, <a href="../../../system/windows/UIElement.html#CaptureTouch-system.windows.input.TouchDevice-">CaptureTouch</a>, <a href="../../../system/windows/UIElement.html#Focus--">Focus</a>, <a href="../../../system/windows/UIElement.html#getAllowDrop--">getAllowDrop</a>, <a href="../../../system/windows/UIElement.html#GetAnimationBaseValue-system.windows.DependencyProperty-">GetAnimationBaseValue</a>, <a href="../../../system/windows/UIElement.html#getAreAnyTouchesCaptured--">getAreAnyTouchesCaptured</a>, <a href="../../../system/windows/UIElement.html#getAreAnyTouchesCapturedWithin--">getAreAnyTouchesCapturedWithin</a>, <a href="../../../system/windows/UIElement.html#getAreAnyTouchesDirectlyOver--">getAreAnyTouchesDirectlyOver</a>, <a href="../../../system/windows/UIElement.html#getAreAnyTouchesOver--">getAreAnyTouchesOver</a>, <a href="../../../system/windows/UIElement.html#getBitmapEffect--">getBitmapEffect</a>, <a href="../../../system/windows/UIElement.html#getBitmapEffectInput--">getBitmapEffectInput</a>, <a href="../../../system/windows/UIElement.html#getCacheMode--">getCacheMode</a>, <a href="../../../system/windows/UIElement.html#getClip--">getClip</a>, <a href="../../../system/windows/UIElement.html#getClipToBounds--">getClipToBounds</a>, <a href="../../../system/windows/UIElement.html#getCommandBindings--">getCommandBindings</a>, <a href="../../../system/windows/UIElement.html#getDesiredSize--">getDesiredSize</a>, <a href="../../../system/windows/UIElement.html#getEffect--">getEffect</a>, <a href="../../../system/windows/UIElement.html#getFocusable--">getFocusable</a>, <a href="../../../system/windows/UIElement.html#getHasAnimatedProperties--">getHasAnimatedProperties</a>, <a href="../../../system/windows/UIElement.html#getInputBindings--">getInputBindings</a>, <a href="../../../system/windows/UIElement.html#getIsArrangeValid--">getIsArrangeValid</a>, <a href="../../../system/windows/UIElement.html#getIsEnabled--">getIsEnabled</a>, <a href="../../../system/windows/UIElement.html#getIsFocused--">getIsFocused</a>, <a href="../../../system/windows/UIElement.html#getIsHitTestVisible--">getIsHitTestVisible</a>, <a href="../../../system/windows/UIElement.html#getIsInputMethodEnabled--">getIsInputMethodEnabled</a>, <a href="../../../system/windows/UIElement.html#getIsKeyboardFocused--">getIsKeyboardFocused</a>, <a href="../../../system/windows/UIElement.html#getIsKeyboardFocusWithin--">getIsKeyboardFocusWithin</a>, <a href="../../../system/windows/UIElement.html#getIsManipulationEnabled--">getIsManipulationEnabled</a>, <a href="../../../system/windows/UIElement.html#getIsMeasureValid--">getIsMeasureValid</a>, <a href="../../../system/windows/UIElement.html#getIsMouseCaptured--">getIsMouseCaptured</a>, <a href="../../../system/windows/UIElement.html#getIsMouseCaptureWithin--">getIsMouseCaptureWithin</a>, <a href="../../../system/windows/UIElement.html#getIsMouseDirectlyOver--">getIsMouseDirectlyOver</a>, <a href="../../../system/windows/UIElement.html#getIsMouseOver--">getIsMouseOver</a>, <a href="../../../system/windows/UIElement.html#getIsStylusCaptured--">getIsStylusCaptured</a>, <a href="../../../system/windows/UIElement.html#getIsStylusCaptureWithin--">getIsStylusCaptureWithin</a>, <a href="../../../system/windows/UIElement.html#getIsStylusDirectlyOver--">getIsStylusDirectlyOver</a>, <a href="../../../system/windows/UIElement.html#getIsStylusOver--">getIsStylusOver</a>, <a href="../../../system/windows/UIElement.html#getIsVisible--">getIsVisible</a>, <a href="../../../system/windows/UIElement.html#getOpacity--">getOpacity</a>, <a href="../../../system/windows/UIElement.html#getOpacityMask--">getOpacityMask</a>, <a href="../../../system/windows/UIElement.html#getPersistId--">getPersistId</a>, <a href="../../../system/windows/UIElement.html#getRenderSize--">getRenderSize</a>, <a href="../../../system/windows/UIElement.html#getRenderTransform--">getRenderTransform</a>, <a href="../../../system/windows/UIElement.html#getRenderTransformOrigin--">getRenderTransformOrigin</a>, <a href="../../../system/windows/UIElement.html#getSnapsToDevicePixels--">getSnapsToDevicePixels</a>, <a href="../../../system/windows/UIElement.html#getTouchesCaptured--">getTouchesCaptured</a>, <a href="../../../system/windows/UIElement.html#getTouchesCapturedWithin--">getTouchesCapturedWithin</a>, <a href="../../../system/windows/UIElement.html#getTouchesDirectlyOver--">getTouchesDirectlyOver</a>, <a href="../../../system/windows/UIElement.html#getTouchesOver--">getTouchesOver</a>, <a href="../../../system/windows/UIElement.html#getUid--">getUid</a>, <a href="../../../system/windows/UIElement.html#getVisibility--">getVisibility</a>, <a href="../../../system/windows/UIElement.html#InputHitTest-system.windows.Point-">InputHitTest</a>, <a href="../../../system/windows/UIElement.html#InvalidateArrange--">InvalidateArrange</a>, <a href="../../../system/windows/UIElement.html#InvalidateMeasure--">InvalidateMeasure</a>, <a href="../../../system/windows/UIElement.html#InvalidateVisual--">InvalidateVisual</a>, <a href="../../../system/windows/UIElement.html#Measure-system.windows.Size-">Measure</a>, <a href="../../../system/windows/UIElement.html#RaiseEvent-system.windows.RoutedEventArgs-">RaiseEvent</a>, <a href="../../../system/windows/UIElement.html#ReleaseAllTouchCaptures--">ReleaseAllTouchCaptures</a>, <a href="../../../system/windows/UIElement.html#ReleaseMouseCapture--">ReleaseMouseCapture</a>, <a href="../../../system/windows/UIElement.html#ReleaseStylusCapture--">ReleaseStylusCapture</a>, <a href="../../../system/windows/UIElement.html#ReleaseTouchCapture-system.windows.input.TouchDevice-">ReleaseTouchCapture</a>, <a href="../../../system/windows/UIElement.html#removeDragEnter-system.windows.DragEventHandler-">removeDragEnter</a>, <a href="../../../system/windows/UIElement.html#removeDragLeave-system.windows.DragEventHandler-">removeDragLeave</a>, <a href="../../../system/windows/UIElement.html#removeDragOver-system.windows.DragEventHandler-">removeDragOver</a>, <a href="../../../system/windows/UIElement.html#removeDrop-system.windows.DragEventHandler-">removeDrop</a>, <a href="../../../system/windows/UIElement.html#removeFocusableChanged-system.windows.DependencyPropertyChangedEventHandler-">removeFocusableChanged</a>, <a href="../../../system/windows/UIElement.html#removeGiveFeedback-system.windows.GiveFeedbackEventHandler-">removeGiveFeedback</a>, <a href="../../../system/windows/UIElement.html#removeGotFocus-system.windows.RoutedEventHandler-">removeGotFocus</a>, <a href="../../../system/windows/UIElement.html#removeGotKeyboardFocus-system.windows.input.KeyboardFocusChangedEventHandler-">removeGotKeyboardFocus</a>, <a href="../../../system/windows/UIElement.html#removeGotMouseCapture-system.windows.input.MouseEventHandler-">removeGotMouseCapture</a>, <a href="../../../system/windows/UIElement.html#removeGotStylusCapture-system.windows.input.StylusEventHandler-">removeGotStylusCapture</a>, <a href="../../../system/windows/UIElement.html#removeIsEnabledChanged-system.windows.DependencyPropertyChangedEventHandler-">removeIsEnabledChanged</a>, <a href="../../../system/windows/UIElement.html#removeIsHitTestVisibleChanged-system.windows.DependencyPropertyChangedEventHandler-">removeIsHitTestVisibleChanged</a>, <a href="../../../system/windows/UIElement.html#removeIsKeyboardFocusedChanged-system.windows.DependencyPropertyChangedEventHandler-">removeIsKeyboardFocusedChanged</a>, <a href="../../../system/windows/UIElement.html#removeIsKeyboardFocusWithinChanged-system.windows.DependencyPropertyChangedEventHandler-">removeIsKeyboardFocusWithinChanged</a>, <a href="../../../system/windows/UIElement.html#removeIsMouseCapturedChanged-system.windows.DependencyPropertyChangedEventHandler-">removeIsMouseCapturedChanged</a>, <a href="../../../system/windows/UIElement.html#removeIsMouseCaptureWithinChanged-system.windows.DependencyPropertyChangedEventHandler-">removeIsMouseCaptureWithinChanged</a>, <a href="../../../system/windows/UIElement.html#removeIsMouseDirectlyOverChanged-system.windows.DependencyPropertyChangedEventHandler-">removeIsMouseDirectlyOverChanged</a>, <a href="../../../system/windows/UIElement.html#removeIsStylusCapturedChanged-system.windows.DependencyPropertyChangedEventHandler-">removeIsStylusCapturedChanged</a>, <a href="../../../system/windows/UIElement.html#removeIsStylusCaptureWithinChanged-system.windows.DependencyPropertyChangedEventHandler-">removeIsStylusCaptureWithinChanged</a>, <a href="../../../system/windows/UIElement.html#removeIsStylusDirectlyOverChanged-system.windows.DependencyPropertyChangedEventHandler-">removeIsStylusDirectlyOverChanged</a>, <a href="../../../system/windows/UIElement.html#removeIsVisibleChanged-system.windows.DependencyPropertyChangedEventHandler-">removeIsVisibleChanged</a>, <a href="../../../system/windows/UIElement.html#removeKeyDown-system.windows.input.KeyEventHandler-">removeKeyDown</a>, <a href="../../../system/windows/UIElement.html#removeKeyUp-system.windows.input.KeyEventHandler-">removeKeyUp</a>, <a href="../../../system/windows/UIElement.html#removeLayoutUpdated-system.EventHandler-">removeLayoutUpdated</a>, <a href="../../../system/windows/UIElement.html#removeLostFocus-system.windows.RoutedEventHandler-">removeLostFocus</a>, <a href="../../../system/windows/UIElement.html#removeLostKeyboardFocus-system.windows.input.KeyboardFocusChangedEventHandler-">removeLostKeyboardFocus</a>, <a href="../../../system/windows/UIElement.html#removeLostMouseCapture-system.windows.input.MouseEventHandler-">removeLostMouseCapture</a>, <a href="../../../system/windows/UIElement.html#removeLostStylusCapture-system.windows.input.StylusEventHandler-">removeLostStylusCapture</a>, <a href="../../../system/windows/UIElement.html#removeMouseDown-system.windows.input.MouseButtonEventHandler-">removeMouseDown</a>, <a href="../../../system/windows/UIElement.html#removeMouseEnter-system.windows.input.MouseEventHandler-">removeMouseEnter</a>, <a href="../../../system/windows/UIElement.html#removeMouseLeave-system.windows.input.MouseEventHandler-">removeMouseLeave</a>, <a href="../../../system/windows/UIElement.html#removeMouseLeftButtonDown-system.windows.input.MouseButtonEventHandler-">removeMouseLeftButtonDown</a>, <a href="../../../system/windows/UIElement.html#removeMouseLeftButtonUp-system.windows.input.MouseButtonEventHandler-">removeMouseLeftButtonUp</a>, <a href="../../../system/windows/UIElement.html#removeMouseMove-system.windows.input.MouseEventHandler-">removeMouseMove</a>, <a href="../../../system/windows/UIElement.html#removeMouseRightButtonDown-system.windows.input.MouseButtonEventHandler-">removeMouseRightButtonDown</a>, <a href="../../../system/windows/UIElement.html#removeMouseRightButtonUp-system.windows.input.MouseButtonEventHandler-">removeMouseRightButtonUp</a>, <a href="../../../system/windows/UIElement.html#removeMouseUp-system.windows.input.MouseButtonEventHandler-">removeMouseUp</a>, <a href="../../../system/windows/UIElement.html#removeMouseWheel-system.windows.input.MouseWheelEventHandler-">removeMouseWheel</a>, <a href="../../../system/windows/UIElement.html#removePreviewDragEnter-system.windows.DragEventHandler-">removePreviewDragEnter</a>, <a href="../../../system/windows/UIElement.html#removePreviewDragLeave-system.windows.DragEventHandler-">removePreviewDragLeave</a>, <a href="../../../system/windows/UIElement.html#removePreviewDragOver-system.windows.DragEventHandler-">removePreviewDragOver</a>, <a href="../../../system/windows/UIElement.html#removePreviewDrop-system.windows.DragEventHandler-">removePreviewDrop</a>, <a href="../../../system/windows/UIElement.html#removePreviewGiveFeedback-system.windows.GiveFeedbackEventHandler-">removePreviewGiveFeedback</a>, <a href="../../../system/windows/UIElement.html#removePreviewGotKeyboardFocus-system.windows.input.KeyboardFocusChangedEventHandler-">removePreviewGotKeyboardFocus</a>, <a href="../../../system/windows/UIElement.html#removePreviewKeyDown-system.windows.input.KeyEventHandler-">removePreviewKeyDown</a>, <a href="../../../system/windows/UIElement.html#removePreviewKeyUp-system.windows.input.KeyEventHandler-">removePreviewKeyUp</a>, <a href="../../../system/windows/UIElement.html#removePreviewLostKeyboardFocus-system.windows.input.KeyboardFocusChangedEventHandler-">removePreviewLostKeyboardFocus</a>, <a href="../../../system/windows/UIElement.html#removePreviewMouseDown-system.windows.input.MouseButtonEventHandler-">removePreviewMouseDown</a>, <a href="../../../system/windows/UIElement.html#removePreviewMouseLeftButtonDown-system.windows.input.MouseButtonEventHandler-">removePreviewMouseLeftButtonDown</a>, <a href="../../../system/windows/UIElement.html#removePreviewMouseLeftButtonUp-system.windows.input.MouseButtonEventHandler-">removePreviewMouseLeftButtonUp</a>, <a href="../../../system/windows/UIElement.html#removePreviewMouseMove-system.windows.input.MouseEventHandler-">removePreviewMouseMove</a>, <a href="../../../system/windows/UIElement.html#removePreviewMouseRightButtonDown-system.windows.input.MouseButtonEventHandler-">removePreviewMouseRightButtonDown</a>, <a href="../../../system/windows/UIElement.html#removePreviewMouseRightButtonUp-system.windows.input.MouseButtonEventHandler-">removePreviewMouseRightButtonUp</a>, <a href="../../../system/windows/UIElement.html#removePreviewMouseUp-system.windows.input.MouseButtonEventHandler-">removePreviewMouseUp</a>, <a href="../../../system/windows/UIElement.html#removePreviewMouseWheel-system.windows.input.MouseWheelEventHandler-">removePreviewMouseWheel</a>, <a href="../../../system/windows/UIElement.html#removePreviewQueryContinueDrag-system.windows.QueryContinueDragEventHandler-">removePreviewQueryContinueDrag</a>, <a href="../../../system/windows/UIElement.html#removePreviewStylusButtonDown-system.windows.input.StylusButtonEventHandler-">removePreviewStylusButtonDown</a>, <a href="../../../system/windows/UIElement.html#removePreviewStylusButtonUp-system.windows.input.StylusButtonEventHandler-">removePreviewStylusButtonUp</a>, <a href="../../../system/windows/UIElement.html#removePreviewStylusDown-system.windows.input.StylusDownEventHandler-">removePreviewStylusDown</a>, <a href="../../../system/windows/UIElement.html#removePreviewStylusInAirMove-system.windows.input.StylusEventHandler-">removePreviewStylusInAirMove</a>, <a href="../../../system/windows/UIElement.html#removePreviewStylusInRange-system.windows.input.StylusEventHandler-">removePreviewStylusInRange</a>, <a href="../../../system/windows/UIElement.html#removePreviewStylusMove-system.windows.input.StylusEventHandler-">removePreviewStylusMove</a>, <a href="../../../system/windows/UIElement.html#removePreviewStylusOutOfRange-system.windows.input.StylusEventHandler-">removePreviewStylusOutOfRange</a>, <a href="../../../system/windows/UIElement.html#removePreviewStylusSystemGesture-system.windows.input.StylusSystemGestureEventHandler-">removePreviewStylusSystemGesture</a>, <a href="../../../system/windows/UIElement.html#removePreviewStylusUp-system.windows.input.StylusEventHandler-">removePreviewStylusUp</a>, <a href="../../../system/windows/UIElement.html#removePreviewTextInput-system.windows.input.TextCompositionEventHandler-">removePreviewTextInput</a>, <a href="../../../system/windows/UIElement.html#removeQueryContinueDrag-system.windows.QueryContinueDragEventHandler-">removeQueryContinueDrag</a>, <a href="../../../system/windows/UIElement.html#removeQueryCursor-system.windows.input.QueryCursorEventHandler-">removeQueryCursor</a>, <a href="../../../system/windows/UIElement.html#removeStylusButtonDown-system.windows.input.StylusButtonEventHandler-">removeStylusButtonDown</a>, <a href="../../../system/windows/UIElement.html#removeStylusButtonUp-system.windows.input.StylusButtonEventHandler-">removeStylusButtonUp</a>, <a href="../../../system/windows/UIElement.html#removeStylusDown-system.windows.input.StylusDownEventHandler-">removeStylusDown</a>, <a href="../../../system/windows/UIElement.html#removeStylusEnter-system.windows.input.StylusEventHandler-">removeStylusEnter</a>, <a href="../../../system/windows/UIElement.html#removeStylusInAirMove-system.windows.input.StylusEventHandler-">removeStylusInAirMove</a>, <a href="../../../system/windows/UIElement.html#removeStylusInRange-system.windows.input.StylusEventHandler-">removeStylusInRange</a>, <a href="../../../system/windows/UIElement.html#removeStylusLeave-system.windows.input.StylusEventHandler-">removeStylusLeave</a>, <a href="../../../system/windows/UIElement.html#removeStylusMove-system.windows.input.StylusEventHandler-">removeStylusMove</a>, <a href="../../../system/windows/UIElement.html#removeStylusOutOfRange-system.windows.input.StylusEventHandler-">removeStylusOutOfRange</a>, <a href="../../../system/windows/UIElement.html#removeStylusSystemGesture-system.windows.input.StylusSystemGestureEventHandler-">removeStylusSystemGesture</a>, <a href="../../../system/windows/UIElement.html#removeStylusUp-system.windows.input.StylusEventHandler-">removeStylusUp</a>, <a href="../../../system/windows/UIElement.html#removeTextInput-system.windows.input.TextCompositionEventHandler-">removeTextInput</a>, <a href="../../../system/windows/UIElement.html#setAllowDrop-boolean-">setAllowDrop</a>, <a href="../../../system/windows/UIElement.html#setBitmapEffect-system.windows.media.effects.BitmapEffect-">setBitmapEffect</a>, <a href="../../../system/windows/UIElement.html#setBitmapEffectInput-system.windows.media.effects.BitmapEffectInput-">setBitmapEffectInput</a>, <a href="../../../system/windows/UIElement.html#setCacheMode-system.windows.media.CacheMode-">setCacheMode</a>, <a href="../../../system/windows/UIElement.html#setClip-system.windows.media.Geometry-">setClip</a>, <a href="../../../system/windows/UIElement.html#setClipToBounds-boolean-">setClipToBounds</a>, <a href="../../../system/windows/UIElement.html#setEffect-system.windows.media.effects.Effect-">setEffect</a>, <a href="../../../system/windows/UIElement.html#setFocusable-boolean-">setFocusable</a>, <a href="../../../system/windows/UIElement.html#setIsEnabled-boolean-">setIsEnabled</a>, <a href="../../../system/windows/UIElement.html#setIsHitTestVisible-boolean-">setIsHitTestVisible</a>, <a href="../../../system/windows/UIElement.html#setIsManipulationEnabled-boolean-">setIsManipulationEnabled</a>, <a href="../../../system/windows/UIElement.html#setOpacity-double-">setOpacity</a>, <a href="../../../system/windows/UIElement.html#setOpacityMask-system.windows.media.Brush-">setOpacityMask</a>, <a href="../../../system/windows/UIElement.html#setRenderSize-system.windows.Size-">setRenderSize</a>, <a href="../../../system/windows/UIElement.html#setRenderTransform-system.windows.media.Transform-">setRenderTransform</a>, <a href="../../../system/windows/UIElement.html#setRenderTransformOrigin-system.windows.Point-">setRenderTransformOrigin</a>, <a href="../../../system/windows/UIElement.html#setSnapsToDevicePixels-boolean-">setSnapsToDevicePixels</a>, <a href="../../../system/windows/UIElement.html#setUid-java.lang.String-">setUid</a>, <a href="../../../system/windows/UIElement.html#setVisibility-system.windows.Visibility-">setVisibility</a>, <a href="../../../system/windows/UIElement.html#ShouldSerializeCommandBindings--">ShouldSerializeCommandBindings</a>, <a href="../../../system/windows/UIElement.html#ShouldSerializeInputBindings--">ShouldSerializeInputBindings</a>, <a href="../../../system/windows/UIElement.html#TranslatePoint-system.windows.Point-system.windows.UIElement-">TranslatePoint</a>, <a href="../../../system/windows/UIElement.html#UpdateLayout--">UpdateLayout</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.system.windows.media.Visual">
@@ -1025,27 +1045,6 @@ extends <a href="../../../system/windows/controls/primitives/MultiSelector.html"
 </a>
 <h3>Methods inherited from class&nbsp;java.lang.Object</h3>
 <code>equals, getClass, notify, notifyAll, wait, wait, wait</code></li>
-</ul>
-<ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.system.windows.markup.IAddChild">
-<!--   -->
-</a>
-<h3>Methods inherited from interface&nbsp;system.windows.markup.<a href="../../../system/windows/markup/IAddChild.html" title="interface in system.windows.markup">IAddChild</a></h3>
-<code><a href="../../../system/windows/markup/IAddChild.html#AddChild-org.mases.jcobridge.netreflection.NetObject-">AddChild</a>, <a href="../../../system/windows/markup/IAddChild.html#AddText-java.lang.String-">AddText</a>, <a href="../../../system/windows/markup/IAddChild.html#ToIAddChild-org.mases.jcobridge.netreflection.IJCOBridgeReflected-">ToIAddChild</a></code></li>
-</ul>
-<ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.system.windows.controls.primitives.IContainItemStorage">
-<!--   -->
-</a>
-<h3>Methods inherited from interface&nbsp;system.windows.controls.primitives.<a href="../../../system/windows/controls/primitives/IContainItemStorage.html" title="interface in system.windows.controls.primitives">IContainItemStorage</a></h3>
-<code><a href="../../../system/windows/controls/primitives/IContainItemStorage.html#Clear--">Clear</a>, <a href="../../../system/windows/controls/primitives/IContainItemStorage.html#ClearItemValue-org.mases.jcobridge.netreflection.NetObject-system.windows.DependencyProperty-">ClearItemValue</a>, <a href="../../../system/windows/controls/primitives/IContainItemStorage.html#ClearValue-system.windows.DependencyProperty-">ClearValue</a>, <a href="../../../system/windows/controls/primitives/IContainItemStorage.html#ReadItemValue-org.mases.jcobridge.netreflection.NetObject-system.windows.DependencyProperty-">ReadItemValue</a>, <a href="../../../system/windows/controls/primitives/IContainItemStorage.html#StoreItemValue-org.mases.jcobridge.netreflection.NetObject-system.windows.DependencyProperty-org.mases.jcobridge.netreflection.NetObject-">StoreItemValue</a>, <a href="../../../system/windows/controls/primitives/IContainItemStorage.html#ToIContainItemStorage-org.mases.jcobridge.netreflection.IJCOBridgeReflected-">ToIContainItemStorage</a></code></li>
-</ul>
-<ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.system.windows.markup.IQueryAmbient">
-<!--   -->
-</a>
-<h3>Methods inherited from interface&nbsp;system.windows.markup.<a href="../../../system/windows/markup/IQueryAmbient.html" title="interface in system.windows.markup">IQueryAmbient</a></h3>
-<code><a href="../../../system/windows/markup/IQueryAmbient.html#IsAmbientPropertyAvailable-java.lang.String-">IsAmbientPropertyAvailable</a>, <a href="../../../system/windows/markup/IQueryAmbient.html#ToIQueryAmbient-org.mases.jcobridge.netreflection.IJCOBridgeReflected-">ToIQueryAmbient</a></code></li>
 </ul>
 </li>
 </ul>
@@ -1484,6 +1483,46 @@ extends <a href="../../../system/windows/controls/primitives/MultiSelector.html"
 </dl>
 </li>
 </ul>
+<a name="GenerateColumns-system.componentmodel.IItemProperties-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>GenerateColumns</h4>
+<pre>public static&nbsp;<a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&nbsp;GenerateColumns(<a href="../../../system/componentmodel/IItemProperties.html" title="interface in system.componentmodel">IItemProperties</a>&nbsp;itemProperties)
+                                    throws java.lang.Throwable,
+                                           <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                           <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                           <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                           <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                           <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                           <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                           <a href="../../../system/RankException.html" title="class in system">RankException</a>,
+                                           <a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                                           <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                           <a href="../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a>,
+                                           <a href="../../../system/MulticastNotSupportedException.html" title="class in system">MulticastNotSupportedException</a>,
+                                           <a href="../../../system/FormatException.html" title="class in system">FormatException</a>,
+                                           <a href="../../../system/componentmodel/InvalidEnumArgumentException.html" title="class in system.componentmodel">InvalidEnumArgumentException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
+<dd><code><a href="../../../system/MulticastNotSupportedException.html" title="class in system">MulticastNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../../system/componentmodel/InvalidEnumArgumentException.html" title="class in system.componentmodel">InvalidEnumArgumentException</a></code></dd>
+</dl>
+</li>
+</ul>
 <a name="getAlternatingRowBackground--">
 <!--   -->
 </a>
@@ -1901,6 +1940,20 @@ extends <a href="../../../system/windows/controls/primitives/MultiSelector.html"
 <dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
 <dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 <dd><code><a href="../../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="getColumns--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getColumns</h4>
+<pre>public&nbsp;<a href="../../../system/collections/objectmodel/ObservableCollection_1.html" title="class in system.collections.objectmodel">ObservableCollection_1</a>&nbsp;getColumns()
+                                  throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
 </dl>
 </li>
 </ul>
@@ -2424,12 +2477,6 @@ extends <a href="../../../system/windows/controls/primitives/MultiSelector.html"
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOAssemblyName--">getJCOAssemblyName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../system/windows/controls/primitives/IContainItemStorage.html#getJCOAssemblyName--">getJCOAssemblyName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/windows/controls/primitives/IContainItemStorage.html" title="interface in system.windows.controls.primitives">IContainItemStorage</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../system/windows/markup/IAddChild.html#getJCOAssemblyName--">getJCOAssemblyName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/windows/markup/IAddChild.html" title="interface in system.windows.markup">IAddChild</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../system/windows/markup/IQueryAmbient.html#getJCOAssemblyName--">getJCOAssemblyName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/windows/markup/IQueryAmbient.html" title="interface in system.windows.markup">IQueryAmbient</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../system/windows/controls/primitives/MultiSelector.html#getJCOAssemblyName--">getJCOAssemblyName</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/windows/controls/primitives/MultiSelector.html" title="class in system.windows.controls.primitives">MultiSelector</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -2449,12 +2496,6 @@ extends <a href="../../../system/windows/controls/primitives/MultiSelector.html"
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOClassName--">getJCOClassName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../system/windows/controls/primitives/IContainItemStorage.html#getJCOClassName--">getJCOClassName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/windows/controls/primitives/IContainItemStorage.html" title="interface in system.windows.controls.primitives">IContainItemStorage</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../system/windows/markup/IAddChild.html#getJCOClassName--">getJCOClassName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/windows/markup/IAddChild.html" title="interface in system.windows.markup">IAddChild</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../system/windows/markup/IQueryAmbient.html#getJCOClassName--">getJCOClassName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/windows/markup/IQueryAmbient.html" title="interface in system.windows.markup">IQueryAmbient</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../system/windows/controls/primitives/MultiSelector.html#getJCOClassName--">getJCOClassName</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/windows/controls/primitives/MultiSelector.html" title="class in system.windows.controls.primitives">MultiSelector</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -2474,12 +2515,6 @@ extends <a href="../../../system/windows/controls/primitives/MultiSelector.html"
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOInstance--">getJCOInstance</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../system/windows/controls/primitives/IContainItemStorage.html#getJCOInstance--">getJCOInstance</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/windows/controls/primitives/IContainItemStorage.html" title="interface in system.windows.controls.primitives">IContainItemStorage</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../system/windows/markup/IAddChild.html#getJCOInstance--">getJCOInstance</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/windows/markup/IAddChild.html" title="interface in system.windows.markup">IAddChild</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../system/windows/markup/IQueryAmbient.html#getJCOInstance--">getJCOInstance</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/windows/markup/IQueryAmbient.html" title="interface in system.windows.markup">IQueryAmbient</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../system/windows/controls/primitives/MultiSelector.html#getJCOInstance--">getJCOInstance</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/windows/controls/primitives/MultiSelector.html" title="class in system.windows.controls.primitives">MultiSelector</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -2499,12 +2534,6 @@ extends <a href="../../../system/windows/controls/primitives/MultiSelector.html"
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOObjectName--">getJCOObjectName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../system/windows/controls/primitives/IContainItemStorage.html#getJCOObjectName--">getJCOObjectName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/windows/controls/primitives/IContainItemStorage.html" title="interface in system.windows.controls.primitives">IContainItemStorage</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../system/windows/markup/IAddChild.html#getJCOObjectName--">getJCOObjectName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/windows/markup/IAddChild.html" title="interface in system.windows.markup">IAddChild</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../system/windows/markup/IQueryAmbient.html#getJCOObjectName--">getJCOObjectName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/windows/markup/IQueryAmbient.html" title="interface in system.windows.markup">IQueryAmbient</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../system/windows/controls/primitives/MultiSelector.html#getJCOObjectName--">getJCOObjectName</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/windows/controls/primitives/MultiSelector.html" title="class in system.windows.controls.primitives">MultiSelector</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -2525,12 +2554,6 @@ extends <a href="../../../system/windows/controls/primitives/MultiSelector.html"
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOType--">getJCOType</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../system/windows/controls/primitives/IContainItemStorage.html#getJCOType--">getJCOType</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/windows/controls/primitives/IContainItemStorage.html" title="interface in system.windows.controls.primitives">IContainItemStorage</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../system/windows/markup/IAddChild.html#getJCOType--">getJCOType</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/windows/markup/IAddChild.html" title="interface in system.windows.markup">IAddChild</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../system/windows/markup/IQueryAmbient.html#getJCOType--">getJCOType</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/windows/markup/IQueryAmbient.html" title="interface in system.windows.markup">IQueryAmbient</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../system/windows/controls/primitives/MultiSelector.html#getJCOType--">getJCOType</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/windows/controls/primitives/MultiSelector.html" title="class in system.windows.controls.primitives">MultiSelector</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -3092,6 +3115,20 @@ extends <a href="../../../system/windows/controls/primitives/MultiSelector.html"
 </dl>
 </li>
 </ul>
+<a name="getRowValidationRules--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getRowValidationRules</h4>
+<pre>public&nbsp;<a href="../../../system/collections/objectmodel/ObservableCollection_1.html" title="class in system.collections.objectmodel">ObservableCollection_1</a>&nbsp;getRowValidationRules()
+                                             throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
 <a name="getSelectAllCommand--">
 <!--   -->
 </a>
@@ -3111,6 +3148,20 @@ extends <a href="../../../system/windows/controls/primitives/MultiSelector.html"
 <dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 <dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="getSelectedCells--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getSelectedCells</h4>
+<pre>public&nbsp;<a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;getSelectedCells()
+                         throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
 </dl>
 </li>
 </ul>

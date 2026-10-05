@@ -18,10 +18,18 @@
 <meta name="keywords" content="cast()">
 <meta name="keywords" content="HasClaim()">
 <meta name="keywords" content="IsInRole()">
+<meta name="keywords" content="FindAll()">
 <meta name="keywords" content="FindFirst()">
 <meta name="keywords" content="Clone()">
+<meta name="keywords" content="AddIdentities()">
 <meta name="keywords" content="AddIdentity()">
 <meta name="keywords" content="WriteTo()">
+<meta name="keywords" content="getClaims()">
+<meta name="keywords" content="getIdentities()">
+<meta name="keywords" content="getClaimsPrincipalSelector()">
+<meta name="keywords" content="setClaimsPrincipalSelector()">
+<meta name="keywords" content="getPrimaryIdentitySelector()">
+<meta name="keywords" content="setPrimaryIdentitySelector()">
 <meta name="keywords" content="getCurrent()">
 <meta name="keywords" content="getIdentity()">
 <link rel="stylesheet" type="text/css" href="../../../stylesheet.css" title="Style">
@@ -37,7 +45,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":9,"i2":10,"i3":10,"i4":9,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10};
+var methods = {"i0":10,"i1":10,"i2":9,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":9,"i10":9,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":9,"i19":10,"i20":10,"i21":10,"i22":9,"i23":10,"i24":9,"i25":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -220,12 +228,15 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../system/security/claims/ClaimsPrincipal.html#ClaimsPrincipal-system.io.BinaryReader-">ClaimsPrincipal</a></span>(<a href="../../../system/io/BinaryReader.html" title="class in system.io">BinaryReader</a>&nbsp;reader)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/security/claims/ClaimsPrincipal.html#ClaimsPrincipal-system.security.principal.IIdentity-">ClaimsPrincipal</a></span>(<a href="../../../system/security/principal/IIdentity.html" title="interface in system.security.principal">IIdentity</a>&nbsp;identity)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/security/claims/ClaimsPrincipal.html#ClaimsPrincipal-system.collections.generic.IEnumerable_1-">ClaimsPrincipal</a></span>(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;identities)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/security/claims/ClaimsPrincipal.html#ClaimsPrincipal-system.security.principal.IPrincipal-">ClaimsPrincipal</a></span>(<a href="../../../system/security/principal/IPrincipal.html" title="interface in system.security.principal">IPrincipal</a>&nbsp;principal)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/security/claims/ClaimsPrincipal.html#ClaimsPrincipal-system.security.principal.IIdentity-">ClaimsPrincipal</a></span>(<a href="../../../system/security/principal/IIdentity.html" title="interface in system.security.principal">IIdentity</a>&nbsp;identity)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/security/claims/ClaimsPrincipal.html#ClaimsPrincipal-system.security.principal.IPrincipal-">ClaimsPrincipal</a></span>(<a href="../../../system/security/principal/IPrincipal.html" title="interface in system.security.principal">IPrincipal</a>&nbsp;principal)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../system/security/claims/ClaimsPrincipal.html#ClaimsPrincipal-java.lang.Object-">ClaimsPrincipal</a></span>(java.lang.Object&nbsp;instance)</code>
 <div class="block">Internal constructor.</div>
 </td>
@@ -247,74 +258,118 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/security/claims/ClaimsPrincipal.html#AddIdentity-system.security.claims.ClaimsIdentity-">AddIdentity</a></span>(<a href="../../../system/security/claims/ClaimsIdentity.html" title="class in system.security.claims">ClaimsIdentity</a>&nbsp;identity)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/security/claims/ClaimsPrincipal.html#AddIdentities-system.collections.generic.IEnumerable_1-">AddIdentities</a></span>(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;identities)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/security/claims/ClaimsPrincipal.html#AddIdentity-system.security.claims.ClaimsIdentity-">AddIdentity</a></span>(<a href="../../../system/security/claims/ClaimsIdentity.html" title="class in system.security.claims">ClaimsIdentity</a>&nbsp;identity)</code>&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>static <a href="../../../system/security/claims/ClaimsPrincipal.html" title="class in system.security.claims">ClaimsPrincipal</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/security/claims/ClaimsPrincipal.html#cast-org.mases.jcobridge.netreflection.IJCOBridgeReflected-">cast</a></span>(<a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&nbsp;from)</code>
 <div class="block">Try to cast the <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection"><code>IJCOBridgeReflected</code></a> instance into <a href="../../../system/security/claims/ClaimsPrincipal.html" title="class in system.security.claims"><code>ClaimsPrincipal</code></a>, a cast assert is made to check if types are compatible.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/security/claims/ClaimsPrincipal.html" title="class in system.security.claims">ClaimsPrincipal</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/security/claims/ClaimsPrincipal.html#Clone--">Clone</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
+<td class="colFirst"><code><a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/security/claims/ClaimsPrincipal.html#FindAll-system.Predicate_1-">FindAll</a></span>(<a href="../../../system/Predicate_1.html" title="class in system">Predicate_1</a>&nbsp;match)</code>&nbsp;</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code><a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/security/claims/ClaimsPrincipal.html#FindAll-java.lang.String-">FindAll</a></span>(java.lang.String&nbsp;type)</code>&nbsp;</td>
+</tr>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code><a href="../../../system/security/claims/Claim.html" title="class in system.security.claims">Claim</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/security/claims/ClaimsPrincipal.html#FindFirst-system.Predicate_1-">FindFirst</a></span>(<a href="../../../system/Predicate_1.html" title="class in system">Predicate_1</a>&nbsp;match)</code>&nbsp;</td>
+</tr>
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/security/claims/Claim.html" title="class in system.security.claims">Claim</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/security/claims/ClaimsPrincipal.html#FindFirst-java.lang.String-">FindFirst</a></span>(java.lang.String&nbsp;type)</code>&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i8" class="altColor">
+<td class="colFirst"><code><a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/security/claims/ClaimsPrincipal.html#getClaims--">getClaims</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i9" class="rowColor">
+<td class="colFirst"><code>static <a href="../../../system/Func_1.html" title="class in system">Func_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/security/claims/ClaimsPrincipal.html#getClaimsPrincipalSelector--">getClaimsPrincipalSelector</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>static <a href="../../../system/security/claims/ClaimsPrincipal.html" title="class in system.security.claims">ClaimsPrincipal</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/security/claims/ClaimsPrincipal.html#getCurrent--">getCurrent</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i11" class="rowColor">
+<td class="colFirst"><code><a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/security/claims/ClaimsPrincipal.html#getIdentities--">getIdentities</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="../../../system/security/principal/IIdentity.html" title="interface in system.security.principal">IIdentity</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/security/claims/ClaimsPrincipal.html#getIdentity--">getIdentity</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/security/claims/ClaimsPrincipal.html#getJCOAssemblyName--">getJCOAssemblyName</a></span>()</code>
 <div class="block">Returns the reflected Assembly name</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/security/claims/ClaimsPrincipal.html#getJCOClassName--">getJCOClassName</a></span>()</code>
 <div class="block">Returns the reflected Class name</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/security/claims/ClaimsPrincipal.html#getJCOInstance--">getJCOInstance</a></span>()</code>
 <div class="block">Returns the instantiated class</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/security/claims/ClaimsPrincipal.html#getJCOObjectName--">getJCOObjectName</a></span>()</code>
 <div class="block">Returns the reflected Class name used to build the object</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>org.mases.jcobridge.JCType</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/security/claims/ClaimsPrincipal.html#getJCOType--">getJCOType</a></span>()</code>
 <div class="block">Returns the instantiated class Type</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i18" class="altColor">
+<td class="colFirst"><code>static <a href="../../../system/Func_2.html" title="class in system">Func_2</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/security/claims/ClaimsPrincipal.html#getPrimaryIdentitySelector--">getPrimaryIdentitySelector</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i19" class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/security/claims/ClaimsPrincipal.html#HasClaim-system.Predicate_1-">HasClaim</a></span>(<a href="../../../system/Predicate_1.html" title="class in system">Predicate_1</a>&nbsp;match)</code>&nbsp;</td>
+</tr>
+<tr id="i20" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/security/claims/ClaimsPrincipal.html#HasClaim-java.lang.String-java.lang.String-">HasClaim</a></span>(java.lang.String&nbsp;type,
         java.lang.String&nbsp;value)</code>&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/security/claims/ClaimsPrincipal.html#IsInRole-java.lang.String-">IsInRole</a></span>(java.lang.String&nbsp;role)</code>&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i22" class="altColor">
+<td class="colFirst"><code>static void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/security/claims/ClaimsPrincipal.html#setClaimsPrincipalSelector-system.Func_1-">setClaimsPrincipalSelector</a></span>(<a href="../../../system/Func_1.html" title="class in system">Func_1</a>&nbsp;ClaimsPrincipalSelector)</code>&nbsp;</td>
+</tr>
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/security/claims/ClaimsPrincipal.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i24" class="altColor">
+<td class="colFirst"><code>static void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/security/claims/ClaimsPrincipal.html#setPrimaryIdentitySelector-system.Func_2-">setPrimaryIdentitySelector</a></span>(<a href="../../../system/Func_2.html" title="class in system">Func_2</a>&nbsp;PrimaryIdentitySelector)</code>&nbsp;</td>
+</tr>
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/security/claims/ClaimsPrincipal.html#WriteTo-system.io.BinaryWriter-">WriteTo</a></span>(<a href="../../../system/io/BinaryWriter.html" title="class in system.io">BinaryWriter</a>&nbsp;writer)</code>&nbsp;</td>
 </tr>
@@ -457,6 +512,38 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </dl>
 </li>
 </ul>
+<a name="ClaimsPrincipal-system.collections.generic.IEnumerable_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ClaimsPrincipal</h4>
+<pre>public&nbsp;ClaimsPrincipal(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;identities)
+                throws java.lang.Throwable,
+                       <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                       <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                       <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                       <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                       <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                       <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                       <a href="../../../system/RankException.html" title="class in system">RankException</a>,
+                       <a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                       <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+</dl>
+</li>
+</ul>
 <a name="ClaimsPrincipal-system.security.principal.IIdentity-">
 <!--   -->
 </a>
@@ -544,6 +631,38 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="AddIdentities-system.collections.generic.IEnumerable_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>AddIdentities</h4>
+<pre>public&nbsp;void&nbsp;AddIdentities(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;identities)
+                   throws java.lang.Throwable,
+                          <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                          <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                          <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                          <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                          <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                          <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                          <a href="../../../system/RankException.html" title="class in system">RankException</a>,
+                          <a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                          <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+</dl>
+</li>
+</ul>
 <a name="AddIdentity-system.security.claims.ClaimsIdentity-">
 <!--   -->
 </a>
@@ -619,6 +738,102 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </dl>
 </li>
 </ul>
+<a name="FindAll-system.Predicate_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>FindAll</h4>
+<pre>public&nbsp;<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;FindAll(<a href="../../../system/Predicate_1.html" title="class in system">Predicate_1</a>&nbsp;match)
+                      throws java.lang.Throwable,
+                             <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                             <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                             <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                             <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                             <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                             <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                             <a href="../../../system/RankException.html" title="class in system">RankException</a>,
+                             <a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                             <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="FindAll-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>FindAll</h4>
+<pre>public&nbsp;<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;FindAll(java.lang.String&nbsp;type)
+                      throws java.lang.Throwable,
+                             <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                             <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                             <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                             <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                             <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                             <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                             <a href="../../../system/RankException.html" title="class in system">RankException</a>,
+                             <a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                             <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="FindFirst-system.Predicate_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>FindFirst</h4>
+<pre>public&nbsp;<a href="../../../system/security/claims/Claim.html" title="class in system.security.claims">Claim</a>&nbsp;FindFirst(<a href="../../../system/Predicate_1.html" title="class in system">Predicate_1</a>&nbsp;match)
+                throws java.lang.Throwable,
+                       <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                       <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                       <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                       <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                       <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                       <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                       <a href="../../../system/RankException.html" title="class in system">RankException</a>,
+                       <a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                       <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+</dl>
+</li>
+</ul>
 <a name="FindFirst-java.lang.String-">
 <!--   -->
 </a>
@@ -661,6 +876,34 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </dl>
 </li>
 </ul>
+<a name="getClaims--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getClaims</h4>
+<pre>public&nbsp;<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;getClaims()
+                        throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="getClaimsPrincipalSelector--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getClaimsPrincipalSelector</h4>
+<pre>public static&nbsp;<a href="../../../system/Func_1.html" title="class in system">Func_1</a>&nbsp;getClaimsPrincipalSelector()
+                                         throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
 <a name="getCurrent--">
 <!--   -->
 </a>
@@ -688,6 +931,20 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 <dd><code><a href="../../../system/io/FileLoadException.html" title="class in system.io">FileLoadException</a></code></dd>
 <dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="getIdentities--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getIdentities</h4>
+<pre>public&nbsp;<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;getIdentities()
+                            throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
 </dl>
 </li>
 </ul>
@@ -811,6 +1068,52 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </dl>
 </li>
 </ul>
+<a name="getPrimaryIdentitySelector--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getPrimaryIdentitySelector</h4>
+<pre>public static&nbsp;<a href="../../../system/Func_2.html" title="class in system">Func_2</a>&nbsp;getPrimaryIdentitySelector()
+                                         throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="HasClaim-system.Predicate_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>HasClaim</h4>
+<pre>public&nbsp;boolean&nbsp;HasClaim(<a href="../../../system/Predicate_1.html" title="class in system">Predicate_1</a>&nbsp;match)
+                 throws java.lang.Throwable,
+                        <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                        <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                        <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                        <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                        <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                        <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                        <a href="../../../system/RankException.html" title="class in system">RankException</a>,
+                        <a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                        <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+</dl>
+</li>
+</ul>
 <a name="HasClaim-java.lang.String-java.lang.String-">
 <!--   -->
 </a>
@@ -888,6 +1191,20 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </dl>
 </li>
 </ul>
+<a name="setClaimsPrincipalSelector-system.Func_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setClaimsPrincipalSelector</h4>
+<pre>public static&nbsp;void&nbsp;setClaimsPrincipalSelector(<a href="../../../system/Func_1.html" title="class in system">Func_1</a>&nbsp;ClaimsPrincipalSelector)
+                                       throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
 <a name="setJCOInstance-org.mases.jcobridge.JCObject-">
 <!--   -->
 </a>
@@ -898,6 +1215,20 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></code>&nbsp;in class&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="setPrimaryIdentitySelector-system.Func_2-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setPrimaryIdentitySelector</h4>
+<pre>public static&nbsp;void&nbsp;setPrimaryIdentitySelector(<a href="../../../system/Func_2.html" title="class in system">Func_2</a>&nbsp;PrimaryIdentitySelector)
+                                       throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
 </dl>
 </li>
 </ul>

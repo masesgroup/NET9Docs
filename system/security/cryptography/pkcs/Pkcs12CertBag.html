@@ -19,6 +19,7 @@
 <meta name="keywords" content="GetCertificateType()">
 <meta name="keywords" content="GetCertificate()">
 <meta name="keywords" content="getIsX509Certificate()">
+<meta name="keywords" content="getEncodedCertificate()">
 <link rel="stylesheet" type="text/css" href="../../../../stylesheet.css" title="Style">
 <script type="text/javascript" src="../../../../script.js"></script>
 </head>
@@ -32,7 +33,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -217,6 +218,10 @@ extends <a href="../../../../system/security/cryptography/pkcs/Pkcs12SafeBag.htm
 <div class="block">Internal constructor.</div>
 </td>
 </tr>
+<tr class="altColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../system/security/cryptography/pkcs/Pkcs12CertBag.html#Pkcs12CertBag-system.security.cryptography.Oid-system.ReadOnlyMemory_1-">Pkcs12CertBag</a></span>(<a href="../../../../system/security/cryptography/Oid.html" title="class in system.security.cryptography">Oid</a>&nbsp;certificateType,
+             <a href="../../../../system/ReadOnlyMemory_1.html" title="class in system">ReadOnlyMemory_1</a>&nbsp;encodedCertificate)</code>&nbsp;</td>
+</tr>
 </table>
 </li>
 </ul>
@@ -247,40 +252,44 @@ extends <a href="../../../../system/security/cryptography/pkcs/Pkcs12SafeBag.htm
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/security/cryptography/pkcs/Pkcs12CertBag.html#GetCertificateType--">GetCertificateType</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
+<td class="colFirst"><code><a href="../../../../system/ReadOnlyMemory_1.html" title="class in system">ReadOnlyMemory_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/security/cryptography/pkcs/Pkcs12CertBag.html#getEncodedCertificate--">getEncodedCertificate</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/security/cryptography/pkcs/Pkcs12CertBag.html#getIsX509Certificate--">getIsX509Certificate</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/security/cryptography/pkcs/Pkcs12CertBag.html#getJCOAssemblyName--">getJCOAssemblyName</a></span>()</code>
 <div class="block">Returns the reflected Assembly name</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/security/cryptography/pkcs/Pkcs12CertBag.html#getJCOClassName--">getJCOClassName</a></span>()</code>
 <div class="block">Returns the reflected Class name</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/security/cryptography/pkcs/Pkcs12CertBag.html#getJCOInstance--">getJCOInstance</a></span>()</code>
 <div class="block">Returns the instantiated class</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/security/cryptography/pkcs/Pkcs12CertBag.html#getJCOObjectName--">getJCOObjectName</a></span>()</code>
 <div class="block">Returns the reflected Class name used to build the object</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>org.mases.jcobridge.JCType</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/security/cryptography/pkcs/Pkcs12CertBag.html#getJCOType--">getJCOType</a></span>()</code>
 <div class="block">Returns the instantiated class Type</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/security/cryptography/pkcs/Pkcs12CertBag.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
@@ -290,7 +299,7 @@ extends <a href="../../../../system/security/cryptography/pkcs/Pkcs12SafeBag.htm
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;system.security.cryptography.pkcs.<a href="../../../../system/security/cryptography/pkcs/Pkcs12SafeBag.html" title="class in system.security.cryptography.pkcs">Pkcs12SafeBag</a></h3>
-<code><a href="../../../../system/security/cryptography/pkcs/Pkcs12SafeBag.html#Encode--">Encode</a>, <a href="../../../../system/security/cryptography/pkcs/Pkcs12SafeBag.html#getAttributes--">getAttributes</a>, <a href="../../../../system/security/cryptography/pkcs/Pkcs12SafeBag.html#GetBagId--">GetBagId</a>, <a href="../../../../system/security/cryptography/pkcs/Pkcs12SafeBag.html#setAttributes-system.security.cryptography.CryptographicAttributeObjectCollection-">setAttributes</a></code></li>
+<code><a href="../../../../system/security/cryptography/pkcs/Pkcs12SafeBag.html#Encode--">Encode</a>, <a href="../../../../system/security/cryptography/pkcs/Pkcs12SafeBag.html#getAttributes--">getAttributes</a>, <a href="../../../../system/security/cryptography/pkcs/Pkcs12SafeBag.html#GetBagId--">GetBagId</a>, <a href="../../../../system/security/cryptography/pkcs/Pkcs12SafeBag.html#getEncodedBagValue--">getEncodedBagValue</a>, <a href="../../../../system/security/cryptography/pkcs/Pkcs12SafeBag.html#setAttributes-system.security.cryptography.CryptographicAttributeObjectCollection-">setAttributes</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.org.mases.jcobridge.netreflection.NetObject">
@@ -397,7 +406,7 @@ extends <a href="../../../../system/security/cryptography/pkcs/Pkcs12SafeBag.htm
 <a name="Pkcs12CertBag-java.lang.Object-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>Pkcs12CertBag</h4>
 <pre>public&nbsp;Pkcs12CertBag(java.lang.Object&nbsp;instance)
@@ -406,6 +415,49 @@ extends <a href="../../../../system/security/cryptography/pkcs/Pkcs12SafeBag.htm
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="Pkcs12CertBag-system.security.cryptography.Oid-system.ReadOnlyMemory_1-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>Pkcs12CertBag</h4>
+<pre>public&nbsp;Pkcs12CertBag(<a href="../../../../system/security/cryptography/Oid.html" title="class in system.security.cryptography">Oid</a>&nbsp;certificateType,
+                     <a href="../../../../system/ReadOnlyMemory_1.html" title="class in system">ReadOnlyMemory_1</a>&nbsp;encodedCertificate)
+              throws java.lang.Throwable,
+                     <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                     <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                     <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                     <a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                     <a href="../../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                     <a href="../../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                     <a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                     <a href="../../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                     <a href="../../../../system/RankException.html" title="class in system">RankException</a>,
+                     <a href="../../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                     <a href="../../../../system/security/cryptography/CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a>,
+                     <a href="../../../../system/formats/asn1/AsnContentException.html" title="class in system.formats.asn1">AsnContentException</a>,
+                     <a href="../../../../system/OverflowException.html" title="class in system">OverflowException</a>,
+                     <a href="../../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../../system/RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../../system/security/cryptography/CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a></code></dd>
+<dd><code><a href="../../../../system/formats/asn1/AsnContentException.html" title="class in system.formats.asn1">AsnContentException</a></code></dd>
+<dd><code><a href="../../../../system/OverflowException.html" title="class in system">OverflowException</a></code></dd>
+<dd><code><a href="../../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -519,6 +571,20 @@ extends <a href="../../../../system/security/cryptography/pkcs/Pkcs12SafeBag.htm
 <dd><code><a href="../../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
 <dd><code><a href="../../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
 <dd><code><a href="../../../../system/runtime/interopservices/ExternalException.html" title="class in system.runtime.interopservices">ExternalException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="getEncodedCertificate--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getEncodedCertificate</h4>
+<pre>public&nbsp;<a href="../../../../system/ReadOnlyMemory_1.html" title="class in system">ReadOnlyMemory_1</a>&nbsp;getEncodedCertificate()
+                                       throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
 </dl>
 </li>
 </ul>

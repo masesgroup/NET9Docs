@@ -17,6 +17,7 @@
 <meta name="keywords" content="getJCOType()">
 <meta name="keywords" content="cast()">
 <meta name="keywords" content="IsDefined()">
+<meta name="keywords" content="GetCustomAttributesData()">
 <meta name="keywords" content="GetFile()">
 <meta name="keywords" content="GetFiles()">
 <meta name="keywords" content="GetManifestResourceStream()">
@@ -55,6 +56,10 @@
 <meta name="keywords" content="getIsFullyTrusted()">
 <meta name="keywords" content="getReflectionOnly()">
 <meta name="keywords" content="getHostContext()">
+<meta name="keywords" content="getCustomAttributes()">
+<meta name="keywords" content="getModules()">
+<meta name="keywords" content="getDefinedTypes()">
+<meta name="keywords" content="getExportedTypes()">
 <meta name="keywords" content="getEntryPoint()">
 <meta name="keywords" content="getManifestModule()">
 <meta name="keywords" content="getSecurityRuleSet()">
@@ -78,7 +83,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":9,"i2":10,"i3":10,"i4":10,"i5":9,"i6":9,"i7":9,"i8":10,"i9":10,"i10":10,"i11":9,"i12":10,"i13":10,"i14":9,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":10,"i36":10,"i37":10,"i38":10,"i39":10,"i40":10,"i41":10,"i42":10,"i43":10,"i44":10,"i45":10,"i46":10,"i47":10,"i48":10,"i49":10,"i50":10,"i51":10,"i52":10,"i53":10,"i54":10,"i55":10,"i56":9,"i57":9,"i58":9,"i59":9,"i60":9,"i61":9,"i62":9,"i63":9,"i64":9,"i65":9,"i66":10,"i67":10,"i68":10,"i69":10,"i70":9,"i71":9,"i72":9,"i73":9,"i74":9,"i75":10,"i76":9,"i77":10,"i78":9};
+var methods = {"i0":10,"i1":9,"i2":10,"i3":10,"i4":10,"i5":9,"i6":9,"i7":9,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":9,"i15":10,"i16":10,"i17":9,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":10,"i36":10,"i37":10,"i38":10,"i39":10,"i40":10,"i41":10,"i42":10,"i43":10,"i44":10,"i45":10,"i46":10,"i47":10,"i48":10,"i49":10,"i50":10,"i51":10,"i52":10,"i53":10,"i54":10,"i55":10,"i56":10,"i57":10,"i58":10,"i59":10,"i60":10,"i61":9,"i62":9,"i63":9,"i64":9,"i65":9,"i66":9,"i67":9,"i68":9,"i69":9,"i70":9,"i71":10,"i72":10,"i73":10,"i74":10,"i75":9,"i76":9,"i77":9,"i78":9,"i79":9,"i80":10,"i81":9,"i82":10,"i83":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -324,312 +329,332 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/Assembly.html#getCodeBase--">getCodeBase</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i9" class="rowColor">
+<td class="colFirst"><code><a href="../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/Assembly.html#getCustomAttributes--">getCustomAttributes</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/Assembly.html#GetCustomAttributes-boolean-">GetCustomAttributes</a></span>(boolean&nbsp;inherit)</code>&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/Assembly.html#GetCustomAttributes-org.mases.jcobridge.netreflection.NetType-boolean-">GetCustomAttributes</a></span>(<a href="../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;attributeType,
                    boolean&nbsp;inherit)</code>&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
-<td class="colFirst"><code>static <a href="../../system/reflection/Assembly.html" title="class in system.reflection">Assembly</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/Assembly.html#GetEntryAssembly--">GetEntryAssembly</a></span>()</code>&nbsp;</td>
-</tr>
 <tr id="i12" class="altColor">
-<td class="colFirst"><code><a href="../../system/reflection/MethodInfo.html" title="class in system.reflection">MethodInfo</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/Assembly.html#getEntryPoint--">getEntryPoint</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/Assembly.html#GetCustomAttributesData--">GetCustomAttributesData</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i13" class="rowColor">
-<td class="colFirst"><code>java.lang.String</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/Assembly.html#getEscapedCodeBase--">getEscapedCodeBase</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/Assembly.html#getDefinedTypes--">getDefinedTypes</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i14" class="altColor">
 <td class="colFirst"><code>static <a href="../../system/reflection/Assembly.html" title="class in system.reflection">Assembly</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/Assembly.html#GetExecutingAssembly--">GetExecutingAssembly</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/Assembly.html#GetEntryAssembly--">GetEntryAssembly</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i15" class="rowColor">
-<td class="colFirst"><code><a href="../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>[]</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/Assembly.html#GetExportedTypes--">GetExportedTypes</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../system/reflection/MethodInfo.html" title="class in system.reflection">MethodInfo</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/Assembly.html#getEntryPoint--">getEntryPoint</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i16" class="altColor">
-<td class="colFirst"><code><a href="../../system/io/FileStream.html" title="class in system.io">FileStream</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/Assembly.html#GetFile-java.lang.String-">GetFile</a></span>(java.lang.String&nbsp;name)</code>&nbsp;</td>
+<td class="colFirst"><code>java.lang.String</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/Assembly.html#getEscapedCodeBase--">getEscapedCodeBase</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i17" class="rowColor">
-<td class="colFirst"><code><a href="../../system/io/FileStream.html" title="class in system.io">FileStream</a>[]</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/Assembly.html#GetFiles--">GetFiles</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>static <a href="../../system/reflection/Assembly.html" title="class in system.reflection">Assembly</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/Assembly.html#GetExecutingAssembly--">GetExecutingAssembly</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i18" class="altColor">
-<td class="colFirst"><code><a href="../../system/io/FileStream.html" title="class in system.io">FileStream</a>[]</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/Assembly.html#GetFiles-boolean-">GetFiles</a></span>(boolean&nbsp;getResourceModules)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/Assembly.html#getExportedTypes--">getExportedTypes</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i19" class="rowColor">
 <td class="colFirst"><code><a href="../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>[]</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/Assembly.html#GetForwardedTypes--">GetForwardedTypes</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/Assembly.html#GetExportedTypes--">GetExportedTypes</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i20" class="altColor">
+<td class="colFirst"><code><a href="../../system/io/FileStream.html" title="class in system.io">FileStream</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/Assembly.html#GetFile-java.lang.String-">GetFile</a></span>(java.lang.String&nbsp;name)</code>&nbsp;</td>
+</tr>
+<tr id="i21" class="rowColor">
+<td class="colFirst"><code><a href="../../system/io/FileStream.html" title="class in system.io">FileStream</a>[]</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/Assembly.html#GetFiles--">GetFiles</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i22" class="altColor">
+<td class="colFirst"><code><a href="../../system/io/FileStream.html" title="class in system.io">FileStream</a>[]</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/Assembly.html#GetFiles-boolean-">GetFiles</a></span>(boolean&nbsp;getResourceModules)</code>&nbsp;</td>
+</tr>
+<tr id="i23" class="rowColor">
+<td class="colFirst"><code><a href="../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>[]</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/Assembly.html#GetForwardedTypes--">GetForwardedTypes</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i24" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/Assembly.html#getFullName--">getFullName</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/Assembly.html#getGlobalAssemblyCache--">getGlobalAssemblyCache</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i26" class="altColor">
 <td class="colFirst"><code>long</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/Assembly.html#getHostContext--">getHostContext</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i27" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/Assembly.html#getImageRuntimeVersion--">getImageRuntimeVersion</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i24" class="altColor">
+<tr id="i28" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/Assembly.html#getIsCollectible--">getIsCollectible</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i25" class="rowColor">
+<tr id="i29" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/Assembly.html#getIsDynamic--">getIsDynamic</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i26" class="altColor">
+<tr id="i30" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/Assembly.html#getIsFullyTrusted--">getIsFullyTrusted</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i27" class="rowColor">
+<tr id="i31" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/Assembly.html#getJCOAssemblyName--">getJCOAssemblyName</a></span>()</code>
 <div class="block">Returns the reflected Assembly name</div>
 </td>
 </tr>
-<tr id="i28" class="altColor">
+<tr id="i32" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/Assembly.html#getJCOClassName--">getJCOClassName</a></span>()</code>
 <div class="block">Returns the reflected Class name</div>
 </td>
 </tr>
-<tr id="i29" class="rowColor">
+<tr id="i33" class="rowColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/Assembly.html#getJCOInstance--">getJCOInstance</a></span>()</code>
 <div class="block">Returns the instantiated class</div>
 </td>
 </tr>
-<tr id="i30" class="altColor">
+<tr id="i34" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/Assembly.html#getJCOObjectName--">getJCOObjectName</a></span>()</code>
 <div class="block">Returns the reflected Class name used to build the object</div>
 </td>
 </tr>
-<tr id="i31" class="rowColor">
+<tr id="i35" class="rowColor">
 <td class="colFirst"><code>org.mases.jcobridge.JCType</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/Assembly.html#getJCOType--">getJCOType</a></span>()</code>
 <div class="block">Returns the instantiated class Type</div>
 </td>
 </tr>
-<tr id="i32" class="altColor">
+<tr id="i36" class="altColor">
 <td class="colFirst"><code><a href="../../system/reflection/Module.html" title="class in system.reflection">Module</a>[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/Assembly.html#GetLoadedModules--">GetLoadedModules</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i33" class="rowColor">
+<tr id="i37" class="rowColor">
 <td class="colFirst"><code><a href="../../system/reflection/Module.html" title="class in system.reflection">Module</a>[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/Assembly.html#GetLoadedModules-boolean-">GetLoadedModules</a></span>(boolean&nbsp;getResourceModules)</code>&nbsp;</td>
 </tr>
-<tr id="i34" class="altColor">
+<tr id="i38" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/Assembly.html#getLocation--">getLocation</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i35" class="rowColor">
+<tr id="i39" class="rowColor">
 <td class="colFirst"><code><a href="../../system/reflection/Module.html" title="class in system.reflection">Module</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/Assembly.html#getManifestModule--">getManifestModule</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i36" class="altColor">
+<tr id="i40" class="altColor">
 <td class="colFirst"><code><a href="../../system/reflection/ManifestResourceInfo.html" title="class in system.reflection">ManifestResourceInfo</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/Assembly.html#GetManifestResourceInfo-java.lang.String-">GetManifestResourceInfo</a></span>(java.lang.String&nbsp;resourceName)</code>&nbsp;</td>
 </tr>
-<tr id="i37" class="rowColor">
+<tr id="i41" class="rowColor">
 <td class="colFirst"><code>java.lang.String[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/Assembly.html#GetManifestResourceNames--">GetManifestResourceNames</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i38" class="altColor">
+<tr id="i42" class="altColor">
 <td class="colFirst"><code><a href="../../system/io/Stream.html" title="class in system.io">Stream</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/Assembly.html#GetManifestResourceStream-org.mases.jcobridge.netreflection.NetType-java.lang.String-">GetManifestResourceStream</a></span>(<a href="../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;type,
                          java.lang.String&nbsp;name)</code>&nbsp;</td>
 </tr>
-<tr id="i39" class="rowColor">
+<tr id="i43" class="rowColor">
 <td class="colFirst"><code><a href="../../system/io/Stream.html" title="class in system.io">Stream</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/Assembly.html#GetManifestResourceStream-java.lang.String-">GetManifestResourceStream</a></span>(java.lang.String&nbsp;name)</code>&nbsp;</td>
 </tr>
-<tr id="i40" class="altColor">
+<tr id="i44" class="altColor">
 <td class="colFirst"><code><a href="../../system/reflection/Module.html" title="class in system.reflection">Module</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/Assembly.html#GetModule-java.lang.String-">GetModule</a></span>(java.lang.String&nbsp;name)</code>&nbsp;</td>
 </tr>
-<tr id="i41" class="rowColor">
+<tr id="i45" class="rowColor">
+<td class="colFirst"><code><a href="../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/Assembly.html#getModules--">getModules</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i46" class="altColor">
 <td class="colFirst"><code><a href="../../system/reflection/Module.html" title="class in system.reflection">Module</a>[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/Assembly.html#GetModules--">GetModules</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i42" class="altColor">
+<tr id="i47" class="rowColor">
 <td class="colFirst"><code><a href="../../system/reflection/Module.html" title="class in system.reflection">Module</a>[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/Assembly.html#GetModules-boolean-">GetModules</a></span>(boolean&nbsp;getResourceModules)</code>&nbsp;</td>
 </tr>
-<tr id="i43" class="rowColor">
+<tr id="i48" class="altColor">
 <td class="colFirst"><code><a href="../../system/reflection/AssemblyName.html" title="class in system.reflection">AssemblyName</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/Assembly.html#GetName--">GetName</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i44" class="altColor">
+<tr id="i49" class="rowColor">
 <td class="colFirst"><code><a href="../../system/reflection/AssemblyName.html" title="class in system.reflection">AssemblyName</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/Assembly.html#GetName-boolean-">GetName</a></span>(boolean&nbsp;copiedName)</code>&nbsp;</td>
 </tr>
-<tr id="i45" class="rowColor">
+<tr id="i50" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/Assembly.html#GetObjectData-system.runtime.serialization.SerializationInfo-system.runtime.serialization.StreamingContext-">GetObjectData</a></span>(<a href="../../system/runtime/serialization/SerializationInfo.html" title="class in system.runtime.serialization">SerializationInfo</a>&nbsp;info,
              <a href="../../system/runtime/serialization/StreamingContext.html" title="class in system.runtime.serialization">StreamingContext</a>&nbsp;context)</code>&nbsp;</td>
 </tr>
-<tr id="i46" class="altColor">
+<tr id="i51" class="rowColor">
 <td class="colFirst"><code><a href="../../system/reflection/AssemblyName.html" title="class in system.reflection">AssemblyName</a>[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/Assembly.html#GetReferencedAssemblies--">GetReferencedAssemblies</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i47" class="rowColor">
+<tr id="i52" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/Assembly.html#getReflectionOnly--">getReflectionOnly</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i48" class="altColor">
+<tr id="i53" class="rowColor">
 <td class="colFirst"><code><a href="../../system/reflection/Assembly.html" title="class in system.reflection">Assembly</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/Assembly.html#GetSatelliteAssembly-system.globalization.CultureInfo-">GetSatelliteAssembly</a></span>(<a href="../../system/globalization/CultureInfo.html" title="class in system.globalization">CultureInfo</a>&nbsp;culture)</code>&nbsp;</td>
 </tr>
-<tr id="i49" class="rowColor">
+<tr id="i54" class="altColor">
 <td class="colFirst"><code><a href="../../system/reflection/Assembly.html" title="class in system.reflection">Assembly</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/Assembly.html#GetSatelliteAssembly-system.globalization.CultureInfo-system.Version-">GetSatelliteAssembly</a></span>(<a href="../../system/globalization/CultureInfo.html" title="class in system.globalization">CultureInfo</a>&nbsp;culture,
                     <a href="../../system/Version.html" title="class in system">Version</a>&nbsp;version)</code>&nbsp;</td>
 </tr>
-<tr id="i50" class="altColor">
+<tr id="i55" class="rowColor">
 <td class="colFirst"><code><a href="../../system/security/SecurityRuleSet.html" title="class in system.security">SecurityRuleSet</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/Assembly.html#getSecurityRuleSet--">getSecurityRuleSet</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i51" class="rowColor">
+<tr id="i56" class="altColor">
 <td class="colFirst"><code><a href="../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/Assembly.html#GetType-java.lang.String-">GetType</a></span>(java.lang.String&nbsp;name)</code>&nbsp;</td>
 </tr>
-<tr id="i52" class="altColor">
+<tr id="i57" class="rowColor">
 <td class="colFirst"><code><a href="../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/Assembly.html#GetType-java.lang.String-boolean-">GetType</a></span>(java.lang.String&nbsp;name,
        boolean&nbsp;throwOnError)</code>&nbsp;</td>
 </tr>
-<tr id="i53" class="rowColor">
+<tr id="i58" class="altColor">
 <td class="colFirst"><code><a href="../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/Assembly.html#GetType-java.lang.String-boolean-boolean-">GetType</a></span>(java.lang.String&nbsp;name,
        boolean&nbsp;throwOnError,
        boolean&nbsp;ignoreCase)</code>&nbsp;</td>
 </tr>
-<tr id="i54" class="altColor">
+<tr id="i59" class="rowColor">
 <td class="colFirst"><code><a href="../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/Assembly.html#GetTypes--">GetTypes</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i55" class="rowColor">
+<tr id="i60" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/Assembly.html#IsDefined-org.mases.jcobridge.netreflection.NetType-boolean-">IsDefined</a></span>(<a href="../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;attributeType,
          boolean&nbsp;inherit)</code>&nbsp;</td>
 </tr>
-<tr id="i56" class="altColor">
+<tr id="i61" class="rowColor">
 <td class="colFirst"><code>static <a href="../../system/reflection/Assembly.html" title="class in system.reflection">Assembly</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/Assembly.html#Load-system.reflection.AssemblyName-">Load</a></span>(<a href="../../system/reflection/AssemblyName.html" title="class in system.reflection">AssemblyName</a>&nbsp;assemblyRef)</code>&nbsp;</td>
 </tr>
-<tr id="i57" class="rowColor">
+<tr id="i62" class="altColor">
 <td class="colFirst"><code>static <a href="../../system/reflection/Assembly.html" title="class in system.reflection">Assembly</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/Assembly.html#Load-byte:A-">Load</a></span>(byte[]&nbsp;rawAssembly)</code>&nbsp;</td>
 </tr>
-<tr id="i58" class="altColor">
+<tr id="i63" class="rowColor">
 <td class="colFirst"><code>static <a href="../../system/reflection/Assembly.html" title="class in system.reflection">Assembly</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/Assembly.html#Load-byte:A-byte:A-">Load</a></span>(byte[]&nbsp;rawAssembly,
     byte[]&nbsp;rawSymbolStore)</code>&nbsp;</td>
 </tr>
-<tr id="i59" class="rowColor">
+<tr id="i64" class="altColor">
 <td class="colFirst"><code>static <a href="../../system/reflection/Assembly.html" title="class in system.reflection">Assembly</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/Assembly.html#Load-org.mases.jcobridge.netreflection.JCORefOut-">Load</a></span>(<a href="../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;dupParam0)</code>&nbsp;</td>
 </tr>
-<tr id="i60" class="altColor">
+<tr id="i65" class="rowColor">
 <td class="colFirst"><code>static <a href="../../system/reflection/Assembly.html" title="class in system.reflection">Assembly</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/Assembly.html#Load-org.mases.jcobridge.netreflection.JCORefOut-org.mases.jcobridge.netreflection.JCORefOut-">Load</a></span>(<a href="../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;dupParam0,
     <a href="../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;dupParam1)</code>&nbsp;</td>
 </tr>
-<tr id="i61" class="rowColor">
+<tr id="i66" class="altColor">
 <td class="colFirst"><code>static <a href="../../system/reflection/Assembly.html" title="class in system.reflection">Assembly</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/Assembly.html#Load-java.lang.String-">Load</a></span>(java.lang.String&nbsp;assemblyString)</code>&nbsp;</td>
 </tr>
-<tr id="i62" class="altColor">
+<tr id="i67" class="rowColor">
 <td class="colFirst"><code>static <a href="../../system/reflection/Assembly.html" title="class in system.reflection">Assembly</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/Assembly.html#LoadFile-java.lang.String-">LoadFile</a></span>(java.lang.String&nbsp;path)</code>&nbsp;</td>
 </tr>
-<tr id="i63" class="rowColor">
+<tr id="i68" class="altColor">
 <td class="colFirst"><code>static <a href="../../system/reflection/Assembly.html" title="class in system.reflection">Assembly</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/Assembly.html#LoadFrom-java.lang.String-">LoadFrom</a></span>(java.lang.String&nbsp;assemblyFile)</code>&nbsp;</td>
 </tr>
-<tr id="i64" class="altColor">
+<tr id="i69" class="rowColor">
 <td class="colFirst"><code>static <a href="../../system/reflection/Assembly.html" title="class in system.reflection">Assembly</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/Assembly.html#LoadFrom-java.lang.String-byte:A-system.configuration.assemblies.AssemblyHashAlgorithm-">LoadFrom</a></span>(java.lang.String&nbsp;assemblyFile,
         byte[]&nbsp;hashValue,
         <a href="../../system/configuration/assemblies/AssemblyHashAlgorithm.html" title="class in system.configuration.assemblies">AssemblyHashAlgorithm</a>&nbsp;hashAlgorithm)</code>&nbsp;</td>
 </tr>
-<tr id="i65" class="rowColor">
+<tr id="i70" class="altColor">
 <td class="colFirst"><code>static <a href="../../system/reflection/Assembly.html" title="class in system.reflection">Assembly</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/Assembly.html#LoadFrom-java.lang.String-org.mases.jcobridge.netreflection.JCORefOut-system.configuration.assemblies.AssemblyHashAlgorithm-">LoadFrom</a></span>(java.lang.String&nbsp;dupParam0,
         <a href="../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;dupParam1,
         <a href="../../system/configuration/assemblies/AssemblyHashAlgorithm.html" title="class in system.configuration.assemblies">AssemblyHashAlgorithm</a>&nbsp;dupParam2)</code>&nbsp;</td>
 </tr>
-<tr id="i66" class="altColor">
+<tr id="i71" class="rowColor">
 <td class="colFirst"><code><a href="../../system/reflection/Module.html" title="class in system.reflection">Module</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/Assembly.html#LoadModule-java.lang.String-byte:A-">LoadModule</a></span>(java.lang.String&nbsp;moduleName,
           byte[]&nbsp;rawModule)</code>&nbsp;</td>
 </tr>
-<tr id="i67" class="rowColor">
+<tr id="i72" class="altColor">
 <td class="colFirst"><code><a href="../../system/reflection/Module.html" title="class in system.reflection">Module</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/Assembly.html#LoadModule-java.lang.String-byte:A-byte:A-">LoadModule</a></span>(java.lang.String&nbsp;moduleName,
           byte[]&nbsp;rawModule,
           byte[]&nbsp;rawSymbolStore)</code>&nbsp;</td>
 </tr>
-<tr id="i68" class="altColor">
+<tr id="i73" class="rowColor">
 <td class="colFirst"><code><a href="../../system/reflection/Module.html" title="class in system.reflection">Module</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/Assembly.html#LoadModule-java.lang.String-org.mases.jcobridge.netreflection.JCORefOut-">LoadModule</a></span>(java.lang.String&nbsp;dupParam0,
           <a href="../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;dupParam1)</code>&nbsp;</td>
 </tr>
-<tr id="i69" class="rowColor">
+<tr id="i74" class="altColor">
 <td class="colFirst"><code><a href="../../system/reflection/Module.html" title="class in system.reflection">Module</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/Assembly.html#LoadModule-java.lang.String-org.mases.jcobridge.netreflection.JCORefOut-org.mases.jcobridge.netreflection.JCORefOut-">LoadModule</a></span>(java.lang.String&nbsp;dupParam0,
           <a href="../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;dupParam1,
           <a href="../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;dupParam2)</code>&nbsp;</td>
 </tr>
-<tr id="i70" class="altColor">
+<tr id="i75" class="rowColor">
 <td class="colFirst"><code>static <a href="../../system/reflection/Assembly.html" title="class in system.reflection">Assembly</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/Assembly.html#LoadWithPartialName-java.lang.String-">LoadWithPartialName</a></span>(java.lang.String&nbsp;partialName)</code>&nbsp;</td>
 </tr>
-<tr id="i71" class="rowColor">
+<tr id="i76" class="altColor">
 <td class="colFirst"><code>static <a href="../../system/reflection/Assembly.html" title="class in system.reflection">Assembly</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/Assembly.html#ReflectionOnlyLoad-byte:A-">ReflectionOnlyLoad</a></span>(byte[]&nbsp;rawAssembly)</code>&nbsp;</td>
 </tr>
-<tr id="i72" class="altColor">
+<tr id="i77" class="rowColor">
 <td class="colFirst"><code>static <a href="../../system/reflection/Assembly.html" title="class in system.reflection">Assembly</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/Assembly.html#ReflectionOnlyLoad-org.mases.jcobridge.netreflection.JCORefOut-">ReflectionOnlyLoad</a></span>(<a href="../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;dupParam0)</code>&nbsp;</td>
 </tr>
-<tr id="i73" class="rowColor">
+<tr id="i78" class="altColor">
 <td class="colFirst"><code>static <a href="../../system/reflection/Assembly.html" title="class in system.reflection">Assembly</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/Assembly.html#ReflectionOnlyLoad-java.lang.String-">ReflectionOnlyLoad</a></span>(java.lang.String&nbsp;assemblyString)</code>&nbsp;</td>
 </tr>
-<tr id="i74" class="altColor">
+<tr id="i79" class="rowColor">
 <td class="colFirst"><code>static <a href="../../system/reflection/Assembly.html" title="class in system.reflection">Assembly</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/Assembly.html#ReflectionOnlyLoadFrom-java.lang.String-">ReflectionOnlyLoadFrom</a></span>(java.lang.String&nbsp;assemblyFile)</code>&nbsp;</td>
 </tr>
-<tr id="i75" class="rowColor">
+<tr id="i80" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/Assembly.html#removeModuleResolve-system.reflection.ModuleResolveEventHandler-">removeModuleResolve</a></span>(<a href="../../system/reflection/ModuleResolveEventHandler.html" title="class in system.reflection">ModuleResolveEventHandler</a>&nbsp;handler)</code>&nbsp;</td>
 </tr>
-<tr id="i76" class="altColor">
+<tr id="i81" class="rowColor">
 <td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/Assembly.html#SetEntryAssembly-system.reflection.Assembly-">SetEntryAssembly</a></span>(<a href="../../system/reflection/Assembly.html" title="class in system.reflection">Assembly</a>&nbsp;assembly)</code>&nbsp;</td>
 </tr>
-<tr id="i77" class="rowColor">
+<tr id="i82" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/Assembly.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
-<tr id="i78" class="altColor">
+<tr id="i83" class="rowColor">
 <td class="colFirst"><code>static <a href="../../system/reflection/Assembly.html" title="class in system.reflection">Assembly</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/Assembly.html#UnsafeLoadFrom-java.lang.String-">UnsafeLoadFrom</a></span>(java.lang.String&nbsp;assemblyFile)</code>&nbsp;</td>
 </tr>
@@ -1032,6 +1057,36 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
 </dl>
 </li>
 </ul>
+<a name="getCustomAttributes--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getCustomAttributes</h4>
+<pre>public&nbsp;<a href="../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;getCustomAttributes()
+                                  throws java.lang.Throwable,
+                                         <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                         <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                         <a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                         <a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                         <a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                         <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                         <a href="../../system/RankException.html" title="class in system">RankException</a>,
+                                         <a href="../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../system/RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+</dl>
+</li>
+</ul>
 <a name="GetCustomAttributes-boolean-">
 <!--   -->
 </a>
@@ -1098,6 +1153,62 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
 <dd><code><a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
 <dd><code><a href="../../system/RankException.html" title="class in system">RankException</a></code></dd>
 <dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="GetCustomAttributesData--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>GetCustomAttributesData</h4>
+<pre>public&nbsp;<a href="../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;GetCustomAttributesData()
+                                throws java.lang.Throwable,
+                                       <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                       <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                       <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                       <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                       <a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                       <a href="../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                                       <a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                       <a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                       <a href="../../system/RankException.html" title="class in system">RankException</a>,
+                                       <a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../system/RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="getDefinedTypes--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getDefinedTypes</h4>
+<pre>public&nbsp;<a href="../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;getDefinedTypes()
+                              throws java.lang.Throwable,
+                                     <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                     <a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                     <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                     <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1212,6 +1323,36 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
 <dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 <dd><code><a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="getExportedTypes--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getExportedTypes</h4>
+<pre>public&nbsp;<a href="../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;getExportedTypes()
+                               throws java.lang.Throwable,
+                                      <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                      <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                      <a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                      <a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                      <a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                      <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                      <a href="../../system/RankException.html" title="class in system">RankException</a>,
+                                      <a href="../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../system/RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1955,6 +2096,36 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
 <dd><code><a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
 <dd><code><a href="../../system/RankException.html" title="class in system">RankException</a></code></dd>
 <dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="getModules--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getModules</h4>
+<pre>public&nbsp;<a href="../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;getModules()
+                         throws java.lang.Throwable,
+                                <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                <a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                <a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                <a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                <a href="../../system/RankException.html" title="class in system">RankException</a>,
+                                <a href="../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../system/RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
 </dl>
 </li>
 </ul>

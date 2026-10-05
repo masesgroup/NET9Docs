@@ -211,34 +211,37 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
 <td class="colOne"><code><span class="memberNameLink"><a href="../../system/diagnostics/StackTrace.html#StackTrace-boolean-">StackTrace</a></span>(boolean&nbsp;fNeedFileInfo)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../system/diagnostics/StackTrace.html#StackTrace-int-">StackTrace</a></span>(int&nbsp;skipFrames)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../system/diagnostics/StackTrace.html#StackTrace-system.collections.generic.IEnumerable_1-">StackTrace</a></span>(<a href="../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;frames)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../system/diagnostics/StackTrace.html#StackTrace-int-">StackTrace</a></span>(int&nbsp;skipFrames)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../system/diagnostics/StackTrace.html#StackTrace-int-boolean-">StackTrace</a></span>(int&nbsp;skipFrames,
           boolean&nbsp;fNeedFileInfo)</code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../system/diagnostics/StackTrace.html#StackTrace-org.mases.jcobridge.netreflection.NetException-">StackTrace</a></span>(<a href="../../org/mases/jcobridge/netreflection/NetException.html" title="class in org.mases.jcobridge.netreflection">NetException</a>&nbsp;e)</code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../system/diagnostics/StackTrace.html#StackTrace-org.mases.jcobridge.netreflection.NetException-boolean-">StackTrace</a></span>(<a href="../../org/mases/jcobridge/netreflection/NetException.html" title="class in org.mases.jcobridge.netreflection">NetException</a>&nbsp;e,
           boolean&nbsp;fNeedFileInfo)</code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../system/diagnostics/StackTrace.html#StackTrace-org.mases.jcobridge.netreflection.NetException-int-">StackTrace</a></span>(<a href="../../org/mases/jcobridge/netreflection/NetException.html" title="class in org.mases.jcobridge.netreflection">NetException</a>&nbsp;e,
           int&nbsp;skipFrames)</code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../system/diagnostics/StackTrace.html#StackTrace-org.mases.jcobridge.netreflection.NetException-int-boolean-">StackTrace</a></span>(<a href="../../org/mases/jcobridge/netreflection/NetException.html" title="class in org.mases.jcobridge.netreflection">NetException</a>&nbsp;e,
           int&nbsp;skipFrames,
           boolean&nbsp;fNeedFileInfo)</code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../system/diagnostics/StackTrace.html#StackTrace-java.lang.Object-">StackTrace</a></span>(java.lang.Object&nbsp;instance)</code>
 <div class="block">Internal constructor.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../system/diagnostics/StackTrace.html#StackTrace-system.diagnostics.StackFrame-">StackTrace</a></span>(<a href="../../system/diagnostics/StackFrame.html" title="class in system.diagnostics">StackFrame</a>&nbsp;frame)</code>&nbsp;</td>
 </tr>
 </table>
@@ -474,6 +477,38 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
 <dd><code><a href="../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
 <dd><code><a href="../../system/runtime/interopservices/ExternalException.html" title="class in system.runtime.interopservices">ExternalException</a></code></dd>
 <dd><code><a href="../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="StackTrace-system.collections.generic.IEnumerable_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>StackTrace</h4>
+<pre>public&nbsp;StackTrace(<a href="../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;frames)
+           throws java.lang.Throwable,
+                  <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                  <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                  <a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                  <a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                  <a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                  <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                  <a href="../../system/RankException.html" title="class in system">RankException</a>,
+                  <a href="../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                  <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../system/RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 </dl>
 </li>
 </ul>

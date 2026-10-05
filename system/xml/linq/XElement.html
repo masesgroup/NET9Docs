@@ -16,9 +16,14 @@
 <meta name="keywords" content="setJCOInstance()">
 <meta name="keywords" content="getJCOType()">
 <meta name="keywords" content="cast()">
+<meta name="keywords" content="Attributes()">
+<meta name="keywords" content="AncestorsAndSelf()">
+<meta name="keywords" content="DescendantsAndSelf()">
+<meta name="keywords" content="DescendantNodesAndSelf()">
 <meta name="keywords" content="GetPrefixOfNamespace()">
 <meta name="keywords" content="SaveAsync()">
 <meta name="keywords" content="WriteToAsync()">
+<meta name="keywords" content="LoadAsync()">
 <meta name="keywords" content="Attribute()">
 <meta name="keywords" content="Load()">
 <meta name="keywords" content="Parse()">
@@ -39,6 +44,7 @@
 <meta name="keywords" content="getHasAttributes()">
 <meta name="keywords" content="getHasElements()">
 <meta name="keywords" content="getIsEmpty()">
+<meta name="keywords" content="getEmptySequence()">
 <meta name="keywords" content="getValue()">
 <meta name="keywords" content="setValue()">
 <meta name="keywords" content="getFirstAttribute()">
@@ -58,7 +64,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":9,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":9,"i18":9,"i19":9,"i20":9,"i21":9,"i22":9,"i23":9,"i24":9,"i25":9,"i26":9,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":10,"i36":10,"i37":10,"i38":10,"i39":10,"i40":10,"i41":10,"i42":10,"i43":10,"i44":10,"i45":10,"i46":10,"i47":10,"i48":10,"i49":10,"i50":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":9,"i6":10,"i7":10,"i8":10,"i9":10,"i10":9,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":9,"i26":9,"i27":9,"i28":9,"i29":9,"i30":9,"i31":9,"i32":9,"i33":9,"i34":9,"i35":9,"i36":9,"i37":9,"i38":10,"i39":10,"i40":10,"i41":10,"i42":10,"i43":10,"i44":10,"i45":10,"i46":10,"i47":10,"i48":10,"i49":10,"i50":10,"i51":10,"i52":10,"i53":10,"i54":10,"i55":10,"i56":10,"i57":10,"i58":10,"i59":10,"i60":10,"i61":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -165,13 +171,12 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>, <a href="../../../system/xml/serialization/IXmlSerializable.html" title="interface in system.xml.serialization">IXmlSerializable</a></dd>
+<dd><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></dd>
 </dl>
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">XElement</span>
-extends <a href="../../../system/xml/linq/XContainer.html" title="class in system.xml.linq">XContainer</a>
-implements <a href="../../../system/xml/serialization/IXmlSerializable.html" title="interface in system.xml.serialization">IXmlSerializable</a></pre>
+extends <a href="../../../system/xml/linq/XContainer.html" title="class in system.xml.linq">XContainer</a></pre>
 <div class="block">The base .NET class managing System.Xml.Linq.XElement, System.Private.Xml.Linq, Version=9.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51.
  <p>
  
@@ -287,233 +292,283 @@ implements <a href="../../../system/xml/serialization/IXmlSerializable.html" tit
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code><a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/xml/linq/XElement.html#AncestorsAndSelf--">AncestorsAndSelf</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code><a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/xml/linq/XElement.html#AncestorsAndSelf-system.xml.linq.XName-">AncestorsAndSelf</a></span>(<a href="../../../system/xml/linq/XName.html" title="class in system.xml.linq">XName</a>&nbsp;name)</code>&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../../system/xml/linq/XAttribute.html" title="class in system.xml.linq">XAttribute</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/xml/linq/XElement.html#Attribute-system.xml.linq.XName-">Attribute</a></span>(<a href="../../../system/xml/linq/XName.html" title="class in system.xml.linq">XName</a>&nbsp;name)</code>&nbsp;</td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code><a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/xml/linq/XElement.html#Attributes--">Attributes</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code><a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/xml/linq/XElement.html#Attributes-system.xml.linq.XName-">Attributes</a></span>(<a href="../../../system/xml/linq/XName.html" title="class in system.xml.linq">XName</a>&nbsp;name)</code>&nbsp;</td>
+</tr>
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../system/xml/linq/XElement.html" title="class in system.xml.linq">XElement</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/xml/linq/XElement.html#cast-org.mases.jcobridge.netreflection.IJCOBridgeReflected-">cast</a></span>(<a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&nbsp;from)</code>
 <div class="block">Try to cast the <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection"><code>IJCOBridgeReflected</code></a> instance into <a href="../../../system/xml/linq/XElement.html" title="class in system.xml.linq"><code>XElement</code></a>, a cast assert is made to check if types are compatible.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i6" class="altColor">
+<td class="colFirst"><code><a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/xml/linq/XElement.html#DescendantNodesAndSelf--">DescendantNodesAndSelf</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code><a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/xml/linq/XElement.html#DescendantsAndSelf--">DescendantsAndSelf</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i8" class="altColor">
+<td class="colFirst"><code><a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/xml/linq/XElement.html#DescendantsAndSelf-system.xml.linq.XName-">DescendantsAndSelf</a></span>(<a href="../../../system/xml/linq/XName.html" title="class in system.xml.linq">XName</a>&nbsp;name)</code>&nbsp;</td>
+</tr>
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/xml/linq/XNamespace.html" title="class in system.xml.linq">XNamespace</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/xml/linq/XElement.html#GetDefaultNamespace--">GetDefaultNamespace</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i10" class="altColor">
+<td class="colFirst"><code>static <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/xml/linq/XElement.html#getEmptySequence--">getEmptySequence</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/xml/linq/XAttribute.html" title="class in system.xml.linq">XAttribute</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/xml/linq/XElement.html#getFirstAttribute--">getFirstAttribute</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/xml/linq/XElement.html#getHasAttributes--">getHasAttributes</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/xml/linq/XElement.html#getHasElements--">getHasElements</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/xml/linq/XElement.html#getIsEmpty--">getIsEmpty</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/xml/linq/XElement.html#getJCOAssemblyName--">getJCOAssemblyName</a></span>()</code>
 <div class="block">Returns the reflected Assembly name</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/xml/linq/XElement.html#getJCOClassName--">getJCOClassName</a></span>()</code>
 <div class="block">Returns the reflected Class name</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/xml/linq/XElement.html#getJCOInstance--">getJCOInstance</a></span>()</code>
 <div class="block">Returns the instantiated class</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/xml/linq/XElement.html#getJCOObjectName--">getJCOObjectName</a></span>()</code>
 <div class="block">Returns the reflected Class name used to build the object</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>org.mases.jcobridge.JCType</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/xml/linq/XElement.html#getJCOType--">getJCOType</a></span>()</code>
 <div class="block">Returns the instantiated class Type</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code><a href="../../../system/xml/linq/XAttribute.html" title="class in system.xml.linq">XAttribute</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/xml/linq/XElement.html#getLastAttribute--">getLastAttribute</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/xml/linq/XName.html" title="class in system.xml.linq">XName</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/xml/linq/XElement.html#getName--">getName</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i22" class="altColor">
 <td class="colFirst"><code><a href="../../../system/xml/linq/XNamespace.html" title="class in system.xml.linq">XNamespace</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/xml/linq/XElement.html#GetNamespaceOfPrefix-java.lang.String-">GetNamespaceOfPrefix</a></span>(java.lang.String&nbsp;prefix)</code>&nbsp;</td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/xml/linq/XElement.html#GetPrefixOfNamespace-system.xml.linq.XNamespace-">GetPrefixOfNamespace</a></span>(<a href="../../../system/xml/linq/XNamespace.html" title="class in system.xml.linq">XNamespace</a>&nbsp;ns)</code>&nbsp;</td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/xml/linq/XElement.html#getValue--">getValue</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../system/xml/linq/XElement.html" title="class in system.xml.linq">XElement</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/xml/linq/XElement.html#Load-system.io.Stream-">Load</a></span>(<a href="../../../system/io/Stream.html" title="class in system.io">Stream</a>&nbsp;stream)</code>&nbsp;</td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i26" class="altColor">
 <td class="colFirst"><code>static <a href="../../../system/xml/linq/XElement.html" title="class in system.xml.linq">XElement</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/xml/linq/XElement.html#Load-system.io.Stream-system.xml.linq.LoadOptions-">Load</a></span>(<a href="../../../system/io/Stream.html" title="class in system.io">Stream</a>&nbsp;stream,
     <a href="../../../system/xml/linq/LoadOptions.html" title="class in system.xml.linq">LoadOptions</a>&nbsp;options)</code>&nbsp;</td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i27" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../system/xml/linq/XElement.html" title="class in system.xml.linq">XElement</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/xml/linq/XElement.html#Load-java.lang.String-">Load</a></span>(java.lang.String&nbsp;uri)</code>&nbsp;</td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i28" class="altColor">
 <td class="colFirst"><code>static <a href="../../../system/xml/linq/XElement.html" title="class in system.xml.linq">XElement</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/xml/linq/XElement.html#Load-java.lang.String-system.xml.linq.LoadOptions-">Load</a></span>(java.lang.String&nbsp;uri,
     <a href="../../../system/xml/linq/LoadOptions.html" title="class in system.xml.linq">LoadOptions</a>&nbsp;options)</code>&nbsp;</td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i29" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../system/xml/linq/XElement.html" title="class in system.xml.linq">XElement</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/xml/linq/XElement.html#Load-system.io.TextReader-">Load</a></span>(<a href="../../../system/io/TextReader.html" title="class in system.io">TextReader</a>&nbsp;textReader)</code>&nbsp;</td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i30" class="altColor">
 <td class="colFirst"><code>static <a href="../../../system/xml/linq/XElement.html" title="class in system.xml.linq">XElement</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/xml/linq/XElement.html#Load-system.io.TextReader-system.xml.linq.LoadOptions-">Load</a></span>(<a href="../../../system/io/TextReader.html" title="class in system.io">TextReader</a>&nbsp;textReader,
     <a href="../../../system/xml/linq/LoadOptions.html" title="class in system.xml.linq">LoadOptions</a>&nbsp;options)</code>&nbsp;</td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i31" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../system/xml/linq/XElement.html" title="class in system.xml.linq">XElement</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/xml/linq/XElement.html#Load-system.xml.XmlReader-">Load</a></span>(<a href="../../../system/xml/XmlReader.html" title="class in system.xml">XmlReader</a>&nbsp;reader)</code>&nbsp;</td>
 </tr>
-<tr id="i24" class="altColor">
+<tr id="i32" class="altColor">
 <td class="colFirst"><code>static <a href="../../../system/xml/linq/XElement.html" title="class in system.xml.linq">XElement</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/xml/linq/XElement.html#Load-system.xml.XmlReader-system.xml.linq.LoadOptions-">Load</a></span>(<a href="../../../system/xml/XmlReader.html" title="class in system.xml">XmlReader</a>&nbsp;reader,
     <a href="../../../system/xml/linq/LoadOptions.html" title="class in system.xml.linq">LoadOptions</a>&nbsp;options)</code>&nbsp;</td>
 </tr>
-<tr id="i25" class="rowColor">
+<tr id="i33" class="rowColor">
+<td class="colFirst"><code>static <a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/xml/linq/XElement.html#LoadAsync-system.io.Stream-system.xml.linq.LoadOptions-system.threading.CancellationToken-">LoadAsync</a></span>(<a href="../../../system/io/Stream.html" title="class in system.io">Stream</a>&nbsp;stream,
+         <a href="../../../system/xml/linq/LoadOptions.html" title="class in system.xml.linq">LoadOptions</a>&nbsp;options,
+         <a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)</code>&nbsp;</td>
+</tr>
+<tr id="i34" class="altColor">
+<td class="colFirst"><code>static <a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/xml/linq/XElement.html#LoadAsync-system.io.TextReader-system.xml.linq.LoadOptions-system.threading.CancellationToken-">LoadAsync</a></span>(<a href="../../../system/io/TextReader.html" title="class in system.io">TextReader</a>&nbsp;textReader,
+         <a href="../../../system/xml/linq/LoadOptions.html" title="class in system.xml.linq">LoadOptions</a>&nbsp;options,
+         <a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)</code>&nbsp;</td>
+</tr>
+<tr id="i35" class="rowColor">
+<td class="colFirst"><code>static <a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/xml/linq/XElement.html#LoadAsync-system.xml.XmlReader-system.xml.linq.LoadOptions-system.threading.CancellationToken-">LoadAsync</a></span>(<a href="../../../system/xml/XmlReader.html" title="class in system.xml">XmlReader</a>&nbsp;reader,
+         <a href="../../../system/xml/linq/LoadOptions.html" title="class in system.xml.linq">LoadOptions</a>&nbsp;options,
+         <a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)</code>&nbsp;</td>
+</tr>
+<tr id="i36" class="altColor">
 <td class="colFirst"><code>static <a href="../../../system/xml/linq/XElement.html" title="class in system.xml.linq">XElement</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/xml/linq/XElement.html#Parse-java.lang.String-">Parse</a></span>(java.lang.String&nbsp;text)</code>&nbsp;</td>
 </tr>
-<tr id="i26" class="altColor">
+<tr id="i37" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../system/xml/linq/XElement.html" title="class in system.xml.linq">XElement</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/xml/linq/XElement.html#Parse-java.lang.String-system.xml.linq.LoadOptions-">Parse</a></span>(java.lang.String&nbsp;text,
      <a href="../../../system/xml/linq/LoadOptions.html" title="class in system.xml.linq">LoadOptions</a>&nbsp;options)</code>&nbsp;</td>
 </tr>
-<tr id="i27" class="rowColor">
+<tr id="i38" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/xml/linq/XElement.html#RemoveAll--">RemoveAll</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i28" class="altColor">
+<tr id="i39" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/xml/linq/XElement.html#RemoveAttributes--">RemoveAttributes</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i29" class="rowColor">
+<tr id="i40" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/xml/linq/XElement.html#ReplaceAll-org.mases.jcobridge.netreflection.NetObject...-">ReplaceAll</a></span>(<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>...&nbsp;content)</code>&nbsp;</td>
 </tr>
-<tr id="i30" class="altColor">
+<tr id="i41" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/xml/linq/XElement.html#ReplaceAll-org.mases.jcobridge.netreflection.NetObject-">ReplaceAll</a></span>(<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;content)</code>&nbsp;</td>
 </tr>
-<tr id="i31" class="rowColor">
+<tr id="i42" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/xml/linq/XElement.html#ReplaceAttributes-org.mases.jcobridge.netreflection.NetObject...-">ReplaceAttributes</a></span>(<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>...&nbsp;content)</code>&nbsp;</td>
 </tr>
-<tr id="i32" class="altColor">
+<tr id="i43" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/xml/linq/XElement.html#ReplaceAttributes-org.mases.jcobridge.netreflection.NetObject-">ReplaceAttributes</a></span>(<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;content)</code>&nbsp;</td>
 </tr>
-<tr id="i33" class="rowColor">
+<tr id="i44" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/xml/linq/XElement.html#Save-system.io.Stream-">Save</a></span>(<a href="../../../system/io/Stream.html" title="class in system.io">Stream</a>&nbsp;stream)</code>&nbsp;</td>
 </tr>
-<tr id="i34" class="altColor">
+<tr id="i45" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/xml/linq/XElement.html#Save-system.io.Stream-system.xml.linq.SaveOptions-">Save</a></span>(<a href="../../../system/io/Stream.html" title="class in system.io">Stream</a>&nbsp;stream,
     <a href="../../../system/xml/linq/SaveOptions.html" title="class in system.xml.linq">SaveOptions</a>&nbsp;options)</code>&nbsp;</td>
 </tr>
-<tr id="i35" class="rowColor">
+<tr id="i46" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/xml/linq/XElement.html#Save-java.lang.String-">Save</a></span>(java.lang.String&nbsp;fileName)</code>&nbsp;</td>
 </tr>
-<tr id="i36" class="altColor">
+<tr id="i47" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/xml/linq/XElement.html#Save-java.lang.String-system.xml.linq.SaveOptions-">Save</a></span>(java.lang.String&nbsp;fileName,
     <a href="../../../system/xml/linq/SaveOptions.html" title="class in system.xml.linq">SaveOptions</a>&nbsp;options)</code>&nbsp;</td>
 </tr>
-<tr id="i37" class="rowColor">
+<tr id="i48" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/xml/linq/XElement.html#Save-system.io.TextWriter-">Save</a></span>(<a href="../../../system/io/TextWriter.html" title="class in system.io">TextWriter</a>&nbsp;textWriter)</code>&nbsp;</td>
 </tr>
-<tr id="i38" class="altColor">
+<tr id="i49" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/xml/linq/XElement.html#Save-system.io.TextWriter-system.xml.linq.SaveOptions-">Save</a></span>(<a href="../../../system/io/TextWriter.html" title="class in system.io">TextWriter</a>&nbsp;textWriter,
     <a href="../../../system/xml/linq/SaveOptions.html" title="class in system.xml.linq">SaveOptions</a>&nbsp;options)</code>&nbsp;</td>
 </tr>
-<tr id="i39" class="rowColor">
+<tr id="i50" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/xml/linq/XElement.html#Save-system.xml.XmlWriter-">Save</a></span>(<a href="../../../system/xml/XmlWriter.html" title="class in system.xml">XmlWriter</a>&nbsp;writer)</code>&nbsp;</td>
 </tr>
-<tr id="i40" class="altColor">
+<tr id="i51" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/threading/tasks/Task.html" title="class in system.threading.tasks">Task</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/xml/linq/XElement.html#SaveAsync-system.io.Stream-system.xml.linq.SaveOptions-system.threading.CancellationToken-">SaveAsync</a></span>(<a href="../../../system/io/Stream.html" title="class in system.io">Stream</a>&nbsp;stream,
          <a href="../../../system/xml/linq/SaveOptions.html" title="class in system.xml.linq">SaveOptions</a>&nbsp;options,
          <a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)</code>&nbsp;</td>
 </tr>
-<tr id="i41" class="rowColor">
+<tr id="i52" class="altColor">
 <td class="colFirst"><code><a href="../../../system/threading/tasks/Task.html" title="class in system.threading.tasks">Task</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/xml/linq/XElement.html#SaveAsync-system.io.TextWriter-system.xml.linq.SaveOptions-system.threading.CancellationToken-">SaveAsync</a></span>(<a href="../../../system/io/TextWriter.html" title="class in system.io">TextWriter</a>&nbsp;textWriter,
          <a href="../../../system/xml/linq/SaveOptions.html" title="class in system.xml.linq">SaveOptions</a>&nbsp;options,
          <a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)</code>&nbsp;</td>
 </tr>
-<tr id="i42" class="altColor">
+<tr id="i53" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/threading/tasks/Task.html" title="class in system.threading.tasks">Task</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/xml/linq/XElement.html#SaveAsync-system.xml.XmlWriter-system.threading.CancellationToken-">SaveAsync</a></span>(<a href="../../../system/xml/XmlWriter.html" title="class in system.xml">XmlWriter</a>&nbsp;writer,
          <a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)</code>&nbsp;</td>
 </tr>
-<tr id="i43" class="rowColor">
+<tr id="i54" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/xml/linq/XElement.html#SetAttributeValue-system.xml.linq.XName-org.mases.jcobridge.netreflection.NetObject-">SetAttributeValue</a></span>(<a href="../../../system/xml/linq/XName.html" title="class in system.xml.linq">XName</a>&nbsp;name,
                  <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;value)</code>&nbsp;</td>
 </tr>
-<tr id="i44" class="altColor">
+<tr id="i55" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/xml/linq/XElement.html#SetElementValue-system.xml.linq.XName-org.mases.jcobridge.netreflection.NetObject-">SetElementValue</a></span>(<a href="../../../system/xml/linq/XName.html" title="class in system.xml.linq">XName</a>&nbsp;name,
                <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;value)</code>&nbsp;</td>
 </tr>
-<tr id="i45" class="rowColor">
+<tr id="i56" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/xml/linq/XElement.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
-<tr id="i46" class="altColor">
+<tr id="i57" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/xml/linq/XElement.html#setName-system.xml.linq.XName-">setName</a></span>(<a href="../../../system/xml/linq/XName.html" title="class in system.xml.linq">XName</a>&nbsp;Name)</code>&nbsp;</td>
 </tr>
-<tr id="i47" class="rowColor">
+<tr id="i58" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/xml/linq/XElement.html#SetValue-org.mases.jcobridge.netreflection.NetObject-">SetValue</a></span>(<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;value)</code>&nbsp;</td>
 </tr>
-<tr id="i48" class="altColor">
+<tr id="i59" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/xml/linq/XElement.html#setValue-java.lang.String-">setValue</a></span>(java.lang.String&nbsp;Value)</code>&nbsp;</td>
 </tr>
-<tr id="i49" class="rowColor">
+<tr id="i60" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/xml/linq/XElement.html#WriteTo-system.xml.XmlWriter-">WriteTo</a></span>(<a href="../../../system/xml/XmlWriter.html" title="class in system.xml">XmlWriter</a>&nbsp;writer)</code>&nbsp;</td>
 </tr>
-<tr id="i50" class="altColor">
+<tr id="i61" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/threading/tasks/Task.html" title="class in system.threading.tasks">Task</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/xml/linq/XElement.html#WriteToAsync-system.xml.XmlWriter-system.threading.CancellationToken-">WriteToAsync</a></span>(<a href="../../../system/xml/XmlWriter.html" title="class in system.xml">XmlWriter</a>&nbsp;writer,
             <a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)</code>&nbsp;</td>
@@ -524,21 +579,21 @@ implements <a href="../../../system/xml/serialization/IXmlSerializable.html" tit
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;system.xml.linq.<a href="../../../system/xml/linq/XContainer.html" title="class in system.xml.linq">XContainer</a></h3>
-<code><a href="../../../system/xml/linq/XContainer.html#Add-org.mases.jcobridge.netreflection.NetObject...-">Add</a>, <a href="../../../system/xml/linq/XContainer.html#Add-org.mases.jcobridge.netreflection.NetObject-">Add</a>, <a href="../../../system/xml/linq/XContainer.html#AddFirst-org.mases.jcobridge.netreflection.NetObject...-">AddFirst</a>, <a href="../../../system/xml/linq/XContainer.html#AddFirst-org.mases.jcobridge.netreflection.NetObject-">AddFirst</a>, <a href="../../../system/xml/linq/XContainer.html#CreateWriter--">CreateWriter</a>, <a href="../../../system/xml/linq/XContainer.html#Element-system.xml.linq.XName-">Element</a>, <a href="../../../system/xml/linq/XContainer.html#getFirstNode--">getFirstNode</a>, <a href="../../../system/xml/linq/XContainer.html#getLastNode--">getLastNode</a>, <a href="../../../system/xml/linq/XContainer.html#RemoveNodes--">RemoveNodes</a>, <a href="../../../system/xml/linq/XContainer.html#ReplaceNodes-org.mases.jcobridge.netreflection.NetObject...-">ReplaceNodes</a>, <a href="../../../system/xml/linq/XContainer.html#ReplaceNodes-org.mases.jcobridge.netreflection.NetObject-">ReplaceNodes</a></code></li>
+<code><a href="../../../system/xml/linq/XContainer.html#Add-org.mases.jcobridge.netreflection.NetObject...-">Add</a>, <a href="../../../system/xml/linq/XContainer.html#Add-org.mases.jcobridge.netreflection.NetObject-">Add</a>, <a href="../../../system/xml/linq/XContainer.html#AddFirst-org.mases.jcobridge.netreflection.NetObject...-">AddFirst</a>, <a href="../../../system/xml/linq/XContainer.html#AddFirst-org.mases.jcobridge.netreflection.NetObject-">AddFirst</a>, <a href="../../../system/xml/linq/XContainer.html#CreateWriter--">CreateWriter</a>, <a href="../../../system/xml/linq/XContainer.html#DescendantNodes--">DescendantNodes</a>, <a href="../../../system/xml/linq/XContainer.html#Descendants--">Descendants</a>, <a href="../../../system/xml/linq/XContainer.html#Descendants-system.xml.linq.XName-">Descendants</a>, <a href="../../../system/xml/linq/XContainer.html#Element-system.xml.linq.XName-">Element</a>, <a href="../../../system/xml/linq/XContainer.html#Elements--">Elements</a>, <a href="../../../system/xml/linq/XContainer.html#Elements-system.xml.linq.XName-">Elements</a>, <a href="../../../system/xml/linq/XContainer.html#getFirstNode--">getFirstNode</a>, <a href="../../../system/xml/linq/XContainer.html#getLastNode--">getLastNode</a>, <a href="../../../system/xml/linq/XContainer.html#Nodes--">Nodes</a>, <a href="../../../system/xml/linq/XContainer.html#RemoveNodes--">RemoveNodes</a>, <a href="../../../system/xml/linq/XContainer.html#ReplaceNodes-org.mases.jcobridge.netreflection.NetObject...-">ReplaceNodes</a>, <a href="../../../system/xml/linq/XContainer.html#ReplaceNodes-org.mases.jcobridge.netreflection.NetObject-">ReplaceNodes</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.system.xml.linq.XNode">
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;system.xml.linq.<a href="../../../system/xml/linq/XNode.html" title="class in system.xml.linq">XNode</a></h3>
-<code><a href="../../../system/xml/linq/XNode.html#AddAfterSelf-org.mases.jcobridge.netreflection.NetObject...-">AddAfterSelf</a>, <a href="../../../system/xml/linq/XNode.html#AddAfterSelf-org.mases.jcobridge.netreflection.NetObject-">AddAfterSelf</a>, <a href="../../../system/xml/linq/XNode.html#AddBeforeSelf-org.mases.jcobridge.netreflection.NetObject...-">AddBeforeSelf</a>, <a href="../../../system/xml/linq/XNode.html#AddBeforeSelf-org.mases.jcobridge.netreflection.NetObject-">AddBeforeSelf</a>, <a href="../../../system/xml/linq/XNode.html#CompareDocumentOrder-system.xml.linq.XNode-system.xml.linq.XNode-">CompareDocumentOrder</a>, <a href="../../../system/xml/linq/XNode.html#CreateReader--">CreateReader</a>, <a href="../../../system/xml/linq/XNode.html#CreateReader-system.xml.linq.ReaderOptions-">CreateReader</a>, <a href="../../../system/xml/linq/XNode.html#DeepEquals-system.xml.linq.XNode-system.xml.linq.XNode-">DeepEquals</a>, <a href="../../../system/xml/linq/XNode.html#getDocumentOrderComparer--">getDocumentOrderComparer</a>, <a href="../../../system/xml/linq/XNode.html#getEqualityComparer--">getEqualityComparer</a>, <a href="../../../system/xml/linq/XNode.html#getNextNode--">getNextNode</a>, <a href="../../../system/xml/linq/XNode.html#getPreviousNode--">getPreviousNode</a>, <a href="../../../system/xml/linq/XNode.html#IsAfter-system.xml.linq.XNode-">IsAfter</a>, <a href="../../../system/xml/linq/XNode.html#IsBefore-system.xml.linq.XNode-">IsBefore</a>, <a href="../../../system/xml/linq/XNode.html#ReadFrom-system.xml.XmlReader-">ReadFrom</a>, <a href="../../../system/xml/linq/XNode.html#Remove--">Remove</a>, <a href="../../../system/xml/linq/XNode.html#ReplaceWith-org.mases.jcobridge.netreflection.NetObject...-">ReplaceWith</a>, <a href="../../../system/xml/linq/XNode.html#ReplaceWith-org.mases.jcobridge.netreflection.NetObject-">ReplaceWith</a>, <a href="../../../system/xml/linq/XNode.html#ToString-system.xml.linq.SaveOptions-">ToString</a></code></li>
+<code><a href="../../../system/xml/linq/XNode.html#AddAfterSelf-org.mases.jcobridge.netreflection.NetObject...-">AddAfterSelf</a>, <a href="../../../system/xml/linq/XNode.html#AddAfterSelf-org.mases.jcobridge.netreflection.NetObject-">AddAfterSelf</a>, <a href="../../../system/xml/linq/XNode.html#AddBeforeSelf-org.mases.jcobridge.netreflection.NetObject...-">AddBeforeSelf</a>, <a href="../../../system/xml/linq/XNode.html#AddBeforeSelf-org.mases.jcobridge.netreflection.NetObject-">AddBeforeSelf</a>, <a href="../../../system/xml/linq/XNode.html#Ancestors--">Ancestors</a>, <a href="../../../system/xml/linq/XNode.html#Ancestors-system.xml.linq.XName-">Ancestors</a>, <a href="../../../system/xml/linq/XNode.html#CompareDocumentOrder-system.xml.linq.XNode-system.xml.linq.XNode-">CompareDocumentOrder</a>, <a href="../../../system/xml/linq/XNode.html#CreateReader--">CreateReader</a>, <a href="../../../system/xml/linq/XNode.html#CreateReader-system.xml.linq.ReaderOptions-">CreateReader</a>, <a href="../../../system/xml/linq/XNode.html#DeepEquals-system.xml.linq.XNode-system.xml.linq.XNode-">DeepEquals</a>, <a href="../../../system/xml/linq/XNode.html#ElementsAfterSelf--">ElementsAfterSelf</a>, <a href="../../../system/xml/linq/XNode.html#ElementsAfterSelf-system.xml.linq.XName-">ElementsAfterSelf</a>, <a href="../../../system/xml/linq/XNode.html#ElementsBeforeSelf--">ElementsBeforeSelf</a>, <a href="../../../system/xml/linq/XNode.html#ElementsBeforeSelf-system.xml.linq.XName-">ElementsBeforeSelf</a>, <a href="../../../system/xml/linq/XNode.html#getDocumentOrderComparer--">getDocumentOrderComparer</a>, <a href="../../../system/xml/linq/XNode.html#getEqualityComparer--">getEqualityComparer</a>, <a href="../../../system/xml/linq/XNode.html#getNextNode--">getNextNode</a>, <a href="../../../system/xml/linq/XNode.html#getPreviousNode--">getPreviousNode</a>, <a href="../../../system/xml/linq/XNode.html#IsAfter-system.xml.linq.XNode-">IsAfter</a>, <a href="../../../system/xml/linq/XNode.html#IsBefore-system.xml.linq.XNode-">IsBefore</a>, <a href="../../../system/xml/linq/XNode.html#NodesAfterSelf--">NodesAfterSelf</a>, <a href="../../../system/xml/linq/XNode.html#NodesBeforeSelf--">NodesBeforeSelf</a>, <a href="../../../system/xml/linq/XNode.html#ReadFrom-system.xml.XmlReader-">ReadFrom</a>, <a href="../../../system/xml/linq/XNode.html#ReadFromAsync-system.xml.XmlReader-system.threading.CancellationToken-">ReadFromAsync</a>, <a href="../../../system/xml/linq/XNode.html#Remove--">Remove</a>, <a href="../../../system/xml/linq/XNode.html#ReplaceWith-org.mases.jcobridge.netreflection.NetObject...-">ReplaceWith</a>, <a href="../../../system/xml/linq/XNode.html#ReplaceWith-org.mases.jcobridge.netreflection.NetObject-">ReplaceWith</a>, <a href="../../../system/xml/linq/XNode.html#ToString-system.xml.linq.SaveOptions-">ToString</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.system.xml.linq.XObject">
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;system.xml.linq.<a href="../../../system/xml/linq/XObject.html" title="class in system.xml.linq">XObject</a></h3>
-<code><a href="../../../system/xml/linq/XObject.html#AddAnnotation-org.mases.jcobridge.netreflection.NetObject-">AddAnnotation</a>, <a href="../../../system/xml/linq/XObject.html#Annotation-org.mases.jcobridge.netreflection.NetType-">Annotation</a>, <a href="../../../system/xml/linq/XObject.html#getBaseUri--">getBaseUri</a>, <a href="../../../system/xml/linq/XObject.html#getDocument--">getDocument</a>, <a href="../../../system/xml/linq/XObject.html#getNodeType--">getNodeType</a>, <a href="../../../system/xml/linq/XObject.html#getParent--">getParent</a>, <a href="../../../system/xml/linq/XObject.html#RemoveAnnotations-org.mases.jcobridge.netreflection.NetType-">RemoveAnnotations</a></code></li>
+<code><a href="../../../system/xml/linq/XObject.html#AddAnnotation-org.mases.jcobridge.netreflection.NetObject-">AddAnnotation</a>, <a href="../../../system/xml/linq/XObject.html#Annotation-org.mases.jcobridge.netreflection.NetType-">Annotation</a>, <a href="../../../system/xml/linq/XObject.html#Annotations--">Annotations</a>, <a href="../../../system/xml/linq/XObject.html#Annotations-org.mases.jcobridge.netreflection.NetType-">Annotations</a>, <a href="../../../system/xml/linq/XObject.html#getBaseUri--">getBaseUri</a>, <a href="../../../system/xml/linq/XObject.html#getDocument--">getDocument</a>, <a href="../../../system/xml/linq/XObject.html#getNodeType--">getNodeType</a>, <a href="../../../system/xml/linq/XObject.html#getParent--">getParent</a>, <a href="../../../system/xml/linq/XObject.html#RemoveAnnotations--">RemoveAnnotations</a>, <a href="../../../system/xml/linq/XObject.html#RemoveAnnotations-org.mases.jcobridge.netreflection.NetType-">RemoveAnnotations</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.org.mases.jcobridge.netreflection.NetObject">
@@ -553,13 +608,6 @@ implements <a href="../../../system/xml/serialization/IXmlSerializable.html" tit
 </a>
 <h3>Methods inherited from class&nbsp;java.lang.Object</h3>
 <code>equals, getClass, notify, notifyAll, wait, wait, wait</code></li>
-</ul>
-<ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.system.xml.serialization.IXmlSerializable">
-<!--   -->
-</a>
-<h3>Methods inherited from interface&nbsp;system.xml.serialization.<a href="../../../system/xml/serialization/IXmlSerializable.html" title="interface in system.xml.serialization">IXmlSerializable</a></h3>
-<code><a href="../../../system/xml/serialization/IXmlSerializable.html#GetSchema--">GetSchema</a>, <a href="../../../system/xml/serialization/IXmlSerializable.html#ReadXml-system.xml.XmlReader-">ReadXml</a>, <a href="../../../system/xml/serialization/IXmlSerializable.html#ToIXmlSerializable-org.mases.jcobridge.netreflection.IJCOBridgeReflected-">ToIXmlSerializable</a>, <a href="../../../system/xml/serialization/IXmlSerializable.html#WriteXml-system.xml.XmlWriter-">WriteXml</a></code></li>
 </ul>
 </li>
 </ul>
@@ -836,6 +884,34 @@ implements <a href="../../../system/xml/serialization/IXmlSerializable.html" tit
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="AncestorsAndSelf--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>AncestorsAndSelf</h4>
+<pre>public&nbsp;<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;AncestorsAndSelf()
+                               throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="AncestorsAndSelf-system.xml.linq.XName-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>AncestorsAndSelf</h4>
+<pre>public&nbsp;<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;AncestorsAndSelf(<a href="../../../system/xml/linq/XName.html" title="class in system.xml.linq">XName</a>&nbsp;name)
+                               throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
 <a name="Attribute-system.xml.linq.XName-">
 <!--   -->
 </a>
@@ -844,6 +920,34 @@ implements <a href="../../../system/xml/serialization/IXmlSerializable.html" tit
 <h4>Attribute</h4>
 <pre>public&nbsp;<a href="../../../system/xml/linq/XAttribute.html" title="class in system.xml.linq">XAttribute</a>&nbsp;Attribute(<a href="../../../system/xml/linq/XName.html" title="class in system.xml.linq">XName</a>&nbsp;name)
                      throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="Attributes--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>Attributes</h4>
+<pre>public&nbsp;<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;Attributes()
+                         throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="Attributes-system.xml.linq.XName-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>Attributes</h4>
+<pre>public&nbsp;<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;Attributes(<a href="../../../system/xml/linq/XName.html" title="class in system.xml.linq">XName</a>&nbsp;name)
+                         throws java.lang.Throwable</pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
@@ -866,6 +970,48 @@ implements <a href="../../../system/xml/serialization/IXmlSerializable.html" tit
 <dd><a href="../../../system/xml/linq/XElement.html" title="class in system.xml.linq"><code>XElement</code></a> instance</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - in case of error during cast operation</dd>
+</dl>
+</li>
+</ul>
+<a name="DescendantNodesAndSelf--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>DescendantNodesAndSelf</h4>
+<pre>public&nbsp;<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;DescendantNodesAndSelf()
+                                     throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="DescendantsAndSelf--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>DescendantsAndSelf</h4>
+<pre>public&nbsp;<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;DescendantsAndSelf()
+                                 throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="DescendantsAndSelf-system.xml.linq.XName-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>DescendantsAndSelf</h4>
+<pre>public&nbsp;<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;DescendantsAndSelf(<a href="../../../system/xml/linq/XName.html" title="class in system.xml.linq">XName</a>&nbsp;name)
+                                 throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
 </dl>
 </li>
 </ul>
@@ -892,6 +1038,20 @@ implements <a href="../../../system/xml/serialization/IXmlSerializable.html" tit
 <dd><code><a href="../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
 <dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 <dd><code><a href="../../../system/OverflowException.html" title="class in system">OverflowException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="getEmptySequence--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getEmptySequence</h4>
+<pre>public static&nbsp;<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;getEmptySequence()
+                                      throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
 </dl>
 </li>
 </ul>
@@ -963,8 +1123,6 @@ implements <a href="../../../system/xml/serialization/IXmlSerializable.html" tit
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOAssemblyName--">getJCOAssemblyName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../system/xml/serialization/IXmlSerializable.html#getJCOAssemblyName--">getJCOAssemblyName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/xml/serialization/IXmlSerializable.html" title="interface in system.xml.serialization">IXmlSerializable</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../system/xml/linq/XContainer.html#getJCOAssemblyName--">getJCOAssemblyName</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/xml/linq/XContainer.html" title="class in system.xml.linq">XContainer</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -984,8 +1142,6 @@ implements <a href="../../../system/xml/serialization/IXmlSerializable.html" tit
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOClassName--">getJCOClassName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../system/xml/serialization/IXmlSerializable.html#getJCOClassName--">getJCOClassName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/xml/serialization/IXmlSerializable.html" title="interface in system.xml.serialization">IXmlSerializable</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../system/xml/linq/XContainer.html#getJCOClassName--">getJCOClassName</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/xml/linq/XContainer.html" title="class in system.xml.linq">XContainer</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -1005,8 +1161,6 @@ implements <a href="../../../system/xml/serialization/IXmlSerializable.html" tit
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOInstance--">getJCOInstance</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../system/xml/serialization/IXmlSerializable.html#getJCOInstance--">getJCOInstance</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/xml/serialization/IXmlSerializable.html" title="interface in system.xml.serialization">IXmlSerializable</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../system/xml/linq/XContainer.html#getJCOInstance--">getJCOInstance</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/xml/linq/XContainer.html" title="class in system.xml.linq">XContainer</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -1026,8 +1180,6 @@ implements <a href="../../../system/xml/serialization/IXmlSerializable.html" tit
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOObjectName--">getJCOObjectName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../system/xml/serialization/IXmlSerializable.html#getJCOObjectName--">getJCOObjectName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/xml/serialization/IXmlSerializable.html" title="interface in system.xml.serialization">IXmlSerializable</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../system/xml/linq/XContainer.html#getJCOObjectName--">getJCOObjectName</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/xml/linq/XContainer.html" title="class in system.xml.linq">XContainer</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -1048,8 +1200,6 @@ implements <a href="../../../system/xml/serialization/IXmlSerializable.html" tit
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOType--">getJCOType</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../system/xml/serialization/IXmlSerializable.html#getJCOType--">getJCOType</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/xml/serialization/IXmlSerializable.html" title="interface in system.xml.serialization">IXmlSerializable</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../system/xml/linq/XContainer.html#getJCOType--">getJCOType</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/xml/linq/XContainer.html" title="class in system.xml.linq">XContainer</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -1468,6 +1618,92 @@ implements <a href="../../../system/xml/serialization/IXmlSerializable.html" tit
 <dd><code><a href="../../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
 <dd><code><a href="../../../system/OverflowException.html" title="class in system">OverflowException</a></code></dd>
 <dd><code><a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="LoadAsync-system.io.Stream-system.xml.linq.LoadOptions-system.threading.CancellationToken-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>LoadAsync</h4>
+<pre>public static&nbsp;<a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a>&nbsp;LoadAsync(<a href="../../../system/io/Stream.html" title="class in system.io">Stream</a>&nbsp;stream,
+                               <a href="../../../system/xml/linq/LoadOptions.html" title="class in system.xml.linq">LoadOptions</a>&nbsp;options,
+                               <a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)
+                        throws java.lang.Throwable,
+                               <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                               <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                               <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                               <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                               <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="LoadAsync-system.io.TextReader-system.xml.linq.LoadOptions-system.threading.CancellationToken-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>LoadAsync</h4>
+<pre>public static&nbsp;<a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a>&nbsp;LoadAsync(<a href="../../../system/io/TextReader.html" title="class in system.io">TextReader</a>&nbsp;textReader,
+                               <a href="../../../system/xml/linq/LoadOptions.html" title="class in system.xml.linq">LoadOptions</a>&nbsp;options,
+                               <a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)
+                        throws java.lang.Throwable,
+                               <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                               <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                               <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                               <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                               <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="LoadAsync-system.xml.XmlReader-system.xml.linq.LoadOptions-system.threading.CancellationToken-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>LoadAsync</h4>
+<pre>public static&nbsp;<a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a>&nbsp;LoadAsync(<a href="../../../system/xml/XmlReader.html" title="class in system.xml">XmlReader</a>&nbsp;reader,
+                               <a href="../../../system/xml/linq/LoadOptions.html" title="class in system.xml.linq">LoadOptions</a>&nbsp;options,
+                               <a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)
+                        throws java.lang.Throwable,
+                               <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                               <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                               <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                               <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                               <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                               <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                               <a href="../../../system/RankException.html" title="class in system">RankException</a>,
+                               <a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                               <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 </dl>
 </li>
 </ul>

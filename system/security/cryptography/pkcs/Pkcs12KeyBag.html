@@ -16,6 +16,7 @@
 <meta name="keywords" content="setJCOInstance()">
 <meta name="keywords" content="getJCOType()">
 <meta name="keywords" content="cast()">
+<meta name="keywords" content="getPkcs8PrivateKey()">
 <link rel="stylesheet" type="text/css" href="../../../../stylesheet.css" title="Style">
 <script type="text/javascript" src="../../../../script.js"></script>
 </head>
@@ -29,7 +30,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -214,6 +215,10 @@ extends <a href="../../../../system/security/cryptography/pkcs/Pkcs12SafeBag.htm
 <div class="block">Internal constructor.</div>
 </td>
 </tr>
+<tr class="altColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../system/security/cryptography/pkcs/Pkcs12KeyBag.html#Pkcs12KeyBag-system.ReadOnlyMemory_1-boolean-">Pkcs12KeyBag</a></span>(<a href="../../../../system/ReadOnlyMemory_1.html" title="class in system">ReadOnlyMemory_1</a>&nbsp;pkcs8PrivateKey,
+            boolean&nbsp;skipCopy)</code>&nbsp;</td>
+</tr>
 </table>
 </li>
 </ul>
@@ -266,6 +271,10 @@ extends <a href="../../../../system/security/cryptography/pkcs/Pkcs12SafeBag.htm
 </td>
 </tr>
 <tr id="i6" class="altColor">
+<td class="colFirst"><code><a href="../../../../system/ReadOnlyMemory_1.html" title="class in system">ReadOnlyMemory_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/security/cryptography/pkcs/Pkcs12KeyBag.html#getPkcs8PrivateKey--">getPkcs8PrivateKey</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/security/cryptography/pkcs/Pkcs12KeyBag.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
@@ -275,7 +284,7 @@ extends <a href="../../../../system/security/cryptography/pkcs/Pkcs12SafeBag.htm
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;system.security.cryptography.pkcs.<a href="../../../../system/security/cryptography/pkcs/Pkcs12SafeBag.html" title="class in system.security.cryptography.pkcs">Pkcs12SafeBag</a></h3>
-<code><a href="../../../../system/security/cryptography/pkcs/Pkcs12SafeBag.html#Encode--">Encode</a>, <a href="../../../../system/security/cryptography/pkcs/Pkcs12SafeBag.html#getAttributes--">getAttributes</a>, <a href="../../../../system/security/cryptography/pkcs/Pkcs12SafeBag.html#GetBagId--">GetBagId</a>, <a href="../../../../system/security/cryptography/pkcs/Pkcs12SafeBag.html#setAttributes-system.security.cryptography.CryptographicAttributeObjectCollection-">setAttributes</a></code></li>
+<code><a href="../../../../system/security/cryptography/pkcs/Pkcs12SafeBag.html#Encode--">Encode</a>, <a href="../../../../system/security/cryptography/pkcs/Pkcs12SafeBag.html#getAttributes--">getAttributes</a>, <a href="../../../../system/security/cryptography/pkcs/Pkcs12SafeBag.html#GetBagId--">GetBagId</a>, <a href="../../../../system/security/cryptography/pkcs/Pkcs12SafeBag.html#getEncodedBagValue--">getEncodedBagValue</a>, <a href="../../../../system/security/cryptography/pkcs/Pkcs12SafeBag.html#setAttributes-system.security.cryptography.CryptographicAttributeObjectCollection-">setAttributes</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.org.mases.jcobridge.netreflection.NetObject">
@@ -382,7 +391,7 @@ extends <a href="../../../../system/security/cryptography/pkcs/Pkcs12SafeBag.htm
 <a name="Pkcs12KeyBag-java.lang.Object-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>Pkcs12KeyBag</h4>
 <pre>public&nbsp;Pkcs12KeyBag(java.lang.Object&nbsp;instance)
@@ -391,6 +400,45 @@ extends <a href="../../../../system/security/cryptography/pkcs/Pkcs12SafeBag.htm
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="Pkcs12KeyBag-system.ReadOnlyMemory_1-boolean-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>Pkcs12KeyBag</h4>
+<pre>public&nbsp;Pkcs12KeyBag(<a href="../../../../system/ReadOnlyMemory_1.html" title="class in system">ReadOnlyMemory_1</a>&nbsp;pkcs8PrivateKey,
+                    boolean&nbsp;skipCopy)
+             throws java.lang.Throwable,
+                    <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                    <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                    <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                    <a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                    <a href="../../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                    <a href="../../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                    <a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                    <a href="../../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                    <a href="../../../../system/RankException.html" title="class in system">RankException</a>,
+                    <a href="../../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                    <a href="../../../../system/formats/asn1/AsnContentException.html" title="class in system.formats.asn1">AsnContentException</a>,
+                    <a href="../../../../system/security/cryptography/CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../../system/RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../../system/formats/asn1/AsnContentException.html" title="class in system.formats.asn1">AsnContentException</a></code></dd>
+<dd><code><a href="../../../../system/security/cryptography/CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -514,6 +562,20 @@ extends <a href="../../../../system/security/cryptography/pkcs/Pkcs12SafeBag.htm
 <dd><code><a href="../../../../system/security/cryptography/pkcs/Pkcs12SafeBag.html#getJCOType--">getJCOType</a></code>&nbsp;in class&nbsp;<code><a href="../../../../system/security/cryptography/pkcs/Pkcs12SafeBag.html" title="class in system.security.cryptography.pkcs">Pkcs12SafeBag</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>A <code>JCType</code> representing the CLR Type of the instantiated Class</dd>
+</dl>
+</li>
+</ul>
+<a name="getPkcs8PrivateKey--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getPkcs8PrivateKey</h4>
+<pre>public&nbsp;<a href="../../../../system/ReadOnlyMemory_1.html" title="class in system">ReadOnlyMemory_1</a>&nbsp;getPkcs8PrivateKey()
+                                    throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
 </dl>
 </li>
 </ul>

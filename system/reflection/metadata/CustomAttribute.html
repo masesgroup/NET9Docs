@@ -16,6 +16,7 @@
 <meta name="keywords" content="setJCOInstance()">
 <meta name="keywords" content="getJCOType()">
 <meta name="keywords" content="cast()">
+<meta name="keywords" content="DecodeValue()">
 <meta name="keywords" content="getValue()">
 <meta name="keywords" content="getConstructor()">
 <meta name="keywords" content="getParent()">
@@ -32,7 +33,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -239,48 +240,52 @@ extends <a href="../../../system/ValueType.html" title="class in system">ValueTy
 </td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code>&lt;TType extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;<br><a href="../../../system/reflection/metadata/CustomAttributeValue_1.html" title="class in system.reflection.metadata">CustomAttributeValue_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/reflection/metadata/CustomAttribute.html#DecodeValue-system.reflection.metadata.ICustomAttributeTypeProvider_1-">DecodeValue</a></span>(<a href="../../../system/reflection/metadata/ICustomAttributeTypeProvider_1.html" title="interface in system.reflection.metadata">ICustomAttributeTypeProvider_1</a>&nbsp;provider)</code>&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../../system/reflection/metadata/EntityHandle.html" title="class in system.reflection.metadata">EntityHandle</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/reflection/metadata/CustomAttribute.html#getConstructor--">getConstructor</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/reflection/metadata/CustomAttribute.html#getJCOAssemblyName--">getJCOAssemblyName</a></span>()</code>
 <div class="block">Returns the reflected Assembly name</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/reflection/metadata/CustomAttribute.html#getJCOClassName--">getJCOClassName</a></span>()</code>
 <div class="block">Returns the reflected Class name</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/reflection/metadata/CustomAttribute.html#getJCOInstance--">getJCOInstance</a></span>()</code>
 <div class="block">Returns the instantiated class</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/reflection/metadata/CustomAttribute.html#getJCOObjectName--">getJCOObjectName</a></span>()</code>
 <div class="block">Returns the reflected Class name used to build the object</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>org.mases.jcobridge.JCType</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/reflection/metadata/CustomAttribute.html#getJCOType--">getJCOType</a></span>()</code>
 <div class="block">Returns the instantiated class Type</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../../../system/reflection/metadata/EntityHandle.html" title="class in system.reflection.metadata">EntityHandle</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/reflection/metadata/CustomAttribute.html#getParent--">getParent</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/reflection/metadata/BlobHandle.html" title="class in system.reflection.metadata">BlobHandle</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/reflection/metadata/CustomAttribute.html#getValue--">getValue</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/reflection/metadata/CustomAttribute.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
@@ -426,6 +431,38 @@ extends <a href="../../../system/ValueType.html" title="class in system">ValueTy
 <dd><a href="../../../system/reflection/metadata/CustomAttribute.html" title="class in system.reflection.metadata"><code>CustomAttribute</code></a> instance</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - in case of error during cast operation</dd>
+</dl>
+</li>
+</ul>
+<a name="DecodeValue-system.reflection.metadata.ICustomAttributeTypeProvider_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>DecodeValue</h4>
+<pre>public&nbsp;&lt;TType extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;&nbsp;<a href="../../../system/reflection/metadata/CustomAttributeValue_1.html" title="class in system.reflection.metadata">CustomAttributeValue_1</a>&nbsp;DecodeValue(<a href="../../../system/reflection/metadata/ICustomAttributeTypeProvider_1.html" title="interface in system.reflection.metadata">ICustomAttributeTypeProvider_1</a>&nbsp;provider)
+                                                                       throws java.lang.Throwable,
+                                                                              <a href="../../../system/BadImageFormatException.html" title="class in system">BadImageFormatException</a>,
+                                                                              <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                                                              <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                                                              <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                                              <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                                                              <a href="../../../system/InvalidCastException.html" title="class in system">InvalidCastException</a>,
+                                                                              <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                                                              <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                                              <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/BadImageFormatException.html" title="class in system">BadImageFormatException</a></code></dd>
+<dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/InvalidCastException.html" title="class in system">InvalidCastException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 </dl>
 </li>
 </ul>

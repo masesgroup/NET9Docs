@@ -16,6 +16,7 @@
 <meta name="keywords" content="setJCOInstance()">
 <meta name="keywords" content="getJCOType()">
 <meta name="keywords" content="cast()">
+<meta name="keywords" content="GetXamlNamespaces()">
 <meta name="keywords" content="getAllowedLocation()">
 <link rel="stylesheet" type="text/css" href="../../stylesheet.css" title="Style">
 <script type="text/javascript" src="../../script.js"></script>
@@ -30,7 +31,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -211,11 +212,18 @@ extends <a href="../../system/xaml/XamlMember.html" title="class in system.xaml"
 <td class="colOne"><code><span class="memberNameLink"><a href="../../system/xaml/XamlDirective.html#XamlDirective--">XamlDirective</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../system/xaml/XamlDirective.html#XamlDirective-system.collections.generic.IEnumerable_1-java.lang.String-system.xaml.XamlType-system.xaml.schema.XamlValueConverter_1-system.xaml.schema.AllowedMemberLocations-">XamlDirective</a></span>(<a href="../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;xamlNamespaces,
+             java.lang.String&nbsp;name,
+             <a href="../../system/xaml/XamlType.html" title="class in system.xaml">XamlType</a>&nbsp;xamlType,
+             <a href="../../system/xaml/schema/XamlValueConverter_1.html" title="class in system.xaml.schema">XamlValueConverter_1</a>&nbsp;typeConverter,
+             <a href="../../system/xaml/schema/AllowedMemberLocations.html" title="class in system.xaml.schema">AllowedMemberLocations</a>&nbsp;allowedLocation)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../system/xaml/XamlDirective.html#XamlDirective-java.lang.Object-">XamlDirective</a></span>(java.lang.Object&nbsp;instance)</code>
 <div class="block">Internal constructor.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../system/xaml/XamlDirective.html#XamlDirective-java.lang.String-java.lang.String-">XamlDirective</a></span>(java.lang.String&nbsp;xamlNamespace,
              java.lang.String&nbsp;name)</code>&nbsp;</td>
 </tr>
@@ -275,6 +283,10 @@ extends <a href="../../system/xaml/XamlMember.html" title="class in system.xaml"
 </td>
 </tr>
 <tr id="i7" class="rowColor">
+<td class="colFirst"><code><a href="../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/xaml/XamlDirective.html#GetXamlNamespaces--">GetXamlNamespaces</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/xaml/XamlDirective.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
@@ -284,7 +296,7 @@ extends <a href="../../system/xaml/XamlMember.html" title="class in system.xaml"
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;system.xaml.<a href="../../system/xaml/XamlMember.html" title="class in system.xaml">XamlMember</a></h3>
-<code><a href="../../system/xaml/XamlMember.html#Equals-system.xaml.XamlMember-">Equals</a>, <a href="../../system/xaml/XamlMember.html#getDeclaringType--">getDeclaringType</a>, <a href="../../system/xaml/XamlMember.html#getInvoker--">getInvoker</a>, <a href="../../system/xaml/XamlMember.html#getIsAmbient--">getIsAmbient</a>, <a href="../../system/xaml/XamlMember.html#getIsAttachable--">getIsAttachable</a>, <a href="../../system/xaml/XamlMember.html#getIsDirective--">getIsDirective</a>, <a href="../../system/xaml/XamlMember.html#getIsEvent--">getIsEvent</a>, <a href="../../system/xaml/XamlMember.html#getIsNameValid--">getIsNameValid</a>, <a href="../../system/xaml/XamlMember.html#getIsReadOnly--">getIsReadOnly</a>, <a href="../../system/xaml/XamlMember.html#getIsReadPublic--">getIsReadPublic</a>, <a href="../../system/xaml/XamlMember.html#getIsUnknown--">getIsUnknown</a>, <a href="../../system/xaml/XamlMember.html#getIsWriteOnly--">getIsWriteOnly</a>, <a href="../../system/xaml/XamlMember.html#getIsWritePublic--">getIsWritePublic</a>, <a href="../../system/xaml/XamlMember.html#getName--">getName</a>, <a href="../../system/xaml/XamlMember.html#getPreferredXamlNamespace--">getPreferredXamlNamespace</a>, <a href="../../system/xaml/XamlMember.html#getSerializationVisibility--">getSerializationVisibility</a>, <a href="../../system/xaml/XamlMember.html#getTargetType--">getTargetType</a>, <a href="../../system/xaml/XamlMember.html#getType--">getType</a>, <a href="../../system/xaml/XamlMember.html#getUnderlyingMember--">getUnderlyingMember</a></code></li>
+<code><a href="../../system/xaml/XamlMember.html#Equals-system.xaml.XamlMember-">Equals</a>, <a href="../../system/xaml/XamlMember.html#getDeclaringType--">getDeclaringType</a>, <a href="../../system/xaml/XamlMember.html#getDeferringLoader--">getDeferringLoader</a>, <a href="../../system/xaml/XamlMember.html#getDependsOn--">getDependsOn</a>, <a href="../../system/xaml/XamlMember.html#getInvoker--">getInvoker</a>, <a href="../../system/xaml/XamlMember.html#getIsAmbient--">getIsAmbient</a>, <a href="../../system/xaml/XamlMember.html#getIsAttachable--">getIsAttachable</a>, <a href="../../system/xaml/XamlMember.html#getIsDirective--">getIsDirective</a>, <a href="../../system/xaml/XamlMember.html#getIsEvent--">getIsEvent</a>, <a href="../../system/xaml/XamlMember.html#getIsNameValid--">getIsNameValid</a>, <a href="../../system/xaml/XamlMember.html#getIsReadOnly--">getIsReadOnly</a>, <a href="../../system/xaml/XamlMember.html#getIsReadPublic--">getIsReadPublic</a>, <a href="../../system/xaml/XamlMember.html#getIsUnknown--">getIsUnknown</a>, <a href="../../system/xaml/XamlMember.html#getIsWriteOnly--">getIsWriteOnly</a>, <a href="../../system/xaml/XamlMember.html#getIsWritePublic--">getIsWritePublic</a>, <a href="../../system/xaml/XamlMember.html#getMarkupExtensionBracketCharacters--">getMarkupExtensionBracketCharacters</a>, <a href="../../system/xaml/XamlMember.html#getName--">getName</a>, <a href="../../system/xaml/XamlMember.html#getPreferredXamlNamespace--">getPreferredXamlNamespace</a>, <a href="../../system/xaml/XamlMember.html#getSerializationVisibility--">getSerializationVisibility</a>, <a href="../../system/xaml/XamlMember.html#getTargetType--">getTargetType</a>, <a href="../../system/xaml/XamlMember.html#getType--">getType</a>, <a href="../../system/xaml/XamlMember.html#getTypeConverter--">getTypeConverter</a>, <a href="../../system/xaml/XamlMember.html#getUnderlyingMember--">getUnderlyingMember</a>, <a href="../../system/xaml/XamlMember.html#getValueSerializer--">getValueSerializer</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.org.mases.jcobridge.netreflection.NetObject">
@@ -385,6 +397,50 @@ extends <a href="../../system/xaml/XamlMember.html" title="class in system.xaml"
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="XamlDirective-system.collections.generic.IEnumerable_1-java.lang.String-system.xaml.XamlType-system.xaml.schema.XamlValueConverter_1-system.xaml.schema.AllowedMemberLocations-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>XamlDirective</h4>
+<pre>public&nbsp;XamlDirective(<a href="../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;xamlNamespaces,
+                     java.lang.String&nbsp;name,
+                     <a href="../../system/xaml/XamlType.html" title="class in system.xaml">XamlType</a>&nbsp;xamlType,
+                     <a href="../../system/xaml/schema/XamlValueConverter_1.html" title="class in system.xaml.schema">XamlValueConverter_1</a>&nbsp;typeConverter,
+                     <a href="../../system/xaml/schema/AllowedMemberLocations.html" title="class in system.xaml.schema">AllowedMemberLocations</a>&nbsp;allowedLocation)
+              throws java.lang.Throwable,
+                     <a href="../../system/MissingMemberException.html" title="class in system">MissingMemberException</a>,
+                     <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                     <a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                     <a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                     <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                     <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                     <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                     <a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                     <a href="../../system/RankException.html" title="class in system">RankException</a>,
+                     <a href="../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                     <a href="../../system/InvalidCastException.html" title="class in system">InvalidCastException</a>,
+                     <a href="../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                     <a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../system/MissingMemberException.html" title="class in system">MissingMemberException</a></code></dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../system/InvalidCastException.html" title="class in system">InvalidCastException</a></code></dd>
+<dd><code><a href="../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -564,6 +620,22 @@ extends <a href="../../system/xaml/XamlMember.html" title="class in system.xaml"
 <dd><code><a href="../../system/xaml/XamlMember.html#getJCOType--">getJCOType</a></code>&nbsp;in class&nbsp;<code><a href="../../system/xaml/XamlMember.html" title="class in system.xaml">XamlMember</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>A <code>JCType</code> representing the CLR Type of the instantiated Class</dd>
+</dl>
+</li>
+</ul>
+<a name="GetXamlNamespaces--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>GetXamlNamespaces</h4>
+<pre>public&nbsp;<a href="../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;GetXamlNamespaces()
+                          throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../system/xaml/XamlMember.html#GetXamlNamespaces--">GetXamlNamespaces</a></code>&nbsp;in class&nbsp;<code><a href="../../system/xaml/XamlMember.html" title="class in system.xaml">XamlMember</a></code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
 </dl>
 </li>
 </ul>

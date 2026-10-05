@@ -36,7 +36,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -336,6 +336,24 @@ implements java.lang.AutoCloseable</pre>
 <tr id="i20" class="altColor">
 <td class="colFirst"><code><a href="../../system/threading/tasks/Task.html" title="class in system.threading.tasks">Task</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/threading/SemaphoreSlim.html#WaitAsync-system.threading.CancellationToken-">WaitAsync</a></span>(<a href="../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)</code>&nbsp;</td>
+</tr>
+<tr id="i21" class="rowColor">
+<td class="colFirst"><code><a href="../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/threading/SemaphoreSlim.html#WaitAsync-int-">WaitAsync</a></span>(int&nbsp;millisecondsTimeout)</code>&nbsp;</td>
+</tr>
+<tr id="i22" class="altColor">
+<td class="colFirst"><code><a href="../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/threading/SemaphoreSlim.html#WaitAsync-int-system.threading.CancellationToken-">WaitAsync</a></span>(int&nbsp;millisecondsTimeout,
+         <a href="../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)</code>&nbsp;</td>
+</tr>
+<tr id="i23" class="rowColor">
+<td class="colFirst"><code><a href="../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/threading/SemaphoreSlim.html#WaitAsync-system.TimeSpan-">WaitAsync</a></span>(<a href="../../system/TimeSpan.html" title="class in system">TimeSpan</a>&nbsp;timeout)</code>&nbsp;</td>
+</tr>
+<tr id="i24" class="altColor">
+<td class="colFirst"><code><a href="../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/threading/SemaphoreSlim.html#WaitAsync-system.TimeSpan-system.threading.CancellationToken-">WaitAsync</a></span>(<a href="../../system/TimeSpan.html" title="class in system">TimeSpan</a>&nbsp;timeout,
+         <a href="../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -1115,7 +1133,7 @@ implements java.lang.AutoCloseable</pre>
 <a name="WaitAsync-system.threading.CancellationToken-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>WaitAsync</h4>
 <pre>public&nbsp;<a href="../../system/threading/tasks/Task.html" title="class in system.threading.tasks">Task</a>&nbsp;WaitAsync(<a href="../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)
@@ -1143,6 +1161,150 @@ implements java.lang.AutoCloseable</pre>
 <dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
 <dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="WaitAsync-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>WaitAsync</h4>
+<pre>public&nbsp;<a href="../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a>&nbsp;WaitAsync(int&nbsp;millisecondsTimeout)
+                 throws java.lang.Throwable,
+                        <a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                        <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                        <a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                        <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                        <a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                        <a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                        <a href="../../system/FormatException.html" title="class in system">FormatException</a>,
+                        <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                        <a href="../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
+                        <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="WaitAsync-int-system.threading.CancellationToken-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>WaitAsync</h4>
+<pre>public&nbsp;<a href="../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a>&nbsp;WaitAsync(int&nbsp;millisecondsTimeout,
+                        <a href="../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)
+                 throws java.lang.Throwable,
+                        <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                        <a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                        <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                        <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                        <a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                        <a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                        <a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                        <a href="../../system/FormatException.html" title="class in system">FormatException</a>,
+                        <a href="../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
+                        <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="WaitAsync-system.TimeSpan-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>WaitAsync</h4>
+<pre>public&nbsp;<a href="../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a>&nbsp;WaitAsync(<a href="../../system/TimeSpan.html" title="class in system">TimeSpan</a>&nbsp;timeout)
+                 throws java.lang.Throwable,
+                        <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                        <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                        <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                        <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                        <a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                        <a href="../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                        <a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                        <a href="../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                        <a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                        <a href="../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
+                        <a href="../../system/threading/tasks/TaskSchedulerException.html" title="class in system.threading.tasks">TaskSchedulerException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
+<dd><code><a href="../../system/threading/tasks/TaskSchedulerException.html" title="class in system.threading.tasks">TaskSchedulerException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="WaitAsync-system.TimeSpan-system.threading.CancellationToken-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>WaitAsync</h4>
+<pre>public&nbsp;<a href="../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a>&nbsp;WaitAsync(<a href="../../system/TimeSpan.html" title="class in system">TimeSpan</a>&nbsp;timeout,
+                        <a href="../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)
+                 throws java.lang.Throwable,
+                        <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                        <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                        <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                        <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                        <a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                        <a href="../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                        <a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                        <a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                        <a href="../../system/RankException.html" title="class in system">RankException</a>,
+                        <a href="../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                        <a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                        <a href="../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
 </dl>
 </li>
 </ul>

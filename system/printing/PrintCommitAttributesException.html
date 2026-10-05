@@ -17,6 +17,8 @@
 <meta name="keywords" content="getJCOType()">
 <meta name="keywords" content="cast()">
 <meta name="keywords" content="GetObjectData()">
+<meta name="keywords" content="getCommittedAttributesCollection()">
+<meta name="keywords" content="getFailedAttributesCollection()">
 <meta name="keywords" content="getPrintObjectName()">
 <link rel="stylesheet" type="text/css" href="../../stylesheet.css" title="Style">
 <script type="text/javascript" src="../../script.js"></script>
@@ -31,7 +33,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -217,6 +219,18 @@ extends <a href="../../system/printing/PrintSystemException.html" title="class i
 <td class="colOne"><code><span class="memberNameLink"><a href="../../system/printing/PrintCommitAttributesException.html#PrintCommitAttributesException--">PrintCommitAttributesException</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../system/printing/PrintCommitAttributesException.html#PrintCommitAttributesException-int-system.collections.objectmodel.Collection_1-system.collections.objectmodel.Collection_1-">PrintCommitAttributesException</a></span>(int&nbsp;errorCode,
+                              <a href="../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&nbsp;attributesSuccessList,
+                              <a href="../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&nbsp;attributesFailList)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../system/printing/PrintCommitAttributesException.html#PrintCommitAttributesException-int-java.lang.String-system.collections.objectmodel.Collection_1-system.collections.objectmodel.Collection_1-java.lang.String-">PrintCommitAttributesException</a></span>(int&nbsp;errorCode,
+                              java.lang.String&nbsp;message,
+                              <a href="../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&nbsp;attributesSuccessList,
+                              <a href="../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&nbsp;attributesFailList,
+                              java.lang.String&nbsp;objectName)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../system/printing/PrintCommitAttributesException.html#PrintCommitAttributesException-org.mases.jcobridge.netreflection.NetException-">PrintCommitAttributesException</a></span>(<a href="../../org/mases/jcobridge/netreflection/NetException.html" title="class in org.mases.jcobridge.netreflection">NetException</a>&nbsp;cause)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -253,45 +267,53 @@ extends <a href="../../system/printing/PrintSystemException.html" title="class i
 </td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code><a href="../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/printing/PrintCommitAttributesException.html#getCommittedAttributesCollection--">getCommittedAttributesCollection</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code><a href="../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/printing/PrintCommitAttributesException.html#getFailedAttributesCollection--">getFailedAttributesCollection</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/printing/PrintCommitAttributesException.html#getJCOAssemblyName--">getJCOAssemblyName</a></span>()</code>
 <div class="block">Returns the reflected Assembly name</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/printing/PrintCommitAttributesException.html#getJCOClassName--">getJCOClassName</a></span>()</code>
 <div class="block">Returns the reflected Class name</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/printing/PrintCommitAttributesException.html#getJCOInstance--">getJCOInstance</a></span>()</code>
 <div class="block">Returns the instantiated class</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/printing/PrintCommitAttributesException.html#getJCOObjectName--">getJCOObjectName</a></span>()</code>
 <div class="block">Returns the reflected Class name used to build the object</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>org.mases.jcobridge.JCType</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/printing/PrintCommitAttributesException.html#getJCOType--">getJCOType</a></span>()</code>
 <div class="block">Returns the instantiated class Type</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/printing/PrintCommitAttributesException.html#GetObjectData-system.runtime.serialization.SerializationInfo-system.runtime.serialization.StreamingContext-">GetObjectData</a></span>(<a href="../../system/runtime/serialization/SerializationInfo.html" title="class in system.runtime.serialization">SerializationInfo</a>&nbsp;info,
              <a href="../../system/runtime/serialization/StreamingContext.html" title="class in system.runtime.serialization">StreamingContext</a>&nbsp;context)</code>&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/printing/PrintCommitAttributesException.html#getPrintObjectName--">getPrintObjectName</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/printing/PrintCommitAttributesException.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
@@ -400,6 +422,76 @@ extends <a href="../../system/printing/PrintSystemException.html" title="class i
 <pre>public&nbsp;PrintCommitAttributesException()</pre>
 </li>
 </ul>
+<a name="PrintCommitAttributesException-int-system.collections.objectmodel.Collection_1-system.collections.objectmodel.Collection_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>PrintCommitAttributesException</h4>
+<pre>public&nbsp;PrintCommitAttributesException(int&nbsp;errorCode,
+                                      <a href="../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&nbsp;attributesSuccessList,
+                                      <a href="../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&nbsp;attributesFailList)
+                               throws java.lang.Throwable,
+                                      <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                      <a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                      <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                      <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                      <a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                      <a href="../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                                      <a href="../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
+                                      <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                      <a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="PrintCommitAttributesException-int-java.lang.String-system.collections.objectmodel.Collection_1-system.collections.objectmodel.Collection_1-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>PrintCommitAttributesException</h4>
+<pre>public&nbsp;PrintCommitAttributesException(int&nbsp;errorCode,
+                                      java.lang.String&nbsp;message,
+                                      <a href="../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&nbsp;attributesSuccessList,
+                                      <a href="../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&nbsp;attributesFailList,
+                                      java.lang.String&nbsp;objectName)
+                               throws java.lang.Throwable,
+                                      <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                      <a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                      <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                      <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                      <a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                      <a href="../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                                      <a href="../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
+                                      <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                      <a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+</dl>
+</li>
+</ul>
 <a name="PrintCommitAttributesException-org.mases.jcobridge.netreflection.NetException-">
 <!--   -->
 </a>
@@ -462,6 +554,34 @@ extends <a href="../../system/printing/PrintSystemException.html" title="class i
 <dd><a href="../../system/printing/PrintCommitAttributesException.html" title="class in system.printing"><code>PrintCommitAttributesException</code></a> instance</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - in case of error during cast operation</dd>
+</dl>
+</li>
+</ul>
+<a name="getCommittedAttributesCollection--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getCommittedAttributesCollection</h4>
+<pre>public&nbsp;<a href="../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&nbsp;getCommittedAttributesCollection()
+                                              throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="getFailedAttributesCollection--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getFailedAttributesCollection</h4>
+<pre>public&nbsp;<a href="../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&nbsp;getFailedAttributesCollection()
+                                           throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
 </dl>
 </li>
 </ul>

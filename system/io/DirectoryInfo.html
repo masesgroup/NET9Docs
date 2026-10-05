@@ -16,6 +16,9 @@
 <meta name="keywords" content="setJCOInstance()">
 <meta name="keywords" content="getJCOType()">
 <meta name="keywords" content="cast()">
+<meta name="keywords" content="EnumerateDirectories()">
+<meta name="keywords" content="EnumerateFiles()">
+<meta name="keywords" content="EnumerateFileSystemInfos()">
 <meta name="keywords" content="CreateSubdirectory()">
 <meta name="keywords" content="GetDirectories()">
 <meta name="keywords" content="GetFiles()">
@@ -38,7 +41,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":10,"i36":10,"i37":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -269,102 +272,156 @@ extends <a href="../../system/io/FileSystemInfo.html" title="class in system.io"
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/io/DirectoryInfo.html#Delete-boolean-">Delete</a></span>(boolean&nbsp;recursive)</code>&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
+<td class="colFirst"><code><a href="../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/io/DirectoryInfo.html#EnumerateDirectories--">EnumerateDirectories</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code><a href="../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/io/DirectoryInfo.html#EnumerateDirectories-java.lang.String-">EnumerateDirectories</a></span>(java.lang.String&nbsp;searchPattern)</code>&nbsp;</td>
+</tr>
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code><a href="../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/io/DirectoryInfo.html#EnumerateDirectories-java.lang.String-system.io.EnumerationOptions-">EnumerateDirectories</a></span>(java.lang.String&nbsp;searchPattern,
+                    <a href="../../system/io/EnumerationOptions.html" title="class in system.io">EnumerationOptions</a>&nbsp;enumerationOptions)</code>&nbsp;</td>
+</tr>
+<tr id="i8" class="altColor">
+<td class="colFirst"><code><a href="../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/io/DirectoryInfo.html#EnumerateDirectories-java.lang.String-system.io.SearchOption-">EnumerateDirectories</a></span>(java.lang.String&nbsp;searchPattern,
+                    <a href="../../system/io/SearchOption.html" title="class in system.io">SearchOption</a>&nbsp;searchOption)</code>&nbsp;</td>
+</tr>
+<tr id="i9" class="rowColor">
+<td class="colFirst"><code><a href="../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/io/DirectoryInfo.html#EnumerateFiles--">EnumerateFiles</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i10" class="altColor">
+<td class="colFirst"><code><a href="../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/io/DirectoryInfo.html#EnumerateFiles-java.lang.String-">EnumerateFiles</a></span>(java.lang.String&nbsp;searchPattern)</code>&nbsp;</td>
+</tr>
+<tr id="i11" class="rowColor">
+<td class="colFirst"><code><a href="../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/io/DirectoryInfo.html#EnumerateFiles-java.lang.String-system.io.EnumerationOptions-">EnumerateFiles</a></span>(java.lang.String&nbsp;searchPattern,
+              <a href="../../system/io/EnumerationOptions.html" title="class in system.io">EnumerationOptions</a>&nbsp;enumerationOptions)</code>&nbsp;</td>
+</tr>
+<tr id="i12" class="altColor">
+<td class="colFirst"><code><a href="../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/io/DirectoryInfo.html#EnumerateFiles-java.lang.String-system.io.SearchOption-">EnumerateFiles</a></span>(java.lang.String&nbsp;searchPattern,
+              <a href="../../system/io/SearchOption.html" title="class in system.io">SearchOption</a>&nbsp;searchOption)</code>&nbsp;</td>
+</tr>
+<tr id="i13" class="rowColor">
+<td class="colFirst"><code><a href="../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/io/DirectoryInfo.html#EnumerateFileSystemInfos--">EnumerateFileSystemInfos</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i14" class="altColor">
+<td class="colFirst"><code><a href="../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/io/DirectoryInfo.html#EnumerateFileSystemInfos-java.lang.String-">EnumerateFileSystemInfos</a></span>(java.lang.String&nbsp;searchPattern)</code>&nbsp;</td>
+</tr>
+<tr id="i15" class="rowColor">
+<td class="colFirst"><code><a href="../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/io/DirectoryInfo.html#EnumerateFileSystemInfos-java.lang.String-system.io.EnumerationOptions-">EnumerateFileSystemInfos</a></span>(java.lang.String&nbsp;searchPattern,
+                        <a href="../../system/io/EnumerationOptions.html" title="class in system.io">EnumerationOptions</a>&nbsp;enumerationOptions)</code>&nbsp;</td>
+</tr>
+<tr id="i16" class="altColor">
+<td class="colFirst"><code><a href="../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/io/DirectoryInfo.html#EnumerateFileSystemInfos-java.lang.String-system.io.SearchOption-">EnumerateFileSystemInfos</a></span>(java.lang.String&nbsp;searchPattern,
+                        <a href="../../system/io/SearchOption.html" title="class in system.io">SearchOption</a>&nbsp;searchOption)</code>&nbsp;</td>
+</tr>
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code><a href="../../system/io/DirectoryInfo.html" title="class in system.io">DirectoryInfo</a>[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/io/DirectoryInfo.html#GetDirectories--">GetDirectories</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code><a href="../../system/io/DirectoryInfo.html" title="class in system.io">DirectoryInfo</a>[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/io/DirectoryInfo.html#GetDirectories-java.lang.String-">GetDirectories</a></span>(java.lang.String&nbsp;searchPattern)</code>&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code><a href="../../system/io/DirectoryInfo.html" title="class in system.io">DirectoryInfo</a>[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/io/DirectoryInfo.html#GetDirectories-java.lang.String-system.io.EnumerationOptions-">GetDirectories</a></span>(java.lang.String&nbsp;searchPattern,
               <a href="../../system/io/EnumerationOptions.html" title="class in system.io">EnumerationOptions</a>&nbsp;enumerationOptions)</code>&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code><a href="../../system/io/DirectoryInfo.html" title="class in system.io">DirectoryInfo</a>[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/io/DirectoryInfo.html#GetDirectories-java.lang.String-system.io.SearchOption-">GetDirectories</a></span>(java.lang.String&nbsp;searchPattern,
               <a href="../../system/io/SearchOption.html" title="class in system.io">SearchOption</a>&nbsp;searchOption)</code>&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code><a href="../../system/io/FileInfo.html" title="class in system.io">FileInfo</a>[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/io/DirectoryInfo.html#GetFiles--">GetFiles</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i22" class="altColor">
 <td class="colFirst"><code><a href="../../system/io/FileInfo.html" title="class in system.io">FileInfo</a>[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/io/DirectoryInfo.html#GetFiles-java.lang.String-">GetFiles</a></span>(java.lang.String&nbsp;searchPattern)</code>&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code><a href="../../system/io/FileInfo.html" title="class in system.io">FileInfo</a>[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/io/DirectoryInfo.html#GetFiles-java.lang.String-system.io.EnumerationOptions-">GetFiles</a></span>(java.lang.String&nbsp;searchPattern,
         <a href="../../system/io/EnumerationOptions.html" title="class in system.io">EnumerationOptions</a>&nbsp;enumerationOptions)</code>&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code><a href="../../system/io/FileInfo.html" title="class in system.io">FileInfo</a>[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/io/DirectoryInfo.html#GetFiles-java.lang.String-system.io.SearchOption-">GetFiles</a></span>(java.lang.String&nbsp;searchPattern,
         <a href="../../system/io/SearchOption.html" title="class in system.io">SearchOption</a>&nbsp;searchOption)</code>&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code><a href="../../system/io/FileSystemInfo.html" title="class in system.io">FileSystemInfo</a>[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/io/DirectoryInfo.html#GetFileSystemInfos--">GetFileSystemInfos</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i26" class="altColor">
 <td class="colFirst"><code><a href="../../system/io/FileSystemInfo.html" title="class in system.io">FileSystemInfo</a>[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/io/DirectoryInfo.html#GetFileSystemInfos-java.lang.String-">GetFileSystemInfos</a></span>(java.lang.String&nbsp;searchPattern)</code>&nbsp;</td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i27" class="rowColor">
 <td class="colFirst"><code><a href="../../system/io/FileSystemInfo.html" title="class in system.io">FileSystemInfo</a>[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/io/DirectoryInfo.html#GetFileSystemInfos-java.lang.String-system.io.EnumerationOptions-">GetFileSystemInfos</a></span>(java.lang.String&nbsp;searchPattern,
                   <a href="../../system/io/EnumerationOptions.html" title="class in system.io">EnumerationOptions</a>&nbsp;enumerationOptions)</code>&nbsp;</td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i28" class="altColor">
 <td class="colFirst"><code><a href="../../system/io/FileSystemInfo.html" title="class in system.io">FileSystemInfo</a>[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/io/DirectoryInfo.html#GetFileSystemInfos-java.lang.String-system.io.SearchOption-">GetFileSystemInfos</a></span>(java.lang.String&nbsp;searchPattern,
                   <a href="../../system/io/SearchOption.html" title="class in system.io">SearchOption</a>&nbsp;searchOption)</code>&nbsp;</td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i29" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/io/DirectoryInfo.html#getJCOAssemblyName--">getJCOAssemblyName</a></span>()</code>
 <div class="block">Returns the reflected Assembly name</div>
 </td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i30" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/io/DirectoryInfo.html#getJCOClassName--">getJCOClassName</a></span>()</code>
 <div class="block">Returns the reflected Class name</div>
 </td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i31" class="rowColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/io/DirectoryInfo.html#getJCOInstance--">getJCOInstance</a></span>()</code>
 <div class="block">Returns the instantiated class</div>
 </td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i32" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/io/DirectoryInfo.html#getJCOObjectName--">getJCOObjectName</a></span>()</code>
 <div class="block">Returns the reflected Class name used to build the object</div>
 </td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i33" class="rowColor">
 <td class="colFirst"><code>org.mases.jcobridge.JCType</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/io/DirectoryInfo.html#getJCOType--">getJCOType</a></span>()</code>
 <div class="block">Returns the instantiated class Type</div>
 </td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i34" class="altColor">
 <td class="colFirst"><code><a href="../../system/io/DirectoryInfo.html" title="class in system.io">DirectoryInfo</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/io/DirectoryInfo.html#getParent--">getParent</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i35" class="rowColor">
 <td class="colFirst"><code><a href="../../system/io/DirectoryInfo.html" title="class in system.io">DirectoryInfo</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/io/DirectoryInfo.html#getRoot--">getRoot</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i24" class="altColor">
+<tr id="i36" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/io/DirectoryInfo.html#MoveTo-java.lang.String-">MoveTo</a></span>(java.lang.String&nbsp;destDirName)</code>&nbsp;</td>
 </tr>
-<tr id="i25" class="rowColor">
+<tr id="i37" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/io/DirectoryInfo.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
@@ -732,6 +789,402 @@ extends <a href="../../system/io/FileSystemInfo.html" title="class in system.io"
 <dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
 <dd><code><a href="../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="EnumerateDirectories--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>EnumerateDirectories</h4>
+<pre>public&nbsp;<a href="../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;EnumerateDirectories()
+                                   throws java.lang.Throwable,
+                                          <a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                          <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                          <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                          <a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                          <a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                          <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                          <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                          <a href="../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="EnumerateDirectories-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>EnumerateDirectories</h4>
+<pre>public&nbsp;<a href="../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;EnumerateDirectories(java.lang.String&nbsp;searchPattern)
+                                   throws java.lang.Throwable,
+                                          <a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                          <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                          <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                          <a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                          <a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                          <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                          <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                          <a href="../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="EnumerateDirectories-java.lang.String-system.io.EnumerationOptions-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>EnumerateDirectories</h4>
+<pre>public&nbsp;<a href="../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;EnumerateDirectories(java.lang.String&nbsp;searchPattern,
+                                          <a href="../../system/io/EnumerationOptions.html" title="class in system.io">EnumerationOptions</a>&nbsp;enumerationOptions)
+                                   throws java.lang.Throwable,
+                                          <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                          <a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                          <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                          <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                          <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                          <a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                          <a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                          <a href="../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                                          <a href="../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
+                                          <a href="../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
+<dd><code><a href="../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="EnumerateDirectories-java.lang.String-system.io.SearchOption-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>EnumerateDirectories</h4>
+<pre>public&nbsp;<a href="../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;EnumerateDirectories(java.lang.String&nbsp;searchPattern,
+                                          <a href="../../system/io/SearchOption.html" title="class in system.io">SearchOption</a>&nbsp;searchOption)
+                                   throws java.lang.Throwable,
+                                          <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                          <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                          <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                          <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                          <a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                          <a href="../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                                          <a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                          <a href="../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                                          <a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                          <a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                          <a href="../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="EnumerateFiles--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>EnumerateFiles</h4>
+<pre>public&nbsp;<a href="../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;EnumerateFiles()
+                             throws java.lang.Throwable,
+                                    <a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                    <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                    <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                    <a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                    <a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                    <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                    <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                    <a href="../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="EnumerateFiles-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>EnumerateFiles</h4>
+<pre>public&nbsp;<a href="../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;EnumerateFiles(java.lang.String&nbsp;searchPattern)
+                             throws java.lang.Throwable,
+                                    <a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                    <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                    <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                    <a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                    <a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                    <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                    <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                    <a href="../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="EnumerateFiles-java.lang.String-system.io.EnumerationOptions-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>EnumerateFiles</h4>
+<pre>public&nbsp;<a href="../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;EnumerateFiles(java.lang.String&nbsp;searchPattern,
+                                    <a href="../../system/io/EnumerationOptions.html" title="class in system.io">EnumerationOptions</a>&nbsp;enumerationOptions)
+                             throws java.lang.Throwable,
+                                    <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                    <a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                    <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                    <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                    <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                    <a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                    <a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                    <a href="../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                                    <a href="../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
+                                    <a href="../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
+<dd><code><a href="../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="EnumerateFiles-java.lang.String-system.io.SearchOption-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>EnumerateFiles</h4>
+<pre>public&nbsp;<a href="../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;EnumerateFiles(java.lang.String&nbsp;searchPattern,
+                                    <a href="../../system/io/SearchOption.html" title="class in system.io">SearchOption</a>&nbsp;searchOption)
+                             throws java.lang.Throwable,
+                                    <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                    <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                    <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                    <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                    <a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                    <a href="../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                                    <a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                    <a href="../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                                    <a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                    <a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                    <a href="../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="EnumerateFileSystemInfos--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>EnumerateFileSystemInfos</h4>
+<pre>public&nbsp;<a href="../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;EnumerateFileSystemInfos()
+                                       throws java.lang.Throwable,
+                                              <a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                              <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                              <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                              <a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                              <a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                              <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                              <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                              <a href="../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="EnumerateFileSystemInfos-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>EnumerateFileSystemInfos</h4>
+<pre>public&nbsp;<a href="../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;EnumerateFileSystemInfos(java.lang.String&nbsp;searchPattern)
+                                       throws java.lang.Throwable,
+                                              <a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                              <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                              <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                              <a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                              <a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                              <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                              <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                              <a href="../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="EnumerateFileSystemInfos-java.lang.String-system.io.EnumerationOptions-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>EnumerateFileSystemInfos</h4>
+<pre>public&nbsp;<a href="../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;EnumerateFileSystemInfos(java.lang.String&nbsp;searchPattern,
+                                              <a href="../../system/io/EnumerationOptions.html" title="class in system.io">EnumerationOptions</a>&nbsp;enumerationOptions)
+                                       throws java.lang.Throwable,
+                                              <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                              <a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                              <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                              <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                              <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                              <a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                              <a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                              <a href="../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                                              <a href="../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
+                                              <a href="../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
+<dd><code><a href="../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="EnumerateFileSystemInfos-java.lang.String-system.io.SearchOption-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>EnumerateFileSystemInfos</h4>
+<pre>public&nbsp;<a href="../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;EnumerateFileSystemInfos(java.lang.String&nbsp;searchPattern,
+                                              <a href="../../system/io/SearchOption.html" title="class in system.io">SearchOption</a>&nbsp;searchOption)
+                                       throws java.lang.Throwable,
+                                              <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                              <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                              <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                              <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                              <a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                              <a href="../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                                              <a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                              <a href="../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                                              <a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                              <a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                              <a href="../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
 </dl>
 </li>
 </ul>

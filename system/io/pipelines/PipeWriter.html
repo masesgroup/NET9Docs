@@ -18,10 +18,14 @@
 <meta name="keywords" content="cast()">
 <meta name="keywords" content="Create()">
 <meta name="keywords" content="AsStream()">
+<meta name="keywords" content="GetMemory()">
 <meta name="keywords" content="CompleteAsync()">
+<meta name="keywords" content="FlushAsync()">
+<meta name="keywords" content="WriteAsync()">
 <meta name="keywords" content="Advance()">
 <meta name="keywords" content="CancelPendingFlush()">
 <meta name="keywords" content="Complete()">
+<meta name="keywords" content="OnReaderCompleted()">
 <meta name="keywords" content="getCanGetUnflushedBytes()">
 <meta name="keywords" content="getUnflushedBytes()">
 <link rel="stylesheet" type="text/css" href="../../../stylesheet.css" title="Style">
@@ -37,7 +41,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":9,"i4":10,"i5":10,"i6":9,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":9,"i4":10,"i5":10,"i6":9,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -264,46 +268,64 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
       <a href="../../../system/io/pipelines/StreamPipeWriterOptions.html" title="class in system.io.pipelines">StreamPipeWriterOptions</a>&nbsp;writerOptions)</code>&nbsp;</td>
 </tr>
 <tr id="i7" class="rowColor">
+<td class="colFirst"><code><a href="../../../system/threading/tasks/ValueTask_1.html" title="class in system.threading.tasks">ValueTask_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/io/pipelines/PipeWriter.html#FlushAsync-system.threading.CancellationToken-">FlushAsync</a></span>(<a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)</code>&nbsp;</td>
+</tr>
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/io/pipelines/PipeWriter.html#getCanGetUnflushedBytes--">getCanGetUnflushedBytes</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/io/pipelines/PipeWriter.html#getJCOAssemblyName--">getJCOAssemblyName</a></span>()</code>
 <div class="block">Returns the reflected Assembly name</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/io/pipelines/PipeWriter.html#getJCOClassName--">getJCOClassName</a></span>()</code>
 <div class="block">Returns the reflected Class name</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/io/pipelines/PipeWriter.html#getJCOInstance--">getJCOInstance</a></span>()</code>
 <div class="block">Returns the instantiated class</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/io/pipelines/PipeWriter.html#getJCOObjectName--">getJCOObjectName</a></span>()</code>
 <div class="block">Returns the reflected Class name used to build the object</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>org.mases.jcobridge.JCType</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/io/pipelines/PipeWriter.html#getJCOType--">getJCOType</a></span>()</code>
 <div class="block">Returns the instantiated class Type</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
+<td class="colFirst"><code><a href="../../../system/Memory_1.html" title="class in system">Memory_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/io/pipelines/PipeWriter.html#GetMemory-int-">GetMemory</a></span>(int&nbsp;sizeHint)</code>&nbsp;</td>
+</tr>
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>long</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/io/pipelines/PipeWriter.html#getUnflushedBytes--">getUnflushedBytes</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i16" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/io/pipelines/PipeWriter.html#OnReaderCompleted-system.Action_2-org.mases.jcobridge.netreflection.NetObject-">OnReaderCompleted</a></span>(<a href="../../../system/Action_2.html" title="class in system">Action_2</a>&nbsp;callback,
+                 <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;state)</code>&nbsp;</td>
+</tr>
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/io/pipelines/PipeWriter.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
+</tr>
+<tr id="i18" class="altColor">
+<td class="colFirst"><code><a href="../../../system/threading/tasks/ValueTask_1.html" title="class in system.threading.tasks">ValueTask_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/io/pipelines/PipeWriter.html#WriteAsync-system.ReadOnlyMemory_1-system.threading.CancellationToken-">WriteAsync</a></span>(<a href="../../../system/ReadOnlyMemory_1.html" title="class in system">ReadOnlyMemory_1</a>&nbsp;source,
+          <a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -567,6 +589,20 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </dl>
 </li>
 </ul>
+<a name="FlushAsync-system.threading.CancellationToken-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>FlushAsync</h4>
+<pre>public&nbsp;<a href="../../../system/threading/tasks/ValueTask_1.html" title="class in system.threading.tasks">ValueTask_1</a>&nbsp;FlushAsync(<a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)
+                       throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
 <a name="getCanGetUnflushedBytes--">
 <!--   -->
 </a>
@@ -677,6 +713,20 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </dl>
 </li>
 </ul>
+<a name="GetMemory-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>GetMemory</h4>
+<pre>public&nbsp;<a href="../../../system/Memory_1.html" title="class in system">Memory_1</a>&nbsp;GetMemory(int&nbsp;sizeHint)
+                   throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
 <a name="getUnflushedBytes--">
 <!--   -->
 </a>
@@ -707,16 +757,62 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </dl>
 </li>
 </ul>
+<a name="OnReaderCompleted-system.Action_2-org.mases.jcobridge.netreflection.NetObject-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>OnReaderCompleted</h4>
+<pre>public&nbsp;void&nbsp;OnReaderCompleted(<a href="../../../system/Action_2.html" title="class in system">Action_2</a>&nbsp;callback,
+                              <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;state)
+                       throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
 <a name="setJCOInstance-org.mases.jcobridge.JCObject-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>setJCOInstance</h4>
 <pre>public&nbsp;void&nbsp;setJCOInstance(org.mases.jcobridge.JCObject&nbsp;instance)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></code>&nbsp;in class&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="WriteAsync-system.ReadOnlyMemory_1-system.threading.CancellationToken-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>WriteAsync</h4>
+<pre>public&nbsp;<a href="../../../system/threading/tasks/ValueTask_1.html" title="class in system.threading.tasks">ValueTask_1</a>&nbsp;WriteAsync(<a href="../../../system/ReadOnlyMemory_1.html" title="class in system">ReadOnlyMemory_1</a>&nbsp;source,
+                              <a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)
+                       throws java.lang.Throwable,
+                              <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                              <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                              <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                              <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                              <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                              <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                              <a href="../../../system/RankException.html" title="class in system">RankException</a>,
+                              <a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
 </dl>
 </li>
 </ul>

@@ -19,6 +19,7 @@
 <meta name="keywords" content="AreCompatible()">
 <meta name="keywords" content="HasProperty()">
 <meta name="keywords" content="IsSubsetOf()">
+<meta name="keywords" content="GetStylusPointProperties()">
 <meta name="keywords" content="GetCommonDescription()">
 <meta name="keywords" content="GetPropertyInfo()">
 <meta name="keywords" content="getPropertyCount()">
@@ -35,7 +36,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":9,"i2":9,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10};
+var methods = {"i0":9,"i1":9,"i2":9,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -211,6 +212,9 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../system/windows/input/StylusPointDescription.html#StylusPointDescription--">StylusPointDescription</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/windows/input/StylusPointDescription.html#StylusPointDescription-system.collections.generic.IEnumerable_1-">StylusPointDescription</a></span>(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;stylusPointPropertyInfos)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../system/windows/input/StylusPointDescription.html#StylusPointDescription-java.lang.Object-">StylusPointDescription</a></span>(java.lang.Object&nbsp;instance)</code>
 <div class="block">Internal constructor.</div>
 </td>
@@ -285,14 +289,18 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/input/StylusPointDescription.html#GetPropertyInfo-system.windows.input.StylusPointProperty-">GetPropertyInfo</a></span>(<a href="../../../system/windows/input/StylusPointProperty.html" title="class in system.windows.input">StylusPointProperty</a>&nbsp;stylusPointProperty)</code>&nbsp;</td>
 </tr>
 <tr id="i10" class="altColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/input/StylusPointDescription.html#HasProperty-system.windows.input.StylusPointProperty-">HasProperty</a></span>(<a href="../../../system/windows/input/StylusPointProperty.html" title="class in system.windows.input">StylusPointProperty</a>&nbsp;stylusPointProperty)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/input/StylusPointDescription.html#GetStylusPointProperties--">GetStylusPointProperties</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/input/StylusPointDescription.html#IsSubsetOf-system.windows.input.StylusPointDescription-">IsSubsetOf</a></span>(<a href="../../../system/windows/input/StylusPointDescription.html" title="class in system.windows.input">StylusPointDescription</a>&nbsp;stylusPointDescriptionSuperset)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/input/StylusPointDescription.html#HasProperty-system.windows.input.StylusPointProperty-">HasProperty</a></span>(<a href="../../../system/windows/input/StylusPointProperty.html" title="class in system.windows.input">StylusPointProperty</a>&nbsp;stylusPointProperty)</code>&nbsp;</td>
 </tr>
 <tr id="i12" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/input/StylusPointDescription.html#IsSubsetOf-system.windows.input.StylusPointDescription-">IsSubsetOf</a></span>(<a href="../../../system/windows/input/StylusPointDescription.html" title="class in system.windows.input">StylusPointDescription</a>&nbsp;stylusPointDescriptionSuperset)</code>&nbsp;</td>
+</tr>
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/input/StylusPointDescription.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
@@ -396,6 +404,38 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="StylusPointDescription-system.collections.generic.IEnumerable_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>StylusPointDescription</h4>
+<pre>public&nbsp;StylusPointDescription(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;stylusPointPropertyInfos)
+                       throws java.lang.Throwable,
+                              <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                              <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                              <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                              <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                              <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                              <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                              <a href="../../../system/RankException.html" title="class in system">RankException</a>,
+                              <a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                              <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -634,6 +674,38 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
                                                <a href="../../../system/RankException.html" title="class in system">RankException</a>,
                                                <a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
                                                <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="GetStylusPointProperties--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>GetStylusPointProperties</h4>
+<pre>public&nbsp;<a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;GetStylusPointProperties()
+                                              throws java.lang.Throwable,
+                                                     <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                     <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                     <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                                     <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                                     <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                                     <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                     <a href="../../../system/RankException.html" title="class in system">RankException</a>,
+                                                     <a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                                                     <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>

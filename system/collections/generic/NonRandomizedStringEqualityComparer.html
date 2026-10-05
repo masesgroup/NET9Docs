@@ -18,6 +18,8 @@
 <meta name="keywords" content="cast()">
 <meta name="keywords" content="Equals()">
 <meta name="keywords" content="GetHashCode()">
+<meta name="keywords" content="GetStringComparer()">
+<meta name="keywords" content="GetUnderlyingEqualityComparer()">
 <meta name="keywords" content="GetObjectData()">
 <link rel="stylesheet" type="text/css" href="../../../stylesheet.css" title="Style">
 <script type="text/javascript" src="../../../script.js"></script>
@@ -32,7 +34,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":9,"i9":10,"i10":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -59,8 +61,8 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../system/collections/generic/KeyValuePair.html" title="class in system.collections.generic"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../system/collections/generic/ReferenceEqualityComparer.html" title="class in system.collections.generic"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../system/collections/generic/List_1.html" title="class in system.collections.generic"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../system/collections/generic/NullableComparer_1.html" title="class in system.collections.generic"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?system/collections/generic/NonRandomizedStringEqualityComparer.html" target="_top">Frames</a></li>
@@ -124,13 +126,12 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>, <a href="../../../system/runtime/serialization/ISerializable.html" title="interface in system.runtime.serialization">ISerializable</a></dd>
+<dd><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></dd>
 </dl>
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">NonRandomizedStringEqualityComparer</span>
-extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>
-implements <a href="../../../system/runtime/serialization/ISerializable.html" title="interface in system.runtime.serialization">ISerializable</a></pre>
+extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></pre>
 <div class="block">The base .NET class managing System.Collections.Generic.NonRandomizedStringEqualityComparer, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e.
  <p>
  
@@ -274,6 +275,14 @@ implements <a href="../../../system/runtime/serialization/ISerializable.html" ti
 </td>
 </tr>
 <tr id="i8" class="altColor">
+<td class="colFirst"><code>static <a href="../../../system/collections/generic/IEqualityComparer_1.html" title="interface in system.collections.generic">IEqualityComparer_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/collections/generic/NonRandomizedStringEqualityComparer.html#GetStringComparer-org.mases.jcobridge.netreflection.NetObject-">GetStringComparer</a></span>(<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;comparer)</code>&nbsp;</td>
+</tr>
+<tr id="i9" class="rowColor">
+<td class="colFirst"><code><a href="../../../system/collections/generic/IEqualityComparer_1.html" title="interface in system.collections.generic">IEqualityComparer_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/collections/generic/NonRandomizedStringEqualityComparer.html#GetUnderlyingEqualityComparer--">GetUnderlyingEqualityComparer</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/collections/generic/NonRandomizedStringEqualityComparer.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
@@ -291,13 +300,6 @@ implements <a href="../../../system/runtime/serialization/ISerializable.html" ti
 </a>
 <h3>Methods inherited from class&nbsp;java.lang.Object</h3>
 <code>equals, getClass, notify, notifyAll, wait, wait, wait</code></li>
-</ul>
-<ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.system.runtime.serialization.ISerializable">
-<!--   -->
-</a>
-<h3>Methods inherited from interface&nbsp;system.runtime.serialization.<a href="../../../system/runtime/serialization/ISerializable.html" title="interface in system.runtime.serialization">ISerializable</a></h3>
-<code><a href="../../../system/runtime/serialization/ISerializable.html#GetObjectData-system.runtime.serialization.SerializationInfo-system.runtime.serialization.StreamingContext-">GetObjectData</a>, <a href="../../../system/runtime/serialization/ISerializable.html#ToISerializable-org.mases.jcobridge.netreflection.IJCOBridgeReflected-">ToISerializable</a></code></li>
 </ul>
 </li>
 </ul>
@@ -480,8 +482,6 @@ implements <a href="../../../system/runtime/serialization/ISerializable.html" ti
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOAssemblyName--">getJCOAssemblyName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../system/runtime/serialization/ISerializable.html#getJCOAssemblyName--">getJCOAssemblyName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/runtime/serialization/ISerializable.html" title="interface in system.runtime.serialization">ISerializable</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html#getJCOAssemblyName--">getJCOAssemblyName</a></code>&nbsp;in class&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -501,8 +501,6 @@ implements <a href="../../../system/runtime/serialization/ISerializable.html" ti
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOClassName--">getJCOClassName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../system/runtime/serialization/ISerializable.html#getJCOClassName--">getJCOClassName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/runtime/serialization/ISerializable.html" title="interface in system.runtime.serialization">ISerializable</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html#getJCOClassName--">getJCOClassName</a></code>&nbsp;in class&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -522,8 +520,6 @@ implements <a href="../../../system/runtime/serialization/ISerializable.html" ti
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOInstance--">getJCOInstance</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../system/runtime/serialization/ISerializable.html#getJCOInstance--">getJCOInstance</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/runtime/serialization/ISerializable.html" title="interface in system.runtime.serialization">ISerializable</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html#getJCOInstance--">getJCOInstance</a></code>&nbsp;in class&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -543,8 +539,6 @@ implements <a href="../../../system/runtime/serialization/ISerializable.html" ti
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOObjectName--">getJCOObjectName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../system/runtime/serialization/ISerializable.html#getJCOObjectName--">getJCOObjectName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/runtime/serialization/ISerializable.html" title="interface in system.runtime.serialization">ISerializable</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html#getJCOObjectName--">getJCOObjectName</a></code>&nbsp;in class&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -565,12 +559,38 @@ implements <a href="../../../system/runtime/serialization/ISerializable.html" ti
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOType--">getJCOType</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../system/runtime/serialization/ISerializable.html#getJCOType--">getJCOType</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/runtime/serialization/ISerializable.html" title="interface in system.runtime.serialization">ISerializable</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html#getJCOType--">getJCOType</a></code>&nbsp;in class&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>A <code>JCType</code> representing the CLR Type of the instantiated Class</dd>
+</dl>
+</li>
+</ul>
+<a name="GetStringComparer-org.mases.jcobridge.netreflection.NetObject-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>GetStringComparer</h4>
+<pre>public static&nbsp;<a href="../../../system/collections/generic/IEqualityComparer_1.html" title="interface in system.collections.generic">IEqualityComparer_1</a>&nbsp;GetStringComparer(<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;comparer)
+                                             throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="GetUnderlyingEqualityComparer--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>GetUnderlyingEqualityComparer</h4>
+<pre>public&nbsp;<a href="../../../system/collections/generic/IEqualityComparer_1.html" title="interface in system.collections.generic">IEqualityComparer_1</a>&nbsp;GetUnderlyingEqualityComparer()
+                                                  throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
 </dl>
 </li>
 </ul>
@@ -611,8 +631,8 @@ implements <a href="../../../system/runtime/serialization/ISerializable.html" ti
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../system/collections/generic/KeyValuePair.html" title="class in system.collections.generic"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../system/collections/generic/ReferenceEqualityComparer.html" title="class in system.collections.generic"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../system/collections/generic/List_1.html" title="class in system.collections.generic"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../system/collections/generic/NullableComparer_1.html" title="class in system.collections.generic"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?system/collections/generic/NonRandomizedStringEqualityComparer.html" target="_top">Frames</a></li>

@@ -20,7 +20,19 @@
 <meta name="keywords" content="Encode()">
 <meta name="keywords" content="GetEncodedLength()">
 <meta name="keywords" content="CopyTo()">
+<meta name="keywords" content="PopOctetString()">
+<meta name="keywords" content="PopSequence()">
+<meta name="keywords" content="PopSetOf()">
 <meta name="keywords" content="Reset()">
+<meta name="keywords" content="WriteBoolean()">
+<meta name="keywords" content="WriteCharacterString()">
+<meta name="keywords" content="WriteEnumeratedValue()">
+<meta name="keywords" content="WriteGeneralizedTime()">
+<meta name="keywords" content="WriteInteger()">
+<meta name="keywords" content="WriteNamedBitList()">
+<meta name="keywords" content="WriteNull()">
+<meta name="keywords" content="WriteObjectIdentifier()">
+<meta name="keywords" content="WriteUtcTime()">
 <meta name="keywords" content="getRuleSet()">
 <link rel="stylesheet" type="text/css" href="../../../stylesheet.css" title="Style">
 <script type="text/javascript" src="../../../script.js"></script>
@@ -35,7 +47,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -295,11 +307,100 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/formats/asn1/AsnWriter.html#Reset--">Reset</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/formats/asn1/AsnWriter.html#PopOctetString-system.Nullable_1-">PopOctetString</a></span>(<a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;tag)</code>&nbsp;</td>
 </tr>
 <tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/formats/asn1/AsnWriter.html#PopSequence-system.Nullable_1-">PopSequence</a></span>(<a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;tag)</code>&nbsp;</td>
+</tr>
+<tr id="i13" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/formats/asn1/AsnWriter.html#PopSetOf-system.Nullable_1-">PopSetOf</a></span>(<a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;tag)</code>&nbsp;</td>
+</tr>
+<tr id="i14" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/formats/asn1/AsnWriter.html#Reset--">Reset</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i15" class="rowColor">
+<td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/formats/asn1/AsnWriter.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
+</tr>
+<tr id="i16" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/formats/asn1/AsnWriter.html#WriteBoolean-boolean-system.Nullable_1-">WriteBoolean</a></span>(boolean&nbsp;value,
+            <a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;tag)</code>&nbsp;</td>
+</tr>
+<tr id="i17" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/formats/asn1/AsnWriter.html#WriteCharacterString-system.formats.asn1.UniversalTagNumber-java.lang.String-system.Nullable_1-">WriteCharacterString</a></span>(<a href="../../../system/formats/asn1/UniversalTagNumber.html" title="class in system.formats.asn1">UniversalTagNumber</a>&nbsp;encodingType,
+                    java.lang.String&nbsp;value,
+                    <a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;tag)</code>&nbsp;</td>
+</tr>
+<tr id="i18" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/formats/asn1/AsnWriter.html#WriteEnumeratedValue-system.Enum-system.Nullable_1-">WriteEnumeratedValue</a></span>(<a href="../../../system/Enum.html" title="class in system">Enum</a>&nbsp;value,
+                    <a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;tag)</code>&nbsp;</td>
+</tr>
+<tr id="i19" class="rowColor">
+<td class="colFirst"><code>&lt;TEnum extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;<br>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/formats/asn1/AsnWriter.html#WriteEnumeratedValue-TEnum-system.Nullable_1-">WriteEnumeratedValue</a></span>(TEnum&nbsp;value,
+                    <a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;tag)</code>&nbsp;</td>
+</tr>
+<tr id="i20" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/formats/asn1/AsnWriter.html#WriteGeneralizedTime-system.DateTimeOffset-boolean-system.Nullable_1-">WriteGeneralizedTime</a></span>(<a href="../../../system/DateTimeOffset.html" title="class in system">DateTimeOffset</a>&nbsp;value,
+                    boolean&nbsp;omitFractionalSeconds,
+                    <a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;tag)</code>&nbsp;</td>
+</tr>
+<tr id="i21" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/formats/asn1/AsnWriter.html#WriteInteger-system.numerics.BigInteger-system.Nullable_1-">WriteInteger</a></span>(<a href="../../../system/numerics/BigInteger.html" title="class in system.numerics">BigInteger</a>&nbsp;value,
+            <a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;tag)</code>&nbsp;</td>
+</tr>
+<tr id="i22" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/formats/asn1/AsnWriter.html#WriteInteger-long-system.Nullable_1-">WriteInteger</a></span>(long&nbsp;value,
+            <a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;tag)</code>&nbsp;</td>
+</tr>
+<tr id="i23" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/formats/asn1/AsnWriter.html#WriteInteger-system.UInt64-system.Nullable_1-">WriteInteger</a></span>(<a href="../../../system/UInt64.html" title="class in system">UInt64</a>&nbsp;value,
+            <a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;tag)</code>&nbsp;</td>
+</tr>
+<tr id="i24" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/formats/asn1/AsnWriter.html#WriteNamedBitList-system.collections.BitArray-system.Nullable_1-">WriteNamedBitList</a></span>(<a href="../../../system/collections/BitArray.html" title="class in system.collections">BitArray</a>&nbsp;value,
+                 <a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;tag)</code>&nbsp;</td>
+</tr>
+<tr id="i25" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/formats/asn1/AsnWriter.html#WriteNamedBitList-system.Enum-system.Nullable_1-">WriteNamedBitList</a></span>(<a href="../../../system/Enum.html" title="class in system">Enum</a>&nbsp;value,
+                 <a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;tag)</code>&nbsp;</td>
+</tr>
+<tr id="i26" class="altColor">
+<td class="colFirst"><code>&lt;TEnum extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;<br>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/formats/asn1/AsnWriter.html#WriteNamedBitList-TEnum-system.Nullable_1-">WriteNamedBitList</a></span>(TEnum&nbsp;value,
+                 <a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;tag)</code>&nbsp;</td>
+</tr>
+<tr id="i27" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/formats/asn1/AsnWriter.html#WriteNull-system.Nullable_1-">WriteNull</a></span>(<a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;tag)</code>&nbsp;</td>
+</tr>
+<tr id="i28" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/formats/asn1/AsnWriter.html#WriteObjectIdentifier-java.lang.String-system.Nullable_1-">WriteObjectIdentifier</a></span>(java.lang.String&nbsp;oidValue,
+                     <a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;tag)</code>&nbsp;</td>
+</tr>
+<tr id="i29" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/formats/asn1/AsnWriter.html#WriteUtcTime-system.DateTimeOffset-int-system.Nullable_1-">WriteUtcTime</a></span>(<a href="../../../system/DateTimeOffset.html" title="class in system">DateTimeOffset</a>&nbsp;value,
+            int&nbsp;twoDigitYearMax,
+            <a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;tag)</code>&nbsp;</td>
+</tr>
+<tr id="i30" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/formats/asn1/AsnWriter.html#WriteUtcTime-system.DateTimeOffset-system.Nullable_1-">WriteUtcTime</a></span>(<a href="../../../system/DateTimeOffset.html" title="class in system">DateTimeOffset</a>&nbsp;value,
+            <a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;tag)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -755,6 +856,110 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </dl>
 </li>
 </ul>
+<a name="PopOctetString-system.Nullable_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>PopOctetString</h4>
+<pre>public&nbsp;void&nbsp;PopOctetString(<a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;tag)
+                    throws java.lang.Throwable,
+                           <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                           <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                           <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                           <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                           <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                           <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                           <a href="../../../system/RankException.html" title="class in system">RankException</a>,
+                           <a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                           <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                           <a href="../../../system/formats/asn1/AsnContentException.html" title="class in system.formats.asn1">AsnContentException</a>,
+                           <a href="../../../system/OverflowException.html" title="class in system">OverflowException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/formats/asn1/AsnContentException.html" title="class in system.formats.asn1">AsnContentException</a></code></dd>
+<dd><code><a href="../../../system/OverflowException.html" title="class in system">OverflowException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="PopSequence-system.Nullable_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>PopSequence</h4>
+<pre>public&nbsp;void&nbsp;PopSequence(<a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;tag)
+                 throws java.lang.Throwable,
+                        <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                        <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                        <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                        <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                        <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                        <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                        <a href="../../../system/RankException.html" title="class in system">RankException</a>,
+                        <a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                        <a href="../../../system/formats/asn1/AsnContentException.html" title="class in system.formats.asn1">AsnContentException</a>,
+                        <a href="../../../system/OverflowException.html" title="class in system">OverflowException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../../system/formats/asn1/AsnContentException.html" title="class in system.formats.asn1">AsnContentException</a></code></dd>
+<dd><code><a href="../../../system/OverflowException.html" title="class in system">OverflowException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="PopSetOf-system.Nullable_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>PopSetOf</h4>
+<pre>public&nbsp;void&nbsp;PopSetOf(<a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;tag)
+              throws java.lang.Throwable,
+                     <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                     <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                     <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                     <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                     <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                     <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                     <a href="../../../system/RankException.html" title="class in system">RankException</a>,
+                     <a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                     <a href="../../../system/formats/asn1/AsnContentException.html" title="class in system.formats.asn1">AsnContentException</a>,
+                     <a href="../../../system/OverflowException.html" title="class in system">OverflowException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../../system/formats/asn1/AsnContentException.html" title="class in system.formats.asn1">AsnContentException</a></code></dd>
+<dd><code><a href="../../../system/OverflowException.html" title="class in system">OverflowException</a></code></dd>
+</dl>
+</li>
+</ul>
 <a name="Reset--">
 <!--   -->
 </a>
@@ -792,13 +997,570 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <a name="setJCOInstance-org.mases.jcobridge.JCObject-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>setJCOInstance</h4>
 <pre>public&nbsp;void&nbsp;setJCOInstance(org.mases.jcobridge.JCObject&nbsp;instance)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></code>&nbsp;in class&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="WriteBoolean-boolean-system.Nullable_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>WriteBoolean</h4>
+<pre>public&nbsp;void&nbsp;WriteBoolean(boolean&nbsp;value,
+                         <a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;tag)
+                  throws java.lang.Throwable,
+                         <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                         <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                         <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                         <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                         <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                         <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                         <a href="../../../system/RankException.html" title="class in system">RankException</a>,
+                         <a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                         <a href="../../../system/OverflowException.html" title="class in system">OverflowException</a>,
+                         <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../../system/OverflowException.html" title="class in system">OverflowException</a></code></dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="WriteCharacterString-system.formats.asn1.UniversalTagNumber-java.lang.String-system.Nullable_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>WriteCharacterString</h4>
+<pre>public&nbsp;void&nbsp;WriteCharacterString(<a href="../../../system/formats/asn1/UniversalTagNumber.html" title="class in system.formats.asn1">UniversalTagNumber</a>&nbsp;encodingType,
+                                 java.lang.String&nbsp;value,
+                                 <a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;tag)
+                          throws java.lang.Throwable,
+                                 <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                 <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                 <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                 <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                 <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                 <a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                                 <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                 <a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                                 <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                 <a href="../../../system/OverflowException.html" title="class in system">OverflowException</a>,
+                                 <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/OverflowException.html" title="class in system">OverflowException</a></code></dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="WriteEnumeratedValue-system.Enum-system.Nullable_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>WriteEnumeratedValue</h4>
+<pre>public&nbsp;void&nbsp;WriteEnumeratedValue(<a href="../../../system/Enum.html" title="class in system">Enum</a>&nbsp;value,
+                                 <a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;tag)
+                          throws java.lang.Throwable,
+                                 <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                 <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                 <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                 <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                 <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                 <a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                                 <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                 <a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                                 <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                 <a href="../../../system/OverflowException.html" title="class in system">OverflowException</a>,
+                                 <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/OverflowException.html" title="class in system">OverflowException</a></code></dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="WriteEnumeratedValue-org.mases.jcobridge.netreflection.IJCOBridgeReflected-system.Nullable_1-">
+<!--   -->
+</a><a name="WriteEnumeratedValue-TEnum-system.Nullable_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>WriteEnumeratedValue</h4>
+<pre>public&nbsp;&lt;TEnum extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;&nbsp;void&nbsp;WriteEnumeratedValue(TEnum&nbsp;value,
+                                                                     <a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;tag)
+                                                              throws java.lang.Throwable,
+                                                                     <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                                     <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                                                     <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                                     <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                                     <a href="../../../system/OverflowException.html" title="class in system">OverflowException</a>,
+                                                                     <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                                                     <a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                                                                     <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/OverflowException.html" title="class in system">OverflowException</a></code></dd>
+<dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="WriteGeneralizedTime-system.DateTimeOffset-boolean-system.Nullable_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>WriteGeneralizedTime</h4>
+<pre>public&nbsp;void&nbsp;WriteGeneralizedTime(<a href="../../../system/DateTimeOffset.html" title="class in system">DateTimeOffset</a>&nbsp;value,
+                                 boolean&nbsp;omitFractionalSeconds,
+                                 <a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;tag)
+                          throws java.lang.Throwable,
+                                 <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                 <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                 <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                 <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                 <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                 <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                 <a href="../../../system/RankException.html" title="class in system">RankException</a>,
+                                 <a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                                 <a href="../../../system/security/SecurityException.html" title="class in system.security">SecurityException</a>,
+                                 <a href="../../../system/OverflowException.html" title="class in system">OverflowException</a>,
+                                 <a href="../../../system/DivideByZeroException.html" title="class in system">DivideByZeroException</a>,
+                                 <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                 <a href="../../../system/FormatException.html" title="class in system">FormatException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../../system/security/SecurityException.html" title="class in system.security">SecurityException</a></code></dd>
+<dd><code><a href="../../../system/OverflowException.html" title="class in system">OverflowException</a></code></dd>
+<dd><code><a href="../../../system/DivideByZeroException.html" title="class in system">DivideByZeroException</a></code></dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="WriteInteger-system.numerics.BigInteger-system.Nullable_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>WriteInteger</h4>
+<pre>public&nbsp;void&nbsp;WriteInteger(<a href="../../../system/numerics/BigInteger.html" title="class in system.numerics">BigInteger</a>&nbsp;value,
+                         <a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;tag)
+                  throws java.lang.Throwable,
+                         <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                         <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                         <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                         <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                         <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                         <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                         <a href="../../../system/RankException.html" title="class in system">RankException</a>,
+                         <a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                         <a href="../../../system/OverflowException.html" title="class in system">OverflowException</a>,
+                         <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../../system/OverflowException.html" title="class in system">OverflowException</a></code></dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="WriteInteger-long-system.Nullable_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>WriteInteger</h4>
+<pre>public&nbsp;void&nbsp;WriteInteger(long&nbsp;value,
+                         <a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;tag)
+                  throws java.lang.Throwable,
+                         <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                         <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                         <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                         <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                         <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                         <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                         <a href="../../../system/RankException.html" title="class in system">RankException</a>,
+                         <a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                         <a href="../../../system/OverflowException.html" title="class in system">OverflowException</a>,
+                         <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../../system/OverflowException.html" title="class in system">OverflowException</a></code></dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="WriteInteger-system.UInt64-system.Nullable_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>WriteInteger</h4>
+<pre>public&nbsp;void&nbsp;WriteInteger(<a href="../../../system/UInt64.html" title="class in system">UInt64</a>&nbsp;value,
+                         <a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;tag)
+                  throws java.lang.Throwable,
+                         <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                         <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                         <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                         <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                         <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                         <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                         <a href="../../../system/RankException.html" title="class in system">RankException</a>,
+                         <a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                         <a href="../../../system/OverflowException.html" title="class in system">OverflowException</a>,
+                         <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../../system/OverflowException.html" title="class in system">OverflowException</a></code></dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="WriteNamedBitList-system.collections.BitArray-system.Nullable_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>WriteNamedBitList</h4>
+<pre>public&nbsp;void&nbsp;WriteNamedBitList(<a href="../../../system/collections/BitArray.html" title="class in system.collections">BitArray</a>&nbsp;value,
+                              <a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;tag)
+                       throws java.lang.Throwable,
+                              <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                              <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                              <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                              <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                              <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                              <a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                              <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                              <a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                              <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                              <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                              <a href="../../../system/OverflowException.html" title="class in system">OverflowException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/OverflowException.html" title="class in system">OverflowException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="WriteNamedBitList-system.Enum-system.Nullable_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>WriteNamedBitList</h4>
+<pre>public&nbsp;void&nbsp;WriteNamedBitList(<a href="../../../system/Enum.html" title="class in system">Enum</a>&nbsp;value,
+                              <a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;tag)
+                       throws java.lang.Throwable,
+                              <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                              <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                              <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                              <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                              <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                              <a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                              <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                              <a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                              <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                              <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                              <a href="../../../system/OverflowException.html" title="class in system">OverflowException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/OverflowException.html" title="class in system">OverflowException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="WriteNamedBitList-org.mases.jcobridge.netreflection.IJCOBridgeReflected-system.Nullable_1-">
+<!--   -->
+</a><a name="WriteNamedBitList-TEnum-system.Nullable_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>WriteNamedBitList</h4>
+<pre>public&nbsp;&lt;TEnum extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;&nbsp;void&nbsp;WriteNamedBitList(TEnum&nbsp;value,
+                                                                  <a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;tag)
+                                                           throws java.lang.Throwable,
+                                                                  <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                                  <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                                  <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                                                  <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                                                  <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                                                  <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                                  <a href="../../../system/RankException.html" title="class in system">RankException</a>,
+                                                                  <a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                                                                  <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                                                  <a href="../../../system/OverflowException.html" title="class in system">OverflowException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/OverflowException.html" title="class in system">OverflowException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="WriteNull-system.Nullable_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>WriteNull</h4>
+<pre>public&nbsp;void&nbsp;WriteNull(<a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;tag)
+               throws java.lang.Throwable,
+                      <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                      <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                      <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                      <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                      <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                      <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                      <a href="../../../system/RankException.html" title="class in system">RankException</a>,
+                      <a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                      <a href="../../../system/OverflowException.html" title="class in system">OverflowException</a>,
+                      <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../../system/OverflowException.html" title="class in system">OverflowException</a></code></dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="WriteObjectIdentifier-java.lang.String-system.Nullable_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>WriteObjectIdentifier</h4>
+<pre>public&nbsp;void&nbsp;WriteObjectIdentifier(java.lang.String&nbsp;oidValue,
+                                  <a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;tag)
+                           throws java.lang.Throwable,
+                                  <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                  <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                  <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                  <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                  <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                  <a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                                  <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                  <a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                                  <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                  <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                  <a href="../../../system/OverflowException.html" title="class in system">OverflowException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/OverflowException.html" title="class in system">OverflowException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="WriteUtcTime-system.DateTimeOffset-int-system.Nullable_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>WriteUtcTime</h4>
+<pre>public&nbsp;void&nbsp;WriteUtcTime(<a href="../../../system/DateTimeOffset.html" title="class in system">DateTimeOffset</a>&nbsp;value,
+                         int&nbsp;twoDigitYearMax,
+                         <a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;tag)
+                  throws java.lang.Throwable,
+                         <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                         <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                         <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                         <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                         <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                         <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                         <a href="../../../system/RankException.html" title="class in system">RankException</a>,
+                         <a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                         <a href="../../../system/InvalidTimeZoneException.html" title="class in system">InvalidTimeZoneException</a>,
+                         <a href="../../../system/security/SecurityException.html" title="class in system.security">SecurityException</a>,
+                         <a href="../../../system/UnauthorizedAccessException.html" title="class in system">UnauthorizedAccessException</a>,
+                         <a href="../../../system/io/IOException.html" title="class in system.io">IOException</a>,
+                         <a href="../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a>,
+                         <a href="../../../system/OverflowException.html" title="class in system">OverflowException</a>,
+                         <a href="../../../system/FormatException.html" title="class in system">FormatException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../../system/InvalidTimeZoneException.html" title="class in system">InvalidTimeZoneException</a></code></dd>
+<dd><code><a href="../../../system/security/SecurityException.html" title="class in system.security">SecurityException</a></code></dd>
+<dd><code><a href="../../../system/UnauthorizedAccessException.html" title="class in system">UnauthorizedAccessException</a></code></dd>
+<dd><code><a href="../../../system/io/IOException.html" title="class in system.io">IOException</a></code></dd>
+<dd><code><a href="../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
+<dd><code><a href="../../../system/OverflowException.html" title="class in system">OverflowException</a></code></dd>
+<dd><code><a href="../../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="WriteUtcTime-system.DateTimeOffset-system.Nullable_1-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>WriteUtcTime</h4>
+<pre>public&nbsp;void&nbsp;WriteUtcTime(<a href="../../../system/DateTimeOffset.html" title="class in system">DateTimeOffset</a>&nbsp;value,
+                         <a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;tag)
+                  throws java.lang.Throwable,
+                         <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                         <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                         <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                         <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                         <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                         <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                         <a href="../../../system/RankException.html" title="class in system">RankException</a>,
+                         <a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                         <a href="../../../system/OverflowException.html" title="class in system">OverflowException</a>,
+                         <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                         <a href="../../../system/security/SecurityException.html" title="class in system.security">SecurityException</a>,
+                         <a href="../../../system/FormatException.html" title="class in system">FormatException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../../system/OverflowException.html" title="class in system">OverflowException</a></code></dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/security/SecurityException.html" title="class in system.security">SecurityException</a></code></dd>
+<dd><code><a href="../../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
 </dl>
 </li>
 </ul>

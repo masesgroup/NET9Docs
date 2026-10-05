@@ -17,6 +17,7 @@
 <meta name="keywords" content="getJCOType()">
 <meta name="keywords" content="cast()">
 <meta name="keywords" content="ToAssemblyName()">
+<meta name="keywords" content="getPublicKeyOrToken()">
 <meta name="keywords" content="getFlags()">
 <meta name="keywords" content="getCultureName()">
 <meta name="keywords" content="getFullName()">
@@ -35,7 +36,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -215,6 +216,13 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <div class="block">Internal constructor.</div>
 </td>
 </tr>
+<tr class="altColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/reflection/metadata/AssemblyNameInfo.html#AssemblyNameInfo-java.lang.String-system.Version-java.lang.String-system.reflection.AssemblyNameFlags-system.collections.immutable.ImmutableArray_1-">AssemblyNameInfo</a></span>(java.lang.String&nbsp;name,
+                <a href="../../../system/Version.html" title="class in system">Version</a>&nbsp;version,
+                java.lang.String&nbsp;cultureName,
+                <a href="../../../system/reflection/AssemblyNameFlags.html" title="class in system.reflection">AssemblyNameFlags</a>&nbsp;flags,
+                <a href="../../../system/collections/immutable/ImmutableArray_1.html" title="class in system.collections.immutable">ImmutableArray_1</a>&nbsp;publicKeyOrToken)</code>&nbsp;</td>
+</tr>
 </table>
 </li>
 </ul>
@@ -283,14 +291,18 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/reflection/metadata/AssemblyNameInfo.html#getName--">getName</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i10" class="altColor">
+<td class="colFirst"><code><a href="../../../system/collections/immutable/ImmutableArray_1.html" title="class in system.collections.immutable">ImmutableArray_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/reflection/metadata/AssemblyNameInfo.html#getPublicKeyOrToken--">getPublicKeyOrToken</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/Version.html" title="class in system">Version</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/reflection/metadata/AssemblyNameInfo.html#getVersion--">getVersion</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/reflection/metadata/AssemblyNameInfo.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/reflection/AssemblyName.html" title="class in system.reflection">AssemblyName</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/reflection/metadata/AssemblyNameInfo.html#ToAssemblyName--">ToAssemblyName</a></span>()</code>&nbsp;</td>
 </tr>
@@ -400,7 +412,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <a name="AssemblyNameInfo-java.lang.Object-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>AssemblyNameInfo</h4>
 <pre>public&nbsp;AssemblyNameInfo(java.lang.Object&nbsp;instance)
@@ -409,6 +421,42 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="AssemblyNameInfo-java.lang.String-system.Version-java.lang.String-system.reflection.AssemblyNameFlags-system.collections.immutable.ImmutableArray_1-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>AssemblyNameInfo</h4>
+<pre>public&nbsp;AssemblyNameInfo(java.lang.String&nbsp;name,
+                        <a href="../../../system/Version.html" title="class in system">Version</a>&nbsp;version,
+                        java.lang.String&nbsp;cultureName,
+                        <a href="../../../system/reflection/AssemblyNameFlags.html" title="class in system.reflection">AssemblyNameFlags</a>&nbsp;flags,
+                        <a href="../../../system/collections/immutable/ImmutableArray_1.html" title="class in system.collections.immutable">ImmutableArray_1</a>&nbsp;publicKeyOrToken)
+                 throws java.lang.Throwable,
+                        <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                        <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                        <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                        <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                        <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                        <a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                        <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                        <a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                        <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -603,6 +651,20 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <h4>getName</h4>
 <pre>public&nbsp;java.lang.String&nbsp;getName()
                          throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="getPublicKeyOrToken--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getPublicKeyOrToken</h4>
+<pre>public&nbsp;<a href="../../../system/collections/immutable/ImmutableArray_1.html" title="class in system.collections.immutable">ImmutableArray_1</a>&nbsp;getPublicKeyOrToken()
+                                     throws java.lang.Throwable</pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>

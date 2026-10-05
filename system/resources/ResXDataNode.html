@@ -130,13 +130,12 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>, <a href="../../system/runtime/serialization/ISerializable.html" title="interface in system.runtime.serialization">ISerializable</a></dd>
+<dd><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></dd>
 </dl>
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">ResXDataNode</span>
-extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>
-implements <a href="../../system/runtime/serialization/ISerializable.html" title="interface in system.runtime.serialization">ISerializable</a></pre>
+extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></pre>
 <div class="block">The base .NET class managing System.Resources.ResXDataNode, System.Windows.Forms, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089.
  <p>
  
@@ -224,8 +223,18 @@ implements <a href="../../system/runtime/serialization/ISerializable.html" title
             <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;value)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../system/resources/ResXDataNode.html#ResXDataNode-java.lang.String-org.mases.jcobridge.netreflection.NetObject-system.Func_2-">ResXDataNode</a></span>(java.lang.String&nbsp;name,
+            <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;value,
+            <a href="../../system/Func_2.html" title="class in system">Func_2</a>&nbsp;typeNameConverter)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../system/resources/ResXDataNode.html#ResXDataNode-java.lang.String-system.resources.ResXFileRef-">ResXDataNode</a></span>(java.lang.String&nbsp;name,
             <a href="../../system/resources/ResXFileRef.html" title="class in system.resources">ResXFileRef</a>&nbsp;fileRef)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../system/resources/ResXDataNode.html#ResXDataNode-java.lang.String-system.resources.ResXFileRef-system.Func_2-">ResXDataNode</a></span>(java.lang.String&nbsp;name,
+            <a href="../../system/resources/ResXFileRef.html" title="class in system.resources">ResXFileRef</a>&nbsp;fileRef,
+            <a href="../../system/Func_2.html" title="class in system">Func_2</a>&nbsp;typeNameConverter)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -336,13 +345,6 @@ implements <a href="../../system/runtime/serialization/ISerializable.html" title
 </a>
 <h3>Methods inherited from class&nbsp;java.lang.Object</h3>
 <code>equals, getClass, notify, notifyAll, wait, wait, wait</code></li>
-</ul>
-<ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.system.runtime.serialization.ISerializable">
-<!--   -->
-</a>
-<h3>Methods inherited from interface&nbsp;system.runtime.serialization.<a href="../../system/runtime/serialization/ISerializable.html" title="interface in system.runtime.serialization">ISerializable</a></h3>
-<code><a href="../../system/runtime/serialization/ISerializable.html#GetObjectData-system.runtime.serialization.SerializationInfo-system.runtime.serialization.StreamingContext-">GetObjectData</a>, <a href="../../system/runtime/serialization/ISerializable.html#ToISerializable-org.mases.jcobridge.netreflection.IJCOBridgeReflected-">ToISerializable</a></code></li>
 </ul>
 </li>
 </ul>
@@ -478,10 +480,48 @@ implements <a href="../../system/runtime/serialization/ISerializable.html" title
 </dl>
 </li>
 </ul>
+<a name="ResXDataNode-java.lang.String-org.mases.jcobridge.netreflection.NetObject-system.Func_2-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ResXDataNode</h4>
+<pre>public&nbsp;ResXDataNode(java.lang.String&nbsp;name,
+                    <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;value,
+                    <a href="../../system/Func_2.html" title="class in system">Func_2</a>&nbsp;typeNameConverter)
+             throws java.lang.Throwable,
+                    <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                    <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                    <a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                    <a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                    <a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                    <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                    <a href="../../system/RankException.html" title="class in system">RankException</a>,
+                    <a href="../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                    <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                    <a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                    <a href="../../system/FormatException.html" title="class in system">FormatException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../system/RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
+</dl>
+</li>
+</ul>
 <a name="ResXDataNode-java.lang.String-system.resources.ResXFileRef-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>ResXDataNode</h4>
 <pre>public&nbsp;ResXDataNode(java.lang.String&nbsp;name,
@@ -499,6 +539,40 @@ implements <a href="../../system/runtime/serialization/ISerializable.html" title
 <dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
 <dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="ResXDataNode-java.lang.String-system.resources.ResXFileRef-system.Func_2-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>ResXDataNode</h4>
+<pre>public&nbsp;ResXDataNode(java.lang.String&nbsp;name,
+                    <a href="../../system/resources/ResXFileRef.html" title="class in system.resources">ResXFileRef</a>&nbsp;fileRef,
+                    <a href="../../system/Func_2.html" title="class in system">Func_2</a>&nbsp;typeNameConverter)
+             throws java.lang.Throwable,
+                    <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                    <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                    <a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                    <a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                    <a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                    <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                    <a href="../../system/RankException.html" title="class in system">RankException</a>,
+                    <a href="../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                    <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../system/RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
 <dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 </dl>
 </li>
@@ -590,8 +664,6 @@ implements <a href="../../system/runtime/serialization/ISerializable.html" title
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOAssemblyName--">getJCOAssemblyName</a></code>&nbsp;in interface&nbsp;<code><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../system/runtime/serialization/ISerializable.html#getJCOAssemblyName--">getJCOAssemblyName</a></code>&nbsp;in interface&nbsp;<code><a href="../../system/runtime/serialization/ISerializable.html" title="interface in system.runtime.serialization">ISerializable</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../org/mases/jcobridge/netreflection/NetObject.html#getJCOAssemblyName--">getJCOAssemblyName</a></code>&nbsp;in class&nbsp;<code><a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -611,8 +683,6 @@ implements <a href="../../system/runtime/serialization/ISerializable.html" title
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOClassName--">getJCOClassName</a></code>&nbsp;in interface&nbsp;<code><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../system/runtime/serialization/ISerializable.html#getJCOClassName--">getJCOClassName</a></code>&nbsp;in interface&nbsp;<code><a href="../../system/runtime/serialization/ISerializable.html" title="interface in system.runtime.serialization">ISerializable</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../org/mases/jcobridge/netreflection/NetObject.html#getJCOClassName--">getJCOClassName</a></code>&nbsp;in class&nbsp;<code><a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -632,8 +702,6 @@ implements <a href="../../system/runtime/serialization/ISerializable.html" title
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOInstance--">getJCOInstance</a></code>&nbsp;in interface&nbsp;<code><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../system/runtime/serialization/ISerializable.html#getJCOInstance--">getJCOInstance</a></code>&nbsp;in interface&nbsp;<code><a href="../../system/runtime/serialization/ISerializable.html" title="interface in system.runtime.serialization">ISerializable</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../org/mases/jcobridge/netreflection/NetObject.html#getJCOInstance--">getJCOInstance</a></code>&nbsp;in class&nbsp;<code><a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -653,8 +721,6 @@ implements <a href="../../system/runtime/serialization/ISerializable.html" title
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOObjectName--">getJCOObjectName</a></code>&nbsp;in interface&nbsp;<code><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../system/runtime/serialization/ISerializable.html#getJCOObjectName--">getJCOObjectName</a></code>&nbsp;in interface&nbsp;<code><a href="../../system/runtime/serialization/ISerializable.html" title="interface in system.runtime.serialization">ISerializable</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../org/mases/jcobridge/netreflection/NetObject.html#getJCOObjectName--">getJCOObjectName</a></code>&nbsp;in class&nbsp;<code><a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -675,8 +741,6 @@ implements <a href="../../system/runtime/serialization/ISerializable.html" title
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOType--">getJCOType</a></code>&nbsp;in interface&nbsp;<code><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../system/runtime/serialization/ISerializable.html#getJCOType--">getJCOType</a></code>&nbsp;in interface&nbsp;<code><a href="../../system/runtime/serialization/ISerializable.html" title="interface in system.runtime.serialization">ISerializable</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../org/mases/jcobridge/netreflection/NetObject.html#getJCOType--">getJCOType</a></code>&nbsp;in class&nbsp;<code><a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>

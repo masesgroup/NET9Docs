@@ -154,7 +154,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>, <a href="../../../system/reflection/IReflectableType.html" title="interface in system.reflection">IReflectableType</a></dd>
+<dd><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></dd>
 </dl>
 <hr>
 <br>
@@ -553,7 +553,7 @@ extends <a href="../../../system/reflection/TypeInfo.html" title="class in syste
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;system.reflection.<a href="../../../system/reflection/TypeInfo.html" title="class in system.reflection">TypeInfo</a></h3>
-<code><a href="../../../system/reflection/TypeInfo.html#AsType--">AsType</a>, <a href="../../../system/reflection/TypeInfo.html#GetDeclaredEvent-java.lang.String-">GetDeclaredEvent</a>, <a href="../../../system/reflection/TypeInfo.html#GetDeclaredField-java.lang.String-">GetDeclaredField</a>, <a href="../../../system/reflection/TypeInfo.html#GetDeclaredMethod-java.lang.String-">GetDeclaredMethod</a>, <a href="../../../system/reflection/TypeInfo.html#GetDeclaredNestedType-java.lang.String-">GetDeclaredNestedType</a>, <a href="../../../system/reflection/TypeInfo.html#GetDeclaredProperty-java.lang.String-">GetDeclaredProperty</a>, <a href="../../../system/reflection/TypeInfo.html#getGenericTypeParameters--">getGenericTypeParameters</a>, <a href="../../../system/reflection/TypeInfo.html#IsAssignableFrom-system.reflection.TypeInfo-">IsAssignableFrom</a></code></li>
+<code><a href="../../../system/reflection/TypeInfo.html#AsType--">AsType</a>, <a href="../../../system/reflection/TypeInfo.html#getDeclaredConstructors--">getDeclaredConstructors</a>, <a href="../../../system/reflection/TypeInfo.html#GetDeclaredEvent-java.lang.String-">GetDeclaredEvent</a>, <a href="../../../system/reflection/TypeInfo.html#getDeclaredEvents--">getDeclaredEvents</a>, <a href="../../../system/reflection/TypeInfo.html#GetDeclaredField-java.lang.String-">GetDeclaredField</a>, <a href="../../../system/reflection/TypeInfo.html#getDeclaredFields--">getDeclaredFields</a>, <a href="../../../system/reflection/TypeInfo.html#getDeclaredMembers--">getDeclaredMembers</a>, <a href="../../../system/reflection/TypeInfo.html#GetDeclaredMethod-java.lang.String-">GetDeclaredMethod</a>, <a href="../../../system/reflection/TypeInfo.html#getDeclaredMethods--">getDeclaredMethods</a>, <a href="../../../system/reflection/TypeInfo.html#GetDeclaredMethods-java.lang.String-">GetDeclaredMethods</a>, <a href="../../../system/reflection/TypeInfo.html#GetDeclaredNestedType-java.lang.String-">GetDeclaredNestedType</a>, <a href="../../../system/reflection/TypeInfo.html#getDeclaredNestedTypes--">getDeclaredNestedTypes</a>, <a href="../../../system/reflection/TypeInfo.html#getDeclaredProperties--">getDeclaredProperties</a>, <a href="../../../system/reflection/TypeInfo.html#GetDeclaredProperty-java.lang.String-">GetDeclaredProperty</a>, <a href="../../../system/reflection/TypeInfo.html#getGenericTypeParameters--">getGenericTypeParameters</a>, <a href="../../../system/reflection/TypeInfo.html#getImplementedInterfaces--">getImplementedInterfaces</a>, <a href="../../../system/reflection/TypeInfo.html#IsAssignableFrom-system.reflection.TypeInfo-">IsAssignableFrom</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.org.mases.jcobridge.netreflection.NetObject">
@@ -568,13 +568,6 @@ extends <a href="../../../system/reflection/TypeInfo.html" title="class in syste
 </a>
 <h3>Methods inherited from class&nbsp;java.lang.Object</h3>
 <code>equals, getClass, notify, notifyAll, wait, wait, wait</code></li>
-</ul>
-<ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.system.reflection.IReflectableType">
-<!--   -->
-</a>
-<h3>Methods inherited from interface&nbsp;system.reflection.<a href="../../../system/reflection/IReflectableType.html" title="interface in system.reflection">IReflectableType</a></h3>
-<code><a href="../../../system/reflection/IReflectableType.html#GetTypeInfo--">GetTypeInfo</a>, <a href="../../../system/reflection/IReflectableType.html#ToIReflectableType-org.mases.jcobridge.netreflection.IJCOBridgeReflected-">ToIReflectableType</a></code></li>
 </ul>
 </li>
 </ul>
@@ -1489,8 +1482,6 @@ extends <a href="../../../system/reflection/TypeInfo.html" title="class in syste
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOAssemblyName--">getJCOAssemblyName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../system/reflection/IReflectableType.html#getJCOAssemblyName--">getJCOAssemblyName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/reflection/IReflectableType.html" title="interface in system.reflection">IReflectableType</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../system/reflection/TypeInfo.html#getJCOAssemblyName--">getJCOAssemblyName</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/reflection/TypeInfo.html" title="class in system.reflection">TypeInfo</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -1510,8 +1501,6 @@ extends <a href="../../../system/reflection/TypeInfo.html" title="class in syste
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOClassName--">getJCOClassName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../system/reflection/IReflectableType.html#getJCOClassName--">getJCOClassName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/reflection/IReflectableType.html" title="interface in system.reflection">IReflectableType</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../system/reflection/TypeInfo.html#getJCOClassName--">getJCOClassName</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/reflection/TypeInfo.html" title="class in system.reflection">TypeInfo</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -1531,8 +1520,6 @@ extends <a href="../../../system/reflection/TypeInfo.html" title="class in syste
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOInstance--">getJCOInstance</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../system/reflection/IReflectableType.html#getJCOInstance--">getJCOInstance</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/reflection/IReflectableType.html" title="interface in system.reflection">IReflectableType</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../system/reflection/TypeInfo.html#getJCOInstance--">getJCOInstance</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/reflection/TypeInfo.html" title="class in system.reflection">TypeInfo</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -1552,8 +1539,6 @@ extends <a href="../../../system/reflection/TypeInfo.html" title="class in syste
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOObjectName--">getJCOObjectName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../system/reflection/IReflectableType.html#getJCOObjectName--">getJCOObjectName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/reflection/IReflectableType.html" title="interface in system.reflection">IReflectableType</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../system/reflection/TypeInfo.html#getJCOObjectName--">getJCOObjectName</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/reflection/TypeInfo.html" title="class in system.reflection">TypeInfo</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -1574,8 +1559,6 @@ extends <a href="../../../system/reflection/TypeInfo.html" title="class in syste
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOType--">getJCOType</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../system/reflection/IReflectableType.html#getJCOType--">getJCOType</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/reflection/IReflectableType.html" title="interface in system.reflection">IReflectableType</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../system/reflection/TypeInfo.html#getJCOType--">getJCOType</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/reflection/TypeInfo.html" title="class in system.reflection">TypeInfo</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>

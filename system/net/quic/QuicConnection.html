@@ -18,6 +18,9 @@
 <meta name="keywords" content="cast()">
 <meta name="keywords" content="CloseAsync()">
 <meta name="keywords" content="DisposeAsync()">
+<meta name="keywords" content="ConnectAsync()">
+<meta name="keywords" content="AcceptInboundStreamAsync()">
+<meta name="keywords" content="OpenOutboundStreamAsync()">
 <meta name="keywords" content="getIsSupported()">
 <meta name="keywords" content="getLocalEndPoint()">
 <meta name="keywords" content="getRemoteEndPoint()">
@@ -37,7 +40,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":9,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10};
+var methods = {"i0":10,"i1":9,"i2":10,"i3":9,"i4":10,"i5":9,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -233,75 +236,89 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code><a href="../../../system/threading/tasks/ValueTask_1.html" title="class in system.threading.tasks">ValueTask_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/quic/QuicConnection.html#AcceptInboundStreamAsync-system.threading.CancellationToken-">AcceptInboundStreamAsync</a></span>(<a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)</code>&nbsp;</td>
+</tr>
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../system/net/quic/QuicConnection.html" title="class in system.net.quic">QuicConnection</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/quic/QuicConnection.html#cast-org.mases.jcobridge.netreflection.IJCOBridgeReflected-">cast</a></span>(<a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&nbsp;from)</code>
 <div class="block">Try to cast the <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection"><code>IJCOBridgeReflected</code></a> instance into <a href="../../../system/net/quic/QuicConnection.html" title="class in system.net.quic"><code>QuicConnection</code></a>, a cast assert is made to check if types are compatible.</div>
 </td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../../system/threading/tasks/ValueTask.html" title="class in system.threading.tasks">ValueTask</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/quic/QuicConnection.html#CloseAsync-long-system.threading.CancellationToken-">CloseAsync</a></span>(long&nbsp;errorCode,
           <a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)</code>&nbsp;</td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>static <a href="../../../system/threading/tasks/ValueTask_1.html" title="class in system.threading.tasks">ValueTask_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/quic/QuicConnection.html#ConnectAsync-system.net.quic.QuicClientConnectionOptions-system.threading.CancellationToken-">ConnectAsync</a></span>(<a href="../../../system/net/quic/QuicClientConnectionOptions.html" title="class in system.net.quic">QuicClientConnectionOptions</a>&nbsp;options,
+            <a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)</code>&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../../system/threading/tasks/ValueTask.html" title="class in system.threading.tasks">ValueTask</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/quic/QuicConnection.html#DisposeAsync--">DisposeAsync</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>static boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/quic/QuicConnection.html#getIsSupported--">getIsSupported</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/quic/QuicConnection.html#getJCOAssemblyName--">getJCOAssemblyName</a></span>()</code>
 <div class="block">Returns the reflected Assembly name</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/quic/QuicConnection.html#getJCOClassName--">getJCOClassName</a></span>()</code>
 <div class="block">Returns the reflected Class name</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/quic/QuicConnection.html#getJCOInstance--">getJCOInstance</a></span>()</code>
 <div class="block">Returns the instantiated class</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/quic/QuicConnection.html#getJCOObjectName--">getJCOObjectName</a></span>()</code>
 <div class="block">Returns the reflected Class name used to build the object</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>org.mases.jcobridge.JCType</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/quic/QuicConnection.html#getJCOType--">getJCOType</a></span>()</code>
 <div class="block">Returns the instantiated class Type</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/net/IPEndPoint.html" title="class in system.net">IPEndPoint</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/quic/QuicConnection.html#getLocalEndPoint--">getLocalEndPoint</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="../../../system/net/security/SslApplicationProtocol.html" title="class in system.net.security">SslApplicationProtocol</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/quic/QuicConnection.html#getNegotiatedApplicationProtocol--">getNegotiatedApplicationProtocol</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/security/cryptography/x509certificates/X509Certificate.html" title="class in system.security.cryptography.x509certificates">X509Certificate</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/quic/QuicConnection.html#getRemoteCertificate--">getRemoteCertificate</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code><a href="../../../system/net/IPEndPoint.html" title="class in system.net">IPEndPoint</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/quic/QuicConnection.html#getRemoteEndPoint--">getRemoteEndPoint</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/quic/QuicConnection.html#getTargetHostName--">getTargetHostName</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i16" class="altColor">
+<td class="colFirst"><code><a href="../../../system/threading/tasks/ValueTask_1.html" title="class in system.threading.tasks">ValueTask_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/quic/QuicConnection.html#OpenOutboundStreamAsync-system.net.quic.QuicStreamType-system.threading.CancellationToken-">OpenOutboundStreamAsync</a></span>(<a href="../../../system/net/quic/QuicStreamType.html" title="class in system.net.quic">QuicStreamType</a>&nbsp;type,
+                       <a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)</code>&nbsp;</td>
+</tr>
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/quic/QuicConnection.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
@@ -431,6 +448,30 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="AcceptInboundStreamAsync-system.threading.CancellationToken-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>AcceptInboundStreamAsync</h4>
+<pre>public&nbsp;<a href="../../../system/threading/tasks/ValueTask_1.html" title="class in system.threading.tasks">ValueTask_1</a>&nbsp;AcceptInboundStreamAsync(<a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)
+                                     throws java.lang.Throwable,
+                                            <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                            <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                            <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                            <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                            <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+</dl>
+</li>
+</ul>
 <a name="cast-org.mases.jcobridge.netreflection.IJCOBridgeReflected-">
 <!--   -->
 </a>
@@ -494,6 +535,37 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <dd><code><a href="../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
 <dd><code><a href="../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
 <dd><code><a href="../../../system/MissingMemberException.html" title="class in system">MissingMemberException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="ConnectAsync-system.net.quic.QuicClientConnectionOptions-system.threading.CancellationToken-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ConnectAsync</h4>
+<pre>public static&nbsp;<a href="../../../system/threading/tasks/ValueTask_1.html" title="class in system.threading.tasks">ValueTask_1</a>&nbsp;ConnectAsync(<a href="../../../system/net/quic/QuicClientConnectionOptions.html" title="class in system.net.quic">QuicClientConnectionOptions</a>&nbsp;options,
+                                       <a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)
+                                throws java.lang.Throwable,
+                                       <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                       <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                       <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                       <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                       <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                       <a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                                       <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                       <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -698,6 +770,31 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="OpenOutboundStreamAsync-system.net.quic.QuicStreamType-system.threading.CancellationToken-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>OpenOutboundStreamAsync</h4>
+<pre>public&nbsp;<a href="../../../system/threading/tasks/ValueTask_1.html" title="class in system.threading.tasks">ValueTask_1</a>&nbsp;OpenOutboundStreamAsync(<a href="../../../system/net/quic/QuicStreamType.html" title="class in system.net.quic">QuicStreamType</a>&nbsp;type,
+                                           <a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)
+                                    throws java.lang.Throwable,
+                                           <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                           <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                           <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                           <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                           <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 </dl>
 </li>
 </ul>

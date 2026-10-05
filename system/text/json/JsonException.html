@@ -17,6 +17,10 @@
 <meta name="keywords" content="getJCOType()">
 <meta name="keywords" content="cast()">
 <meta name="keywords" content="GetObjectData()">
+<meta name="keywords" content="getBytePositionInLine()">
+<meta name="keywords" content="setBytePositionInLine()">
+<meta name="keywords" content="getLineNumber()">
+<meta name="keywords" content="setLineNumber()">
 <meta name="keywords" content="getPath()">
 <meta name="keywords" content="setPath()">
 <link rel="stylesheet" type="text/css" href="../../../stylesheet.css" title="Style">
@@ -32,7 +36,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -222,6 +226,19 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetException.html" t
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../system/text/json/JsonException.html#JsonException-java.lang.String-org.mases.jcobridge.netreflection.NetException-">JsonException</a></span>(java.lang.String&nbsp;message,
              <a href="../../../org/mases/jcobridge/netreflection/NetException.html" title="class in org.mases.jcobridge.netreflection">NetException</a>&nbsp;cause)</code>&nbsp;</td>
 </tr>
+<tr class="rowColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/text/json/JsonException.html#JsonException-java.lang.String-java.lang.String-system.Nullable_1-system.Nullable_1-">JsonException</a></span>(java.lang.String&nbsp;message,
+             java.lang.String&nbsp;path,
+             <a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;lineNumber,
+             <a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;bytePositionInLine)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/text/json/JsonException.html#JsonException-java.lang.String-java.lang.String-system.Nullable_1-system.Nullable_1-org.mases.jcobridge.netreflection.NetException-">JsonException</a></span>(java.lang.String&nbsp;message,
+             java.lang.String&nbsp;path,
+             <a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;lineNumber,
+             <a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;bytePositionInLine,
+             <a href="../../../org/mases/jcobridge/netreflection/NetException.html" title="class in org.mases.jcobridge.netreflection">NetException</a>&nbsp;innerException)</code>&nbsp;</td>
+</tr>
 </table>
 </li>
 </ul>
@@ -244,49 +261,65 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetException.html" t
 </td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code><a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/text/json/JsonException.html#getBytePositionInLine--">getBytePositionInLine</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/text/json/JsonException.html#getJCOAssemblyName--">getJCOAssemblyName</a></span>()</code>
 <div class="block">Returns the reflected Assembly name</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/text/json/JsonException.html#getJCOClassName--">getJCOClassName</a></span>()</code>
 <div class="block">Returns the reflected Class name</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/text/json/JsonException.html#getJCOInstance--">getJCOInstance</a></span>()</code>
 <div class="block">Returns the instantiated class</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/text/json/JsonException.html#getJCOObjectName--">getJCOObjectName</a></span>()</code>
 <div class="block">Returns the reflected Class name used to build the object</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>org.mases.jcobridge.JCType</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/text/json/JsonException.html#getJCOType--">getJCOType</a></span>()</code>
 <div class="block">Returns the instantiated class Type</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code><a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/text/json/JsonException.html#getLineNumber--">getLineNumber</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/text/json/JsonException.html#GetObjectData-system.runtime.serialization.SerializationInfo-system.runtime.serialization.StreamingContext-">GetObjectData</a></span>(<a href="../../../system/runtime/serialization/SerializationInfo.html" title="class in system.runtime.serialization">SerializationInfo</a>&nbsp;info,
              <a href="../../../system/runtime/serialization/StreamingContext.html" title="class in system.runtime.serialization">StreamingContext</a>&nbsp;context)</code>&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/text/json/JsonException.html#getPath--">getPath</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i10" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/text/json/JsonException.html#setBytePositionInLine-system.Nullable_1-">setBytePositionInLine</a></span>(<a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;BytePositionInLine)</code>&nbsp;</td>
+</tr>
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/text/json/JsonException.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i12" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/text/json/JsonException.html#setLineNumber-system.Nullable_1-">setLineNumber</a></span>(<a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;LineNumber)</code>&nbsp;</td>
+</tr>
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/text/json/JsonException.html#setPath-java.lang.String-">setPath</a></span>(java.lang.String&nbsp;Path)</code>&nbsp;</td>
 </tr>
@@ -426,11 +459,46 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetException.html" t
 <a name="JsonException-java.lang.String-org.mases.jcobridge.netreflection.NetException-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>JsonException</h4>
 <pre>public&nbsp;JsonException(java.lang.String&nbsp;message,
                      <a href="../../../org/mases/jcobridge/netreflection/NetException.html" title="class in org.mases.jcobridge.netreflection">NetException</a>&nbsp;cause)</pre>
+</li>
+</ul>
+<a name="JsonException-java.lang.String-java.lang.String-system.Nullable_1-system.Nullable_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>JsonException</h4>
+<pre>public&nbsp;JsonException(java.lang.String&nbsp;message,
+                     java.lang.String&nbsp;path,
+                     <a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;lineNumber,
+                     <a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;bytePositionInLine)
+              throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="JsonException-java.lang.String-java.lang.String-system.Nullable_1-system.Nullable_1-org.mases.jcobridge.netreflection.NetException-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>JsonException</h4>
+<pre>public&nbsp;JsonException(java.lang.String&nbsp;message,
+                     java.lang.String&nbsp;path,
+                     <a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;lineNumber,
+                     <a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;bytePositionInLine,
+                     <a href="../../../org/mases/jcobridge/netreflection/NetException.html" title="class in org.mases.jcobridge.netreflection">NetException</a>&nbsp;innerException)
+              throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
 </li>
 </ul>
 </li>
@@ -457,6 +525,20 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetException.html" t
 <dd><a href="../../../system/text/json/JsonException.html" title="class in system.text.json"><code>JsonException</code></a> instance</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - in case of error during cast operation</dd>
+</dl>
+</li>
+</ul>
+<a name="getBytePositionInLine--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getBytePositionInLine</h4>
+<pre>public&nbsp;<a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;getBytePositionInLine()
+                                 throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
 </dl>
 </li>
 </ul>
@@ -556,6 +638,20 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetException.html" t
 </dl>
 </li>
 </ul>
+<a name="getLineNumber--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getLineNumber</h4>
+<pre>public&nbsp;<a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;getLineNumber()
+                         throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
 <a name="GetObjectData-system.runtime.serialization.SerializationInfo-system.runtime.serialization.StreamingContext-">
 <!--   -->
 </a>
@@ -603,6 +699,20 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetException.html" t
 </dl>
 </li>
 </ul>
+<a name="setBytePositionInLine-system.Nullable_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setBytePositionInLine</h4>
+<pre>public&nbsp;void&nbsp;setBytePositionInLine(<a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;BytePositionInLine)
+                           throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
 <a name="setJCOInstance-org.mases.jcobridge.JCObject-">
 <!--   -->
 </a>
@@ -613,6 +723,20 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetException.html" t
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/NetException.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></code>&nbsp;in class&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/NetException.html" title="class in org.mases.jcobridge.netreflection">NetException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="setLineNumber-system.Nullable_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setLineNumber</h4>
+<pre>public&nbsp;void&nbsp;setLineNumber(<a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;LineNumber)
+                   throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
 </dl>
 </li>
 </ul>

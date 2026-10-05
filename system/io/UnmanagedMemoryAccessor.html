@@ -21,6 +21,7 @@
 <meta name="keywords" content="ReadChar()">
 <meta name="keywords" content="ReadDouble()">
 <meta name="keywords" content="ReadInt16()">
+<meta name="keywords" content="ReadArray()">
 <meta name="keywords" content="ReadInt32()">
 <meta name="keywords" content="ReadInt64()">
 <meta name="keywords" content="ReadSByte()">
@@ -30,7 +31,9 @@
 <meta name="keywords" content="ReadUInt32()">
 <meta name="keywords" content="ReadUInt64()">
 <meta name="keywords" content="Dispose()">
+<meta name="keywords" content="Read()">
 <meta name="keywords" content="Write()">
+<meta name="keywords" content="WriteArray()">
 <meta name="keywords" content="close()">
 <meta name="keywords" content="getCanRead()">
 <meta name="keywords" content="getCanWrite()">
@@ -48,7 +51,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":10,"i36":10,"i37":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":10,"i36":10,"i37":10,"i38":10,"i39":10,"i40":10,"i41":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -316,125 +319,149 @@ implements java.lang.AutoCloseable</pre>
 </td>
 </tr>
 <tr id="i11" class="rowColor">
+<td class="colFirst"><code>&lt;T extends <a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;<br>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/io/UnmanagedMemoryAccessor.html#Read-long-org.mases.jcobridge.netreflection.JCORefOut-">Read</a></span>(long&nbsp;position,
+    <a href="../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;T&gt;&nbsp;structure)</code>&nbsp;</td>
+</tr>
+<tr id="i12" class="altColor">
+<td class="colFirst"><code>&lt;T extends <a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;<br>int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/io/UnmanagedMemoryAccessor.html#ReadArray-long-T:A-int-int-">ReadArray</a></span>(long&nbsp;position,
+         T[]&nbsp;array,
+         int&nbsp;offset,
+         int&nbsp;count)</code>&nbsp;</td>
+</tr>
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/io/UnmanagedMemoryAccessor.html#ReadBoolean-long-">ReadBoolean</a></span>(long&nbsp;position)</code>&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>byte</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/io/UnmanagedMemoryAccessor.html#ReadByte-long-">ReadByte</a></span>(long&nbsp;position)</code>&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>char</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/io/UnmanagedMemoryAccessor.html#ReadChar-long-">ReadChar</a></span>(long&nbsp;position)</code>&nbsp;</td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code><a href="../../system/Decimal.html" title="class in system">Decimal</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/io/UnmanagedMemoryAccessor.html#ReadDecimal-long-">ReadDecimal</a></span>(long&nbsp;position)</code>&nbsp;</td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>double</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/io/UnmanagedMemoryAccessor.html#ReadDouble-long-">ReadDouble</a></span>(long&nbsp;position)</code>&nbsp;</td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>short</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/io/UnmanagedMemoryAccessor.html#ReadInt16-long-">ReadInt16</a></span>(long&nbsp;position)</code>&nbsp;</td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/io/UnmanagedMemoryAccessor.html#ReadInt32-long-">ReadInt32</a></span>(long&nbsp;position)</code>&nbsp;</td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code>long</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/io/UnmanagedMemoryAccessor.html#ReadInt64-long-">ReadInt64</a></span>(long&nbsp;position)</code>&nbsp;</td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code><a href="../../system/SByte.html" title="class in system">SByte</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/io/UnmanagedMemoryAccessor.html#ReadSByte-long-">ReadSByte</a></span>(long&nbsp;position)</code>&nbsp;</td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i22" class="altColor">
 <td class="colFirst"><code><a href="../../system/Single.html" title="class in system">Single</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/io/UnmanagedMemoryAccessor.html#ReadSingle-long-">ReadSingle</a></span>(long&nbsp;position)</code>&nbsp;</td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code><a href="../../system/UInt16.html" title="class in system">UInt16</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/io/UnmanagedMemoryAccessor.html#ReadUInt16-long-">ReadUInt16</a></span>(long&nbsp;position)</code>&nbsp;</td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code><a href="../../system/UInt32.html" title="class in system">UInt32</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/io/UnmanagedMemoryAccessor.html#ReadUInt32-long-">ReadUInt32</a></span>(long&nbsp;position)</code>&nbsp;</td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code><a href="../../system/UInt64.html" title="class in system">UInt64</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/io/UnmanagedMemoryAccessor.html#ReadUInt64-long-">ReadUInt64</a></span>(long&nbsp;position)</code>&nbsp;</td>
 </tr>
-<tr id="i24" class="altColor">
+<tr id="i26" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/io/UnmanagedMemoryAccessor.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
-<tr id="i25" class="rowColor">
+<tr id="i27" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/io/UnmanagedMemoryAccessor.html#Write-long-boolean-">Write</a></span>(long&nbsp;position,
      boolean&nbsp;value)</code>&nbsp;</td>
 </tr>
-<tr id="i26" class="altColor">
+<tr id="i28" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/io/UnmanagedMemoryAccessor.html#Write-long-byte-">Write</a></span>(long&nbsp;position,
      byte&nbsp;value)</code>&nbsp;</td>
 </tr>
-<tr id="i27" class="rowColor">
+<tr id="i29" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/io/UnmanagedMemoryAccessor.html#Write-long-char-">Write</a></span>(long&nbsp;position,
      char&nbsp;value)</code>&nbsp;</td>
 </tr>
-<tr id="i28" class="altColor">
+<tr id="i30" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/io/UnmanagedMemoryAccessor.html#Write-long-system.Decimal-">Write</a></span>(long&nbsp;position,
      <a href="../../system/Decimal.html" title="class in system">Decimal</a>&nbsp;value)</code>&nbsp;</td>
 </tr>
-<tr id="i29" class="rowColor">
+<tr id="i31" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/io/UnmanagedMemoryAccessor.html#Write-long-double-">Write</a></span>(long&nbsp;position,
      double&nbsp;value)</code>&nbsp;</td>
 </tr>
-<tr id="i30" class="altColor">
+<tr id="i32" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/io/UnmanagedMemoryAccessor.html#Write-long-int-">Write</a></span>(long&nbsp;position,
      int&nbsp;value)</code>&nbsp;</td>
 </tr>
-<tr id="i31" class="rowColor">
+<tr id="i33" class="rowColor">
+<td class="colFirst"><code>&lt;T extends <a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;<br>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/io/UnmanagedMemoryAccessor.html#Write-long-org.mases.jcobridge.netreflection.JCORefOut-">Write</a></span>(long&nbsp;position,
+     <a href="../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;T&gt;&nbsp;structure)</code>&nbsp;</td>
+</tr>
+<tr id="i34" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/io/UnmanagedMemoryAccessor.html#Write-long-long-">Write</a></span>(long&nbsp;position,
      long&nbsp;value)</code>&nbsp;</td>
 </tr>
-<tr id="i32" class="altColor">
+<tr id="i35" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/io/UnmanagedMemoryAccessor.html#Write-long-system.SByte-">Write</a></span>(long&nbsp;position,
      <a href="../../system/SByte.html" title="class in system">SByte</a>&nbsp;value)</code>&nbsp;</td>
 </tr>
-<tr id="i33" class="rowColor">
+<tr id="i36" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/io/UnmanagedMemoryAccessor.html#Write-long-short-">Write</a></span>(long&nbsp;position,
      short&nbsp;value)</code>&nbsp;</td>
 </tr>
-<tr id="i34" class="altColor">
+<tr id="i37" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/io/UnmanagedMemoryAccessor.html#Write-long-system.Single-">Write</a></span>(long&nbsp;position,
      <a href="../../system/Single.html" title="class in system">Single</a>&nbsp;value)</code>&nbsp;</td>
 </tr>
-<tr id="i35" class="rowColor">
+<tr id="i38" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/io/UnmanagedMemoryAccessor.html#Write-long-system.UInt16-">Write</a></span>(long&nbsp;position,
      <a href="../../system/UInt16.html" title="class in system">UInt16</a>&nbsp;value)</code>&nbsp;</td>
 </tr>
-<tr id="i36" class="altColor">
+<tr id="i39" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/io/UnmanagedMemoryAccessor.html#Write-long-system.UInt32-">Write</a></span>(long&nbsp;position,
      <a href="../../system/UInt32.html" title="class in system">UInt32</a>&nbsp;value)</code>&nbsp;</td>
 </tr>
-<tr id="i37" class="rowColor">
+<tr id="i40" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/io/UnmanagedMemoryAccessor.html#Write-long-system.UInt64-">Write</a></span>(long&nbsp;position,
      <a href="../../system/UInt64.html" title="class in system">UInt64</a>&nbsp;value)</code>&nbsp;</td>
+</tr>
+<tr id="i41" class="rowColor">
+<td class="colFirst"><code>&lt;T extends <a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;<br>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/io/UnmanagedMemoryAccessor.html#WriteArray-long-T:A-int-int-">WriteArray</a></span>(long&nbsp;position,
+          T[]&nbsp;array,
+          int&nbsp;offset,
+          int&nbsp;count)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -825,6 +852,82 @@ implements java.lang.AutoCloseable</pre>
 <dd><code><a href="../../org/mases/jcobridge/netreflection/NetObject.html#getJCOType--">getJCOType</a></code>&nbsp;in class&nbsp;<code><a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>A <code>JCType</code> representing the CLR Type of the instantiated Class</dd>
+</dl>
+</li>
+</ul>
+<a name="Read-long-org.mases.jcobridge.netreflection.JCORefOut-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>Read</h4>
+<pre>public&nbsp;&lt;T extends <a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;&nbsp;void&nbsp;Read(long&nbsp;position,
+                                                 <a href="../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;T&gt;&nbsp;structure)
+                                          throws java.lang.Throwable,
+                                                 <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                 <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                 <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                 <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                 <a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                                 <a href="../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                                                 <a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                                 <a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                                 <a href="../../system/RankException.html" title="class in system">RankException</a>,
+                                                 <a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../system/RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="ReadArray-long-org.mases.jcobridge.netreflection.IJCOBridgeReflected:A-int-int-">
+<!--   -->
+</a><a name="ReadArray-long-T:A-int-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ReadArray</h4>
+<pre>public&nbsp;&lt;T extends <a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;&nbsp;int&nbsp;ReadArray(long&nbsp;position,
+                                                     T[]&nbsp;array,
+                                                     int&nbsp;offset,
+                                                     int&nbsp;count)
+                                              throws java.lang.Throwable,
+                                                     <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                     <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                     <a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                                     <a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                                     <a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                                     <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                     <a href="../../system/RankException.html" title="class in system">RankException</a>,
+                                                     <a href="../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                                                     <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                     <a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                                     <a href="../../system/FormatException.html" title="class in system">FormatException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../system/RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1479,6 +1582,41 @@ implements java.lang.AutoCloseable</pre>
 </dl>
 </li>
 </ul>
+<a name="Write-long-org.mases.jcobridge.netreflection.JCORefOut-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>Write</h4>
+<pre>public&nbsp;&lt;T extends <a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;&nbsp;void&nbsp;Write(long&nbsp;position,
+                                                  <a href="../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;T&gt;&nbsp;structure)
+                                           throws java.lang.Throwable,
+                                                  <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                  <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                  <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                  <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                  <a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                                  <a href="../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                                                  <a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                                  <a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                                  <a href="../../system/RankException.html" title="class in system">RankException</a>,
+                                                  <a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../system/RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+</dl>
+</li>
+</ul>
 <a name="Write-long-long-">
 <!--   -->
 </a>
@@ -1684,7 +1822,7 @@ implements java.lang.AutoCloseable</pre>
 <a name="Write-long-system.UInt64-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>Write</h4>
 <pre>public&nbsp;void&nbsp;Write(long&nbsp;position,
@@ -1713,6 +1851,47 @@ implements java.lang.AutoCloseable</pre>
 <dd><code><a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
 <dd><code><a href="../../system/RankException.html" title="class in system">RankException</a></code></dd>
 <dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="WriteArray-long-org.mases.jcobridge.netreflection.IJCOBridgeReflected:A-int-int-">
+<!--   -->
+</a><a name="WriteArray-long-T:A-int-int-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>WriteArray</h4>
+<pre>public&nbsp;&lt;T extends <a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;&nbsp;void&nbsp;WriteArray(long&nbsp;position,
+                                                       T[]&nbsp;array,
+                                                       int&nbsp;offset,
+                                                       int&nbsp;count)
+                                                throws java.lang.Throwable,
+                                                       <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                       <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                       <a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                                       <a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                                       <a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                                       <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                       <a href="../../system/RankException.html" title="class in system">RankException</a>,
+                                                       <a href="../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                                                       <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                       <a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                                       <a href="../../system/FormatException.html" title="class in system">FormatException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../system/RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
 </dl>
 </li>
 </ul>

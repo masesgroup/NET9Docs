@@ -16,7 +16,13 @@
 <meta name="keywords" content="setJCOInstance()">
 <meta name="keywords" content="getJCOType()">
 <meta name="keywords" content="cast()">
+<meta name="keywords" content="ImportSchemaSet()">
 <meta name="keywords" content="GetDataContract()">
+<meta name="keywords" content="GetReferencedType()">
+<meta name="keywords" content="getProcessedContracts()">
+<meta name="keywords" content="getContracts()">
+<meta name="keywords" content="getKnownTypesForObject()">
+<meta name="keywords" content="setKnownTypesForObject()">
 <meta name="keywords" content="getSurrogateData()">
 <link rel="stylesheet" type="text/css" href="../../../../stylesheet.css" title="Style">
 <script type="text/javascript" src="../../../../script.js"></script>
@@ -31,7 +37,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -210,6 +216,11 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../system/runtime/serialization/datacontracts/DataContractSet.html#DataContractSet-system.runtime.serialization.datacontracts.DataContractSet-">DataContractSet</a></span>(<a href="../../../../system/runtime/serialization/datacontracts/DataContractSet.html" title="class in system.runtime.serialization.datacontracts">DataContractSet</a>&nbsp;dataContractSet)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../system/runtime/serialization/datacontracts/DataContractSet.html#DataContractSet-system.runtime.serialization.ISerializationSurrogateProvider-system.collections.generic.IEnumerable_1-system.collections.generic.IEnumerable_1-">DataContractSet</a></span>(<a href="../../../../system/runtime/serialization/ISerializationSurrogateProvider.html" title="interface in system.runtime.serialization">ISerializationSurrogateProvider</a>&nbsp;dataContractSurrogate,
+               <a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;referencedTypes,
+               <a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;referencedCollectionTypes)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../system/runtime/serialization/datacontracts/DataContractSet.html#DataContractSet-java.lang.Object-">DataContractSet</a></span>(java.lang.Object&nbsp;instance)</code>
 <div class="block">Internal constructor.</div>
 </td>
@@ -236,50 +247,80 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="../../../../system/runtime/serialization/datacontracts/DataContract.html" title="class in system.runtime.serialization.datacontracts">DataContract</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/serialization/datacontracts/DataContractSet.html#GetDataContract-org.mases.jcobridge.netreflection.NetType-">GetDataContract</a></span>(<a href="../../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;type)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../system/collections/generic/Dictionary_2.html" title="class in system.collections.generic">Dictionary_2</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/serialization/datacontracts/DataContractSet.html#getContracts--">getContracts</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../../../system/runtime/serialization/datacontracts/DataContract.html" title="class in system.runtime.serialization.datacontracts">DataContract</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/serialization/datacontracts/DataContractSet.html#GetDataContract-system.xml.XmlQualifiedName-">GetDataContract</a></span>(<a href="../../../../system/xml/XmlQualifiedName.html" title="class in system.xml">XmlQualifiedName</a>&nbsp;key)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/serialization/datacontracts/DataContractSet.html#GetDataContract-org.mases.jcobridge.netreflection.NetType-">GetDataContract</a></span>(<a href="../../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;type)</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
+<td class="colFirst"><code><a href="../../../../system/runtime/serialization/datacontracts/DataContract.html" title="class in system.runtime.serialization.datacontracts">DataContract</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/serialization/datacontracts/DataContractSet.html#GetDataContract-system.xml.XmlQualifiedName-">GetDataContract</a></span>(<a href="../../../../system/xml/XmlQualifiedName.html" title="class in system.xml">XmlQualifiedName</a>&nbsp;key)</code>&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/serialization/datacontracts/DataContractSet.html#getJCOAssemblyName--">getJCOAssemblyName</a></span>()</code>
 <div class="block">Returns the reflected Assembly name</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/serialization/datacontracts/DataContractSet.html#getJCOClassName--">getJCOClassName</a></span>()</code>
 <div class="block">Returns the reflected Class name</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/serialization/datacontracts/DataContractSet.html#getJCOInstance--">getJCOInstance</a></span>()</code>
 <div class="block">Returns the instantiated class</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/serialization/datacontracts/DataContractSet.html#getJCOObjectName--">getJCOObjectName</a></span>()</code>
 <div class="block">Returns the reflected Class name used to build the object</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>org.mases.jcobridge.JCType</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/serialization/datacontracts/DataContractSet.html#getJCOType--">getJCOType</a></span>()</code>
 <div class="block">Returns the instantiated class Type</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
+<td class="colFirst"><code><a href="../../../../system/collections/generic/Dictionary_2.html" title="class in system.collections.generic">Dictionary_2</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/serialization/datacontracts/DataContractSet.html#getKnownTypesForObject--">getKnownTypesForObject</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i10" class="altColor">
+<td class="colFirst"><code><a href="../../../../system/collections/generic/Dictionary_2.html" title="class in system.collections.generic">Dictionary_2</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/serialization/datacontracts/DataContractSet.html#getProcessedContracts--">getProcessedContracts</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i11" class="rowColor">
+<td class="colFirst"><code><a href="../../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/serialization/datacontracts/DataContractSet.html#GetReferencedType-system.xml.XmlQualifiedName-system.runtime.serialization.datacontracts.DataContract-org.mases.jcobridge.netreflection.JCORefOut-org.mases.jcobridge.netreflection.JCORefOut-system.Nullable_1-">GetReferencedType</a></span>(<a href="../../../../system/xml/XmlQualifiedName.html" title="class in system.xml">XmlQualifiedName</a>&nbsp;xmlName,
+                 <a href="../../../../system/runtime/serialization/datacontracts/DataContract.html" title="class in system.runtime.serialization.datacontracts">DataContract</a>&nbsp;dataContract,
+                 <a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../../../system/runtime/serialization/datacontracts/DataContract.html" title="class in system.runtime.serialization.datacontracts">DataContract</a>&gt;&nbsp;referencedContract,
+                 <a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>[]&gt;&nbsp;genericParameters,
+                 <a href="../../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;supportGenericTypes)</code>&nbsp;</td>
+</tr>
+<tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="../../../../system/collections/Hashtable.html" title="class in system.collections">Hashtable</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/serialization/datacontracts/DataContractSet.html#getSurrogateData--">getSurrogateData</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i13" class="rowColor">
+<td class="colFirst"><code><a href="../../../../system/collections/generic/List_1.html" title="class in system.collections.generic">List_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/serialization/datacontracts/DataContractSet.html#ImportSchemaSet-system.xml.schema.XmlSchemaSet-system.collections.generic.IEnumerable_1-boolean-">ImportSchemaSet</a></span>(<a href="../../../../system/xml/schema/XmlSchemaSet.html" title="class in system.xml.schema">XmlSchemaSet</a>&nbsp;schemaSet,
+               <a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;elements,
+               boolean&nbsp;importXmlDataType)</code>&nbsp;</td>
+</tr>
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/serialization/datacontracts/DataContractSet.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
+</tr>
+<tr id="i15" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/serialization/datacontracts/DataContractSet.html#setKnownTypesForObject-system.collections.generic.Dictionary_2-">setKnownTypesForObject</a></span>(<a href="../../../../system/collections/generic/Dictionary_2.html" title="class in system.collections.generic">Dictionary_2</a>&nbsp;KnownTypesForObject)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -426,6 +467,40 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 </dl>
 </li>
 </ul>
+<a name="DataContractSet-system.runtime.serialization.ISerializationSurrogateProvider-system.collections.generic.IEnumerable_1-system.collections.generic.IEnumerable_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>DataContractSet</h4>
+<pre>public&nbsp;DataContractSet(<a href="../../../../system/runtime/serialization/ISerializationSurrogateProvider.html" title="interface in system.runtime.serialization">ISerializationSurrogateProvider</a>&nbsp;dataContractSurrogate,
+                       <a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;referencedTypes,
+                       <a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;referencedCollectionTypes)
+                throws java.lang.Throwable,
+                       <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                       <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                       <a href="../../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                       <a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                       <a href="../../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                       <a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                       <a href="../../../../system/RankException.html" title="class in system">RankException</a>,
+                       <a href="../../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                       <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../../system/RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+</dl>
+</li>
+</ul>
 <a name="DataContractSet-java.lang.Object-">
 <!--   -->
 </a>
@@ -465,6 +540,32 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <dd><a href="../../../../system/runtime/serialization/datacontracts/DataContractSet.html" title="class in system.runtime.serialization.datacontracts"><code>DataContractSet</code></a> instance</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - in case of error during cast operation</dd>
+</dl>
+</li>
+</ul>
+<a name="getContracts--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getContracts</h4>
+<pre>public&nbsp;<a href="../../../../system/collections/generic/Dictionary_2.html" title="class in system.collections.generic">Dictionary_2</a>&nbsp;getContracts()
+                          throws java.lang.Throwable,
+                                 <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                 <a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                 <a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                 <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                 <a href="../../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                 <a href="../../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -632,6 +733,88 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 </dl>
 </li>
 </ul>
+<a name="getKnownTypesForObject--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getKnownTypesForObject</h4>
+<pre>public&nbsp;<a href="../../../../system/collections/generic/Dictionary_2.html" title="class in system.collections.generic">Dictionary_2</a>&nbsp;getKnownTypesForObject()
+                                    throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="getProcessedContracts--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getProcessedContracts</h4>
+<pre>public&nbsp;<a href="../../../../system/collections/generic/Dictionary_2.html" title="class in system.collections.generic">Dictionary_2</a>&nbsp;getProcessedContracts()
+                                   throws java.lang.Throwable,
+                                          <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                          <a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                          <a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                          <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                          <a href="../../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                          <a href="../../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="GetReferencedType-system.xml.XmlQualifiedName-system.runtime.serialization.datacontracts.DataContract-org.mases.jcobridge.netreflection.JCORefOut-org.mases.jcobridge.netreflection.JCORefOut-system.Nullable_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>GetReferencedType</h4>
+<pre>public&nbsp;<a href="../../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;GetReferencedType(<a href="../../../../system/xml/XmlQualifiedName.html" title="class in system.xml">XmlQualifiedName</a>&nbsp;xmlName,
+                                 <a href="../../../../system/runtime/serialization/datacontracts/DataContract.html" title="class in system.runtime.serialization.datacontracts">DataContract</a>&nbsp;dataContract,
+                                 <a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../../../system/runtime/serialization/datacontracts/DataContract.html" title="class in system.runtime.serialization.datacontracts">DataContract</a>&gt;&nbsp;referencedContract,
+                                 <a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>[]&gt;&nbsp;genericParameters,
+                                 <a href="../../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;supportGenericTypes)
+                          throws java.lang.Throwable,
+                                 <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                 <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                 <a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                 <a href="../../../../system/runtime/serialization/InvalidDataContractException.html" title="class in system.runtime.serialization">InvalidDataContractException</a>,
+                                 <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                 <a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                 <a href="../../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                 <a href="../../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
+                                 <a href="../../../../system/FormatException.html" title="class in system">FormatException</a>,
+                                 <a href="../../../../system/runtime/serialization/SerializationException.html" title="class in system.runtime.serialization">SerializationException</a>,
+                                 <a href="../../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a>,
+                                 <a href="../../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../../system/runtime/serialization/InvalidDataContractException.html" title="class in system.runtime.serialization">InvalidDataContractException</a></code></dd>
+<dd><code><a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
+<dd><code><a href="../../../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../../../system/runtime/serialization/SerializationException.html" title="class in system.runtime.serialization">SerializationException</a></code></dd>
+<dd><code><a href="../../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
+<dd><code><a href="../../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
+</dl>
+</li>
+</ul>
 <a name="getSurrogateData--">
 <!--   -->
 </a>
@@ -660,16 +843,80 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 </dl>
 </li>
 </ul>
+<a name="ImportSchemaSet-system.xml.schema.XmlSchemaSet-system.collections.generic.IEnumerable_1-boolean-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ImportSchemaSet</h4>
+<pre>public&nbsp;<a href="../../../../system/collections/generic/List_1.html" title="class in system.collections.generic">List_1</a>&nbsp;ImportSchemaSet(<a href="../../../../system/xml/schema/XmlSchemaSet.html" title="class in system.xml.schema">XmlSchemaSet</a>&nbsp;schemaSet,
+                              <a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;elements,
+                              boolean&nbsp;importXmlDataType)
+                       throws java.lang.Throwable,
+                              <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                              <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                              <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                              <a href="../../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                              <a href="../../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                              <a href="../../../../system/xml/schema/XmlSchemaException.html" title="class in system.xml.schema">XmlSchemaException</a>,
+                              <a href="../../../../system/UriFormatException.html" title="class in system">UriFormatException</a>,
+                              <a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                              <a href="../../../../system/xml/XmlException.html" title="class in system.xml">XmlException</a>,
+                              <a href="../../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                              <a href="../../../../system/RankException.html" title="class in system">RankException</a>,
+                              <a href="../../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                              <a href="../../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a>,
+                              <a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                              <a href="../../../../system/FormatException.html" title="class in system">FormatException</a>,
+                              <a href="../../../../system/runtime/serialization/InvalidDataContractException.html" title="class in system.runtime.serialization">InvalidDataContractException</a>,
+                              <a href="../../../../system/runtime/serialization/SerializationException.html" title="class in system.runtime.serialization">SerializationException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../../../system/xml/schema/XmlSchemaException.html" title="class in system.xml.schema">XmlSchemaException</a></code></dd>
+<dd><code><a href="../../../../system/UriFormatException.html" title="class in system">UriFormatException</a></code></dd>
+<dd><code><a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../../system/xml/XmlException.html" title="class in system.xml">XmlException</a></code></dd>
+<dd><code><a href="../../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../../system/RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
+<dd><code><a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../../../system/runtime/serialization/InvalidDataContractException.html" title="class in system.runtime.serialization">InvalidDataContractException</a></code></dd>
+<dd><code><a href="../../../../system/runtime/serialization/SerializationException.html" title="class in system.runtime.serialization">SerializationException</a></code></dd>
+</dl>
+</li>
+</ul>
 <a name="setJCOInstance-org.mases.jcobridge.JCObject-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>setJCOInstance</h4>
 <pre>public&nbsp;void&nbsp;setJCOInstance(org.mases.jcobridge.JCObject&nbsp;instance)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../../org/mases/jcobridge/netreflection/NetObject.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></code>&nbsp;in class&nbsp;<code><a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="setKnownTypesForObject-system.collections.generic.Dictionary_2-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>setKnownTypesForObject</h4>
+<pre>public&nbsp;void&nbsp;setKnownTypesForObject(<a href="../../../../system/collections/generic/Dictionary_2.html" title="class in system.collections.generic">Dictionary_2</a>&nbsp;KnownTypesForObject)
+                            throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
 </dl>
 </li>
 </ul>

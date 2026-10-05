@@ -28,6 +28,7 @@
 <meta name="keywords" content="getIsReader()">
 <meta name="keywords" content="getIsSignable()">
 <meta name="keywords" content="getIsWriter()">
+<meta name="keywords" content="getSignatures()">
 <meta name="keywords" content="getCoreDocumentProperties()">
 <meta name="keywords" content="getFixedDocumentSequenceReader()">
 <meta name="keywords" content="getThumbnail()">
@@ -45,7 +46,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":9,"i3":10,"i4":10,"i5":9,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10};
+var methods = {"i0":10,"i1":10,"i2":9,"i3":10,"i4":10,"i5":9,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -142,13 +143,13 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd>java.lang.AutoCloseable, <a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>, <a href="../../../../system/IDisposable.html" title="interface in system">IDisposable</a></dd>
+<dd>java.lang.AutoCloseable, <a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></dd>
 </dl>
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">XpsDocument</span>
 extends <a href="../../../../system/windows/xps/packaging/XpsPartBase.html" title="class in system.windows.xps.packaging">XpsPartBase</a>
-implements <a href="../../../../system/IDisposable.html" title="interface in system">IDisposable</a>, java.lang.AutoCloseable</pre>
+implements java.lang.AutoCloseable</pre>
 <div class="block">The base .NET class managing System.Windows.Xps.Packaging.XpsDocument, ReachFramework, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35.
  <p>
  
@@ -348,35 +349,39 @@ implements <a href="../../../../system/IDisposable.html" title="interface in sys
 </td>
 </tr>
 <tr id="i17" class="rowColor">
+<td class="colFirst"><code><a href="../../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/xps/packaging/XpsDocument.html#getSignatures--">getSignatures</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i18" class="altColor">
 <td class="colFirst"><code><a href="../../../../system/windows/xps/packaging/XpsThumbnail.html" title="class in system.windows.xps.packaging">XpsThumbnail</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/xps/packaging/XpsDocument.html#getThumbnail--">getThumbnail</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/xps/packaging/XpsDocument.html#RemoveSignature-system.windows.xps.packaging.XpsDigitalSignature-">RemoveSignature</a></span>(<a href="../../../../system/windows/xps/packaging/XpsDigitalSignature.html" title="class in system.windows.xps.packaging">XpsDigitalSignature</a>&nbsp;signature)</code>&nbsp;</td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/xps/packaging/XpsDocument.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/xps/packaging/XpsDocument.html#setThumbnail-system.windows.xps.packaging.XpsThumbnail-">setThumbnail</a></span>(<a href="../../../../system/windows/xps/packaging/XpsThumbnail.html" title="class in system.windows.xps.packaging">XpsThumbnail</a>&nbsp;Thumbnail)</code>&nbsp;</td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i22" class="altColor">
 <td class="colFirst"><code><a href="../../../../system/windows/xps/packaging/XpsDigitalSignature.html" title="class in system.windows.xps.packaging">XpsDigitalSignature</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/xps/packaging/XpsDocument.html#SignDigitally-system.security.cryptography.x509certificates.X509Certificate-boolean-system.windows.xps.packaging.XpsDigSigPartAlteringRestrictions-">SignDigitally</a></span>(<a href="../../../../system/security/cryptography/x509certificates/X509Certificate.html" title="class in system.security.cryptography.x509certificates">X509Certificate</a>&nbsp;certificate,
              boolean&nbsp;embedCertificate,
              <a href="../../../../system/windows/xps/packaging/XpsDigSigPartAlteringRestrictions.html" title="class in system.windows.xps.packaging">XpsDigSigPartAlteringRestrictions</a>&nbsp;restrictions)</code>&nbsp;</td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code><a href="../../../../system/windows/xps/packaging/XpsDigitalSignature.html" title="class in system.windows.xps.packaging">XpsDigitalSignature</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/xps/packaging/XpsDocument.html#SignDigitally-system.security.cryptography.x509certificates.X509Certificate-boolean-system.windows.xps.packaging.XpsDigSigPartAlteringRestrictions-system.Guid-">SignDigitally</a></span>(<a href="../../../../system/security/cryptography/x509certificates/X509Certificate.html" title="class in system.security.cryptography.x509certificates">X509Certificate</a>&nbsp;certificate,
              boolean&nbsp;embedCertificate,
              <a href="../../../../system/windows/xps/packaging/XpsDigSigPartAlteringRestrictions.html" title="class in system.windows.xps.packaging">XpsDigSigPartAlteringRestrictions</a>&nbsp;restrictions,
              <a href="../../../../system/Guid.html" title="class in system">Guid</a>&nbsp;id)</code>&nbsp;</td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code><a href="../../../../system/windows/xps/packaging/XpsDigitalSignature.html" title="class in system.windows.xps.packaging">XpsDigitalSignature</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/xps/packaging/XpsDocument.html#SignDigitally-system.security.cryptography.x509certificates.X509Certificate-boolean-system.windows.xps.packaging.XpsDigSigPartAlteringRestrictions-system.Guid-boolean-">SignDigitally</a></span>(<a href="../../../../system/security/cryptography/x509certificates/X509Certificate.html" title="class in system.security.cryptography.x509certificates">X509Certificate</a>&nbsp;certificate,
              boolean&nbsp;embedCertificate,
@@ -405,13 +410,6 @@ implements <a href="../../../../system/IDisposable.html" title="interface in sys
 </a>
 <h3>Methods inherited from class&nbsp;java.lang.Object</h3>
 <code>equals, getClass, notify, notifyAll, wait, wait, wait</code></li>
-</ul>
-<ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.system.IDisposable">
-<!--   -->
-</a>
-<h3>Methods inherited from interface&nbsp;system.<a href="../../../../system/IDisposable.html" title="interface in system">IDisposable</a></h3>
-<code><a href="../../../../system/IDisposable.html#Dispose--">Dispose</a>, <a href="../../../../system/IDisposable.html#ToIDisposable-org.mases.jcobridge.netreflection.IJCOBridgeReflected-">ToIDisposable</a></code></li>
 </ul>
 </li>
 </ul>
@@ -1197,8 +1195,6 @@ implements <a href="../../../../system/IDisposable.html" title="interface in sys
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOAssemblyName--">getJCOAssemblyName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../system/IDisposable.html#getJCOAssemblyName--">getJCOAssemblyName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../system/IDisposable.html" title="interface in system">IDisposable</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../../system/windows/xps/packaging/XpsPartBase.html#getJCOAssemblyName--">getJCOAssemblyName</a></code>&nbsp;in class&nbsp;<code><a href="../../../../system/windows/xps/packaging/XpsPartBase.html" title="class in system.windows.xps.packaging">XpsPartBase</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -1218,8 +1214,6 @@ implements <a href="../../../../system/IDisposable.html" title="interface in sys
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOClassName--">getJCOClassName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../system/IDisposable.html#getJCOClassName--">getJCOClassName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../system/IDisposable.html" title="interface in system">IDisposable</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../../system/windows/xps/packaging/XpsPartBase.html#getJCOClassName--">getJCOClassName</a></code>&nbsp;in class&nbsp;<code><a href="../../../../system/windows/xps/packaging/XpsPartBase.html" title="class in system.windows.xps.packaging">XpsPartBase</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -1239,8 +1233,6 @@ implements <a href="../../../../system/IDisposable.html" title="interface in sys
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOInstance--">getJCOInstance</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../system/IDisposable.html#getJCOInstance--">getJCOInstance</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../system/IDisposable.html" title="interface in system">IDisposable</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../../system/windows/xps/packaging/XpsPartBase.html#getJCOInstance--">getJCOInstance</a></code>&nbsp;in class&nbsp;<code><a href="../../../../system/windows/xps/packaging/XpsPartBase.html" title="class in system.windows.xps.packaging">XpsPartBase</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -1260,8 +1252,6 @@ implements <a href="../../../../system/IDisposable.html" title="interface in sys
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOObjectName--">getJCOObjectName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../system/IDisposable.html#getJCOObjectName--">getJCOObjectName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../system/IDisposable.html" title="interface in system">IDisposable</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../../system/windows/xps/packaging/XpsPartBase.html#getJCOObjectName--">getJCOObjectName</a></code>&nbsp;in class&nbsp;<code><a href="../../../../system/windows/xps/packaging/XpsPartBase.html" title="class in system.windows.xps.packaging">XpsPartBase</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -1282,12 +1272,56 @@ implements <a href="../../../../system/IDisposable.html" title="interface in sys
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOType--">getJCOType</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../system/IDisposable.html#getJCOType--">getJCOType</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../system/IDisposable.html" title="interface in system">IDisposable</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../../system/windows/xps/packaging/XpsPartBase.html#getJCOType--">getJCOType</a></code>&nbsp;in class&nbsp;<code><a href="../../../../system/windows/xps/packaging/XpsPartBase.html" title="class in system.windows.xps.packaging">XpsPartBase</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>A <code>JCType</code> representing the CLR Type of the instantiated Class</dd>
+</dl>
+</li>
+</ul>
+<a name="getSignatures--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getSignatures</h4>
+<pre>public&nbsp;<a href="../../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;getSignatures()
+                                   throws java.lang.Throwable,
+                                          <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                          <a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                          <a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                          <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                          <a href="../../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                          <a href="../../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                          <a href="../../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                          <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                          <a href="../../../../system/io/IOException.html" title="class in system.io">IOException</a>,
+                                          <a href="../../../../system/io/FileFormatException.html" title="class in system.io">FileFormatException</a>,
+                                          <a href="../../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
+                                          <a href="../../../../system/io/InvalidDataException.html" title="class in system.io">InvalidDataException</a>,
+                                          <a href="../../../../system/windows/xps/XpsPackagingException.html" title="class in system.windows.xps">XpsPackagingException</a>,
+                                          <a href="../../../../system/xml/XmlException.html" title="class in system.xml">XmlException</a>,
+                                          <a href="../../../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a>,
+                                          <a href="../../../../system/security/cryptography/CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../../system/io/IOException.html" title="class in system.io">IOException</a></code></dd>
+<dd><code><a href="../../../../system/io/FileFormatException.html" title="class in system.io">FileFormatException</a></code></dd>
+<dd><code><a href="../../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
+<dd><code><a href="../../../../system/io/InvalidDataException.html" title="class in system.io">InvalidDataException</a></code></dd>
+<dd><code><a href="../../../../system/windows/xps/XpsPackagingException.html" title="class in system.windows.xps">XpsPackagingException</a></code></dd>
+<dd><code><a href="../../../../system/xml/XmlException.html" title="class in system.xml">XmlException</a></code></dd>
+<dd><code><a href="../../../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a></code></dd>
+<dd><code><a href="../../../../system/security/cryptography/CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a></code></dd>
 </dl>
 </li>
 </ul>

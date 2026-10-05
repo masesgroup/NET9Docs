@@ -21,6 +21,9 @@
 <meta name="keywords" content="BezierTo()">
 <meta name="keywords" content="Close()">
 <meta name="keywords" content="LineTo()">
+<meta name="keywords" content="PolyBezierTo()">
+<meta name="keywords" content="PolyLineTo()">
+<meta name="keywords" content="PolyQuadraticBezierTo()">
 <meta name="keywords" content="QuadraticBezierTo()">
 <meta name="keywords" content="Dispose()">
 <meta name="keywords" content="close()">
@@ -37,7 +40,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":9,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":9,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -134,13 +137,13 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd>java.lang.AutoCloseable, <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>, <a href="../../../system/IDisposable.html" title="interface in system">IDisposable</a></dd>
+<dd>java.lang.AutoCloseable, <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></dd>
 </dl>
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">StreamGeometryContext</span>
 extends <a href="../../../system/windows/threading/DispatcherObject.html" title="class in system.windows.threading">DispatcherObject</a>
-implements <a href="../../../system/IDisposable.html" title="interface in system">IDisposable</a>, java.lang.AutoCloseable</pre>
+implements java.lang.AutoCloseable</pre>
 <div class="block">The base .NET class managing System.Windows.Media.StreamGeometryContext, PresentationCore, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35.
  <p>
  
@@ -314,12 +317,30 @@ implements <a href="../../../system/IDisposable.html" title="interface in system
 </tr>
 <tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/media/StreamGeometryContext.html#PolyBezierTo-system.collections.generic.IList_1-boolean-boolean-">PolyBezierTo</a></span>(<a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;points,
+            boolean&nbsp;isStroked,
+            boolean&nbsp;isSmoothJoin)</code>&nbsp;</td>
+</tr>
+<tr id="i13" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/media/StreamGeometryContext.html#PolyLineTo-system.collections.generic.IList_1-boolean-boolean-">PolyLineTo</a></span>(<a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;points,
+          boolean&nbsp;isStroked,
+          boolean&nbsp;isSmoothJoin)</code>&nbsp;</td>
+</tr>
+<tr id="i14" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/media/StreamGeometryContext.html#PolyQuadraticBezierTo-system.collections.generic.IList_1-boolean-boolean-">PolyQuadraticBezierTo</a></span>(<a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;points,
+                     boolean&nbsp;isStroked,
+                     boolean&nbsp;isSmoothJoin)</code>&nbsp;</td>
+</tr>
+<tr id="i15" class="rowColor">
+<td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/media/StreamGeometryContext.html#QuadraticBezierTo-system.windows.Point-system.windows.Point-boolean-boolean-">QuadraticBezierTo</a></span>(<a href="../../../system/windows/Point.html" title="class in system.windows">Point</a>&nbsp;point1,
                  <a href="../../../system/windows/Point.html" title="class in system.windows">Point</a>&nbsp;point2,
                  boolean&nbsp;isStroked,
                  boolean&nbsp;isSmoothJoin)</code>&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/media/StreamGeometryContext.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
@@ -344,13 +365,6 @@ implements <a href="../../../system/IDisposable.html" title="interface in system
 </a>
 <h3>Methods inherited from class&nbsp;java.lang.Object</h3>
 <code>equals, getClass, notify, notifyAll, wait, wait, wait</code></li>
-</ul>
-<ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.system.IDisposable">
-<!--   -->
-</a>
-<h3>Methods inherited from interface&nbsp;system.<a href="../../../system/IDisposable.html" title="interface in system">IDisposable</a></h3>
-<code><a href="../../../system/IDisposable.html#Dispose--">Dispose</a>, <a href="../../../system/IDisposable.html#ToIDisposable-org.mases.jcobridge.netreflection.IJCOBridgeReflected-">ToIDisposable</a></code></li>
 </ul>
 </li>
 </ul>
@@ -578,8 +592,6 @@ implements <a href="../../../system/IDisposable.html" title="interface in system
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOAssemblyName--">getJCOAssemblyName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../system/IDisposable.html#getJCOAssemblyName--">getJCOAssemblyName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/IDisposable.html" title="interface in system">IDisposable</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../system/windows/threading/DispatcherObject.html#getJCOAssemblyName--">getJCOAssemblyName</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/windows/threading/DispatcherObject.html" title="class in system.windows.threading">DispatcherObject</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -599,8 +611,6 @@ implements <a href="../../../system/IDisposable.html" title="interface in system
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOClassName--">getJCOClassName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../system/IDisposable.html#getJCOClassName--">getJCOClassName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/IDisposable.html" title="interface in system">IDisposable</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../system/windows/threading/DispatcherObject.html#getJCOClassName--">getJCOClassName</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/windows/threading/DispatcherObject.html" title="class in system.windows.threading">DispatcherObject</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -620,8 +630,6 @@ implements <a href="../../../system/IDisposable.html" title="interface in system
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOInstance--">getJCOInstance</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../system/IDisposable.html#getJCOInstance--">getJCOInstance</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/IDisposable.html" title="interface in system">IDisposable</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../system/windows/threading/DispatcherObject.html#getJCOInstance--">getJCOInstance</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/windows/threading/DispatcherObject.html" title="class in system.windows.threading">DispatcherObject</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -641,8 +649,6 @@ implements <a href="../../../system/IDisposable.html" title="interface in system
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOObjectName--">getJCOObjectName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../system/IDisposable.html#getJCOObjectName--">getJCOObjectName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/IDisposable.html" title="interface in system">IDisposable</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../system/windows/threading/DispatcherObject.html#getJCOObjectName--">getJCOObjectName</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/windows/threading/DispatcherObject.html" title="class in system.windows.threading">DispatcherObject</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -663,8 +669,6 @@ implements <a href="../../../system/IDisposable.html" title="interface in system
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOType--">getJCOType</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../system/IDisposable.html#getJCOType--">getJCOType</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/IDisposable.html" title="interface in system">IDisposable</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../system/windows/threading/DispatcherObject.html#getJCOType--">getJCOType</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/windows/threading/DispatcherObject.html" title="class in system.windows.threading">DispatcherObject</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -682,6 +686,54 @@ implements <a href="../../../system/IDisposable.html" title="interface in system
                    boolean&nbsp;isStroked,
                    boolean&nbsp;isSmoothJoin)
             throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="PolyBezierTo-system.collections.generic.IList_1-boolean-boolean-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>PolyBezierTo</h4>
+<pre>public&nbsp;void&nbsp;PolyBezierTo(<a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;points,
+                         boolean&nbsp;isStroked,
+                         boolean&nbsp;isSmoothJoin)
+                  throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="PolyLineTo-system.collections.generic.IList_1-boolean-boolean-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>PolyLineTo</h4>
+<pre>public&nbsp;void&nbsp;PolyLineTo(<a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;points,
+                       boolean&nbsp;isStroked,
+                       boolean&nbsp;isSmoothJoin)
+                throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="PolyQuadraticBezierTo-system.collections.generic.IList_1-boolean-boolean-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>PolyQuadraticBezierTo</h4>
+<pre>public&nbsp;void&nbsp;PolyQuadraticBezierTo(<a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;points,
+                                  boolean&nbsp;isStroked,
+                                  boolean&nbsp;isSmoothJoin)
+                           throws java.lang.Throwable</pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>

@@ -18,6 +18,10 @@
 <meta name="keywords" content="cast()">
 <meta name="keywords" content="CanAssignTo()">
 <meta name="keywords" content="Equals()">
+<meta name="keywords" content="GetAllAttachableMembers()">
+<meta name="keywords" content="GetAllMembers()">
+<meta name="keywords" content="GetXamlNamespaces()">
+<meta name="keywords" content="GetPositionalParameters()">
 <meta name="keywords" content="GetAliasedProperty()">
 <meta name="keywords" content="GetAttachableMember()">
 <meta name="keywords" content="GetMember()">
@@ -38,10 +42,16 @@
 <meta name="keywords" content="getIsWhitespaceSignificantCollection()">
 <meta name="keywords" content="getIsXData()">
 <meta name="keywords" content="getTrimSurroundingWhitespace()">
+<meta name="keywords" content="getAllowedContentTypes()">
+<meta name="keywords" content="getContentWrappers()">
+<meta name="keywords" content="getTypeArguments()">
 <meta name="keywords" content="getName()">
 <meta name="keywords" content="getPreferredXamlNamespace()">
 <meta name="keywords" content="getUnderlyingType()">
 <meta name="keywords" content="getInvoker()">
+<meta name="keywords" content="getTypeConverter()">
+<meta name="keywords" content="getValueSerializer()">
+<meta name="keywords" content="getDeferringLoader()">
 <meta name="keywords" content="getContentProperty()">
 <meta name="keywords" content="getSchemaContext()">
 <meta name="keywords" content="getBaseType()">
@@ -61,7 +71,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":9,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":10,"i36":10,"i37":10,"i38":10};
+var methods = {"i0":10,"i1":9,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":10,"i36":10,"i37":10,"i38":10,"i39":10,"i40":10,"i41":10,"i42":10,"i43":10,"i44":10,"i45":10,"i46":10,"i47":10,"i48":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -250,6 +260,12 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
 <div class="block">Internal constructor.</div>
 </td>
 </tr>
+<tr class="altColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../system/xaml/XamlType.html#XamlType-java.lang.String-java.lang.String-system.collections.generic.IList_1-system.xaml.XamlSchemaContext-">XamlType</a></span>(java.lang.String&nbsp;unknownTypeNamespace,
+        java.lang.String&nbsp;unknownTypeName,
+        <a href="../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;typeArguments,
+        <a href="../../system/xaml/XamlSchemaContext.html" title="class in system.xaml">XamlSchemaContext</a>&nbsp;schemaContext)</code>&nbsp;</td>
+</tr>
 </table>
 </li>
 </ul>
@@ -284,152 +300,192 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/xaml/XamlType.html#GetAliasedProperty-system.xaml.XamlDirective-">GetAliasedProperty</a></span>(<a href="../../system/xaml/XamlDirective.html" title="class in system.xaml">XamlDirective</a>&nbsp;directive)</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code><a href="../../system/xaml/XamlMember.html" title="class in system.xaml">XamlMember</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../system/xaml/XamlType.html#GetAttachableMember-java.lang.String-">GetAttachableMember</a></span>(java.lang.String&nbsp;name)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/xaml/XamlType.html#GetAllAttachableMembers--">GetAllAttachableMembers</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
-<td class="colFirst"><code><a href="../../system/xaml/XamlType.html" title="class in system.xaml">XamlType</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../system/xaml/XamlType.html#getBaseType--">getBaseType</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/xaml/XamlType.html#GetAllMembers--">GetAllMembers</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../system/xaml/XamlType.html#getConstructionRequiresArguments--">getConstructionRequiresArguments</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/xaml/XamlType.html#getAllowedContentTypes--">getAllowedContentTypes</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../system/xaml/XamlMember.html" title="class in system.xaml">XamlMember</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../system/xaml/XamlType.html#getContentProperty--">getContentProperty</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/xaml/XamlType.html#GetAttachableMember-java.lang.String-">GetAttachableMember</a></span>(java.lang.String&nbsp;name)</code>&nbsp;</td>
 </tr>
 <tr id="i8" class="altColor">
-<td class="colFirst"><code><a href="../../system/xaml/schema/XamlTypeInvoker.html" title="class in system.xaml.schema">XamlTypeInvoker</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../system/xaml/XamlType.html#getInvoker--">getInvoker</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../system/xaml/XamlType.html" title="class in system.xaml">XamlType</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/xaml/XamlType.html#getBaseType--">getBaseType</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../system/xaml/XamlType.html#getIsAmbient--">getIsAmbient</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/xaml/XamlType.html#getConstructionRequiresArguments--">getConstructionRequiresArguments</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i10" class="altColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../system/xaml/XamlType.html#getIsArray--">getIsArray</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../system/xaml/XamlMember.html" title="class in system.xaml">XamlMember</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/xaml/XamlType.html#getContentProperty--">getContentProperty</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i11" class="rowColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../system/xaml/XamlType.html#getIsCollection--">getIsCollection</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/xaml/XamlType.html#getContentWrappers--">getContentWrappers</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i12" class="altColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../system/xaml/XamlType.html#getIsConstructible--">getIsConstructible</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../system/xaml/schema/XamlValueConverter_1.html" title="class in system.xaml.schema">XamlValueConverter_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/xaml/XamlType.html#getDeferringLoader--">getDeferringLoader</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i13" class="rowColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../system/xaml/XamlType.html#getIsDictionary--">getIsDictionary</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../system/xaml/schema/XamlTypeInvoker.html" title="class in system.xaml.schema">XamlTypeInvoker</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/xaml/XamlType.html#getInvoker--">getInvoker</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i14" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../system/xaml/XamlType.html#getIsGeneric--">getIsGeneric</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/xaml/XamlType.html#getIsAmbient--">getIsAmbient</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i15" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../system/xaml/XamlType.html#getIsMarkupExtension--">getIsMarkupExtension</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/xaml/XamlType.html#getIsArray--">getIsArray</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i16" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../system/xaml/XamlType.html#getIsNameScope--">getIsNameScope</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/xaml/XamlType.html#getIsCollection--">getIsCollection</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i17" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../system/xaml/XamlType.html#getIsNameValid--">getIsNameValid</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/xaml/XamlType.html#getIsConstructible--">getIsConstructible</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i18" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../system/xaml/XamlType.html#getIsNullable--">getIsNullable</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/xaml/XamlType.html#getIsDictionary--">getIsDictionary</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i19" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../system/xaml/XamlType.html#getIsPublic--">getIsPublic</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/xaml/XamlType.html#getIsGeneric--">getIsGeneric</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i20" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../system/xaml/XamlType.html#getIsUnknown--">getIsUnknown</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/xaml/XamlType.html#getIsMarkupExtension--">getIsMarkupExtension</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i21" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../system/xaml/XamlType.html#getIsUsableDuringInitialization--">getIsUsableDuringInitialization</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/xaml/XamlType.html#getIsNameScope--">getIsNameScope</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i22" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../system/xaml/XamlType.html#getIsWhitespaceSignificantCollection--">getIsWhitespaceSignificantCollection</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/xaml/XamlType.html#getIsNameValid--">getIsNameValid</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i23" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../system/xaml/XamlType.html#getIsXData--">getIsXData</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/xaml/XamlType.html#getIsNullable--">getIsNullable</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i24" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/xaml/XamlType.html#getIsPublic--">getIsPublic</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i25" class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/xaml/XamlType.html#getIsUnknown--">getIsUnknown</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i26" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/xaml/XamlType.html#getIsUsableDuringInitialization--">getIsUsableDuringInitialization</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i27" class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/xaml/XamlType.html#getIsWhitespaceSignificantCollection--">getIsWhitespaceSignificantCollection</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i28" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/xaml/XamlType.html#getIsXData--">getIsXData</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i29" class="rowColor">
 <td class="colFirst"><code><a href="../../system/xaml/XamlType.html" title="class in system.xaml">XamlType</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/xaml/XamlType.html#getItemType--">getItemType</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i25" class="rowColor">
+<tr id="i30" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/xaml/XamlType.html#getJCOAssemblyName--">getJCOAssemblyName</a></span>()</code>
 <div class="block">Returns the reflected Assembly name</div>
 </td>
 </tr>
-<tr id="i26" class="altColor">
+<tr id="i31" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/xaml/XamlType.html#getJCOClassName--">getJCOClassName</a></span>()</code>
 <div class="block">Returns the reflected Class name</div>
 </td>
 </tr>
-<tr id="i27" class="rowColor">
+<tr id="i32" class="altColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/xaml/XamlType.html#getJCOInstance--">getJCOInstance</a></span>()</code>
 <div class="block">Returns the instantiated class</div>
 </td>
 </tr>
-<tr id="i28" class="altColor">
+<tr id="i33" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/xaml/XamlType.html#getJCOObjectName--">getJCOObjectName</a></span>()</code>
 <div class="block">Returns the reflected Class name used to build the object</div>
 </td>
 </tr>
-<tr id="i29" class="rowColor">
+<tr id="i34" class="altColor">
 <td class="colFirst"><code>org.mases.jcobridge.JCType</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/xaml/XamlType.html#getJCOType--">getJCOType</a></span>()</code>
 <div class="block">Returns the instantiated class Type</div>
 </td>
 </tr>
-<tr id="i30" class="altColor">
+<tr id="i35" class="rowColor">
 <td class="colFirst"><code><a href="../../system/xaml/XamlType.html" title="class in system.xaml">XamlType</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/xaml/XamlType.html#getKeyType--">getKeyType</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i31" class="rowColor">
+<tr id="i36" class="altColor">
 <td class="colFirst"><code><a href="../../system/xaml/XamlType.html" title="class in system.xaml">XamlType</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/xaml/XamlType.html#getMarkupExtensionReturnType--">getMarkupExtensionReturnType</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i32" class="altColor">
+<tr id="i37" class="rowColor">
 <td class="colFirst"><code><a href="../../system/xaml/XamlMember.html" title="class in system.xaml">XamlMember</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/xaml/XamlType.html#GetMember-java.lang.String-">GetMember</a></span>(java.lang.String&nbsp;name)</code>&nbsp;</td>
 </tr>
-<tr id="i33" class="rowColor">
+<tr id="i38" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/xaml/XamlType.html#getName--">getName</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i34" class="altColor">
+<tr id="i39" class="rowColor">
+<td class="colFirst"><code><a href="../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/xaml/XamlType.html#GetPositionalParameters-int-">GetPositionalParameters</a></span>(int&nbsp;parameterCount)</code>&nbsp;</td>
+</tr>
+<tr id="i40" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/xaml/XamlType.html#getPreferredXamlNamespace--">getPreferredXamlNamespace</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i35" class="rowColor">
+<tr id="i41" class="rowColor">
 <td class="colFirst"><code><a href="../../system/xaml/XamlSchemaContext.html" title="class in system.xaml">XamlSchemaContext</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/xaml/XamlType.html#getSchemaContext--">getSchemaContext</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i36" class="altColor">
+<tr id="i42" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/xaml/XamlType.html#getTrimSurroundingWhitespace--">getTrimSurroundingWhitespace</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i37" class="rowColor">
+<tr id="i43" class="rowColor">
+<td class="colFirst"><code><a href="../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/xaml/XamlType.html#getTypeArguments--">getTypeArguments</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i44" class="altColor">
+<td class="colFirst"><code><a href="../../system/xaml/schema/XamlValueConverter_1.html" title="class in system.xaml.schema">XamlValueConverter_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/xaml/XamlType.html#getTypeConverter--">getTypeConverter</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i45" class="rowColor">
 <td class="colFirst"><code><a href="../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/xaml/XamlType.html#getUnderlyingType--">getUnderlyingType</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i38" class="altColor">
+<tr id="i46" class="altColor">
+<td class="colFirst"><code><a href="../../system/xaml/schema/XamlValueConverter_1.html" title="class in system.xaml.schema">XamlValueConverter_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/xaml/XamlType.html#getValueSerializer--">getValueSerializer</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i47" class="rowColor">
+<td class="colFirst"><code><a href="../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/xaml/XamlType.html#GetXamlNamespaces--">GetXamlNamespaces</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i48" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/xaml/XamlType.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
@@ -604,7 +660,7 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
 <a name="XamlType-java.lang.Object-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>XamlType</h4>
 <pre>public&nbsp;XamlType(java.lang.Object&nbsp;instance)
@@ -613,6 +669,43 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="XamlType-java.lang.String-java.lang.String-system.collections.generic.IList_1-system.xaml.XamlSchemaContext-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>XamlType</h4>
+<pre>public&nbsp;XamlType(java.lang.String&nbsp;unknownTypeNamespace,
+                java.lang.String&nbsp;unknownTypeName,
+                <a href="../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;typeArguments,
+                <a href="../../system/xaml/XamlSchemaContext.html" title="class in system.xaml">XamlSchemaContext</a>&nbsp;schemaContext)
+         throws java.lang.Throwable,
+                <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                <a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                <a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                <a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                <a href="../../system/RankException.html" title="class in system">RankException</a>,
+                <a href="../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                <a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../system/RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -750,6 +843,110 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
 <dd><code><a href="../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
 <dd><code><a href="../../system/xaml/XamlSchemaException.html" title="class in system.xaml">XamlSchemaException</a></code></dd>
 <dd><code><a href="../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="GetAllAttachableMembers--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>GetAllAttachableMembers</h4>
+<pre>public&nbsp;<a href="../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a>&nbsp;GetAllAttachableMembers()
+                                      throws java.lang.Throwable,
+                                             <a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                             <a href="../../system/NullReferenceException.html" title="class in system">NullReferenceException</a>,
+                                             <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                             <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                             <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                             <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                             <a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                             <a href="../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a>,
+                                             <a href="../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                                             <a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                             <a href="../../system/xaml/XamlSchemaException.html" title="class in system.xaml">XamlSchemaException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a></code></dd>
+<dd><code><a href="../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/xaml/XamlSchemaException.html" title="class in system.xaml">XamlSchemaException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="GetAllMembers--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>GetAllMembers</h4>
+<pre>public&nbsp;<a href="../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a>&nbsp;GetAllMembers()
+                            throws java.lang.Throwable,
+                                   <a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                   <a href="../../system/NullReferenceException.html" title="class in system">NullReferenceException</a>,
+                                   <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                   <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                   <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                   <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                   <a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                   <a href="../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a>,
+                                   <a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                   <a href="../../system/xaml/XamlSchemaException.html" title="class in system.xaml">XamlSchemaException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a></code></dd>
+<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/xaml/XamlSchemaException.html" title="class in system.xaml">XamlSchemaException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="getAllowedContentTypes--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getAllowedContentTypes</h4>
+<pre>public&nbsp;<a href="../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;getAllowedContentTypes()
+                               throws java.lang.Throwable,
+                                      <a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                      <a href="../../system/NullReferenceException.html" title="class in system">NullReferenceException</a>,
+                                      <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                      <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                      <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                      <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                      <a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                      <a href="../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a>,
+                                      <a href="../../system/security/SecurityException.html" title="class in system.security">SecurityException</a>,
+                                      <a href="../../system/xaml/XamlSchemaException.html" title="class in system.xaml">XamlSchemaException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a></code></dd>
+<dd><code><a href="../../system/security/SecurityException.html" title="class in system.security">SecurityException</a></code></dd>
+<dd><code><a href="../../system/xaml/XamlSchemaException.html" title="class in system.xaml">XamlSchemaException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -903,6 +1100,102 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
 <dd><code><a href="../../system/security/SecurityException.html" title="class in system.security">SecurityException</a></code></dd>
 <dd><code><a href="../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
 <dd><code><a href="../../system/xaml/XamlSchemaException.html" title="class in system.xaml">XamlSchemaException</a></code></dd>
+<dd><code><a href="../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="getContentWrappers--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getContentWrappers</h4>
+<pre>public&nbsp;<a href="../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;getContentWrappers()
+                           throws java.lang.Throwable,
+                                  <a href="../../system/NullReferenceException.html" title="class in system">NullReferenceException</a>,
+                                  <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                  <a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                  <a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                  <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                  <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                  <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                  <a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                  <a href="../../system/RankException.html" title="class in system">RankException</a>,
+                                  <a href="../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                                  <a href="../../system/io/FileLoadException.html" title="class in system.io">FileLoadException</a>,
+                                  <a href="../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                                  <a href="../../system/security/SecurityException.html" title="class in system.security">SecurityException</a>,
+                                  <a href="../../system/FormatException.html" title="class in system">FormatException</a>,
+                                  <a href="../../system/xaml/XamlSchemaException.html" title="class in system.xaml">XamlSchemaException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../system/io/FileLoadException.html" title="class in system.io">FileLoadException</a></code></dd>
+<dd><code><a href="../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../system/security/SecurityException.html" title="class in system.security">SecurityException</a></code></dd>
+<dd><code><a href="../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../system/xaml/XamlSchemaException.html" title="class in system.xaml">XamlSchemaException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="getDeferringLoader--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getDeferringLoader</h4>
+<pre>public&nbsp;<a href="../../system/xaml/schema/XamlValueConverter_1.html" title="class in system.xaml.schema">XamlValueConverter_1</a>&nbsp;getDeferringLoader()
+                                        throws java.lang.Throwable,
+                                               <a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                               <a href="../../system/NullReferenceException.html" title="class in system">NullReferenceException</a>,
+                                               <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                               <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                               <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                               <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                               <a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                               <a href="../../system/TypeLoadException.html" title="class in system">TypeLoadException</a>,
+                                               <a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                               <a href="../../system/io/FileLoadException.html" title="class in system.io">FileLoadException</a>,
+                                               <a href="../../system/io/FileNotFoundException.html" title="class in system.io">FileNotFoundException</a>,
+                                               <a href="../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                                               <a href="../../system/security/SecurityException.html" title="class in system.security">SecurityException</a>,
+                                               <a href="../../system/FormatException.html" title="class in system">FormatException</a>,
+                                               <a href="../../system/xaml/XamlSchemaException.html" title="class in system.xaml">XamlSchemaException</a>,
+                                               <a href="../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
+                                               <a href="../../system/RankException.html" title="class in system">RankException</a>,
+                                               <a href="../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                                               <a href="../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../system/TypeLoadException.html" title="class in system">TypeLoadException</a></code></dd>
+<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/io/FileLoadException.html" title="class in system.io">FileLoadException</a></code></dd>
+<dd><code><a href="../../system/io/FileNotFoundException.html" title="class in system.io">FileNotFoundException</a></code></dd>
+<dd><code><a href="../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../system/security/SecurityException.html" title="class in system.security">SecurityException</a></code></dd>
+<dd><code><a href="../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../system/xaml/XamlSchemaException.html" title="class in system.xaml">XamlSchemaException</a></code></dd>
+<dd><code><a href="../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
+<dd><code><a href="../../system/RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
 <dd><code><a href="../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a></code></dd>
 </dl>
 </li>
@@ -1709,6 +2002,40 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
 </dl>
 </li>
 </ul>
+<a name="GetPositionalParameters-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>GetPositionalParameters</h4>
+<pre>public&nbsp;<a href="../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;GetPositionalParameters(int&nbsp;parameterCount)
+                                throws java.lang.Throwable,
+                                       <a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                       <a href="../../system/NullReferenceException.html" title="class in system">NullReferenceException</a>,
+                                       <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                       <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                       <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                       <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                       <a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                       <a href="../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
+                                       <a href="../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a>,
+                                       <a href="../../system/xaml/XamlSchemaException.html" title="class in system.xaml">XamlSchemaException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
+<dd><code><a href="../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a></code></dd>
+<dd><code><a href="../../system/xaml/XamlSchemaException.html" title="class in system.xaml">XamlSchemaException</a></code></dd>
+</dl>
+</li>
+</ul>
 <a name="getPreferredXamlNamespace--">
 <!--   -->
 </a>
@@ -1801,6 +2128,74 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
 </dl>
 </li>
 </ul>
+<a name="getTypeArguments--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getTypeArguments</h4>
+<pre>public&nbsp;<a href="../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;getTypeArguments()
+                         throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="getTypeConverter--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getTypeConverter</h4>
+<pre>public&nbsp;<a href="../../system/xaml/schema/XamlValueConverter_1.html" title="class in system.xaml.schema">XamlValueConverter_1</a>&nbsp;getTypeConverter()
+                                      throws java.lang.Throwable,
+                                             <a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                             <a href="../../system/NullReferenceException.html" title="class in system">NullReferenceException</a>,
+                                             <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                             <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                             <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                             <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                             <a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                             <a href="../../system/TypeLoadException.html" title="class in system">TypeLoadException</a>,
+                                             <a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                             <a href="../../system/io/FileLoadException.html" title="class in system.io">FileLoadException</a>,
+                                             <a href="../../system/io/FileNotFoundException.html" title="class in system.io">FileNotFoundException</a>,
+                                             <a href="../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                                             <a href="../../system/security/SecurityException.html" title="class in system.security">SecurityException</a>,
+                                             <a href="../../system/FormatException.html" title="class in system">FormatException</a>,
+                                             <a href="../../system/xaml/XamlSchemaException.html" title="class in system.xaml">XamlSchemaException</a>,
+                                             <a href="../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
+                                             <a href="../../system/RankException.html" title="class in system">RankException</a>,
+                                             <a href="../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                                             <a href="../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a>,
+                                             <a href="../../system/runtime/interopservices/ExternalException.html" title="class in system.runtime.interopservices">ExternalException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../system/TypeLoadException.html" title="class in system">TypeLoadException</a></code></dd>
+<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/io/FileLoadException.html" title="class in system.io">FileLoadException</a></code></dd>
+<dd><code><a href="../../system/io/FileNotFoundException.html" title="class in system.io">FileNotFoundException</a></code></dd>
+<dd><code><a href="../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../system/security/SecurityException.html" title="class in system.security">SecurityException</a></code></dd>
+<dd><code><a href="../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../system/xaml/XamlSchemaException.html" title="class in system.xaml">XamlSchemaException</a></code></dd>
+<dd><code><a href="../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
+<dd><code><a href="../../system/RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a></code></dd>
+<dd><code><a href="../../system/runtime/interopservices/ExternalException.html" title="class in system.runtime.interopservices">ExternalException</a></code></dd>
+</dl>
+</li>
+</ul>
 <a name="getUnderlyingType--">
 <!--   -->
 </a>
@@ -1820,6 +2215,112 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
 <dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 <dd><code><a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="getValueSerializer--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getValueSerializer</h4>
+<pre>public&nbsp;<a href="../../system/xaml/schema/XamlValueConverter_1.html" title="class in system.xaml.schema">XamlValueConverter_1</a>&nbsp;getValueSerializer()
+                                        throws java.lang.Throwable,
+                                               <a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                               <a href="../../system/NullReferenceException.html" title="class in system">NullReferenceException</a>,
+                                               <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                               <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                               <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                               <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                               <a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                               <a href="../../system/TypeLoadException.html" title="class in system">TypeLoadException</a>,
+                                               <a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                               <a href="../../system/io/FileLoadException.html" title="class in system.io">FileLoadException</a>,
+                                               <a href="../../system/io/FileNotFoundException.html" title="class in system.io">FileNotFoundException</a>,
+                                               <a href="../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                                               <a href="../../system/security/SecurityException.html" title="class in system.security">SecurityException</a>,
+                                               <a href="../../system/FormatException.html" title="class in system">FormatException</a>,
+                                               <a href="../../system/xaml/XamlSchemaException.html" title="class in system.xaml">XamlSchemaException</a>,
+                                               <a href="../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
+                                               <a href="../../system/RankException.html" title="class in system">RankException</a>,
+                                               <a href="../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                                               <a href="../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a>,
+                                               <a href="../../system/MissingMethodException.html" title="class in system">MissingMethodException</a>,
+                                               <a href="../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
+                                               <a href="../../system/runtime/interopservices/ExternalException.html" title="class in system.runtime.interopservices">ExternalException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../system/TypeLoadException.html" title="class in system">TypeLoadException</a></code></dd>
+<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/io/FileLoadException.html" title="class in system.io">FileLoadException</a></code></dd>
+<dd><code><a href="../../system/io/FileNotFoundException.html" title="class in system.io">FileNotFoundException</a></code></dd>
+<dd><code><a href="../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../system/security/SecurityException.html" title="class in system.security">SecurityException</a></code></dd>
+<dd><code><a href="../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../system/xaml/XamlSchemaException.html" title="class in system.xaml">XamlSchemaException</a></code></dd>
+<dd><code><a href="../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
+<dd><code><a href="../../system/RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a></code></dd>
+<dd><code><a href="../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
+<dd><code><a href="../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
+<dd><code><a href="../../system/runtime/interopservices/ExternalException.html" title="class in system.runtime.interopservices">ExternalException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="GetXamlNamespaces--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>GetXamlNamespaces</h4>
+<pre>public&nbsp;<a href="../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;GetXamlNamespaces()
+                          throws java.lang.Throwable,
+                                 <a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                 <a href="../../system/NullReferenceException.html" title="class in system">NullReferenceException</a>,
+                                 <a href="../../system/MissingMethodException.html" title="class in system">MissingMethodException</a>,
+                                 <a href="../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
+                                 <a href="../../system/MissingMemberException.html" title="class in system">MissingMemberException</a>,
+                                 <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                 <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                 <a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                 <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                 <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                 <a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                 <a href="../../system/RankException.html" title="class in system">RankException</a>,
+                                 <a href="../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                                 <a href="../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a>,
+                                 <a href="../../system/security/SecurityException.html" title="class in system.security">SecurityException</a>,
+                                 <a href="../../system/xaml/XamlSchemaException.html" title="class in system.xaml">XamlSchemaException</a>,
+                                 <a href="../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
+<dd><code><a href="../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
+<dd><code><a href="../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
+<dd><code><a href="../../system/MissingMemberException.html" title="class in system">MissingMemberException</a></code></dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a></code></dd>
+<dd><code><a href="../../system/security/SecurityException.html" title="class in system.security">SecurityException</a></code></dd>
+<dd><code><a href="../../system/xaml/XamlSchemaException.html" title="class in system.xaml">XamlSchemaException</a></code></dd>
+<dd><code><a href="../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
 </dl>
 </li>
 </ul>

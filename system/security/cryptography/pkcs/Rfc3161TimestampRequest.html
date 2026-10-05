@@ -16,7 +16,13 @@
 <meta name="keywords" content="setJCOInstance()">
 <meta name="keywords" content="getJCOType()">
 <meta name="keywords" content="cast()">
+<meta name="keywords" content="TryDecode()">
 <meta name="keywords" content="Encode()">
+<meta name="keywords" content="GetNonce()">
+<meta name="keywords" content="GetMessageHash()">
+<meta name="keywords" content="CreateFromHash()">
+<meta name="keywords" content="CreateFromSignerInfo()">
+<meta name="keywords" content="ProcessResponse()">
 <meta name="keywords" content="GetExtensions()">
 <meta name="keywords" content="getHasExtensions()">
 <meta name="keywords" content="getRequestSignerCertificate()">
@@ -36,7 +42,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10};
+var methods = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -238,66 +244,112 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 </td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../system/security/cryptography/pkcs/Rfc3161TimestampRequest.html" title="class in system.security.cryptography.pkcs">Rfc3161TimestampRequest</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/security/cryptography/pkcs/Rfc3161TimestampRequest.html#CreateFromHash-system.ReadOnlyMemory_1-system.security.cryptography.HashAlgorithmName-system.security.cryptography.Oid-system.Nullable_1-boolean-system.security.cryptography.x509certificates.X509ExtensionCollection-">CreateFromHash</a></span>(<a href="../../../../system/ReadOnlyMemory_1.html" title="class in system">ReadOnlyMemory_1</a>&nbsp;hash,
+              <a href="../../../../system/security/cryptography/HashAlgorithmName.html" title="class in system.security.cryptography">HashAlgorithmName</a>&nbsp;hashAlgorithm,
+              <a href="../../../../system/security/cryptography/Oid.html" title="class in system.security.cryptography">Oid</a>&nbsp;requestedPolicyId,
+              <a href="../../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;nonce,
+              boolean&nbsp;requestSignerCertificates,
+              <a href="../../../../system/security/cryptography/x509certificates/X509ExtensionCollection.html" title="class in system.security.cryptography.x509certificates">X509ExtensionCollection</a>&nbsp;extensions)</code>&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>static <a href="../../../../system/security/cryptography/pkcs/Rfc3161TimestampRequest.html" title="class in system.security.cryptography.pkcs">Rfc3161TimestampRequest</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/security/cryptography/pkcs/Rfc3161TimestampRequest.html#CreateFromHash-system.ReadOnlyMemory_1-system.security.cryptography.Oid-system.security.cryptography.Oid-system.Nullable_1-boolean-system.security.cryptography.x509certificates.X509ExtensionCollection-">CreateFromHash</a></span>(<a href="../../../../system/ReadOnlyMemory_1.html" title="class in system">ReadOnlyMemory_1</a>&nbsp;hash,
+              <a href="../../../../system/security/cryptography/Oid.html" title="class in system.security.cryptography">Oid</a>&nbsp;hashAlgorithmId,
+              <a href="../../../../system/security/cryptography/Oid.html" title="class in system.security.cryptography">Oid</a>&nbsp;requestedPolicyId,
+              <a href="../../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;nonce,
+              boolean&nbsp;requestSignerCertificates,
+              <a href="../../../../system/security/cryptography/x509certificates/X509ExtensionCollection.html" title="class in system.security.cryptography.x509certificates">X509ExtensionCollection</a>&nbsp;extensions)</code>&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../system/security/cryptography/pkcs/Rfc3161TimestampRequest.html" title="class in system.security.cryptography.pkcs">Rfc3161TimestampRequest</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/security/cryptography/pkcs/Rfc3161TimestampRequest.html#CreateFromSignerInfo-system.security.cryptography.pkcs.SignerInfo-system.security.cryptography.HashAlgorithmName-system.security.cryptography.Oid-system.Nullable_1-boolean-system.security.cryptography.x509certificates.X509ExtensionCollection-">CreateFromSignerInfo</a></span>(<a href="../../../../system/security/cryptography/pkcs/SignerInfo.html" title="class in system.security.cryptography.pkcs">SignerInfo</a>&nbsp;signerInfo,
+                    <a href="../../../../system/security/cryptography/HashAlgorithmName.html" title="class in system.security.cryptography">HashAlgorithmName</a>&nbsp;hashAlgorithm,
+                    <a href="../../../../system/security/cryptography/Oid.html" title="class in system.security.cryptography">Oid</a>&nbsp;requestedPolicyId,
+                    <a href="../../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;nonce,
+                    boolean&nbsp;requestSignerCertificates,
+                    <a href="../../../../system/security/cryptography/x509certificates/X509ExtensionCollection.html" title="class in system.security.cryptography.x509certificates">X509ExtensionCollection</a>&nbsp;extensions)</code>&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>byte[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/security/cryptography/pkcs/Rfc3161TimestampRequest.html#Encode--">Encode</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="../../../../system/security/cryptography/x509certificates/X509ExtensionCollection.html" title="class in system.security.cryptography.x509certificates">X509ExtensionCollection</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/security/cryptography/pkcs/Rfc3161TimestampRequest.html#GetExtensions--">GetExtensions</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/security/cryptography/pkcs/Rfc3161TimestampRequest.html#getHasExtensions--">getHasExtensions</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../../../system/security/cryptography/Oid.html" title="class in system.security.cryptography">Oid</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/security/cryptography/pkcs/Rfc3161TimestampRequest.html#getHashAlgorithmId--">getHashAlgorithmId</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/security/cryptography/pkcs/Rfc3161TimestampRequest.html#getJCOAssemblyName--">getJCOAssemblyName</a></span>()</code>
 <div class="block">Returns the reflected Assembly name</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/security/cryptography/pkcs/Rfc3161TimestampRequest.html#getJCOClassName--">getJCOClassName</a></span>()</code>
 <div class="block">Returns the reflected Class name</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/security/cryptography/pkcs/Rfc3161TimestampRequest.html#getJCOInstance--">getJCOInstance</a></span>()</code>
 <div class="block">Returns the instantiated class</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/security/cryptography/pkcs/Rfc3161TimestampRequest.html#getJCOObjectName--">getJCOObjectName</a></span>()</code>
 <div class="block">Returns the reflected Class name used to build the object</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>org.mases.jcobridge.JCType</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/security/cryptography/pkcs/Rfc3161TimestampRequest.html#getJCOType--">getJCOType</a></span>()</code>
 <div class="block">Returns the instantiated class Type</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i13" class="rowColor">
+<td class="colFirst"><code><a href="../../../../system/ReadOnlyMemory_1.html" title="class in system">ReadOnlyMemory_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/security/cryptography/pkcs/Rfc3161TimestampRequest.html#GetMessageHash--">GetMessageHash</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i14" class="altColor">
+<td class="colFirst"><code><a href="../../../../system/Nullable_1.html" title="class in system">Nullable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/security/cryptography/pkcs/Rfc3161TimestampRequest.html#GetNonce--">GetNonce</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code><a href="../../../../system/security/cryptography/Oid.html" title="class in system.security.cryptography">Oid</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/security/cryptography/pkcs/Rfc3161TimestampRequest.html#getRequestedPolicyId--">getRequestedPolicyId</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/security/cryptography/pkcs/Rfc3161TimestampRequest.html#getRequestSignerCertificate--">getRequestSignerCertificate</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/security/cryptography/pkcs/Rfc3161TimestampRequest.html#getVersion--">getVersion</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i18" class="altColor">
+<td class="colFirst"><code><a href="../../../../system/security/cryptography/pkcs/Rfc3161TimestampToken.html" title="class in system.security.cryptography.pkcs">Rfc3161TimestampToken</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/security/cryptography/pkcs/Rfc3161TimestampRequest.html#ProcessResponse-system.ReadOnlyMemory_1-org.mases.jcobridge.netreflection.JCORefOut-">ProcessResponse</a></span>(<a href="../../../../system/ReadOnlyMemory_1.html" title="class in system">ReadOnlyMemory_1</a>&nbsp;responseBytes,
+               <a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;java.util.concurrent.atomic.AtomicInteger&gt;&nbsp;bytesConsumed)</code>&nbsp;</td>
+</tr>
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/security/cryptography/pkcs/Rfc3161TimestampRequest.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
+</tr>
+<tr id="i20" class="altColor">
+<td class="colFirst"><code>static boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/security/cryptography/pkcs/Rfc3161TimestampRequest.html#TryDecode-system.ReadOnlyMemory_1-org.mases.jcobridge.netreflection.JCORefOut-org.mases.jcobridge.netreflection.JCORefOut-">TryDecode</a></span>(<a href="../../../../system/ReadOnlyMemory_1.html" title="class in system">ReadOnlyMemory_1</a>&nbsp;encodedBytes,
+         <a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../../../system/security/cryptography/pkcs/Rfc3161TimestampRequest.html" title="class in system.security.cryptography.pkcs">Rfc3161TimestampRequest</a>&gt;&nbsp;request,
+         <a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;java.util.concurrent.atomic.AtomicInteger&gt;&nbsp;bytesConsumed)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -441,6 +493,143 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <dd><a href="../../../../system/security/cryptography/pkcs/Rfc3161TimestampRequest.html" title="class in system.security.cryptography.pkcs"><code>Rfc3161TimestampRequest</code></a> instance</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - in case of error during cast operation</dd>
+</dl>
+</li>
+</ul>
+<a name="CreateFromHash-system.ReadOnlyMemory_1-system.security.cryptography.HashAlgorithmName-system.security.cryptography.Oid-system.Nullable_1-boolean-system.security.cryptography.x509certificates.X509ExtensionCollection-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>CreateFromHash</h4>
+<pre>public static&nbsp;<a href="../../../../system/security/cryptography/pkcs/Rfc3161TimestampRequest.html" title="class in system.security.cryptography.pkcs">Rfc3161TimestampRequest</a>&nbsp;CreateFromHash(<a href="../../../../system/ReadOnlyMemory_1.html" title="class in system">ReadOnlyMemory_1</a>&nbsp;hash,
+                                                     <a href="../../../../system/security/cryptography/HashAlgorithmName.html" title="class in system.security.cryptography">HashAlgorithmName</a>&nbsp;hashAlgorithm,
+                                                     <a href="../../../../system/security/cryptography/Oid.html" title="class in system.security.cryptography">Oid</a>&nbsp;requestedPolicyId,
+                                                     <a href="../../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;nonce,
+                                                     boolean&nbsp;requestSignerCertificates,
+                                                     <a href="../../../../system/security/cryptography/x509certificates/X509ExtensionCollection.html" title="class in system.security.cryptography.x509certificates">X509ExtensionCollection</a>&nbsp;extensions)
+                                              throws java.lang.Throwable,
+                                                     <a href="../../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                                     <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                     <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                     <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                     <a href="../../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                                                     <a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                                     <a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                     <a href="../../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                                     <a href="../../../../system/security/cryptography/CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a>,
+                                                     <a href="../../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                                     <a href="../../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                                                     <a href="../../../../system/OverflowException.html" title="class in system">OverflowException</a>,
+                                                     <a href="../../../../system/formats/asn1/AsnContentException.html" title="class in system.formats.asn1">AsnContentException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../../system/security/cryptography/CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a></code></dd>
+<dd><code><a href="../../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../../../system/OverflowException.html" title="class in system">OverflowException</a></code></dd>
+<dd><code><a href="../../../../system/formats/asn1/AsnContentException.html" title="class in system.formats.asn1">AsnContentException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="CreateFromHash-system.ReadOnlyMemory_1-system.security.cryptography.Oid-system.security.cryptography.Oid-system.Nullable_1-boolean-system.security.cryptography.x509certificates.X509ExtensionCollection-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>CreateFromHash</h4>
+<pre>public static&nbsp;<a href="../../../../system/security/cryptography/pkcs/Rfc3161TimestampRequest.html" title="class in system.security.cryptography.pkcs">Rfc3161TimestampRequest</a>&nbsp;CreateFromHash(<a href="../../../../system/ReadOnlyMemory_1.html" title="class in system">ReadOnlyMemory_1</a>&nbsp;hash,
+                                                     <a href="../../../../system/security/cryptography/Oid.html" title="class in system.security.cryptography">Oid</a>&nbsp;hashAlgorithmId,
+                                                     <a href="../../../../system/security/cryptography/Oid.html" title="class in system.security.cryptography">Oid</a>&nbsp;requestedPolicyId,
+                                                     <a href="../../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;nonce,
+                                                     boolean&nbsp;requestSignerCertificates,
+                                                     <a href="../../../../system/security/cryptography/x509certificates/X509ExtensionCollection.html" title="class in system.security.cryptography.x509certificates">X509ExtensionCollection</a>&nbsp;extensions)
+                                              throws java.lang.Throwable,
+                                                     <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                     <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                     <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                     <a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                     <a href="../../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                                     <a href="../../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                                                     <a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                                     <a href="../../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                                     <a href="../../../../system/RankException.html" title="class in system">RankException</a>,
+                                                     <a href="../../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                                     <a href="../../../../system/OverflowException.html" title="class in system">OverflowException</a>,
+                                                     <a href="../../../../system/security/cryptography/CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a>,
+                                                     <a href="../../../../system/formats/asn1/AsnContentException.html" title="class in system.formats.asn1">AsnContentException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../../system/RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../../system/OverflowException.html" title="class in system">OverflowException</a></code></dd>
+<dd><code><a href="../../../../system/security/cryptography/CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a></code></dd>
+<dd><code><a href="../../../../system/formats/asn1/AsnContentException.html" title="class in system.formats.asn1">AsnContentException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="CreateFromSignerInfo-system.security.cryptography.pkcs.SignerInfo-system.security.cryptography.HashAlgorithmName-system.security.cryptography.Oid-system.Nullable_1-boolean-system.security.cryptography.x509certificates.X509ExtensionCollection-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>CreateFromSignerInfo</h4>
+<pre>public static&nbsp;<a href="../../../../system/security/cryptography/pkcs/Rfc3161TimestampRequest.html" title="class in system.security.cryptography.pkcs">Rfc3161TimestampRequest</a>&nbsp;CreateFromSignerInfo(<a href="../../../../system/security/cryptography/pkcs/SignerInfo.html" title="class in system.security.cryptography.pkcs">SignerInfo</a>&nbsp;signerInfo,
+                                                           <a href="../../../../system/security/cryptography/HashAlgorithmName.html" title="class in system.security.cryptography">HashAlgorithmName</a>&nbsp;hashAlgorithm,
+                                                           <a href="../../../../system/security/cryptography/Oid.html" title="class in system.security.cryptography">Oid</a>&nbsp;requestedPolicyId,
+                                                           <a href="../../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;nonce,
+                                                           boolean&nbsp;requestSignerCertificates,
+                                                           <a href="../../../../system/security/cryptography/x509certificates/X509ExtensionCollection.html" title="class in system.security.cryptography.x509certificates">X509ExtensionCollection</a>&nbsp;extensions)
+                                                    throws java.lang.Throwable,
+                                                           <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                           <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                           <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                           <a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                           <a href="../../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                                           <a href="../../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                                                           <a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                                           <a href="../../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                                                           <a href="../../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                                           <a href="../../../../system/security/cryptography/CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a>,
+                                                           <a href="../../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a>,
+                                                           <a href="../../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
+                                                           <a href="../../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                                           <a href="../../../../system/formats/asn1/AsnContentException.html" title="class in system.formats.asn1">AsnContentException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../../system/security/cryptography/CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a></code></dd>
+<dd><code><a href="../../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
+<dd><code><a href="../../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
+<dd><code><a href="../../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../../system/formats/asn1/AsnContentException.html" title="class in system.formats.asn1">AsnContentException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -620,6 +809,34 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 </dl>
 </li>
 </ul>
+<a name="GetMessageHash--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>GetMessageHash</h4>
+<pre>public&nbsp;<a href="../../../../system/ReadOnlyMemory_1.html" title="class in system">ReadOnlyMemory_1</a>&nbsp;GetMessageHash()
+                                throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="GetNonce--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>GetNonce</h4>
+<pre>public&nbsp;<a href="../../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;GetNonce()
+                    throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
 <a name="getRequestedPolicyId--">
 <!--   -->
 </a>
@@ -662,16 +879,93 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 </dl>
 </li>
 </ul>
+<a name="ProcessResponse-system.ReadOnlyMemory_1-org.mases.jcobridge.netreflection.JCORefOut-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ProcessResponse</h4>
+<pre>public&nbsp;<a href="../../../../system/security/cryptography/pkcs/Rfc3161TimestampToken.html" title="class in system.security.cryptography.pkcs">Rfc3161TimestampToken</a>&nbsp;ProcessResponse(<a href="../../../../system/ReadOnlyMemory_1.html" title="class in system">ReadOnlyMemory_1</a>&nbsp;responseBytes,
+                                             <a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;java.util.concurrent.atomic.AtomicInteger&gt;&nbsp;bytesConsumed)
+                                      throws java.lang.Throwable,
+                                             <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                             <a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                             <a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                             <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                             <a href="../../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                             <a href="../../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                             <a href="../../../../system/formats/asn1/AsnContentException.html" title="class in system.formats.asn1">AsnContentException</a>,
+                                             <a href="../../../../system/security/cryptography/CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a>,
+                                             <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                             <a href="../../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                                             <a href="../../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                                             <a href="../../../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../../system/formats/asn1/AsnContentException.html" title="class in system.formats.asn1">AsnContentException</a></code></dd>
+<dd><code><a href="../../../../system/security/cryptography/CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a></code></dd>
+<dd><code><a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a></code></dd>
+</dl>
+</li>
+</ul>
 <a name="setJCOInstance-org.mases.jcobridge.JCObject-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>setJCOInstance</h4>
 <pre>public&nbsp;void&nbsp;setJCOInstance(org.mases.jcobridge.JCObject&nbsp;instance)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../../org/mases/jcobridge/netreflection/NetObject.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></code>&nbsp;in class&nbsp;<code><a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="TryDecode-system.ReadOnlyMemory_1-org.mases.jcobridge.netreflection.JCORefOut-org.mases.jcobridge.netreflection.JCORefOut-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>TryDecode</h4>
+<pre>public static&nbsp;boolean&nbsp;TryDecode(<a href="../../../../system/ReadOnlyMemory_1.html" title="class in system">ReadOnlyMemory_1</a>&nbsp;encodedBytes,
+                                <a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../../../system/security/cryptography/pkcs/Rfc3161TimestampRequest.html" title="class in system.security.cryptography.pkcs">Rfc3161TimestampRequest</a>&gt;&nbsp;request,
+                                <a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;java.util.concurrent.atomic.AtomicInteger&gt;&nbsp;bytesConsumed)
+                         throws java.lang.Throwable,
+                                <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                <a href="../../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                <a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                <a href="../../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                <a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                <a href="../../../../system/RankException.html" title="class in system">RankException</a>,
+                                <a href="../../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                                <a href="../../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                <a href="../../../../system/formats/asn1/AsnContentException.html" title="class in system.formats.asn1">AsnContentException</a>,
+                                <a href="../../../../system/security/cryptography/CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../../system/RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../../system/formats/asn1/AsnContentException.html" title="class in system.formats.asn1">AsnContentException</a></code></dd>
+<dd><code><a href="../../../../system/security/cryptography/CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a></code></dd>
 </dl>
 </li>
 </ul>

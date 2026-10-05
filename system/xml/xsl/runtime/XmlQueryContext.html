@@ -17,6 +17,7 @@
 <meta name="keywords" content="getJCOType()">
 <meta name="keywords" content="cast()">
 <meta name="keywords" content="LateBoundFunctionExists()">
+<meta name="keywords" content="InvokeXsltLateBoundFunction()">
 <meta name="keywords" content="GetLateBoundObject()">
 <meta name="keywords" content="GetParameter()">
 <meta name="keywords" content="GetDataSource()">
@@ -37,7 +38,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -295,15 +296,21 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/xml/xsl/runtime/XmlQueryContext.html#getQueryNameTable--">getQueryNameTable</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i12" class="altColor">
+<td class="colFirst"><code><a href="../../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/xml/xsl/runtime/XmlQueryContext.html#InvokeXsltLateBoundFunction-java.lang.String-java.lang.String-system.collections.generic.IList_1:A-">InvokeXsltLateBoundFunction</a></span>(java.lang.String&nbsp;name,
+                           java.lang.String&nbsp;namespaceUri,
+                           <a href="../../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>[]&nbsp;args)</code>&nbsp;</td>
+</tr>
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/xml/xsl/runtime/XmlQueryContext.html#LateBoundFunctionExists-java.lang.String-java.lang.String-">LateBoundFunctionExists</a></span>(java.lang.String&nbsp;name,
                        java.lang.String&nbsp;namespaceUri)</code>&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/xml/xsl/runtime/XmlQueryContext.html#OnXsltMessageEncountered-java.lang.String-">OnXsltMessageEncountered</a></span>(java.lang.String&nbsp;message)</code>&nbsp;</td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/xml/xsl/runtime/XmlQueryContext.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
@@ -695,6 +702,50 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="InvokeXsltLateBoundFunction-java.lang.String-java.lang.String-system.collections.generic.IList_1:A-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>InvokeXsltLateBoundFunction</h4>
+<pre>public&nbsp;<a href="../../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;InvokeXsltLateBoundFunction(java.lang.String&nbsp;name,
+                                           java.lang.String&nbsp;namespaceUri,
+                                           <a href="../../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>[]&nbsp;args)
+                                    throws java.lang.Throwable,
+                                           <a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                           <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                           <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                           <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                           <a href="../../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                           <a href="../../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
+                                           <a href="../../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                                           <a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                           <a href="../../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                                           <a href="../../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a>,
+                                           <a href="../../../../system/runtime/interopservices/ExternalException.html" title="class in system.runtime.interopservices">ExternalException</a>,
+                                           <a href="../../../../system/OverflowException.html" title="class in system">OverflowException</a>,
+                                           <a href="../../../../system/FormatException.html" title="class in system">FormatException</a>,
+                                           <a href="../../../../system/InvalidCastException.html" title="class in system">InvalidCastException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
+<dd><code><a href="../../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
+<dd><code><a href="../../../../system/runtime/interopservices/ExternalException.html" title="class in system.runtime.interopservices">ExternalException</a></code></dd>
+<dd><code><a href="../../../../system/OverflowException.html" title="class in system">OverflowException</a></code></dd>
+<dd><code><a href="../../../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../../../system/InvalidCastException.html" title="class in system">InvalidCastException</a></code></dd>
 </dl>
 </li>
 </ul>
