@@ -256,7 +256,9 @@ implements <a href="../../../system/resources/tools/ITargetAwareCodeDomProvider.
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/resources/tools/ITargetAwareCodeDomProviderImplementation.html#SupportsProperty-org.mases.jcobridge.netreflection.NetType-java.lang.String-boolean-">SupportsProperty</a></span>(<a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;type,
                 java.lang.String&nbsp;propertyName,
-                boolean&nbsp;isWritable)</code>&nbsp;</td>
+                boolean&nbsp;isWritable)</code>
+<div class="block">Invokes the .NET member SupportsProperty.</div>
+</td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>static <a href="../../../system/resources/tools/ITargetAwareCodeDomProvider.html" title="interface in system.resources.tools">ITargetAwareCodeDomProvider</a></code></td>
@@ -363,8 +365,10 @@ implements <a href="../../../system/resources/tools/ITargetAwareCodeDomProvider.
                                           throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -491,11 +495,20 @@ implements <a href="../../../system/resources/tools/ITargetAwareCodeDomProvider.
                                 java.lang.String&nbsp;propertyName,
                                 boolean&nbsp;isWritable)
                          throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member SupportsProperty.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../system/resources/tools/ITargetAwareCodeDomProvider.html#SupportsProperty-org.mases.jcobridge.netreflection.NetType-java.lang.String-boolean-">SupportsProperty</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/resources/tools/ITargetAwareCodeDomProvider.html" title="interface in system.resources.tools">ITargetAwareCodeDomProvider</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>type</code> - the argument of type <code>NetType</code></dd>
+<dd><code>propertyName</code> - the argument of type <code>java.lang.String</code></dd>
+<dd><code>isWritable</code> - the argument of type <code>boolean</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Resources.Tools.ITargetAwareCodeDomProvider.SupportsProperty" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

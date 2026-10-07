@@ -234,7 +234,9 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../../system/windows/DependencyProperty.html" title="class in system.windows">DependencyProperty</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/DependencyPropertyKey.html#getDependencyProperty--">getDependencyProperty</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/DependencyPropertyKey.html#getDependencyProperty--">getDependencyProperty</a></span>()</code>
+<div class="block">Gets the value of the .NET property DependencyProperty.</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
@@ -269,7 +271,9 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/DependencyPropertyKey.html#OverrideMetadata-org.mases.jcobridge.netreflection.NetType-system.windows.PropertyMetadata-">OverrideMetadata</a></span>(<a href="../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;forType,
-                <a href="../../system/windows/PropertyMetadata.html" title="class in system.windows">PropertyMetadata</a>&nbsp;typeMetadata)</code>&nbsp;</td>
+                <a href="../../system/windows/PropertyMetadata.html" title="class in system.windows">PropertyMetadata</a>&nbsp;typeMetadata)</code>
+<div class="block">Invokes the .NET member OverrideMetadata.</div>
+</td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
@@ -390,8 +394,10 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
                       throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -430,9 +436,14 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
 <h4>getDependencyProperty</h4>
 <pre>public&nbsp;<a href="../../system/windows/DependencyProperty.html" title="class in system.windows">DependencyProperty</a>&nbsp;getDependencyProperty()
                                          throws java.lang.Throwable</pre>
+<div class="block">Gets the value of the .NET property DependencyProperty.</div>
 <dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Windows.DependencyPropertyKey.DependencyProperty" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -555,24 +566,30 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
                              <a href="../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
                              <a href="../../system/FormatException.html" title="class in system">FormatException</a>,
                              <a href="../../system/MulticastNotSupportedException.html" title="class in system">MulticastNotSupportedException</a></pre>
+<div class="block">Invokes the .NET member OverrideMetadata.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>forType</code> - the argument of type <code>NetType</code></dd>
+<dd><code>typeMetadata</code> - the argument of type <code>PropertyMetadata</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
-<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
-<dd><code><a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
-<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
-<dd><code><a href="../../system/security/SecurityException.html" title="class in system.security">SecurityException</a></code></dd>
-<dd><code><a href="../../system/io/IOException.html" title="class in system.io">IOException</a></code></dd>
-<dd><code><a href="../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
-<dd><code><a href="../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
-<dd><code><a href="../../system/MulticastNotSupportedException.html" title="class in system">MulticastNotSupportedException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/security/SecurityException.html" title="class in system.security">SecurityException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/io/IOException.html" title="class in system.io">IOException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/FormatException.html" title="class in system">FormatException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/MulticastNotSupportedException.html" title="class in system">MulticastNotSupportedException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Windows.DependencyPropertyKey.OverrideMetadata" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

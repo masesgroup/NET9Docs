@@ -255,7 +255,9 @@ implements <a href="../../../system/componentmodel/design/ITypeDiscoveryService.
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/collections/ICollection.html" title="interface in system.collections">ICollection</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/componentmodel/design/ITypeDiscoveryServiceImplementation.html#GetTypes-org.mases.jcobridge.netreflection.NetType-boolean-">GetTypes</a></span>(<a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;baseType,
-        boolean&nbsp;excludeGlobalTypes)</code>&nbsp;</td>
+        boolean&nbsp;excludeGlobalTypes)</code>
+<div class="block">Invokes the .NET member GetTypes.</div>
+</td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>static <a href="../../../system/componentmodel/design/ITypeDiscoveryService.html" title="interface in system.componentmodel.design">ITypeDiscoveryService</a></code></td>
@@ -362,8 +364,10 @@ implements <a href="../../../system/componentmodel/design/ITypeDiscoveryService.
                                     throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -489,11 +493,19 @@ implements <a href="../../../system/componentmodel/design/ITypeDiscoveryService.
 <pre>public&nbsp;<a href="../../../system/collections/ICollection.html" title="interface in system.collections">ICollection</a>&nbsp;GetTypes(<a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;baseType,
                             boolean&nbsp;excludeGlobalTypes)
                      throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member GetTypes.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../system/componentmodel/design/ITypeDiscoveryService.html#GetTypes-org.mases.jcobridge.netreflection.NetType-boolean-">GetTypes</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/componentmodel/design/ITypeDiscoveryService.html" title="interface in system.componentmodel.design">ITypeDiscoveryService</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>baseType</code> - the argument of type <code>NetType</code></dd>
+<dd><code>excludeGlobalTypes</code> - the argument of type <code>boolean</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.ComponentModel.Design.ITypeDiscoveryService.GetTypes" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

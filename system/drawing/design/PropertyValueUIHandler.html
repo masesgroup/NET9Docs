@@ -231,7 +231,9 @@ implements <a href="https://www.jcobridge.com/api-java_2.6.10/org/mases/jcobridg
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/drawing/design/PropertyValueUIHandler.html#DynamicInvoke-system.componentmodel.ITypeDescriptorContext-system.componentmodel.PropertyDescriptor-org.mases.jcobridge.netreflection.NetArrayList-">DynamicInvoke</a></span>(<a href="../../../system/componentmodel/ITypeDescriptorContext.html" title="interface in system.componentmodel">ITypeDescriptorContext</a>&nbsp;context,
              <a href="../../../system/componentmodel/PropertyDescriptor.html" title="class in system.componentmodel">PropertyDescriptor</a>&nbsp;propDesc,
-             <a href="../../../org/mases/jcobridge/netreflection/NetArrayList.html" title="class in org.mases.jcobridge.netreflection">NetArrayList</a>&nbsp;valueUIItemList)</code>&nbsp;</td>
+             <a href="../../../org/mases/jcobridge/netreflection/NetArrayList.html" title="class in org.mases.jcobridge.netreflection">NetArrayList</a>&nbsp;valueUIItemList)</code>
+<div class="block">Invokes the .NET member DynamicInvoke.</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
@@ -392,8 +394,10 @@ implements <a href="https://www.jcobridge.com/api-java_2.6.10/org/mases/jcobridg
                        throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -428,9 +432,16 @@ implements <a href="https://www.jcobridge.com/api-java_2.6.10/org/mases/jcobridg
                           <a href="../../../system/componentmodel/PropertyDescriptor.html" title="class in system.componentmodel">PropertyDescriptor</a>&nbsp;propDesc,
                           <a href="../../../org/mases/jcobridge/netreflection/NetArrayList.html" title="class in org.mases.jcobridge.netreflection">NetArrayList</a>&nbsp;valueUIItemList)
                    throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member DynamicInvoke.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>context</code> - the argument of type <code>ITypeDescriptorContext</code></dd>
+<dd><code>propDesc</code> - the argument of type <code>PropertyDescriptor</code></dd>
+<dd><code>valueUIItemList</code> - the argument of type <code>NetArrayList</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Delegate.DynamicInvoke" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -543,6 +554,12 @@ implements <a href="https://www.jcobridge.com/api-java_2.6.10/org/mases/jcobridg
                    <a href="../../../system/componentmodel/PropertyDescriptor.html" title="class in system.componentmodel">PropertyDescriptor</a>&nbsp;propDesc,
                    <a href="../../../org/mases/jcobridge/netreflection/NetArrayList.html" title="class in org.mases.jcobridge.netreflection">NetArrayList</a>&nbsp;valueUIItemList)</pre>
 <div class="block">Methods invoked in JVM when an event is raised in CLR</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>context</code> - the .NET argument of type <code>System.ComponentModel.ITypeDescriptorContext</code></dd>
+<dd><code>propDesc</code> - the .NET argument of type <code>System.ComponentModel.PropertyDescriptor</code></dd>
+<dd><code>valueUIItemList</code> - the .NET argument of type <code>System.Collections.ArrayList</code></dd>
+</dl>
 </li>
 </ul>
 </li>

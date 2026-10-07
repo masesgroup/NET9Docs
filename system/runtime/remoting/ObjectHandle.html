@@ -211,7 +211,9 @@ extends <a href="../../../system/MarshalByRefObject.html" title="class in system
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../system/runtime/remoting/ObjectHandle.html#ObjectHandle--">ObjectHandle</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/runtime/remoting/ObjectHandle.html#ObjectHandle-org.mases.jcobridge.netreflection.NetObject-">ObjectHandle</a></span>(<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;o)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/runtime/remoting/ObjectHandle.html#ObjectHandle-org.mases.jcobridge.netreflection.NetObject-">ObjectHandle</a></span>(<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;o)</code>
+<div class="block">Initializes a new instance by invoking the .NET constructor.</div>
+</td>
 </tr>
 <tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../system/runtime/remoting/ObjectHandle.html#ObjectHandle-java.lang.Object-">ObjectHandle</a></span>(java.lang.Object&nbsp;instance)</code>
@@ -277,7 +279,9 @@ extends <a href="../../../system/MarshalByRefObject.html" title="class in system
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/remoting/ObjectHandle.html#Unwrap--">Unwrap</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/remoting/ObjectHandle.html#Unwrap--">Unwrap</a></span>()</code>
+<div class="block">Invokes the .NET member Unwrap.</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -397,9 +401,14 @@ extends <a href="../../../system/MarshalByRefObject.html" title="class in system
 <h4>ObjectHandle</h4>
 <pre>public&nbsp;ObjectHandle(<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;o)
              throws java.lang.Throwable</pre>
+<div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>o</code> - the argument of type <code>NetObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Runtime.Remoting.ObjectHandle.-ctor" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -413,8 +422,10 @@ extends <a href="../../../system/MarshalByRefObject.html" title="class in system
              throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -565,9 +576,14 @@ extends <a href="../../../system/MarshalByRefObject.html" title="class in system
 <h4>Unwrap</h4>
 <pre>public&nbsp;<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;Unwrap()
                  throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member Unwrap.</div>
 <dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Runtime.Remoting.ObjectHandle.Unwrap" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

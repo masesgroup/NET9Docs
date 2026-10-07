@@ -206,7 +206,9 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../system/runtime/interopservices/UnknownWrapper.html#UnknownWrapper--">UnknownWrapper</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/runtime/interopservices/UnknownWrapper.html#UnknownWrapper-org.mases.jcobridge.netreflection.NetObject-">UnknownWrapper</a></span>(<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;obj)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/runtime/interopservices/UnknownWrapper.html#UnknownWrapper-org.mases.jcobridge.netreflection.NetObject-">UnknownWrapper</a></span>(<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;obj)</code>
+<div class="block">Initializes a new instance by invoking the .NET constructor.</div>
+</td>
 </tr>
 <tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../system/runtime/interopservices/UnknownWrapper.html#UnknownWrapper-java.lang.Object-">UnknownWrapper</a></span>(java.lang.Object&nbsp;instance)</code>
@@ -266,7 +268,9 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/interopservices/UnknownWrapper.html#getWrappedObject--">getWrappedObject</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/interopservices/UnknownWrapper.html#getWrappedObject--">getWrappedObject</a></span>()</code>
+<div class="block">Gets the value of the .NET property WrappedObject.</div>
+</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
@@ -385,9 +389,14 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <h4>UnknownWrapper</h4>
 <pre>public&nbsp;UnknownWrapper(<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;obj)
                throws java.lang.Throwable</pre>
+<div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>obj</code> - the argument of type <code>NetObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Runtime.InteropServices.UnknownWrapper.-ctor" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -401,8 +410,10 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
                throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -536,9 +547,14 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <h4>getWrappedObject</h4>
 <pre>public&nbsp;<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;getWrappedObject()
                            throws java.lang.Throwable</pre>
+<div class="block">Gets the value of the .NET property WrappedObject.</div>
 <dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Runtime.InteropServices.UnknownWrapper.WrappedObject" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

@@ -209,7 +209,9 @@ extends <a href="../../../../system/componentmodel/design/serialization/CodeDomS
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../system/componentmodel/design/serialization/TypeCodeDomSerializer.html#TypeCodeDomSerializer--">TypeCodeDomSerializer</a></span>()</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../system/componentmodel/design/serialization/TypeCodeDomSerializer.html#TypeCodeDomSerializer--">TypeCodeDomSerializer</a></span>()</code>
+<div class="block">Initializes a new instance by invoking the .NET constructor.</div>
+</td>
 </tr>
 <tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../system/componentmodel/design/serialization/TypeCodeDomSerializer.html#TypeCodeDomSerializer-java.lang.Object-">TypeCodeDomSerializer</a></span>(java.lang.Object&nbsp;instance)</code>
@@ -240,7 +242,9 @@ extends <a href="../../../../system/componentmodel/design/serialization/CodeDomS
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/componentmodel/design/serialization/TypeCodeDomSerializer.html#Deserialize-system.componentmodel.design.serialization.IDesignerSerializationManager-system.codedom.CodeTypeDeclaration-">Deserialize</a></span>(<a href="../../../../system/componentmodel/design/serialization/IDesignerSerializationManager.html" title="interface in system.componentmodel.design.serialization">IDesignerSerializationManager</a>&nbsp;manager,
-           <a href="../../../../system/codedom/CodeTypeDeclaration.html" title="class in system.codedom">CodeTypeDeclaration</a>&nbsp;declaration)</code>&nbsp;</td>
+           <a href="../../../../system/codedom/CodeTypeDeclaration.html" title="class in system.codedom">CodeTypeDeclaration</a>&nbsp;declaration)</code>
+<div class="block">Invokes the .NET member Deserialize.</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
@@ -276,7 +280,9 @@ extends <a href="../../../../system/componentmodel/design/serialization/CodeDomS
 <td class="colFirst"><code><a href="../../../../system/codedom/CodeTypeDeclaration.html" title="class in system.codedom">CodeTypeDeclaration</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/componentmodel/design/serialization/TypeCodeDomSerializer.html#Serialize-system.componentmodel.design.serialization.IDesignerSerializationManager-org.mases.jcobridge.netreflection.NetObject-system.collections.ICollection-">Serialize</a></span>(<a href="../../../../system/componentmodel/design/serialization/IDesignerSerializationManager.html" title="interface in system.componentmodel.design.serialization">IDesignerSerializationManager</a>&nbsp;manager,
          <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;root,
-         <a href="../../../../system/collections/ICollection.html" title="interface in system.collections">ICollection</a>&nbsp;members)</code>&nbsp;</td>
+         <a href="../../../../system/collections/ICollection.html" title="interface in system.collections">ICollection</a>&nbsp;members)</code>
+<div class="block">Invokes the .NET member Serialize.</div>
+</td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
@@ -381,9 +387,12 @@ extends <a href="../../../../system/componentmodel/design/serialization/CodeDomS
 <h4>TypeCodeDomSerializer</h4>
 <pre>public&nbsp;TypeCodeDomSerializer()
                       throws java.lang.Throwable</pre>
+<div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.ComponentModel.Design.Serialization.TypeCodeDomSerializer.-ctor" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -397,8 +406,10 @@ extends <a href="../../../../system/componentmodel/design/serialization/CodeDomS
                       throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -458,29 +469,37 @@ extends <a href="../../../../system/componentmodel/design/serialization/CodeDomS
                              <a href="../../../../system/InvalidCastException.html" title="class in system">InvalidCastException</a>,
                              <a href="../../../../system/xml/XmlException.html" title="class in system.xml">XmlException</a>,
                              <a href="../../../../system/runtime/serialization/SerializationException.html" title="class in system.runtime.serialization">SerializationException</a></pre>
+<div class="block">Invokes the .NET member Deserialize.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>manager</code> - the argument of type <code>IDesignerSerializationManager</code></dd>
+<dd><code>declaration</code> - the argument of type <code>CodeTypeDeclaration</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
-<dd><code><a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../../../system/RankException.html" title="class in system">RankException</a></code></dd>
-<dd><code><a href="../../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
-<dd><code><a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
-<dd><code><a href="../../../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
-<dd><code><a href="../../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
-<dd><code><a href="../../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
-<dd><code><a href="../../../../system/runtime/interopservices/ExternalException.html" title="class in system.runtime.interopservices">ExternalException</a></code></dd>
-<dd><code><a href="../../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
-<dd><code><a href="../../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
-<dd><code><a href="../../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
-<dd><code><a href="../../../../system/InvalidCastException.html" title="class in system">InvalidCastException</a></code></dd>
-<dd><code><a href="../../../../system/xml/XmlException.html" title="class in system.xml">XmlException</a></code></dd>
-<dd><code><a href="../../../../system/runtime/serialization/SerializationException.html" title="class in system.runtime.serialization">SerializationException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dd><code><a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/RankException.html" title="class in system">RankException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/FormatException.html" title="class in system">FormatException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/runtime/interopservices/ExternalException.html" title="class in system.runtime.interopservices">ExternalException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/InvalidCastException.html" title="class in system">InvalidCastException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/xml/XmlException.html" title="class in system.xml">XmlException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/runtime/serialization/SerializationException.html" title="class in system.runtime.serialization">SerializationException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.ComponentModel.Design.Serialization.TypeCodeDomSerializer.Deserialize" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -606,26 +625,35 @@ extends <a href="../../../../system/componentmodel/design/serialization/CodeDomS
                                      <a href="../../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
                                      <a href="../../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
                                      <a href="../../../../system/runtime/serialization/SerializationException.html" title="class in system.runtime.serialization">SerializationException</a></pre>
+<div class="block">Invokes the .NET member Serialize.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>manager</code> - the argument of type <code>IDesignerSerializationManager</code></dd>
+<dd><code>root</code> - the argument of type <code>NetObject</code></dd>
+<dd><code>members</code> - the argument of type <code>ICollection</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
-<dd><code><a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../../../system/RankException.html" title="class in system">RankException</a></code></dd>
-<dd><code><a href="../../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
-<dd><code><a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
-<dd><code><a href="../../../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
-<dd><code><a href="../../../../system/TypeLoadException.html" title="class in system">TypeLoadException</a></code></dd>
-<dd><code><a href="../../../../system/io/FileLoadException.html" title="class in system.io">FileLoadException</a></code></dd>
-<dd><code><a href="../../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
-<dd><code><a href="../../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
-<dd><code><a href="../../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
-<dd><code><a href="../../../../system/runtime/serialization/SerializationException.html" title="class in system.runtime.serialization">SerializationException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dd><code><a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/RankException.html" title="class in system">RankException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/FormatException.html" title="class in system">FormatException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/TypeLoadException.html" title="class in system">TypeLoadException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/io/FileLoadException.html" title="class in system.io">FileLoadException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/runtime/serialization/SerializationException.html" title="class in system.runtime.serialization">SerializationException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.ComponentModel.Design.Serialization.TypeCodeDomSerializer.Serialize" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

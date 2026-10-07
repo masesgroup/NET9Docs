@@ -243,7 +243,9 @@ extends <a href="../../system/windows/markup/MarkupExtension.html" title="class 
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../../system/reflection/Assembly.html" title="class in system.reflection">Assembly</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ResourceKey.html#getAssembly--">getAssembly</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ResourceKey.html#getAssembly--">getAssembly</a></span>()</code>
+<div class="block">Gets the value of the .NET property Assembly.</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
@@ -277,7 +279,9 @@ extends <a href="../../system/windows/markup/MarkupExtension.html" title="class 
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ResourceKey.html#ProvideValue-system.IServiceProvider-">ProvideValue</a></span>(<a href="../../system/IServiceProvider.html" title="interface in system">IServiceProvider</a>&nbsp;serviceProvider)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/ResourceKey.html#ProvideValue-system.IServiceProvider-">ProvideValue</a></span>(<a href="../../system/IServiceProvider.html" title="interface in system">IServiceProvider</a>&nbsp;serviceProvider)</code>
+<div class="block">Invokes the .NET member ProvideValue.</div>
+</td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
@@ -398,8 +402,10 @@ extends <a href="../../system/windows/markup/MarkupExtension.html" title="class 
             throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -438,9 +444,14 @@ extends <a href="../../system/windows/markup/MarkupExtension.html" title="class 
 <h4>getAssembly</h4>
 <pre>public&nbsp;<a href="../../system/reflection/Assembly.html" title="class in system.reflection">Assembly</a>&nbsp;getAssembly()
                      throws java.lang.Throwable</pre>
+<div class="block">Gets the value of the .NET property Assembly.</div>
 <dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Windows.ResourceKey.Assembly" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -547,11 +558,18 @@ extends <a href="../../system/windows/markup/MarkupExtension.html" title="class 
 <h4>ProvideValue</h4>
 <pre>public&nbsp;<a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;ProvideValue(<a href="../../system/IServiceProvider.html" title="interface in system">IServiceProvider</a>&nbsp;serviceProvider)
                        throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member ProvideValue.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../system/windows/markup/MarkupExtension.html#ProvideValue-system.IServiceProvider-">ProvideValue</a></code>&nbsp;in class&nbsp;<code><a href="../../system/windows/markup/MarkupExtension.html" title="class in system.windows.markup">MarkupExtension</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>serviceProvider</code> - the argument of type <code>IServiceProvider</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Windows.ResourceKey.ProvideValue" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

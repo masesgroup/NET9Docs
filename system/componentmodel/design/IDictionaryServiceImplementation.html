@@ -256,16 +256,22 @@ implements <a href="../../../system/componentmodel/design/IDictionaryService.htm
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/componentmodel/design/IDictionaryServiceImplementation.html#GetKey-org.mases.jcobridge.netreflection.NetObject-">GetKey</a></span>(<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;value)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/componentmodel/design/IDictionaryServiceImplementation.html#GetKey-org.mases.jcobridge.netreflection.NetObject-">GetKey</a></span>(<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;value)</code>
+<div class="block">Invokes the .NET member GetKey.</div>
+</td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/componentmodel/design/IDictionaryServiceImplementation.html#GetValue-org.mases.jcobridge.netreflection.NetObject-">GetValue</a></span>(<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;key)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/componentmodel/design/IDictionaryServiceImplementation.html#GetValue-org.mases.jcobridge.netreflection.NetObject-">GetValue</a></span>(<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;key)</code>
+<div class="block">Invokes the .NET member GetValue.</div>
+</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/componentmodel/design/IDictionaryServiceImplementation.html#SetValue-org.mases.jcobridge.netreflection.NetObject-org.mases.jcobridge.netreflection.NetObject-">SetValue</a></span>(<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;key,
-        <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;value)</code>&nbsp;</td>
+        <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;value)</code>
+<div class="block">Invokes the .NET member SetValue.</div>
+</td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>static <a href="../../../system/componentmodel/design/IDictionaryService.html" title="interface in system.componentmodel.design">IDictionaryService</a></code></td>
@@ -372,8 +378,10 @@ implements <a href="../../../system/componentmodel/design/IDictionaryService.htm
                                  throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -498,11 +506,18 @@ implements <a href="../../../system/componentmodel/design/IDictionaryService.htm
 <h4>GetKey</h4>
 <pre>public&nbsp;<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;GetKey(<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;value)
                  throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member GetKey.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../system/componentmodel/design/IDictionaryService.html#GetKey-org.mases.jcobridge.netreflection.NetObject-">GetKey</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/componentmodel/design/IDictionaryService.html" title="interface in system.componentmodel.design">IDictionaryService</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>value</code> - the argument of type <code>NetObject</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.ComponentModel.Design.IDictionaryService.GetKey" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -514,11 +529,18 @@ implements <a href="../../../system/componentmodel/design/IDictionaryService.htm
 <h4>GetValue</h4>
 <pre>public&nbsp;<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;GetValue(<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;key)
                    throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member GetValue.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../system/componentmodel/design/IDictionaryService.html#GetValue-org.mases.jcobridge.netreflection.NetObject-">GetValue</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/componentmodel/design/IDictionaryService.html" title="interface in system.componentmodel.design">IDictionaryService</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>key</code> - the argument of type <code>NetObject</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.ComponentModel.Design.IDictionaryService.GetValue" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -531,11 +553,17 @@ implements <a href="../../../system/componentmodel/design/IDictionaryService.htm
 <pre>public&nbsp;void&nbsp;SetValue(<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;key,
                      <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;value)
               throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member SetValue.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../system/componentmodel/design/IDictionaryService.html#SetValue-org.mases.jcobridge.netreflection.NetObject-org.mases.jcobridge.netreflection.NetObject-">SetValue</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/componentmodel/design/IDictionaryService.html" title="interface in system.componentmodel.design">IDictionaryService</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>key</code> - the argument of type <code>NetObject</code></dd>
+<dd><code>value</code> - the argument of type <code>NetObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.ComponentModel.Design.IDictionaryService.SetValue" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

@@ -232,7 +232,9 @@ implements <a href="https://www.jcobridge.com/api-java_2.6.10/org/mases/jcobridg
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/data/CollectionSynchronizationCallback.html#DynamicInvoke-org.mases.jcobridge.netreflection.IEnumerable-org.mases.jcobridge.netreflection.NetObject-system.Action-boolean-">DynamicInvoke</a></span>(<a href="../../../org/mases/jcobridge/netreflection/IEnumerable.html" title="interface in org.mases.jcobridge.netreflection">IEnumerable</a>&nbsp;collection,
              <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;context,
              <a href="../../../system/Action.html" title="class in system">Action</a>&nbsp;accessMethod,
-             boolean&nbsp;writeAccess)</code>&nbsp;</td>
+             boolean&nbsp;writeAccess)</code>
+<div class="block">Invokes the .NET member DynamicInvoke.</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
@@ -394,8 +396,10 @@ implements <a href="https://www.jcobridge.com/api-java_2.6.10/org/mases/jcobridg
                                   throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -431,9 +435,17 @@ implements <a href="https://www.jcobridge.com/api-java_2.6.10/org/mases/jcobridg
                           <a href="../../../system/Action.html" title="class in system">Action</a>&nbsp;accessMethod,
                           boolean&nbsp;writeAccess)
                    throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member DynamicInvoke.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>collection</code> - the argument of type <code>IEnumerable</code></dd>
+<dd><code>context</code> - the argument of type <code>NetObject</code></dd>
+<dd><code>accessMethod</code> - the argument of type <code>Action</code></dd>
+<dd><code>writeAccess</code> - the argument of type <code>boolean</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Delegate.DynamicInvoke" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -547,6 +559,13 @@ implements <a href="https://www.jcobridge.com/api-java_2.6.10/org/mases/jcobridg
                    <a href="../../../system/Action.html" title="class in system">Action</a>&nbsp;accessMethod,
                    boolean&nbsp;writeAccess)</pre>
 <div class="block">Methods invoked in JVM when an event is raised in CLR</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>collection</code> - the .NET argument of type <code>System.Collections.IEnumerable</code></dd>
+<dd><code>context</code> - the .NET argument of type <code>System.Object</code></dd>
+<dd><code>accessMethod</code> - the .NET argument of type <code>System.Action</code></dd>
+<dd><code>writeAccess</code> - the .NET argument of type <code>System.Boolean</code></dd>
+</dl>
 </li>
 </ul>
 </li>

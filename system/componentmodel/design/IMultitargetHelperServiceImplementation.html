@@ -224,7 +224,9 @@ implements <a href="../../../system/componentmodel/design/IMultitargetHelperServ
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/componentmodel/design/IMultitargetHelperServiceImplementation.html#GetAssemblyQualifiedName-org.mases.jcobridge.netreflection.NetType-">GetAssemblyQualifiedName</a></span>(<a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;type)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/componentmodel/design/IMultitargetHelperServiceImplementation.html#GetAssemblyQualifiedName-org.mases.jcobridge.netreflection.NetType-">GetAssemblyQualifiedName</a></span>(<a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;type)</code>
+<div class="block">Invokes the .NET member GetAssemblyQualifiedName.</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
@@ -361,8 +363,10 @@ implements <a href="../../../system/componentmodel/design/IMultitargetHelperServ
                                         throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -382,11 +386,18 @@ implements <a href="../../../system/componentmodel/design/IMultitargetHelperServ
 <h4>GetAssemblyQualifiedName</h4>
 <pre>public&nbsp;java.lang.String&nbsp;GetAssemblyQualifiedName(<a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;type)
                                           throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member GetAssemblyQualifiedName.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../system/componentmodel/design/IMultitargetHelperService.html#GetAssemblyQualifiedName-org.mases.jcobridge.netreflection.NetType-">GetAssemblyQualifiedName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/componentmodel/design/IMultitargetHelperService.html" title="interface in system.componentmodel.design">IMultitargetHelperService</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>type</code> - the argument of type <code>NetType</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.ComponentModel.Design.IMultitargetHelperService.GetAssemblyQualifiedName" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

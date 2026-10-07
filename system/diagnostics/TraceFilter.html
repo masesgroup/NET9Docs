@@ -280,7 +280,9 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
            java.lang.String&nbsp;formatOrMessage,
            <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>[]&nbsp;args,
            <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;data1,
-           <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>[]&nbsp;data)</code>&nbsp;</td>
+           <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>[]&nbsp;data)</code>
+<div class="block">Invokes the .NET member ShouldTrace.</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -395,8 +397,10 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
             throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -554,9 +558,23 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
                            <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;data1,
                            <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>[]&nbsp;data)
                     throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member ShouldTrace.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>cache</code> - the argument of type <code>TraceEventCache</code></dd>
+<dd><code>source</code> - the argument of type <code>java.lang.String</code></dd>
+<dd><code>eventType</code> - the argument of type <code>TraceEventType</code></dd>
+<dd><code>id</code> - the argument of type <code>int</code></dd>
+<dd><code>formatOrMessage</code> - the argument of type <code>java.lang.String</code></dd>
+<dd><code>args</code> - the argument of type <code>NetObject[]</code></dd>
+<dd><code>data1</code> - the argument of type <code>NetObject</code></dd>
+<dd><code>data</code> - the argument of type <code>NetObject[]</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Diagnostics.TraceFilter.ShouldTrace" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

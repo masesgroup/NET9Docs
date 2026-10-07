@@ -227,7 +227,9 @@ implements <a href="../../../../system/runtime/interopservices/comtypes/ITypeCom
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/interopservices/comtypes/ITypeCompImplementation.html#BindType-java.lang.String-int-org.mases.jcobridge.netreflection.JCORefOut-org.mases.jcobridge.netreflection.JCORefOut-">BindType</a></span>(java.lang.String&nbsp;szName,
         int&nbsp;lHashVal,
         <a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../../../system/runtime/interopservices/comtypes/ITypeInfo.html" title="interface in system.runtime.interopservices.comtypes">ITypeInfo</a>&gt;&nbsp;ppTInfo,
-        <a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../../../system/runtime/interopservices/comtypes/ITypeComp.html" title="interface in system.runtime.interopservices.comtypes">ITypeComp</a>&gt;&nbsp;ppTComp)</code>&nbsp;</td>
+        <a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../../../system/runtime/interopservices/comtypes/ITypeComp.html" title="interface in system.runtime.interopservices.comtypes">ITypeComp</a>&gt;&nbsp;ppTComp)</code>
+<div class="block">Invokes the .NET member BindType.</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
@@ -364,8 +366,10 @@ implements <a href="../../../../system/runtime/interopservices/comtypes/ITypeCom
                         throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -388,11 +392,19 @@ implements <a href="../../../../system/runtime/interopservices/comtypes/ITypeCom
                      <a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../../../system/runtime/interopservices/comtypes/ITypeInfo.html" title="interface in system.runtime.interopservices.comtypes">ITypeInfo</a>&gt;&nbsp;ppTInfo,
                      <a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../../../system/runtime/interopservices/comtypes/ITypeComp.html" title="interface in system.runtime.interopservices.comtypes">ITypeComp</a>&gt;&nbsp;ppTComp)
               throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member BindType.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../system/runtime/interopservices/comtypes/ITypeComp.html#BindType-java.lang.String-int-org.mases.jcobridge.netreflection.JCORefOut-org.mases.jcobridge.netreflection.JCORefOut-">BindType</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../system/runtime/interopservices/comtypes/ITypeComp.html" title="interface in system.runtime.interopservices.comtypes">ITypeComp</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>szName</code> - the argument of type <code>java.lang.String</code></dd>
+<dd><code>lHashVal</code> - the argument of type <code>int</code></dd>
+<dd><code>ppTInfo</code> - the argument of type <code>JCORefOut&lt;ITypeInfo&gt;</code></dd>
+<dd><code>ppTComp</code> - the argument of type <code>JCORefOut&lt;ITypeComp&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Runtime.InteropServices.ComTypes.ITypeComp.BindType" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

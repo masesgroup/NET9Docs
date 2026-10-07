@@ -226,7 +226,9 @@ implements <a href="../../../system/windows/markup/INameScope.html" title="inter
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/markup/INameScopeImplementation.html#FindName-java.lang.String-">FindName</a></span>(java.lang.String&nbsp;name)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/markup/INameScopeImplementation.html#FindName-java.lang.String-">FindName</a></span>(java.lang.String&nbsp;name)</code>
+<div class="block">Invokes the .NET member FindName.</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
@@ -261,7 +263,9 @@ implements <a href="../../../system/windows/markup/INameScope.html" title="inter
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/markup/INameScopeImplementation.html#RegisterName-java.lang.String-org.mases.jcobridge.netreflection.NetObject-">RegisterName</a></span>(java.lang.String&nbsp;name,
-            <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;scopedElement)</code>&nbsp;</td>
+            <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;scopedElement)</code>
+<div class="block">Invokes the .NET member RegisterName.</div>
+</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../system/windows/markup/INameScope.html" title="interface in system.windows.markup">INameScope</a></code></td>
@@ -271,7 +275,9 @@ implements <a href="../../../system/windows/markup/INameScope.html" title="inter
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/markup/INameScopeImplementation.html#UnregisterName-java.lang.String-">UnregisterName</a></span>(java.lang.String&nbsp;name)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/markup/INameScopeImplementation.html#UnregisterName-java.lang.String-">UnregisterName</a></span>(java.lang.String&nbsp;name)</code>
+<div class="block">Invokes the .NET member UnregisterName.</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -372,8 +378,10 @@ implements <a href="../../../system/windows/markup/INameScope.html" title="inter
                          throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -393,11 +401,18 @@ implements <a href="../../../system/windows/markup/INameScope.html" title="inter
 <h4>FindName</h4>
 <pre>public&nbsp;<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;FindName(java.lang.String&nbsp;name)
                    throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member FindName.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../system/windows/markup/INameScope.html#FindName-java.lang.String-">FindName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/windows/markup/INameScope.html" title="interface in system.windows.markup">INameScope</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>name</code> - the argument of type <code>java.lang.String</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Windows.Markup.INameScope.FindName" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -515,11 +530,17 @@ implements <a href="../../../system/windows/markup/INameScope.html" title="inter
 <pre>public&nbsp;void&nbsp;RegisterName(java.lang.String&nbsp;name,
                          <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;scopedElement)
                   throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member RegisterName.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../system/windows/markup/INameScope.html#RegisterName-java.lang.String-org.mases.jcobridge.netreflection.NetObject-">RegisterName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/windows/markup/INameScope.html" title="interface in system.windows.markup">INameScope</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>name</code> - the argument of type <code>java.lang.String</code></dd>
+<dd><code>scopedElement</code> - the argument of type <code>NetObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Windows.Markup.INameScope.RegisterName" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -552,11 +573,16 @@ implements <a href="../../../system/windows/markup/INameScope.html" title="inter
 <h4>UnregisterName</h4>
 <pre>public&nbsp;void&nbsp;UnregisterName(java.lang.String&nbsp;name)
                     throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member UnregisterName.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../system/windows/markup/INameScope.html#UnregisterName-java.lang.String-">UnregisterName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/windows/markup/INameScope.html" title="interface in system.windows.markup">INameScope</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>name</code> - the argument of type <code>java.lang.String</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Windows.Markup.INameScope.UnregisterName" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

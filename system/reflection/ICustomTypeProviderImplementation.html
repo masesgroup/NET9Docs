@@ -224,7 +224,9 @@ implements <a href="../../system/reflection/ICustomTypeProvider.html" title="int
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code><a href="../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/ICustomTypeProviderImplementation.html#GetCustomType--">GetCustomType</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/ICustomTypeProviderImplementation.html#GetCustomType--">GetCustomType</a></span>()</code>
+<div class="block">Invokes the .NET member GetCustomType.</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
@@ -361,8 +363,10 @@ implements <a href="../../system/reflection/ICustomTypeProvider.html" title="int
                                   throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -382,11 +386,16 @@ implements <a href="../../system/reflection/ICustomTypeProvider.html" title="int
 <h4>GetCustomType</h4>
 <pre>public&nbsp;<a href="../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;GetCustomType()
                       throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member GetCustomType.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../system/reflection/ICustomTypeProvider.html#GetCustomType--">GetCustomType</a></code>&nbsp;in interface&nbsp;<code><a href="../../system/reflection/ICustomTypeProvider.html" title="interface in system.reflection">ICustomTypeProvider</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Reflection.ICustomTypeProvider.GetCustomType" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

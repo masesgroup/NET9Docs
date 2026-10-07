@@ -258,7 +258,9 @@ implements <a href="../accessibility/IAccPropServer.html" title="interface in ac
             <a href="../system/UInt32.html" title="class in system">UInt32</a>&nbsp;dwIDStringLen,
             <a href="../system/Guid.html" title="class in system">Guid</a>&nbsp;idProp,
             <a href="../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&gt;&nbsp;pvarValue,
-            <a href="../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;java.util.concurrent.atomic.AtomicInteger&gt;&nbsp;pfHasProp)</code>&nbsp;</td>
+            <a href="../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;java.util.concurrent.atomic.AtomicInteger&gt;&nbsp;pfHasProp)</code>
+<div class="block">Invokes the .NET member GetPropValue.</div>
+</td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>static <a href="../accessibility/IAccPropServer.html" title="interface in accessibility">IAccPropServer</a></code></td>
@@ -365,8 +367,10 @@ implements <a href="../accessibility/IAccPropServer.html" title="interface in ac
                              throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -495,11 +499,20 @@ implements <a href="../accessibility/IAccPropServer.html" title="interface in ac
                          <a href="../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&gt;&nbsp;pvarValue,
                          <a href="../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;java.util.concurrent.atomic.AtomicInteger&gt;&nbsp;pfHasProp)
                   throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member GetPropValue.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../accessibility/IAccPropServer.html#GetPropValue-org.mases.jcobridge.netreflection.JCORefOut-system.UInt32-system.Guid-org.mases.jcobridge.netreflection.JCORefOut-org.mases.jcobridge.netreflection.JCORefOut-">GetPropValue</a></code>&nbsp;in interface&nbsp;<code><a href="../accessibility/IAccPropServer.html" title="interface in accessibility">IAccPropServer</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>pIDString</code> - the argument of type <code>JCORefOut&lt;java.util.concurrent.atomic.AtomicReference&lt;java.lang.Byte&gt;&gt;</code></dd>
+<dd><code>dwIDStringLen</code> - the argument of type <code>UInt32</code></dd>
+<dd><code>idProp</code> - the argument of type <code>Guid</code></dd>
+<dd><code>pvarValue</code> - the argument of type <code>JCORefOut&lt;NetObject&gt;</code></dd>
+<dd><code>pfHasProp</code> - the argument of type <code>JCORefOut&lt;java.util.concurrent.atomic.AtomicInteger&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/Accessibility.IAccPropServer.GetPropValue" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

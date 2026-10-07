@@ -227,7 +227,9 @@ implements <a href="../../../system/runtime/serialization/ISerializationSurrogat
 <tr id="i0" class="altColor">
 <td class="colFirst"><code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/serialization/ISerializationSurrogateProviderImplementation.html#GetDeserializedObject-org.mases.jcobridge.netreflection.NetObject-org.mases.jcobridge.netreflection.NetType-">GetDeserializedObject</a></span>(<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;obj,
-                     <a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;targetType)</code>&nbsp;</td>
+                     <a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;targetType)</code>
+<div class="block">Invokes the .NET member GetDeserializedObject.</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
@@ -262,11 +264,15 @@ implements <a href="../../../system/runtime/serialization/ISerializationSurrogat
 <tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/serialization/ISerializationSurrogateProviderImplementation.html#GetObjectToSerialize-org.mases.jcobridge.netreflection.NetObject-org.mases.jcobridge.netreflection.NetType-">GetObjectToSerialize</a></span>(<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;obj,
-                    <a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;targetType)</code>&nbsp;</td>
+                    <a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;targetType)</code>
+<div class="block">Invokes the .NET member GetObjectToSerialize.</div>
+</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/serialization/ISerializationSurrogateProviderImplementation.html#GetSurrogateType-org.mases.jcobridge.netreflection.NetType-">GetSurrogateType</a></span>(<a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;type)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/serialization/ISerializationSurrogateProviderImplementation.html#GetSurrogateType-org.mases.jcobridge.netreflection.NetType-">GetSurrogateType</a></span>(<a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;type)</code>
+<div class="block">Invokes the .NET member GetSurrogateType.</div>
+</td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>static <a href="../../../system/runtime/serialization/ISerializationSurrogateProvider.html" title="interface in system.runtime.serialization">ISerializationSurrogateProvider</a></code></td>
@@ -373,8 +379,10 @@ implements <a href="../../../system/runtime/serialization/ISerializationSurrogat
                                               throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -395,11 +403,19 @@ implements <a href="../../../system/runtime/serialization/ISerializationSurrogat
 <pre>public&nbsp;<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;GetDeserializedObject(<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;obj,
                                        <a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;targetType)
                                 throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member GetDeserializedObject.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../system/runtime/serialization/ISerializationSurrogateProvider.html#GetDeserializedObject-org.mases.jcobridge.netreflection.NetObject-org.mases.jcobridge.netreflection.NetType-">GetDeserializedObject</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/runtime/serialization/ISerializationSurrogateProvider.html" title="interface in system.runtime.serialization">ISerializationSurrogateProvider</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>obj</code> - the argument of type <code>NetObject</code></dd>
+<dd><code>targetType</code> - the argument of type <code>NetType</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Runtime.Serialization.ISerializationSurrogateProvider.GetDeserializedObject" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -517,11 +533,19 @@ implements <a href="../../../system/runtime/serialization/ISerializationSurrogat
 <pre>public&nbsp;<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;GetObjectToSerialize(<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;obj,
                                       <a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;targetType)
                                throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member GetObjectToSerialize.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../system/runtime/serialization/ISerializationSurrogateProvider.html#GetObjectToSerialize-org.mases.jcobridge.netreflection.NetObject-org.mases.jcobridge.netreflection.NetType-">GetObjectToSerialize</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/runtime/serialization/ISerializationSurrogateProvider.html" title="interface in system.runtime.serialization">ISerializationSurrogateProvider</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>obj</code> - the argument of type <code>NetObject</code></dd>
+<dd><code>targetType</code> - the argument of type <code>NetType</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Runtime.Serialization.ISerializationSurrogateProvider.GetObjectToSerialize" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -533,11 +557,18 @@ implements <a href="../../../system/runtime/serialization/ISerializationSurrogat
 <h4>GetSurrogateType</h4>
 <pre>public&nbsp;<a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;GetSurrogateType(<a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;type)
                          throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member GetSurrogateType.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../system/runtime/serialization/ISerializationSurrogateProvider.html#GetSurrogateType-org.mases.jcobridge.netreflection.NetType-">GetSurrogateType</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/runtime/serialization/ISerializationSurrogateProvider.html" title="interface in system.runtime.serialization">ISerializationSurrogateProvider</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>type</code> - the argument of type <code>NetType</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Runtime.Serialization.ISerializationSurrogateProvider.GetSurrogateType" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

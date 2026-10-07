@@ -272,12 +272,16 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>static &lt;T extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;<br>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/interopservices/SequenceMarshal.html#TryGetArray-system.buffers.ReadOnlySequence_1-org.mases.jcobridge.netreflection.JCORefOut-">TryGetArray</a></span>(<a href="../../../system/buffers/ReadOnlySequence_1.html" title="class in system.buffers">ReadOnlySequence_1</a>&nbsp;sequence,
-           <a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../../system/ArraySegment_1.html" title="class in system">ArraySegment_1</a>&gt;&nbsp;segment)</code>&nbsp;</td>
+           <a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../../system/ArraySegment_1.html" title="class in system">ArraySegment_1</a>&gt;&nbsp;segment)</code>
+<div class="block">Invokes the .NET member TryGetArray.</div>
+</td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>static &lt;T extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;<br>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/interopservices/SequenceMarshal.html#TryGetReadOnlyMemory-system.buffers.ReadOnlySequence_1-org.mases.jcobridge.netreflection.JCORefOut-">TryGetReadOnlyMemory</a></span>(<a href="../../../system/buffers/ReadOnlySequence_1.html" title="class in system.buffers">ReadOnlySequence_1</a>&nbsp;sequence,
-                    <a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../../system/ReadOnlyMemory_1.html" title="class in system">ReadOnlyMemory_1</a>&gt;&nbsp;memory)</code>&nbsp;</td>
+                    <a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../../system/ReadOnlyMemory_1.html" title="class in system">ReadOnlyMemory_1</a>&gt;&nbsp;memory)</code>
+<div class="block">Invokes the .NET member TryGetReadOnlyMemory.</div>
+</td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>static &lt;T extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;<br>boolean</code></td>
@@ -285,7 +289,9 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
                              <a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../../system/buffers/ReadOnlySequenceSegment_1.html" title="class in system.buffers">ReadOnlySequenceSegment_1</a>&gt;&nbsp;startSegment,
                              <a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;java.util.concurrent.atomic.AtomicInteger&gt;&nbsp;startIndex,
                              <a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../../system/buffers/ReadOnlySequenceSegment_1.html" title="class in system.buffers">ReadOnlySequenceSegment_1</a>&gt;&nbsp;endSegment,
-                             <a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;java.util.concurrent.atomic.AtomicInteger&gt;&nbsp;endIndex)</code>&nbsp;</td>
+                             <a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;java.util.concurrent.atomic.AtomicInteger&gt;&nbsp;endIndex)</code>
+<div class="block">Invokes the .NET member TryGetReadOnlySequenceSegment.</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -400,8 +406,10 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
                 throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -555,11 +563,21 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
                                                            throws java.lang.Throwable,
                                                                   <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
                                                                   <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></pre>
+<div class="block">Invokes the .NET member TryGetArray.</div>
 <dl>
+<dt><span class="paramLabel">Type Parameters:</span></dt>
+<dd><code>T</code> - the type of the generic argument T</dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>sequence</code> - the argument of type <code>ReadOnlySequence_1</code></dd>
+<dd><code>segment</code> - the argument of type <code>JCORefOut&lt;ArraySegment_1&gt;</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Runtime.InteropServices.SequenceMarshal.TryGetArray" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -577,14 +595,24 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
                                                                            <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
                                                                            <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                                                                            <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></pre>
+<div class="block">Invokes the .NET member TryGetReadOnlyMemory.</div>
 <dl>
+<dt><span class="paramLabel">Type Parameters:</span></dt>
+<dd><code>T</code> - the type of the generic argument T</dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>sequence</code> - the argument of type <code>ReadOnlySequence_1</code></dd>
+<dd><code>memory</code> - the argument of type <code>JCORefOut&lt;ReadOnlyMemory_1&gt;</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Runtime.InteropServices.SequenceMarshal.TryGetReadOnlyMemory" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -600,9 +628,22 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
                                                                                     <a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../../system/buffers/ReadOnlySequenceSegment_1.html" title="class in system.buffers">ReadOnlySequenceSegment_1</a>&gt;&nbsp;endSegment,
                                                                                     <a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;java.util.concurrent.atomic.AtomicInteger&gt;&nbsp;endIndex)
                                                                              throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member TryGetReadOnlySequenceSegment.</div>
 <dl>
+<dt><span class="paramLabel">Type Parameters:</span></dt>
+<dd><code>T</code> - the type of the generic argument T</dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>sequence</code> - the argument of type <code>ReadOnlySequence_1</code></dd>
+<dd><code>startSegment</code> - the argument of type <code>JCORefOut&lt;ReadOnlySequenceSegment_1&gt;</code></dd>
+<dd><code>startIndex</code> - the argument of type <code>JCORefOut&lt;java.util.concurrent.atomic.AtomicInteger&gt;</code></dd>
+<dd><code>endSegment</code> - the argument of type <code>JCORefOut&lt;ReadOnlySequenceSegment_1&gt;</code></dd>
+<dd><code>endIndex</code> - the argument of type <code>JCORefOut&lt;java.util.concurrent.atomic.AtomicInteger&gt;</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Runtime.InteropServices.SequenceMarshal.TryGetReadOnlySequenceSegment" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

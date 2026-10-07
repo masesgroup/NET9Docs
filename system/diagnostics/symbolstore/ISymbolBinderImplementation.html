@@ -256,7 +256,9 @@ implements <a href="../../../system/diagnostics/symbolstore/ISymbolBinder.html" 
 <td class="colFirst"><code><a href="../../../system/diagnostics/symbolstore/ISymbolReader.html" title="interface in system.diagnostics.symbolstore">ISymbolReader</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/diagnostics/symbolstore/ISymbolBinderImplementation.html#GetReader-int-java.lang.String-java.lang.String-">GetReader</a></span>(int&nbsp;importer,
          java.lang.String&nbsp;filename,
-         java.lang.String&nbsp;searchPath)</code>&nbsp;</td>
+         java.lang.String&nbsp;searchPath)</code>
+<div class="block">Invokes the .NET member GetReader.</div>
+</td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>static <a href="../../../system/diagnostics/symbolstore/ISymbolBinder.html" title="interface in system.diagnostics.symbolstore">ISymbolBinder</a></code></td>
@@ -363,8 +365,10 @@ implements <a href="../../../system/diagnostics/symbolstore/ISymbolBinder.html" 
                             throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -491,11 +495,20 @@ implements <a href="../../../system/diagnostics/symbolstore/ISymbolBinder.html" 
                                java.lang.String&nbsp;filename,
                                java.lang.String&nbsp;searchPath)
                         throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member GetReader.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../system/diagnostics/symbolstore/ISymbolBinder.html#GetReader-int-java.lang.String-java.lang.String-">GetReader</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/diagnostics/symbolstore/ISymbolBinder.html" title="interface in system.diagnostics.symbolstore">ISymbolBinder</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>importer</code> - the argument of type <code>int</code></dd>
+<dd><code>filename</code> - the argument of type <code>java.lang.String</code></dd>
+<dd><code>searchPath</code> - the argument of type <code>java.lang.String</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Diagnostics.SymbolStore.ISymbolBinder.GetReader" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

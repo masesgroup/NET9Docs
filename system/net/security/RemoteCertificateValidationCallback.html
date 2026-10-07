@@ -232,7 +232,9 @@ implements <a href="https://www.jcobridge.com/api-java_2.6.10/org/mases/jcobridg
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/security/RemoteCertificateValidationCallback.html#DynamicInvoke-org.mases.jcobridge.netreflection.NetObject-system.security.cryptography.x509certificates.X509Certificate-system.security.cryptography.x509certificates.X509Chain-system.net.security.SslPolicyErrors-">DynamicInvoke</a></span>(<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;sender,
              <a href="../../../system/security/cryptography/x509certificates/X509Certificate.html" title="class in system.security.cryptography.x509certificates">X509Certificate</a>&nbsp;certificate,
              <a href="../../../system/security/cryptography/x509certificates/X509Chain.html" title="class in system.security.cryptography.x509certificates">X509Chain</a>&nbsp;chain,
-             <a href="../../../system/net/security/SslPolicyErrors.html" title="class in system.net.security">SslPolicyErrors</a>&nbsp;sslPolicyErrors)</code>&nbsp;</td>
+             <a href="../../../system/net/security/SslPolicyErrors.html" title="class in system.net.security">SslPolicyErrors</a>&nbsp;sslPolicyErrors)</code>
+<div class="block">Invokes the .NET member DynamicInvoke.</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
@@ -394,8 +396,10 @@ implements <a href="https://www.jcobridge.com/api-java_2.6.10/org/mases/jcobridg
                                     throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -431,9 +435,19 @@ implements <a href="https://www.jcobridge.com/api-java_2.6.10/org/mases/jcobridg
                              <a href="../../../system/security/cryptography/x509certificates/X509Chain.html" title="class in system.security.cryptography.x509certificates">X509Chain</a>&nbsp;chain,
                              <a href="../../../system/net/security/SslPolicyErrors.html" title="class in system.net.security">SslPolicyErrors</a>&nbsp;sslPolicyErrors)
                       throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member DynamicInvoke.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>sender</code> - the argument of type <code>NetObject</code></dd>
+<dd><code>certificate</code> - the argument of type <code>X509Certificate</code></dd>
+<dd><code>chain</code> - the argument of type <code>X509Chain</code></dd>
+<dd><code>sslPolicyErrors</code> - the argument of type <code>SslPolicyErrors</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Delegate.DynamicInvoke" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -547,6 +561,15 @@ implements <a href="https://www.jcobridge.com/api-java_2.6.10/org/mases/jcobridg
                       <a href="../../../system/security/cryptography/x509certificates/X509Chain.html" title="class in system.security.cryptography.x509certificates">X509Chain</a>&nbsp;chain,
                       <a href="../../../system/net/security/SslPolicyErrors.html" title="class in system.net.security">SslPolicyErrors</a>&nbsp;sslPolicyErrors)</pre>
 <div class="block">Methods invoked in JVM when an event is raised in CLR</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>sender</code> - the .NET argument of type <code>System.Object</code></dd>
+<dd><code>certificate</code> - the .NET argument of type <code>System.Security.Cryptography.X509Certificates.X509Certificate</code></dd>
+<dd><code>chain</code> - the .NET argument of type <code>System.Security.Cryptography.X509Certificates.X509Chain</code></dd>
+<dd><code>sslPolicyErrors</code> - the .NET argument of type <code>System.Net.Security.SslPolicyErrors</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned to the CLR; this default implementation returns <code>null</code></dd>
+</dl>
 </li>
 </ul>
 </li>

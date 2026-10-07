@@ -267,7 +267,9 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/compilerservices/ContractHelper.html#RaiseContractFailedEvent-system.diagnostics.contracts.ContractFailureKind-java.lang.String-java.lang.String-org.mases.jcobridge.netreflection.NetException-">RaiseContractFailedEvent</a></span>(<a href="../../../system/diagnostics/contracts/ContractFailureKind.html" title="class in system.diagnostics.contracts">ContractFailureKind</a>&nbsp;failureKind,
                         java.lang.String&nbsp;userMessage,
                         java.lang.String&nbsp;conditionText,
-                        <a href="../../../org/mases/jcobridge/netreflection/NetException.html" title="class in org.mases.jcobridge.netreflection">NetException</a>&nbsp;innerException)</code>&nbsp;</td>
+                        <a href="../../../org/mases/jcobridge/netreflection/NetException.html" title="class in org.mases.jcobridge.netreflection">NetException</a>&nbsp;innerException)</code>
+<div class="block">Invokes the .NET member RaiseContractFailedEvent.</div>
+</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
@@ -281,7 +283,9 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
               java.lang.String&nbsp;displayMessage,
               java.lang.String&nbsp;userMessage,
               java.lang.String&nbsp;conditionText,
-              <a href="../../../org/mases/jcobridge/netreflection/NetException.html" title="class in org.mases.jcobridge.netreflection">NetException</a>&nbsp;innerException)</code>&nbsp;</td>
+              <a href="../../../org/mases/jcobridge/netreflection/NetException.html" title="class in org.mases.jcobridge.netreflection">NetException</a>&nbsp;innerException)</code>
+<div class="block">Invokes the .NET member TriggerFailure.</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -396,8 +400,10 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
                throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -546,21 +552,31 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
                                                         <a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
                                                         <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
                                                         <a href="../../../system/diagnostics/contracts/ContractException.html" title="class in system.diagnostics.contracts">ContractException</a></pre>
+<div class="block">Invokes the .NET member RaiseContractFailedEvent.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>failureKind</code> - the argument of type <code>ContractFailureKind</code></dd>
+<dd><code>userMessage</code> - the argument of type <code>java.lang.String</code></dd>
+<dd><code>conditionText</code> - the argument of type <code>java.lang.String</code></dd>
+<dd><code>innerException</code> - the argument of type <code>NetException</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
-<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
-<dd><code><a href="../../../system/RankException.html" title="class in system">RankException</a></code></dd>
-<dd><code><a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
-<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
-<dd><code><a href="../../../system/diagnostics/contracts/ContractException.html" title="class in system.diagnostics.contracts">ContractException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/RankException.html" title="class in system">RankException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/diagnostics/contracts/ContractException.html" title="class in system.diagnostics.contracts">ContractException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Runtime.CompilerServices.ContractHelper.RaiseContractFailedEvent" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -604,20 +620,29 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
                                   <a href="../../../system/RankException.html" title="class in system">RankException</a>,
                                   <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
                                   <a href="../../../system/diagnostics/contracts/ContractException.html" title="class in system.diagnostics.contracts">ContractException</a></pre>
+<div class="block">Invokes the .NET member TriggerFailure.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>kind</code> - the argument of type <code>ContractFailureKind</code></dd>
+<dd><code>displayMessage</code> - the argument of type <code>java.lang.String</code></dd>
+<dd><code>userMessage</code> - the argument of type <code>java.lang.String</code></dd>
+<dd><code>conditionText</code> - the argument of type <code>java.lang.String</code></dd>
+<dd><code>innerException</code> - the argument of type <code>NetException</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
-<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
-<dd><code><a href="../../../system/RankException.html" title="class in system">RankException</a></code></dd>
-<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
-<dd><code><a href="../../../system/diagnostics/contracts/ContractException.html" title="class in system.diagnostics.contracts">ContractException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/RankException.html" title="class in system">RankException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/diagnostics/contracts/ContractException.html" title="class in system.diagnostics.contracts">ContractException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Runtime.CompilerServices.ContractHelper.TriggerFailure" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

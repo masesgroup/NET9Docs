@@ -256,18 +256,24 @@ implements <a href="../../../../system/threading/tasks/sources/IValueTaskSource.
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/threading/tasks/sources/IValueTaskSourceImplementation.html#GetResult-short-">GetResult</a></span>(short&nbsp;token)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/threading/tasks/sources/IValueTaskSourceImplementation.html#GetResult-short-">GetResult</a></span>(short&nbsp;token)</code>
+<div class="block">Invokes the .NET member GetResult.</div>
+</td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../../../system/threading/tasks/sources/ValueTaskSourceStatus.html" title="class in system.threading.tasks.sources">ValueTaskSourceStatus</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/threading/tasks/sources/IValueTaskSourceImplementation.html#GetStatus-short-">GetStatus</a></span>(short&nbsp;token)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/threading/tasks/sources/IValueTaskSourceImplementation.html#GetStatus-short-">GetStatus</a></span>(short&nbsp;token)</code>
+<div class="block">Invokes the .NET member GetStatus.</div>
+</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/threading/tasks/sources/IValueTaskSourceImplementation.html#OnCompleted-system.Action_1-org.mases.jcobridge.netreflection.NetObject-short-system.threading.tasks.sources.ValueTaskSourceOnCompletedFlags-">OnCompleted</a></span>(<a href="../../../../system/Action_1.html" title="class in system">Action_1</a>&nbsp;continuation,
            <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;state,
            short&nbsp;token,
-           <a href="../../../../system/threading/tasks/sources/ValueTaskSourceOnCompletedFlags.html" title="class in system.threading.tasks.sources">ValueTaskSourceOnCompletedFlags</a>&nbsp;flags)</code>&nbsp;</td>
+           <a href="../../../../system/threading/tasks/sources/ValueTaskSourceOnCompletedFlags.html" title="class in system.threading.tasks.sources">ValueTaskSourceOnCompletedFlags</a>&nbsp;flags)</code>
+<div class="block">Invokes the .NET member OnCompleted.</div>
+</td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>static <a href="../../../../system/threading/tasks/sources/IValueTaskSource.html" title="interface in system.threading.tasks.sources">IValueTaskSource</a></code></td>
@@ -374,8 +380,10 @@ implements <a href="../../../../system/threading/tasks/sources/IValueTaskSource.
                                throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -500,11 +508,16 @@ implements <a href="../../../../system/threading/tasks/sources/IValueTaskSource.
 <h4>GetResult</h4>
 <pre>public&nbsp;void&nbsp;GetResult(short&nbsp;token)
                throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member GetResult.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../system/threading/tasks/sources/IValueTaskSource.html#GetResult-short-">GetResult</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../system/threading/tasks/sources/IValueTaskSource.html" title="interface in system.threading.tasks.sources">IValueTaskSource</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>token</code> - the argument of type <code>short</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Threading.Tasks.Sources.IValueTaskSource.GetResult" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -516,11 +529,18 @@ implements <a href="../../../../system/threading/tasks/sources/IValueTaskSource.
 <h4>GetStatus</h4>
 <pre>public&nbsp;<a href="../../../../system/threading/tasks/sources/ValueTaskSourceStatus.html" title="class in system.threading.tasks.sources">ValueTaskSourceStatus</a>&nbsp;GetStatus(short&nbsp;token)
                                 throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member GetStatus.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../system/threading/tasks/sources/IValueTaskSource.html#GetStatus-short-">GetStatus</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../system/threading/tasks/sources/IValueTaskSource.html" title="interface in system.threading.tasks.sources">IValueTaskSource</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>token</code> - the argument of type <code>short</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Threading.Tasks.Sources.IValueTaskSource.GetStatus" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -535,11 +555,19 @@ implements <a href="../../../../system/threading/tasks/sources/IValueTaskSource.
                         short&nbsp;token,
                         <a href="../../../../system/threading/tasks/sources/ValueTaskSourceOnCompletedFlags.html" title="class in system.threading.tasks.sources">ValueTaskSourceOnCompletedFlags</a>&nbsp;flags)
                  throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member OnCompleted.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../system/threading/tasks/sources/IValueTaskSource.html#OnCompleted-system.Action_1-org.mases.jcobridge.netreflection.NetObject-short-system.threading.tasks.sources.ValueTaskSourceOnCompletedFlags-">OnCompleted</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../system/threading/tasks/sources/IValueTaskSource.html" title="interface in system.threading.tasks.sources">IValueTaskSource</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>continuation</code> - the argument of type <code>Action_1</code></dd>
+<dd><code>state</code> - the argument of type <code>NetObject</code></dd>
+<dd><code>token</code> - the argument of type <code>short</code></dd>
+<dd><code>flags</code> - the argument of type <code>ValueTaskSourceOnCompletedFlags</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Threading.Tasks.Sources.IValueTaskSource.OnCompleted" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

@@ -225,7 +225,9 @@ implements <a href="../../../../system/componentmodel/design/serialization/IDesi
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code><a href="../../../../system/collections/ICollection.html" title="interface in system.collections">ICollection</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/componentmodel/design/serialization/IDesignerSerializationServiceImplementation.html#Deserialize-org.mases.jcobridge.netreflection.NetObject-">Deserialize</a></span>(<a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;serializationData)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/componentmodel/design/serialization/IDesignerSerializationServiceImplementation.html#Deserialize-org.mases.jcobridge.netreflection.NetObject-">Deserialize</a></span>(<a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;serializationData)</code>
+<div class="block">Invokes the .NET member Deserialize.</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
@@ -259,7 +261,9 @@ implements <a href="../../../../system/componentmodel/design/serialization/IDesi
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/componentmodel/design/serialization/IDesignerSerializationServiceImplementation.html#Serialize-system.collections.ICollection-">Serialize</a></span>(<a href="../../../../system/collections/ICollection.html" title="interface in system.collections">ICollection</a>&nbsp;objects)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/componentmodel/design/serialization/IDesignerSerializationServiceImplementation.html#Serialize-system.collections.ICollection-">Serialize</a></span>(<a href="../../../../system/collections/ICollection.html" title="interface in system.collections">ICollection</a>&nbsp;objects)</code>
+<div class="block">Invokes the .NET member Serialize.</div>
+</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../../system/componentmodel/design/serialization/IDesignerSerializationService.html" title="interface in system.componentmodel.design.serialization">IDesignerSerializationService</a></code></td>
@@ -366,8 +370,10 @@ implements <a href="../../../../system/componentmodel/design/serialization/IDesi
                                             throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -387,11 +393,18 @@ implements <a href="../../../../system/componentmodel/design/serialization/IDesi
 <h4>Deserialize</h4>
 <pre>public&nbsp;<a href="../../../../system/collections/ICollection.html" title="interface in system.collections">ICollection</a>&nbsp;Deserialize(<a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;serializationData)
                         throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member Deserialize.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../system/componentmodel/design/serialization/IDesignerSerializationService.html#Deserialize-org.mases.jcobridge.netreflection.NetObject-">Deserialize</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../system/componentmodel/design/serialization/IDesignerSerializationService.html" title="interface in system.componentmodel.design.serialization">IDesignerSerializationService</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>serializationData</code> - the argument of type <code>NetObject</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.ComponentModel.Design.Serialization.IDesignerSerializationService.Deserialize" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -508,11 +521,18 @@ implements <a href="../../../../system/componentmodel/design/serialization/IDesi
 <h4>Serialize</h4>
 <pre>public&nbsp;<a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;Serialize(<a href="../../../../system/collections/ICollection.html" title="interface in system.collections">ICollection</a>&nbsp;objects)
                     throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member Serialize.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../system/componentmodel/design/serialization/IDesignerSerializationService.html#Serialize-system.collections.ICollection-">Serialize</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../system/componentmodel/design/serialization/IDesignerSerializationService.html" title="interface in system.componentmodel.design.serialization">IDesignerSerializationService</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>objects</code> - the argument of type <code>ICollection</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.ComponentModel.Design.Serialization.IDesignerSerializationService.Serialize" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

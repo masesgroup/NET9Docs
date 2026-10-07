@@ -254,7 +254,9 @@ implements <a href="../../../system/runtime/serialization/IDeserializationCallba
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/serialization/IDeserializationCallbackImplementation.html#OnDeserialization-org.mases.jcobridge.netreflection.NetObject-">OnDeserialization</a></span>(<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;sender)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/serialization/IDeserializationCallbackImplementation.html#OnDeserialization-org.mases.jcobridge.netreflection.NetObject-">OnDeserialization</a></span>(<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;sender)</code>
+<div class="block">Invokes the .NET member OnDeserialization.</div>
+</td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>static <a href="../../../system/runtime/serialization/IDeserializationCallback.html" title="interface in system.runtime.serialization">IDeserializationCallback</a></code></td>
@@ -361,8 +363,10 @@ implements <a href="../../../system/runtime/serialization/IDeserializationCallba
                                        throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -487,11 +491,16 @@ implements <a href="../../../system/runtime/serialization/IDeserializationCallba
 <h4>OnDeserialization</h4>
 <pre>public&nbsp;void&nbsp;OnDeserialization(<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;sender)
                        throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member OnDeserialization.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../system/runtime/serialization/IDeserializationCallback.html#OnDeserialization-org.mases.jcobridge.netreflection.NetObject-">OnDeserialization</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/runtime/serialization/IDeserializationCallback.html" title="interface in system.runtime.serialization">IDeserializationCallback</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>sender</code> - the argument of type <code>NetObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Runtime.Serialization.IDeserializationCallback.OnDeserialization" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

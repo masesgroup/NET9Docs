@@ -224,7 +224,9 @@ implements <a href="../system/ICloneable.html" title="interface in system">IClon
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code><a href="../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../system/ICloneableImplementation.html#Clone--">Clone</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../system/ICloneableImplementation.html#Clone--">Clone</a></span>()</code>
+<div class="block">Invokes the .NET member Clone.</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
@@ -361,8 +363,10 @@ implements <a href="../system/ICloneable.html" title="interface in system">IClon
                          throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -382,11 +386,16 @@ implements <a href="../system/ICloneable.html" title="interface in system">IClon
 <h4>Clone</h4>
 <pre>public&nbsp;<a href="../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;Clone()
                 throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member Clone.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../system/ICloneable.html#Clone--">Clone</a></code>&nbsp;in interface&nbsp;<code><a href="../system/ICloneable.html" title="interface in system">ICloneable</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.ICloneable.Clone" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

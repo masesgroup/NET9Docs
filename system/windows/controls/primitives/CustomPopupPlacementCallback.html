@@ -231,7 +231,9 @@ implements <a href="https://www.jcobridge.com/api-java_2.6.10/org/mases/jcobridg
 <td class="colFirst"><code><a href="../../../../system/windows/controls/primitives/CustomPopupPlacement.html" title="class in system.windows.controls.primitives">CustomPopupPlacement</a>[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/controls/primitives/CustomPopupPlacementCallback.html#DynamicInvoke-system.windows.Size-system.windows.Size-system.windows.Point-">DynamicInvoke</a></span>(<a href="../../../../system/windows/Size.html" title="class in system.windows">Size</a>&nbsp;popupSize,
              <a href="../../../../system/windows/Size.html" title="class in system.windows">Size</a>&nbsp;targetSize,
-             <a href="../../../../system/windows/Point.html" title="class in system.windows">Point</a>&nbsp;offset)</code>&nbsp;</td>
+             <a href="../../../../system/windows/Point.html" title="class in system.windows">Point</a>&nbsp;offset)</code>
+<div class="block">Invokes the .NET member DynamicInvoke.</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
@@ -392,8 +394,10 @@ implements <a href="https://www.jcobridge.com/api-java_2.6.10/org/mases/jcobridg
                              throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -428,9 +432,18 @@ implements <a href="https://www.jcobridge.com/api-java_2.6.10/org/mases/jcobridg
                                             <a href="../../../../system/windows/Size.html" title="class in system.windows">Size</a>&nbsp;targetSize,
                                             <a href="../../../../system/windows/Point.html" title="class in system.windows">Point</a>&nbsp;offset)
                                      throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member DynamicInvoke.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>popupSize</code> - the argument of type <code>Size</code></dd>
+<dd><code>targetSize</code> - the argument of type <code>Size</code></dd>
+<dd><code>offset</code> - the argument of type <code>Point</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Delegate.DynamicInvoke" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -543,6 +556,14 @@ implements <a href="https://www.jcobridge.com/api-java_2.6.10/org/mases/jcobridg
                                      <a href="../../../../system/windows/Size.html" title="class in system.windows">Size</a>&nbsp;targetSize,
                                      <a href="../../../../system/windows/Point.html" title="class in system.windows">Point</a>&nbsp;offset)</pre>
 <div class="block">Methods invoked in JVM when an event is raised in CLR</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>popupSize</code> - the .NET argument of type <code>System.Windows.Size</code></dd>
+<dd><code>targetSize</code> - the .NET argument of type <code>System.Windows.Size</code></dd>
+<dd><code>offset</code> - the .NET argument of type <code>System.Windows.Point</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned to the CLR; this default implementation returns <code>null</code></dd>
+</dl>
 </li>
 </ul>
 </li>

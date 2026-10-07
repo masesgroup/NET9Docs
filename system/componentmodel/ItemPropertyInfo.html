@@ -215,7 +215,9 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
 <tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../system/componentmodel/ItemPropertyInfo.html#ItemPropertyInfo-java.lang.String-org.mases.jcobridge.netreflection.NetType-org.mases.jcobridge.netreflection.NetObject-">ItemPropertyInfo</a></span>(java.lang.String&nbsp;name,
                 <a href="../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;type,
-                <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;descriptor)</code>&nbsp;</td>
+                <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;descriptor)</code>
+<div class="block">Initializes a new instance by invoking the .NET constructor.</div>
+</td>
 </tr>
 </table>
 </li>
@@ -240,7 +242,9 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../system/componentmodel/ItemPropertyInfo.html#getDescriptor--">getDescriptor</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/componentmodel/ItemPropertyInfo.html#getDescriptor--">getDescriptor</a></span>()</code>
+<div class="block">Gets the value of the .NET property Descriptor.</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
@@ -274,11 +278,15 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../system/componentmodel/ItemPropertyInfo.html#getName--">getName</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/componentmodel/ItemPropertyInfo.html#getName--">getName</a></span>()</code>
+<div class="block">Gets the value of the .NET property Name.</div>
+</td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../system/componentmodel/ItemPropertyInfo.html#getPropertyType--">getPropertyType</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/componentmodel/ItemPropertyInfo.html#getPropertyType--">getPropertyType</a></span>()</code>
+<div class="block">Gets the value of the .NET property PropertyType.</div>
+</td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
@@ -399,8 +407,10 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
                  throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -414,9 +424,16 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
                         <a href="../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;type,
                         <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;descriptor)
                  throws java.lang.Throwable</pre>
+<div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>name</code> - the argument of type <code>java.lang.String</code></dd>
+<dd><code>type</code> - the argument of type <code>NetType</code></dd>
+<dd><code>descriptor</code> - the argument of type <code>NetObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.ComponentModel.ItemPropertyInfo.-ctor" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -455,9 +472,14 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
 <h4>getDescriptor</h4>
 <pre>public&nbsp;<a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;getDescriptor()
                         throws java.lang.Throwable</pre>
+<div class="block">Gets the value of the .NET property Descriptor.</div>
 <dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.ComponentModel.ItemPropertyInfo.Descriptor" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -564,9 +586,14 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
 <h4>getName</h4>
 <pre>public&nbsp;java.lang.String&nbsp;getName()
                          throws java.lang.Throwable</pre>
+<div class="block">Gets the value of the .NET property Name.</div>
 <dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.ComponentModel.ItemPropertyInfo.Name" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -578,9 +605,14 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
 <h4>getPropertyType</h4>
 <pre>public&nbsp;<a href="../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;getPropertyType()
                         throws java.lang.Throwable</pre>
+<div class="block">Gets the value of the .NET property PropertyType.</div>
 <dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.ComponentModel.ItemPropertyInfo.PropertyType" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

@@ -252,19 +252,27 @@ implements java.lang.AutoCloseable</pre>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/interopservices/CriticalHandle.html#Close--">Close</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/interopservices/CriticalHandle.html#Close--">Close</a></span>()</code>
+<div class="block">Invokes the .NET member Close.</div>
+</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/interopservices/CriticalHandle.html#Dispose--">Dispose</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/interopservices/CriticalHandle.html#Dispose--">Dispose</a></span>()</code>
+<div class="block">Invokes the .NET member Dispose.</div>
+</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/interopservices/CriticalHandle.html#getIsClosed--">getIsClosed</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/interopservices/CriticalHandle.html#getIsClosed--">getIsClosed</a></span>()</code>
+<div class="block">Gets the value of the .NET property IsClosed.</div>
+</td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/interopservices/CriticalHandle.html#getIsInvalid--">getIsInvalid</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/interopservices/CriticalHandle.html#getIsInvalid--">getIsInvalid</a></span>()</code>
+<div class="block">Gets the value of the .NET property IsInvalid.</div>
+</td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
@@ -298,7 +306,9 @@ implements java.lang.AutoCloseable</pre>
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/interopservices/CriticalHandle.html#SetHandleAsInvalid--">SetHandleAsInvalid</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/interopservices/CriticalHandle.html#SetHandleAsInvalid--">SetHandleAsInvalid</a></span>()</code>
+<div class="block">Invokes the .NET member SetHandleAsInvalid.</div>
+</td>
 </tr>
 <tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
@@ -419,8 +429,10 @@ implements java.lang.AutoCloseable</pre>
                throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -476,10 +488,13 @@ implements java.lang.AutoCloseable</pre>
 <pre>public&nbsp;void&nbsp;Close()
            throws java.lang.Throwable,
                   <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
+<div class="block">Invokes the .NET member Close.</div>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Runtime.InteropServices.CriticalHandle.Close" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -492,10 +507,13 @@ implements java.lang.AutoCloseable</pre>
 <pre>public&nbsp;void&nbsp;Dispose()
              throws java.lang.Throwable,
                     <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
+<div class="block">Invokes the .NET member Dispose.</div>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Runtime.InteropServices.CriticalHandle.Dispose" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -507,9 +525,14 @@ implements java.lang.AutoCloseable</pre>
 <h4>getIsClosed</h4>
 <pre>public&nbsp;boolean&nbsp;getIsClosed()
                     throws java.lang.Throwable</pre>
+<div class="block">Gets the value of the .NET property IsClosed.</div>
 <dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Runtime.InteropServices.CriticalHandle.IsClosed" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -521,9 +544,14 @@ implements java.lang.AutoCloseable</pre>
 <h4>getIsInvalid</h4>
 <pre>public&nbsp;boolean&nbsp;getIsInvalid()
                      throws java.lang.Throwable</pre>
+<div class="block">Gets the value of the .NET property IsInvalid.</div>
 <dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Runtime.InteropServices.CriticalHandle.IsInvalid" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -635,14 +663,17 @@ implements java.lang.AutoCloseable</pre>
                                <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                                <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
                                <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
+<div class="block">Invokes the .NET member SetHandleAsInvalid.</div>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Runtime.InteropServices.CriticalHandle.SetHandleAsInvalid" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

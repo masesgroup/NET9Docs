@@ -253,15 +253,21 @@ extends <a href="../../system/reflection/MethodBase.html" title="class in system
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../../system/reflection/MethodInfo.html" title="class in system.reflection">MethodInfo</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/MethodInfo.html#GetBaseDefinition--">GetBaseDefinition</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/MethodInfo.html#GetBaseDefinition--">GetBaseDefinition</a></span>()</code>
+<div class="block">Invokes the .NET member GetBaseDefinition.</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>[]</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/MethodInfo.html#GetGenericArguments--">GetGenericArguments</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/MethodInfo.html#GetGenericArguments--">GetGenericArguments</a></span>()</code>
+<div class="block">Invokes the .NET member GetGenericArguments.</div>
+</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../system/reflection/MethodInfo.html" title="class in system.reflection">MethodInfo</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/MethodInfo.html#GetGenericMethodDefinition--">GetGenericMethodDefinition</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/MethodInfo.html#GetGenericMethodDefinition--">GetGenericMethodDefinition</a></span>()</code>
+<div class="block">Invokes the .NET member GetGenericMethodDefinition.</div>
+</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
@@ -295,19 +301,27 @@ extends <a href="../../system/reflection/MethodBase.html" title="class in system
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="../../system/reflection/ParameterInfo.html" title="class in system.reflection">ParameterInfo</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/MethodInfo.html#getReturnParameter--">getReturnParameter</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/MethodInfo.html#getReturnParameter--">getReturnParameter</a></span>()</code>
+<div class="block">Gets the value of the .NET property ReturnParameter.</div>
+</td>
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/MethodInfo.html#getReturnType--">getReturnType</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/MethodInfo.html#getReturnType--">getReturnType</a></span>()</code>
+<div class="block">Gets the value of the .NET property ReturnType.</div>
+</td>
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="../../system/reflection/ICustomAttributeProvider.html" title="interface in system.reflection">ICustomAttributeProvider</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/MethodInfo.html#getReturnTypeCustomAttributes--">getReturnTypeCustomAttributes</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/MethodInfo.html#getReturnTypeCustomAttributes--">getReturnTypeCustomAttributes</a></span>()</code>
+<div class="block">Gets the value of the .NET property ReturnTypeCustomAttributes.</div>
+</td>
 </tr>
 <tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="../../system/reflection/MethodInfo.html" title="class in system.reflection">MethodInfo</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/MethodInfo.html#MakeGenericMethod-org.mases.jcobridge.netreflection.NetType...-">MakeGenericMethod</a></span>(<a href="../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>...&nbsp;typeArguments)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/reflection/MethodInfo.html#MakeGenericMethod-org.mases.jcobridge.netreflection.NetType...-">MakeGenericMethod</a></span>(<a href="../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>...&nbsp;typeArguments)</code>
+<div class="block">Invokes the .NET member MakeGenericMethod.</div>
+</td>
 </tr>
 <tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
@@ -442,8 +456,10 @@ extends <a href="../../system/reflection/MethodBase.html" title="class in system
            throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -482,9 +498,14 @@ extends <a href="../../system/reflection/MethodBase.html" title="class in system
 <h4>GetBaseDefinition</h4>
 <pre>public&nbsp;<a href="../../system/reflection/MethodInfo.html" title="class in system.reflection">MethodInfo</a>&nbsp;GetBaseDefinition()
                              throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member GetBaseDefinition.</div>
 <dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Reflection.MethodInfo.GetBaseDefinition" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -507,22 +528,27 @@ extends <a href="../../system/reflection/MethodBase.html" title="class in system
                                      <a href="../../system/RankException.html" title="class in system">RankException</a>,
                                      <a href="../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
                                      <a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></pre>
+<div class="block">Invokes the .NET member GetGenericArguments.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../system/reflection/MethodBase.html#GetGenericArguments--">GetGenericArguments</a></code>&nbsp;in class&nbsp;<code><a href="../../system/reflection/MethodBase.html" title="class in system.reflection">MethodBase</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
-<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
-<dd><code><a href="../../system/RankException.html" title="class in system">RankException</a></code></dd>
-<dd><code><a href="../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
-<dd><code><a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/RankException.html" title="class in system">RankException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Reflection.MethodInfo.GetGenericArguments" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -545,20 +571,25 @@ extends <a href="../../system/reflection/MethodBase.html" title="class in system
                                              <a href="../../system/RankException.html" title="class in system">RankException</a>,
                                              <a href="../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
                                              <a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></pre>
+<div class="block">Invokes the .NET member GetGenericMethodDefinition.</div>
 <dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
-<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
-<dd><code><a href="../../system/RankException.html" title="class in system">RankException</a></code></dd>
-<dd><code><a href="../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
-<dd><code><a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/RankException.html" title="class in system">RankException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Reflection.MethodInfo.GetGenericMethodDefinition" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -675,19 +706,24 @@ extends <a href="../../system/reflection/MethodBase.html" title="class in system
                                         <a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
                                         <a href="../../system/RankException.html" title="class in system">RankException</a>,
                                         <a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></pre>
+<div class="block">Gets the value of the .NET property ReturnParameter.</div>
 <dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
-<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
-<dd><code><a href="../../system/RankException.html" title="class in system">RankException</a></code></dd>
-<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/RankException.html" title="class in system">RankException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Reflection.MethodInfo.ReturnParameter" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -709,19 +745,24 @@ extends <a href="../../system/reflection/MethodBase.html" title="class in system
                              <a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
                              <a href="../../system/RankException.html" title="class in system">RankException</a>,
                              <a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></pre>
+<div class="block">Gets the value of the .NET property ReturnType.</div>
 <dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
-<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
-<dd><code><a href="../../system/RankException.html" title="class in system">RankException</a></code></dd>
-<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/RankException.html" title="class in system">RankException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Reflection.MethodInfo.ReturnType" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -733,9 +774,14 @@ extends <a href="../../system/reflection/MethodBase.html" title="class in system
 <h4>getReturnTypeCustomAttributes</h4>
 <pre>public&nbsp;<a href="../../system/reflection/ICustomAttributeProvider.html" title="interface in system.reflection">ICustomAttributeProvider</a>&nbsp;getReturnTypeCustomAttributes()
                                                        throws java.lang.Throwable</pre>
+<div class="block">Gets the value of the .NET property ReturnTypeCustomAttributes.</div>
 <dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Reflection.MethodInfo.ReturnTypeCustomAttributes" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -758,20 +804,27 @@ extends <a href="../../system/reflection/MethodBase.html" title="class in system
                                     <a href="../../system/RankException.html" title="class in system">RankException</a>,
                                     <a href="../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
                                     <a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></pre>
+<div class="block">Invokes the .NET member MakeGenericMethod.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>typeArguments</code> - the argument of type <code>NetType...</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
-<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
-<dd><code><a href="../../system/RankException.html" title="class in system">RankException</a></code></dd>
-<dd><code><a href="../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
-<dd><code><a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/RankException.html" title="class in system">RankException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Reflection.MethodInfo.MakeGenericMethod" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

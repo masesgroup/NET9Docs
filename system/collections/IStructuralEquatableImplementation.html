@@ -226,11 +226,15 @@ implements <a href="../../system/collections/IStructuralEquatable.html" title="i
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/collections/IStructuralEquatableImplementation.html#Equals-org.mases.jcobridge.netreflection.NetObject-system.collections.IEqualityComparer-">Equals</a></span>(<a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;other,
-      <a href="../../system/collections/IEqualityComparer.html" title="interface in system.collections">IEqualityComparer</a>&nbsp;comparer)</code>&nbsp;</td>
+      <a href="../../system/collections/IEqualityComparer.html" title="interface in system.collections">IEqualityComparer</a>&nbsp;comparer)</code>
+<div class="block">Invokes the .NET member Equals.</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../system/collections/IStructuralEquatableImplementation.html#GetHashCode-system.collections.IEqualityComparer-">GetHashCode</a></span>(<a href="../../system/collections/IEqualityComparer.html" title="interface in system.collections">IEqualityComparer</a>&nbsp;comparer)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/collections/IStructuralEquatableImplementation.html#GetHashCode-system.collections.IEqualityComparer-">GetHashCode</a></span>(<a href="../../system/collections/IEqualityComparer.html" title="interface in system.collections">IEqualityComparer</a>&nbsp;comparer)</code>
+<div class="block">Invokes the .NET member GetHashCode.</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
@@ -367,8 +371,10 @@ implements <a href="../../system/collections/IStructuralEquatable.html" title="i
                                    throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -389,11 +395,19 @@ implements <a href="../../system/collections/IStructuralEquatable.html" title="i
 <pre>public&nbsp;boolean&nbsp;Equals(<a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;other,
                       <a href="../../system/collections/IEqualityComparer.html" title="interface in system.collections">IEqualityComparer</a>&nbsp;comparer)
                throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member Equals.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../system/collections/IStructuralEquatable.html#Equals-org.mases.jcobridge.netreflection.NetObject-system.collections.IEqualityComparer-">Equals</a></code>&nbsp;in interface&nbsp;<code><a href="../../system/collections/IStructuralEquatable.html" title="interface in system.collections">IStructuralEquatable</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>other</code> - the argument of type <code>NetObject</code></dd>
+<dd><code>comparer</code> - the argument of type <code>IEqualityComparer</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Collections.IStructuralEquatable.Equals" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -405,11 +419,18 @@ implements <a href="../../system/collections/IStructuralEquatable.html" title="i
 <h4>GetHashCode</h4>
 <pre>public&nbsp;int&nbsp;GetHashCode(<a href="../../system/collections/IEqualityComparer.html" title="interface in system.collections">IEqualityComparer</a>&nbsp;comparer)
                 throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member GetHashCode.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../system/collections/IStructuralEquatable.html#GetHashCode-system.collections.IEqualityComparer-">GetHashCode</a></code>&nbsp;in interface&nbsp;<code><a href="../../system/collections/IStructuralEquatable.html" title="interface in system.collections">IStructuralEquatable</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>comparer</code> - the argument of type <code>IEqualityComparer</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Collections.IStructuralEquatable.GetHashCode" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

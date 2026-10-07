@@ -227,15 +227,21 @@ implements <a href="../../system/threading/ITimer.html" title="interface in syst
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/threading/ITimerImplementation.html#Change-system.TimeSpan-system.TimeSpan-">Change</a></span>(<a href="../../system/TimeSpan.html" title="class in system">TimeSpan</a>&nbsp;dueTime,
-      <a href="../../system/TimeSpan.html" title="class in system">TimeSpan</a>&nbsp;period)</code>&nbsp;</td>
+      <a href="../../system/TimeSpan.html" title="class in system">TimeSpan</a>&nbsp;period)</code>
+<div class="block">Invokes the .NET member Change.</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../system/threading/ITimerImplementation.html#Dispose--">Dispose</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/threading/ITimerImplementation.html#Dispose--">Dispose</a></span>()</code>
+<div class="block">Invokes the .NET member Dispose.</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../system/threading/tasks/ValueTask.html" title="class in system.threading.tasks">ValueTask</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../system/threading/ITimerImplementation.html#DisposeAsync--">DisposeAsync</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/threading/ITimerImplementation.html#DisposeAsync--">DisposeAsync</a></span>()</code>
+<div class="block">Invokes the .NET member DisposeAsync.</div>
+</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
@@ -386,8 +392,10 @@ implements <a href="../../system/threading/ITimer.html" title="interface in syst
                      throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -408,11 +416,19 @@ implements <a href="../../system/threading/ITimer.html" title="interface in syst
 <pre>public&nbsp;boolean&nbsp;Change(<a href="../../system/TimeSpan.html" title="class in system">TimeSpan</a>&nbsp;dueTime,
                       <a href="../../system/TimeSpan.html" title="class in system">TimeSpan</a>&nbsp;period)
                throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member Change.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../system/threading/ITimer.html#Change-system.TimeSpan-system.TimeSpan-">Change</a></code>&nbsp;in interface&nbsp;<code><a href="../../system/threading/ITimer.html" title="interface in system.threading">ITimer</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>dueTime</code> - the argument of type <code>TimeSpan</code></dd>
+<dd><code>period</code> - the argument of type <code>TimeSpan</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Threading.ITimer.Change" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -424,11 +440,14 @@ implements <a href="../../system/threading/ITimer.html" title="interface in syst
 <h4>Dispose</h4>
 <pre>public&nbsp;void&nbsp;Dispose()
              throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member Dispose.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../system/IDisposable.html#Dispose--">Dispose</a></code>&nbsp;in interface&nbsp;<code><a href="../../system/IDisposable.html" title="interface in system">IDisposable</a></code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Threading.ITimer.Dispose" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -440,11 +459,16 @@ implements <a href="../../system/threading/ITimer.html" title="interface in syst
 <h4>DisposeAsync</h4>
 <pre>public&nbsp;<a href="../../system/threading/tasks/ValueTask.html" title="class in system.threading.tasks">ValueTask</a>&nbsp;DisposeAsync()
                        throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member DisposeAsync.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../system/IAsyncDisposable.html#DisposeAsync--">DisposeAsync</a></code>&nbsp;in interface&nbsp;<code><a href="../../system/IAsyncDisposable.html" title="interface in system">IAsyncDisposable</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Threading.ITimer.DisposeAsync" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

@@ -272,7 +272,9 @@ extends <a href="../../../../system/componentmodel/design/serialization/CodeDomS
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/componentmodel/design/serialization/MemberCodeDomSerializer.html#Serialize-system.componentmodel.design.serialization.IDesignerSerializationManager-org.mases.jcobridge.netreflection.NetObject-system.componentmodel.MemberDescriptor-system.codedom.CodeStatementCollection-">Serialize</a></span>(<a href="../../../../system/componentmodel/design/serialization/IDesignerSerializationManager.html" title="interface in system.componentmodel.design.serialization">IDesignerSerializationManager</a>&nbsp;manager,
          <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;value,
          <a href="../../../../system/componentmodel/MemberDescriptor.html" title="class in system.componentmodel">MemberDescriptor</a>&nbsp;descriptor,
-         <a href="../../../../system/codedom/CodeStatementCollection.html" title="class in system.codedom">CodeStatementCollection</a>&nbsp;statements)</code>&nbsp;</td>
+         <a href="../../../../system/codedom/CodeStatementCollection.html" title="class in system.codedom">CodeStatementCollection</a>&nbsp;statements)</code>
+<div class="block">Invokes the .NET member Serialize.</div>
+</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
@@ -284,7 +286,9 @@ extends <a href="../../../../system/componentmodel/design/serialization/CodeDomS
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/componentmodel/design/serialization/MemberCodeDomSerializer.html#ShouldSerialize-system.componentmodel.design.serialization.IDesignerSerializationManager-org.mases.jcobridge.netreflection.NetObject-system.componentmodel.MemberDescriptor-">ShouldSerialize</a></span>(<a href="../../../../system/componentmodel/design/serialization/IDesignerSerializationManager.html" title="interface in system.componentmodel.design.serialization">IDesignerSerializationManager</a>&nbsp;manager,
                <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;value,
-               <a href="../../../../system/componentmodel/MemberDescriptor.html" title="class in system.componentmodel">MemberDescriptor</a>&nbsp;descriptor)</code>&nbsp;</td>
+               <a href="../../../../system/componentmodel/MemberDescriptor.html" title="class in system.componentmodel">MemberDescriptor</a>&nbsp;descriptor)</code>
+<div class="block">Invokes the .NET member ShouldSerialize.</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -399,8 +403,10 @@ extends <a href="../../../../system/componentmodel/design/serialization/CodeDomS
                         throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -537,9 +543,17 @@ extends <a href="../../../../system/componentmodel/design/serialization/CodeDomS
                       <a href="../../../../system/componentmodel/MemberDescriptor.html" title="class in system.componentmodel">MemberDescriptor</a>&nbsp;descriptor,
                       <a href="../../../../system/codedom/CodeStatementCollection.html" title="class in system.codedom">CodeStatementCollection</a>&nbsp;statements)
                throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member Serialize.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>manager</code> - the argument of type <code>IDesignerSerializationManager</code></dd>
+<dd><code>value</code> - the argument of type <code>NetObject</code></dd>
+<dd><code>descriptor</code> - the argument of type <code>MemberDescriptor</code></dd>
+<dd><code>statements</code> - the argument of type <code>CodeStatementCollection</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.ComponentModel.Design.Serialization.MemberCodeDomSerializer.Serialize" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -570,9 +584,18 @@ extends <a href="../../../../system/componentmodel/design/serialization/CodeDomS
                                <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;value,
                                <a href="../../../../system/componentmodel/MemberDescriptor.html" title="class in system.componentmodel">MemberDescriptor</a>&nbsp;descriptor)
                         throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member ShouldSerialize.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>manager</code> - the argument of type <code>IDesignerSerializationManager</code></dd>
+<dd><code>value</code> - the argument of type <code>NetObject</code></dd>
+<dd><code>descriptor</code> - the argument of type <code>MemberDescriptor</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.ComponentModel.Design.Serialization.MemberCodeDomSerializer.ShouldSerialize" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

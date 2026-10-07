@@ -264,23 +264,31 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>static <a href="../../../system/reflection/metadata/MetadataReader.html" title="class in system.reflection.metadata">MetadataReader</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/reflection/metadata/PEReaderExtensions.html#GetMetadataReader-system.reflection.portableexecutable.PEReader-">GetMetadataReader</a></span>(<a href="../../../system/reflection/portableexecutable/PEReader.html" title="class in system.reflection.portableexecutable">PEReader</a>&nbsp;peReader)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/reflection/metadata/PEReaderExtensions.html#GetMetadataReader-system.reflection.portableexecutable.PEReader-">GetMetadataReader</a></span>(<a href="../../../system/reflection/portableexecutable/PEReader.html" title="class in system.reflection.portableexecutable">PEReader</a>&nbsp;peReader)</code>
+<div class="block">Invokes the .NET member GetMetadataReader.</div>
+</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../system/reflection/metadata/MetadataReader.html" title="class in system.reflection.metadata">MetadataReader</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/reflection/metadata/PEReaderExtensions.html#GetMetadataReader-system.reflection.portableexecutable.PEReader-system.reflection.metadata.MetadataReaderOptions-">GetMetadataReader</a></span>(<a href="../../../system/reflection/portableexecutable/PEReader.html" title="class in system.reflection.portableexecutable">PEReader</a>&nbsp;peReader,
-                 <a href="../../../system/reflection/metadata/MetadataReaderOptions.html" title="class in system.reflection.metadata">MetadataReaderOptions</a>&nbsp;options)</code>&nbsp;</td>
+                 <a href="../../../system/reflection/metadata/MetadataReaderOptions.html" title="class in system.reflection.metadata">MetadataReaderOptions</a>&nbsp;options)</code>
+<div class="block">Invokes the .NET member GetMetadataReader.</div>
+</td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>static <a href="../../../system/reflection/metadata/MetadataReader.html" title="class in system.reflection.metadata">MetadataReader</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/reflection/metadata/PEReaderExtensions.html#GetMetadataReader-system.reflection.portableexecutable.PEReader-system.reflection.metadata.MetadataReaderOptions-system.reflection.metadata.MetadataStringDecoder-">GetMetadataReader</a></span>(<a href="../../../system/reflection/portableexecutable/PEReader.html" title="class in system.reflection.portableexecutable">PEReader</a>&nbsp;peReader,
                  <a href="../../../system/reflection/metadata/MetadataReaderOptions.html" title="class in system.reflection.metadata">MetadataReaderOptions</a>&nbsp;options,
-                 <a href="../../../system/reflection/metadata/MetadataStringDecoder.html" title="class in system.reflection.metadata">MetadataStringDecoder</a>&nbsp;utf8Decoder)</code>&nbsp;</td>
+                 <a href="../../../system/reflection/metadata/MetadataStringDecoder.html" title="class in system.reflection.metadata">MetadataStringDecoder</a>&nbsp;utf8Decoder)</code>
+<div class="block">Invokes the .NET member GetMetadataReader.</div>
+</td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../system/reflection/metadata/MethodBodyBlock.html" title="class in system.reflection.metadata">MethodBodyBlock</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/reflection/metadata/PEReaderExtensions.html#GetMethodBody-system.reflection.portableexecutable.PEReader-int-">GetMethodBody</a></span>(<a href="../../../system/reflection/portableexecutable/PEReader.html" title="class in system.reflection.portableexecutable">PEReader</a>&nbsp;peReader,
-             int&nbsp;relativeVirtualAddress)</code>&nbsp;</td>
+             int&nbsp;relativeVirtualAddress)</code>
+<div class="block">Invokes the .NET member GetMethodBody.</div>
+</td>
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
@@ -401,8 +409,10 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
                    throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -548,21 +558,28 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
                                                <a href="../../../system/BadImageFormatException.html" title="class in system">BadImageFormatException</a>,
                                                <a href="../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a>,
                                                <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></pre>
+<div class="block">Invokes the .NET member GetMetadataReader.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>peReader</code> - the argument of type <code>PEReader</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
-<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../../system/RankException.html" title="class in system">RankException</a></code></dd>
-<dd><code><a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
-<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../../system/BadImageFormatException.html" title="class in system">BadImageFormatException</a></code></dd>
-<dd><code><a href="../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
-<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/RankException.html" title="class in system">RankException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/BadImageFormatException.html" title="class in system">BadImageFormatException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Reflection.Metadata.PEReaderExtensions.GetMetadataReader" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -587,21 +604,29 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
                                                <a href="../../../system/BadImageFormatException.html" title="class in system">BadImageFormatException</a>,
                                                <a href="../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a>,
                                                <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></pre>
+<div class="block">Invokes the .NET member GetMetadataReader.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>peReader</code> - the argument of type <code>PEReader</code></dd>
+<dd><code>options</code> - the argument of type <code>MetadataReaderOptions</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
-<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../../system/RankException.html" title="class in system">RankException</a></code></dd>
-<dd><code><a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
-<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../../system/BadImageFormatException.html" title="class in system">BadImageFormatException</a></code></dd>
-<dd><code><a href="../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
-<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/RankException.html" title="class in system">RankException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/BadImageFormatException.html" title="class in system">BadImageFormatException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Reflection.Metadata.PEReaderExtensions.GetMetadataReader" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -628,22 +653,31 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
                                                <a href="../../../system/BadImageFormatException.html" title="class in system">BadImageFormatException</a>,
                                                <a href="../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a>,
                                                <a href="../../../system/FormatException.html" title="class in system">FormatException</a></pre>
+<div class="block">Invokes the .NET member GetMetadataReader.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>peReader</code> - the argument of type <code>PEReader</code></dd>
+<dd><code>options</code> - the argument of type <code>MetadataReaderOptions</code></dd>
+<dd><code>utf8Decoder</code> - the argument of type <code>MetadataStringDecoder</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
-<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
-<dd><code><a href="../../../system/RankException.html" title="class in system">RankException</a></code></dd>
-<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
-<dd><code><a href="../../../system/BadImageFormatException.html" title="class in system">BadImageFormatException</a></code></dd>
-<dd><code><a href="../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
-<dd><code><a href="../../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/RankException.html" title="class in system">RankException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/BadImageFormatException.html" title="class in system">BadImageFormatException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/FormatException.html" title="class in system">FormatException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Reflection.Metadata.PEReaderExtensions.GetMetadataReader" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -669,22 +703,30 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
                                             <a href="../../../system/BadImageFormatException.html" title="class in system">BadImageFormatException</a>,
                                             <a href="../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a>,
                                             <a href="../../../system/FormatException.html" title="class in system">FormatException</a></pre>
+<div class="block">Invokes the .NET member GetMethodBody.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>peReader</code> - the argument of type <code>PEReader</code></dd>
+<dd><code>relativeVirtualAddress</code> - the argument of type <code>int</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
-<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
-<dd><code><a href="../../../system/RankException.html" title="class in system">RankException</a></code></dd>
-<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
-<dd><code><a href="../../../system/BadImageFormatException.html" title="class in system">BadImageFormatException</a></code></dd>
-<dd><code><a href="../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
-<dd><code><a href="../../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/RankException.html" title="class in system">RankException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/BadImageFormatException.html" title="class in system">BadImageFormatException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/FormatException.html" title="class in system">FormatException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Reflection.Metadata.PEReaderExtensions.GetMethodBody" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

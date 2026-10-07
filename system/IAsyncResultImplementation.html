@@ -227,19 +227,27 @@ implements <a href="../system/IAsyncResult.html" title="interface in system">IAs
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code><a href="../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../system/IAsyncResultImplementation.html#getAsyncState--">getAsyncState</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../system/IAsyncResultImplementation.html#getAsyncState--">getAsyncState</a></span>()</code>
+<div class="block">Gets the value of the .NET property AsyncState.</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../system/threading/WaitHandle.html" title="class in system.threading">WaitHandle</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../system/IAsyncResultImplementation.html#getAsyncWaitHandle--">getAsyncWaitHandle</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../system/IAsyncResultImplementation.html#getAsyncWaitHandle--">getAsyncWaitHandle</a></span>()</code>
+<div class="block">Gets the value of the .NET property AsyncWaitHandle.</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../system/IAsyncResultImplementation.html#getCompletedSynchronously--">getCompletedSynchronously</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../system/IAsyncResultImplementation.html#getCompletedSynchronously--">getCompletedSynchronously</a></span>()</code>
+<div class="block">Gets the value of the .NET property CompletedSynchronously.</div>
+</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../system/IAsyncResultImplementation.html#getIsCompleted--">getIsCompleted</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../system/IAsyncResultImplementation.html#getIsCompleted--">getIsCompleted</a></span>()</code>
+<div class="block">Gets the value of the .NET property IsCompleted.</div>
+</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
@@ -376,8 +384,10 @@ implements <a href="../system/IAsyncResult.html" title="interface in system">IAs
                            throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -397,11 +407,16 @@ implements <a href="../system/IAsyncResult.html" title="interface in system">IAs
 <h4>getAsyncState</h4>
 <pre>public&nbsp;<a href="../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;getAsyncState()
                         throws java.lang.Throwable</pre>
+<div class="block">Gets the value of the .NET property AsyncState.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../system/IAsyncResult.html#getAsyncState--">getAsyncState</a></code>&nbsp;in interface&nbsp;<code><a href="../system/IAsyncResult.html" title="interface in system">IAsyncResult</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.IAsyncResult.AsyncState" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -413,11 +428,16 @@ implements <a href="../system/IAsyncResult.html" title="interface in system">IAs
 <h4>getAsyncWaitHandle</h4>
 <pre>public&nbsp;<a href="../system/threading/WaitHandle.html" title="class in system.threading">WaitHandle</a>&nbsp;getAsyncWaitHandle()
                               throws java.lang.Throwable</pre>
+<div class="block">Gets the value of the .NET property AsyncWaitHandle.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../system/IAsyncResult.html#getAsyncWaitHandle--">getAsyncWaitHandle</a></code>&nbsp;in interface&nbsp;<code><a href="../system/IAsyncResult.html" title="interface in system">IAsyncResult</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.IAsyncResult.AsyncWaitHandle" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -429,11 +449,16 @@ implements <a href="../system/IAsyncResult.html" title="interface in system">IAs
 <h4>getCompletedSynchronously</h4>
 <pre>public&nbsp;boolean&nbsp;getCompletedSynchronously()
                                   throws java.lang.Throwable</pre>
+<div class="block">Gets the value of the .NET property CompletedSynchronously.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../system/IAsyncResult.html#getCompletedSynchronously--">getCompletedSynchronously</a></code>&nbsp;in interface&nbsp;<code><a href="../system/IAsyncResult.html" title="interface in system">IAsyncResult</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.IAsyncResult.CompletedSynchronously" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -445,11 +470,16 @@ implements <a href="../system/IAsyncResult.html" title="interface in system">IAs
 <h4>getIsCompleted</h4>
 <pre>public&nbsp;boolean&nbsp;getIsCompleted()
                        throws java.lang.Throwable</pre>
+<div class="block">Gets the value of the .NET property IsCompleted.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../system/IAsyncResult.html#getIsCompleted--">getIsCompleted</a></code>&nbsp;in interface&nbsp;<code><a href="../system/IAsyncResult.html" title="interface in system">IAsyncResult</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.IAsyncResult.IsCompleted" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

@@ -267,7 +267,9 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/serialization/DataContractResolver.html#ResolveName-java.lang.String-java.lang.String-org.mases.jcobridge.netreflection.NetType-system.runtime.serialization.DataContractResolver-">ResolveName</a></span>(java.lang.String&nbsp;typeName,
            java.lang.String&nbsp;typeNamespace,
            <a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;declaredType,
-           <a href="../../../system/runtime/serialization/DataContractResolver.html" title="class in system.runtime.serialization">DataContractResolver</a>&nbsp;knownTypeResolver)</code>&nbsp;</td>
+           <a href="../../../system/runtime/serialization/DataContractResolver.html" title="class in system.runtime.serialization">DataContractResolver</a>&nbsp;knownTypeResolver)</code>
+<div class="block">Invokes the .NET member ResolveName.</div>
+</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
@@ -281,7 +283,9 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
               <a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;declaredType,
               <a href="../../../system/runtime/serialization/DataContractResolver.html" title="class in system.runtime.serialization">DataContractResolver</a>&nbsp;knownTypeResolver,
               <a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../../system/xml/XmlDictionaryString.html" title="class in system.xml">XmlDictionaryString</a>&gt;&nbsp;typeName,
-              <a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../../system/xml/XmlDictionaryString.html" title="class in system.xml">XmlDictionaryString</a>&gt;&nbsp;typeNamespace)</code>&nbsp;</td>
+              <a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../../system/xml/XmlDictionaryString.html" title="class in system.xml">XmlDictionaryString</a>&gt;&nbsp;typeNamespace)</code>
+<div class="block">Invokes the .NET member TryResolveType.</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -396,8 +400,10 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
                      throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -534,9 +540,19 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
                            <a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;declaredType,
                            <a href="../../../system/runtime/serialization/DataContractResolver.html" title="class in system.runtime.serialization">DataContractResolver</a>&nbsp;knownTypeResolver)
                     throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member ResolveName.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>typeName</code> - the argument of type <code>java.lang.String</code></dd>
+<dd><code>typeNamespace</code> - the argument of type <code>java.lang.String</code></dd>
+<dd><code>declaredType</code> - the argument of type <code>NetType</code></dd>
+<dd><code>knownTypeResolver</code> - the argument of type <code>DataContractResolver</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Runtime.Serialization.DataContractResolver.ResolveName" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -569,9 +585,20 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
                               <a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../../system/xml/XmlDictionaryString.html" title="class in system.xml">XmlDictionaryString</a>&gt;&nbsp;typeName,
                               <a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../../system/xml/XmlDictionaryString.html" title="class in system.xml">XmlDictionaryString</a>&gt;&nbsp;typeNamespace)
                        throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member TryResolveType.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>type</code> - the argument of type <code>NetType</code></dd>
+<dd><code>declaredType</code> - the argument of type <code>NetType</code></dd>
+<dd><code>knownTypeResolver</code> - the argument of type <code>DataContractResolver</code></dd>
+<dd><code>typeName</code> - the argument of type <code>JCORefOut&lt;XmlDictionaryString&gt;</code></dd>
+<dd><code>typeNamespace</code> - the argument of type <code>JCORefOut&lt;XmlDictionaryString&gt;</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Runtime.Serialization.DataContractResolver.TryResolveType" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

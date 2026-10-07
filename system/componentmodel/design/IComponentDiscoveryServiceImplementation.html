@@ -225,7 +225,9 @@ implements <a href="../../../system/componentmodel/design/IComponentDiscoverySer
 <tr id="i0" class="altColor">
 <td class="colFirst"><code><a href="../../../system/collections/ICollection.html" title="interface in system.collections">ICollection</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/componentmodel/design/IComponentDiscoveryServiceImplementation.html#GetComponentTypes-system.componentmodel.design.IDesignerHost-org.mases.jcobridge.netreflection.NetType-">GetComponentTypes</a></span>(<a href="../../../system/componentmodel/design/IDesignerHost.html" title="interface in system.componentmodel.design">IDesignerHost</a>&nbsp;designerHost,
-                 <a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;baseType)</code>&nbsp;</td>
+                 <a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;baseType)</code>
+<div class="block">Invokes the .NET member GetComponentTypes.</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
@@ -362,8 +364,10 @@ implements <a href="../../../system/componentmodel/design/IComponentDiscoverySer
                                          throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -384,11 +388,19 @@ implements <a href="../../../system/componentmodel/design/IComponentDiscoverySer
 <pre>public&nbsp;<a href="../../../system/collections/ICollection.html" title="interface in system.collections">ICollection</a>&nbsp;GetComponentTypes(<a href="../../../system/componentmodel/design/IDesignerHost.html" title="interface in system.componentmodel.design">IDesignerHost</a>&nbsp;designerHost,
                                      <a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;baseType)
                               throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member GetComponentTypes.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../system/componentmodel/design/IComponentDiscoveryService.html#GetComponentTypes-system.componentmodel.design.IDesignerHost-org.mases.jcobridge.netreflection.NetType-">GetComponentTypes</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/componentmodel/design/IComponentDiscoveryService.html" title="interface in system.componentmodel.design">IComponentDiscoveryService</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>designerHost</code> - the argument of type <code>IDesignerHost</code></dd>
+<dd><code>baseType</code> - the argument of type <code>NetType</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.ComponentModel.Design.IComponentDiscoveryService.GetComponentTypes" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

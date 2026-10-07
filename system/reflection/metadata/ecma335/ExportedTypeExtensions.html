@@ -263,7 +263,9 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>static int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/reflection/metadata/ecma335/ExportedTypeExtensions.html#GetTypeDefinitionId-system.reflection.metadata.ExportedType-">GetTypeDefinitionId</a></span>(<a href="../../../../system/reflection/metadata/ExportedType.html" title="class in system.reflection.metadata">ExportedType</a>&nbsp;exportedType)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/reflection/metadata/ecma335/ExportedTypeExtensions.html#GetTypeDefinitionId-system.reflection.metadata.ExportedType-">GetTypeDefinitionId</a></span>(<a href="../../../../system/reflection/metadata/ExportedType.html" title="class in system.reflection.metadata">ExportedType</a>&nbsp;exportedType)</code>
+<div class="block">Invokes the .NET member GetTypeDefinitionId.</div>
+</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
@@ -384,8 +386,10 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
                        throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -523,13 +527,20 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
                                       <a href="../../../../system/BadImageFormatException.html" title="class in system">BadImageFormatException</a>,
                                       <a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
                                       <a href="../../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></pre>
+<div class="block">Invokes the .NET member GetTypeDefinitionId.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>exportedType</code> - the argument of type <code>ExportedType</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../../../system/BadImageFormatException.html" title="class in system">BadImageFormatException</a></code></dd>
-<dd><code><a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dd><code><a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/BadImageFormatException.html" title="class in system">BadImageFormatException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Reflection.Metadata.Ecma335.ExportedTypeExtensions.GetTypeDefinitionId" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
