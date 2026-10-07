@@ -110,6 +110,11 @@ var activeTableTab = "activeTableTab";
 <br>
 <pre>public final class <span class="typeNameLabel">NetGenericHelper</span>
 extends java.lang.Object</pre>
+<div class="block">Helper for the generic classes that do not extend <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection"><code>NetObject</code></a>, such as the generic delegates.
+ <p>
+ It offers the same logic used by <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection"><code>NetObject</code></a>: it reads the type arguments from the anonymous subclass
+ of a generic class (<code>new Foo&lt;Bar&gt;() {}</code>), builds the name of the closed CLR type and instantiates the
+ type arguments reflectively.</div>
 </li>
 </ul>
 </div>
@@ -131,17 +136,23 @@ extends java.lang.Object</pre>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>static java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/mases/jcobridge/netreflection/NetGenericHelper.html#buildClosedClrName-java.lang.String-java.lang.Class:A-">buildClosedClrName</a></span>(java.lang.String&nbsp;openClrName,
-                  java.lang.Class&lt;?&gt;[]&nbsp;typeArguments)</code>&nbsp;</td>
+                  java.lang.Class&lt;?&gt;[]&nbsp;typeArguments)</code>
+<div class="block">Builds the name of a closed generic CLR type, for example <code>System.Collections.Generic.List`1[System.Object]</code>.</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>static &lt;X&gt;&nbsp;X</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/mases/jcobridge/netreflection/NetGenericHelper.html#instantiate-java.lang.Class:A-int-java.lang.Object-">instantiate</a></span>(java.lang.Class&lt;?&gt;[]&nbsp;typeArguments,
            int&nbsp;index,
-           java.lang.Object&nbsp;nativeHandle)</code>&nbsp;</td>
+           java.lang.Object&nbsp;nativeHandle)</code>
+<div class="block">Reflectively builds an instance of a type argument, wrapping a native handle returned from the bridge.</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>static java.lang.Class&lt;?&gt;[]</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/mases/jcobridge/netreflection/NetGenericHelper.html#resolveTypeArguments-java.lang.Class-">resolveTypeArguments</a></span>(java.lang.Class&lt;?&gt;&nbsp;instanceClass)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/mases/jcobridge/netreflection/NetGenericHelper.html#resolveTypeArguments-java.lang.Class-">resolveTypeArguments</a></span>(java.lang.Class&lt;?&gt;&nbsp;instanceClass)</code>
+<div class="block">Returns the type arguments captured by the anonymous subclass, as in <code>new Foo&lt;Bar&gt;() {}</code>.</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -173,6 +184,17 @@ extends java.lang.Object</pre>
 <h4>buildClosedClrName</h4>
 <pre>public static&nbsp;java.lang.String&nbsp;buildClosedClrName(java.lang.String&nbsp;openClrName,
                                                   java.lang.Class&lt;?&gt;[]&nbsp;typeArguments)</pre>
+<div class="block">Builds the name of a closed generic CLR type, for example <code>System.Collections.Generic.List`1[System.Object]</code>.
+ The name of each type argument is read from its public static <code>className</code> field.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>openClrName</code> - the name of the open generic type, for example <code>System.Collections.Generic.List`1</code></dd>
+<dd><code>typeArguments</code> - the classes of the type arguments</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the name of the closed generic type</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.IllegalArgumentException</code> - if a type argument does not expose a public static <code>className</code> field</dd>
+</dl>
 </li>
 </ul>
 <a name="instantiate-java.lang.Class:A-int-java.lang.Object-">
@@ -185,9 +207,19 @@ extends java.lang.Object</pre>
                                 int&nbsp;index,
                                 java.lang.Object&nbsp;nativeHandle)
                          throws java.lang.Throwable</pre>
+<div class="block">Reflectively builds an instance of a type argument, wrapping a native handle returned from the bridge.
+ It uses the public constructor of the type argument that accepts a single <code>Object</code>.</div>
 <dl>
+<dt><span class="paramLabel">Type Parameters:</span></dt>
+<dd><code>X</code> - the type of the instance to build</dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>typeArguments</code> - the classes of the type arguments</dd>
+<dd><code>index</code> - the position of the type argument to instantiate</dd>
+<dd><code>nativeHandle</code> - the native object returned from the bridge</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the new instance of the type argument</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the type argument has no public constructor accepting a single <code>Object</code>, or if that constructor fails</dd>
 </dl>
 </li>
 </ul>
@@ -198,6 +230,16 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>resolveTypeArguments</h4>
 <pre>public static&nbsp;java.lang.Class&lt;?&gt;[]&nbsp;resolveTypeArguments(java.lang.Class&lt;?&gt;&nbsp;instanceClass)</pre>
+<div class="block">Returns the type arguments captured by the anonymous subclass, as in <code>new Foo&lt;Bar&gt;() {}</code>.
+ The result is cached for each class.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instanceClass</code> - the class of the instance: it must be an anonymous subclass of a generic class</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the classes of the type arguments, in declaration order</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.IllegalArgumentException</code> - if the instance was not created with the anonymous subclass syntax, or if a type argument is not a plain class</dd>
+</dl>
 </li>
 </ul>
 </li>
